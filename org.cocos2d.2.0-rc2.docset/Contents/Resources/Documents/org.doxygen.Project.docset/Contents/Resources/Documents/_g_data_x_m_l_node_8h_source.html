@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>cocos2d-iphone-2.0-rc2: /Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/external/JSCocoa/iPhone/GDataXMLNode.h源文件</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="Icon-Small-50.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-iphone-2.0-rc2
+   &#160;<span id="projectnumber">2.0-rc2</span>
+   </div>
+   <div id="projectbrief">created:zhxubing@gmail.com</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/external/JSCocoa/iPhone/GDataXMLNode.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/* Copyright (c) 2008 Google Inc.</span>
+<a name="l00002"></a>00002 <span class="comment"> *</span>
+<a name="l00003"></a>00003 <span class="comment"> * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
+<a name="l00004"></a>00004 <span class="comment"> * you may not use this file except in compliance with the License.</span>
+<a name="l00005"></a>00005 <span class="comment"> * You may obtain a copy of the License at</span>
+<a name="l00006"></a>00006 <span class="comment"> *</span>
+<a name="l00007"></a>00007 <span class="comment"> *     http://www.apache.org/licenses/LICENSE-2.0</span>
+<a name="l00008"></a>00008 <span class="comment"> *</span>
+<a name="l00009"></a>00009 <span class="comment"> * Unless required by applicable law or agreed to in writing, software</span>
+<a name="l00010"></a>00010 <span class="comment"> * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+<a name="l00011"></a>00011 <span class="comment"> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<a name="l00012"></a>00012 <span class="comment"> * See the License for the specific language governing permissions and</span>
+<a name="l00013"></a>00013 <span class="comment"> * limitations under the License.</span>
+<a name="l00014"></a>00014 <span class="comment"> */</span>
+<a name="l00015"></a>00015 
+<a name="l00016"></a>00016 <span class="comment">// These node, element, and document classes implement a subset of the methods</span>
+<a name="l00017"></a>00017 <span class="comment">// provided by NSXML.  While NSXML behavior is mimicked as much as possible,</span>
+<a name="l00018"></a>00018 <span class="comment">// there are important differences.</span>
+<a name="l00019"></a>00019 <span class="comment">//</span>
+<a name="l00020"></a>00020 <span class="comment">// The biggest difference is that, since this is based on libxml2, there</span>
+<a name="l00021"></a>00021 <span class="comment">// is no retain model for the underlying node data.  Rather than copy every</span>
+<a name="l00022"></a>00022 <span class="comment">// node obtained from a parse tree (which would have a substantial memory</span>
+<a name="l00023"></a>00023 <span class="comment">// impact), we rely on weak references, and it is up to the code that</span>
+<a name="l00024"></a>00024 <span class="comment">// created a document to retain it for as long as any</span>
+<a name="l00025"></a>00025 <span class="comment">// references rely on nodes inside that document tree.</span>
+<a name="l00026"></a>00026 
+<a name="l00027"></a>00027 
+<a name="l00028"></a>00028 <span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span>
+<a name="l00029"></a>00029 
+<a name="l00030"></a>00030 <span class="comment">// libxml includes require that the target Header Search Paths contain</span>
+<a name="l00031"></a>00031 <span class="comment">//</span>
+<a name="l00032"></a>00032 <span class="comment">//   /usr/include/libxml2</span>
+<a name="l00033"></a>00033 <span class="comment">//</span>
+<a name="l00034"></a>00034 <span class="comment">// and Other Linker Flags contain</span>
+<a name="l00035"></a>00035 <span class="comment">//</span>
+<a name="l00036"></a>00036 <span class="comment">//   -lxml2</span>
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038 <span class="preprocessor">#import &lt;libxml/tree.h&gt;</span>
+<a name="l00039"></a>00039 <span class="preprocessor">#import &lt;libxml/parser.h&gt;</span>
+<a name="l00040"></a>00040 <span class="preprocessor">#import &lt;libxml/xmlstring.h&gt;</span>
+<a name="l00041"></a>00041 <span class="preprocessor">#import &lt;libxml/xpath.h&gt;</span>
+<a name="l00042"></a>00042 <span class="preprocessor">#import &lt;libxml/xpathInternals.h&gt;</span>
+<a name="l00043"></a>00043 
+<a name="l00044"></a>00044 <span class="preprocessor">#import &quot;GDataDefines.h&quot;</span>
+<a name="l00045"></a>00045 
+<a name="l00046"></a>00046 <span class="comment">// Nomenclature for method names:</span>
+<a name="l00047"></a>00047 <span class="comment">//</span>
+<a name="l00048"></a>00048 <span class="comment">// Node = GData node</span>
+<a name="l00049"></a>00049 <span class="comment">// XMLNode = xmlNodePtr</span>
+<a name="l00050"></a>00050 <span class="comment">//</span>
+<a name="l00051"></a>00051 <span class="comment">// So, for example:</span>
+<a name="l00052"></a>00052 <span class="comment">//  + (id)nodeConsumingXMLNode:(xmlNodePtr)theXMLNode;</span>
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054 <span class="keyword">@class</span> NSArray, NSDictionary, NSError, NSString, NSURL;
+<a name="l00055"></a>00055 <span class="keyword">@class</span> <a class="code" href="interface_g_data_x_m_l_element.html">GDataXMLElement</a>, <a class="code" href="interface_g_data_x_m_l_document.html">GDataXMLDocument</a>;
+<a name="l00056"></a>00056 
+<a name="l00057"></a>00057 <span class="keyword">enum</span> {
+<a name="l00058"></a>00058   GDataXMLInvalidKind = 0,
+<a name="l00059"></a>00059   GDataXMLDocumentKind,
+<a name="l00060"></a>00060   GDataXMLElementKind,
+<a name="l00061"></a>00061   GDataXMLAttributeKind,
+<a name="l00062"></a>00062   GDataXMLNamespaceKind,
+<a name="l00063"></a>00063   GDataXMLProcessingInstructionKind,
+<a name="l00064"></a>00064   GDataXMLCommentKind,
+<a name="l00065"></a>00065   GDataXMLTextKind,
+<a name="l00066"></a>00066   GDataXMLDTDKind,
+<a name="l00067"></a>00067   GDataXMLEntityDeclarationKind,
+<a name="l00068"></a>00068   GDataXMLAttributeDeclarationKind,
+<a name="l00069"></a>00069   GDataXMLElementDeclarationKind,
+<a name="l00070"></a>00070   GDataXMLNotationDeclarationKind
+<a name="l00071"></a>00071 };
+<a name="l00072"></a>00072 
+<a name="l00073"></a>00073 <span class="keyword">typedef</span> NSUInteger GDataXMLNodeKind;
+<a name="l00074"></a>00074 
+<a name="l00075"></a><a class="code" href="interface_g_data_x_m_l_node.html">00075</a> <span class="keyword">@interface </span><a class="code" href="interface_g_data_x_m_l_node.html">GDataXMLNode</a> : NSObject {
+<a name="l00076"></a>00076 <span class="keyword">@protected</span>
+<a name="l00077"></a>00077   <span class="comment">// NSXMLNodes can have a namespace URI or prefix even if not part</span>
+<a name="l00078"></a>00078   <span class="comment">// of a tree; xmlNodes cannot.  When we create nodes apart from</span>
+<a name="l00079"></a>00079   <span class="comment">// a tree, we&#39;ll store the dangling prefix or URI in the xmlNode&#39;s name, </span>
+<a name="l00080"></a>00080   <span class="comment">// like</span>
+<a name="l00081"></a>00081   <span class="comment">//   &quot;prefix:name&quot;</span>
+<a name="l00082"></a>00082   <span class="comment">// or </span>
+<a name="l00083"></a>00083   <span class="comment">//   &quot;{http://uri}:name&quot;</span>
+<a name="l00084"></a>00084   <span class="comment">//</span>
+<a name="l00085"></a>00085   <span class="comment">// We will fix up the node&#39;s namespace and name (and those of any children) </span>
+<a name="l00086"></a>00086   <span class="comment">// later when adding the node to a tree with addChild: or addAttribute:.</span>
+<a name="l00087"></a>00087   <span class="comment">// See fixUpNamespacesForNode:.</span>
+<a name="l00088"></a>00088   
+<a name="l00089"></a>00089   xmlNodePtr xmlNode_; <span class="comment">// may also be an xmlAttrPtr or xmlNsPtr</span>
+<a name="l00090"></a>00090   BOOL shouldFreeXMLNode_; <span class="comment">// if yes, xmlNode_ will be free&#39;d in dealloc</span>
+<a name="l00091"></a>00091   
+<a name="l00092"></a>00092   <span class="comment">// cached values</span>
+<a name="l00093"></a>00093   NSString *cachedName_;
+<a name="l00094"></a>00094   NSArray *cachedChildren_;
+<a name="l00095"></a>00095   NSArray *cachedAttributes_;
+<a name="l00096"></a>00096 }
+<a name="l00097"></a>00097 
+<a name="l00098"></a>00098 + (<a class="code" href="interface_g_data_x_m_l_element.html">GDataXMLElement</a> *)elementWithName:(NSString *)name;
+<a name="l00099"></a>00099 + (<a class="code" href="interface_g_data_x_m_l_element.html">GDataXMLElement</a> *)elementWithName:(NSString *)name stringValue:(NSString *)value;
+<a name="l00100"></a>00100 + (<a class="code" href="interface_g_data_x_m_l_element.html">GDataXMLElement</a> *)elementWithName:(NSString *)name URI:(NSString *)value;
+<a name="l00101"></a>00101 
+<a name="l00102"></a>00102 + (id)attributeWithName:(NSString *)name stringValue:(NSString *)value;
+<a name="l00103"></a>00103 + (id)attributeWithName:(NSString *)name URI:(NSString *)attributeURI stringValue:(NSString *)value;
+<a name="l00104"></a>00104 
+<a name="l00105"></a>00105 + (id)namespaceWithName:(NSString *)name stringValue:(NSString *)value;
+<a name="l00106"></a>00106 
+<a name="l00107"></a>00107 + (id)textWithStringValue:(NSString *)value;
+<a name="l00108"></a>00108 
+<a name="l00109"></a>00109 - (NSString *)stringValue;
+<a name="l00110"></a>00110 - (void)setStringValue:(NSString *)str;
+<a name="l00111"></a>00111 
+<a name="l00112"></a>00112 - (NSUInteger)childCount;
+<a name="l00113"></a>00113 - (NSArray *)children;
+<a name="l00114"></a>00114 - (<a class="code" href="interface_g_data_x_m_l_node.html">GDataXMLNode</a> *)childAtIndex:(<span class="keywordtype">unsigned</span>)index;
+<a name="l00115"></a>00115 
+<a name="l00116"></a>00116 - (NSString *)localName;
+<a name="l00117"></a>00117 - (NSString *)name;
+<a name="l00118"></a>00118 - (NSString *)prefix;
+<a name="l00119"></a>00119 - (NSString *)URI;
+<a name="l00120"></a>00120 
+<a name="l00121"></a>00121 - (GDataXMLNodeKind)kind;
+<a name="l00122"></a>00122 
+<a name="l00123"></a>00123 - (NSString *)XMLString;
+<a name="l00124"></a>00124 
+<a name="l00125"></a>00125 + (NSString *)localNameForName:(NSString *)name;
+<a name="l00126"></a>00126 + (NSString *)prefixForName:(NSString *)name;
+<a name="l00127"></a>00127 
+<a name="l00128"></a>00128 - (NSArray *)nodesForXPath:(NSString *)xpath error:(NSError **)error;
+<a name="l00129"></a>00129 
+<a name="l00130"></a>00130 <span class="keyword">@end</span>
+<a name="l00131"></a>00131 
+<a name="l00132"></a>00132 
+<a name="l00133"></a><a class="code" href="interface_g_data_x_m_l_element.html">00133</a> <span class="keyword">@interface </span><a class="code" href="interface_g_data_x_m_l_element.html">GDataXMLElement</a> : <a class="code" href="interface_g_data_x_m_l_node.html">GDataXMLNode</a> {
+<a name="l00134"></a>00134 }
+<a name="l00135"></a>00135 
+<a name="l00136"></a>00136 - (id)initWithXMLString:(NSString *)str error:(NSError **)error;
+<a name="l00137"></a>00137 
+<a name="l00138"></a>00138 - (NSArray *)namespaces;
+<a name="l00139"></a>00139 - (void)setNamespaces:(NSArray *)namespaces;
+<a name="l00140"></a>00140 - (void)addNamespace:(<a class="code" href="interface_g_data_x_m_l_node.html">GDataXMLNode</a> *)aNamespace;
+<a name="l00141"></a>00141 
+<a name="l00142"></a>00142 - (void)addChild:(<a class="code" href="interface_g_data_x_m_l_node.html">GDataXMLNode</a> *)child;
+<a name="l00143"></a>00143 
+<a name="l00144"></a>00144 - (NSArray *)elementsForName:(NSString *)name;
+<a name="l00145"></a>00145 - (NSArray *)elementsForLocalName:(NSString *)localName URI:(NSString *)URI;
+<a name="l00146"></a>00146 
+<a name="l00147"></a>00147 - (NSArray *)attributes;
+<a name="l00148"></a>00148 - (<a class="code" href="interface_g_data_x_m_l_node.html">GDataXMLNode</a> *)attributeForName:(NSString *)name;
+<a name="l00149"></a>00149 - (<a class="code" href="interface_g_data_x_m_l_node.html">GDataXMLNode</a> *)attributeForLocalName:(NSString *)name URI:(NSString *)attributeURI;
+<a name="l00150"></a>00150 - (void)addAttribute:(<a class="code" href="interface_g_data_x_m_l_node.html">GDataXMLNode</a> *)attribute;
+<a name="l00151"></a>00151 
+<a name="l00152"></a>00152 - (NSString *)resolvePrefixForNamespaceURI:(NSString *)namespaceURI;
+<a name="l00153"></a>00153 
+<a name="l00154"></a>00154 <span class="keyword">@end</span>
+<a name="l00155"></a>00155 
+<a name="l00156"></a><a class="code" href="interface_g_data_x_m_l_document.html">00156</a> <span class="keyword">@interface </span>GDataXMLDocument : NSObject {
+<a name="l00157"></a>00157 <span class="keyword">@protected</span>
+<a name="l00158"></a>00158   xmlDoc* xmlDoc_; <span class="comment">// strong; always free&#39;d in dealloc</span>
+<a name="l00159"></a>00159 }
+<a name="l00160"></a>00160 
+<a name="l00161"></a>00161 - (id)initWithXMLString:(NSString *)str options:(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>)mask error:(NSError **)error;
+<a name="l00162"></a>00162 - (id)initWithData:(NSData *)data options:(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>)mask error:(NSError **)error;
+<a name="l00163"></a>00163 - (id)initWithRootElement:(<a class="code" href="interface_g_data_x_m_l_element.html">GDataXMLElement</a> *)element;
+<a name="l00164"></a>00164 
+<a name="l00165"></a>00165 - (<a class="code" href="interface_g_data_x_m_l_element.html">GDataXMLElement</a> *)rootElement;
+<a name="l00166"></a>00166 
+<a name="l00167"></a>00167 - (NSData *)XMLData;
+<a name="l00168"></a>00168 
+<a name="l00169"></a>00169 - (void)setVersion:(NSString *)version;
+<a name="l00170"></a>00170 - (void)setCharacterEncoding:(NSString *)encoding;
+<a name="l00171"></a>00171 
+<a name="l00172"></a>00172 - (NSString *)description;
+<a name="l00173"></a>00173 <span class="keyword">@end</span>
+</pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年六月8日 星期五 23:24:06 for cocos2d-iphone-2.0-rc2 by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

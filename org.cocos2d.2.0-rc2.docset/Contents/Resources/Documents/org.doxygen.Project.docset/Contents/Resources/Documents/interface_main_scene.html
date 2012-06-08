@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>cocos2d-iphone-2.0-rc2: MainScene类参考</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="Icon-Small-50.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-iphone-2.0-rc2
+   &#160;<span id="projectnumber">2.0-rc2</span>
+   </div>
+   <div id="projectbrief">created:zhxubing@gmail.com</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="classes.html"><span>组合类型索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公有成员</a> &#124;
+<a href="#pub-static-methods">静态公有成员</a> &#124;
+<a href="#pro-attribs">保护属性</a>  </div>
+  <div class="headertitle">
+<div class="title">MainScene类参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类MainScene继承关系图：</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_main_scene.png" usemap="#MainScene_map" alt=""/>
+  <map id="MainScene_map" name="MainScene_map">
+<area href="class_c_c_layer.html" alt="CCLayer" shape="rect" coords="0,56,145,80"/>
+<area href="interface_c_c_scene.html" alt="CCScene" shape="rect" coords="155,56,300,80"/>
+<area href="interface_c_c_scene.html" alt="CCScene" shape="rect" coords="310,56,455,80"/>
+<area href="interface_c_c_scene.html" alt="CCScene" shape="rect" coords="465,56,610,80"/>
+<area href="class_c_c_node.html" alt="CCNode" shape="rect" coords="155,0,300,24"/>
+<area href="class_c_c_node.html" alt="CCNode" shape="rect" coords="310,0,455,24"/>
+<area href="class_c_c_node.html" alt="CCNode" shape="rect" coords="465,0,610,24"/>
+<area href="interface_add_remove_sprite_sheet.html" alt="AddRemoveSpriteSheet" shape="rect" coords="387,168,532,192"/>
+<area href="interface_iterate_sprite_sheet.html" alt="IterateSpriteSheet" shape="rect" coords="387,224,532,248"/>
+<area href="interface_performance_test1.html" alt="PerformanceTest1" shape="rect" coords="387,280,532,304"/>
+<area href="interface_performance_test1.html" alt="PerformanceTest1" shape="rect" coords="387,336,532,360"/>
+<area href="interface_performance_test1.html" alt="PerformanceTest1" shape="rect" coords="387,392,532,416"/>
+<area href="interface_performance_test2.html" alt="PerformanceTest2" shape="rect" coords="387,448,532,472"/>
+<area href="interface_performance_test2.html" alt="PerformanceTest2" shape="rect" coords="387,504,532,528"/>
+<area href="interface_performance_test2.html" alt="PerformanceTest2" shape="rect" coords="387,560,532,584"/>
+<area href="interface_performance_test3.html" alt="PerformanceTest3" shape="rect" coords="387,616,532,640"/>
+<area href="interface_performance_test3.html" alt="PerformanceTest3" shape="rect" coords="387,672,532,696"/>
+<area href="interface_performance_test4.html" alt="PerformanceTest4" shape="rect" coords="387,728,532,752"/>
+<area href="interface_performance_test4.html" alt="PerformanceTest4" shape="rect" coords="387,784,532,808"/>
+<area href="interface_performance_test5.html" alt="PerformanceTest5" shape="rect" coords="387,840,532,864"/>
+<area href="interface_performance_test5.html" alt="PerformanceTest5" shape="rect" coords="387,896,532,920"/>
+<area href="interface_performance_test6.html" alt="PerformanceTest6" shape="rect" coords="387,952,532,976"/>
+<area href="interface_performance_test6.html" alt="PerformanceTest6" shape="rect" coords="387,1008,532,1032"/>
+<area href="interface_performance_test7.html" alt="PerformanceTest7" shape="rect" coords="387,1064,532,1088"/>
+<area href="interface_performance_test7.html" alt="PerformanceTest7" shape="rect" coords="387,1120,532,1144"/>
+</map>
+ </div></div>
+
+<p><a href="class_main_scene-members.html">所有成员的列表。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+公有成员</h2></td></tr>
+<tr class="memitem:abf42c96b74ae947a917d91a458450e06"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf42c96b74ae947a917d91a458450e06"></a>
+(id)&#160;</td><td class="memItemRight" valign="bottom">- <b>initWithQuantityOfNodes:</b></td></tr>
+<tr class="memitem:abc916548d7cb3935ee6435d0009eaec5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc916548d7cb3935ee6435d0009eaec5"></a>
+(NSString *)&#160;</td><td class="memItemRight" valign="bottom">- <b>title</b></td></tr>
+<tr class="memitem:a1e5cd6aba7a3cb59dcaa03689104ef8c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e5cd6aba7a3cb59dcaa03689104ef8c"></a>
+(NSString *)&#160;</td><td class="memItemRight" valign="bottom">- <b>subtitle</b></td></tr>
+<tr class="memitem:a5b6f9375003329c0b620fe2924b12bd6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b6f9375003329c0b620fe2924b12bd6"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>onIncrease:</b></td></tr>
+<tr class="memitem:a832bb3db2585999e80f593859c3779f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a832bb3db2585999e80f593859c3779f7"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>onDecrease:</b></td></tr>
+<tr class="memitem:a4aab23a9ba5dd5935bdd829c6135738c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4aab23a9ba5dd5935bdd829c6135738c"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>updateQuantityLabel</b></td></tr>
+<tr class="memitem:ab322dc26ada732f3d96f82813e473a4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab322dc26ada732f3d96f82813e473a4b"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>updateQuantityOfNodes</b></td></tr>
+<tr class="memitem:a40f84a3412063eaa46c5f87f992fd4e7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40f84a3412063eaa46c5f87f992fd4e7"></a>
+(id)&#160;</td><td class="memItemRight" valign="bottom">- <b>initWithSubTest:particles:</b></td></tr>
+<tr class="memitem:a13ee10db5de6f0801edfac0ff66ca7a3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13ee10db5de6f0801edfac0ff66ca7a3"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>createParticleSystem</b></td></tr>
+<tr class="memitem:a34b73e3f3047c942ef942e2f3a4d54f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34b73e3f3047c942ef942e2f3a4d54f9"></a>
+(NSString *)&#160;</td><td class="memItemRight" valign="bottom">- <b>title</b></td></tr>
+<tr class="memitem:a5b6f9375003329c0b620fe2924b12bd6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b6f9375003329c0b620fe2924b12bd6"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>onIncrease:</b></td></tr>
+<tr class="memitem:a832bb3db2585999e80f593859c3779f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a832bb3db2585999e80f593859c3779f7"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>onDecrease:</b></td></tr>
+<tr class="memitem:a4aab23a9ba5dd5935bdd829c6135738c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4aab23a9ba5dd5935bdd829c6135738c"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>updateQuantityLabel</b></td></tr>
+<tr class="memitem:a6ecad8ddecc5917c20cd68a7d624b32e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ecad8ddecc5917c20cd68a7d624b32e"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>doTest</b></td></tr>
+<tr class="memitem:a605cb23dc84be212452fac5fd473017d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a605cb23dc84be212452fac5fd473017d"></a>
+(id)&#160;</td><td class="memItemRight" valign="bottom">- <b>initWithSubTest:nodes:</b></td></tr>
+<tr class="memitem:af92eaf7b4a735542db9d9823f34cc256"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af92eaf7b4a735542db9d9823f34cc256"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>updateNodes</b></td></tr>
+<tr class="memitem:a34b73e3f3047c942ef942e2f3a4d54f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34b73e3f3047c942ef942e2f3a4d54f9"></a>
+(NSString *)&#160;</td><td class="memItemRight" valign="bottom">- <b>title</b></td></tr>
+<tr class="memitem:a5b6f9375003329c0b620fe2924b12bd6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b6f9375003329c0b620fe2924b12bd6"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>onIncrease:</b></td></tr>
+<tr class="memitem:a832bb3db2585999e80f593859c3779f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a832bb3db2585999e80f593859c3779f7"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>onDecrease:</b></td></tr>
+<tr class="memitem:a1e6c755ff62791181b6179fcb9187ca9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e6c755ff62791181b6179fcb9187ca9"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>doTest:</b></td></tr>
+<tr class="memitem:a34b73e3f3047c942ef942e2f3a4d54f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34b73e3f3047c942ef942e2f3a4d54f9"></a>
+(NSString *)&#160;</td><td class="memItemRight" valign="bottom">- <b>title</b></td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+静态公有成员</h2></td></tr>
+<tr class="memitem:acfd003405d1966d5ab5ce172ea2a93fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfd003405d1966d5ab5ce172ea2a93fa"></a>
+(id)&#160;</td><td class="memItemRight" valign="bottom">+ <b>testWithQuantityOfNodes:</b></td></tr>
+<tr class="memitem:a21dfeea9e53b782cfd887e95bd6db8c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21dfeea9e53b782cfd887e95bd6db8c8"></a>
+(id)&#160;</td><td class="memItemRight" valign="bottom">+ <b>testWithSubTest:particles:</b></td></tr>
+<tr class="memitem:a6239df2a4c05e233fa0abd852b1b183a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6239df2a4c05e233fa0abd852b1b183a"></a>
+(id)&#160;</td><td class="memItemRight" valign="bottom">+ <b>testWithSubTest:nodes:</b></td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+保护属性</h2></td></tr>
+<tr class="memitem:a24b08a11337574ccf428cee733aa1b27"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24b08a11337574ccf428cee733aa1b27"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>lastRenderedCount</b></td></tr>
+<tr class="memitem:af9c9f839fe9b4ddb43f219e0d42bcc10"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9c9f839fe9b4ddb43f219e0d42bcc10"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>quantityOfNodes</b></td></tr>
+<tr class="memitem:ad90618d86222a859e84ed84bca94cea6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad90618d86222a859e84ed84bca94cea6"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>currentQuantityOfNodes</b></td></tr>
+<tr class="memitem:a96ad759155a73b9b1e44e847b36ca26b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96ad759155a73b9b1e44e847b36ca26b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>quantityParticles</b></td></tr>
+<tr class="memitem:adbc220ae030b4cda940624773c32b833"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adbc220ae030b4cda940624773c32b833"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>subtestNumber</b></td></tr>
+<tr class="memitem:a18ce6d9948d8a187e32032dfc9f5a56e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a18ce6d9948d8a187e32032dfc9f5a56e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>quantityNodes</b></td></tr>
+<tr class="memitem:a211cf8427913f63dbf28ca521695254b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a211cf8427913f63dbf28ca521695254b"></a>
+<a class="el" href="interface_sub_test.html">SubTest</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>subTest</b></td></tr>
+<tr class="memitem:a8dbfd03e8157ca81489891d3c5252ff9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8dbfd03e8157ca81489891d3c5252ff9"></a>
+<a class="el" href="interface_c_c_label_b_m_font.html">CCLabelBMFont</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>label</b></td></tr>
+<tr class="memitem:a5a8291876b92101b2069bc090dbf384f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a8291876b92101b2069bc090dbf384f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>numberOfTouchesB</b></td></tr>
+<tr class="memitem:a209c6a5c1ea8688fbf030bf3020db10c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a209c6a5c1ea8688fbf030bf3020db10c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>numberOfTouchesM</b></td></tr>
+<tr class="memitem:a8f1027377e6c844e9cd432edf52d5784"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f1027377e6c844e9cd432edf52d5784"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>numberOfTouchesE</b></td></tr>
+<tr class="memitem:ad521bd98e63084e90bb1faff6ae836d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad521bd98e63084e90bb1faff6ae836d1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>numberOfTouchesC</b></td></tr>
+<tr class="memitem:af0e56990b784974c37ce4304799d83db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0e56990b784974c37ce4304799d83db"></a>
+<a class="el" href="cc_types_8h.html#ae6c674aac4bfb46a4e6cb1e89bb66b4f">ccTime</a>&#160;</td><td class="memItemRight" valign="bottom"><b>elapsedTime</b></td></tr>
+</table>
+<hr/>该类的文档由以下文件生成：<ul>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/tests/PerformanceTests/PerformanceNodeChildrenTest/<a class="el" href="_performance_node_children_test_8h_source.html">PerformanceNodeChildrenTest.h</a></li>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/tests/PerformanceTests/PerformanceParticleTest/<a class="el" href="_performance_particle_test_2_main_scene_8h_source.html">MainScene.h</a></li>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/tests/PerformanceTests/PerformanceSpriteTest/<a class="el" href="_performance_sprite_test_2_main_scene_8h_source.html">MainScene.h</a></li>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/tests/PerformanceTests/PerformanceTouchesTest/<a class="el" href="_performance_touches_test_2_main_scene_8h_source.html">MainScene.h</a></li>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/tests/PerformanceTests/PerformanceNodeChildrenTest/PerformanceNodeChildrenTest.m</li>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/tests/PerformanceTests/PerformanceParticleTest/MainScene.m</li>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/tests/PerformanceTests/PerformanceSpriteTest/MainScene.m</li>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/tests/PerformanceTests/PerformanceTouchesTest/MainScene.m</li>
+</ul>
+</div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年六月8日 星期五 23:24:22 for cocos2d-iphone-2.0-rc2 by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

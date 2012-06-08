@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>cocos2d-iphone-2.0-rc2: /Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/external/Chipmunk/include/chipmunk/cpSpatialIndex.h源文件</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="Icon-Small-50.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-iphone-2.0-rc2
+   &#160;<span id="projectnumber">2.0-rc2</span>
+   </div>
+   <div id="projectbrief">created:zhxubing@gmail.com</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/external/Chipmunk/include/chipmunk/cpSpatialIndex.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/* Copyright (c) 2010 Scott Lembcke</span>
+<a name="l00002"></a>00002 <span class="comment"> * </span>
+<a name="l00003"></a>00003 <span class="comment"> * Permission is hereby granted, free of charge, to any person obtaining a copy</span>
+<a name="l00004"></a>00004 <span class="comment"> * of this software and associated documentation files (the &quot;Software&quot;), to deal</span>
+<a name="l00005"></a>00005 <span class="comment"> * in the Software without restriction, including without limitation the rights</span>
+<a name="l00006"></a>00006 <span class="comment"> * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell</span>
+<a name="l00007"></a>00007 <span class="comment"> * copies of the Software, and to permit persons to whom the Software is</span>
+<a name="l00008"></a>00008 <span class="comment"> * furnished to do so, subject to the following conditions:</span>
+<a name="l00009"></a>00009 <span class="comment"> * </span>
+<a name="l00010"></a>00010 <span class="comment"> * The above copyright notice and this permission notice shall be included in</span>
+<a name="l00011"></a>00011 <span class="comment"> * all copies or substantial portions of the Software.</span>
+<a name="l00012"></a>00012 <span class="comment"> * </span>
+<a name="l00013"></a>00013 <span class="comment"> * THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
+<a name="l00014"></a>00014 <span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
+<a name="l00015"></a>00015 <span class="comment"> * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</span>
+<a name="l00016"></a>00016 <span class="comment"> * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</span>
+<a name="l00017"></a>00017 <span class="comment"> * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</span>
+<a name="l00018"></a>00018 <span class="comment"> * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE</span>
+<a name="l00019"></a>00019 <span class="comment"> * SOFTWARE.</span>
+<a name="l00020"></a>00020 <span class="comment"> */</span>
+<a name="l00021"></a>00021 
+<a name="l00040"></a>00040 <span class="comment">//MARK: Spatial Index</span>
+<a name="l00041"></a>00041 
+<a name="l00045"></a><a class="code" href="group__cp_spatial_index.html#gafbecd34bd436d4a56200b7a542d94fc1">00045</a> <span class="keyword">typedef</span> <a class="code" href="group__cp_b_b_b.html#ga94835b3c44de11eae51d596f39a5fabc" title="Chipmunk&#39;s axis-aligned 2D bounding box type. (left, bottom, right, top)">cpBB</a> (*<a class="code" href="group__cp_spatial_index.html#gafbecd34bd436d4a56200b7a542d94fc1">cpSpatialIndexBBFunc</a>)(<span class="keywordtype">void</span> *obj);
+<a name="l00047"></a><a class="code" href="group__cp_spatial_index.html#gaf46e9eeecddefacab2be48aadd5d1a1d">00047</a> <span class="keyword">typedef</span> void (*<a class="code" href="group__cp_spatial_index.html#gaf46e9eeecddefacab2be48aadd5d1a1d" title="Spatial index/object iterator callback function type.">cpSpatialIndexIteratorFunc</a>)(<span class="keywordtype">void</span> *obj, <span class="keywordtype">void</span> *data);
+<a name="l00049"></a><a class="code" href="group__cp_spatial_index.html#ga4885d6b7a5f9f613a19a25e1c7ec5073">00049</a> <span class="keyword">typedef</span> void (*<a class="code" href="group__cp_spatial_index.html#ga4885d6b7a5f9f613a19a25e1c7ec5073" title="Spatial query callback function type.">cpSpatialIndexQueryFunc</a>)(<span class="keywordtype">void</span> *obj1, <span class="keywordtype">void</span> *obj2, <span class="keywordtype">void</span> *data);
+<a name="l00051"></a><a class="code" href="group__cp_spatial_index.html#ga60396867350f1f81025575e825ec852f">00051</a> <span class="keyword">typedef</span> <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> (*<a class="code" href="group__cp_spatial_index.html#ga60396867350f1f81025575e825ec852f" title="Spatial segment query callback function type.">cpSpatialIndexSegmentQueryFunc</a>)(<span class="keywordtype">void</span> *obj1, <span class="keywordtype">void</span> *obj2, <span class="keywordtype">void</span> *data);
+<a name="l00052"></a>00052 
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054 <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structcp_spatial_index_class.html">cpSpatialIndexClass</a> <a class="code" href="structcp_spatial_index_class.html">cpSpatialIndexClass</a>;
+<a name="l00055"></a>00055 <span class="keyword">typedef</span> <span class="keyword">struct </span>cpSpatialIndex cpSpatialIndex;
+<a name="l00056"></a>00056 
+<a name="l00058"></a>00058 <span class="keyword">struct </span>cpSpatialIndex {
+<a name="l00059"></a>00059         <a class="code" href="structcp_spatial_index_class.html">cpSpatialIndexClass</a> *klass;
+<a name="l00060"></a>00060         
+<a name="l00061"></a>00061         <a class="code" href="group__cp_spatial_index.html#gafbecd34bd436d4a56200b7a542d94fc1">cpSpatialIndexBBFunc</a> bbfunc;
+<a name="l00062"></a>00062         
+<a name="l00063"></a>00063         cpSpatialIndex *staticIndex, *dynamicIndex;
+<a name="l00064"></a>00064 };
+<a name="l00065"></a>00065 
+<a name="l00066"></a>00066 
+<a name="l00067"></a>00067 <span class="comment">//MARK: Spatial Hash</span>
+<a name="l00068"></a>00068 
+<a name="l00069"></a>00069 <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structcp_space_hash.html">cpSpaceHash</a> <a class="code" href="structcp_space_hash.html">cpSpaceHash</a>;
+<a name="l00070"></a>00070 
+<a name="l00072"></a>00072 <a class="code" href="structcp_space_hash.html">cpSpaceHash</a>* <a class="code" href="group__cp_spatial_index.html#ga61ba28bd31d8f7e19d331afae0ee76b9" title="Allocate a spatial hash.">cpSpaceHashAlloc</a>(<span class="keywordtype">void</span>);
+<a name="l00074"></a>00074 cpSpatialIndex* <a class="code" href="group__cp_spatial_index.html#gac028d5b83798b0a9bbd4d0d29b9f7914" title="Initialize a spatial hash.">cpSpaceHashInit</a>(<a class="code" href="structcp_space_hash.html">cpSpaceHash</a> *hash, <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> celldim, <span class="keywordtype">int</span> numcells, <a class="code" href="group__cp_spatial_index.html#gafbecd34bd436d4a56200b7a542d94fc1">cpSpatialIndexBBFunc</a> bbfunc, cpSpatialIndex *staticIndex);
+<a name="l00076"></a>00076 cpSpatialIndex* <a class="code" href="group__cp_spatial_index.html#ga48c6a8a52184403547f5c185c2a758f6" title="Allocate and initialize a spatial hash.">cpSpaceHashNew</a>(<a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> celldim, <span class="keywordtype">int</span> cells, <a class="code" href="group__cp_spatial_index.html#gafbecd34bd436d4a56200b7a542d94fc1">cpSpatialIndexBBFunc</a> bbfunc, cpSpatialIndex *staticIndex);
+<a name="l00077"></a>00077 
+<a name="l00082"></a>00082 <span class="keywordtype">void</span> <a class="code" href="group__cp_spatial_index.html#ga71489134c15a3bcb1efb0913e765a3c1">cpSpaceHashResize</a>(<a class="code" href="structcp_space_hash.html">cpSpaceHash</a> *hash, <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> celldim, <span class="keywordtype">int</span> numcells);
+<a name="l00083"></a>00083 
+<a name="l00084"></a>00084 <span class="comment">//MARK: AABB Tree</span>
+<a name="l00085"></a>00085 
+<a name="l00086"></a>00086 <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structcp_b_b_tree.html">cpBBTree</a> <a class="code" href="structcp_b_b_tree.html">cpBBTree</a>;
+<a name="l00087"></a>00087 
+<a name="l00089"></a>00089 <a class="code" href="structcp_b_b_tree.html">cpBBTree</a>* <a class="code" href="group__cp_spatial_index.html#ga415b605cbf6dc64a6f519923bb14e223" title="Allocate a bounding box tree.">cpBBTreeAlloc</a>(<span class="keywordtype">void</span>);
+<a name="l00091"></a>00091 cpSpatialIndex* <a class="code" href="group__cp_spatial_index.html#ga2c7d3e7cda09354f2a15fce6c28e2a81" title="Initialize a bounding box tree.">cpBBTreeInit</a>(<a class="code" href="structcp_b_b_tree.html">cpBBTree</a> *tree, <a class="code" href="group__cp_spatial_index.html#gafbecd34bd436d4a56200b7a542d94fc1">cpSpatialIndexBBFunc</a> bbfunc, cpSpatialIndex *staticIndex);
+<a name="l00093"></a>00093 cpSpatialIndex* <a class="code" href="group__cp_spatial_index.html#gadc8bdef1e33f3c238bf17394b94eacb6" title="Allocate and initialize a bounding box tree.">cpBBTreeNew</a>(<a class="code" href="group__cp_spatial_index.html#gafbecd34bd436d4a56200b7a542d94fc1">cpSpatialIndexBBFunc</a> bbfunc, cpSpatialIndex *staticIndex);
+<a name="l00094"></a>00094 
+<a name="l00096"></a>00096 <span class="keywordtype">void</span> <a class="code" href="group__cp_spatial_index.html#ga299b4e2193ff1df336c925857334364f" title="Perform a static top down optimization of the tree.">cpBBTreeOptimize</a>(cpSpatialIndex *index);
+<a name="l00097"></a>00097 
+<a name="l00100"></a><a class="code" href="group__cp_spatial_index.html#gaa256addb4f65c6846dfc306ef62a3988">00100</a> <span class="keyword">typedef</span> <a class="code" href="structcp_vect.html">cpVect</a> (*<a class="code" href="group__cp_spatial_index.html#gaa256addb4f65c6846dfc306ef62a3988">cpBBTreeVelocityFunc</a>)(<span class="keywordtype">void</span> *obj);
+<a name="l00102"></a>00102 <span class="keywordtype">void</span> <a class="code" href="group__cp_spatial_index.html#gaf01118b5105cf3136d4ee6cf372539d5" title="Set the velocity function for the bounding box tree to enable temporal coherence.">cpBBTreeSetVelocityFunc</a>(cpSpatialIndex *index, <a class="code" href="group__cp_spatial_index.html#gaa256addb4f65c6846dfc306ef62a3988">cpBBTreeVelocityFunc</a> func);
+<a name="l00103"></a>00103 
+<a name="l00104"></a>00104 <span class="comment">//MARK: Single Axis Sweep</span>
+<a name="l00105"></a>00105 
+<a name="l00106"></a>00106 <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structcp_sweep1_d.html">cpSweep1D</a> <a class="code" href="structcp_sweep1_d.html">cpSweep1D</a>;
+<a name="l00107"></a>00107 
+<a name="l00109"></a>00109 <a class="code" href="structcp_sweep1_d.html">cpSweep1D</a>* <a class="code" href="group__cp_spatial_index.html#ga04e4015461583471c66a58e9d6874679" title="Allocate a 1D sort and sweep broadphase.">cpSweep1DAlloc</a>(<span class="keywordtype">void</span>);
+<a name="l00111"></a>00111 cpSpatialIndex* <a class="code" href="group__cp_spatial_index.html#ga69af70bd9dbc39de7c98d677c872ca80" title="Initialize a 1D sort and sweep broadphase.">cpSweep1DInit</a>(<a class="code" href="structcp_sweep1_d.html">cpSweep1D</a> *sweep, <a class="code" href="group__cp_spatial_index.html#gafbecd34bd436d4a56200b7a542d94fc1">cpSpatialIndexBBFunc</a> bbfunc, cpSpatialIndex *staticIndex);
+<a name="l00113"></a>00113 cpSpatialIndex* <a class="code" href="group__cp_spatial_index.html#gaaec0552c5ec0a4014d8930c0203261d9" title="Allocate and initialize a 1D sort and sweep broadphase.">cpSweep1DNew</a>(<a class="code" href="group__cp_spatial_index.html#gafbecd34bd436d4a56200b7a542d94fc1">cpSpatialIndexBBFunc</a> bbfunc, cpSpatialIndex *staticIndex);
+<a name="l00114"></a>00114 
+<a name="l00115"></a>00115 <span class="comment">//MARK: Spatial Index Implementation</span>
+<a name="l00116"></a>00116 
+<a name="l00117"></a>00117 <span class="keyword">typedef</span> void (*cpSpatialIndexDestroyImpl)(cpSpatialIndex *index);
+<a name="l00118"></a>00118 
+<a name="l00119"></a>00119 <span class="keyword">typedef</span> int (*cpSpatialIndexCountImpl)(cpSpatialIndex *index);
+<a name="l00120"></a>00120 <span class="keyword">typedef</span> void (*cpSpatialIndexEachImpl)(cpSpatialIndex *index, <a class="code" href="group__cp_spatial_index.html#gaf46e9eeecddefacab2be48aadd5d1a1d" title="Spatial index/object iterator callback function type.">cpSpatialIndexIteratorFunc</a> func, <span class="keywordtype">void</span> *data);
+<a name="l00121"></a>00121 
+<a name="l00122"></a>00122 <span class="keyword">typedef</span> <a class="code" href="group__basic_types.html#gab6e5d8afee598a57cd323abae5310244" title="Chipmunk&#39;s boolean type.">cpBool</a> (*cpSpatialIndexContainsImpl)(cpSpatialIndex *index, <span class="keywordtype">void</span> *obj, <a class="code" href="group__basic_types.html#gae7eb4775a9f43914a15553ca65a048f4" title="Hash value type.">cpHashValue</a> hashid);
+<a name="l00123"></a>00123 <span class="keyword">typedef</span> void (*cpSpatialIndexInsertImpl)(cpSpatialIndex *index, <span class="keywordtype">void</span> *obj, <a class="code" href="group__basic_types.html#gae7eb4775a9f43914a15553ca65a048f4" title="Hash value type.">cpHashValue</a> hashid);
+<a name="l00124"></a>00124 <span class="keyword">typedef</span> void (*cpSpatialIndexRemoveImpl)(cpSpatialIndex *index, <span class="keywordtype">void</span> *obj, <a class="code" href="group__basic_types.html#gae7eb4775a9f43914a15553ca65a048f4" title="Hash value type.">cpHashValue</a> hashid);
+<a name="l00125"></a>00125 
+<a name="l00126"></a>00126 <span class="keyword">typedef</span> void (*cpSpatialIndexReindexImpl)(cpSpatialIndex *index);
+<a name="l00127"></a>00127 <span class="keyword">typedef</span> void (*cpSpatialIndexReindexObjectImpl)(cpSpatialIndex *index, <span class="keywordtype">void</span> *obj, <a class="code" href="group__basic_types.html#gae7eb4775a9f43914a15553ca65a048f4" title="Hash value type.">cpHashValue</a> hashid);
+<a name="l00128"></a>00128 <span class="keyword">typedef</span> void (*cpSpatialIndexReindexQueryImpl)(cpSpatialIndex *index, <a class="code" href="group__cp_spatial_index.html#ga4885d6b7a5f9f613a19a25e1c7ec5073" title="Spatial query callback function type.">cpSpatialIndexQueryFunc</a> func, <span class="keywordtype">void</span> *data);
+<a name="l00129"></a>00129 
+<a name="l00130"></a>00130 <span class="keyword">typedef</span> void (*cpSpatialIndexQueryImpl)(cpSpatialIndex *index, <span class="keywordtype">void</span> *obj, <a class="code" href="structcp_b_b.html" title="Chipmunk&#39;s axis-aligned 2D bounding box type. (left, bottom, right, top)">cpBB</a> bb, <a class="code" href="group__cp_spatial_index.html#ga4885d6b7a5f9f613a19a25e1c7ec5073" title="Spatial query callback function type.">cpSpatialIndexQueryFunc</a> func, <span class="keywordtype">void</span> *data);
+<a name="l00131"></a>00131 <span class="keyword">typedef</span> void (*cpSpatialIndexSegmentQueryImpl)(cpSpatialIndex *index, <span class="keywordtype">void</span> *obj, <a class="code" href="structcp_vect.html">cpVect</a> a, <a class="code" href="structcp_vect.html">cpVect</a> b, <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> t_exit, <a class="code" href="group__cp_spatial_index.html#ga60396867350f1f81025575e825ec852f" title="Spatial segment query callback function type.">cpSpatialIndexSegmentQueryFunc</a> func, <span class="keywordtype">void</span> *data);
+<a name="l00132"></a>00132 
+<a name="l00133"></a><a class="code" href="structcp_spatial_index_class.html">00133</a> <span class="keyword">struct </span><a class="code" href="structcp_spatial_index_class.html">cpSpatialIndexClass</a> {
+<a name="l00134"></a>00134         cpSpatialIndexDestroyImpl destroy;
+<a name="l00135"></a>00135         
+<a name="l00136"></a>00136         cpSpatialIndexCountImpl count;
+<a name="l00137"></a>00137         cpSpatialIndexEachImpl each;
+<a name="l00138"></a>00138         
+<a name="l00139"></a>00139         cpSpatialIndexContainsImpl contains;
+<a name="l00140"></a>00140         cpSpatialIndexInsertImpl insert;
+<a name="l00141"></a>00141         cpSpatialIndexRemoveImpl <span class="keyword">remove</span>;
+<a name="l00142"></a>00142         
+<a name="l00143"></a>00143         cpSpatialIndexReindexImpl reindex;
+<a name="l00144"></a>00144         cpSpatialIndexReindexObjectImpl reindexObject;
+<a name="l00145"></a>00145         cpSpatialIndexReindexQueryImpl reindexQuery;
+<a name="l00146"></a>00146         
+<a name="l00147"></a>00147         cpSpatialIndexQueryImpl query;
+<a name="l00148"></a>00148         cpSpatialIndexSegmentQueryImpl segmentQuery;
+<a name="l00149"></a>00149 };
+<a name="l00150"></a>00150 
+<a name="l00152"></a>00152 <span class="keywordtype">void</span> <a class="code" href="group__cp_spatial_index.html#ga13a62ecd13b6dbee7d4c8ae056e0f86f" title="Destroy and free a spatial index.">cpSpatialIndexFree</a>(cpSpatialIndex *index);
+<a name="l00154"></a>00154 <span class="keywordtype">void</span> <a class="code" href="group__cp_spatial_index.html#ga8abb667968f231b2f87c7273d4b0e533" title="Collide the objects in dynamicIndex against the objects in staticIndex using the query callback funct...">cpSpatialIndexCollideStatic</a>(cpSpatialIndex *dynamicIndex, cpSpatialIndex *staticIndex, <a class="code" href="group__cp_spatial_index.html#ga4885d6b7a5f9f613a19a25e1c7ec5073" title="Spatial query callback function type.">cpSpatialIndexQueryFunc</a> func, <span class="keywordtype">void</span> *data);
+<a name="l00155"></a>00155 
+<a name="l00157"></a>00157 <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> cpSpatialIndexDestroy(cpSpatialIndex *index)
+<a name="l00158"></a>00158 {
+<a name="l00159"></a>00159         <span class="keywordflow">if</span>(index-&gt;klass) index-&gt;klass-&gt;destroy(index);
+<a name="l00160"></a>00160 }
+<a name="l00161"></a>00161 
+<a name="l00163"></a>00163 <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> cpSpatialIndexCount(cpSpatialIndex *index)
+<a name="l00164"></a>00164 {
+<a name="l00165"></a>00165         <span class="keywordflow">return</span> index-&gt;klass-&gt;count(index);
+<a name="l00166"></a>00166 }
+<a name="l00167"></a>00167 
+<a name="l00169"></a>00169 <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> cpSpatialIndexEach(cpSpatialIndex *index, <a class="code" href="group__cp_spatial_index.html#gaf46e9eeecddefacab2be48aadd5d1a1d" title="Spatial index/object iterator callback function type.">cpSpatialIndexIteratorFunc</a> func, <span class="keywordtype">void</span> *data)
+<a name="l00170"></a>00170 {
+<a name="l00171"></a>00171         index-&gt;klass-&gt;each(index, func, data);
+<a name="l00172"></a>00172 }
+<a name="l00173"></a>00173 
+<a name="l00176"></a>00176 <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="group__basic_types.html#gab6e5d8afee598a57cd323abae5310244" title="Chipmunk&#39;s boolean type.">cpBool</a> cpSpatialIndexContains(cpSpatialIndex *index, <span class="keywordtype">void</span> *obj, <a class="code" href="group__basic_types.html#gae7eb4775a9f43914a15553ca65a048f4" title="Hash value type.">cpHashValue</a> hashid)
+<a name="l00177"></a>00177 {
+<a name="l00178"></a>00178         <span class="keywordflow">return</span> index-&gt;klass-&gt;contains(index, obj, hashid);
+<a name="l00179"></a>00179 }
+<a name="l00180"></a>00180 
+<a name="l00183"></a>00183 <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> cpSpatialIndexInsert(cpSpatialIndex *index, <span class="keywordtype">void</span> *obj, <a class="code" href="group__basic_types.html#gae7eb4775a9f43914a15553ca65a048f4" title="Hash value type.">cpHashValue</a> hashid)
+<a name="l00184"></a>00184 {
+<a name="l00185"></a>00185         index-&gt;klass-&gt;insert(index, obj, hashid);
+<a name="l00186"></a>00186 }
+<a name="l00187"></a>00187 
+<a name="l00190"></a>00190 <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> cpSpatialIndexRemove(cpSpatialIndex *index, <span class="keywordtype">void</span> *obj, <a class="code" href="group__basic_types.html#gae7eb4775a9f43914a15553ca65a048f4" title="Hash value type.">cpHashValue</a> hashid)
+<a name="l00191"></a>00191 {
+<a name="l00192"></a>00192         index-&gt;klass-&gt;remove(index, obj, hashid);
+<a name="l00193"></a>00193 }
+<a name="l00194"></a>00194 
+<a name="l00196"></a>00196 <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> cpSpatialIndexReindex(cpSpatialIndex *index)
+<a name="l00197"></a>00197 {
+<a name="l00198"></a>00198         index-&gt;klass-&gt;reindex(index);
+<a name="l00199"></a>00199 }
+<a name="l00200"></a>00200 
+<a name="l00202"></a>00202 <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> cpSpatialIndexReindexObject(cpSpatialIndex *index, <span class="keywordtype">void</span> *obj, <a class="code" href="group__basic_types.html#gae7eb4775a9f43914a15553ca65a048f4" title="Hash value type.">cpHashValue</a> hashid)
+<a name="l00203"></a>00203 {
+<a name="l00204"></a>00204         index-&gt;klass-&gt;reindexObject(index, obj, hashid);
+<a name="l00205"></a>00205 }
+<a name="l00206"></a>00206 
+<a name="l00208"></a>00208 <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> cpSpatialIndexQuery(cpSpatialIndex *index, <span class="keywordtype">void</span> *obj, <a class="code" href="structcp_b_b.html" title="Chipmunk&#39;s axis-aligned 2D bounding box type. (left, bottom, right, top)">cpBB</a> bb, <a class="code" href="group__cp_spatial_index.html#ga4885d6b7a5f9f613a19a25e1c7ec5073" title="Spatial query callback function type.">cpSpatialIndexQueryFunc</a> func, <span class="keywordtype">void</span> *data)
+<a name="l00209"></a>00209 {
+<a name="l00210"></a>00210         index-&gt;klass-&gt;query(index, obj, bb, func, data);
+<a name="l00211"></a>00211 }
+<a name="l00212"></a>00212 
+<a name="l00214"></a>00214 <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> cpSpatialIndexSegmentQuery(cpSpatialIndex *index, <span class="keywordtype">void</span> *obj, <a class="code" href="structcp_vect.html">cpVect</a> a, <a class="code" href="structcp_vect.html">cpVect</a> b, <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> t_exit, <a class="code" href="group__cp_spatial_index.html#ga60396867350f1f81025575e825ec852f" title="Spatial segment query callback function type.">cpSpatialIndexSegmentQueryFunc</a> func, <span class="keywordtype">void</span> *data)
+<a name="l00215"></a>00215 {
+<a name="l00216"></a>00216         index-&gt;klass-&gt;segmentQuery(index, obj, a, b, t_exit, func, data);
+<a name="l00217"></a>00217 }
+<a name="l00218"></a>00218 
+<a name="l00222"></a>00222 <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> cpSpatialIndexReindexQuery(cpSpatialIndex *index, <a class="code" href="group__cp_spatial_index.html#ga4885d6b7a5f9f613a19a25e1c7ec5073" title="Spatial query callback function type.">cpSpatialIndexQueryFunc</a> func, <span class="keywordtype">void</span> *data)
+<a name="l00223"></a>00223 {
+<a name="l00224"></a>00224         index-&gt;klass-&gt;reindexQuery(index, func, data);
+<a name="l00225"></a>00225 }
+<a name="l00226"></a>00226 
+</pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年六月8日 星期五 23:30:13 for cocos2d-iphone-2.0-rc2 by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

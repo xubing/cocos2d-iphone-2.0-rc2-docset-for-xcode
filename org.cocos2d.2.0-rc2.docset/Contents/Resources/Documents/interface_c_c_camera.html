@@ -1,0 +1,454 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>cocos2d-iphone-2.0-rc2: CCCamera类参考</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="Icon-Small-50.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-iphone-2.0-rc2
+   &#160;<span id="projectnumber">2.0-rc2</span>
+   </div>
+   <div id="projectbrief">created:zhxubing@gmail.com</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="classes.html"><span>组合类型索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公有成员</a> &#124;
+<a href="#pub-static-methods">静态公有成员</a> &#124;
+<a href="#pro-attribs">保护属性</a> &#124;
+<a href="#properties">属性</a>  </div>
+  <div class="headertitle">
+<div class="title">CCCamera类参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#import &lt;<a class="el" href="_c_c_camera_8h_source.html">CCCamera.h</a>&gt;</code></p>
+
+<p><a href="class_c_c_camera-members.html">所有成员的列表。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+公有成员</h2></td></tr>
+<tr class="memitem:abd65553333481d2463d5d6be2f550445"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_camera.html#abd65553333481d2463d5d6be2f550445">restore</a></td></tr>
+<tr class="memitem:a5b42131251688d0a990821019ed2a339"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_camera.html#a5b42131251688d0a990821019ed2a339">locate</a></td></tr>
+<tr class="memitem:ad2cdf939a611a3831d0e9e5bc5f23ec7"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_camera.html#ad2cdf939a611a3831d0e9e5bc5f23ec7">setEyeX:eyeY:eyeZ:</a></td></tr>
+<tr class="memitem:a382432599e907c5c3e8f5c5f91169387"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_camera.html#a382432599e907c5c3e8f5c5f91169387">setCenterX:centerY:centerZ:</a></td></tr>
+<tr class="memitem:acb6c6175765ba500f7d596bfc7382357"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_camera.html#acb6c6175765ba500f7d596bfc7382357">setUpX:upY:upZ:</a></td></tr>
+<tr class="memitem:afd57f0641e3f4224c0e5ec68ae0d664a"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_camera.html#afd57f0641e3f4224c0e5ec68ae0d664a">eyeX:eyeY:eyeZ:</a></td></tr>
+<tr class="memitem:a46f9478718fb45c68aeedcb170055291"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_camera.html#a46f9478718fb45c68aeedcb170055291">centerX:centerY:centerZ:</a></td></tr>
+<tr class="memitem:a8c5a3413b304f241dad48c224b74190d"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_camera.html#a8c5a3413b304f241dad48c224b74190d">upX:upY:upZ:</a></td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+静态公有成员</h2></td></tr>
+<tr class="memitem:a74f0f52f055e36fee0708dbb25c38835"><td class="memItemLeft" align="right" valign="top">(float)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_c_c_camera.html#a74f0f52f055e36fee0708dbb25c38835">getZEye</a></td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+保护属性</h2></td></tr>
+<tr class="memitem:a506067ad31f5e42051bcbd5aa41677bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a506067ad31f5e42051bcbd5aa41677bd"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>eyeX_</b></td></tr>
+<tr class="memitem:a92fc96343efc2f9d1472672e1961d5e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92fc96343efc2f9d1472672e1961d5e6"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>eyeY_</b></td></tr>
+<tr class="memitem:ae9479a1d2bbfa002ad0cc23cbd555f62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae9479a1d2bbfa002ad0cc23cbd555f62"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>eyeZ_</b></td></tr>
+<tr class="memitem:a1c7ebb287bf6ff04af12bf1779530394"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c7ebb287bf6ff04af12bf1779530394"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>centerX_</b></td></tr>
+<tr class="memitem:a0055d264b3ba6b8d5eb145686af8dbe7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0055d264b3ba6b8d5eb145686af8dbe7"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>centerY_</b></td></tr>
+<tr class="memitem:acf7255c4b9f82298dbc5a4df807a1363"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf7255c4b9f82298dbc5a4df807a1363"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>centerZ_</b></td></tr>
+<tr class="memitem:a7fa497ccbe417febbff9158564c977af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7fa497ccbe417febbff9158564c977af"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>upX_</b></td></tr>
+<tr class="memitem:a011e603c9f1b6eddcbf68957a6b08334"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a011e603c9f1b6eddcbf68957a6b08334"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>upY_</b></td></tr>
+<tr class="memitem:a705369eff4e2aa6f5cc94ff39d122df9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a705369eff4e2aa6f5cc94ff39d122df9"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>upZ_</b></td></tr>
+<tr class="memitem:af68279c64517937133c23bdb744d9ae0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af68279c64517937133c23bdb744d9ae0"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>dirty_</b></td></tr>
+<tr class="memitem:afeccb845e121d300e0e3822223025c7e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afeccb845e121d300e0e3822223025c7e"></a>
+<a class="el" href="structkm_mat4.html">kmMat4</a>&#160;</td><td class="memItemRight" valign="bottom"><b>lookupMatrix_</b></td></tr>
+<tr><td colspan="2"><h2><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a692d41f24ecf5c3091d6ed248b800ee8"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_camera.html#a692d41f24ecf5c3091d6ed248b800ee8">dirty</a></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>详细描述</h2>
+<div class="textblock"><p>A <a class="el" href="interface_c_c_camera.html">CCCamera</a> is used in every <a class="el" href="class_c_c_node.html">CCNode</a>. Useful to look at the object from different views. The OpenGL gluLookAt() function is used to locate the camera.</p>
+<p>If the object is transformed by any of the scale, rotation or position attributes, then they will override the camera. </p>
+<div class="fragment"><pre class="fragment">IMPORTANT: Either your use the camera or the rotation/scale/position properties. You can't use both.
+</pre></div><p> World coordinates won't work if you use the camera.</p>
+<p>Limitations:</p>
+<ul>
+<li>Some nodes, like <a class="el" href="interface_c_c_parallax_node.html">CCParallaxNode</a>, CCParticle uses world node coordinates, and they won't work properly if you move them (or any of their ancestors) using the camera.</li>
+</ul>
+<ul>
+<li><p class="startli">It doesn't work on batched nodes like <a class="el" href="class_c_c_sprite.html">CCSprite</a> objects when they are parented to a <a class="el" href="interface_c_c_sprite_batch_node.html">CCSpriteBatchNode</a> object.</p>
+<ul>
+<li>It is recommended to use it ONLY if you are going to create 3D effects. For 2D effecs, use the action <a class="el" href="interface_c_c_follow.html">CCFollow</a> or position/scale/rotate. </li>
+</ul>
+</li>
+</ul>
+</div><hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a46f9478718fb45c68aeedcb170055291"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) centerX: </td>
+          <td></td>
+          <td class="paramtype">(float*)&#160;</td>
+          <td class="paramname"><em>x</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">centerY:</td>
+          <td></td>
+          <td class="paramtype">(float*)&#160;</td>
+          <td class="paramname"><em>y</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">centerZ:</td>
+          <td></td>
+          <td class="paramtype">(float*)&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>get the center vector values in points </p>
+
+</div>
+</div>
+<a class="anchor" id="afd57f0641e3f4224c0e5ec68ae0d664a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) eyeX: </td>
+          <td></td>
+          <td class="paramtype">(float*)&#160;</td>
+          <td class="paramname"><em>x</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">eyeY:</td>
+          <td></td>
+          <td class="paramtype">(float*)&#160;</td>
+          <td class="paramname"><em>y</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">eyeZ:</td>
+          <td></td>
+          <td class="paramtype">(float*)&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>get the eye vector values in points </p>
+
+</div>
+</div>
+<a class="anchor" id="a74f0f52f055e36fee0708dbb25c38835"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (float) <a class="el" href="interface_c_c_camera.html#a74f0f52f055e36fee0708dbb25c38835">getZEye</a> </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>returns the Z eye </p>
+
+</div>
+</div>
+<a class="anchor" id="a5b42131251688d0a990821019ed2a339"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) <a class="el" href="interface_c_c_camera.html#a5b42131251688d0a990821019ed2a339">locate</a> </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Sets the camera using gluLookAt using its eye, center and up_vector </p>
+
+</div>
+</div>
+<a class="anchor" id="abd65553333481d2463d5d6be2f550445"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) <a class="el" href="interface_c_c_camera.html#abd65553333481d2463d5d6be2f550445">restore</a> </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>sets the camera in the defaul position </p>
+
+</div>
+</div>
+<a class="anchor" id="a382432599e907c5c3e8f5c5f91169387"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setCenterX: </td>
+          <td></td>
+          <td class="paramtype">(float)&#160;</td>
+          <td class="paramname"><em>x</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">centerY:</td>
+          <td></td>
+          <td class="paramtype">(float)&#160;</td>
+          <td class="paramname"><em>y</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">centerZ:</td>
+          <td></td>
+          <td class="paramtype">(float)&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>sets the center values in points </p>
+
+</div>
+</div>
+<a class="anchor" id="ad2cdf939a611a3831d0e9e5bc5f23ec7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setEyeX: </td>
+          <td></td>
+          <td class="paramtype">(float)&#160;</td>
+          <td class="paramname"><em>x</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">eyeY:</td>
+          <td></td>
+          <td class="paramtype">(float)&#160;</td>
+          <td class="paramname"><em>y</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">eyeZ:</td>
+          <td></td>
+          <td class="paramtype">(float)&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>sets the eye values in points </p>
+
+</div>
+</div>
+<a class="anchor" id="acb6c6175765ba500f7d596bfc7382357"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setUpX: </td>
+          <td></td>
+          <td class="paramtype">(float)&#160;</td>
+          <td class="paramname"><em>x</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">upY:</td>
+          <td></td>
+          <td class="paramtype">(float)&#160;</td>
+          <td class="paramname"><em>y</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">upZ:</td>
+          <td></td>
+          <td class="paramtype">(float)&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>sets the up values </p>
+
+</div>
+</div>
+<a class="anchor" id="a8c5a3413b304f241dad48c224b74190d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) upX: </td>
+          <td></td>
+          <td class="paramtype">(float*)&#160;</td>
+          <td class="paramname"><em>x</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">upY:</td>
+          <td></td>
+          <td class="paramtype">(float*)&#160;</td>
+          <td class="paramname"><em>y</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">upZ:</td>
+          <td></td>
+          <td class="paramtype">(float*)&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>get the up vector values </p>
+
+</div>
+</div>
+<hr/><h2>属性文档</h2>
+<a class="anchor" id="a692d41f24ecf5c3091d6ed248b800ee8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) <a class="el" href="interface_c_c_camera.html#a692d41f24ecf5c3091d6ed248b800ee8">dirty</a><code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>whether of not the camera is dirty </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/cocos2d/<a class="el" href="_c_c_camera_8h_source.html">CCCamera.h</a></li>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/cocos2d/CCCamera.m</li>
+</ul>
+</div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年六月8日 星期五 23:30:17 for cocos2d-iphone-2.0-rc2 by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

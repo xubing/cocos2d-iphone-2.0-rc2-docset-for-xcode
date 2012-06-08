@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>cocos2d-iphone-2.0-rc2: /Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/external/Box2d/Testbed/Tests/PolyShapes.h源文件</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="Icon-Small-50.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-iphone-2.0-rc2
+   &#160;<span id="projectnumber">2.0-rc2</span>
+   </div>
+   <div id="projectbrief">created:zhxubing@gmail.com</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/external/Box2d/Testbed/Tests/PolyShapes.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/*</span>
+<a name="l00002"></a>00002 <span class="comment">* Copyright (c) 2006-2009 Erin Catto http://www.box2d.org</span>
+<a name="l00003"></a>00003 <span class="comment">*</span>
+<a name="l00004"></a>00004 <span class="comment">* This software is provided &#39;as-is&#39;, without any express or implied</span>
+<a name="l00005"></a>00005 <span class="comment">* warranty.  In no event will the authors be held liable for any damages</span>
+<a name="l00006"></a>00006 <span class="comment">* arising from the use of this software.</span>
+<a name="l00007"></a>00007 <span class="comment">* Permission is granted to anyone to use this software for any purpose,</span>
+<a name="l00008"></a>00008 <span class="comment">* including commercial applications, and to alter it and redistribute it</span>
+<a name="l00009"></a>00009 <span class="comment">* freely, subject to the following restrictions:</span>
+<a name="l00010"></a>00010 <span class="comment">* 1. The origin of this software must not be misrepresented; you must not</span>
+<a name="l00011"></a>00011 <span class="comment">* claim that you wrote the original software. If you use this software</span>
+<a name="l00012"></a>00012 <span class="comment">* in a product, an acknowledgment in the product documentation would be</span>
+<a name="l00013"></a>00013 <span class="comment">* appreciated but is not required.</span>
+<a name="l00014"></a>00014 <span class="comment">* 2. Altered source versions must be plainly marked as such, and must not be</span>
+<a name="l00015"></a>00015 <span class="comment">* misrepresented as being the original software.</span>
+<a name="l00016"></a>00016 <span class="comment">* 3. This notice may not be removed or altered from any source distribution.</span>
+<a name="l00017"></a>00017 <span class="comment">*/</span>
+<a name="l00018"></a>00018 
+<a name="l00019"></a>00019 <span class="preprocessor">#ifndef POLY_SHAPES_H</span>
+<a name="l00020"></a>00020 <span class="preprocessor"></span><span class="preprocessor">#define POLY_SHAPES_H</span>
+<a name="l00021"></a>00021 <span class="preprocessor"></span>
+<a name="l00024"></a>00024 
+<a name="l00025"></a>00025 <span class="keyword">const</span> int32 k_maxBodies = 256;
+<a name="l00026"></a>00026 
+<a name="l00030"></a><a class="code" href="class_poly_shapes_callback.html">00030</a> <span class="keyword">class </span><a class="code" href="class_poly_shapes_callback.html">PolyShapesCallback</a> : <span class="keyword">public</span> <a class="code" href="classb2_query_callback.html">b2QueryCallback</a>
+<a name="l00031"></a>00031 {
+<a name="l00032"></a>00032 <span class="keyword">public</span>:
+<a name="l00033"></a>00033 
+<a name="l00034"></a>00034         <span class="keyword">enum</span>
+<a name="l00035"></a>00035         {
+<a name="l00036"></a>00036                 e_maxCount = 4
+<a name="l00037"></a>00037         };
+<a name="l00038"></a>00038 
+<a name="l00039"></a>00039         <a class="code" href="class_poly_shapes_callback.html">PolyShapesCallback</a>()
+<a name="l00040"></a>00040         {
+<a name="l00041"></a>00041                 m_count = 0;
+<a name="l00042"></a>00042         }
+<a name="l00043"></a>00043 
+<a name="l00044"></a>00044         <span class="keywordtype">void</span> DrawFixture(<a class="code" href="classb2_fixture.html">b2Fixture</a>* fixture)
+<a name="l00045"></a>00045         {
+<a name="l00046"></a>00046                 <a class="code" href="structb2_color.html" title="Color for debug drawing. Each value has the range [0,1].">b2Color</a> color(0.95f, 0.95f, 0.6f);
+<a name="l00047"></a>00047                 <span class="keyword">const</span> <a class="code" href="structb2_transform.html">b2Transform</a>&amp; xf = fixture-&gt;<a class="code" href="classb2_fixture.html#a9d6536ef274d768e86ab0a8330921535">GetBody</a>()-&gt;<a class="code" href="classb2_body.html#adaaebca750d0bda56a543884adc5f519">GetTransform</a>();
+<a name="l00048"></a>00048 
+<a name="l00049"></a>00049                 <span class="keywordflow">switch</span> (fixture-&gt;<a class="code" href="classb2_fixture.html#ab0e1d6bc1c42e6f779e77db408ab2d24">GetType</a>())
+<a name="l00050"></a>00050                 {
+<a name="l00051"></a>00051                 <span class="keywordflow">case</span> b2Shape::e_circle:
+<a name="l00052"></a>00052                         {
+<a name="l00053"></a>00053                                 <a class="code" href="classb2_circle_shape.html" title="A circle shape.">b2CircleShape</a>* circle = (<a class="code" href="classb2_circle_shape.html" title="A circle shape.">b2CircleShape</a>*)fixture-&gt;<a class="code" href="classb2_fixture.html#aaa2b73fa212fa53b1c800cccd7a1d31e">GetShape</a>();
+<a name="l00054"></a>00054 
+<a name="l00055"></a>00055                                 <a class="code" href="structb2_vec2.html" title="A 2D column vector.">b2Vec2</a> center = b2Mul(xf, circle-&gt;<a class="code" href="classb2_circle_shape.html#a190705618b2e65f636f1dc03c63640ff" title="Position.">m_p</a>);
+<a name="l00056"></a>00056                                 float32 radius = circle-&gt;m_radius;
+<a name="l00057"></a>00057 
+<a name="l00058"></a>00058                                 m_debugDraw-&gt;<a class="code" href="classb2_draw.html#ae2effe9bca87c8d7cb90e860d13b7e9e" title="Draw a circle.">DrawCircle</a>(center, radius, color);
+<a name="l00059"></a>00059                         }
+<a name="l00060"></a>00060                         <span class="keywordflow">break</span>;
+<a name="l00061"></a>00061 
+<a name="l00062"></a>00062                 <span class="keywordflow">case</span> b2Shape::e_polygon:
+<a name="l00063"></a>00063                         {
+<a name="l00064"></a>00064                                 <a class="code" href="classb2_polygon_shape.html">b2PolygonShape</a>* poly = (<a class="code" href="classb2_polygon_shape.html">b2PolygonShape</a>*)fixture-&gt;<a class="code" href="classb2_fixture.html#aaa2b73fa212fa53b1c800cccd7a1d31e">GetShape</a>();
+<a name="l00065"></a>00065                                 int32 vertexCount = poly-&gt;m_vertexCount;
+<a name="l00066"></a>00066                                 b2Assert(vertexCount &lt;= <a class="code" href="b2_settings_8h.html#a09d71ee1993bee28b5b2e6d893b41884">b2_maxPolygonVertices</a>);
+<a name="l00067"></a>00067                                 <a class="code" href="structb2_vec2.html" title="A 2D column vector.">b2Vec2</a> vertices[<a class="code" href="b2_settings_8h.html#a09d71ee1993bee28b5b2e6d893b41884">b2_maxPolygonVertices</a>];
+<a name="l00068"></a>00068 
+<a name="l00069"></a>00069                                 <span class="keywordflow">for</span> (int32 i = 0; i &lt; vertexCount; ++i)
+<a name="l00070"></a>00070                                 {
+<a name="l00071"></a>00071                                         vertices[i] = b2Mul(xf, poly-&gt;m_vertices[i]);
+<a name="l00072"></a>00072                                 }
+<a name="l00073"></a>00073 
+<a name="l00074"></a>00074                                 m_debugDraw-&gt;<a class="code" href="classb2_draw.html#acd5427d1d2e7d19f1b34ad3620134d28" title="Draw a closed polygon provided in CCW order.">DrawPolygon</a>(vertices, vertexCount, color);
+<a name="l00075"></a>00075                         }
+<a name="l00076"></a>00076                         <span class="keywordflow">break</span>;
+<a name="l00077"></a>00077 
+<a name="l00078"></a>00078                 <span class="keywordflow">default</span>:
+<a name="l00079"></a>00079                         <span class="keywordflow">break</span>;
+<a name="l00080"></a>00080                 }
+<a name="l00081"></a>00081         }
+<a name="l00082"></a>00082 
+<a name="l00085"></a><a class="code" href="class_poly_shapes_callback.html#a35de1a0c75426d04a4a6f110e2ef03c8">00085</a>         <span class="keywordtype">bool</span> <a class="code" href="class_poly_shapes_callback.html#a35de1a0c75426d04a4a6f110e2ef03c8">ReportFixture</a>(<a class="code" href="classb2_fixture.html">b2Fixture</a>* fixture)
+<a name="l00086"></a>00086         {
+<a name="l00087"></a>00087                 <span class="keywordflow">if</span> (m_count == e_maxCount)
+<a name="l00088"></a>00088                 {
+<a name="l00089"></a>00089                         <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00090"></a>00090                 }
+<a name="l00091"></a>00091 
+<a name="l00092"></a>00092                 <a class="code" href="classb2_body.html" title="A rigid body. These are created via b2World::CreateBody.">b2Body</a>* body = fixture-&gt;<a class="code" href="classb2_fixture.html#a9d6536ef274d768e86ab0a8330921535">GetBody</a>();
+<a name="l00093"></a>00093                 <a class="code" href="classb2_shape.html">b2Shape</a>* shape = fixture-&gt;<a class="code" href="classb2_fixture.html#aaa2b73fa212fa53b1c800cccd7a1d31e">GetShape</a>();
+<a name="l00094"></a>00094 
+<a name="l00095"></a>00095                 <span class="keywordtype">bool</span> overlap = b2TestOverlap(shape, 0, &amp;m_circle, 0, body-&gt;<a class="code" href="classb2_body.html#adaaebca750d0bda56a543884adc5f519">GetTransform</a>(), m_transform);
+<a name="l00096"></a>00096 
+<a name="l00097"></a>00097                 <span class="keywordflow">if</span> (overlap)
+<a name="l00098"></a>00098                 {
+<a name="l00099"></a>00099                         DrawFixture(fixture);
+<a name="l00100"></a>00100                         ++m_count;
+<a name="l00101"></a>00101                 }
+<a name="l00102"></a>00102 
+<a name="l00103"></a>00103                 <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00104"></a>00104         }
+<a name="l00105"></a>00105 
+<a name="l00106"></a>00106         <a class="code" href="classb2_circle_shape.html" title="A circle shape.">b2CircleShape</a> m_circle;
+<a name="l00107"></a>00107         <a class="code" href="structb2_transform.html">b2Transform</a> m_transform;
+<a name="l00108"></a>00108         <a class="code" href="classb2_draw.html">b2Draw</a>* m_debugDraw;
+<a name="l00109"></a>00109         int32 m_count;
+<a name="l00110"></a>00110 };
+<a name="l00111"></a>00111 
+<a name="l00112"></a><a class="code" href="class_poly_shapes.html">00112</a> <span class="keyword">class </span><a class="code" href="class_poly_shapes.html">PolyShapes</a> : <span class="keyword">public</span> <a class="code" href="class_test.html">Test</a>
+<a name="l00113"></a>00113 {
+<a name="l00114"></a>00114 <span class="keyword">public</span>:
+<a name="l00115"></a>00115         <a class="code" href="class_poly_shapes.html">PolyShapes</a>()
+<a name="l00116"></a>00116         {
+<a name="l00117"></a>00117                 <span class="comment">// Ground body</span>
+<a name="l00118"></a>00118                 {
+<a name="l00119"></a>00119                         <a class="code" href="structb2_body_def.html">b2BodyDef</a> bd;
+<a name="l00120"></a>00120                         <a class="code" href="classb2_body.html" title="A rigid body. These are created via b2World::CreateBody.">b2Body</a>* ground = m_world-&gt;<a class="code" href="classb2_world.html#a2eb36e967e43294bfa03ec3d177c2dae">CreateBody</a>(&amp;bd);
+<a name="l00121"></a>00121 
+<a name="l00122"></a>00122                         <a class="code" href="classb2_edge_shape.html">b2EdgeShape</a> shape;
+<a name="l00123"></a>00123                         shape.<a class="code" href="classb2_edge_shape.html#a67dd3b17630a600033cb4380697a4e9d" title="Set this as an isolated edge.">Set</a>(<a class="code" href="structb2_vec2.html" title="A 2D column vector.">b2Vec2</a>(-40.0f, 0.0f), <a class="code" href="structb2_vec2.html" title="A 2D column vector.">b2Vec2</a>(40.0f, 0.0f));
+<a name="l00124"></a>00124                         ground-&gt;<a class="code" href="classb2_body.html#aa4892301e9b9d62ede5e93dad1743894">CreateFixture</a>(&amp;shape, 0.0f);
+<a name="l00125"></a>00125                 }
+<a name="l00126"></a>00126 
+<a name="l00127"></a>00127                 {
+<a name="l00128"></a>00128                         <a class="code" href="structb2_vec2.html" title="A 2D column vector.">b2Vec2</a> vertices[3];
+<a name="l00129"></a>00129                         vertices[0].<a class="code" href="structb2_vec2.html#a4d61640a645e470a50b451307d8e94c3" title="Set this vector to some specified coordinates.">Set</a>(-0.5f, 0.0f);
+<a name="l00130"></a>00130                         vertices[1].<a class="code" href="structb2_vec2.html#a4d61640a645e470a50b451307d8e94c3" title="Set this vector to some specified coordinates.">Set</a>(0.5f, 0.0f);
+<a name="l00131"></a>00131                         vertices[2].<a class="code" href="structb2_vec2.html#a4d61640a645e470a50b451307d8e94c3" title="Set this vector to some specified coordinates.">Set</a>(0.0f, 1.5f);
+<a name="l00132"></a>00132                         m_polygons[0].<a class="code" href="classb2_polygon_shape.html#a8aa13a7584b58f08be4d84181b5a86a8">Set</a>(vertices, 3);
+<a name="l00133"></a>00133                 }
+<a name="l00134"></a>00134 
+<a name="l00135"></a>00135                 {
+<a name="l00136"></a>00136                         <a class="code" href="structb2_vec2.html" title="A 2D column vector.">b2Vec2</a> vertices[3];
+<a name="l00137"></a>00137                         vertices[0].<a class="code" href="structb2_vec2.html#a4d61640a645e470a50b451307d8e94c3" title="Set this vector to some specified coordinates.">Set</a>(-0.1f, 0.0f);
+<a name="l00138"></a>00138                         vertices[1].<a class="code" href="structb2_vec2.html#a4d61640a645e470a50b451307d8e94c3" title="Set this vector to some specified coordinates.">Set</a>(0.1f, 0.0f);
+<a name="l00139"></a>00139                         vertices[2].<a class="code" href="structb2_vec2.html#a4d61640a645e470a50b451307d8e94c3" title="Set this vector to some specified coordinates.">Set</a>(0.0f, 1.5f);
+<a name="l00140"></a>00140                         m_polygons[1].<a class="code" href="classb2_polygon_shape.html#a8aa13a7584b58f08be4d84181b5a86a8">Set</a>(vertices, 3);
+<a name="l00141"></a>00141                 }
+<a name="l00142"></a>00142 
+<a name="l00143"></a>00143                 {
+<a name="l00144"></a>00144                         float32 w = 1.0f;
+<a name="l00145"></a>00145                         float32 b = w / (2.0f + b2Sqrt(2.0f));
+<a name="l00146"></a>00146                         float32 s = b2Sqrt(2.0f) * b;
+<a name="l00147"></a>00147 
+<a name="l00148"></a>00148                         <a class="code" href="structb2_vec2.html" title="A 2D column vector.">b2Vec2</a> vertices[8];
+<a name="l00149"></a>00149                         vertices[0].<a class="code" href="structb2_vec2.html#a4d61640a645e470a50b451307d8e94c3" title="Set this vector to some specified coordinates.">Set</a>(0.5f * s, 0.0f);
+<a name="l00150"></a>00150                         vertices[1].<a class="code" href="structb2_vec2.html#a4d61640a645e470a50b451307d8e94c3" title="Set this vector to some specified coordinates.">Set</a>(0.5f * w, b);
+<a name="l00151"></a>00151                         vertices[2].<a class="code" href="structb2_vec2.html#a4d61640a645e470a50b451307d8e94c3" title="Set this vector to some specified coordinates.">Set</a>(0.5f * w, b + s);
+<a name="l00152"></a>00152                         vertices[3].<a class="code" href="structb2_vec2.html#a4d61640a645e470a50b451307d8e94c3" title="Set this vector to some specified coordinates.">Set</a>(0.5f * s, w);
+<a name="l00153"></a>00153                         vertices[4].<a class="code" href="structb2_vec2.html#a4d61640a645e470a50b451307d8e94c3" title="Set this vector to some specified coordinates.">Set</a>(-0.5f * s, w);
+<a name="l00154"></a>00154                         vertices[5].<a class="code" href="structb2_vec2.html#a4d61640a645e470a50b451307d8e94c3" title="Set this vector to some specified coordinates.">Set</a>(-0.5f * w, b + s);
+<a name="l00155"></a>00155                         vertices[6].<a class="code" href="structb2_vec2.html#a4d61640a645e470a50b451307d8e94c3" title="Set this vector to some specified coordinates.">Set</a>(-0.5f * w, b);
+<a name="l00156"></a>00156                         vertices[7].<a class="code" href="structb2_vec2.html#a4d61640a645e470a50b451307d8e94c3" title="Set this vector to some specified coordinates.">Set</a>(-0.5f * s, 0.0f);
+<a name="l00157"></a>00157 
+<a name="l00158"></a>00158                         m_polygons[2].<a class="code" href="classb2_polygon_shape.html#a8aa13a7584b58f08be4d84181b5a86a8">Set</a>(vertices, 8);
+<a name="l00159"></a>00159                 }
+<a name="l00160"></a>00160 
+<a name="l00161"></a>00161                 {
+<a name="l00162"></a>00162                         m_polygons[3].<a class="code" href="classb2_polygon_shape.html#a6bb90df8b4a40d1c53b64cc352a855dd">SetAsBox</a>(0.5f, 0.5f);
+<a name="l00163"></a>00163                 }
+<a name="l00164"></a>00164 
+<a name="l00165"></a>00165                 {
+<a name="l00166"></a>00166                         m_circle.m_radius = 0.5f;
+<a name="l00167"></a>00167                 }
+<a name="l00168"></a>00168 
+<a name="l00169"></a>00169                 m_bodyIndex = 0;
+<a name="l00170"></a>00170                 memset(m_bodies, 0, <span class="keyword">sizeof</span>(m_bodies));
+<a name="l00171"></a>00171         }
+<a name="l00172"></a>00172 
+<a name="l00173"></a>00173         <span class="keywordtype">void</span> Create(int32 index)
+<a name="l00174"></a>00174         {
+<a name="l00175"></a>00175                 <span class="keywordflow">if</span> (m_bodies[m_bodyIndex] != NULL)
+<a name="l00176"></a>00176                 {
+<a name="l00177"></a>00177                         m_world-&gt;<a class="code" href="classb2_world.html#ad52231ad7a9556ef5735ac79cbcd8fcf">DestroyBody</a>(m_bodies[m_bodyIndex]);
+<a name="l00178"></a>00178                         m_bodies[m_bodyIndex] = NULL;
+<a name="l00179"></a>00179                 }
+<a name="l00180"></a>00180 
+<a name="l00181"></a>00181                 <a class="code" href="structb2_body_def.html">b2BodyDef</a> bd;
+<a name="l00182"></a>00182                 bd.<a class="code" href="structb2_body_def.html#a89cc3ad1873908042b002147b3861381">type</a> = b2_dynamicBody;
+<a name="l00183"></a>00183 
+<a name="l00184"></a>00184                 float32 x = RandomFloat(-2.0f, 2.0f);
+<a name="l00185"></a>00185                 bd.<a class="code" href="structb2_body_def.html#a680cadc09ad6cf4b3366cbf0914c648b">position</a>.<a class="code" href="structb2_vec2.html#a4d61640a645e470a50b451307d8e94c3" title="Set this vector to some specified coordinates.">Set</a>(x, 10.0f);
+<a name="l00186"></a>00186                 bd.<a class="code" href="structb2_body_def.html#a564b16f4f8e9fcb5dda397e64aa9be6f" title="The world angle of the body in radians.">angle</a> = RandomFloat(-b2_pi, b2_pi);
+<a name="l00187"></a>00187 
+<a name="l00188"></a>00188                 <span class="keywordflow">if</span> (index == 4)
+<a name="l00189"></a>00189                 {
+<a name="l00190"></a>00190                         bd.<a class="code" href="structb2_body_def.html#a01b8dc8ad9f0962efef9e4a8e836feb6">angularDamping</a> = 0.02f;
+<a name="l00191"></a>00191                 }
+<a name="l00192"></a>00192 
+<a name="l00193"></a>00193                 m_bodies[m_bodyIndex] = m_world-&gt;<a class="code" href="classb2_world.html#a2eb36e967e43294bfa03ec3d177c2dae">CreateBody</a>(&amp;bd);
+<a name="l00194"></a>00194 
+<a name="l00195"></a>00195                 <span class="keywordflow">if</span> (index &lt; 4)
+<a name="l00196"></a>00196                 {
+<a name="l00197"></a>00197                         <a class="code" href="structb2_fixture_def.html">b2FixtureDef</a> fd;
+<a name="l00198"></a>00198                         fd.<a class="code" href="structb2_fixture_def.html#a1e41753d89abf3443e7897e2498a3240">shape</a> = m_polygons + index;
+<a name="l00199"></a>00199                         fd.<a class="code" href="structb2_fixture_def.html#a6e27d733789a35aa689af2b30a1de0ff" title="The density, usually in kg/m^2.">density</a> = 1.0f;
+<a name="l00200"></a>00200                         fd.<a class="code" href="structb2_fixture_def.html#a66081c8d0e12d4bdb0b341fb97b46eb6" title="The friction coefficient, usually in the range [0,1].">friction</a> = 0.3f;
+<a name="l00201"></a>00201                         m_bodies[m_bodyIndex]-&gt;<a class="code" href="classb2_body.html#aa4892301e9b9d62ede5e93dad1743894">CreateFixture</a>(&amp;fd);
+<a name="l00202"></a>00202                 }
+<a name="l00203"></a>00203                 <span class="keywordflow">else</span>
+<a name="l00204"></a>00204                 {
+<a name="l00205"></a>00205                         <a class="code" href="structb2_fixture_def.html">b2FixtureDef</a> fd;
+<a name="l00206"></a>00206                         fd.<a class="code" href="structb2_fixture_def.html#a1e41753d89abf3443e7897e2498a3240">shape</a> = &amp;m_circle;
+<a name="l00207"></a>00207                         fd.<a class="code" href="structb2_fixture_def.html#a6e27d733789a35aa689af2b30a1de0ff" title="The density, usually in kg/m^2.">density</a> = 1.0f;
+<a name="l00208"></a>00208                         fd.<a class="code" href="structb2_fixture_def.html#a66081c8d0e12d4bdb0b341fb97b46eb6" title="The friction coefficient, usually in the range [0,1].">friction</a> = 0.3f;
+<a name="l00209"></a>00209 
+<a name="l00210"></a>00210                         m_bodies[m_bodyIndex]-&gt;<a class="code" href="classb2_body.html#aa4892301e9b9d62ede5e93dad1743894">CreateFixture</a>(&amp;fd);
+<a name="l00211"></a>00211                 }
+<a name="l00212"></a>00212 
+<a name="l00213"></a>00213                 m_bodyIndex = (m_bodyIndex + 1) % k_maxBodies;
+<a name="l00214"></a>00214         }
+<a name="l00215"></a>00215 
+<a name="l00216"></a>00216         <span class="keywordtype">void</span> DestroyBody()
+<a name="l00217"></a>00217         {
+<a name="l00218"></a>00218                 <span class="keywordflow">for</span> (int32 i = 0; i &lt; k_maxBodies; ++i)
+<a name="l00219"></a>00219                 {
+<a name="l00220"></a>00220                         <span class="keywordflow">if</span> (m_bodies[i] != NULL)
+<a name="l00221"></a>00221                         {
+<a name="l00222"></a>00222                                 m_world-&gt;<a class="code" href="classb2_world.html#ad52231ad7a9556ef5735ac79cbcd8fcf">DestroyBody</a>(m_bodies[i]);
+<a name="l00223"></a>00223                                 m_bodies[i] = NULL;
+<a name="l00224"></a>00224                                 <span class="keywordflow">return</span>;
+<a name="l00225"></a>00225                         }
+<a name="l00226"></a>00226                 }
+<a name="l00227"></a>00227         }
+<a name="l00228"></a>00228 
+<a name="l00229"></a>00229         <span class="keywordtype">void</span> Keyboard(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> key)
+<a name="l00230"></a>00230         {
+<a name="l00231"></a>00231                 <span class="keywordflow">switch</span> (key)
+<a name="l00232"></a>00232                 {
+<a name="l00233"></a>00233                 <span class="keywordflow">case</span> <span class="charliteral">&#39;1&#39;</span>:
+<a name="l00234"></a>00234                 <span class="keywordflow">case</span> <span class="charliteral">&#39;2&#39;</span>:
+<a name="l00235"></a>00235                 <span class="keywordflow">case</span> <span class="charliteral">&#39;3&#39;</span>:
+<a name="l00236"></a>00236                 <span class="keywordflow">case</span> <span class="charliteral">&#39;4&#39;</span>:
+<a name="l00237"></a>00237                 <span class="keywordflow">case</span> <span class="charliteral">&#39;5&#39;</span>:
+<a name="l00238"></a>00238                         Create(key - <span class="charliteral">&#39;1&#39;</span>);
+<a name="l00239"></a>00239                         <span class="keywordflow">break</span>;
+<a name="l00240"></a>00240 
+<a name="l00241"></a>00241                 <span class="keywordflow">case</span> <span class="charliteral">&#39;a&#39;</span>:
+<a name="l00242"></a>00242                         <span class="keywordflow">for</span> (int32 i = 0; i &lt; k_maxBodies; i += 2)
+<a name="l00243"></a>00243                         {
+<a name="l00244"></a>00244                                 <span class="keywordflow">if</span> (m_bodies[i])
+<a name="l00245"></a>00245                                 {
+<a name="l00246"></a>00246                                         <span class="keywordtype">bool</span> active = m_bodies[i]-&gt;<a class="code" href="classb2_body.html#ae69b9cb7461ee165b6459ce43d648479" title="Get the active state of the body.">IsActive</a>();
+<a name="l00247"></a>00247                                         m_bodies[i]-&gt;<a class="code" href="classb2_body.html#ab8059b7b3e3b64aee17b54f68f7dde80">SetActive</a>(!active);
+<a name="l00248"></a>00248                                 }
+<a name="l00249"></a>00249                         }
+<a name="l00250"></a>00250                         <span class="keywordflow">break</span>;
+<a name="l00251"></a>00251 
+<a name="l00252"></a>00252                 <span class="keywordflow">case</span> <span class="charliteral">&#39;d&#39;</span>:
+<a name="l00253"></a>00253                         DestroyBody();
+<a name="l00254"></a>00254                         <span class="keywordflow">break</span>;
+<a name="l00255"></a>00255                 }
+<a name="l00256"></a>00256         }
+<a name="l00257"></a>00257 
+<a name="l00258"></a>00258         <span class="keywordtype">void</span> Step(<a class="code" href="struct_settings.html" title="Test settings. Some can be controlled in the GUI.">Settings</a>* settings)
+<a name="l00259"></a>00259         {
+<a name="l00260"></a>00260                 Test::Step(settings);
+<a name="l00261"></a>00261 
+<a name="l00262"></a>00262                 <a class="code" href="class_poly_shapes_callback.html">PolyShapesCallback</a> callback;
+<a name="l00263"></a>00263                 callback.m_circle.m_radius = 2.0f;
+<a name="l00264"></a>00264                 callback.m_circle.<a class="code" href="classb2_circle_shape.html#a190705618b2e65f636f1dc03c63640ff" title="Position.">m_p</a>.<a class="code" href="structb2_vec2.html#a4d61640a645e470a50b451307d8e94c3" title="Set this vector to some specified coordinates.">Set</a>(0.0f, 1.1f);
+<a name="l00265"></a>00265                 callback.m_transform.<a class="code" href="structb2_transform.html#af92af4ec6833552b1b22a6ca6d4f5644" title="Set this to the identity transform.">SetIdentity</a>();
+<a name="l00266"></a>00266                 callback.m_debugDraw = &amp;m_debugDraw;
+<a name="l00267"></a>00267 
+<a name="l00268"></a>00268                 <a class="code" href="structb2_a_a_b_b.html" title="An axis aligned bounding box.">b2AABB</a> aabb;
+<a name="l00269"></a>00269                 callback.m_circle.<a class="code" href="classb2_circle_shape.html#aa6889a5af85aa1e272547fd0008eb64a">ComputeAABB</a>(&amp;aabb, callback.m_transform, 0);
+<a name="l00270"></a>00270 
+<a name="l00271"></a>00271                 m_world-&gt;<a class="code" href="classb2_world.html#a711e55d2c6e68400f93472f807c3775b">QueryAABB</a>(&amp;callback, aabb);
+<a name="l00272"></a>00272 
+<a name="l00273"></a>00273                 <a class="code" href="structb2_color.html" title="Color for debug drawing. Each value has the range [0,1].">b2Color</a> color(0.4f, 0.7f, 0.8f);
+<a name="l00274"></a>00274                 m_debugDraw.<a class="code" href="class_debug_draw.html#a5adb064981a67fefe7064820006b673e" title="Draw a circle.">DrawCircle</a>(callback.m_circle.<a class="code" href="classb2_circle_shape.html#a190705618b2e65f636f1dc03c63640ff" title="Position.">m_p</a>, callback.m_circle.m_radius, color);
+<a name="l00275"></a>00275 
+<a name="l00276"></a>00276                 m_debugDraw.DrawString(5, m_textLine, <span class="stringliteral">&quot;Press 1-5 to drop stuff&quot;</span>);
+<a name="l00277"></a>00277                 m_textLine += 15;
+<a name="l00278"></a>00278                 m_debugDraw.DrawString(5, m_textLine, <span class="stringliteral">&quot;Press &#39;a&#39; to (de)activate some bodies&quot;</span>);
+<a name="l00279"></a>00279                 m_textLine += 15;
+<a name="l00280"></a>00280                 m_debugDraw.DrawString(5, m_textLine, <span class="stringliteral">&quot;Press &#39;d&#39; to destroy a body&quot;</span>);
+<a name="l00281"></a>00281                 m_textLine += 15;
+<a name="l00282"></a>00282         }
+<a name="l00283"></a>00283 
+<a name="l00284"></a>00284         <span class="keyword">static</span> <a class="code" href="class_test.html">Test</a>* Create()
+<a name="l00285"></a>00285         {
+<a name="l00286"></a>00286                 <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_poly_shapes.html">PolyShapes</a>;
+<a name="l00287"></a>00287         }
+<a name="l00288"></a>00288 
+<a name="l00289"></a>00289         int32 m_bodyIndex;
+<a name="l00290"></a>00290         <a class="code" href="classb2_body.html" title="A rigid body. These are created via b2World::CreateBody.">b2Body</a>* m_bodies[k_maxBodies];
+<a name="l00291"></a>00291         <a class="code" href="classb2_polygon_shape.html">b2PolygonShape</a> m_polygons[4];
+<a name="l00292"></a>00292         <a class="code" href="classb2_circle_shape.html" title="A circle shape.">b2CircleShape</a> m_circle;
+<a name="l00293"></a>00293 };
+<a name="l00294"></a>00294 
+<a name="l00295"></a>00295 <span class="preprocessor">#endif</span>
+</pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年六月8日 星期五 23:30:12 for cocos2d-iphone-2.0-rc2 by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

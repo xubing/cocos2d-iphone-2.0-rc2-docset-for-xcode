@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>cocos2d-iphone-2.0-rc2: /Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/external/Box2d/Testbed/Tests/ApplyForce.h源文件</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="Icon-Small-50.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-iphone-2.0-rc2
+   &#160;<span id="projectnumber">2.0-rc2</span>
+   </div>
+   <div id="projectbrief">created:zhxubing@gmail.com</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/external/Box2d/Testbed/Tests/ApplyForce.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/*</span>
+<a name="l00002"></a>00002 <span class="comment">* Copyright (c) 2006-2009 Erin Catto http://www.box2d.org</span>
+<a name="l00003"></a>00003 <span class="comment">*</span>
+<a name="l00004"></a>00004 <span class="comment">* This software is provided &#39;as-is&#39;, without any express or implied</span>
+<a name="l00005"></a>00005 <span class="comment">* warranty.  In no event will the authors be held liable for any damages</span>
+<a name="l00006"></a>00006 <span class="comment">* arising from the use of this software.</span>
+<a name="l00007"></a>00007 <span class="comment">* Permission is granted to anyone to use this software for any purpose,</span>
+<a name="l00008"></a>00008 <span class="comment">* including commercial applications, and to alter it and redistribute it</span>
+<a name="l00009"></a>00009 <span class="comment">* freely, subject to the following restrictions:</span>
+<a name="l00010"></a>00010 <span class="comment">* 1. The origin of this software must not be misrepresented; you must not</span>
+<a name="l00011"></a>00011 <span class="comment">* claim that you wrote the original software. If you use this software</span>
+<a name="l00012"></a>00012 <span class="comment">* in a product, an acknowledgment in the product documentation would be</span>
+<a name="l00013"></a>00013 <span class="comment">* appreciated but is not required.</span>
+<a name="l00014"></a>00014 <span class="comment">* 2. Altered source versions must be plainly marked as such, and must not be</span>
+<a name="l00015"></a>00015 <span class="comment">* misrepresented as being the original software.</span>
+<a name="l00016"></a>00016 <span class="comment">* 3. This notice may not be removed or altered from any source distribution.</span>
+<a name="l00017"></a>00017 <span class="comment">*/</span>
+<a name="l00018"></a>00018 
+<a name="l00019"></a>00019 <span class="preprocessor">#ifndef APPLY_FORCE_H</span>
+<a name="l00020"></a>00020 <span class="preprocessor"></span><span class="preprocessor">#define APPLY_FORCE_H</span>
+<a name="l00021"></a>00021 <span class="preprocessor"></span>
+<a name="l00022"></a><a class="code" href="class_apply_force.html">00022</a> <span class="keyword">class </span><a class="code" href="class_apply_force.html">ApplyForce</a> : <span class="keyword">public</span> <a class="code" href="class_test.html">Test</a>
+<a name="l00023"></a>00023 {
+<a name="l00024"></a>00024 <span class="keyword">public</span>:
+<a name="l00025"></a>00025         <a class="code" href="class_apply_force.html">ApplyForce</a>()
+<a name="l00026"></a>00026         {
+<a name="l00027"></a>00027                 m_world-&gt;<a class="code" href="classb2_world.html#aeafa43d6580e1dddb0675e672ca2375c" title="Change the global gravity vector.">SetGravity</a>(<a class="code" href="structb2_vec2.html" title="A 2D column vector.">b2Vec2</a>(0.0f, 0.0f));
+<a name="l00028"></a>00028 
+<a name="l00029"></a>00029                 <span class="keyword">const</span> float32 k_restitution = 0.4f;
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031                 <a class="code" href="classb2_body.html" title="A rigid body. These are created via b2World::CreateBody.">b2Body</a>* ground;
+<a name="l00032"></a>00032                 {
+<a name="l00033"></a>00033                         <a class="code" href="structb2_body_def.html">b2BodyDef</a> bd;
+<a name="l00034"></a>00034                         bd.<a class="code" href="structb2_body_def.html#a680cadc09ad6cf4b3366cbf0914c648b">position</a>.<a class="code" href="structb2_vec2.html#a4d61640a645e470a50b451307d8e94c3" title="Set this vector to some specified coordinates.">Set</a>(0.0f, 20.0f);
+<a name="l00035"></a>00035                         ground = m_world-&gt;<a class="code" href="classb2_world.html#a2eb36e967e43294bfa03ec3d177c2dae">CreateBody</a>(&amp;bd);
+<a name="l00036"></a>00036 
+<a name="l00037"></a>00037                         <a class="code" href="classb2_edge_shape.html">b2EdgeShape</a> shape;
+<a name="l00038"></a>00038 
+<a name="l00039"></a>00039                         <a class="code" href="structb2_fixture_def.html">b2FixtureDef</a> sd;
+<a name="l00040"></a>00040                         sd.<a class="code" href="structb2_fixture_def.html#a1e41753d89abf3443e7897e2498a3240">shape</a> = &amp;shape;
+<a name="l00041"></a>00041                         sd.<a class="code" href="structb2_fixture_def.html#a6e27d733789a35aa689af2b30a1de0ff" title="The density, usually in kg/m^2.">density</a> = 0.0f;
+<a name="l00042"></a>00042                         sd.<a class="code" href="structb2_fixture_def.html#ad7ee26656e4749f7b548d2cc0cf9f168" title="The restitution (elasticity) usually in the range [0,1].">restitution</a> = k_restitution;
+<a name="l00043"></a>00043 
+<a name="l00044"></a>00044                         <span class="comment">// Left vertical</span>
+<a name="l00045"></a>00045                         shape.<a class="code" href="classb2_edge_shape.html#a67dd3b17630a600033cb4380697a4e9d" title="Set this as an isolated edge.">Set</a>(<a class="code" href="structb2_vec2.html" title="A 2D column vector.">b2Vec2</a>(-20.0f, -20.0f), <a class="code" href="structb2_vec2.html" title="A 2D column vector.">b2Vec2</a>(-20.0f, 20.0f));
+<a name="l00046"></a>00046                         ground-&gt;<a class="code" href="classb2_body.html#aa4892301e9b9d62ede5e93dad1743894">CreateFixture</a>(&amp;sd);
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048                         <span class="comment">// Right vertical</span>
+<a name="l00049"></a>00049                         shape.<a class="code" href="classb2_edge_shape.html#a67dd3b17630a600033cb4380697a4e9d" title="Set this as an isolated edge.">Set</a>(<a class="code" href="structb2_vec2.html" title="A 2D column vector.">b2Vec2</a>(20.0f, -20.0f), <a class="code" href="structb2_vec2.html" title="A 2D column vector.">b2Vec2</a>(20.0f, 20.0f));
+<a name="l00050"></a>00050                         ground-&gt;<a class="code" href="classb2_body.html#aa4892301e9b9d62ede5e93dad1743894">CreateFixture</a>(&amp;sd);
+<a name="l00051"></a>00051 
+<a name="l00052"></a>00052                         <span class="comment">// Top horizontal</span>
+<a name="l00053"></a>00053                         shape.<a class="code" href="classb2_edge_shape.html#a67dd3b17630a600033cb4380697a4e9d" title="Set this as an isolated edge.">Set</a>(<a class="code" href="structb2_vec2.html" title="A 2D column vector.">b2Vec2</a>(-20.0f, 20.0f), <a class="code" href="structb2_vec2.html" title="A 2D column vector.">b2Vec2</a>(20.0f, 20.0f));
+<a name="l00054"></a>00054                         ground-&gt;<a class="code" href="classb2_body.html#aa4892301e9b9d62ede5e93dad1743894">CreateFixture</a>(&amp;sd);
+<a name="l00055"></a>00055 
+<a name="l00056"></a>00056                         <span class="comment">// Bottom horizontal</span>
+<a name="l00057"></a>00057                         shape.<a class="code" href="classb2_edge_shape.html#a67dd3b17630a600033cb4380697a4e9d" title="Set this as an isolated edge.">Set</a>(<a class="code" href="structb2_vec2.html" title="A 2D column vector.">b2Vec2</a>(-20.0f, -20.0f), <a class="code" href="structb2_vec2.html" title="A 2D column vector.">b2Vec2</a>(20.0f, -20.0f));
+<a name="l00058"></a>00058                         ground-&gt;<a class="code" href="classb2_body.html#aa4892301e9b9d62ede5e93dad1743894">CreateFixture</a>(&amp;sd);
+<a name="l00059"></a>00059                 }
+<a name="l00060"></a>00060 
+<a name="l00061"></a>00061                 {
+<a name="l00062"></a>00062                         <a class="code" href="structb2_transform.html">b2Transform</a> xf1;
+<a name="l00063"></a>00063                         xf1.q.<a class="code" href="structb2_rot.html#acde9186de0a4a7397bf8ef714408ad60" title="Set using an angle in radians.">Set</a>(0.3524f * b2_pi);
+<a name="l00064"></a>00064                         xf1.p = xf1.q.<a class="code" href="structb2_rot.html#ac4ab7f262adb99f161775314852723d8" title="Get the x-axis.">GetXAxis</a>();
+<a name="l00065"></a>00065 
+<a name="l00066"></a>00066                         <a class="code" href="structb2_vec2.html" title="A 2D column vector.">b2Vec2</a> vertices[3];
+<a name="l00067"></a>00067                         vertices[0] = b2Mul(xf1, <a class="code" href="structb2_vec2.html" title="A 2D column vector.">b2Vec2</a>(-1.0f, 0.0f));
+<a name="l00068"></a>00068                         vertices[1] = b2Mul(xf1, <a class="code" href="structb2_vec2.html" title="A 2D column vector.">b2Vec2</a>(1.0f, 0.0f));
+<a name="l00069"></a>00069                         vertices[2] = b2Mul(xf1, <a class="code" href="structb2_vec2.html" title="A 2D column vector.">b2Vec2</a>(0.0f, 0.5f));
+<a name="l00070"></a>00070 
+<a name="l00071"></a>00071                         <a class="code" href="classb2_polygon_shape.html">b2PolygonShape</a> poly1;
+<a name="l00072"></a>00072                         poly1.<a class="code" href="classb2_polygon_shape.html#a8aa13a7584b58f08be4d84181b5a86a8">Set</a>(vertices, 3);
+<a name="l00073"></a>00073 
+<a name="l00074"></a>00074                         <a class="code" href="structb2_fixture_def.html">b2FixtureDef</a> sd1;
+<a name="l00075"></a>00075                         sd1.<a class="code" href="structb2_fixture_def.html#a1e41753d89abf3443e7897e2498a3240">shape</a> = &amp;poly1;
+<a name="l00076"></a>00076                         sd1.<a class="code" href="structb2_fixture_def.html#a6e27d733789a35aa689af2b30a1de0ff" title="The density, usually in kg/m^2.">density</a> = 4.0f;
+<a name="l00077"></a>00077 
+<a name="l00078"></a>00078                         <a class="code" href="structb2_transform.html">b2Transform</a> xf2;
+<a name="l00079"></a>00079                         xf2.q.<a class="code" href="structb2_rot.html#acde9186de0a4a7397bf8ef714408ad60" title="Set using an angle in radians.">Set</a>(-0.3524f * b2_pi);
+<a name="l00080"></a>00080                         xf2.p = -xf2.q.<a class="code" href="structb2_rot.html#ac4ab7f262adb99f161775314852723d8" title="Get the x-axis.">GetXAxis</a>();
+<a name="l00081"></a>00081 
+<a name="l00082"></a>00082                         vertices[0] = b2Mul(xf2, <a class="code" href="structb2_vec2.html" title="A 2D column vector.">b2Vec2</a>(-1.0f, 0.0f));
+<a name="l00083"></a>00083                         vertices[1] = b2Mul(xf2, <a class="code" href="structb2_vec2.html" title="A 2D column vector.">b2Vec2</a>(1.0f, 0.0f));
+<a name="l00084"></a>00084                         vertices[2] = b2Mul(xf2, <a class="code" href="structb2_vec2.html" title="A 2D column vector.">b2Vec2</a>(0.0f, 0.5f));
+<a name="l00085"></a>00085 
+<a name="l00086"></a>00086                         <a class="code" href="classb2_polygon_shape.html">b2PolygonShape</a> poly2;
+<a name="l00087"></a>00087                         poly2.<a class="code" href="classb2_polygon_shape.html#a8aa13a7584b58f08be4d84181b5a86a8">Set</a>(vertices, 3);
+<a name="l00088"></a>00088 
+<a name="l00089"></a>00089                         <a class="code" href="structb2_fixture_def.html">b2FixtureDef</a> sd2;
+<a name="l00090"></a>00090                         sd2.<a class="code" href="structb2_fixture_def.html#a1e41753d89abf3443e7897e2498a3240">shape</a> = &amp;poly2;
+<a name="l00091"></a>00091                         sd2.<a class="code" href="structb2_fixture_def.html#a6e27d733789a35aa689af2b30a1de0ff" title="The density, usually in kg/m^2.">density</a> = 2.0f;
+<a name="l00092"></a>00092 
+<a name="l00093"></a>00093                         <a class="code" href="structb2_body_def.html">b2BodyDef</a> bd;
+<a name="l00094"></a>00094                         bd.<a class="code" href="structb2_body_def.html#a89cc3ad1873908042b002147b3861381">type</a> = b2_dynamicBody;
+<a name="l00095"></a>00095                         bd.<a class="code" href="structb2_body_def.html#a01b8dc8ad9f0962efef9e4a8e836feb6">angularDamping</a> = 5.0f;
+<a name="l00096"></a>00096                         bd.<a class="code" href="structb2_body_def.html#a728f6df3be7dedb331455105e3659d46">linearDamping</a> = 0.1f;
+<a name="l00097"></a>00097 
+<a name="l00098"></a>00098                         bd.<a class="code" href="structb2_body_def.html#a680cadc09ad6cf4b3366cbf0914c648b">position</a>.<a class="code" href="structb2_vec2.html#a4d61640a645e470a50b451307d8e94c3" title="Set this vector to some specified coordinates.">Set</a>(0.0f, 2.0);
+<a name="l00099"></a>00099                         bd.<a class="code" href="structb2_body_def.html#a564b16f4f8e9fcb5dda397e64aa9be6f" title="The world angle of the body in radians.">angle</a> = b2_pi;
+<a name="l00100"></a>00100                         bd.<a class="code" href="structb2_body_def.html#a0765068172e521ed63cb34084c59c003">allowSleep</a> = <span class="keyword">false</span>;
+<a name="l00101"></a>00101                         m_body = m_world-&gt;<a class="code" href="classb2_world.html#a2eb36e967e43294bfa03ec3d177c2dae">CreateBody</a>(&amp;bd);
+<a name="l00102"></a>00102                         m_body-&gt;<a class="code" href="classb2_body.html#aa4892301e9b9d62ede5e93dad1743894">CreateFixture</a>(&amp;sd1);
+<a name="l00103"></a>00103                         m_body-&gt;<a class="code" href="classb2_body.html#aa4892301e9b9d62ede5e93dad1743894">CreateFixture</a>(&amp;sd2);
+<a name="l00104"></a>00104                 }
+<a name="l00105"></a>00105 
+<a name="l00106"></a>00106                 {
+<a name="l00107"></a>00107                         <a class="code" href="classb2_polygon_shape.html">b2PolygonShape</a> shape;
+<a name="l00108"></a>00108                         shape.<a class="code" href="classb2_polygon_shape.html#a6bb90df8b4a40d1c53b64cc352a855dd">SetAsBox</a>(0.5f, 0.5f);
+<a name="l00109"></a>00109 
+<a name="l00110"></a>00110                         <a class="code" href="structb2_fixture_def.html">b2FixtureDef</a> fd;
+<a name="l00111"></a>00111                         fd.<a class="code" href="structb2_fixture_def.html#a1e41753d89abf3443e7897e2498a3240">shape</a> = &amp;shape;
+<a name="l00112"></a>00112                         fd.<a class="code" href="structb2_fixture_def.html#a6e27d733789a35aa689af2b30a1de0ff" title="The density, usually in kg/m^2.">density</a> = 1.0f;
+<a name="l00113"></a>00113                         fd.<a class="code" href="structb2_fixture_def.html#a66081c8d0e12d4bdb0b341fb97b46eb6" title="The friction coefficient, usually in the range [0,1].">friction</a> = 0.3f;
+<a name="l00114"></a>00114 
+<a name="l00115"></a>00115                         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 10; ++i)
+<a name="l00116"></a>00116                         {
+<a name="l00117"></a>00117                                 <a class="code" href="structb2_body_def.html">b2BodyDef</a> bd;
+<a name="l00118"></a>00118                                 bd.<a class="code" href="structb2_body_def.html#a89cc3ad1873908042b002147b3861381">type</a> = b2_dynamicBody;
+<a name="l00119"></a>00119 
+<a name="l00120"></a>00120                                 bd.<a class="code" href="structb2_body_def.html#a680cadc09ad6cf4b3366cbf0914c648b">position</a>.<a class="code" href="structb2_vec2.html#a4d61640a645e470a50b451307d8e94c3" title="Set this vector to some specified coordinates.">Set</a>(0.0f, 5.0f + 1.54f * i);
+<a name="l00121"></a>00121                                 <a class="code" href="classb2_body.html" title="A rigid body. These are created via b2World::CreateBody.">b2Body</a>* body = m_world-&gt;<a class="code" href="classb2_world.html#a2eb36e967e43294bfa03ec3d177c2dae">CreateBody</a>(&amp;bd);
+<a name="l00122"></a>00122 
+<a name="l00123"></a>00123                                 body-&gt;<a class="code" href="classb2_body.html#aa4892301e9b9d62ede5e93dad1743894">CreateFixture</a>(&amp;fd);
+<a name="l00124"></a>00124 
+<a name="l00125"></a>00125                                 float32 gravity = 10.0f;
+<a name="l00126"></a>00126                                 float32 I = body-&gt;<a class="code" href="classb2_body.html#a8c8916caf67c1e618a07d8b6b9253fa8">GetInertia</a>();
+<a name="l00127"></a>00127                                 float32 mass = body-&gt;<a class="code" href="classb2_body.html#a4f62fea4546d2b9ca64a5f6723bbc71c">GetMass</a>();
+<a name="l00128"></a>00128 
+<a name="l00129"></a>00129                                 <span class="comment">// For a circle: I = 0.5 * m * r * r ==&gt; r = sqrt(2 * I / m)</span>
+<a name="l00130"></a>00130                                 float32 radius = b2Sqrt(2.0f * I / mass);
+<a name="l00131"></a>00131 
+<a name="l00132"></a>00132                                 <a class="code" href="structb2_friction_joint_def.html" title="Friction joint definition.">b2FrictionJointDef</a> jd;
+<a name="l00133"></a>00133                                 jd.<a class="code" href="structb2_friction_joint_def.html#a00b246e60ae282a956a42b662993e92a" title="The local anchor point relative to bodyA&#39;s origin.">localAnchorA</a>.<a class="code" href="structb2_vec2.html#a5c6cbe27cfb29c6dbb29b9a3285b88d0" title="Set this vector to all zeros.">SetZero</a>();
+<a name="l00134"></a>00134                                 jd.<a class="code" href="structb2_friction_joint_def.html#ad6d5a5614a7ac77b13e53fda3e32ed05" title="The local anchor point relative to bodyB&#39;s origin.">localAnchorB</a>.<a class="code" href="structb2_vec2.html#a5c6cbe27cfb29c6dbb29b9a3285b88d0" title="Set this vector to all zeros.">SetZero</a>();
+<a name="l00135"></a>00135                                 jd.<a class="code" href="structb2_joint_def.html#a8cd54c93da396be75a9788f2c6897f05" title="The first attached body.">bodyA</a> = ground;
+<a name="l00136"></a>00136                                 jd.<a class="code" href="structb2_joint_def.html#aa4f4dee2fbcd12187b19506b60e68e3d" title="The second attached body.">bodyB</a> = body;
+<a name="l00137"></a>00137                                 jd.<a class="code" href="structb2_joint_def.html#aef099a1f89b64e230173b6016848ea9b" title="Set this flag to true if the attached bodies should collide.">collideConnected</a> = <span class="keyword">true</span>;
+<a name="l00138"></a>00138                                 jd.<a class="code" href="structb2_friction_joint_def.html#ad30e97a80790d4ca64bac7a1fa7d1b35" title="The maximum friction force in N.">maxForce</a> = mass * gravity;
+<a name="l00139"></a>00139                                 jd.<a class="code" href="structb2_friction_joint_def.html#a61adfb0ee7c0ed4cb8feee8304c16ef6" title="The maximum friction torque in N-m.">maxTorque</a> = mass * radius * gravity;
+<a name="l00140"></a>00140 
+<a name="l00141"></a>00141                                 m_world-&gt;<a class="code" href="classb2_world.html#a5cba9d0653149eb62504154e6fb35021">CreateJoint</a>(&amp;jd);
+<a name="l00142"></a>00142                         }
+<a name="l00143"></a>00143                 }
+<a name="l00144"></a>00144         }
+<a name="l00145"></a>00145 
+<a name="l00146"></a>00146         <span class="keywordtype">void</span> Keyboard(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> key)
+<a name="l00147"></a>00147         {
+<a name="l00148"></a>00148                 <span class="keywordflow">switch</span> (key)
+<a name="l00149"></a>00149                 {
+<a name="l00150"></a>00150                 <span class="keywordflow">case</span> <span class="charliteral">&#39;w&#39;</span>:
+<a name="l00151"></a>00151                         {
+<a name="l00152"></a>00152                                 <a class="code" href="structb2_vec2.html" title="A 2D column vector.">b2Vec2</a> f = m_body-&gt;<a class="code" href="classb2_body.html#afd44622669b5e45202c23e4a212895fc">GetWorldVector</a>(<a class="code" href="structb2_vec2.html" title="A 2D column vector.">b2Vec2</a>(0.0f, -200.0f));
+<a name="l00153"></a>00153                                 <a class="code" href="structb2_vec2.html" title="A 2D column vector.">b2Vec2</a> p = m_body-&gt;<a class="code" href="classb2_body.html#a8055b90bccb51383caa8c42fbc96c9c3">GetWorldPoint</a>(<a class="code" href="structb2_vec2.html" title="A 2D column vector.">b2Vec2</a>(0.0f, 2.0f));
+<a name="l00154"></a>00154                                 m_body-&gt;<a class="code" href="classb2_body.html#aa1a2ebd027635ea5a81749f267a19261">ApplyForce</a>(f, p);
+<a name="l00155"></a>00155                         }
+<a name="l00156"></a>00156                         <span class="keywordflow">break</span>;
+<a name="l00157"></a>00157 
+<a name="l00158"></a>00158                 <span class="keywordflow">case</span> <span class="charliteral">&#39;a&#39;</span>:
+<a name="l00159"></a>00159                         {
+<a name="l00160"></a>00160                                 m_body-&gt;<a class="code" href="classb2_body.html#a2a383c0af1f91f449e74cfcec8fe2604">ApplyTorque</a>(50.0f);
+<a name="l00161"></a>00161                         }
+<a name="l00162"></a>00162                         <span class="keywordflow">break</span>;
+<a name="l00163"></a>00163 
+<a name="l00164"></a>00164                 <span class="keywordflow">case</span> <span class="charliteral">&#39;d&#39;</span>:
+<a name="l00165"></a>00165                         {
+<a name="l00166"></a>00166                                 m_body-&gt;<a class="code" href="classb2_body.html#a2a383c0af1f91f449e74cfcec8fe2604">ApplyTorque</a>(-50.0f);
+<a name="l00167"></a>00167                         }
+<a name="l00168"></a>00168                         <span class="keywordflow">break</span>;
+<a name="l00169"></a>00169                 }
+<a name="l00170"></a>00170         }
+<a name="l00171"></a>00171 
+<a name="l00172"></a>00172         <span class="keyword">static</span> <a class="code" href="class_test.html">Test</a>* Create()
+<a name="l00173"></a>00173         {
+<a name="l00174"></a>00174                 <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_apply_force.html">ApplyForce</a>;
+<a name="l00175"></a>00175         }
+<a name="l00176"></a>00176 
+<a name="l00177"></a>00177         <a class="code" href="classb2_body.html" title="A rigid body. These are created via b2World::CreateBody.">b2Body</a>* m_body;
+<a name="l00178"></a>00178 };
+<a name="l00179"></a>00179 
+<a name="l00180"></a>00180 <span class="preprocessor">#endif</span>
+</pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年六月8日 星期五 23:30:12 for cocos2d-iphone-2.0-rc2 by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

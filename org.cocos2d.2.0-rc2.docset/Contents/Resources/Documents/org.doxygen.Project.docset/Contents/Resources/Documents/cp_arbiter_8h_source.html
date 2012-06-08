@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>cocos2d-iphone-2.0-rc2: /Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/external/Chipmunk/include/chipmunk/cpArbiter.h源文件</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="Icon-Small-50.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-iphone-2.0-rc2
+   &#160;<span id="projectnumber">2.0-rc2</span>
+   </div>
+   <div id="projectbrief">created:zhxubing@gmail.com</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/external/Chipmunk/include/chipmunk/cpArbiter.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/* Copyright (c) 2007 Scott Lembcke</span>
+<a name="l00002"></a>00002 <span class="comment"> * </span>
+<a name="l00003"></a>00003 <span class="comment"> * Permission is hereby granted, free of charge, to any person obtaining a copy</span>
+<a name="l00004"></a>00004 <span class="comment"> * of this software and associated documentation files (the &quot;Software&quot;), to deal</span>
+<a name="l00005"></a>00005 <span class="comment"> * in the Software without restriction, including without limitation the rights</span>
+<a name="l00006"></a>00006 <span class="comment"> * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell</span>
+<a name="l00007"></a>00007 <span class="comment"> * copies of the Software, and to permit persons to whom the Software is</span>
+<a name="l00008"></a>00008 <span class="comment"> * furnished to do so, subject to the following conditions:</span>
+<a name="l00009"></a>00009 <span class="comment"> * </span>
+<a name="l00010"></a>00010 <span class="comment"> * The above copyright notice and this permission notice shall be included in</span>
+<a name="l00011"></a>00011 <span class="comment"> * all copies or substantial portions of the Software.</span>
+<a name="l00012"></a>00012 <span class="comment"> * </span>
+<a name="l00013"></a>00013 <span class="comment"> * THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
+<a name="l00014"></a>00014 <span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
+<a name="l00015"></a>00015 <span class="comment"> * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</span>
+<a name="l00016"></a>00016 <span class="comment"> * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</span>
+<a name="l00017"></a>00017 <span class="comment"> * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</span>
+<a name="l00018"></a>00018 <span class="comment"> * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE</span>
+<a name="l00019"></a>00019 <span class="comment"> * SOFTWARE.</span>
+<a name="l00020"></a>00020 <span class="comment"> */</span>
+<a name="l00021"></a>00021 
+<a name="l00027"></a>00027 
+<a name="l00031"></a><a class="code" href="group__cp_arbiter.html#ga1abb3a86eb2889bf32349de4c8237612">00031</a> <span class="keyword">typedef</span> <a class="code" href="group__basic_types.html#gab6e5d8afee598a57cd323abae5310244" title="Chipmunk&#39;s boolean type.">cpBool</a> (*<a class="code" href="group__cp_arbiter.html#ga1abb3a86eb2889bf32349de4c8237612">cpCollisionBeginFunc</a>)(<a class="code" href="structcp_arbiter.html" title="A colliding pair of shapes.">cpArbiter</a> *arb, <a class="code" href="structcp_space.html" title="Basic Unit of Simulation in Chipmunk.">cpSpace</a> *space, <span class="keywordtype">void</span> *data);
+<a name="l00034"></a><a class="code" href="group__cp_arbiter.html#ga00b9651732d9674c945334ed1968d19b">00034</a> <span class="keyword">typedef</span> <a class="code" href="group__basic_types.html#gab6e5d8afee598a57cd323abae5310244" title="Chipmunk&#39;s boolean type.">cpBool</a> (*<a class="code" href="group__cp_arbiter.html#ga00b9651732d9674c945334ed1968d19b">cpCollisionPreSolveFunc</a>)(<a class="code" href="structcp_arbiter.html" title="A colliding pair of shapes.">cpArbiter</a> *arb, <a class="code" href="structcp_space.html" title="Basic Unit of Simulation in Chipmunk.">cpSpace</a> *space, <span class="keywordtype">void</span> *data);
+<a name="l00036"></a><a class="code" href="group__cp_arbiter.html#gaf66f0db756c55c5168b4956954af2f12">00036</a> <span class="keyword">typedef</span> void (*<a class="code" href="group__cp_arbiter.html#gaf66f0db756c55c5168b4956954af2f12" title="Collision post-solve event function callback type.">cpCollisionPostSolveFunc</a>)(<a class="code" href="structcp_arbiter.html" title="A colliding pair of shapes.">cpArbiter</a> *arb, <a class="code" href="structcp_space.html" title="Basic Unit of Simulation in Chipmunk.">cpSpace</a> *space, <span class="keywordtype">void</span> *data);
+<a name="l00038"></a><a class="code" href="group__cp_arbiter.html#ga70549bfa3ae4e806fa1afde420a71775">00038</a> <span class="keyword">typedef</span> void (*<a class="code" href="group__cp_arbiter.html#ga70549bfa3ae4e806fa1afde420a71775" title="Collision separate event function callback type.">cpCollisionSeparateFunc</a>)(<a class="code" href="structcp_arbiter.html" title="A colliding pair of shapes.">cpArbiter</a> *arb, <a class="code" href="structcp_space.html" title="Basic Unit of Simulation in Chipmunk.">cpSpace</a> *space, <span class="keywordtype">void</span> *data);
+<a name="l00039"></a>00039 
+<a name="l00041"></a>00041 <span class="keyword">struct </span>cpCollisionHandler {
+<a name="l00042"></a>00042         <a class="code" href="group__basic_types.html#gae83e2f50965eb441e36ffff1e32e6d02" title="Type used for cpSpace.collision_type.">cpCollisionType</a> a;
+<a name="l00043"></a>00043         <a class="code" href="group__basic_types.html#gae83e2f50965eb441e36ffff1e32e6d02" title="Type used for cpSpace.collision_type.">cpCollisionType</a> b;
+<a name="l00044"></a>00044         <a class="code" href="group__cp_arbiter.html#ga1abb3a86eb2889bf32349de4c8237612">cpCollisionBeginFunc</a> begin;
+<a name="l00045"></a>00045         <a class="code" href="group__cp_arbiter.html#ga00b9651732d9674c945334ed1968d19b">cpCollisionPreSolveFunc</a> preSolve;
+<a name="l00046"></a>00046         <a class="code" href="group__cp_arbiter.html#gaf66f0db756c55c5168b4956954af2f12" title="Collision post-solve event function callback type.">cpCollisionPostSolveFunc</a> postSolve;
+<a name="l00047"></a>00047         <a class="code" href="group__cp_arbiter.html#ga70549bfa3ae4e806fa1afde420a71775" title="Collision separate event function callback type.">cpCollisionSeparateFunc</a> separate;
+<a name="l00048"></a>00048         <span class="keywordtype">void</span> *data;
+<a name="l00049"></a>00049 };
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051 <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structcp_contact.html">cpContact</a> <a class="code" href="structcp_contact.html">cpContact</a>;
+<a name="l00052"></a>00052 
+<a name="l00053"></a>00053 <span class="preprocessor">#define CP_MAX_CONTACTS_PER_ARBITER 4</span>
+<a name="l00054"></a>00054 <span class="preprocessor"></span>
+<a name="l00056"></a>00056 <span class="keyword">typedef</span> <span class="keyword">enum</span> cpArbiterState {
+<a name="l00057"></a>00057         <span class="comment">// Arbiter is active and its the first collision.</span>
+<a name="l00058"></a>00058         cpArbiterStateFirstColl,
+<a name="l00059"></a>00059         <span class="comment">// Arbiter is active and its not the first collision.</span>
+<a name="l00060"></a>00060         cpArbiterStateNormal,
+<a name="l00061"></a>00061         <span class="comment">// Collision has been explicitly ignored.</span>
+<a name="l00062"></a>00062         <span class="comment">// Either by returning false from a begin collision handler or calling cpArbiterIgnore().</span>
+<a name="l00063"></a>00063         cpArbiterStateIgnore,
+<a name="l00064"></a>00064         <span class="comment">// Collison is no longer active. A space will cache an arbiter for up to cpSpace.collisionPersistence more steps.</span>
+<a name="l00065"></a>00065         cpArbiterStateCached,
+<a name="l00066"></a>00066 } cpArbiterState;
+<a name="l00067"></a>00067 
+<a name="l00069"></a>00069 <span class="keyword">struct </span>cpArbiterThread {
+<a name="l00070"></a>00070         <span class="comment">// Links to next and previous arbiters in the contact graph.</span>
+<a name="l00071"></a>00071         <span class="keyword">struct </span><a class="code" href="structcp_arbiter.html" title="A colliding pair of shapes.">cpArbiter</a> *next, *prev;
+<a name="l00072"></a>00072 };
+<a name="l00073"></a>00073 
+<a name="l00075"></a><a class="code" href="structcp_arbiter.html">00075</a> <span class="keyword">struct </span><a class="code" href="structcp_arbiter.html" title="A colliding pair of shapes.">cpArbiter</a> {
+<a name="l00078"></a><a class="code" href="structcp_arbiter.html#ae28e688fb03eba42a1dd786ab914c9eb">00078</a>         <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> <a class="code" href="structcp_arbiter.html#ae28e688fb03eba42a1dd786ab914c9eb">e</a>;
+<a name="l00081"></a><a class="code" href="structcp_arbiter.html#a1be4918be41986330005a6e745d013f3">00081</a>         <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> <a class="code" href="structcp_arbiter.html#a1be4918be41986330005a6e745d013f3">u</a>;
+<a name="l00084"></a><a class="code" href="structcp_arbiter.html#ad8724ab2c97ec732128fafc77668cc54">00084</a>         <a class="code" href="structcp_vect.html">cpVect</a> <a class="code" href="structcp_arbiter.html#ad8724ab2c97ec732128fafc77668cc54" title="Override in a pre-solve collision handler for custom behavior.">surface_vr</a>;
+<a name="l00085"></a>00085         
+<a name="l00086"></a>00086         CP_PRIVATE(<a class="code" href="structcp_shape.html" title="Opaque collision shape struct.">cpShape</a> *a);
+<a name="l00087"></a>00087         CP_PRIVATE(<a class="code" href="structcp_shape.html" title="Opaque collision shape struct.">cpShape</a> *b);
+<a name="l00088"></a>00088         CP_PRIVATE(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body_a);
+<a name="l00089"></a>00089         CP_PRIVATE(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body_b);
+<a name="l00090"></a>00090         
+<a name="l00091"></a>00091         CP_PRIVATE(<span class="keyword">struct</span> cpArbiterThread thread_a);
+<a name="l00092"></a>00092         CP_PRIVATE(<span class="keyword">struct</span> cpArbiterThread thread_b);
+<a name="l00093"></a>00093         
+<a name="l00094"></a>00094         CP_PRIVATE(<span class="keywordtype">int</span> numContacts);
+<a name="l00095"></a>00095         CP_PRIVATE(<a class="code" href="structcp_contact.html">cpContact</a> *contacts);
+<a name="l00096"></a>00096         
+<a name="l00097"></a>00097         CP_PRIVATE(<a class="code" href="group__basic_types.html#gaa24652c104082d0725066ea5ac7dc83f" title="Type used for various timestamps in Chipmunk.">cpTimestamp</a> stamp);
+<a name="l00098"></a>00098         CP_PRIVATE(cpCollisionHandler *handler);
+<a name="l00099"></a>00099         CP_PRIVATE(<a class="code" href="group__basic_types.html#gab6e5d8afee598a57cd323abae5310244" title="Chipmunk&#39;s boolean type.">cpBool</a> swappedColl);
+<a name="l00100"></a>00100         CP_PRIVATE(cpArbiterState state);
+<a name="l00101"></a>00101 };
+<a name="l00102"></a>00102 
+<a name="l00103"></a>00103 <span class="preprocessor">#define CP_DefineArbiterStructGetter(type, member, name) \</span>
+<a name="l00104"></a>00104 <span class="preprocessor">static inline type cpArbiterGet##name(const cpArbiter *arb){return arb-&gt;member;}</span>
+<a name="l00105"></a>00105 <span class="preprocessor"></span>
+<a name="l00106"></a>00106 <span class="preprocessor">#define CP_DefineArbiterStructSetter(type, member, name) \</span>
+<a name="l00107"></a>00107 <span class="preprocessor">static inline void cpArbiterSet##name(cpArbiter *arb, type value){arb-&gt;member = value;}</span>
+<a name="l00108"></a>00108 <span class="preprocessor"></span>
+<a name="l00109"></a>00109 <span class="preprocessor">#define CP_DefineArbiterStructProperty(type, member, name) \</span>
+<a name="l00110"></a>00110 <span class="preprocessor">CP_DefineArbiterStructGetter(type, member, name) \</span>
+<a name="l00111"></a>00111 <span class="preprocessor">CP_DefineArbiterStructSetter(type, member, name)</span>
+<a name="l00112"></a>00112 <span class="preprocessor"></span>
+<a name="l00113"></a>00113 CP_DefineArbiterStructProperty(<a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a>, e, Elasticity);
+<a name="l00114"></a>00114 CP_DefineArbiterStructProperty(<a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a>, u, Friction);
+<a name="l00115"></a>00115 CP_DefineArbiterStructProperty(<a class="code" href="structcp_vect.html">cpVect</a>, surface_vr, SurfaceVelocity);
+<a name="l00116"></a>00116 
+<a name="l00119"></a>00119 <a class="code" href="structcp_vect.html">cpVect</a> <a class="code" href="group__cp_arbiter.html#ga521500a047cd9c10f7c6bfb64b3e4e50">cpArbiterTotalImpulse</a>(<span class="keyword">const</span> <a class="code" href="structcp_arbiter.html" title="A colliding pair of shapes.">cpArbiter</a> *arb);
+<a name="l00122"></a>00122 <a class="code" href="structcp_vect.html">cpVect</a> <a class="code" href="group__cp_arbiter.html#gaecdf927c0c1e3b33e28522df66815d4e">cpArbiterTotalImpulseWithFriction</a>(<span class="keyword">const</span> <a class="code" href="structcp_arbiter.html" title="A colliding pair of shapes.">cpArbiter</a> *arb);
+<a name="l00125"></a>00125 <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> <a class="code" href="group__cp_arbiter.html#ga292d7e349093c0eba4f14c7ce46956fa">cpArbiterTotalKE</a>(<span class="keyword">const</span> <a class="code" href="structcp_arbiter.html" title="A colliding pair of shapes.">cpArbiter</a> *arb);
+<a name="l00126"></a>00126 
+<a name="l00127"></a>00127 
+<a name="l00131"></a>00131 <span class="keywordtype">void</span> <a class="code" href="group__cp_arbiter.html#ga6a77d95bd4871c3bea270ca40956bbcf">cpArbiterIgnore</a>(<a class="code" href="structcp_arbiter.html" title="A colliding pair of shapes.">cpArbiter</a> *arb);
+<a name="l00132"></a>00132 
+<a name="l00136"></a>00136 <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> cpArbiterGetShapes(<span class="keyword">const</span> <a class="code" href="structcp_arbiter.html" title="A colliding pair of shapes.">cpArbiter</a> *arb, <a class="code" href="structcp_shape.html" title="Opaque collision shape struct.">cpShape</a> **a, <a class="code" href="structcp_shape.html" title="Opaque collision shape struct.">cpShape</a> **b)
+<a name="l00137"></a>00137 {
+<a name="l00138"></a>00138         <span class="keywordflow">if</span>(arb-&gt;CP_PRIVATE(swappedColl)){
+<a name="l00139"></a>00139                 (*a) = arb-&gt;CP_PRIVATE(b), (*b) = arb-&gt;CP_PRIVATE(a);
+<a name="l00140"></a>00140         } <span class="keywordflow">else</span> {
+<a name="l00141"></a>00141                 (*a) = arb-&gt;CP_PRIVATE(a), (*b) = arb-&gt;CP_PRIVATE(b);
+<a name="l00142"></a>00142         }
+<a name="l00143"></a>00143 }
+<a name="l00145"></a><a class="code" href="group__cp_arbiter.html#ga7644a545351190be1469f5465a0fbfa9">00145</a> <span class="preprocessor">#define CP_ARBITER_GET_SHAPES(arb, a, b) cpShape *a, *b; cpArbiterGetShapes(arb, &amp;a, &amp;b);</span>
+<a name="l00146"></a>00146 <span class="preprocessor"></span>
+<a name="l00150"></a>00150 <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> cpArbiterGetBodies(<span class="keyword">const</span> <a class="code" href="structcp_arbiter.html" title="A colliding pair of shapes.">cpArbiter</a> *arb, <a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> **a, <a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> **b)
+<a name="l00151"></a>00151 {
+<a name="l00152"></a>00152         <a class="code" href="group__cp_arbiter.html#ga7644a545351190be1469f5465a0fbfa9" title="A macro shortcut for defining and retrieving the shapes from an arbiter.">CP_ARBITER_GET_SHAPES</a>(arb, shape_a, shape_b);
+<a name="l00153"></a>00153         (*a) = shape_a-&gt;body;
+<a name="l00154"></a>00154         (*b) = shape_b-&gt;body;
+<a name="l00155"></a>00155 }
+<a name="l00157"></a><a class="code" href="group__cp_arbiter.html#ga303e1ca856df96c00d62ea5b47477682">00157</a> <span class="preprocessor">#define CP_ARBITER_GET_BODIES(arb, a, b) cpBody *a, *b; cpArbiterGetBodies(arb, &amp;a, &amp;b);</span>
+<a name="l00158"></a>00158 <span class="preprocessor"></span>
+<a name="l00160"></a><a class="code" href="structcp_contact_point_set.html">00160</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structcp_contact_point_set.html" title="A struct that wraps up the important collision data for an arbiter.">cpContactPointSet</a> {
+<a name="l00162"></a><a class="code" href="structcp_contact_point_set.html#a06dadd34b06a8c7f00def95ca6a1ff88">00162</a>         <span class="keywordtype">int</span> <a class="code" href="structcp_contact_point_set.html#a06dadd34b06a8c7f00def95ca6a1ff88" title="The number of contact points in the set.">count</a>;
+<a name="l00163"></a>00163         
+<a name="l00165"></a>00165         <span class="keyword">struct </span>{
+<a name="l00167"></a><a class="code" href="structcp_contact_point_set.html#a6b9722098368532286bb5e09c64ee9b8">00167</a>                 <a class="code" href="structcp_vect.html">cpVect</a> <a class="code" href="structcp_contact_point_set.html#a6b9722098368532286bb5e09c64ee9b8" title="The position of the contact point.">point</a>;
+<a name="l00169"></a><a class="code" href="structcp_contact_point_set.html#a2fab2c7e343e14833185b2c97e9fd5b8">00169</a>                 <a class="code" href="structcp_vect.html">cpVect</a> <a class="code" href="structcp_contact_point_set.html#a2fab2c7e343e14833185b2c97e9fd5b8" title="The normal of the contact point.">normal</a>;
+<a name="l00171"></a><a class="code" href="structcp_contact_point_set.html#a2fbd7271bed7d99c02fee8c032f385e5">00171</a>                 <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> <a class="code" href="structcp_contact_point_set.html#a2fbd7271bed7d99c02fee8c032f385e5" title="The depth of the contact point.">dist</a>;
+<a name="l00172"></a>00172         } <a class="code" href="structcp_contact_point_set.html#a7c95205d8eab50f2e482eada4aeec153" title="The array of contact points.">points</a>[CP_MAX_CONTACTS_PER_ARBITER];
+<a name="l00173"></a>00173 } <a class="code" href="group__cp_arbiter.html#ga75f9251b64afea972f565dff36d576f4" title="A struct that wraps up the important collision data for an arbiter.">cpContactPointSet</a>;
+<a name="l00175"></a>00175 <a class="code" href="structcp_contact_point_set.html" title="A struct that wraps up the important collision data for an arbiter.">cpContactPointSet</a> <a class="code" href="group__cp_arbiter.html#gada18a6cf4d44ef1fea136f97f3351d66" title="Return a contact set from an arbiter.">cpArbiterGetContactPointSet</a>(<span class="keyword">const</span> <a class="code" href="structcp_arbiter.html" title="A colliding pair of shapes.">cpArbiter</a> *arb);
+<a name="l00176"></a>00176 
+<a name="l00178"></a>00178 <a class="code" href="group__basic_types.html#gab6e5d8afee598a57cd323abae5310244" title="Chipmunk&#39;s boolean type.">cpBool</a> <a class="code" href="group__cp_arbiter.html#ga18fc6adcc84fb76806c244c7ed3fb8a2" title="Returns true if this is the first step a pair of objects started colliding.">cpArbiterIsFirstContact</a>(<span class="keyword">const</span> <a class="code" href="structcp_arbiter.html" title="A colliding pair of shapes.">cpArbiter</a> *arb);
+<a name="l00180"></a>00180 <span class="keywordtype">int</span> <a class="code" href="group__cp_arbiter.html#gad9422ed6f170a552d00105b83c587827" title="Get the number of contact points for this arbiter.">cpArbiterGetCount</a>(<span class="keyword">const</span> <a class="code" href="structcp_arbiter.html" title="A colliding pair of shapes.">cpArbiter</a> *arb);
+<a name="l00182"></a>00182 <a class="code" href="structcp_vect.html">cpVect</a> <a class="code" href="group__cp_arbiter.html#ga2b4aa4954df01a78004b02a135f03cec" title="Get the normal of the ith contact point.">cpArbiterGetNormal</a>(<span class="keyword">const</span> <a class="code" href="structcp_arbiter.html" title="A colliding pair of shapes.">cpArbiter</a> *arb, <span class="keywordtype">int</span> i);
+<a name="l00184"></a>00184 <a class="code" href="structcp_vect.html">cpVect</a> <a class="code" href="group__cp_arbiter.html#gacc822fd2e36734d6d51dc1b9e7f2b7b0" title="Get the position of the ith contact point.">cpArbiterGetPoint</a>(<span class="keyword">const</span> <a class="code" href="structcp_arbiter.html" title="A colliding pair of shapes.">cpArbiter</a> *arb, <span class="keywordtype">int</span> i);
+<a name="l00186"></a>00186 <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> <a class="code" href="group__cp_arbiter.html#ga1f06a3ea7a1ca61020cec1664887cbee" title="Get the depth of the ith contact point.">cpArbiterGetDepth</a>(<span class="keyword">const</span> <a class="code" href="structcp_arbiter.html" title="A colliding pair of shapes.">cpArbiter</a> *arb, <span class="keywordtype">int</span> i);
+<a name="l00187"></a>00187 
+</pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年六月8日 星期五 23:24:06 for cocos2d-iphone-2.0-rc2 by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

@@ -1,0 +1,603 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>cocos2d-iphone-2.0-rc2: CCSpriteFrame类参考</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="Icon-Small-50.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-iphone-2.0-rc2
+   &#160;<span id="projectnumber">2.0-rc2</span>
+   </div>
+   <div id="projectbrief">created:zhxubing@gmail.com</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="classes.html"><span>组合类型索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公有成员</a> &#124;
+<a href="#pub-static-methods">静态公有成员</a> &#124;
+<a href="#pro-attribs">保护属性</a> &#124;
+<a href="#properties">属性</a>  </div>
+  <div class="headertitle">
+<div class="title">CCSpriteFrame类参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#import &lt;<a class="el" href="_c_c_sprite_frame_8h_source.html">CCSpriteFrame.h</a>&gt;</code></p>
+
+<p><a href="class_c_c_sprite_frame-members.html">所有成员的列表。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+公有成员</h2></td></tr>
+<tr class="memitem:af8bce98fcf5dcd354d65735687343cf5"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_sprite_frame.html#af8bce98fcf5dcd354d65735687343cf5">initWithTexture:rect:</a></td></tr>
+<tr class="memitem:ab980f1670a4818ff59ad6900f1729ff7"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_sprite_frame.html#ab980f1670a4818ff59ad6900f1729ff7">initWithTextureFilename:rect:</a></td></tr>
+<tr class="memitem:adfdb63e74246965ef35f37b61a542cd4"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_sprite_frame.html#adfdb63e74246965ef35f37b61a542cd4">initWithTexture:rectInPixels:rotated:offset:originalSize:</a></td></tr>
+<tr class="memitem:a2fa3b38c59f2526ae666ed4c49fa94f1"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_sprite_frame.html#a2fa3b38c59f2526ae666ed4c49fa94f1">initWithTextureFilename:rectInPixels:rotated:offset:originalSize:</a></td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+静态公有成员</h2></td></tr>
+<tr class="memitem:a3d33a9ddece7caa8c8384575c6c8f549"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_c_c_sprite_frame.html#a3d33a9ddece7caa8c8384575c6c8f549">frameWithTexture:rect:</a></td></tr>
+<tr class="memitem:af542ec92bed1af72d0b5af14f6f53a01"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_c_c_sprite_frame.html#af542ec92bed1af72d0b5af14f6f53a01">frameWithTextureFilename:rect:</a></td></tr>
+<tr class="memitem:a88111a9fc32cf1cb947d0e9e37b8feca"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_c_c_sprite_frame.html#a88111a9fc32cf1cb947d0e9e37b8feca">frameWithTexture:rectInPixels:rotated:offset:originalSize:</a></td></tr>
+<tr class="memitem:a346e282819ba91eca110f029b35e21cc"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_c_c_sprite_frame.html#a346e282819ba91eca110f029b35e21cc">frameWithTextureFilename:rectInPixels:rotated:offset:originalSize:</a></td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+保护属性</h2></td></tr>
+<tr class="memitem:a61e28a2dbab54f63c79caade65bb8486"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61e28a2dbab54f63c79caade65bb8486"></a>
+CGRect&#160;</td><td class="memItemRight" valign="bottom"><b>rect_</b></td></tr>
+<tr class="memitem:af5f06b88758bd45b06d261b597081339"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5f06b88758bd45b06d261b597081339"></a>
+CGRect&#160;</td><td class="memItemRight" valign="bottom"><b>rectInPixels_</b></td></tr>
+<tr class="memitem:ad8c781ece6316537331c2e0995b5da50"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8c781ece6316537331c2e0995b5da50"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>rotated_</b></td></tr>
+<tr class="memitem:addb2656d3b1dfda5210a7a323995f9f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="addb2656d3b1dfda5210a7a323995f9f4"></a>
+CGPoint&#160;</td><td class="memItemRight" valign="bottom"><b>offset_</b></td></tr>
+<tr class="memitem:a9d3227bf8adde58e08268df96b6b6f41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d3227bf8adde58e08268df96b6b6f41"></a>
+CGPoint&#160;</td><td class="memItemRight" valign="bottom"><b>offsetInPixels_</b></td></tr>
+<tr class="memitem:ab7686c851d9dd474631ed695eee104aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7686c851d9dd474631ed695eee104aa"></a>
+CGSize&#160;</td><td class="memItemRight" valign="bottom"><b>originalSize_</b></td></tr>
+<tr class="memitem:ab4f4085214d95063da8d0ec77f59d134"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4f4085214d95063da8d0ec77f59d134"></a>
+CGSize&#160;</td><td class="memItemRight" valign="bottom"><b>originalSizeInPixels_</b></td></tr>
+<tr class="memitem:ad551b5b42ef20ac065ce33af13fc6cf1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad551b5b42ef20ac065ce33af13fc6cf1"></a>
+<a class="el" href="class_c_c_texture2_d.html">CCTexture2D</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>texture_</b></td></tr>
+<tr class="memitem:a8d1a3327ba1d2847226862b7c8b04b79"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d1a3327ba1d2847226862b7c8b04b79"></a>
+NSString *&#160;</td><td class="memItemRight" valign="bottom"><b>textureFilename_</b></td></tr>
+<tr><td colspan="2"><h2><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a7c5eb9c09bca5b2dac1a5d2c988affdb"><td class="memItemLeft" align="right" valign="top">CGRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_sprite_frame.html#a7c5eb9c09bca5b2dac1a5d2c988affdb">rect</a></td></tr>
+<tr class="memitem:a0b1ba9e7d49cfa23b120828b8dc1dfea"><td class="memItemLeft" align="right" valign="top">CGRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_sprite_frame.html#a0b1ba9e7d49cfa23b120828b8dc1dfea">rectInPixels</a></td></tr>
+<tr class="memitem:a53892235ea1f843c39d9be3eaea3a05c"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_sprite_frame.html#a53892235ea1f843c39d9be3eaea3a05c">rotated</a></td></tr>
+<tr class="memitem:a383201c46dfdbc911fe46356e1b86909"><td class="memItemLeft" align="right" valign="top">CGPoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_sprite_frame.html#a383201c46dfdbc911fe46356e1b86909">offset</a></td></tr>
+<tr class="memitem:ac1b194686a75ffafffbc9ea2cc2a4f7c"><td class="memItemLeft" align="right" valign="top">CGPoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_sprite_frame.html#ac1b194686a75ffafffbc9ea2cc2a4f7c">offsetInPixels</a></td></tr>
+<tr class="memitem:a63da85f3fe5646803a2d403896b3c762"><td class="memItemLeft" align="right" valign="top">CGSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_sprite_frame.html#a63da85f3fe5646803a2d403896b3c762">originalSize</a></td></tr>
+<tr class="memitem:a7ec8a93d1aa970d2b0f9574874e8df48"><td class="memItemLeft" align="right" valign="top">CGSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_sprite_frame.html#a7ec8a93d1aa970d2b0f9574874e8df48">originalSizeInPixels</a></td></tr>
+<tr class="memitem:a0241dc02a4432faa4652116169a80510"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_c_texture2_d.html">CCTexture2D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_sprite_frame.html#a0241dc02a4432faa4652116169a80510">texture</a></td></tr>
+<tr class="memitem:a39ae0d4d63eac89d6d5b9d9d433046f2"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_sprite_frame.html#a39ae0d4d63eac89d6d5b9d9d433046f2">textureFilename</a></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>详细描述</h2>
+<div class="textblock"><p>A <a class="el" href="interface_c_c_sprite_frame.html">CCSpriteFrame</a> has:</p>
+<ul>
+<li>texture: A <a class="el" href="class_c_c_texture2_d.html">CCTexture2D</a> that will be used by the <a class="el" href="class_c_c_sprite.html">CCSprite</a></li>
+<li>rectangle: A rectangle of the texture</li>
+</ul>
+<p>You can modify the frame of a <a class="el" href="class_c_c_sprite.html">CCSprite</a> by doing: </p>
+<div class="fragment"><pre class="fragment">   CCSpriteFrame *frame = [CCSpriteFrame frameWithTexture:texture rect:rect offset:offset];
+   [sprite setDisplayFrame:frame];</pre></div> </div><hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a3d33a9ddece7caa8c8384575c6c8f549"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) frameWithTexture: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_c_c_texture2_d.html">CCTexture2D</a>*)&#160;</td>
+          <td class="paramname"><em>texture</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">rect:</td>
+          <td></td>
+          <td class="paramtype">(CGRect)&#160;</td>
+          <td class="paramname"><em>rect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Create a <a class="el" href="interface_c_c_sprite_frame.html">CCSpriteFrame</a> with a texture, rect in points. It is assumed that the frame was not trimmed. </p>
+
+</div>
+</div>
+<a class="anchor" id="a88111a9fc32cf1cb947d0e9e37b8feca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) frameWithTexture: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_c_c_texture2_d.html">CCTexture2D</a>*)&#160;</td>
+          <td class="paramname"><em>texture</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">rectInPixels:</td>
+          <td></td>
+          <td class="paramtype">(CGRect)&#160;</td>
+          <td class="paramname"><em>rect</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">rotated:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>rotated</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">offset:</td>
+          <td></td>
+          <td class="paramtype">(CGPoint)&#160;</td>
+          <td class="paramname"><em>offset</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">originalSize:</td>
+          <td></td>
+          <td class="paramtype">(CGSize)&#160;</td>
+          <td class="paramname"><em>originalSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Create a <a class="el" href="interface_c_c_sprite_frame.html">CCSpriteFrame</a> with a texture, rect, rotated, offset and originalSize in pixels. The originalSize is the size in pixels of the frame before being trimmed. </p>
+
+</div>
+</div>
+<a class="anchor" id="af542ec92bed1af72d0b5af14f6f53a01"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) frameWithTextureFilename: </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>filename</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">rect:</td>
+          <td></td>
+          <td class="paramtype">(CGRect)&#160;</td>
+          <td class="paramname"><em>rect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Create a <a class="el" href="interface_c_c_sprite_frame.html">CCSpriteFrame</a> with a texture filename, rect in points. It is assumed that the frame was not trimmed. </p>
+
+</div>
+</div>
+<a class="anchor" id="a346e282819ba91eca110f029b35e21cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) frameWithTextureFilename: </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>filename</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">rectInPixels:</td>
+          <td></td>
+          <td class="paramtype">(CGRect)&#160;</td>
+          <td class="paramname"><em>rect</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">rotated:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>rotated</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">offset:</td>
+          <td></td>
+          <td class="paramtype">(CGPoint)&#160;</td>
+          <td class="paramname"><em>offset</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">originalSize:</td>
+          <td></td>
+          <td class="paramtype">(CGSize)&#160;</td>
+          <td class="paramname"><em>originalSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Create a <a class="el" href="interface_c_c_sprite_frame.html">CCSpriteFrame</a> with a texture filename, rect, rotated, offset and originalSize in pixels. The originalSize is the size in pixels of the frame before being trimmed. </p>
+
+</div>
+</div>
+<a class="anchor" id="af8bce98fcf5dcd354d65735687343cf5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) initWithTexture: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_c_c_texture2_d.html">CCTexture2D</a>*)&#160;</td>
+          <td class="paramname"><em>texture</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">rect:</td>
+          <td></td>
+          <td class="paramtype">(CGRect)&#160;</td>
+          <td class="paramname"><em>rect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Initializes a <a class="el" href="interface_c_c_sprite_frame.html">CCSpriteFrame</a> with a texture, rect in points; It is assumed that the frame was not trimmed. </p>
+
+</div>
+</div>
+<a class="anchor" id="adfdb63e74246965ef35f37b61a542cd4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) initWithTexture: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_c_c_texture2_d.html">CCTexture2D</a>*)&#160;</td>
+          <td class="paramname"><em>texture</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">rectInPixels:</td>
+          <td></td>
+          <td class="paramtype">(CGRect)&#160;</td>
+          <td class="paramname"><em>rect</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">rotated:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>rotated</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">offset:</td>
+          <td></td>
+          <td class="paramtype">(CGPoint)&#160;</td>
+          <td class="paramname"><em>offset</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">originalSize:</td>
+          <td></td>
+          <td class="paramtype">(CGSize)&#160;</td>
+          <td class="paramname"><em>originalSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Initializes a <a class="el" href="interface_c_c_sprite_frame.html">CCSpriteFrame</a> with a texture, rect, rotated, offset and originalSize in pixels. The originalSize is the size in pixels of the frame before being trimmed. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab980f1670a4818ff59ad6900f1729ff7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) initWithTextureFilename: </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>filename</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">rect:</td>
+          <td></td>
+          <td class="paramtype">(CGRect)&#160;</td>
+          <td class="paramname"><em>rect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Initializes a <a class="el" href="interface_c_c_sprite_frame.html">CCSpriteFrame</a> with a texture filename, rect in points; It is assumed that the frame was not trimmed. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2fa3b38c59f2526ae666ed4c49fa94f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) initWithTextureFilename: </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>filename</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">rectInPixels:</td>
+          <td></td>
+          <td class="paramtype">(CGRect)&#160;</td>
+          <td class="paramname"><em>rect</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">rotated:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>rotated</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">offset:</td>
+          <td></td>
+          <td class="paramtype">(CGPoint)&#160;</td>
+          <td class="paramname"><em>offset</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">originalSize:</td>
+          <td></td>
+          <td class="paramtype">(CGSize)&#160;</td>
+          <td class="paramname"><em>originalSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Initializes a <a class="el" href="interface_c_c_sprite_frame.html">CCSpriteFrame</a> with a texture, rect, rotated, offset and originalSize in pixels. The originalSize is the size in pixels of the frame before being trimmed.</p>
+<dl class="section since"><dt>自从:</dt><dd>v1.1 </dd></dl>
+
+</div>
+</div>
+<hr/><h2>属性文档</h2>
+<a class="anchor" id="a383201c46dfdbc911fe46356e1b86909"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (CGPoint) <a class="el" href="interface_c_c_sprite_frame.html#a383201c46dfdbc911fe46356e1b86909">offset</a><code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>offset of the frame in points </p>
+
+</div>
+</div>
+<a class="anchor" id="ac1b194686a75ffafffbc9ea2cc2a4f7c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (CGPoint) <a class="el" href="interface_c_c_sprite_frame.html#ac1b194686a75ffafffbc9ea2cc2a4f7c">offsetInPixels</a><code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>offset of the frame in pixels </p>
+
+</div>
+</div>
+<a class="anchor" id="a63da85f3fe5646803a2d403896b3c762"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (CGSize) <a class="el" href="interface_c_c_sprite_frame.html#a63da85f3fe5646803a2d403896b3c762">originalSize</a><code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>original size of the trimmed image in points </p>
+
+</div>
+</div>
+<a class="anchor" id="a7ec8a93d1aa970d2b0f9574874e8df48"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (CGSize) <a class="el" href="interface_c_c_sprite_frame.html#a7ec8a93d1aa970d2b0f9574874e8df48">originalSizeInPixels</a><code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>original size of the trimmed image in pixels </p>
+
+</div>
+</div>
+<a class="anchor" id="a7c5eb9c09bca5b2dac1a5d2c988affdb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (CGRect) <a class="el" href="interface_c_c_sprite_frame.html#a7c5eb9c09bca5b2dac1a5d2c988affdb">rect</a><code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>rect of the frame in points. If it is updated, then rectInPixels will be updated too. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0b1ba9e7d49cfa23b120828b8dc1dfea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (CGRect) <a class="el" href="interface_c_c_sprite_frame.html#a0b1ba9e7d49cfa23b120828b8dc1dfea">rectInPixels</a><code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>rect of the frame in pixels. If it is updated, then rect (points) will be udpated too. </p>
+
+</div>
+</div>
+<a class="anchor" id="a53892235ea1f843c39d9be3eaea3a05c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) <a class="el" href="interface_c_c_sprite_frame.html#a53892235ea1f843c39d9be3eaea3a05c">rotated</a><code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>whether or not the rect of the frame is rotated ( x = x+width, y = y+height, width = height, height = width ) </p>
+
+</div>
+</div>
+<a class="anchor" id="a0241dc02a4432faa4652116169a80510"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="class_c_c_texture2_d.html">CCTexture2D</a> *) <a class="el" href="interface_c_c_sprite_frame.html#a0241dc02a4432faa4652116169a80510">texture</a><code> [read, write, retain]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>texture of the frame </p>
+
+</div>
+</div>
+<a class="anchor" id="a39ae0d4d63eac89d6d5b9d9d433046f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSString*) <a class="el" href="interface_c_c_sprite_frame.html#a39ae0d4d63eac89d6d5b9d9d433046f2">textureFilename</a><code> [read, retain]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>texture file name of the frame </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/cocos2d/<a class="el" href="_c_c_sprite_frame_8h_source.html">CCSpriteFrame.h</a></li>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/cocos2d/CCSpriteFrame.m</li>
+</ul>
+</div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年六月8日 星期五 23:30:21 for cocos2d-iphone-2.0-rc2 by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

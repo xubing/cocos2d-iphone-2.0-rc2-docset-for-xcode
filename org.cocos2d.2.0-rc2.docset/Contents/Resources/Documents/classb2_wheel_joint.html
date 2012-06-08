@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>cocos2d-iphone-2.0-rc2: b2WheelJoint类参考</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="Icon-Small-50.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-iphone-2.0-rc2
+   &#160;<span id="projectnumber">2.0-rc2</span>
+   </div>
+   <div id="projectbrief">created:zhxubing@gmail.com</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="classes.html"><span>组合类型索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公有成员</a> &#124;
+<a href="#pro-methods">保护成员</a> &#124;
+<a href="#pro-attribs">保护属性</a> &#124;
+<a href="#friends">友元</a>  </div>
+  <div class="headertitle">
+<div class="title">b2WheelJoint类参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="b2_wheel_joint_8h_source.html">b2WheelJoint.h</a>&gt;</code></p>
+<div class="dynheader">
+类b2WheelJoint继承关系图：</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classb2_wheel_joint.png" usemap="#b2WheelJoint_map" alt=""/>
+  <map id="b2WheelJoint_map" name="b2WheelJoint_map">
+<area href="classb2_joint.html" alt="b2Joint" shape="rect" coords="0,0,88,24"/>
+</map>
+ </div></div>
+
+<p><a href="classb2_wheel_joint-members.html">所有成员的列表。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+公有成员</h2></td></tr>
+<tr class="memitem:a93f730702a2246be33c15f74861f0df5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93f730702a2246be33c15f74861f0df5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefinition</b> (<a class="el" href="structb2_wheel_joint_def.html">b2WheelJointDef</a> *def) const </td></tr>
+<tr class="memitem:a6499dcd788d29f06c2e1b28c755e01c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6499dcd788d29f06c2e1b28c755e01c8"></a>
+<a class="el" href="structb2_vec2.html">b2Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_wheel_joint.html#a6499dcd788d29f06c2e1b28c755e01c8">GetAnchorA</a> () const </td></tr>
+<tr class="memdesc:a6499dcd788d29f06c2e1b28c755e01c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the anchor point on bodyA in world coordinates. <br/></td></tr>
+<tr class="memitem:ace182061f7f78ac2ec3f957a763ca5d3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace182061f7f78ac2ec3f957a763ca5d3"></a>
+<a class="el" href="structb2_vec2.html">b2Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_wheel_joint.html#ace182061f7f78ac2ec3f957a763ca5d3">GetAnchorB</a> () const </td></tr>
+<tr class="memdesc:ace182061f7f78ac2ec3f957a763ca5d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the anchor point on bodyB in world coordinates. <br/></td></tr>
+<tr class="memitem:aa16e3a1c0246017bc25e72cf494daa42"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa16e3a1c0246017bc25e72cf494daa42"></a>
+<a class="el" href="structb2_vec2.html">b2Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_wheel_joint.html#aa16e3a1c0246017bc25e72cf494daa42">GetReactionForce</a> (float32 inv_dt) const </td></tr>
+<tr class="memdesc:aa16e3a1c0246017bc25e72cf494daa42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the reaction force on bodyB at the joint anchor in Newtons. <br/></td></tr>
+<tr class="memitem:ae88eeec295a19f216acab9b23d9c704b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae88eeec295a19f216acab9b23d9c704b"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_wheel_joint.html#ae88eeec295a19f216acab9b23d9c704b">GetReactionTorque</a> (float32 inv_dt) const </td></tr>
+<tr class="memdesc:ae88eeec295a19f216acab9b23d9c704b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the reaction torque on bodyB in N*m. <br/></td></tr>
+<tr class="memitem:abf725ee0fa640d1b9374283f6f50e82d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf725ee0fa640d1b9374283f6f50e82d"></a>
+const <a class="el" href="structb2_vec2.html">b2Vec2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_wheel_joint.html#abf725ee0fa640d1b9374283f6f50e82d">GetLocalAnchorA</a> () const </td></tr>
+<tr class="memdesc:abf725ee0fa640d1b9374283f6f50e82d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The local anchor point relative to bodyA's origin. <br/></td></tr>
+<tr class="memitem:a38313bcd5d5a91f190956086b9d9b8e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38313bcd5d5a91f190956086b9d9b8e5"></a>
+const <a class="el" href="structb2_vec2.html">b2Vec2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_wheel_joint.html#a38313bcd5d5a91f190956086b9d9b8e5">GetLocalAnchorB</a> () const </td></tr>
+<tr class="memdesc:a38313bcd5d5a91f190956086b9d9b8e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The local anchor point relative to bodyB's origin. <br/></td></tr>
+<tr class="memitem:a03c1a1cf19dbada68630aa3cbf970a55"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03c1a1cf19dbada68630aa3cbf970a55"></a>
+const <a class="el" href="structb2_vec2.html">b2Vec2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_wheel_joint.html#a03c1a1cf19dbada68630aa3cbf970a55">GetLocalAxisA</a> () const </td></tr>
+<tr class="memdesc:a03c1a1cf19dbada68630aa3cbf970a55"><td class="mdescLeft">&#160;</td><td class="mdescRight">The local joint axis relative to bodyA. <br/></td></tr>
+<tr class="memitem:abc3791f9c8139e5c5ba0fb72d5c7f9df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc3791f9c8139e5c5ba0fb72d5c7f9df"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_wheel_joint.html#abc3791f9c8139e5c5ba0fb72d5c7f9df">GetJointTranslation</a> () const </td></tr>
+<tr class="memdesc:abc3791f9c8139e5c5ba0fb72d5c7f9df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current joint translation, usually in meters. <br/></td></tr>
+<tr class="memitem:a398bc3a1f807905e0923cc7d9bff640d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a398bc3a1f807905e0923cc7d9bff640d"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_wheel_joint.html#a398bc3a1f807905e0923cc7d9bff640d">GetJointSpeed</a> () const </td></tr>
+<tr class="memdesc:a398bc3a1f807905e0923cc7d9bff640d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current joint translation speed, usually in meters per second. <br/></td></tr>
+<tr class="memitem:a419bc80e17cc4c1062a692ea79396d19"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a419bc80e17cc4c1062a692ea79396d19"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_wheel_joint.html#a419bc80e17cc4c1062a692ea79396d19">IsMotorEnabled</a> () const </td></tr>
+<tr class="memdesc:a419bc80e17cc4c1062a692ea79396d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the joint motor enabled? <br/></td></tr>
+<tr class="memitem:a7a832d814bdda135a78fad41ba671da6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a832d814bdda135a78fad41ba671da6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_wheel_joint.html#a7a832d814bdda135a78fad41ba671da6">EnableMotor</a> (bool flag)</td></tr>
+<tr class="memdesc:a7a832d814bdda135a78fad41ba671da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable the joint motor. <br/></td></tr>
+<tr class="memitem:a6e3255fcf5c82b979ad7e3dc1c089c0b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e3255fcf5c82b979ad7e3dc1c089c0b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_wheel_joint.html#a6e3255fcf5c82b979ad7e3dc1c089c0b">SetMotorSpeed</a> (float32 speed)</td></tr>
+<tr class="memdesc:a6e3255fcf5c82b979ad7e3dc1c089c0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the motor speed, usually in radians per second. <br/></td></tr>
+<tr class="memitem:acc7a31fdd444614ba1943f57f0c6ac5a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc7a31fdd444614ba1943f57f0c6ac5a"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_wheel_joint.html#acc7a31fdd444614ba1943f57f0c6ac5a">GetMotorSpeed</a> () const </td></tr>
+<tr class="memdesc:acc7a31fdd444614ba1943f57f0c6ac5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the motor speed, usually in radians per second. <br/></td></tr>
+<tr class="memitem:a8aae3cd624ec9d48fc86c325c4595edc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8aae3cd624ec9d48fc86c325c4595edc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_wheel_joint.html#a8aae3cd624ec9d48fc86c325c4595edc">SetMaxMotorTorque</a> (float32 torque)</td></tr>
+<tr class="memdesc:a8aae3cd624ec9d48fc86c325c4595edc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set/Get the maximum motor force, usually in N-m. <br/></td></tr>
+<tr class="memitem:ad2d9fb270f0a62cd87234d3ce55626f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad2d9fb270f0a62cd87234d3ce55626f3"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaxMotorTorque</b> () const </td></tr>
+<tr class="memitem:a4fbfb199ed267f7a2fad934cd2f4fbdc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4fbfb199ed267f7a2fad934cd2f4fbdc"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_wheel_joint.html#a4fbfb199ed267f7a2fad934cd2f4fbdc">GetMotorTorque</a> (float32 inv_dt) const </td></tr>
+<tr class="memdesc:a4fbfb199ed267f7a2fad934cd2f4fbdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current motor torque given the inverse time step, usually in N-m. <br/></td></tr>
+<tr class="memitem:af9f8fada5cb30f83aa2fbf486e9d347b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9f8fada5cb30f83aa2fbf486e9d347b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_wheel_joint.html#af9f8fada5cb30f83aa2fbf486e9d347b">SetSpringFrequencyHz</a> (float32 hz)</td></tr>
+<tr class="memdesc:af9f8fada5cb30f83aa2fbf486e9d347b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set/Get the spring frequency in hertz. Setting the frequency to zero disables the spring. <br/></td></tr>
+<tr class="memitem:a475fe44e145a7e3869c0a0ff5602bb20"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a475fe44e145a7e3869c0a0ff5602bb20"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>GetSpringFrequencyHz</b> () const </td></tr>
+<tr class="memitem:a39b123ac045c8ec93faa65746e6655dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39b123ac045c8ec93faa65746e6655dc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_wheel_joint.html#a39b123ac045c8ec93faa65746e6655dc">SetSpringDampingRatio</a> (float32 ratio)</td></tr>
+<tr class="memdesc:a39b123ac045c8ec93faa65746e6655dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set/Get the spring damping ratio. <br/></td></tr>
+<tr class="memitem:ad991b903dd8b3820dfe3a2263b89f5aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad991b903dd8b3820dfe3a2263b89f5aa"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>GetSpringDampingRatio</b> () const </td></tr>
+<tr class="memitem:a09534b6f4c5d0254711e0bcc7cf3b0e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09534b6f4c5d0254711e0bcc7cf3b0e4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_wheel_joint.html#a09534b6f4c5d0254711e0bcc7cf3b0e4">Dump</a> ()</td></tr>
+<tr class="memdesc:a09534b6f4c5d0254711e0bcc7cf3b0e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dump to b2Log. <br/></td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+保护成员</h2></td></tr>
+<tr class="memitem:a9c8bbb1068ddb46d074fe91802dd6a39"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c8bbb1068ddb46d074fe91802dd6a39"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>b2WheelJoint</b> (const <a class="el" href="structb2_wheel_joint_def.html">b2WheelJointDef</a> *def)</td></tr>
+<tr class="memitem:af3fc35c89dc253661297d69fe4a00a97"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3fc35c89dc253661297d69fe4a00a97"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InitVelocityConstraints</b> (const <a class="el" href="structb2_solver_data.html">b2SolverData</a> &amp;data)</td></tr>
+<tr class="memitem:a09283ebe01298e6a2e897ca409b70289"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09283ebe01298e6a2e897ca409b70289"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SolveVelocityConstraints</b> (const <a class="el" href="structb2_solver_data.html">b2SolverData</a> &amp;data)</td></tr>
+<tr class="memitem:ae14faaa2cd91bdea615e86c0dd2ccc97"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae14faaa2cd91bdea615e86c0dd2ccc97"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SolvePositionConstraints</b> (const <a class="el" href="structb2_solver_data.html">b2SolverData</a> &amp;data)</td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+保护属性</h2></td></tr>
+<tr class="memitem:a0570ebb1228c2baca4630c53b77792fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0570ebb1228c2baca4630c53b77792fa"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>m_frequencyHz</b></td></tr>
+<tr class="memitem:a712554f6a298cf8a69bbf546fa465843"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a712554f6a298cf8a69bbf546fa465843"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>m_dampingRatio</b></td></tr>
+<tr class="memitem:a9911353143312dc352928a80c63813c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9911353143312dc352928a80c63813c8"></a>
+<a class="el" href="structb2_vec2.html">b2Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_localAnchorA</b></td></tr>
+<tr class="memitem:a1bc3fa1a0bad5eb2cc7b9962976c1d29"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1bc3fa1a0bad5eb2cc7b9962976c1d29"></a>
+<a class="el" href="structb2_vec2.html">b2Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_localAnchorB</b></td></tr>
+<tr class="memitem:ae1cadd777bdffbb726b15c438e081c21"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae1cadd777bdffbb726b15c438e081c21"></a>
+<a class="el" href="structb2_vec2.html">b2Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_localXAxisA</b></td></tr>
+<tr class="memitem:a5e9566b969c24428d32ff2069d4180e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e9566b969c24428d32ff2069d4180e3"></a>
+<a class="el" href="structb2_vec2.html">b2Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_localYAxisA</b></td></tr>
+<tr class="memitem:a81a874642cc60caa2eb212eda3b266f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a81a874642cc60caa2eb212eda3b266f0"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>m_impulse</b></td></tr>
+<tr class="memitem:a1116db6834e3b62a651558f6bdfe000e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1116db6834e3b62a651558f6bdfe000e"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>m_motorImpulse</b></td></tr>
+<tr class="memitem:a83aa86813105dc1189fed8acf1767eb5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83aa86813105dc1189fed8acf1767eb5"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>m_springImpulse</b></td></tr>
+<tr class="memitem:ad671dcec7ecd41baf87200b2f9c37c34"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad671dcec7ecd41baf87200b2f9c37c34"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>m_maxMotorTorque</b></td></tr>
+<tr class="memitem:a29194860b36867eb4349eee73e8d5908"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29194860b36867eb4349eee73e8d5908"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>m_motorSpeed</b></td></tr>
+<tr class="memitem:a46dae5c1e2630430ce7cf00dbccee8a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46dae5c1e2630430ce7cf00dbccee8a1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_enableMotor</b></td></tr>
+<tr class="memitem:a0924e1788c097b3b05eac9cd53d1d997"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0924e1788c097b3b05eac9cd53d1d997"></a>
+int32&#160;</td><td class="memItemRight" valign="bottom"><b>m_indexA</b></td></tr>
+<tr class="memitem:a76d74ec2f2bf7c941076c0e224c2a9e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a76d74ec2f2bf7c941076c0e224c2a9e9"></a>
+int32&#160;</td><td class="memItemRight" valign="bottom"><b>m_indexB</b></td></tr>
+<tr class="memitem:a60c54ed81993fd710b9499f2d6bcc274"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60c54ed81993fd710b9499f2d6bcc274"></a>
+<a class="el" href="structb2_vec2.html">b2Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_localCenterA</b></td></tr>
+<tr class="memitem:a7631ce1cbb3b7f33d304eb87a5413277"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7631ce1cbb3b7f33d304eb87a5413277"></a>
+<a class="el" href="structb2_vec2.html">b2Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_localCenterB</b></td></tr>
+<tr class="memitem:affa854f7bdde3468b46f416836791192"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="affa854f7bdde3468b46f416836791192"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>m_invMassA</b></td></tr>
+<tr class="memitem:a8ca9663e91d3dd86bdb537248f09c5c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ca9663e91d3dd86bdb537248f09c5c7"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>m_invMassB</b></td></tr>
+<tr class="memitem:aa540d2ad4452012952fd42941eefa7d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa540d2ad4452012952fd42941eefa7d9"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>m_invIA</b></td></tr>
+<tr class="memitem:a6b76c82b51bdf6910d6c241146b1a696"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b76c82b51bdf6910d6c241146b1a696"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>m_invIB</b></td></tr>
+<tr class="memitem:ae91286452d1941d4bed387bd7ee187c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae91286452d1941d4bed387bd7ee187c8"></a>
+<a class="el" href="structb2_vec2.html">b2Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_ax</b></td></tr>
+<tr class="memitem:a2f3b7d45948c68e5c5dd8636ed8a8db1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f3b7d45948c68e5c5dd8636ed8a8db1"></a>
+<a class="el" href="structb2_vec2.html">b2Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_ay</b></td></tr>
+<tr class="memitem:a0935bcd6aea2145f6c8e947159a1e59b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0935bcd6aea2145f6c8e947159a1e59b"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>m_sAx</b></td></tr>
+<tr class="memitem:a0705a4e0dfd40bf25f518bb22d6e0177"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0705a4e0dfd40bf25f518bb22d6e0177"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>m_sBx</b></td></tr>
+<tr class="memitem:aaeb83f256ec67556cc1d7758f75b773e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaeb83f256ec67556cc1d7758f75b773e"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>m_sAy</b></td></tr>
+<tr class="memitem:a4fa320609b2942eee344ac0d91003444"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4fa320609b2942eee344ac0d91003444"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>m_sBy</b></td></tr>
+<tr class="memitem:a80abc7c0fe5a4d6f362ec5cb13214ec1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80abc7c0fe5a4d6f362ec5cb13214ec1"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>m_mass</b></td></tr>
+<tr class="memitem:a64d20e079b2638995c7faa5d3a2aed68"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64d20e079b2638995c7faa5d3a2aed68"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>m_motorMass</b></td></tr>
+<tr class="memitem:ab24b6e3ad48961de7d78e4476531dd30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab24b6e3ad48961de7d78e4476531dd30"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>m_springMass</b></td></tr>
+<tr class="memitem:a82bec93fb4a2a3702455bede3d5c6ac8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82bec93fb4a2a3702455bede3d5c6ac8"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>m_bias</b></td></tr>
+<tr class="memitem:a3d4c8b3e96b517d13693285e63a917fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d4c8b3e96b517d13693285e63a917fb"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>m_gamma</b></td></tr>
+<tr><td colspan="2"><h2><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:a54ade8ed3d794298108d7f4c4e4793fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54ade8ed3d794298108d7f4c4e4793fa"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>b2Joint</b></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>详细描述</h2>
+<div class="textblock"><p>A wheel joint. This joint provides two degrees of freedom: translation along an axis fixed in bodyA and rotation in the plane. You can use a joint limit to restrict the range of motion and a joint motor to drive the rotation or to model rotational friction. This joint is designed for vehicle suspensions. </p>
+</div><hr/>该类的文档由以下文件生成：<ul>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/external/Box2d/Box2D/Dynamics/Joints/<a class="el" href="b2_wheel_joint_8h_source.html">b2WheelJoint.h</a></li>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/external/Box2d/Box2D/Dynamics/Joints/b2WheelJoint.cpp</li>
+</ul>
+</div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年六月8日 星期五 23:30:15 for cocos2d-iphone-2.0-rc2 by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

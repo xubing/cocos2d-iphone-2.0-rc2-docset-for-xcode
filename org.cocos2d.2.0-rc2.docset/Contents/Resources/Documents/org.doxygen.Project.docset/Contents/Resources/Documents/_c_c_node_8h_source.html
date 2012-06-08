@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>cocos2d-iphone-2.0-rc2: /Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/cocos2d/CCNode.h源文件</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="Icon-Small-50.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-iphone-2.0-rc2
+   &#160;<span id="projectnumber">2.0-rc2</span>
+   </div>
+   <div id="projectbrief">created:zhxubing@gmail.com</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/cocos2d/CCNode.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/*</span>
+<a name="l00002"></a>00002 <span class="comment"> * cocos2d for iPhone: http://www.cocos2d-iphone.org</span>
+<a name="l00003"></a>00003 <span class="comment"> *</span>
+<a name="l00004"></a>00004 <span class="comment"> * Copyright (c) 2009 Valentin Milea</span>
+<a name="l00005"></a>00005 <span class="comment"> *</span>
+<a name="l00006"></a>00006 <span class="comment"> * Copyright (c) 2008-2010 Ricardo Quesada</span>
+<a name="l00007"></a>00007 <span class="comment"> * Copyright (c) 2011 Zynga Inc.</span>
+<a name="l00008"></a>00008 <span class="comment"> *</span>
+<a name="l00009"></a>00009 <span class="comment"> * Permission is hereby granted, free of charge, to any person obtaining a copy</span>
+<a name="l00010"></a>00010 <span class="comment"> * of this software and associated documentation files (the &quot;Software&quot;), to deal</span>
+<a name="l00011"></a>00011 <span class="comment"> * in the Software without restriction, including without limitation the rights</span>
+<a name="l00012"></a>00012 <span class="comment"> * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell</span>
+<a name="l00013"></a>00013 <span class="comment"> * copies of the Software, and to permit persons to whom the Software is</span>
+<a name="l00014"></a>00014 <span class="comment"> * furnished to do so, subject to the following conditions:</span>
+<a name="l00015"></a>00015 <span class="comment"> *</span>
+<a name="l00016"></a>00016 <span class="comment"> * The above copyright notice and this permission notice shall be included in</span>
+<a name="l00017"></a>00017 <span class="comment"> * all copies or substantial portions of the Software.</span>
+<a name="l00018"></a>00018 <span class="comment"> *</span>
+<a name="l00019"></a>00019 <span class="comment"> * THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
+<a name="l00020"></a>00020 <span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
+<a name="l00021"></a>00021 <span class="comment"> * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</span>
+<a name="l00022"></a>00022 <span class="comment"> * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</span>
+<a name="l00023"></a>00023 <span class="comment"> * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</span>
+<a name="l00024"></a>00024 <span class="comment"> * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN</span>
+<a name="l00025"></a>00025 <span class="comment"> * THE SOFTWARE.</span>
+<a name="l00026"></a>00026 <span class="comment"> */</span>
+<a name="l00027"></a>00027 
+<a name="l00028"></a>00028 <span class="preprocessor">#import &quot;Platforms/CCGL.h&quot;</span>
+<a name="l00029"></a>00029 <span class="preprocessor">#import &quot;<a class="code" href="cc_types_8h.html">ccTypes.h</a>&quot;</span>
+<a name="l00030"></a>00030 <span class="preprocessor">#import &quot;CCProtocols.h&quot;</span>
+<a name="l00031"></a>00031 <span class="preprocessor">#import &quot;<a class="code" href="cc_config_8h.html">ccConfig.h</a>&quot;</span>
+<a name="l00032"></a>00032 <span class="preprocessor">#import &quot;<a class="code" href="cc_g_l_state_cache_8h.html">ccGLStateCache.h</a>&quot;</span>
+<a name="l00033"></a>00033 <span class="preprocessor">#import &quot;Support/CCArray.h&quot;</span>
+<a name="l00034"></a>00034 <span class="preprocessor">#import &quot;kazmath/kazmath.h&quot;</span>
+<a name="l00035"></a>00035 
+<a name="l00036"></a>00036 <span class="keyword">enum</span> {
+<a name="l00037"></a>00037         kCCNodeTagInvalid = -1,
+<a name="l00038"></a>00038 };
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040 <span class="keyword">@class</span> <a class="code" href="interface_c_c_camera.html">CCCamera</a>;
+<a name="l00041"></a>00041 <span class="keyword">@class</span> <a class="code" href="interface_c_c_grid_base.html">CCGridBase</a>;
+<a name="l00042"></a>00042 <span class="keyword">@class</span> <a class="code" href="interface_c_c_g_l_program.html">CCGLProgram</a>;
+<a name="l00043"></a>00043 <span class="keyword">@class</span> <a class="code" href="class_c_c_scheduler.html">CCScheduler</a>;
+<a name="l00044"></a>00044 <span class="keyword">@class</span> <a class="code" href="interface_c_c_action_manager.html">CCActionManager</a>;
+<a name="l00045"></a>00045 <span class="keyword">@class</span> <a class="code" href="interface_c_c_action.html">CCAction</a>;
+<a name="l00046"></a>00046 
+<a name="l00103"></a>00103 <span class="keyword">@interface </span><a class="code" href="class_c_c_node.html">CCNode</a> : NSObject
+<a name="l00104"></a>00104 {
+<a name="l00105"></a>00105         <span class="comment">// rotation angle</span>
+<a name="l00106"></a>00106         <span class="keywordtype">float</span> rotation_;
+<a name="l00107"></a>00107 
+<a name="l00108"></a>00108         <span class="comment">// scaling factors</span>
+<a name="l00109"></a>00109         <span class="keywordtype">float</span> scaleX_, scaleY_;
+<a name="l00110"></a>00110 
+<a name="l00111"></a>00111         <span class="comment">// openGL real Z vertex</span>
+<a name="l00112"></a>00112         <span class="keywordtype">float</span> vertexZ_;
+<a name="l00113"></a>00113 
+<a name="l00114"></a>00114         <span class="comment">// position of the node</span>
+<a name="l00115"></a>00115         CGPoint position_;
+<a name="l00116"></a>00116 
+<a name="l00117"></a>00117         <span class="comment">// skew angles</span>
+<a name="l00118"></a>00118         <span class="keywordtype">float</span> skewX_, skewY_;
+<a name="l00119"></a>00119 
+<a name="l00120"></a>00120         <span class="comment">// anchor point in points</span>
+<a name="l00121"></a>00121         CGPoint anchorPointInPoints_;
+<a name="l00122"></a>00122         <span class="comment">// anchor point normalized (NOT in points)</span>
+<a name="l00123"></a>00123         CGPoint anchorPoint_;
+<a name="l00124"></a>00124 
+<a name="l00125"></a>00125         <span class="comment">// untransformed size of the node</span>
+<a name="l00126"></a>00126         CGSize  contentSize_;
+<a name="l00127"></a>00127 
+<a name="l00128"></a>00128         <span class="comment">// transform</span>
+<a name="l00129"></a>00129         CGAffineTransform transform_, inverse_;
+<a name="l00130"></a>00130 
+<a name="l00131"></a>00131         <span class="comment">// a Camera</span>
+<a name="l00132"></a>00132         <a class="code" href="interface_c_c_camera.html">CCCamera</a> *camera_;
+<a name="l00133"></a>00133 
+<a name="l00134"></a>00134         <span class="comment">// a Grid</span>
+<a name="l00135"></a>00135         <a class="code" href="interface_c_c_grid_base.html">CCGridBase</a> *grid_;
+<a name="l00136"></a>00136 
+<a name="l00137"></a>00137         <span class="comment">// z-order value</span>
+<a name="l00138"></a>00138         NSInteger zOrder_;
+<a name="l00139"></a>00139 
+<a name="l00140"></a>00140         <span class="comment">// array of children</span>
+<a name="l00141"></a>00141         <a class="code" href="interface_c_c_array.html">CCArray</a> *children_;
+<a name="l00142"></a>00142 
+<a name="l00143"></a>00143         <span class="comment">// weakref to parent</span>
+<a name="l00144"></a>00144         <a class="code" href="class_c_c_node.html">CCNode</a> *parent_;
+<a name="l00145"></a>00145 
+<a name="l00146"></a>00146         <span class="comment">// a tag. any number you want to assign to the node</span>
+<a name="l00147"></a>00147         NSInteger tag_;
+<a name="l00148"></a>00148 
+<a name="l00149"></a>00149         <span class="comment">// user data field</span>
+<a name="l00150"></a>00150         <span class="keywordtype">void</span> *userData_;
+<a name="l00151"></a>00151         <span class="keywordtype">id</span> userObject_;
+<a name="l00152"></a>00152 
+<a name="l00153"></a>00153         <span class="comment">// Shader</span>
+<a name="l00154"></a>00154         <a class="code" href="interface_c_c_g_l_program.html">CCGLProgram</a>     *shaderProgram_;
+<a name="l00155"></a>00155 
+<a name="l00156"></a>00156         <span class="comment">// Server side state</span>
+<a name="l00157"></a>00157         <a class="code" href="cc_g_l_state_cache_8h.html#af395552034661147c3a67a20581a6294">ccGLServerState</a> glServerState_;
+<a name="l00158"></a>00158 
+<a name="l00159"></a>00159         <span class="comment">// used to preserve sequence while sorting children with the same zOrder</span>
+<a name="l00160"></a>00160         NSUInteger orderOfArrival_;
+<a name="l00161"></a>00161 
+<a name="l00162"></a>00162         <span class="comment">// scheduler used to schedule timers and updates</span>
+<a name="l00163"></a>00163         <a class="code" href="class_c_c_scheduler.html">CCScheduler</a>             *scheduler_;
+<a name="l00164"></a>00164 
+<a name="l00165"></a>00165         <span class="comment">// ActionManager used to handle all the actions</span>
+<a name="l00166"></a>00166         <a class="code" href="interface_c_c_action_manager.html">CCActionManager</a> *actionManager_;
+<a name="l00167"></a>00167 
+<a name="l00168"></a>00168         <span class="comment">// Is running</span>
+<a name="l00169"></a>00169         BOOL isRunning_;
+<a name="l00170"></a>00170 
+<a name="l00171"></a>00171         BOOL isTransformDirty_;
+<a name="l00172"></a>00172         BOOL isInverseDirty_;
+<a name="l00173"></a>00173 
+<a name="l00174"></a>00174         <span class="comment">// is visible</span>
+<a name="l00175"></a>00175         BOOL visible_;
+<a name="l00176"></a>00176         <span class="comment">// If YES, the Anchor Point will be (0,0) when you position the CCNode.</span>
+<a name="l00177"></a>00177         <span class="comment">// Used by CCLayer and CCScene</span>
+<a name="l00178"></a>00178         BOOL ignoreAnchorPointForPosition_;
+<a name="l00179"></a>00179 
+<a name="l00180"></a>00180         BOOL isReorderChildDirty_;      
+<a name="l00181"></a>00181 }
+<a name="l00182"></a>00182 
+<a name="l00184"></a><a class="code" href="class_c_c_node.html#a21434541d824d49ea4e84019f1445727">00184</a> <span class="keyword">@property</span>(nonatomic,assign) NSInteger zOrder;
+<a name="l00193"></a><a class="code" href="class_c_c_node.html#aad1293ecdafd361d5e62a47e83002835">00193</a> <span class="keyword">@property</span> (nonatomic,readwrite) <span class="keywordtype">float</span> vertexZ;
+<a name="l00194"></a>00194 
+<a name="l00200"></a><a class="code" href="class_c_c_node.html#a3ab54b6652338e7d575ee14971147cbf">00200</a> <span class="keyword">@property</span>(nonatomic,readwrite,assign) <span class="keywordtype">float</span> skewX;
+<a name="l00201"></a>00201 
+<a name="l00207"></a><a class="code" href="class_c_c_node.html#a0adeb25bc880ed50012bdc8c8a811718">00207</a> <span class="keyword">@property</span>(nonatomic,readwrite,assign) <span class="keywordtype">float</span> skewY;
+<a name="l00209"></a><a class="code" href="class_c_c_node.html#aecbc1fc81f9adf0ce886644e190e2680">00209</a> <span class="keyword">@property</span>(nonatomic,readwrite,assign) <span class="keywordtype">float</span> rotation;
+<a name="l00211"></a><a class="code" href="class_c_c_node.html#a9c00de8556f267b63055ebd9e55f2415">00211</a> <span class="keyword">@property</span>(nonatomic,readwrite,assign) <span class="keywordtype">float</span> scale;
+<a name="l00213"></a><a class="code" href="class_c_c_node.html#af98791d15ad50cac4131dadfec09d49f">00213</a> <span class="keyword">@property</span>(nonatomic,readwrite,assign) <span class="keywordtype">float</span> scaleX;
+<a name="l00215"></a><a class="code" href="class_c_c_node.html#ad19816ebddb7b5da1564e2c97d1361e7">00215</a> <span class="keyword">@property</span>(nonatomic,readwrite,assign) <span class="keywordtype">float</span> scaleY;
+<a name="l00217"></a><a class="code" href="class_c_c_node.html#a297b5e96d7c1372d35589a924e1eb286">00217</a> <span class="keyword">@property</span>(nonatomic,readwrite,assign) CGPoint position;
+<a name="l00219"></a><a class="code" href="class_c_c_node.html#a14b2b20d96921f92ef12b661f6aeff72">00219</a> <span class="keyword">@property</span>(nonatomic,readonly) <a class="code" href="interface_c_c_camera.html">CCCamera</a>* camera;
+<a name="l00221"></a><a class="code" href="class_c_c_node.html#a5e739ecda0c314283a89ac389dfca2fa">00221</a> <span class="keyword">@property</span>(nonatomic,readonly) <a class="code" href="interface_c_c_array.html">CCArray</a> *children;
+<a name="l00223"></a><a class="code" href="class_c_c_node.html#ae7c8dade03d8bcd244766b97d21ef80f">00223</a> <span class="keyword">@property</span>(nonatomic,readwrite,retain) <a class="code" href="interface_c_c_grid_base.html">CCGridBase</a>* grid;
+<a name="l00225"></a><a class="code" href="class_c_c_node.html#a5385156c1a45907c9dff7dfb06e70b45">00225</a> <span class="keyword">@property</span>(nonatomic,readwrite,assign) BOOL visible;
+<a name="l00233"></a><a class="code" href="class_c_c_node.html#ac24fc742eb11ee96207052639224434c">00233</a> <span class="keyword">@property</span>(nonatomic,readwrite) CGPoint anchorPoint;
+<a name="l00237"></a><a class="code" href="class_c_c_node.html#a8fd2bad5639f673a56eaf8b9c0302c48">00237</a> <span class="keyword">@property</span>(nonatomic,readonly) CGPoint anchorPointInPoints;
+<a name="l00238"></a>00238 
+<a name="l00244"></a><a class="code" href="class_c_c_node.html#a7b80fa1c9ea5db76137ed9e73646ba25">00244</a> <span class="keyword">@property</span> (nonatomic,readwrite) CGSize contentSize;
+<a name="l00245"></a>00245 
+<a name="l00247"></a><a class="code" href="class_c_c_node.html#a0ef88eaa1917c87173866f76dac006b3">00247</a> <span class="keyword">@property</span>(nonatomic,readonly) BOOL isRunning;
+<a name="l00249"></a><a class="code" href="class_c_c_node.html#a9504c37bbc9d2ca93c34784383b21a26">00249</a> <span class="keyword">@property</span>(nonatomic,readwrite,assign) <a class="code" href="class_c_c_node.html">CCNode</a>* parent;
+<a name="l00253"></a><a class="code" href="class_c_c_node.html#a1798f20ed00ae4514ab7f2fc9ffe7e2b">00253</a> <span class="keyword">@property</span>(nonatomic,readwrite,assign) BOOL ignoreAnchorPointForPosition;
+<a name="l00255"></a><a class="code" href="class_c_c_node.html#a4ed1d0596afb7822a87e41b75b496af3">00255</a> <span class="keyword">@property</span>(nonatomic,readwrite,assign) NSInteger tag;
+<a name="l00257"></a><a class="code" href="class_c_c_node.html#aa59560e27cc9c1cc51f95def93c60125">00257</a> <span class="keyword">@property</span>(nonatomic,readwrite,assign) <span class="keywordtype">void</span>* userData;
+<a name="l00259"></a><a class="code" href="class_c_c_node.html#a34b5b9ac2ad6129cae7cbdedfe6f12a1">00259</a> <span class="keyword">@property</span>(nonatomic,readwrite,retain) <span class="keywordtype">id</span> userObject;
+<a name="l00260"></a>00260 
+<a name="l00264"></a><a class="code" href="class_c_c_node.html#a6a14e4b8be7ff8fc766730abc73ce795">00264</a> <span class="keyword">@property</span>(nonatomic,readwrite,retain) <a class="code" href="interface_c_c_g_l_program.html">CCGLProgram</a> *shaderProgram;
+<a name="l00265"></a>00265 
+<a name="l00267"></a><a class="code" href="class_c_c_node.html#ae56cef8bc876f9f4d609266bc0f80a29">00267</a> <span class="keyword">@property</span>(nonatomic,readwrite) NSUInteger orderOfArrival;
+<a name="l00268"></a>00268 
+<a name="l00272"></a><a class="code" href="class_c_c_node.html#ad0146f65e6d5edeee5bf80466d4cd738">00272</a> <span class="keyword">@property</span> (nonatomic, readwrite) <a class="code" href="cc_g_l_state_cache_8h.html#af395552034661147c3a67a20581a6294">ccGLServerState</a> glServerState;
+<a name="l00273"></a>00273 
+<a name="l00278"></a><a class="code" href="class_c_c_node.html#a23baea124da6113f8c3fe95b6f8eaa52">00278</a> <span class="keyword">@property</span> (nonatomic, readwrite, retain) <a class="code" href="interface_c_c_action_manager.html">CCActionManager</a> *actionManager;
+<a name="l00279"></a>00279 
+<a name="l00284"></a><a class="code" href="class_c_c_node.html#a497798cf2d62b8b107069ff0fc1a07d0">00284</a> <span class="keyword">@property</span> (nonatomic, readwrite, retain) <a class="code" href="class_c_c_scheduler.html">CCScheduler</a> *scheduler;
+<a name="l00285"></a>00285 
+<a name="l00286"></a>00286 <span class="comment">// initializators</span>
+<a name="l00290"></a>00290 <span class="comment"></span>+(id) node;
+<a name="l00292"></a>00292 -(id) init;
+<a name="l00293"></a>00293 
+<a name="l00294"></a>00294 
+<a name="l00295"></a>00295 <span class="comment">// scene managment</span>
+<a name="l00296"></a>00296 
+<a name="l00302"></a>00302 -(void) onEnter;
+<a name="l00303"></a>00303 
+<a name="l00309"></a>00309 -(void) onEnterTransitionDidFinish;
+<a name="l00310"></a>00310 
+<a name="l00316"></a>00316 -(void) onExit;
+<a name="l00317"></a>00317 
+<a name="l00321"></a>00321 -(void) onExitTransitionDidStart;
+<a name="l00322"></a>00322 
+<a name="l00323"></a>00323 <span class="comment">// composition: ADD</span>
+<a name="l00324"></a>00324 
+<a name="l00329"></a>00329 -(void) addChild: (<a class="code" href="class_c_c_node.html">CCNode</a>*)node;
+<a name="l00330"></a>00330 
+<a name="l00335"></a>00335 -(void) addChild: (<a class="code" href="class_c_c_node.html">CCNode</a>*)node z:(NSInteger)z;
+<a name="l00336"></a>00336 
+<a name="l00341"></a>00341 -(void) addChild: (<a class="code" href="class_c_c_node.html">CCNode</a>*)node z:(NSInteger)z tag:(NSInteger)tag;
+<a name="l00342"></a>00342 
+<a name="l00343"></a>00343 <span class="comment">// composition: REMOVE</span>
+<a name="l00344"></a>00344 
+<a name="l00349"></a>00349 -(void) removeFromParentAndCleanup:(BOOL)cleanup;
+<a name="l00350"></a>00350 
+<a name="l00354"></a>00354 -(void) removeChild: (<a class="code" href="class_c_c_node.html">CCNode</a>*)node cleanup:(BOOL)cleanup;
+<a name="l00355"></a>00355 
+<a name="l00359"></a>00359 -(void) removeChildByTag:(NSInteger) tag cleanup:(BOOL)cleanup;
+<a name="l00360"></a>00360 
+<a name="l00364"></a>00364 -(void) removeAllChildrenWithCleanup:(BOOL)cleanup;
+<a name="l00365"></a>00365 
+<a name="l00366"></a>00366 <span class="comment">// composition: GET</span>
+<a name="l00371"></a>00371 <span class="comment"></span>-(<a class="code" href="class_c_c_node.html">CCNode</a>*) getChildByTag:(NSInteger) tag;
+<a name="l00372"></a>00372 
+<a name="l00376"></a>00376 -(void) reorderChild:(<a class="code" href="class_c_c_node.html">CCNode</a>*)child z:(NSInteger)zOrder;
+<a name="l00377"></a>00377 
+<a name="l00380"></a>00380 - (void) sortAllChildren;
+<a name="l00381"></a>00381 
+<a name="l00388"></a>00388 -(void) cleanup;
+<a name="l00389"></a>00389 
+<a name="l00390"></a>00390 <span class="comment">// draw</span>
+<a name="l00391"></a>00391 
+<a name="l00397"></a>00397 -(void) draw;
+<a name="l00398"></a>00398 
+<a name="l00400"></a>00400 -(void) visit;
+<a name="l00401"></a>00401 
+<a name="l00402"></a>00402 <span class="comment">// transformations</span>
+<a name="l00403"></a>00403 
+<a name="l00405"></a>00405 -(void) transform;
+<a name="l00406"></a>00406 
+<a name="l00411"></a>00411 -(void) transformAncestors;
+<a name="l00412"></a>00412 
+<a name="l00419"></a>00419 - (CGRect) boundingBox;
+<a name="l00420"></a>00420 
+<a name="l00421"></a>00421 <span class="comment">// actions</span>
+<a name="l00422"></a>00422 
+<a name="l00429"></a>00429 -(<a class="code" href="interface_c_c_action.html">CCAction</a>*) runAction: (<a class="code" href="interface_c_c_action.html">CCAction</a>*) action;
+<a name="l00431"></a>00431 -(void) stopAllActions;
+<a name="l00433"></a>00433 -(void) stopAction: (<a class="code" href="interface_c_c_action.html">CCAction</a>*) action;
+<a name="l00437"></a>00437 -(void) stopActionByTag:(NSInteger) tag;
+<a name="l00442"></a>00442 -(<a class="code" href="interface_c_c_action.html">CCAction</a>*) getActionByTag:(NSInteger) tag;
+<a name="l00448"></a>00448 -(NSUInteger) numberOfRunningActions;
+<a name="l00449"></a>00449 
+<a name="l00450"></a>00450 <span class="comment">// timers</span>
+<a name="l00451"></a>00451 
+<a name="l00453"></a>00453 <span class="comment">//-(BOOL) isScheduled: (SEL) selector;</span>
+<a name="l00454"></a>00454 
+<a name="l00461"></a>00461 -(void) scheduleUpdate;
+<a name="l00462"></a>00462 
+<a name="l00469"></a>00469 -(void) scheduleUpdateWithPriority:(NSInteger)priority;
+<a name="l00470"></a>00470 
+<a name="l00471"></a>00471 <span class="comment">/* unschedules the &quot;update&quot; method.</span>
+<a name="l00472"></a>00472 <span class="comment"></span>
+<a name="l00473"></a>00473 <span class="comment"> @since v0.99.3</span>
+<a name="l00474"></a>00474 <span class="comment"> */</span>
+<a name="l00475"></a>00475 -(void) unscheduleUpdate;
+<a name="l00476"></a>00476 
+<a name="l00477"></a>00477 
+<a name="l00481"></a>00481 -(void) schedule: (<span class="keywordtype">SEL</span>) s;
+<a name="l00488"></a>00488 -(void) schedule: (<span class="keywordtype">SEL</span>) s interval:(<a class="code" href="cc_types_8h.html#ae6c674aac4bfb46a4e6cb1e89bb66b4f">ccTime</a>)seconds;
+<a name="l00493"></a>00493 -(void) schedule:(<span class="keywordtype">SEL</span>)selector interval:(<a class="code" href="cc_types_8h.html#ae6c674aac4bfb46a4e6cb1e89bb66b4f">ccTime</a>)interval repeat: (uint) repeat delay:(<a class="code" href="cc_types_8h.html#ae6c674aac4bfb46a4e6cb1e89bb66b4f">ccTime</a>) delay;
+<a name="l00494"></a>00494 
+<a name="l00498"></a>00498 - (void) scheduleOnce:(<span class="keywordtype">SEL</span>) selector delay:(<a class="code" href="cc_types_8h.html#ae6c674aac4bfb46a4e6cb1e89bb66b4f">ccTime</a>) delay;
+<a name="l00499"></a>00499 
+<a name="l00501"></a>00501 -(void) unschedule: (<span class="keywordtype">SEL</span>) s;
+<a name="l00502"></a>00502 
+<a name="l00507"></a>00507 -(void) unscheduleAllSelectors;
+<a name="l00508"></a>00508 
+<a name="l00512"></a>00512 -(void) resumeSchedulerAndActions;
+<a name="l00516"></a>00516 -(void) pauseSchedulerAndActions;
+<a name="l00517"></a>00517 
+<a name="l00518"></a>00518 
+<a name="l00519"></a>00519 <span class="comment">// transformation methods</span>
+<a name="l00520"></a>00520 
+<a name="l00525"></a>00525 - (CGAffineTransform)nodeToParentTransform;
+<a name="l00530"></a>00530 - (CGAffineTransform)parentToNodeTransform;
+<a name="l00534"></a>00534 - (CGAffineTransform)nodeToWorldTransform;
+<a name="l00538"></a>00538 - (CGAffineTransform)worldToNodeTransform;
+<a name="l00542"></a>00542 - (CGPoint)convertToNodeSpace:(CGPoint)worldPoint;
+<a name="l00546"></a>00546 - (CGPoint)convertToWorldSpace:(CGPoint)nodePoint;
+<a name="l00551"></a>00551 - (CGPoint)convertToNodeSpaceAR:(CGPoint)worldPoint;
+<a name="l00556"></a>00556 - (CGPoint)convertToWorldSpaceAR:(CGPoint)nodePoint;
+<a name="l00557"></a>00557 
+<a name="l00558"></a>00558 <span class="preprocessor">#ifdef __CC_PLATFORM_IOS</span>
+<a name="l00559"></a>00559 <span class="preprocessor"></span>
+<a name="l00562"></a>00562 - (CGPoint)convertTouchToNodeSpace:(UITouch *)touch;
+<a name="l00567"></a>00567 - (CGPoint)convertTouchToNodeSpaceAR:(UITouch *)touch;
+<a name="l00568"></a>00568 <span class="preprocessor">#endif // __CC_PLATFORM_IOS</span>
+<a name="l00569"></a>00569 <span class="preprocessor"></span><span class="keyword">@end</span>
+</pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年六月8日 星期五 23:24:05 for cocos2d-iphone-2.0-rc2 by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

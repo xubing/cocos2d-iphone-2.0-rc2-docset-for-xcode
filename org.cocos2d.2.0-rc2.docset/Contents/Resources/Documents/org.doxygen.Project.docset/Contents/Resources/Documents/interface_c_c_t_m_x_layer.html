@@ -1,0 +1,631 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>cocos2d-iphone-2.0-rc2: CCTMXLayer类参考</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="Icon-Small-50.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-iphone-2.0-rc2
+   &#160;<span id="projectnumber">2.0-rc2</span>
+   </div>
+   <div id="projectbrief">created:zhxubing@gmail.com</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="classes.html"><span>组合类型索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公有成员</a> &#124;
+<a href="#pub-static-methods">静态公有成员</a> &#124;
+<a href="#pro-attribs">保护属性</a> &#124;
+<a href="#properties">属性</a>  </div>
+  <div class="headertitle">
+<div class="title">CCTMXLayer类参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#import &lt;<a class="el" href="_c_c_t_m_x_layer_8h_source.html">CCTMXLayer.h</a>&gt;</code></p>
+<div class="dynheader">
+类CCTMXLayer继承关系图：</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_c_c_t_m_x_layer.png" usemap="#CCTMXLayer_map" alt=""/>
+  <map id="CCTMXLayer_map" name="CCTMXLayer_map">
+<area href="interface_c_c_sprite_batch_node.html" alt="CCSpriteBatchNode" shape="rect" coords="71,112,204,136"/>
+<area href="class_c_c_node.html" alt="CCNode" shape="rect" coords="0,56,133,80"/>
+<area href="protocol_c_c_texture_protocol-p.html" alt="&lt;CCTextureProtocol&gt;" shape="rect" coords="143,56,276,80"/>
+<area href="protocol_c_c_blend_protocol-p.html" alt="&lt;CCBlendProtocol&gt;" shape="rect" coords="143,0,276,24"/>
+</map>
+ </div></div>
+
+<p><a href="class_c_c_t_m_x_layer-members.html">所有成员的列表。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+公有成员</h2></td></tr>
+<tr class="memitem:a33a9fb3afbeaff1c7c944871cc36dc8e"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_t_m_x_layer.html#a33a9fb3afbeaff1c7c944871cc36dc8e">initWithTilesetInfo:layerInfo:mapInfo:</a></td></tr>
+<tr class="memitem:a6da51144eb6bc5fbdb10cecb1dd9dd95"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_t_m_x_layer.html#a6da51144eb6bc5fbdb10cecb1dd9dd95">releaseMap</a></td></tr>
+<tr class="memitem:acf0ee39e7670ebf4cd0dcd806c0b0897"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="class_c_c_sprite.html">CCSprite</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_t_m_x_layer.html#acf0ee39e7670ebf4cd0dcd806c0b0897">tileAt:</a></td></tr>
+<tr class="memitem:a22f4a950562db2473c188df39e5fc89c"><td class="memItemLeft" align="right" valign="top">(uint32_t)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_t_m_x_layer.html#a22f4a950562db2473c188df39e5fc89c">tileGIDAt:</a></td></tr>
+<tr class="memitem:afe712473b73e0d12d132cf8fc0c49436"><td class="memItemLeft" align="right" valign="top">(uint32_t)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_t_m_x_layer.html#afe712473b73e0d12d132cf8fc0c49436">tileGIDAt:withFlags:</a></td></tr>
+<tr class="memitem:a040599b66314082e02b3a7fbb923eca9"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_t_m_x_layer.html#a040599b66314082e02b3a7fbb923eca9">setTileGID:at:</a></td></tr>
+<tr class="memitem:af5a1be12e5457e4d3e54894953a0e041"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_t_m_x_layer.html#af5a1be12e5457e4d3e54894953a0e041">setTileGID:at:withFlags:</a></td></tr>
+<tr class="memitem:a776ac1404ff793782b5dcf55a3025909"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_t_m_x_layer.html#a776ac1404ff793782b5dcf55a3025909">removeTileAt:</a></td></tr>
+<tr class="memitem:ac8b24455f15f4ec4ad9f7c46dcfa2ba3"><td class="memItemLeft" align="right" valign="top">(CGPoint)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_t_m_x_layer.html#ac8b24455f15f4ec4ad9f7c46dcfa2ba3">positionAt:</a></td></tr>
+<tr class="memitem:a93cde7e27d79b8471ae7022ca8f3477d"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_t_m_x_layer.html#a93cde7e27d79b8471ae7022ca8f3477d">propertyNamed:</a></td></tr>
+<tr class="memitem:a2907ea3d49257923efeccd65803f8862"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_t_m_x_layer.html#a2907ea3d49257923efeccd65803f8862">setupTiles</a></td></tr>
+<tr class="memitem:a898f8a54b02cc7cdfc9236177d93a2c0"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_t_m_x_layer.html#a898f8a54b02cc7cdfc9236177d93a2c0">addChild:z:tag:</a></td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+静态公有成员</h2></td></tr>
+<tr class="memitem:a77aae0dac98b55e7dd6bfc80e9338e52"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_c_c_t_m_x_layer.html#a77aae0dac98b55e7dd6bfc80e9338e52">layerWithTilesetInfo:layerInfo:mapInfo:</a></td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+保护属性</h2></td></tr>
+<tr class="memitem:a84b0fb090e8d531b216c230f2334b2d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84b0fb090e8d531b216c230f2334b2d7"></a>
+<a class="el" href="interface_c_c_t_m_x_tileset_info.html">CCTMXTilesetInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>tileset_</b></td></tr>
+<tr class="memitem:aba00371b851c2fbf3c78bc037251ed09"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba00371b851c2fbf3c78bc037251ed09"></a>
+NSString *&#160;</td><td class="memItemRight" valign="bottom"><b>layerName_</b></td></tr>
+<tr class="memitem:a4320ee359aac0539e3663550c6f9dd83"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4320ee359aac0539e3663550c6f9dd83"></a>
+CGSize&#160;</td><td class="memItemRight" valign="bottom"><b>layerSize_</b></td></tr>
+<tr class="memitem:ac0f56263b1d585707b00d4c7a1fe3bbb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0f56263b1d585707b00d4c7a1fe3bbb"></a>
+CGSize&#160;</td><td class="memItemRight" valign="bottom"><b>mapTileSize_</b></td></tr>
+<tr class="memitem:a49aba95c0f53a51a3b2dda6052d2e175"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49aba95c0f53a51a3b2dda6052d2e175"></a>
+uint32_t *&#160;</td><td class="memItemRight" valign="bottom"><b>tiles_</b></td></tr>
+<tr class="memitem:ab193a163da7b8af9fecbba8c3fd81e0d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab193a163da7b8af9fecbba8c3fd81e0d"></a>
+NSUInteger&#160;</td><td class="memItemRight" valign="bottom"><b>layerOrientation_</b></td></tr>
+<tr class="memitem:ab4ca5a686a9bc3e522a0881c47818e1f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4ca5a686a9bc3e522a0881c47818e1f"></a>
+NSMutableArray *&#160;</td><td class="memItemRight" valign="bottom"><b>properties_</b></td></tr>
+<tr class="memitem:a627f84c30da154053c5b394648034263"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a627f84c30da154053c5b394648034263"></a>
+unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>opacity_</b></td></tr>
+<tr class="memitem:a1c9b17097327be81e29f38a4359f300a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c9b17097327be81e29f38a4359f300a"></a>
+NSUInteger&#160;</td><td class="memItemRight" valign="bottom"><b>minGID_</b></td></tr>
+<tr class="memitem:a5f90541c70209a7f5c9a6e4921f67fb9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f90541c70209a7f5c9a6e4921f67fb9"></a>
+NSUInteger&#160;</td><td class="memItemRight" valign="bottom"><b>maxGID_</b></td></tr>
+<tr class="memitem:a407c28600f59813804de9dafe6a5c511"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a407c28600f59813804de9dafe6a5c511"></a>
+NSInteger&#160;</td><td class="memItemRight" valign="bottom"><b>vertexZvalue_</b></td></tr>
+<tr class="memitem:a09779adfe3d1623075c54bd077077659"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09779adfe3d1623075c54bd077077659"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>useAutomaticVertexZ_</b></td></tr>
+<tr class="memitem:adb619b53d05e04a937ec7e9ce650fbb4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb619b53d05e04a937ec7e9ce650fbb4"></a>
+<a class="el" href="class_c_c_sprite.html">CCSprite</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>reusedTile_</b></td></tr>
+<tr class="memitem:a1e928e1923db5c5eb598dd7309da71d3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e928e1923db5c5eb598dd7309da71d3"></a>
+<a class="el" href="structcc_array.html">ccCArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>atlasIndexArray_</b></td></tr>
+<tr><td colspan="2"><h2><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:ae62640f00d84efb58df4eb90e3913700"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_t_m_x_layer.html#ae62640f00d84efb58df4eb90e3913700">layerName</a></td></tr>
+<tr class="memitem:a4d680b868f0e476d8a51e52d3c4ff64e"><td class="memItemLeft" align="right" valign="top">CGSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_t_m_x_layer.html#a4d680b868f0e476d8a51e52d3c4ff64e">layerSize</a></td></tr>
+<tr class="memitem:a13536a56d5a74341e766d8918a2c9013"><td class="memItemLeft" align="right" valign="top">CGSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_t_m_x_layer.html#a13536a56d5a74341e766d8918a2c9013">mapTileSize</a></td></tr>
+<tr class="memitem:a37c6ea184edaec1b0ba8f82cf2c386c8"><td class="memItemLeft" align="right" valign="top">uint32_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_t_m_x_layer.html#a37c6ea184edaec1b0ba8f82cf2c386c8">tiles</a></td></tr>
+<tr class="memitem:afb0c60d744928f1ebbe66010448cdcce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_c_c_t_m_x_tileset_info.html">CCTMXTilesetInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_t_m_x_layer.html#afb0c60d744928f1ebbe66010448cdcce">tileset</a></td></tr>
+<tr class="memitem:ab1be7f739da6da05fbc11da0e2c647f9"><td class="memItemLeft" align="right" valign="top">NSUInteger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_t_m_x_layer.html#ab1be7f739da6da05fbc11da0e2c647f9">layerOrientation</a></td></tr>
+<tr class="memitem:a3fcc631e6c87920daa231095c62b3344"><td class="memItemLeft" align="right" valign="top">NSMutableArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_t_m_x_layer.html#a3fcc631e6c87920daa231095c62b3344">properties</a></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>详细描述</h2>
+<div class="textblock"><p><a class="el" href="interface_c_c_t_m_x_layer.html">CCTMXLayer</a> represents the TMX layer.</p>
+<p>It is a subclass of <a class="el" href="interface_c_c_sprite_batch_node.html">CCSpriteBatchNode</a>. By default the tiles are rendered using a <a class="el" href="interface_c_c_texture_atlas.html">CCTextureAtlas</a>. If you mofify a tile on runtime, then, that tile will become a <a class="el" href="class_c_c_sprite.html">CCSprite</a>, otherwise no <a class="el" href="class_c_c_sprite.html">CCSprite</a> objects are created. The benefits of using <a class="el" href="class_c_c_sprite.html">CCSprite</a> objects as tiles are:</p>
+<ul>
+<li>tiles (<a class="el" href="class_c_c_sprite.html">CCSprite</a>) can be rotated/scaled/moved with a nice API</li>
+</ul>
+<p>cocos2d v2.0 doesn't support the cc_vertexz value. Whenever a the cc_vertexz property is found, it will raise an exception.</p>
+<p>"value" by default is 0, but you can change it from Tiled by adding the "cc_alpha_func" property to the layer. The value 0 should work for most cases, but if you have tiles that are semi-transparent, then you might want to use a differnt value, like 0.5.</p>
+<p>For further information, please see the programming guide: </p>
+<div class="fragment"><pre class="fragment">   http://www.cocos2d-iphone.org/wiki/doku.php/prog_guide:tiled_maps</pre></div> <dl class="section since"><dt>自从:</dt><dd>v0.8.1</dd></dl>
+<p><a class="el" href="class_tiles.html">Tiles</a> can have tile flags for additional properties. At the moment only flip horizontal and flip vertical are used. These bit flags are defined in <a class="el" href="_c_c_t_m_x_x_m_l_parser_8h_source.html">CCTMXXMLParser.h</a>.</p>
+<dl class="section since"><dt>自从:</dt><dd>1.1 </dd></dl>
+</div><hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a898f8a54b02cc7cdfc9236177d93a2c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) <a class="el" href="class_c_c_node.html#afa69e08c50aa394c748dcb585cbcb4df">addChild:</a> </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_c_c_node.html">CCNode</a>*)&#160;</td>
+          <td class="paramname"><em>node</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">z:</td>
+          <td></td>
+          <td class="paramtype">(NSInteger)&#160;</td>
+          <td class="paramname"><em>z</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">tag:</td>
+          <td></td>
+          <td class="paramtype">(NSInteger)&#160;</td>
+          <td class="paramname"><em>tag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p><a class="el" href="interface_c_c_t_m_x_layer.html">CCTMXLayer</a> doesn't support adding a <a class="el" href="class_c_c_sprite.html">CCSprite</a> manually. </p>
+<dl class="section warning"><dt>警告:</dt><dd>addchild:z:tag: is not supported on <a class="el" href="interface_c_c_t_m_x_layer.html">CCTMXLayer</a>. Instead of setTileGID:at:/tileAt: </dd></dl>
+
+<p>重载<a class="el" href="class_c_c_node.html#ab3e142f4e18581046f811ae1489dd0c9">CCNode</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a33a9fb3afbeaff1c7c944871cc36dc8e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) initWithTilesetInfo: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_c_c_t_m_x_tileset_info.html">CCTMXTilesetInfo</a>*)&#160;</td>
+          <td class="paramname"><em>tilesetInfo</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">layerInfo:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_c_c_t_m_x_layer_info.html">CCTMXLayerInfo</a>*)&#160;</td>
+          <td class="paramname"><em>layerInfo</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">mapInfo:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_c_c_t_m_x_map_info.html">CCTMXMapInfo</a>*)&#160;</td>
+          <td class="paramname"><em>mapInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>initializes a <a class="el" href="interface_c_c_t_m_x_layer.html">CCTMXLayer</a> with a tileset info, a layer info and a map info </p>
+
+</div>
+</div>
+<a class="anchor" id="a77aae0dac98b55e7dd6bfc80e9338e52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) layerWithTilesetInfo: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_c_c_t_m_x_tileset_info.html">CCTMXTilesetInfo</a>*)&#160;</td>
+          <td class="paramname"><em>tilesetInfo</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">layerInfo:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_c_c_t_m_x_layer_info.html">CCTMXLayerInfo</a>*)&#160;</td>
+          <td class="paramname"><em>layerInfo</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">mapInfo:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_c_c_t_m_x_map_info.html">CCTMXMapInfo</a>*)&#160;</td>
+          <td class="paramname"><em>mapInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>creates a <a class="el" href="interface_c_c_t_m_x_layer.html">CCTMXLayer</a> with an tileset info, a layer info and a map info </p>
+
+</div>
+</div>
+<a class="anchor" id="ac8b24455f15f4ec4ad9f7c46dcfa2ba3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (CGPoint) <a class="el" href="interface_c_c_t_m_x_layer.html#ac8b24455f15f4ec4ad9f7c46dcfa2ba3">positionAt:</a> </td>
+          <td></td>
+          <td class="paramtype">(CGPoint)&#160;</td>
+          <td class="paramname"><em>tileCoordinate</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>returns the position in points of a given tile coordinate </p>
+
+</div>
+</div>
+<a class="anchor" id="a93cde7e27d79b8471ae7022ca8f3477d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) <a class="el" href="interface_c_c_t_m_x_layer.html#a93cde7e27d79b8471ae7022ca8f3477d">propertyNamed:</a> </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>propertyName</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>return the value for the specific property name </p>
+
+</div>
+</div>
+<a class="anchor" id="a6da51144eb6bc5fbdb10cecb1dd9dd95"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) <a class="el" href="interface_c_c_t_m_x_layer.html#a6da51144eb6bc5fbdb10cecb1dd9dd95">releaseMap</a> </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>dealloc the map that contains the tile position from memory. Unless you want to know at runtime the tiles positions, you can safely call this method. If you are going to call [layer tileGIDAt:] then, don't release the map </p>
+
+</div>
+</div>
+<a class="anchor" id="a776ac1404ff793782b5dcf55a3025909"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) <a class="el" href="interface_c_c_t_m_x_layer.html#a776ac1404ff793782b5dcf55a3025909">removeTileAt:</a> </td>
+          <td></td>
+          <td class="paramtype">(CGPoint)&#160;</td>
+          <td class="paramname"><em>tileCoordinate</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>removes a tile at given tile coordinate </p>
+
+</div>
+</div>
+<a class="anchor" id="a040599b66314082e02b3a7fbb923eca9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setTileGID: </td>
+          <td></td>
+          <td class="paramtype">(uint32_t)&#160;</td>
+          <td class="paramname"><em>gid</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">at:</td>
+          <td></td>
+          <td class="paramtype">(CGPoint)&#160;</td>
+          <td class="paramname"><em>tileCoordinate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>sets the tile gid (gid = tile global id) at a given tile coordinate. The <a class="el" href="struct_tile.html">Tile</a> GID can be obtained by using the method "tileGIDAt" or by using the TMX editor -&gt; Tileset Mgr +1. If a tile is already placed at that position, then it will be removed. </p>
+
+</div>
+</div>
+<a class="anchor" id="af5a1be12e5457e4d3e54894953a0e041"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setTileGID: </td>
+          <td></td>
+          <td class="paramtype">(uint32_t)&#160;</td>
+          <td class="paramname"><em>gid</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">at:</td>
+          <td></td>
+          <td class="paramtype">(CGPoint)&#160;</td>
+          <td class="paramname"><em>pos</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">withFlags:</td>
+          <td></td>
+          <td class="paramtype">(ccTMXTileFlags)&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>sets the tile gid (gid = tile global id) at a given tile coordinate. The <a class="el" href="struct_tile.html">Tile</a> GID can be obtained by using the method "tileGIDAt" or by using the TMX editor -&gt; Tileset Mgr +1. If a tile is already placed at that position, then it will be removed.</p>
+<p>Use withFlags if the tile flags need to be changed as well </p>
+
+</div>
+</div>
+<a class="anchor" id="a2907ea3d49257923efeccd65803f8862"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) <a class="el" href="interface_c_c_t_m_x_layer.html#a2907ea3d49257923efeccd65803f8862">setupTiles</a> </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Creates the tiles </p>
+
+</div>
+</div>
+<a class="anchor" id="acf0ee39e7670ebf4cd0dcd806c0b0897"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="class_c_c_sprite.html">CCSprite</a> *) <a class="el" href="interface_c_c_t_m_x_layer.html#acf0ee39e7670ebf4cd0dcd806c0b0897">tileAt:</a> </td>
+          <td></td>
+          <td class="paramtype">(CGPoint)&#160;</td>
+          <td class="paramname"><em>tileCoordinate</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>returns the tile (<a class="el" href="class_c_c_sprite.html">CCSprite</a>) at a given a tile coordinate. The returned <a class="el" href="class_c_c_sprite.html">CCSprite</a> will be already added to the <a class="el" href="interface_c_c_t_m_x_layer.html">CCTMXLayer</a>. Don't add it again. The <a class="el" href="class_c_c_sprite.html">CCSprite</a> can be treated like any other <a class="el" href="class_c_c_sprite.html">CCSprite</a>: rotated, scaled, translated, opacity, color, etc. You can remove either by calling:</p>
+<ul>
+<li>[layer removeChild:sprite cleanup:cleanup];</li>
+<li>or [layer removeTileAt:<a class="el" href="_c_g_point_extension_8h.html#a6250be5f1c27162404561148ebd6ffcc">ccp(x,y)</a>]; </li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="a22f4a950562db2473c188df39e5fc89c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint32_t) <a class="el" href="interface_c_c_t_m_x_layer.html#a22f4a950562db2473c188df39e5fc89c">tileGIDAt:</a> </td>
+          <td></td>
+          <td class="paramtype">(CGPoint)&#160;</td>
+          <td class="paramname"><em>tileCoordinate</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>returns the tile gid at a given tile coordinate. if it returns 0, it means that the tile is empty. This method requires the the tile map has not been previously released (eg. don't call [layer releaseMap]) </p>
+
+</div>
+</div>
+<a class="anchor" id="afe712473b73e0d12d132cf8fc0c49436"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint32_t) <a class="el" href="interface_c_c_t_m_x_layer.html#a22f4a950562db2473c188df39e5fc89c">tileGIDAt:</a> </td>
+          <td></td>
+          <td class="paramtype">(CGPoint)&#160;</td>
+          <td class="paramname"><em>pos</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">withFlags:</td>
+          <td></td>
+          <td class="paramtype">(ccTMXTileFlags*)&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>returns the tile gid at a given tile coordinate. It also returns the tile flags. This method requires the the tile map has not been previously released (eg. don't call [layer releaseMap]) </p>
+
+</div>
+</div>
+<hr/><h2>属性文档</h2>
+<a class="anchor" id="ae62640f00d84efb58df4eb90e3913700"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSString*) <a class="el" href="interface_c_c_t_m_x_layer.html#ae62640f00d84efb58df4eb90e3913700">layerName</a><code> [read, write, retain]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>name of the layer </p>
+
+</div>
+</div>
+<a class="anchor" id="ab1be7f739da6da05fbc11da0e2c647f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSUInteger) <a class="el" href="interface_c_c_t_m_x_layer.html#ab1be7f739da6da05fbc11da0e2c647f9">layerOrientation</a><code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Layer orientation, which is the same as the map orientation </p>
+
+</div>
+</div>
+<a class="anchor" id="a4d680b868f0e476d8a51e52d3c4ff64e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (CGSize) <a class="el" href="interface_c_c_t_m_x_layer.html#a4d680b868f0e476d8a51e52d3c4ff64e">layerSize</a><code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>size of the layer in tiles </p>
+
+</div>
+</div>
+<a class="anchor" id="a13536a56d5a74341e766d8918a2c9013"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (CGSize) <a class="el" href="interface_c_c_t_m_x_layer.html#a13536a56d5a74341e766d8918a2c9013">mapTileSize</a><code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>size of the map's tile (could be differnt from the tile's size) </p>
+
+</div>
+</div>
+<a class="anchor" id="a3fcc631e6c87920daa231095c62b3344"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSMutableArray*) <a class="el" href="interface_c_c_t_m_x_layer.html#a3fcc631e6c87920daa231095c62b3344">properties</a><code> [read, write, retain]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>properties from the layer. They can be added using Tiled </p>
+
+</div>
+</div>
+<a class="anchor" id="a37c6ea184edaec1b0ba8f82cf2c386c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint32_t*) <a class="el" href="interface_c_c_t_m_x_layer.html#a37c6ea184edaec1b0ba8f82cf2c386c8">tiles</a><code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>pointer to the map of tiles </p>
+
+</div>
+</div>
+<a class="anchor" id="afb0c60d744928f1ebbe66010448cdcce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="interface_c_c_t_m_x_tileset_info.html">CCTMXTilesetInfo</a>*) <a class="el" href="interface_c_c_t_m_x_layer.html#afb0c60d744928f1ebbe66010448cdcce">tileset</a><code> [read, write, retain]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Tilset information for the layer </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/cocos2d/<a class="el" href="_c_c_t_m_x_layer_8h_source.html">CCTMXLayer.h</a></li>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/cocos2d/CCTMXLayer.m</li>
+</ul>
+</div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年六月8日 星期五 23:24:16 for cocos2d-iphone-2.0-rc2 by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

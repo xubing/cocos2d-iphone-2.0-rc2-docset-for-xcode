@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>cocos2d-iphone-2.0-rc2: /Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/cocos2d/CCTextureCache.h源文件</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="Icon-Small-50.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-iphone-2.0-rc2
+   &#160;<span id="projectnumber">2.0-rc2</span>
+   </div>
+   <div id="projectbrief">created:zhxubing@gmail.com</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/cocos2d/CCTextureCache.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/*</span>
+<a name="l00002"></a>00002 <span class="comment"> * cocos2d for iPhone: http://www.cocos2d-iphone.org</span>
+<a name="l00003"></a>00003 <span class="comment"> *</span>
+<a name="l00004"></a>00004 <span class="comment"> * Copyright (c) 2008-2010 Ricardo Quesada</span>
+<a name="l00005"></a>00005 <span class="comment"> * Copyright (c) 2011 Zynga Inc.</span>
+<a name="l00006"></a>00006 <span class="comment"> *</span>
+<a name="l00007"></a>00007 <span class="comment"> * Permission is hereby granted, free of charge, to any person obtaining a copy</span>
+<a name="l00008"></a>00008 <span class="comment"> * of this software and associated documentation files (the &quot;Software&quot;), to deal</span>
+<a name="l00009"></a>00009 <span class="comment"> * in the Software without restriction, including without limitation the rights</span>
+<a name="l00010"></a>00010 <span class="comment"> * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell</span>
+<a name="l00011"></a>00011 <span class="comment"> * copies of the Software, and to permit persons to whom the Software is</span>
+<a name="l00012"></a>00012 <span class="comment"> * furnished to do so, subject to the following conditions:</span>
+<a name="l00013"></a>00013 <span class="comment"> *</span>
+<a name="l00014"></a>00014 <span class="comment"> * The above copyright notice and this permission notice shall be included in</span>
+<a name="l00015"></a>00015 <span class="comment"> * all copies or substantial portions of the Software.</span>
+<a name="l00016"></a>00016 <span class="comment"> *</span>
+<a name="l00017"></a>00017 <span class="comment"> * THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
+<a name="l00018"></a>00018 <span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
+<a name="l00019"></a>00019 <span class="comment"> * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</span>
+<a name="l00020"></a>00020 <span class="comment"> * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</span>
+<a name="l00021"></a>00021 <span class="comment"> * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</span>
+<a name="l00022"></a>00022 <span class="comment"> * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN</span>
+<a name="l00023"></a>00023 <span class="comment"> * THE SOFTWARE.</span>
+<a name="l00024"></a>00024 <span class="comment"> *</span>
+<a name="l00025"></a>00025 <span class="comment"> */</span>
+<a name="l00026"></a>00026 
+<a name="l00027"></a>00027 <span class="preprocessor">#import &quot;<a class="code" href="cc_macros_8h.html">ccMacros.h</a>&quot;</span>
+<a name="l00028"></a>00028 
+<a name="l00029"></a>00029 <span class="preprocessor">#ifdef __CC_PLATFORM_IOS</span>
+<a name="l00030"></a>00030 <span class="preprocessor"></span><span class="preprocessor">#import &lt;CoreGraphics/CGImage.h&gt;</span>
+<a name="l00031"></a>00031 <span class="preprocessor">#endif</span>
+<a name="l00032"></a>00032 <span class="preprocessor"></span>
+<a name="l00033"></a>00033 <span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span>
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035 <span class="keyword">@class</span> <a class="code" href="class_c_c_texture2_d.html">CCTexture2D</a>;
+<a name="l00036"></a>00036 
+<a name="l00041"></a><a class="code" href="interface_c_c_texture_cache.html">00041</a> <span class="keyword">@interface </span><a class="code" href="interface_c_c_texture_cache.html">CCTextureCache</a> : NSObject
+<a name="l00042"></a>00042 {
+<a name="l00043"></a>00043         NSMutableDictionary *textures_;
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045         dispatch_queue_t _loadingQueue;
+<a name="l00046"></a>00046         dispatch_queue_t _dictQueue;
+<a name="l00047"></a>00047 }
+<a name="l00048"></a>00048 
+<a name="l00050"></a>00050 + (<a class="code" href="interface_c_c_texture_cache.html">CCTextureCache</a> *) sharedTextureCache;
+<a name="l00051"></a>00051 
+<a name="l00055"></a>00055 +(void)purgeSharedTextureCache;
+<a name="l00056"></a>00056 
+<a name="l00057"></a>00057 
+<a name="l00064"></a>00064 -(<a class="code" href="class_c_c_texture2_d.html">CCTexture2D</a>*) addImage: (NSString*) fileimage;
+<a name="l00065"></a>00065 
+<a name="l00073"></a>00073 -(void) addImageAsync:(NSString*) filename target:(<span class="keywordtype">id</span>)target selector:(<span class="keywordtype">SEL</span>)selector;
+<a name="l00074"></a>00074 
+<a name="l00082"></a>00082 -(void) addImageAsync:(NSString*) filename withBlock:(<span class="keywordtype">void</span>(^)(<a class="code" href="class_c_c_texture2_d.html">CCTexture2D</a> *tex))block;
+<a name="l00083"></a>00083 
+<a name="l00084"></a>00084 
+<a name="l00092"></a>00092 -(<a class="code" href="class_c_c_texture2_d.html">CCTexture2D</a>*) addCGImage: (CGImageRef) image forKey: (NSString *)key;
+<a name="l00093"></a>00093 
+<a name="l00097"></a>00097 -(<a class="code" href="class_c_c_texture2_d.html">CCTexture2D</a> *) textureForKey:(NSString *)key;
+<a name="l00098"></a>00098 
+<a name="l00105"></a>00105 -(void) removeAllTextures;
+<a name="l00106"></a>00106 
+<a name="l00112"></a>00112 -(void) removeUnusedTextures;
+<a name="l00113"></a>00113 
+<a name="l00116"></a>00116 -(void) removeTexture: (<a class="code" href="class_c_c_texture2_d.html">CCTexture2D</a>*) tex;
+<a name="l00117"></a>00117 
+<a name="l00121"></a>00121 -(void) removeTextureForKey: (NSString*) textureKeyName;
+<a name="l00122"></a>00122 
+<a name="l00123"></a>00123 <span class="keyword">@end</span>
+<a name="l00124"></a>00124 
+<a name="l00125"></a>00125 
+<a name="l00126"></a>00126 <span class="keyword">@interface </span><a class="code" href="interface_c_c_texture_cache.html">CCTextureCache</a> (PVRSupport)
+<a name="l00127"></a>00127 
+<a name="l00133"></a>00133 -(<a class="code" href="class_c_c_texture2_d.html">CCTexture2D</a>*) addPVRImage:(NSString*) filename;
+<a name="l00134"></a>00134 
+<a name="l00135"></a>00135 <span class="keyword">@end</span>
+<a name="l00136"></a>00136 
+<a name="l00137"></a>00137 
+<a name="l00138"></a>00138 <span class="keyword">@interface </span><a class="code" href="interface_c_c_texture_cache.html">CCTextureCache</a> (Debug)
+<a name="l00144"></a>00144 -(void) <a class="code" href="interface_c_c_texture_cache.html#ae2b40ef270a73cdfe2398578240b553f">dumpCachedTextureInfo</a>;
+<a name="l00145"></a>00145 
+<a name="l00146"></a>00146 <span class="keyword">@end</span>
+</pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年六月8日 星期五 23:30:12 for cocos2d-iphone-2.0-rc2 by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

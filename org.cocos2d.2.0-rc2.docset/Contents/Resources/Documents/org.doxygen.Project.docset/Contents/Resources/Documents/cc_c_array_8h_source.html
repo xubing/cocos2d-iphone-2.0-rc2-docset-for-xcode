@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>cocos2d-iphone-2.0-rc2: /Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/cocos2d/Support/ccCArray.h源文件</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="Icon-Small-50.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-iphone-2.0-rc2
+   &#160;<span id="projectnumber">2.0-rc2</span>
+   </div>
+   <div id="projectbrief">created:zhxubing@gmail.com</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/cocos2d/Support/ccCArray.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="cc_c_array_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/* Copyright (c) 2007 Scott Lembcke</span>
+<a name="l00002"></a>00002 <span class="comment"> *</span>
+<a name="l00003"></a>00003 <span class="comment"> * Permission is hereby granted, free of charge, to any person obtaining a copy</span>
+<a name="l00004"></a>00004 <span class="comment"> * of this software and associated documentation files (the &quot;Software&quot;), to deal</span>
+<a name="l00005"></a>00005 <span class="comment"> * in the Software without restriction, including without limitation the rights</span>
+<a name="l00006"></a>00006 <span class="comment"> * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell</span>
+<a name="l00007"></a>00007 <span class="comment"> * copies of the Software, and to permit persons to whom the Software is</span>
+<a name="l00008"></a>00008 <span class="comment"> * furnished to do so, subject to the following conditions:</span>
+<a name="l00009"></a>00009 <span class="comment"> *</span>
+<a name="l00010"></a>00010 <span class="comment"> * The above copyright notice and this permission notice shall be included in</span>
+<a name="l00011"></a>00011 <span class="comment"> * all copies or substantial portions of the Software.</span>
+<a name="l00012"></a>00012 <span class="comment"> *</span>
+<a name="l00013"></a>00013 <span class="comment"> * THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
+<a name="l00014"></a>00014 <span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
+<a name="l00015"></a>00015 <span class="comment"> * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</span>
+<a name="l00016"></a>00016 <span class="comment"> * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</span>
+<a name="l00017"></a>00017 <span class="comment"> * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</span>
+<a name="l00018"></a>00018 <span class="comment"> * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE</span>
+<a name="l00019"></a>00019 <span class="comment"> * SOFTWARE.</span>
+<a name="l00020"></a>00020 <span class="comment"> */</span>
+<a name="l00021"></a>00021 
+<a name="l00038"></a>00038 <span class="preprocessor">#ifndef CC_ARRAY_H</span>
+<a name="l00039"></a>00039 <span class="preprocessor"></span><span class="preprocessor">#define CC_ARRAY_H</span>
+<a name="l00040"></a>00040 <span class="preprocessor"></span>
+<a name="l00041"></a>00041 <span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span>
+<a name="l00042"></a>00042 
+<a name="l00043"></a>00043 <span class="preprocessor">#import &lt;stdlib.h&gt;</span>
+<a name="l00044"></a>00044 <span class="preprocessor">#import &lt;string.h&gt;</span>
+<a name="l00045"></a>00045 
+<a name="l00046"></a>00046 <span class="preprocessor">#import &quot;../ccMacros.h&quot;</span>
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048 <span class="preprocessor">#ifdef __cplusplus</span>
+<a name="l00049"></a>00049 <span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {
+<a name="l00050"></a>00050 <span class="preprocessor">#endif</span>
+<a name="l00051"></a>00051 <span class="preprocessor"></span>
+<a name="l00052"></a>00052 <span class="preprocessor">#pragma mark -</span>
+<a name="l00053"></a>00053 <span class="preprocessor"></span><span class="preprocessor">#pragma mark ccArray for Objects</span>
+<a name="l00054"></a>00054 <span class="preprocessor"></span>
+<a name="l00055"></a>00055 <span class="comment">// Easy integration</span>
+<a name="l00056"></a>00056 <span class="preprocessor">#define CCARRAYDATA_FOREACH(__array__, __object__)                                                                                                                      \</span>
+<a name="l00057"></a>00057 <span class="preprocessor">__object__=__array__-&gt;arr[0]; for(NSUInteger i=0, num=__array__-&gt;num; i&lt;num; i++, __object__=__array__-&gt;arr[i]) \</span>
+<a name="l00058"></a>00058 <span class="preprocessor"></span>
+<a name="l00059"></a>00059 <span class="preprocessor"></span><span class="preprocessor">#if defined(__has_feature) &amp;&amp; __has_feature(objc_arc)</span>
+<a name="l00060"></a>00060 <span class="preprocessor"></span>        <span class="keyword">typedef</span> __strong <span class="keywordtype">id</span> CCARRAY_ID;
+<a name="l00061"></a>00061 <span class="preprocessor">#else</span>
+<a name="l00062"></a>00062 <span class="preprocessor"></span>        <span class="keyword">typedef</span> <span class="keywordtype">id</span> CCARRAY_ID;
+<a name="l00063"></a>00063 <span class="preprocessor">#endif</span>
+<a name="l00064"></a>00064 <span class="preprocessor"></span>
+<a name="l00065"></a><a class="code" href="structcc_array.html">00065</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structcc_array.html">ccArray</a> {
+<a name="l00066"></a>00066         NSUInteger num, max;
+<a name="l00067"></a>00067         CCARRAY_ID *arr;
+<a name="l00068"></a>00068 } <a class="code" href="structcc_array.html">ccArray</a>;
+<a name="l00069"></a>00069 
+<a name="l00070"></a>00070 <span class="keyword">typedef</span> int (*cc_comparator)(<span class="keyword">const</span> <span class="keywordtype">void</span> *, <span class="keyword">const</span> <span class="keywordtype">void</span> *);
+<a name="l00071"></a>00071 
+<a name="l00073"></a>00073 <a class="code" href="structcc_array.html">ccArray</a>* <a class="code" href="cc_c_array_8h.html#a7a8332647d965eb5868fecc9ebb0886b">ccArrayNew</a>(NSUInteger capacity);
+<a name="l00074"></a>00074 
+<a name="l00076"></a>00076 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#a7ab821e9cc552cefb0a6bed30311758c">ccArrayFree</a>(<a class="code" href="structcc_array.html">ccArray</a> *arr);
+<a name="l00077"></a>00077 
+<a name="l00079"></a>00079 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#aac7b2d8ef6bd60609f5328c6cf243b4c">ccArrayDoubleCapacity</a>(<a class="code" href="structcc_array.html">ccArray</a> *arr);
+<a name="l00080"></a>00080 
+<a name="l00082"></a>00082 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#acb4b7224594b7227bc2f88dd11feee58">ccArrayEnsureExtraCapacity</a>(<a class="code" href="structcc_array.html">ccArray</a> *arr, NSUInteger extra);
+<a name="l00083"></a>00083 
+<a name="l00085"></a>00085 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#a372d3776b7a37855471e4c46c6b99d35">ccArrayShrink</a>(<a class="code" href="structcc_array.html">ccArray</a> *arr);
+<a name="l00086"></a>00086 
+<a name="l00088"></a>00088 NSUInteger <a class="code" href="cc_c_array_8h.html#a699ba02c0c0263c19a7583285d07ba96">ccArrayGetIndexOfObject</a>(<a class="code" href="structcc_array.html">ccArray</a> *arr, <span class="keywordtype">id</span> <span class="keywordtype">object</span>);
+<a name="l00089"></a>00089 
+<a name="l00091"></a>00091 BOOL <a class="code" href="cc_c_array_8h.html#a313bcd13af421e21d814e14a528bd065">ccArrayContainsObject</a>(<a class="code" href="structcc_array.html">ccArray</a> *arr, <span class="keywordtype">id</span> <span class="keywordtype">object</span>);
+<a name="l00092"></a>00092 
+<a name="l00094"></a>00094 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#aa711c6f45372236a9c22140dc48ef19c">ccArrayAppendObject</a>(<a class="code" href="structcc_array.html">ccArray</a> *arr, <span class="keywordtype">id</span> <span class="keywordtype">object</span>);
+<a name="l00095"></a>00095 
+<a name="l00097"></a>00097 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#a99474ca172c5daea993f64776014697f">ccArrayAppendObjectWithResize</a>(<a class="code" href="structcc_array.html">ccArray</a> *arr, <span class="keywordtype">id</span> <span class="keywordtype">object</span>);
+<a name="l00098"></a>00098 
+<a name="l00101"></a>00101 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#aaa3110170712ec6c261ca6c6b9f6006c">ccArrayAppendArray</a>(<a class="code" href="structcc_array.html">ccArray</a> *arr, <a class="code" href="structcc_array.html">ccArray</a> *plusArr);
+<a name="l00102"></a>00102 
+<a name="l00104"></a>00104 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#aef75f3f5170b587a870b0496be22118c">ccArrayAppendArrayWithResize</a>(<a class="code" href="structcc_array.html">ccArray</a> *arr, <a class="code" href="structcc_array.html">ccArray</a> *plusArr);
+<a name="l00105"></a>00105 
+<a name="l00107"></a>00107 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#a2fda782b602da5e21b2f1ffb2be0fc19">ccArrayInsertObjectAtIndex</a>(<a class="code" href="structcc_array.html">ccArray</a> *arr, <span class="keywordtype">id</span> <span class="keywordtype">object</span>, NSUInteger index);
+<a name="l00108"></a>00108 
+<a name="l00110"></a>00110 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#af0a7ecab6da00c7ba6b60a04eca24bad">ccArraySwapObjectsAtIndexes</a>(<a class="code" href="structcc_array.html">ccArray</a> *arr, NSUInteger index1, NSUInteger index2);
+<a name="l00111"></a>00111 
+<a name="l00113"></a>00113 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#a8d443ac64348e7fb196d46c081d01ab7">ccArrayRemoveAllObjects</a>(<a class="code" href="structcc_array.html">ccArray</a> *arr);
+<a name="l00114"></a>00114 
+<a name="l00117"></a>00117 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#aff635b1a4f2f8da71afc6e9d7ad8668f">ccArrayRemoveObjectAtIndex</a>(<a class="code" href="structcc_array.html">ccArray</a> *arr, NSUInteger index);
+<a name="l00118"></a>00118 
+<a name="l00122"></a>00122 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#ae28dc504a438a108857ab58e516b0c69">ccArrayFastRemoveObjectAtIndex</a>(<a class="code" href="structcc_array.html">ccArray</a> *arr, NSUInteger index);
+<a name="l00123"></a>00123 
+<a name="l00124"></a>00124 <span class="keywordtype">void</span> ccArrayFastRemoveObject(<a class="code" href="structcc_array.html">ccArray</a> *arr, <span class="keywordtype">id</span> <span class="keywordtype">object</span>);
+<a name="l00125"></a>00125 
+<a name="l00128"></a>00128 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#ae224ecfe306e68e6d52eedfc5568d638">ccArrayRemoveObject</a>(<a class="code" href="structcc_array.html">ccArray</a> *arr, <span class="keywordtype">id</span> <span class="keywordtype">object</span>);
+<a name="l00129"></a>00129 
+<a name="l00132"></a>00132 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#a84986aae6c503eca3f8dc5992e4fe650">ccArrayRemoveArray</a>(<a class="code" href="structcc_array.html">ccArray</a> *arr, <a class="code" href="structcc_array.html">ccArray</a> *minusArr);
+<a name="l00133"></a>00133 
+<a name="l00136"></a>00136 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#a93ccc1772427d19b483c6ceb27404020">ccArrayFullRemoveArray</a>(<a class="code" href="structcc_array.html">ccArray</a> *arr, <a class="code" href="structcc_array.html">ccArray</a> *minusArr);
+<a name="l00137"></a>00137 
+<a name="l00139"></a>00139 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#a2b3be9a84cc2423abb17bf7c033c9013">ccArrayMakeObjectsPerformSelector</a>(<a class="code" href="structcc_array.html">ccArray</a> *arr, <span class="keywordtype">SEL</span> sel);
+<a name="l00140"></a>00140 
+<a name="l00141"></a>00141 <span class="keywordtype">void</span> ccArrayMakeObjectsPerformSelectorWithObject(<a class="code" href="structcc_array.html">ccArray</a> *arr, <span class="keywordtype">SEL</span> sel, <span class="keywordtype">id</span> <span class="keywordtype">object</span>);
+<a name="l00142"></a>00142 
+<a name="l00143"></a>00143 <span class="keywordtype">void</span> ccArrayMakeObjectPerformSelectorWithArrayObjects(<a class="code" href="structcc_array.html">ccArray</a> *arr, <span class="keywordtype">SEL</span> sel, <span class="keywordtype">id</span> <span class="keywordtype">object</span>);
+<a name="l00144"></a>00144 
+<a name="l00145"></a>00145 
+<a name="l00146"></a>00146 <span class="preprocessor">#pragma mark -</span>
+<a name="l00147"></a>00147 <span class="preprocessor"></span><span class="preprocessor">#pragma mark ccCArray for Values (c structures)</span>
+<a name="l00148"></a>00148 <span class="preprocessor"></span>
+<a name="l00149"></a>00149 <span class="keyword">typedef</span> <a class="code" href="structcc_array.html">ccArray</a> <a class="code" href="structcc_array.html">ccCArray</a>;
+<a name="l00150"></a>00150 
+<a name="l00152"></a>00152 ccCArray* <a class="code" href="cc_c_array_8h.html#af8209888babee1167a496d4435383b50">ccCArrayNew</a>(NSUInteger capacity);
+<a name="l00153"></a>00153 
+<a name="l00155"></a>00155 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#aede88419801cd2b42e3114b4afc6f2dc">ccCArrayFree</a>(ccCArray *arr);
+<a name="l00156"></a>00156 
+<a name="l00158"></a>00158 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#a829c1b0a727a3ef6d00c048d330d3b42">ccCArrayDoubleCapacity</a>(ccCArray *arr);
+<a name="l00159"></a>00159 
+<a name="l00161"></a>00161 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#afada9a93af8e9b6c442e9d921db0afa6">ccCArrayEnsureExtraCapacity</a>(ccCArray *arr, NSUInteger extra);
+<a name="l00162"></a>00162 
+<a name="l00164"></a>00164 NSUInteger <a class="code" href="cc_c_array_8h.html#a5247f4d3a72fbc7d55487774a1b627db">ccCArrayGetIndexOfValue</a>(ccCArray *arr, CCARRAY_ID value);
+<a name="l00165"></a>00165 
+<a name="l00167"></a>00167 BOOL <a class="code" href="cc_c_array_8h.html#ae194c9bbe66dfe18ae728807359dcb48">ccCArrayContainsValue</a>(ccCArray *arr, CCARRAY_ID value);
+<a name="l00168"></a>00168 
+<a name="l00170"></a>00170 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#ad19d7b0c8673cb756f993ef8a312d729">ccCArrayInsertValueAtIndex</a>( ccCArray *arr, CCARRAY_ID value, NSUInteger index);
+<a name="l00171"></a>00171 
+<a name="l00173"></a>00173 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#adf6bb9b465d48d20920c4cf7c3a4ca04">ccCArrayAppendValue</a>(ccCArray *arr, CCARRAY_ID value);
+<a name="l00174"></a>00174 
+<a name="l00176"></a>00176 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#aa08a2dd209e9b5cc3e6f2322b9f87860">ccCArrayAppendValueWithResize</a>(ccCArray *arr, CCARRAY_ID value);
+<a name="l00177"></a>00177 
+<a name="l00180"></a>00180 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#ab29e275f14be2404bb94bdd90e7cfdd0">ccCArrayAppendArray</a>(ccCArray *arr, ccCArray *plusArr);
+<a name="l00181"></a>00181 
+<a name="l00183"></a>00183 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#a6b3450f3bce1dba84f56b3edbe9c29a2">ccCArrayAppendArrayWithResize</a>(ccCArray *arr, ccCArray *plusArr);
+<a name="l00184"></a>00184 
+<a name="l00186"></a>00186 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#a728cc1a6518435e230b4873ad2bd7b8e">ccCArrayRemoveAllValues</a>(ccCArray *arr);
+<a name="l00187"></a>00187 
+<a name="l00192"></a>00192 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#a7f743211d5bde3387d3b319aaf4d8a3b">ccCArrayRemoveValueAtIndex</a>(ccCArray *arr, NSUInteger index);
+<a name="l00193"></a>00193 
+<a name="l00199"></a>00199 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#a319062b75bfebc215030277bced6b250">ccCArrayFastRemoveValueAtIndex</a>(ccCArray *arr, NSUInteger index);
+<a name="l00200"></a>00200 
+<a name="l00204"></a>00204 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#afbba63061ff6a1d1153353f7a1d8a522">ccCArrayRemoveValue</a>(ccCArray *arr, CCARRAY_ID value);
+<a name="l00205"></a>00205 
+<a name="l00209"></a>00209 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#a1f8c0fbc971c6d8c865d988f3fa5b3af">ccCArrayRemoveArray</a>(ccCArray *arr, ccCArray *minusArr);
+<a name="l00210"></a>00210 
+<a name="l00214"></a>00214 <span class="keywordtype">void</span> <a class="code" href="cc_c_array_8h.html#ac7ad7ca4b352b225ccb3e36db4c35fad">ccCArrayFullRemoveArray</a>(ccCArray *arr, ccCArray *minusArr);
+<a name="l00215"></a>00215 
+<a name="l00216"></a>00216 <span class="comment">// iterative mergesort arrd on</span>
+<a name="l00217"></a>00217 <span class="comment">//  http://www.inf.fh-flensburg.de/lang/algorithmen/sortieren/merge/mergiter.htm  </span>
+<a name="l00218"></a>00218 <span class="keywordtype">int</span> cc_mergesortL(ccCArray* array, <span class="keywordtype">size_t</span> width, cc_comparator comparator);
+<a name="l00219"></a>00219 
+<a name="l00220"></a>00220 <span class="keywordtype">void</span> cc_insertionSort(ccCArray* arr, cc_comparator comparator);
+<a name="l00221"></a>00221 
+<a name="l00222"></a>00222 <span class="keywordtype">void</span> cc_pointerswap(<span class="keywordtype">void</span>* a, <span class="keywordtype">void</span>* b, <span class="keywordtype">size_t</span> width);
+<a name="l00223"></a>00223 
+<a name="l00224"></a>00224 <span class="preprocessor">#ifdef __cplusplus</span>
+<a name="l00225"></a>00225 <span class="preprocessor"></span>}
+<a name="l00226"></a>00226 <span class="preprocessor">#endif</span>
+<a name="l00227"></a>00227 <span class="preprocessor"></span>
+<a name="l00228"></a>00228         
+<a name="l00229"></a>00229 <span class="preprocessor">#endif // CC_ARRAY_H</span>
+</pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年六月8日 星期五 23:24:05 for cocos2d-iphone-2.0-rc2 by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

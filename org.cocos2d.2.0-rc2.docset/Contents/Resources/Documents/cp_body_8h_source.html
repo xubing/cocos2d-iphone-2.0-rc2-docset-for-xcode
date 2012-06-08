@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>cocos2d-iphone-2.0-rc2: /Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/external/Chipmunk/include/chipmunk/cpBody.h源文件</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="Icon-Small-50.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-iphone-2.0-rc2
+   &#160;<span id="projectnumber">2.0-rc2</span>
+   </div>
+   <div id="projectbrief">created:zhxubing@gmail.com</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/external/Chipmunk/include/chipmunk/cpBody.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/* Copyright (c) 2007 Scott Lembcke</span>
+<a name="l00002"></a>00002 <span class="comment"> * </span>
+<a name="l00003"></a>00003 <span class="comment"> * Permission is hereby granted, free of charge, to any person obtaining a copy</span>
+<a name="l00004"></a>00004 <span class="comment"> * of this software and associated documentation files (the &quot;Software&quot;), to deal</span>
+<a name="l00005"></a>00005 <span class="comment"> * in the Software without restriction, including without limitation the rights</span>
+<a name="l00006"></a>00006 <span class="comment"> * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell</span>
+<a name="l00007"></a>00007 <span class="comment"> * copies of the Software, and to permit persons to whom the Software is</span>
+<a name="l00008"></a>00008 <span class="comment"> * furnished to do so, subject to the following conditions:</span>
+<a name="l00009"></a>00009 <span class="comment"> * </span>
+<a name="l00010"></a>00010 <span class="comment"> * The above copyright notice and this permission notice shall be included in</span>
+<a name="l00011"></a>00011 <span class="comment"> * all copies or substantial portions of the Software.</span>
+<a name="l00012"></a>00012 <span class="comment"> * </span>
+<a name="l00013"></a>00013 <span class="comment"> * THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
+<a name="l00014"></a>00014 <span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
+<a name="l00015"></a>00015 <span class="comment"> * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</span>
+<a name="l00016"></a>00016 <span class="comment"> * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</span>
+<a name="l00017"></a>00017 <span class="comment"> * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</span>
+<a name="l00018"></a>00018 <span class="comment"> * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE</span>
+<a name="l00019"></a>00019 <span class="comment"> * SOFTWARE.</span>
+<a name="l00020"></a>00020 <span class="comment"> */</span>
+<a name="l00021"></a>00021 
+<a name="l00027"></a>00027 
+<a name="l00029"></a><a class="code" href="group__cp_body.html#ga728eb52bef6367e8e33abff7dba0a089">00029</a> <span class="keyword">typedef</span> void (*<a class="code" href="group__cp_body.html#ga728eb52bef6367e8e33abff7dba0a089" title="Rigid body velocity update function type.">cpBodyVelocityFunc</a>)(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body, <a class="code" href="structcp_vect.html">cpVect</a> gravity, <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> damping, <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> dt);
+<a name="l00031"></a><a class="code" href="group__cp_body.html#ga4f84c8fc20fcb9918d1553e6dc29ffbd">00031</a> <span class="keyword">typedef</span> void (*<a class="code" href="group__cp_body.html#ga4f84c8fc20fcb9918d1553e6dc29ffbd" title="Rigid body position update function type.">cpBodyPositionFunc</a>)(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body, <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> dt);
+<a name="l00032"></a>00032 
+<a name="l00035"></a>00035 <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="group__cp_body.html#gafd1d958a322b86c54e6b0a7109e4b0b9">cpComponentNode</a> {
+<a name="l00036"></a>00036         <a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *root;
+<a name="l00037"></a>00037         <a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *next;
+<a name="l00038"></a>00038         <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> idleTime;
+<a name="l00039"></a>00039 } <a class="code" href="group__cp_body.html#gafd1d958a322b86c54e6b0a7109e4b0b9">cpComponentNode</a>;
+<a name="l00040"></a>00040 
+<a name="l00042"></a><a class="code" href="structcp_body.html">00042</a> <span class="keyword">struct </span><a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> {
+<a name="l00044"></a><a class="code" href="structcp_body.html#adc333a0be0d7953cad1fb4f6ee49dcf6">00044</a>         <a class="code" href="group__cp_body.html#ga728eb52bef6367e8e33abff7dba0a089" title="Rigid body velocity update function type.">cpBodyVelocityFunc</a> <a class="code" href="structcp_body.html#adc333a0be0d7953cad1fb4f6ee49dcf6" title="Function that is called to integrate the body&#39;s velocity. (Defaults to cpBodyUpdateVelocity)">velocity_func</a>;
+<a name="l00045"></a>00045         
+<a name="l00047"></a><a class="code" href="structcp_body.html#a7da3dcd9ac7c689a1da1f97b37c292b9">00047</a>         <a class="code" href="group__cp_body.html#ga4f84c8fc20fcb9918d1553e6dc29ffbd" title="Rigid body position update function type.">cpBodyPositionFunc</a> <a class="code" href="structcp_body.html#a7da3dcd9ac7c689a1da1f97b37c292b9" title="Function that is called to integrate the body&#39;s position. (Defaults to cpBodyUpdatePosition)">position_func</a>;
+<a name="l00048"></a>00048         
+<a name="l00051"></a><a class="code" href="structcp_body.html#a883298164e53e4633b3daa4de92a9831">00051</a>         <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> <a class="code" href="structcp_body.html#a883298164e53e4633b3daa4de92a9831">m</a>;
+<a name="l00053"></a><a class="code" href="structcp_body.html#a204a010e411c0f67e511a69f23d02025">00053</a>         <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> <a class="code" href="structcp_body.html#a204a010e411c0f67e511a69f23d02025" title="Mass inverse.">m_inv</a>;
+<a name="l00054"></a>00054         
+<a name="l00057"></a><a class="code" href="structcp_body.html#a4a47d0b30594a5fe28dd4de3cdf1450a">00057</a>         <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> <a class="code" href="structcp_body.html#a4a47d0b30594a5fe28dd4de3cdf1450a">i</a>;
+<a name="l00059"></a><a class="code" href="structcp_body.html#a36b73e662173a240d1d8f09cdd468202">00059</a>         <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> <a class="code" href="structcp_body.html#a36b73e662173a240d1d8f09cdd468202" title="Moment of inertia inverse.">i_inv</a>;
+<a name="l00060"></a>00060         
+<a name="l00062"></a><a class="code" href="structcp_body.html#a2d66ed5ba3aa8fe5ec90371ad6aa5f59">00062</a>         <a class="code" href="structcp_vect.html">cpVect</a> <a class="code" href="structcp_body.html#a2d66ed5ba3aa8fe5ec90371ad6aa5f59" title="Position of the rigid body&#39;s center of gravity.">p</a>;
+<a name="l00064"></a><a class="code" href="structcp_body.html#a7d98e994ebcd10b12aa446ff9e5c67f1">00064</a>         <a class="code" href="structcp_vect.html">cpVect</a> <a class="code" href="structcp_body.html#a7d98e994ebcd10b12aa446ff9e5c67f1" title="Velocity of the rigid body&#39;s center of gravity.">v</a>;
+<a name="l00066"></a><a class="code" href="structcp_body.html#adf7ea1cd2cc3840997e21d1b9baf3ee5">00066</a>         <a class="code" href="structcp_vect.html">cpVect</a> <a class="code" href="structcp_body.html#adf7ea1cd2cc3840997e21d1b9baf3ee5" title="Force acting on the rigid body&#39;s center of gravity.">f</a>;
+<a name="l00067"></a>00067         
+<a name="l00070"></a><a class="code" href="structcp_body.html#a93996dfeb1565b8433b7d96773f7300c">00070</a>         <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> <a class="code" href="structcp_body.html#a93996dfeb1565b8433b7d96773f7300c">a</a>;
+<a name="l00072"></a><a class="code" href="structcp_body.html#af7baaa8708ea16122bf226a2cb1a0bb1">00072</a>         <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> <a class="code" href="structcp_body.html#af7baaa8708ea16122bf226a2cb1a0bb1" title="Angular velocity of the body around it&#39;s center of gravity in radians/second.">w</a>;
+<a name="l00074"></a><a class="code" href="structcp_body.html#a171f5a752bb920e036bba0b2a0b8b4fe">00074</a>         <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> <a class="code" href="structcp_body.html#a171f5a752bb920e036bba0b2a0b8b4fe" title="Torque applied to the body around it&#39;s center of gravity.">t</a>;
+<a name="l00075"></a>00075         
+<a name="l00078"></a><a class="code" href="structcp_body.html#a9ef833e4f67586894e497dbdc7f499ec">00078</a>         <a class="code" href="structcp_vect.html">cpVect</a> <a class="code" href="structcp_body.html#a9ef833e4f67586894e497dbdc7f499ec">rot</a>;
+<a name="l00079"></a>00079         
+<a name="l00083"></a><a class="code" href="structcp_body.html#a19fd1216b31f6778e90aa42f0a6322d5">00083</a>         <a class="code" href="group__basic_types.html#ga2ac2c3c31e21893941f9e4f8ee279447" title="Type used for user data pointers.">cpDataPointer</a> <a class="code" href="structcp_body.html#a19fd1216b31f6778e90aa42f0a6322d5">data</a>;
+<a name="l00084"></a>00084         
+<a name="l00086"></a><a class="code" href="structcp_body.html#a87810a4f61bb8348186a1f300c713ddc">00086</a>         <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> <a class="code" href="structcp_body.html#a87810a4f61bb8348186a1f300c713ddc" title="Maximum velocity allowed when updating the velocity.">v_limit</a>;
+<a name="l00088"></a><a class="code" href="structcp_body.html#a8d8eef20b9aa0586f5da0af6c332f7e9">00088</a>         <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> <a class="code" href="structcp_body.html#a8d8eef20b9aa0586f5da0af6c332f7e9" title="Maximum rotational rate (in radians/second) allowed when updating the angular velocity.">w_limit</a>;
+<a name="l00089"></a>00089         
+<a name="l00090"></a>00090         CP_PRIVATE(<a class="code" href="structcp_vect.html">cpVect</a> v_bias);
+<a name="l00091"></a>00091         CP_PRIVATE(<a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> w_bias);
+<a name="l00092"></a>00092         
+<a name="l00093"></a>00093         CP_PRIVATE(<a class="code" href="structcp_space.html" title="Basic Unit of Simulation in Chipmunk.">cpSpace</a> *space);
+<a name="l00094"></a>00094         
+<a name="l00095"></a>00095         CP_PRIVATE(<a class="code" href="structcp_shape.html" title="Opaque collision shape struct.">cpShape</a> *shapeList);
+<a name="l00096"></a>00096         CP_PRIVATE(<a class="code" href="structcp_arbiter.html" title="A colliding pair of shapes.">cpArbiter</a> *arbiterList);
+<a name="l00097"></a>00097         CP_PRIVATE(<a class="code" href="structcp_constraint.html" title="Opaque cpConstraint struct.">cpConstraint</a> *constraintList);
+<a name="l00098"></a>00098         
+<a name="l00099"></a>00099         CP_PRIVATE(<a class="code" href="group__cp_body.html#gafd1d958a322b86c54e6b0a7109e4b0b9">cpComponentNode</a> node);
+<a name="l00100"></a>00100 };
+<a name="l00101"></a>00101 
+<a name="l00103"></a>00103 <a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a>* <a class="code" href="group__cp_body.html#gadd622b6503c89fa5a8c0f43a0917d2a2" title="Allocate a cpBody.">cpBodyAlloc</a>(<span class="keywordtype">void</span>);
+<a name="l00105"></a>00105 <a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a>* <a class="code" href="group__cp_body.html#gad91c665ae18b191e8de5f59e1e20eea9" title="Initialize a cpBody.">cpBodyInit</a>(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body, <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> m, <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> i);
+<a name="l00107"></a>00107 <a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a>* <a class="code" href="group__cp_body.html#ga0d0be6b47dee41b4989f5feebc7a5ce4" title="Allocate and initialize a cpBody.">cpBodyNew</a>(<a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> m, <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> i);
+<a name="l00108"></a>00108 
+<a name="l00110"></a>00110 <a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a>* <a class="code" href="group__cp_body.html#gad9c3073c3fc9f0c0acd29a32761868c2" title="Initialize a static cpBody.">cpBodyInitStatic</a>(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body);
+<a name="l00112"></a>00112 <a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a>* <a class="code" href="group__cp_body.html#gaef08bd4d7afd793e859f5d7b1001344c" title="Allocate and initialize a static cpBody.">cpBodyNewStatic</a>(<span class="keywordtype">void</span>);
+<a name="l00113"></a>00113 
+<a name="l00115"></a>00115 <span class="keywordtype">void</span> <a class="code" href="group__cp_body.html#ga7691fd53f979e5f1e23fbdbc7b0ab31a" title="Destroy a cpBody.">cpBodyDestroy</a>(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body);
+<a name="l00117"></a>00117 <span class="keywordtype">void</span> <a class="code" href="group__cp_body.html#gab122c9fc675a7f2cb6a644a1532c60f7" title="Destroy and free a cpBody.">cpBodyFree</a>(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body);
+<a name="l00118"></a>00118 
+<a name="l00120"></a>00120 <span class="preprocessor">#ifdef NDEBUG</span>
+<a name="l00121"></a>00121 <span class="preprocessor"></span><span class="preprocessor">        #define cpBodyAssertSane(body)</span>
+<a name="l00122"></a>00122 <span class="preprocessor"></span><span class="preprocessor">#else</span>
+<a name="l00123"></a>00123 <span class="preprocessor"></span>        <span class="keywordtype">void</span> <a class="code" href="group__cp_body.html#ga21607229d9fd49281a7a94a1b09664de" title="Check that the properties of a body is sane. (Only in debug mode)">cpBodySanityCheck</a>(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body);
+<a name="l00124"></a>00124 <span class="preprocessor">        #define cpBodyAssertSane(body) cpBodySanityCheck(body)</span>
+<a name="l00125"></a>00125 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+<a name="l00126"></a>00126 <span class="preprocessor"></span>
+<a name="l00127"></a>00127 <span class="comment">// Defined in cpSpace.c</span>
+<a name="l00129"></a>00129 <span class="comment"></span><span class="keywordtype">void</span> <a class="code" href="group__cp_body.html#ga9f6b2af6329a2b5c32712576719d357a" title="Wake up a sleeping or idle body.">cpBodyActivate</a>(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body);
+<a name="l00131"></a>00131 <span class="keywordtype">void</span> <a class="code" href="group__cp_body.html#gaad8cfcc01f2a5a4ab4e98c49e2442063" title="Wake up any sleeping or idle bodies touching a static body.">cpBodyActivateStatic</a>(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body, <a class="code" href="structcp_shape.html" title="Opaque collision shape struct.">cpShape</a> *filter);
+<a name="l00132"></a>00132 
+<a name="l00134"></a>00134 <span class="keywordtype">void</span> <a class="code" href="group__cp_body.html#ga7308ff2bd6dc2832230636c02c682e82" title="Force a body to fall asleep immediately.">cpBodySleep</a>(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body);
+<a name="l00136"></a>00136 <span class="keywordtype">void</span> <a class="code" href="group__cp_body.html#gaaa53f3fb37c705c4fbbd5b607f29c721" title="Force a body to fall asleep immediately along with other bodies in a group.">cpBodySleepWithGroup</a>(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body, <a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *group);
+<a name="l00137"></a>00137 
+<a name="l00139"></a>00139 <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="group__basic_types.html#gab6e5d8afee598a57cd323abae5310244" title="Chipmunk&#39;s boolean type.">cpBool</a> cpBodyIsSleeping(<span class="keyword">const</span> <a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body)
+<a name="l00140"></a>00140 {
+<a name="l00141"></a>00141         <span class="keywordflow">return</span> (CP_PRIVATE(body-&gt;node).root != ((<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a>*)0));
+<a name="l00142"></a>00142 }
+<a name="l00143"></a>00143 
+<a name="l00145"></a>00145 <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="group__basic_types.html#gab6e5d8afee598a57cd323abae5310244" title="Chipmunk&#39;s boolean type.">cpBool</a> cpBodyIsStatic(<span class="keyword">const</span> <a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body)
+<a name="l00146"></a>00146 {
+<a name="l00147"></a>00147         <span class="keywordflow">return</span> CP_PRIVATE(body-&gt;node).idleTime == INFINITY;
+<a name="l00148"></a>00148 }
+<a name="l00149"></a>00149 
+<a name="l00151"></a>00151 <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="group__basic_types.html#gab6e5d8afee598a57cd323abae5310244" title="Chipmunk&#39;s boolean type.">cpBool</a> cpBodyIsRogue(<span class="keyword">const</span> <a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body)
+<a name="l00152"></a>00152 {
+<a name="l00153"></a>00153         <span class="keywordflow">return</span> (body-&gt;CP_PRIVATE(space) == ((<a class="code" href="structcp_space.html" title="Basic Unit of Simulation in Chipmunk.">cpSpace</a>*)0));
+<a name="l00154"></a>00154 }
+<a name="l00155"></a>00155 
+<a name="l00156"></a>00156 
+<a name="l00157"></a>00157 <span class="preprocessor">#define CP_DefineBodyStructGetter(type, member, name) \</span>
+<a name="l00158"></a>00158 <span class="preprocessor">static inline type cpBodyGet##name(const cpBody *body){return body-&gt;member;}</span>
+<a name="l00159"></a>00159 <span class="preprocessor"></span>
+<a name="l00160"></a>00160 <span class="preprocessor">#define CP_DefineBodyStructSetter(type, member, name) \</span>
+<a name="l00161"></a>00161 <span class="preprocessor">static inline void cpBodySet##name(cpBody *body, const type value){ \</span>
+<a name="l00162"></a>00162 <span class="preprocessor">        cpBodyActivate(body); \</span>
+<a name="l00163"></a>00163 <span class="preprocessor">        cpBodyAssertSane(body); \</span>
+<a name="l00164"></a>00164 <span class="preprocessor">        body-&gt;member = value; \</span>
+<a name="l00165"></a>00165 <span class="preprocessor">}</span>
+<a name="l00166"></a>00166 <span class="preprocessor"></span>
+<a name="l00167"></a>00167 <span class="preprocessor">#define CP_DefineBodyStructProperty(type, member, name) \</span>
+<a name="l00168"></a>00168 <span class="preprocessor">CP_DefineBodyStructGetter(type, member, name) \</span>
+<a name="l00169"></a>00169 <span class="preprocessor">CP_DefineBodyStructSetter(type, member, name)</span>
+<a name="l00170"></a>00170 <span class="preprocessor"></span>
+<a name="l00171"></a>00171 <span class="comment">// TODO add to docs</span>
+<a name="l00172"></a>00172 CP_DefineBodyStructGetter(<a class="code" href="structcp_space.html" title="Basic Unit of Simulation in Chipmunk.">cpSpace</a>*, CP_PRIVATE(space), Space);
+<a name="l00173"></a>00173 
+<a name="l00174"></a>00174 CP_DefineBodyStructGetter(<a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a>, m, Mass);
+<a name="l00176"></a>00176 <span class="keywordtype">void</span> <a class="code" href="group__cp_body.html#ga53196d6e67fdc55389418aebe0b8b127" title="Set the mass of a body.">cpBodySetMass</a>(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body, <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> m);
+<a name="l00177"></a>00177 
+<a name="l00178"></a>00178 CP_DefineBodyStructGetter(<a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a>, i, Moment);
+<a name="l00180"></a>00180 <span class="keywordtype">void</span> <a class="code" href="group__cp_body.html#ga39dd86643a700fb93198433174819d1a" title="Set the moment of a body.">cpBodySetMoment</a>(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body, <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> i);
+<a name="l00181"></a>00181 
+<a name="l00182"></a>00182 CP_DefineBodyStructGetter(<a class="code" href="structcp_vect.html">cpVect</a>, p, Pos);
+<a name="l00184"></a>00184 <span class="keywordtype">void</span> <a class="code" href="group__cp_body.html#ga33a86c1892ac7538a957057aacdb8394" title="Set the position of a body.">cpBodySetPos</a>(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body, <a class="code" href="structcp_vect.html">cpVect</a> pos);
+<a name="l00185"></a>00185 CP_DefineBodyStructProperty(<a class="code" href="structcp_vect.html">cpVect</a>, v, Vel);
+<a name="l00186"></a>00186 CP_DefineBodyStructProperty(<a class="code" href="structcp_vect.html">cpVect</a>, f, Force);
+<a name="l00187"></a>00187 CP_DefineBodyStructGetter(<a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a>, a, Angle);
+<a name="l00189"></a>00189 <span class="keywordtype">void</span> <a class="code" href="group__cp_body.html#ga12b736a5d91e31dba48cadb71111674b" title="Set the angle of a body.">cpBodySetAngle</a>(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body, <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> a);
+<a name="l00190"></a>00190 CP_DefineBodyStructProperty(<a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a>, w, AngVel);
+<a name="l00191"></a>00191 CP_DefineBodyStructProperty(<a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a>, t, Torque);
+<a name="l00192"></a>00192 CP_DefineBodyStructGetter(<a class="code" href="structcp_vect.html">cpVect</a>, rot, Rot);
+<a name="l00193"></a>00193 CP_DefineBodyStructProperty(<a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a>, v_limit, VelLimit);
+<a name="l00194"></a>00194 CP_DefineBodyStructProperty(<a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a>, w_limit, AngVelLimit);
+<a name="l00195"></a>00195 CP_DefineBodyStructProperty(<a class="code" href="group__basic_types.html#ga2ac2c3c31e21893941f9e4f8ee279447" title="Type used for user data pointers.">cpDataPointer</a>, data, UserData);
+<a name="l00196"></a>00196 
+<a name="l00198"></a>00198 <span class="keywordtype">void</span> <a class="code" href="group__cp_body.html#gac62dea8fe94b2b405665f8b7c373d4d1" title="Default Integration functions.">cpBodyUpdateVelocity</a>(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body, <a class="code" href="structcp_vect.html">cpVect</a> gravity, <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> damping, <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> dt);
+<a name="l00199"></a>00199 <span class="keywordtype">void</span> cpBodyUpdatePosition(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body, <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> dt);
+<a name="l00200"></a>00200 
+<a name="l00202"></a>00202 <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="structcp_vect.html">cpVect</a> cpBodyLocal2World(<span class="keyword">const</span> <a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body, <span class="keyword">const</span> <a class="code" href="structcp_vect.html">cpVect</a> v)
+<a name="l00203"></a>00203 {
+<a name="l00204"></a>00204         <span class="keywordflow">return</span> cpvadd(body-&gt;<a class="code" href="structcp_body.html#a2d66ed5ba3aa8fe5ec90371ad6aa5f59" title="Position of the rigid body&#39;s center of gravity.">p</a>, cpvrotate(v, body-&gt;<a class="code" href="structcp_body.html#a9ef833e4f67586894e497dbdc7f499ec">rot</a>));
+<a name="l00205"></a>00205 }
+<a name="l00206"></a>00206 
+<a name="l00208"></a>00208 <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="structcp_vect.html">cpVect</a> cpBodyWorld2Local(<span class="keyword">const</span> <a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body, <span class="keyword">const</span> <a class="code" href="structcp_vect.html">cpVect</a> v)
+<a name="l00209"></a>00209 {
+<a name="l00210"></a>00210         <span class="keywordflow">return</span> cpvunrotate(cpvsub(v, body-&gt;<a class="code" href="structcp_body.html#a2d66ed5ba3aa8fe5ec90371ad6aa5f59" title="Position of the rigid body&#39;s center of gravity.">p</a>), body-&gt;<a class="code" href="structcp_body.html#a9ef833e4f67586894e497dbdc7f499ec">rot</a>);
+<a name="l00211"></a>00211 }
+<a name="l00212"></a>00212 
+<a name="l00214"></a>00214 <span class="keywordtype">void</span> <a class="code" href="group__cp_body.html#ga55cecf4d82aa37cd626c2c208de48801" title="Set the forces and torque or a body to zero.">cpBodyResetForces</a>(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body);
+<a name="l00216"></a>00216 <span class="keywordtype">void</span> <a class="code" href="group__cp_body.html#ga201b11a766af3d8471ceaa3ae2ae85c9" title="Apply an force (in world coordinates) to the body at a point relative to the center of gravity (also ...">cpBodyApplyForce</a>(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body, <span class="keyword">const</span> <a class="code" href="structcp_vect.html">cpVect</a> f, <span class="keyword">const</span> <a class="code" href="structcp_vect.html">cpVect</a> r);
+<a name="l00218"></a>00218 <span class="keywordtype">void</span> <a class="code" href="group__cp_body.html#ga1759ee27171704c75564ca3a414cf730" title="Apply an impulse (in world coordinates) to the body at a point relative to the center of gravity (als...">cpBodyApplyImpulse</a>(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body, <span class="keyword">const</span> <a class="code" href="structcp_vect.html">cpVect</a> j, <span class="keyword">const</span> <a class="code" href="structcp_vect.html">cpVect</a> r);
+<a name="l00219"></a>00219 
+<a name="l00221"></a>00221 <a class="code" href="structcp_vect.html">cpVect</a> <a class="code" href="group__cp_body.html#gad805b6e8a23a49428642295238d7bb9b" title="Get the velocity on a body (in world units) at a point on the body in world coordinates.">cpBodyGetVelAtWorldPoint</a>(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body, <a class="code" href="structcp_vect.html">cpVect</a> point);
+<a name="l00223"></a>00223 <a class="code" href="structcp_vect.html">cpVect</a> <a class="code" href="group__cp_body.html#ga00ceb0eede2419e84eb7e4b107fa0bd3" title="Get the velocity on a body (in world units) at a point on the body in local coordinates.">cpBodyGetVelAtLocalPoint</a>(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body, <a class="code" href="structcp_vect.html">cpVect</a> point);
+<a name="l00224"></a>00224 
+<a name="l00225"></a>00225 
+<a name="l00227"></a>00227 <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> cpBodyKineticEnergy(<span class="keyword">const</span> <a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body)
+<a name="l00228"></a>00228 {
+<a name="l00229"></a>00229         <span class="comment">// Need to do some fudging to avoid NaNs</span>
+<a name="l00230"></a>00230         <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> vsq = cpvdot(body-&gt;<a class="code" href="structcp_body.html#a7d98e994ebcd10b12aa446ff9e5c67f1" title="Velocity of the rigid body&#39;s center of gravity.">v</a>, body-&gt;<a class="code" href="structcp_body.html#a7d98e994ebcd10b12aa446ff9e5c67f1" title="Velocity of the rigid body&#39;s center of gravity.">v</a>);
+<a name="l00231"></a>00231         <a class="code" href="group__basic_types.html#gac1ed65573e035bf892505768c852d8d3">cpFloat</a> wsq = body-&gt;<a class="code" href="structcp_body.html#af7baaa8708ea16122bf226a2cb1a0bb1" title="Angular velocity of the body around it&#39;s center of gravity in radians/second.">w</a>*body-&gt;<a class="code" href="structcp_body.html#af7baaa8708ea16122bf226a2cb1a0bb1" title="Angular velocity of the body around it&#39;s center of gravity in radians/second.">w</a>;
+<a name="l00232"></a>00232         <span class="keywordflow">return</span> (vsq ? vsq*body-&gt;<a class="code" href="structcp_body.html#a883298164e53e4633b3daa4de92a9831">m</a> : 0.0f) + (wsq ? wsq*body-&gt;<a class="code" href="structcp_body.html#a4a47d0b30594a5fe28dd4de3cdf1450a">i</a> : 0.0f);
+<a name="l00233"></a>00233 }
+<a name="l00234"></a>00234 
+<a name="l00236"></a><a class="code" href="group__cp_body.html#ga2a71c91a297ece9ab06101df4b726645">00236</a> <span class="keyword">typedef</span> void (*<a class="code" href="group__cp_body.html#ga2a71c91a297ece9ab06101df4b726645" title="Body/shape iterator callback function type.">cpBodyShapeIteratorFunc</a>)(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body, <a class="code" href="structcp_shape.html" title="Opaque collision shape struct.">cpShape</a> *shape, <span class="keywordtype">void</span> *data);
+<a name="l00238"></a>00238 <span class="keywordtype">void</span> <a class="code" href="group__cp_body.html#ga51f56b6099dc8321ce284ecc6241b285" title="Call func once for each shape attached to body and added to the space.">cpBodyEachShape</a>(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body, <a class="code" href="group__cp_body.html#ga2a71c91a297ece9ab06101df4b726645" title="Body/shape iterator callback function type.">cpBodyShapeIteratorFunc</a> func, <span class="keywordtype">void</span> *data);
+<a name="l00239"></a>00239 
+<a name="l00241"></a><a class="code" href="group__cp_body.html#ga79c674e7767d6ff8769a9676404f589b">00241</a> <span class="keyword">typedef</span> void (*<a class="code" href="group__cp_body.html#ga79c674e7767d6ff8769a9676404f589b" title="Body/constraint iterator callback function type.">cpBodyConstraintIteratorFunc</a>)(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body, <a class="code" href="structcp_constraint.html" title="Opaque cpConstraint struct.">cpConstraint</a> *constraint, <span class="keywordtype">void</span> *data);
+<a name="l00243"></a>00243 <span class="keywordtype">void</span> <a class="code" href="group__cp_body.html#ga377e83841ec8a67ca93685cb0bd6525e" title="Call func once for each constraint attached to body and added to the space.">cpBodyEachConstraint</a>(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body, <a class="code" href="group__cp_body.html#ga79c674e7767d6ff8769a9676404f589b" title="Body/constraint iterator callback function type.">cpBodyConstraintIteratorFunc</a> func, <span class="keywordtype">void</span> *data);
+<a name="l00244"></a>00244 
+<a name="l00246"></a><a class="code" href="group__cp_body.html#gacdd17a9f98ca6e6c088b72f7d5f32ea3">00246</a> <span class="keyword">typedef</span> void (*<a class="code" href="group__cp_body.html#gacdd17a9f98ca6e6c088b72f7d5f32ea3" title="Body/arbiter iterator callback function type.">cpBodyArbiterIteratorFunc</a>)(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body, <a class="code" href="structcp_arbiter.html" title="A colliding pair of shapes.">cpArbiter</a> *arbiter, <span class="keywordtype">void</span> *data);
+<a name="l00248"></a>00248 <span class="keywordtype">void</span> <a class="code" href="group__cp_body.html#gacc958b3adad795e718682bea830d4135" title="Call func once for each arbiter that is currently active on the body.">cpBodyEachArbiter</a>(<a class="code" href="structcp_body.html" title="Chipmunk&#39;s rigid body struct.">cpBody</a> *body, <a class="code" href="group__cp_body.html#gacdd17a9f98ca6e6c088b72f7d5f32ea3" title="Body/arbiter iterator callback function type.">cpBodyArbiterIteratorFunc</a> func, <span class="keywordtype">void</span> *data);
+<a name="l00249"></a>00249 
+</pre></div></div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年六月8日 星期五 23:30:13 for cocos2d-iphone-2.0-rc2 by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

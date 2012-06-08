@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>cocos2d-iphone-2.0-rc2: b2PolygonShape类参考</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="Icon-Small-50.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-iphone-2.0-rc2
+   &#160;<span id="projectnumber">2.0-rc2</span>
+   </div>
+   <div id="projectbrief">created:zhxubing@gmail.com</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="classes.html"><span>组合类型索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公有成员</a> &#124;
+<a href="#pub-attribs">公有属性</a>  </div>
+  <div class="headertitle">
+<div class="title">b2PolygonShape类参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="b2_polygon_shape_8h_source.html">b2PolygonShape.h</a>&gt;</code></p>
+<div class="dynheader">
+类b2PolygonShape继承关系图：</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classb2_polygon_shape.png" usemap="#b2PolygonShape_map" alt=""/>
+  <map id="b2PolygonShape_map" name="b2PolygonShape_map">
+<area href="classb2_shape.html" alt="b2Shape" shape="rect" coords="0,0,108,24"/>
+</map>
+ </div></div>
+
+<p><a href="classb2_polygon_shape-members.html">所有成员的列表。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+公有成员</h2></td></tr>
+<tr class="memitem:a38cf6a915a85691746465c9dbfc5aeb6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38cf6a915a85691746465c9dbfc5aeb6"></a>
+<a class="el" href="classb2_shape.html">b2Shape</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_polygon_shape.html#a38cf6a915a85691746465c9dbfc5aeb6">Clone</a> (<a class="el" href="classb2_block_allocator.html">b2BlockAllocator</a> *allocator) const </td></tr>
+<tr class="memdesc:a38cf6a915a85691746465c9dbfc5aeb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement <a class="el" href="classb2_shape.html">b2Shape</a>. <br/></td></tr>
+<tr class="memitem:ae844375297d19744e01a37b397a5baba"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_polygon_shape.html#ae844375297d19744e01a37b397a5baba">GetChildCount</a> () const </td></tr>
+<tr class="memitem:a8aa13a7584b58f08be4d84181b5a86a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_polygon_shape.html#a8aa13a7584b58f08be4d84181b5a86a8">Set</a> (const <a class="el" href="structb2_vec2.html">b2Vec2</a> *vertices, int32 vertexCount)</td></tr>
+<tr class="memitem:a6bb90df8b4a40d1c53b64cc352a855dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_polygon_shape.html#a6bb90df8b4a40d1c53b64cc352a855dd">SetAsBox</a> (float32 hx, float32 hy)</td></tr>
+<tr class="memitem:a890690250115483da6c7d69829be087e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_polygon_shape.html#a890690250115483da6c7d69829be087e">SetAsBox</a> (float32 hx, float32 hy, const <a class="el" href="structb2_vec2.html">b2Vec2</a> &amp;center, float32 angle)</td></tr>
+<tr class="memitem:a69ccc2f671394b3cc1a00a16ef36b12b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_polygon_shape.html#a69ccc2f671394b3cc1a00a16ef36b12b">TestPoint</a> (const <a class="el" href="structb2_transform.html">b2Transform</a> &amp;transform, const <a class="el" href="structb2_vec2.html">b2Vec2</a> &amp;p) const </td></tr>
+<tr class="memitem:ac13bded10d09c341f64aaa2750dda6b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac13bded10d09c341f64aaa2750dda6b5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_polygon_shape.html#ac13bded10d09c341f64aaa2750dda6b5">RayCast</a> (<a class="el" href="structb2_ray_cast_output.html">b2RayCastOutput</a> *output, const <a class="el" href="structb2_ray_cast_input.html">b2RayCastInput</a> &amp;input, const <a class="el" href="structb2_transform.html">b2Transform</a> &amp;transform, int32 childIndex) const </td></tr>
+<tr class="memdesc:ac13bded10d09c341f64aaa2750dda6b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement <a class="el" href="classb2_shape.html">b2Shape</a>. <br/></td></tr>
+<tr class="memitem:a00e225b0321bf6bb231a554036ffdf23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_polygon_shape.html#a00e225b0321bf6bb231a554036ffdf23">ComputeAABB</a> (<a class="el" href="structb2_a_a_b_b.html">b2AABB</a> *aabb, const <a class="el" href="structb2_transform.html">b2Transform</a> &amp;transform, int32 childIndex) const </td></tr>
+<tr class="memitem:ad86c4c2a83a7122599462da83bf35389"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_polygon_shape.html#ad86c4c2a83a7122599462da83bf35389">ComputeMass</a> (<a class="el" href="structb2_mass_data.html">b2MassData</a> *massData, float32 density) const </td></tr>
+<tr class="memitem:ae220f24c42eff4aef4cd452676ca2ced"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae220f24c42eff4aef4cd452676ca2ced"></a>
+int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_polygon_shape.html#ae220f24c42eff4aef4cd452676ca2ced">GetVertexCount</a> () const </td></tr>
+<tr class="memdesc:ae220f24c42eff4aef4cd452676ca2ced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the vertex count. <br/></td></tr>
+<tr class="memitem:a88cdb687ec7dc0cbcf4bd25fd37f4da1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88cdb687ec7dc0cbcf4bd25fd37f4da1"></a>
+const <a class="el" href="structb2_vec2.html">b2Vec2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_polygon_shape.html#a88cdb687ec7dc0cbcf4bd25fd37f4da1">GetVertex</a> (int32 index) const </td></tr>
+<tr class="memdesc:a88cdb687ec7dc0cbcf4bd25fd37f4da1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a vertex by index. <br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-attribs"></a>
+公有属性</h2></td></tr>
+<tr class="memitem:ae8f5bd2f13f1e9b741c33350ba19cd9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8f5bd2f13f1e9b741c33350ba19cd9f"></a>
+<a class="el" href="structb2_vec2.html">b2Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_centroid</b></td></tr>
+<tr class="memitem:a11ee5c107660be5da25f0e164aaccd53"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11ee5c107660be5da25f0e164aaccd53"></a>
+<a class="el" href="structb2_vec2.html">b2Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_vertices</b> [<a class="el" href="b2_settings_8h.html#a09d71ee1993bee28b5b2e6d893b41884">b2_maxPolygonVertices</a>]</td></tr>
+<tr class="memitem:a97cdcec277321c62ecdf93cb649958ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97cdcec277321c62ecdf93cb649958ce"></a>
+<a class="el" href="structb2_vec2.html">b2Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_normals</b> [<a class="el" href="b2_settings_8h.html#a09d71ee1993bee28b5b2e6d893b41884">b2_maxPolygonVertices</a>]</td></tr>
+<tr class="memitem:a45902db31f1a135b259f7967fd05f2f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45902db31f1a135b259f7967fd05f2f0"></a>
+int32&#160;</td><td class="memItemRight" valign="bottom"><b>m_vertexCount</b></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>详细描述</h2>
+<div class="textblock"><p>A convex polygon. It is assumed that the interior of the polygon is to the left of each edge. Polygons have a maximum number of vertices equal to b2_maxPolygonVertices. In most cases you should not need many vertices for a convex polygon. </p>
+</div><hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a00e225b0321bf6bb231a554036ffdf23"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classb2_polygon_shape.html#a00e225b0321bf6bb231a554036ffdf23">b2PolygonShape::ComputeAABB</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structb2_a_a_b_b.html">b2AABB</a> *&#160;</td>
+          <td class="paramname"><em>aabb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structb2_transform.html">b2Transform</a> &amp;&#160;</td>
+          <td class="paramname"><em>transform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32&#160;</td>
+          <td class="paramname"><em>childIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="section see"><dt>参见:</dt><dd><a class="el" href="classb2_shape.html#a88e9807fab0c8ca9a98d8926e50a1411">b2Shape::ComputeAABB</a> </dd></dl>
+
+<p>实现了<a class="el" href="classb2_shape.html#a88e9807fab0c8ca9a98d8926e50a1411">b2Shape</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad86c4c2a83a7122599462da83bf35389"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classb2_polygon_shape.html#ad86c4c2a83a7122599462da83bf35389">b2PolygonShape::ComputeMass</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structb2_mass_data.html">b2MassData</a> *&#160;</td>
+          <td class="paramname"><em>massData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32&#160;</td>
+          <td class="paramname"><em>density</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="section see"><dt>参见:</dt><dd><a class="el" href="classb2_shape.html#a61b365526241b47f124789b0309cac69">b2Shape::ComputeMass</a> </dd></dl>
+
+<p>实现了<a class="el" href="classb2_shape.html#a61b365526241b47f124789b0309cac69">b2Shape</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="ae844375297d19744e01a37b397a5baba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32 <a class="el" href="classb2_polygon_shape.html#ae844375297d19744e01a37b397a5baba">b2PolygonShape::GetChildCount</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="section see"><dt>参见:</dt><dd><a class="el" href="classb2_shape.html#a05a3c445017d96df9238ceefe6ce37ab" title="Get the number of child primitives.">b2Shape::GetChildCount</a> </dd></dl>
+
+<p>实现了<a class="el" href="classb2_shape.html#a05a3c445017d96df9238ceefe6ce37ab">b2Shape</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8aa13a7584b58f08be4d84181b5a86a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classb2_polygon_shape.html#a8aa13a7584b58f08be4d84181b5a86a8">b2PolygonShape::Set</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structb2_vec2.html">b2Vec2</a> *&#160;</td>
+          <td class="paramname"><em>vertices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32&#160;</td>
+          <td class="paramname"><em>vertexCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Copy vertices. This assumes the vertices define a convex polygon. It is assumed that the exterior is the the right of each edge. The count must be in the range [3, b2_maxPolygonVertices]. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6bb90df8b4a40d1c53b64cc352a855dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classb2_polygon_shape.html#a6bb90df8b4a40d1c53b64cc352a855dd">b2PolygonShape::SetAsBox</a> </td>
+          <td>(</td>
+          <td class="paramtype">float32&#160;</td>
+          <td class="paramname"><em>hx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32&#160;</td>
+          <td class="paramname"><em>hy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Build vertices to represent an axis-aligned box. </p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hx</td><td>the half-width. </td></tr>
+    <tr><td class="paramname">hy</td><td>the half-height. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a890690250115483da6c7d69829be087e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classb2_polygon_shape.html#a6bb90df8b4a40d1c53b64cc352a855dd">b2PolygonShape::SetAsBox</a> </td>
+          <td>(</td>
+          <td class="paramtype">float32&#160;</td>
+          <td class="paramname"><em>hx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32&#160;</td>
+          <td class="paramname"><em>hy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structb2_vec2.html">b2Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>center</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32&#160;</td>
+          <td class="paramname"><em>angle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Build vertices to represent an oriented box. </p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hx</td><td>the half-width. </td></tr>
+    <tr><td class="paramname">hy</td><td>the half-height. </td></tr>
+    <tr><td class="paramname">center</td><td>the center of the box in local coordinates. </td></tr>
+    <tr><td class="paramname">angle</td><td>the rotation of the box in local coordinates. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a69ccc2f671394b3cc1a00a16ef36b12b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classb2_polygon_shape.html#a69ccc2f671394b3cc1a00a16ef36b12b">b2PolygonShape::TestPoint</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structb2_transform.html">b2Transform</a> &amp;&#160;</td>
+          <td class="paramname"><em>transform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structb2_vec2.html">b2Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="section see"><dt>参见:</dt><dd><a class="el" href="classb2_shape.html#a6ac968e403e2d93e8ae46d728a2e50fa">b2Shape::TestPoint</a> </dd></dl>
+
+<p>实现了<a class="el" href="classb2_shape.html#a6ac968e403e2d93e8ae46d728a2e50fa">b2Shape</a>。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/external/Box2d/Box2D/Collision/Shapes/<a class="el" href="b2_polygon_shape_8h_source.html">b2PolygonShape.h</a></li>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/external/Box2d/Box2D/Collision/Shapes/b2PolygonShape.cpp</li>
+</ul>
+</div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年六月8日 星期五 23:24:09 for cocos2d-iphone-2.0-rc2 by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

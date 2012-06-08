@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>cocos2d-iphone-2.0-rc2: CCGridBase类参考</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="Icon-Small-50.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-iphone-2.0-rc2
+   &#160;<span id="projectnumber">2.0-rc2</span>
+   </div>
+   <div id="projectbrief">created:zhxubing@gmail.com</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="classes.html"><span>组合类型索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公有成员</a> &#124;
+<a href="#pub-static-methods">静态公有成员</a> &#124;
+<a href="#pro-attribs">保护属性</a> &#124;
+<a href="#properties">属性</a>  </div>
+  <div class="headertitle">
+<div class="title">CCGridBase类参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#import &lt;<a class="el" href="_c_c_grid_8h_source.html">CCGrid.h</a>&gt;</code></p>
+<div class="dynheader">
+类CCGridBase继承关系图：</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_c_c_grid_base.png" usemap="#CCGridBase_map" alt=""/>
+  <map id="CCGridBase_map" name="CCGridBase_map">
+<area href="interface_c_c_grid3_d.html" alt="CCGrid3D" shape="rect" coords="0,56,97,80"/>
+<area href="interface_c_c_tiled_grid3_d.html" alt="CCTiledGrid3D" shape="rect" coords="107,56,204,80"/>
+</map>
+ </div></div>
+
+<p><a href="class_c_c_grid_base-members.html">所有成员的列表。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+公有成员</h2></td></tr>
+<tr class="memitem:ac779d5bf3d474b17359463f4b992ddb4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac779d5bf3d474b17359463f4b992ddb4"></a>
+(id)&#160;</td><td class="memItemRight" valign="bottom">- <b>initWithSize:texture:flippedTexture:</b></td></tr>
+<tr class="memitem:ac3490a29a9e8be77e1d9bf8a08ae698c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3490a29a9e8be77e1d9bf8a08ae698c"></a>
+(id)&#160;</td><td class="memItemRight" valign="bottom">- <b>initWithSize:</b></td></tr>
+<tr class="memitem:a35574f90b8d553a714759b961fe68949"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35574f90b8d553a714759b961fe68949"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>beforeDraw</b></td></tr>
+<tr class="memitem:a395b25189c5fcc454ab12b438ae1997f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a395b25189c5fcc454ab12b438ae1997f"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>afterDraw:</b></td></tr>
+<tr class="memitem:a2238beb275031f4d761c5a283f174bd8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2238beb275031f4d761c5a283f174bd8"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>blit</b></td></tr>
+<tr class="memitem:af2e2602914b109d9bb1f7b4261540aa3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2e2602914b109d9bb1f7b4261540aa3"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>reuse</b></td></tr>
+<tr class="memitem:a2adeb1af62411bc6d8d2176ad4d405f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2adeb1af62411bc6d8d2176ad4d405f0"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>calculateVertexPoints</b></td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+静态公有成员</h2></td></tr>
+<tr class="memitem:aa126b4850e7e38de451c312f597627f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa126b4850e7e38de451c312f597627f1"></a>
+(id)&#160;</td><td class="memItemRight" valign="bottom">+ <b>gridWithSize:texture:flippedTexture:</b></td></tr>
+<tr class="memitem:a3942d771eb092223d70b407cf85e5316"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3942d771eb092223d70b407cf85e5316"></a>
+(id)&#160;</td><td class="memItemRight" valign="bottom">+ <b>gridWithSize:</b></td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+保护属性</h2></td></tr>
+<tr class="memitem:a28688ffb5ba7fdd6f76aaf50db83ce6e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28688ffb5ba7fdd6f76aaf50db83ce6e"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>active_</b></td></tr>
+<tr class="memitem:a7f05c01c5ec0fcf7822daf7111d6c98e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f05c01c5ec0fcf7822daf7111d6c98e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>reuseGrid_</b></td></tr>
+<tr class="memitem:ad0930a939e38a2a8bceb14b9c3b2d414"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0930a939e38a2a8bceb14b9c3b2d414"></a>
+<a class="el" href="cc_types_8h.html#a66489f5c8efbdb2aa26ecbf9184ec8ea">ccGridSize</a>&#160;</td><td class="memItemRight" valign="bottom"><b>gridSize_</b></td></tr>
+<tr class="memitem:a00c126d54a069d5c260457b4d5bc0c4c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00c126d54a069d5c260457b4d5bc0c4c"></a>
+<a class="el" href="class_c_c_texture2_d.html">CCTexture2D</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>texture_</b></td></tr>
+<tr class="memitem:a66f22f4ba01645bd6069c1e5687cdbc8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66f22f4ba01645bd6069c1e5687cdbc8"></a>
+CGPoint&#160;</td><td class="memItemRight" valign="bottom"><b>step_</b></td></tr>
+<tr class="memitem:a89f6a43f4434ae9010169e0960ad44c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89f6a43f4434ae9010169e0960ad44c2"></a>
+<a class="el" href="interface_c_c_grabber.html">CCGrabber</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>grabber_</b></td></tr>
+<tr class="memitem:aa272f174bf48b59c837d467a708d813d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa272f174bf48b59c837d467a708d813d"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>isTextureFlipped_</b></td></tr>
+<tr class="memitem:a66baee7dc93fca9cd5061b9314003973"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66baee7dc93fca9cd5061b9314003973"></a>
+<a class="el" href="interface_c_c_g_l_program.html">CCGLProgram</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>shaderProgram_</b></td></tr>
+<tr class="memitem:a58bdadd8db16a66645a5b0df3ccca2bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58bdadd8db16a66645a5b0df3ccca2bc"></a>
+ccDirectorProjection&#160;</td><td class="memItemRight" valign="bottom"><b>directorProjection_</b></td></tr>
+<tr><td colspan="2"><h2><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a1ff789adfb6e068f9bdc460c70916035"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_grid_base.html#a1ff789adfb6e068f9bdc460c70916035">active</a></td></tr>
+<tr class="memitem:a1a4a6492ed5eeaa7bf33ade7333fc0d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_grid_base.html#a1a4a6492ed5eeaa7bf33ade7333fc0d5">reuseGrid</a></td></tr>
+<tr class="memitem:a3b115a5e6c8321f599ca3693dc20f62c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cc_types_8h.html#a66489f5c8efbdb2aa26ecbf9184ec8ea">ccGridSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_grid_base.html#a3b115a5e6c8321f599ca3693dc20f62c">gridSize</a></td></tr>
+<tr class="memitem:a2b4025931d481909fb29648726ea4b18"><td class="memItemLeft" align="right" valign="top">CGPoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_grid_base.html#a2b4025931d481909fb29648726ea4b18">step</a></td></tr>
+<tr class="memitem:ab987cc079795423117e6ced0c419a288"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_c_texture2_d.html">CCTexture2D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_grid_base.html#ab987cc079795423117e6ced0c419a288">texture</a></td></tr>
+<tr class="memitem:a9947ff1cac4cf470351da177fc1c4a19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_c_c_grabber.html">CCGrabber</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_grid_base.html#a9947ff1cac4cf470351da177fc1c4a19">grabber</a></td></tr>
+<tr class="memitem:a4793cac52a6a5d3aa6ca947efed75115"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_grid_base.html#a4793cac52a6a5d3aa6ca947efed75115">isTextureFlipped</a></td></tr>
+<tr class="memitem:a7d119a5c4877b9cf4762f61843d76da4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_c_c_g_l_program.html">CCGLProgram</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_grid_base.html#a7d119a5c4877b9cf4762f61843d76da4">shaderProgram</a></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>详细描述</h2>
+<div class="textblock"><p>Base class for other </p>
+</div><hr/><h2>属性文档</h2>
+<a class="anchor" id="a1ff789adfb6e068f9bdc460c70916035"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) <a class="el" href="interface_c_c_grid_base.html#a1ff789adfb6e068f9bdc460c70916035">active</a><code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>wheter or not the grid is active </p>
+
+</div>
+</div>
+<a class="anchor" id="a9947ff1cac4cf470351da177fc1c4a19"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="interface_c_c_grabber.html">CCGrabber</a>*) <a class="el" href="interface_c_c_grid_base.html#a9947ff1cac4cf470351da177fc1c4a19">grabber</a><code> [read, write, retain]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>grabber used </p>
+
+</div>
+</div>
+<a class="anchor" id="a3b115a5e6c8321f599ca3693dc20f62c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="cc_types_8h.html#a66489f5c8efbdb2aa26ecbf9184ec8ea">ccGridSize</a>) <a class="el" href="interface_c_c_grid_base.html#a3b115a5e6c8321f599ca3693dc20f62c">gridSize</a><code> [read, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>size of the grid </p>
+
+</div>
+</div>
+<a class="anchor" id="a4793cac52a6a5d3aa6ca947efed75115"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) <a class="el" href="interface_c_c_grid_base.html#a4793cac52a6a5d3aa6ca947efed75115">isTextureFlipped</a><code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>is texture flipped </p>
+
+</div>
+</div>
+<a class="anchor" id="a1a4a6492ed5eeaa7bf33ade7333fc0d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) <a class="el" href="interface_c_c_grid_base.html#a1a4a6492ed5eeaa7bf33ade7333fc0d5">reuseGrid</a><code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>number of times that the grid will be reused </p>
+
+</div>
+</div>
+<a class="anchor" id="a7d119a5c4877b9cf4762f61843d76da4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="interface_c_c_g_l_program.html">CCGLProgram</a>*) <a class="el" href="interface_c_c_grid_base.html#a7d119a5c4877b9cf4762f61843d76da4">shaderProgram</a><code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>shader program </p>
+
+</div>
+</div>
+<a class="anchor" id="a2b4025931d481909fb29648726ea4b18"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (CGPoint) <a class="el" href="interface_c_c_grid_base.html#a2b4025931d481909fb29648726ea4b18">step</a><code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>pixels between the grids </p>
+
+</div>
+</div>
+<a class="anchor" id="ab987cc079795423117e6ced0c419a288"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="class_c_c_texture2_d.html">CCTexture2D</a>*) <a class="el" href="interface_c_c_grid_base.html#ab987cc079795423117e6ced0c419a288">texture</a><code> [read, write, retain]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>texture used </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/cocos2d/<a class="el" href="_c_c_grid_8h_source.html">CCGrid.h</a></li>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/cocos2d/CCGrid.m</li>
+</ul>
+</div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年六月8日 星期五 23:24:12 for cocos2d-iphone-2.0-rc2 by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

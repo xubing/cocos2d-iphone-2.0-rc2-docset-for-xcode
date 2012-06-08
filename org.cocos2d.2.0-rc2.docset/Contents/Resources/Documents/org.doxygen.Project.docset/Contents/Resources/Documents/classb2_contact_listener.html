@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>cocos2d-iphone-2.0-rc2: b2ContactListener类参考</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="Icon-Small-50.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-iphone-2.0-rc2
+   &#160;<span id="projectnumber">2.0-rc2</span>
+   </div>
+   <div id="projectbrief">created:zhxubing@gmail.com</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="classes.html"><span>组合类型索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公有成员</a>  </div>
+  <div class="headertitle">
+<div class="title">b2ContactListener类参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="b2_world_callbacks_8h_source.html">b2WorldCallbacks.h</a>&gt;</code></p>
+<div class="dynheader">
+类b2ContactListener继承关系图：</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classb2_contact_listener.png" usemap="#b2ContactListener_map" alt=""/>
+  <map id="b2ContactListener_map" name="b2ContactListener_map">
+<area href="class_test.html" alt="Test" shape="rect" coords="0,56,123,80"/>
+<area href="class_test.html" alt="Test" shape="rect" coords="266,56,389,80"/>
+<area href="class_add_pair.html" alt="AddPair" shape="rect" coords="133,112,256,136"/>
+<area href="class_apply_force.html" alt="ApplyForce" shape="rect" coords="133,168,256,192"/>
+<area href="class_body_types.html" alt="BodyTypes" shape="rect" coords="133,224,256,248"/>
+<area href="class_breakable.html" alt="Breakable" shape="rect" coords="133,280,256,304"/>
+<area href="class_bridge.html" alt="Bridge" shape="rect" coords="133,336,256,360"/>
+<area href="class_bullet_test.html" alt="BulletTest" shape="rect" coords="133,392,256,416"/>
+<area href="class_cantilever.html" alt="Cantilever" shape="rect" coords="133,448,256,472"/>
+<area href="class_car.html" alt="Car" shape="rect" coords="133,504,256,528"/>
+<area href="class_chain.html" alt="Chain" shape="rect" coords="133,560,256,584"/>
+<area href="class_character_collision.html" alt="CharacterCollision" shape="rect" coords="133,616,256,640"/>
+<area href="class_collision_filtering.html" alt="CollisionFiltering" shape="rect" coords="133,672,256,696"/>
+<area href="class_collision_processing.html" alt="CollisionProcessing" shape="rect" coords="133,728,256,752"/>
+<area href="class_compound_shapes.html" alt="CompoundShapes" shape="rect" coords="133,784,256,808"/>
+<area href="class_confined.html" alt="Confined" shape="rect" coords="133,840,256,864"/>
+<area href="class_continuous_test.html" alt="ContinuousTest" shape="rect" coords="133,896,256,920"/>
+<area href="class_distance_test.html" alt="DistanceTest" shape="rect" coords="133,952,256,976"/>
+<area href="class_dominos.html" alt="Dominos" shape="rect" coords="133,1008,256,1032"/>
+<area href="class_dynamic_tree_test.html" alt="DynamicTreeTest" shape="rect" coords="133,1064,256,1088"/>
+<area href="class_edge_shapes.html" alt="EdgeShapes" shape="rect" coords="133,1120,256,1144"/>
+<area href="class_edge_test.html" alt="EdgeTest" shape="rect" coords="133,1176,256,1200"/>
+<area href="class_gears.html" alt="Gears" shape="rect" coords="133,1232,256,1256"/>
+<area href="class_one_sided_platform.html" alt="OneSidedPlatform" shape="rect" coords="133,1288,256,1312"/>
+<area href="class_pinball.html" alt="Pinball" shape="rect" coords="133,1344,256,1368"/>
+<area href="class_poly_collision.html" alt="PolyCollision" shape="rect" coords="133,1400,256,1424"/>
+<area href="class_poly_shapes.html" alt="PolyShapes" shape="rect" coords="133,1456,256,1480"/>
+<area href="class_prismatic.html" alt="Prismatic" shape="rect" coords="133,1512,256,1536"/>
+<area href="class_pulleys.html" alt="Pulleys" shape="rect" coords="133,1568,256,1592"/>
+<area href="class_pyramid.html" alt="Pyramid" shape="rect" coords="133,1624,256,1648"/>
+<area href="class_ray_cast.html" alt="RayCast" shape="rect" coords="133,1680,256,1704"/>
+<area href="class_revolute.html" alt="Revolute" shape="rect" coords="133,1736,256,1760"/>
+<area href="class_rope.html" alt="Rope" shape="rect" coords="133,1792,256,1816"/>
+<area href="class_rope_joint.html" alt="RopeJoint" shape="rect" coords="133,1848,256,1872"/>
+<area href="class_sensor_test.html" alt="SensorTest" shape="rect" coords="133,1904,256,1928"/>
+<area href="class_shape_editing.html" alt="ShapeEditing" shape="rect" coords="133,1960,256,1984"/>
+<area href="class_slider_crank.html" alt="SliderCrank" shape="rect" coords="133,2016,256,2040"/>
+<area href="class_sphere_stack.html" alt="SphereStack" shape="rect" coords="133,2072,256,2096"/>
+<area href="class_theo_jansen.html" alt="TheoJansen" shape="rect" coords="133,2128,256,2152"/>
+<area href="class_tiles.html" alt="Tiles" shape="rect" coords="133,2184,256,2208"/>
+<area href="class_time_of_impact.html" alt="TimeOfImpact" shape="rect" coords="133,2240,256,2264"/>
+<area href="class_varying_friction.html" alt="VaryingFriction" shape="rect" coords="133,2296,256,2320"/>
+<area href="class_varying_restitution.html" alt="VaryingRestitution" shape="rect" coords="133,2352,256,2376"/>
+<area href="class_vertical_stack.html" alt="VerticalStack" shape="rect" coords="133,2408,256,2432"/>
+<area href="class_web.html" alt="Web" shape="rect" coords="133,2464,256,2488"/>
+<area href="class_add_pair.html" alt="AddPair" shape="rect" coords="399,112,522,136"/>
+<area href="class_apply_force.html" alt="ApplyForce" shape="rect" coords="399,168,522,192"/>
+<area href="class_body_types.html" alt="BodyTypes" shape="rect" coords="399,224,522,248"/>
+<area href="class_breakable.html" alt="Breakable" shape="rect" coords="399,280,522,304"/>
+<area href="class_bridge.html" alt="Bridge" shape="rect" coords="399,336,522,360"/>
+<area href="class_bullet_test.html" alt="BulletTest" shape="rect" coords="399,392,522,416"/>
+<area href="class_cantilever.html" alt="Cantilever" shape="rect" coords="399,448,522,472"/>
+<area href="class_car.html" alt="Car" shape="rect" coords="399,504,522,528"/>
+<area href="class_chain.html" alt="Chain" shape="rect" coords="399,560,522,584"/>
+<area href="class_character_collision.html" alt="CharacterCollision" shape="rect" coords="399,616,522,640"/>
+<area href="class_collision_filtering.html" alt="CollisionFiltering" shape="rect" coords="399,672,522,696"/>
+<area href="class_collision_processing.html" alt="CollisionProcessing" shape="rect" coords="399,728,522,752"/>
+<area href="class_compound_shapes.html" alt="CompoundShapes" shape="rect" coords="399,784,522,808"/>
+<area href="class_confined.html" alt="Confined" shape="rect" coords="399,840,522,864"/>
+<area href="class_continuous_test.html" alt="ContinuousTest" shape="rect" coords="399,896,522,920"/>
+<area href="class_distance_test.html" alt="DistanceTest" shape="rect" coords="399,952,522,976"/>
+<area href="class_dominos.html" alt="Dominos" shape="rect" coords="399,1008,522,1032"/>
+<area href="class_dynamic_tree_test.html" alt="DynamicTreeTest" shape="rect" coords="399,1064,522,1088"/>
+<area href="class_edge_shapes.html" alt="EdgeShapes" shape="rect" coords="399,1120,522,1144"/>
+<area href="class_edge_test.html" alt="EdgeTest" shape="rect" coords="399,1176,522,1200"/>
+<area href="class_gears.html" alt="Gears" shape="rect" coords="399,1232,522,1256"/>
+<area href="class_one_sided_platform.html" alt="OneSidedPlatform" shape="rect" coords="399,1288,522,1312"/>
+<area href="class_pinball.html" alt="Pinball" shape="rect" coords="399,1344,522,1368"/>
+<area href="class_poly_collision.html" alt="PolyCollision" shape="rect" coords="399,1400,522,1424"/>
+<area href="class_poly_shapes.html" alt="PolyShapes" shape="rect" coords="399,1456,522,1480"/>
+<area href="class_prismatic.html" alt="Prismatic" shape="rect" coords="399,1512,522,1536"/>
+<area href="class_pulleys.html" alt="Pulleys" shape="rect" coords="399,1568,522,1592"/>
+<area href="class_pyramid.html" alt="Pyramid" shape="rect" coords="399,1624,522,1648"/>
+<area href="class_ray_cast.html" alt="RayCast" shape="rect" coords="399,1680,522,1704"/>
+<area href="class_revolute.html" alt="Revolute" shape="rect" coords="399,1736,522,1760"/>
+<area href="class_rope.html" alt="Rope" shape="rect" coords="399,1792,522,1816"/>
+<area href="class_rope_joint.html" alt="RopeJoint" shape="rect" coords="399,1848,522,1872"/>
+<area href="class_sensor_test.html" alt="SensorTest" shape="rect" coords="399,1904,522,1928"/>
+<area href="class_shape_editing.html" alt="ShapeEditing" shape="rect" coords="399,1960,522,1984"/>
+<area href="class_slider_crank.html" alt="SliderCrank" shape="rect" coords="399,2016,522,2040"/>
+<area href="class_sphere_stack.html" alt="SphereStack" shape="rect" coords="399,2072,522,2096"/>
+<area href="class_theo_jansen.html" alt="TheoJansen" shape="rect" coords="399,2128,522,2152"/>
+<area href="class_tiles.html" alt="Tiles" shape="rect" coords="399,2184,522,2208"/>
+<area href="class_time_of_impact.html" alt="TimeOfImpact" shape="rect" coords="399,2240,522,2264"/>
+<area href="class_varying_friction.html" alt="VaryingFriction" shape="rect" coords="399,2296,522,2320"/>
+<area href="class_varying_restitution.html" alt="VaryingRestitution" shape="rect" coords="399,2352,522,2376"/>
+<area href="class_vertical_stack.html" alt="VerticalStack" shape="rect" coords="399,2408,522,2432"/>
+<area href="class_web.html" alt="Web" shape="rect" coords="399,2464,522,2488"/>
+</map>
+ </div></div>
+
+<p><a href="classb2_contact_listener-members.html">所有成员的列表。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+公有成员</h2></td></tr>
+<tr class="memitem:a35148fc56fb9eac12077200fbd928f65"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35148fc56fb9eac12077200fbd928f65"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_contact_listener.html#a35148fc56fb9eac12077200fbd928f65">BeginContact</a> (<a class="el" href="classb2_contact.html">b2Contact</a> *contact)</td></tr>
+<tr class="memdesc:a35148fc56fb9eac12077200fbd928f65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when two fixtures begin to touch. <br/></td></tr>
+<tr class="memitem:afb3059058e5c47903a3947c2eef5826b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb3059058e5c47903a3947c2eef5826b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_contact_listener.html#afb3059058e5c47903a3947c2eef5826b">EndContact</a> (<a class="el" href="classb2_contact.html">b2Contact</a> *contact)</td></tr>
+<tr class="memdesc:afb3059058e5c47903a3947c2eef5826b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when two fixtures cease to touch. <br/></td></tr>
+<tr class="memitem:a416f85eb45a1099053402b15a19a7de0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_contact_listener.html#a416f85eb45a1099053402b15a19a7de0">PreSolve</a> (<a class="el" href="classb2_contact.html">b2Contact</a> *contact, const <a class="el" href="structb2_manifold.html">b2Manifold</a> *oldManifold)</td></tr>
+<tr class="memitem:acd58ec96f7569b95eec65b8ca3f8013d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_contact_listener.html#acd58ec96f7569b95eec65b8ca3f8013d">PostSolve</a> (<a class="el" href="classb2_contact.html">b2Contact</a> *contact, const <a class="el" href="structb2_contact_impulse.html">b2ContactImpulse</a> *impulse)</td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>详细描述</h2>
+<div class="textblock"><p>Implement this class to get contact information. You can use these results for things like sounds and game logic. You can also get contact results by traversing the contact lists after the time step. However, you might miss some contacts because continuous physics leads to sub-stepping. Additionally you may receive multiple callbacks for the same contact in a single time step. You should strive to make your callbacks efficient because there may be many callbacks per time step. </p>
+<dl class="section warning"><dt>警告:</dt><dd>You cannot create/destroy Box2D entities inside these callbacks. </dd></dl>
+</div><hr/><h2>成员函数文档</h2>
+<a class="anchor" id="acd58ec96f7569b95eec65b8ca3f8013d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classb2_contact_listener.html#acd58ec96f7569b95eec65b8ca3f8013d">b2ContactListener::PostSolve</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classb2_contact.html">b2Contact</a> *&#160;</td>
+          <td class="paramname"><em>contact</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structb2_contact_impulse.html">b2ContactImpulse</a> *&#160;</td>
+          <td class="paramname"><em>impulse</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>This lets you inspect a contact after the solver is finished. This is useful for inspecting impulses. Note: the contact manifold does not include time of impact impulses, which can be arbitrarily large if the sub-step is small. Hence the impulse is provided explicitly in a separate data structure. Note: this is only called for contacts that are touching, solid, and awake. </p>
+
+<p>被<a class="el" href="class_breakable.html#a357879fafdb8a0dec8684bff61bf0dfd">Breakable</a>重载。</p>
+
+</div>
+</div>
+<a class="anchor" id="a416f85eb45a1099053402b15a19a7de0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classb2_contact_listener.html#a416f85eb45a1099053402b15a19a7de0">b2ContactListener::PreSolve</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classb2_contact.html">b2Contact</a> *&#160;</td>
+          <td class="paramname"><em>contact</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structb2_manifold.html">b2Manifold</a> *&#160;</td>
+          <td class="paramname"><em>oldManifold</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>This is called after a contact is updated. This allows you to inspect a contact before it goes to the solver. If you are careful, you can modify the contact manifold (e.g. disable contact). A copy of the old manifold is provided so that you can detect changes. Note: this is called only for awake bodies. Note: this is called even when the number of contact points is zero. Note: this is not called for sensors. Note: if you set the number of contact points to zero, you will not get an EndContact callback. However, you may get a BeginContact callback the next step. </p>
+
+<p>被<a class="el" href="class_test.html#a876f3c1971cc4a3178346c836ff84935">Test</a>、<a class="el" href="class_test.html#ab815ed5d709ccbcbe567838e01fe30c4">Test</a>及<a class="el" href="class_one_sided_platform.html#a9a2f282d5907773999658850a54b15f9">OneSidedPlatform</a>重载。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/external/Box2d/Box2D/Dynamics/<a class="el" href="b2_world_callbacks_8h_source.html">b2WorldCallbacks.h</a></li>
+</ul>
+</div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年六月8日 星期五 23:24:09 for cocos2d-iphone-2.0-rc2 by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

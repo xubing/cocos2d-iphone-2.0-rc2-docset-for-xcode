@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>cocos2d-iphone-2.0-rc2: b2MouseJoint类参考</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="Icon-Small-50.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-iphone-2.0-rc2
+   &#160;<span id="projectnumber">2.0-rc2</span>
+   </div>
+   <div id="projectbrief">created:zhxubing@gmail.com</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="classes.html"><span>组合类型索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公有成员</a> &#124;
+<a href="#pro-methods">保护成员</a> &#124;
+<a href="#pro-attribs">保护属性</a> &#124;
+<a href="#friends">友元</a>  </div>
+  <div class="headertitle">
+<div class="title">b2MouseJoint类参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="b2_mouse_joint_8h_source.html">b2MouseJoint.h</a>&gt;</code></p>
+<div class="dynheader">
+类b2MouseJoint继承关系图：</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classb2_mouse_joint.png" usemap="#b2MouseJoint_map" alt=""/>
+  <map id="b2MouseJoint_map" name="b2MouseJoint_map">
+<area href="classb2_joint.html" alt="b2Joint" shape="rect" coords="0,0,91,24"/>
+</map>
+ </div></div>
+
+<p><a href="classb2_mouse_joint-members.html">所有成员的列表。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+公有成员</h2></td></tr>
+<tr class="memitem:a9db1c131fde2d11e61c6ccee9c28219b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9db1c131fde2d11e61c6ccee9c28219b"></a>
+<a class="el" href="structb2_vec2.html">b2Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_mouse_joint.html#a9db1c131fde2d11e61c6ccee9c28219b">GetAnchorA</a> () const </td></tr>
+<tr class="memdesc:a9db1c131fde2d11e61c6ccee9c28219b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="classb2_joint.html">b2Joint</a>. <br/></td></tr>
+<tr class="memitem:a0db991ec36238105eb481f75e9b6161a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0db991ec36238105eb481f75e9b6161a"></a>
+<a class="el" href="structb2_vec2.html">b2Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_mouse_joint.html#a0db991ec36238105eb481f75e9b6161a">GetAnchorB</a> () const </td></tr>
+<tr class="memdesc:a0db991ec36238105eb481f75e9b6161a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="classb2_joint.html">b2Joint</a>. <br/></td></tr>
+<tr class="memitem:ab8e07dbed9d24c1c046d1ede60930c52"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8e07dbed9d24c1c046d1ede60930c52"></a>
+<a class="el" href="structb2_vec2.html">b2Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_mouse_joint.html#ab8e07dbed9d24c1c046d1ede60930c52">GetReactionForce</a> (float32 inv_dt) const </td></tr>
+<tr class="memdesc:ab8e07dbed9d24c1c046d1ede60930c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="classb2_joint.html">b2Joint</a>. <br/></td></tr>
+<tr class="memitem:a68efbc617aa7f0a41578e0aea988d662"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a68efbc617aa7f0a41578e0aea988d662"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_mouse_joint.html#a68efbc617aa7f0a41578e0aea988d662">GetReactionTorque</a> (float32 inv_dt) const </td></tr>
+<tr class="memdesc:a68efbc617aa7f0a41578e0aea988d662"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="classb2_joint.html">b2Joint</a>. <br/></td></tr>
+<tr class="memitem:a96f34c1c990407eddbadf07ae359b1f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96f34c1c990407eddbadf07ae359b1f3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_mouse_joint.html#a96f34c1c990407eddbadf07ae359b1f3">SetTarget</a> (const <a class="el" href="structb2_vec2.html">b2Vec2</a> &amp;target)</td></tr>
+<tr class="memdesc:a96f34c1c990407eddbadf07ae359b1f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this to update the target point. <br/></td></tr>
+<tr class="memitem:a27e4d3c28920660ef974c7df6c6e53c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27e4d3c28920660ef974c7df6c6e53c0"></a>
+const <a class="el" href="structb2_vec2.html">b2Vec2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetTarget</b> () const </td></tr>
+<tr class="memitem:a4beba6ea0827960fac2474563591c03a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4beba6ea0827960fac2474563591c03a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_mouse_joint.html#a4beba6ea0827960fac2474563591c03a">SetMaxForce</a> (float32 force)</td></tr>
+<tr class="memdesc:a4beba6ea0827960fac2474563591c03a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set/get the maximum force in Newtons. <br/></td></tr>
+<tr class="memitem:a30bf839765e997a424dd273f3f2d2027"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a30bf839765e997a424dd273f3f2d2027"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaxForce</b> () const </td></tr>
+<tr class="memitem:a8b37706535923637ca280c5a0467b14d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b37706535923637ca280c5a0467b14d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_mouse_joint.html#a8b37706535923637ca280c5a0467b14d">SetFrequency</a> (float32 hz)</td></tr>
+<tr class="memdesc:a8b37706535923637ca280c5a0467b14d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set/get the frequency in Hertz. <br/></td></tr>
+<tr class="memitem:abd5a3eb593de976cd0cbf6c122bf50b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd5a3eb593de976cd0cbf6c122bf50b2"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>GetFrequency</b> () const </td></tr>
+<tr class="memitem:a648c8f3ecb82f4887c0eefcfe48cbd37"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a648c8f3ecb82f4887c0eefcfe48cbd37"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_mouse_joint.html#a648c8f3ecb82f4887c0eefcfe48cbd37">SetDampingRatio</a> (float32 ratio)</td></tr>
+<tr class="memdesc:a648c8f3ecb82f4887c0eefcfe48cbd37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set/get the damping ratio (dimensionless). <br/></td></tr>
+<tr class="memitem:a1eca2ecc7a362abe48237440d4854b55"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1eca2ecc7a362abe48237440d4854b55"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>GetDampingRatio</b> () const </td></tr>
+<tr class="memitem:ae3d3a46a0032c0e50f346e7f7129617f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3d3a46a0032c0e50f346e7f7129617f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classb2_mouse_joint.html#ae3d3a46a0032c0e50f346e7f7129617f">Dump</a> ()</td></tr>
+<tr class="memdesc:ae3d3a46a0032c0e50f346e7f7129617f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mouse joint does not support dumping. <br/></td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+保护成员</h2></td></tr>
+<tr class="memitem:ad147d7989d884952c3389f7e5e3acf68"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad147d7989d884952c3389f7e5e3acf68"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>b2MouseJoint</b> (const <a class="el" href="structb2_mouse_joint_def.html">b2MouseJointDef</a> *def)</td></tr>
+<tr class="memitem:a81fbb58a52c3cea00fb25817d04d16e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a81fbb58a52c3cea00fb25817d04d16e6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InitVelocityConstraints</b> (const <a class="el" href="structb2_solver_data.html">b2SolverData</a> &amp;data)</td></tr>
+<tr class="memitem:a94efc95b4ab292d1cc193c6edbb362a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94efc95b4ab292d1cc193c6edbb362a2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SolveVelocityConstraints</b> (const <a class="el" href="structb2_solver_data.html">b2SolverData</a> &amp;data)</td></tr>
+<tr class="memitem:a990ed3aaa5092ab92180b8ec3c3df342"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a990ed3aaa5092ab92180b8ec3c3df342"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SolvePositionConstraints</b> (const <a class="el" href="structb2_solver_data.html">b2SolverData</a> &amp;data)</td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+保护属性</h2></td></tr>
+<tr class="memitem:a11564027dbf4ecbe593d6b8c3b634ea8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11564027dbf4ecbe593d6b8c3b634ea8"></a>
+<a class="el" href="structb2_vec2.html">b2Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_localAnchorB</b></td></tr>
+<tr class="memitem:a4196e32b3b8dfca298e37b7787245c6f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4196e32b3b8dfca298e37b7787245c6f"></a>
+<a class="el" href="structb2_vec2.html">b2Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_targetA</b></td></tr>
+<tr class="memitem:a17a95ce26e366e288ca19e65abf6fd6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17a95ce26e366e288ca19e65abf6fd6b"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>m_frequencyHz</b></td></tr>
+<tr class="memitem:afdd1fd651a936ce0afc85decd67b7e1c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdd1fd651a936ce0afc85decd67b7e1c"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>m_dampingRatio</b></td></tr>
+<tr class="memitem:afb358e67d625526316bc2f53a1e3cae0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb358e67d625526316bc2f53a1e3cae0"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>m_beta</b></td></tr>
+<tr class="memitem:ae35319e2e64dbf3c48dd20fe8c031ebd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae35319e2e64dbf3c48dd20fe8c031ebd"></a>
+<a class="el" href="structb2_vec2.html">b2Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_impulse</b></td></tr>
+<tr class="memitem:a4659e3fee0beaeac207a013095748bc1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4659e3fee0beaeac207a013095748bc1"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>m_maxForce</b></td></tr>
+<tr class="memitem:a63257ae0faad5c8ff00c92a4eaac50e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63257ae0faad5c8ff00c92a4eaac50e0"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>m_gamma</b></td></tr>
+<tr class="memitem:ae6f4a011469a55cd2c61e8338fbd4994"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6f4a011469a55cd2c61e8338fbd4994"></a>
+int32&#160;</td><td class="memItemRight" valign="bottom"><b>m_indexA</b></td></tr>
+<tr class="memitem:a5b2c7802674942419c89f140c7db85b3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b2c7802674942419c89f140c7db85b3"></a>
+int32&#160;</td><td class="memItemRight" valign="bottom"><b>m_indexB</b></td></tr>
+<tr class="memitem:a00510096c1433e6d7e671cf5bbb1c118"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00510096c1433e6d7e671cf5bbb1c118"></a>
+<a class="el" href="structb2_vec2.html">b2Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_rB</b></td></tr>
+<tr class="memitem:ad9947876df55f4b4e7d435941234e22e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9947876df55f4b4e7d435941234e22e"></a>
+<a class="el" href="structb2_vec2.html">b2Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_localCenterB</b></td></tr>
+<tr class="memitem:a84c405322a35b0f2649071cdcd7be0fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84c405322a35b0f2649071cdcd7be0fb"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>m_invMassB</b></td></tr>
+<tr class="memitem:a0a4959ae588d0071d97424e36f15228e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a4959ae588d0071d97424e36f15228e"></a>
+float32&#160;</td><td class="memItemRight" valign="bottom"><b>m_invIB</b></td></tr>
+<tr class="memitem:a628b7a7a2cd2b50313daea30baf47c4e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a628b7a7a2cd2b50313daea30baf47c4e"></a>
+<a class="el" href="structb2_mat22.html">b2Mat22</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_mass</b></td></tr>
+<tr class="memitem:a7ea02e17cdde70717e84bf44614275fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ea02e17cdde70717e84bf44614275fb"></a>
+<a class="el" href="structb2_vec2.html">b2Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_C</b></td></tr>
+<tr><td colspan="2"><h2><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:a54ade8ed3d794298108d7f4c4e4793fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54ade8ed3d794298108d7f4c4e4793fa"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>b2Joint</b></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>详细描述</h2>
+<div class="textblock"><p>A mouse joint is used to make a point on a body track a specified world point. This a soft constraint with a maximum force. This allows the constraint to stretch and without applying huge forces. NOTE: this joint is not documented in the manual because it was developed to be used in the testbed. If you want to learn how to use the mouse joint, look at the testbed. </p>
+</div><hr/>该类的文档由以下文件生成：<ul>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/external/Box2d/Box2D/Dynamics/Joints/<a class="el" href="b2_mouse_joint_8h_source.html">b2MouseJoint.h</a></li>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/external/Box2d/Box2D/Dynamics/Joints/b2MouseJoint.cpp</li>
+</ul>
+</div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年六月8日 星期五 23:24:09 for cocos2d-iphone-2.0-rc2 by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

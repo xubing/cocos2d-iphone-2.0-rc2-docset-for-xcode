@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>cocos2d-iphone-2.0-rc2: CCFileUtils类参考</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="Icon-Small-50.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-iphone-2.0-rc2
+   &#160;<span id="projectnumber">2.0-rc2</span>
+   </div>
+   <div id="projectbrief">created:zhxubing@gmail.com</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="classes.html"><span>组合类型索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公有成员</a> &#124;
+<a href="#pub-static-methods">静态公有成员</a> &#124;
+<a href="#pro-attribs">保护属性</a> &#124;
+<a href="#properties">属性</a>  </div>
+  <div class="headertitle">
+<div class="title">CCFileUtils类参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#import &lt;<a class="el" href="_c_c_file_utils_8h_source.html">CCFileUtils.h</a>&gt;</code></p>
+
+<p><a href="class_c_c_file_utils-members.html">所有成员的列表。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+公有成员</h2></td></tr>
+<tr class="memitem:afab26800906352ab0c9809d46cbdcc90"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="class_c_c_file_utils.html#afab26800906352ab0c9809d46cbdcc90">purgeCachedEntries</a></td></tr>
+<tr class="memitem:a270b676e357a8440376ef0883992c43c"><td class="memItemLeft" align="right" valign="top">(NSString *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="class_c_c_file_utils.html#a270b676e357a8440376ef0883992c43c">fullPathFromRelativePath:</a></td></tr>
+<tr class="memitem:a5c694b767ebf131e1a01d145cdbd1811"><td class="memItemLeft" align="right" valign="top">(NSString *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="class_c_c_file_utils.html#a5c694b767ebf131e1a01d145cdbd1811">fullPathFromRelativePath:resolutionType:</a></td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+静态公有成员</h2></td></tr>
+<tr class="memitem:a22778340e63b61d0a5e1977b741b256b"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="class_c_c_file_utils.html">CCFileUtils</a> *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="class_c_c_file_utils.html#a22778340e63b61d0a5e1977b741b256b">sharedFileUtils</a></td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+保护属性</h2></td></tr>
+<tr class="memitem:ae68da51054c2acd96e51bebc34d38205"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae68da51054c2acd96e51bebc34d38205"></a>
+NSFileManager *&#160;</td><td class="memItemRight" valign="bottom"><b>fileManager_</b></td></tr>
+<tr class="memitem:afe43df8469fb8fd145f9e41389d3ef21"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe43df8469fb8fd145f9e41389d3ef21"></a>
+NSBundle *&#160;</td><td class="memItemRight" valign="bottom"><b>bundle_</b></td></tr>
+<tr class="memitem:a2f28d1e1e9c45040899dddc169c25114"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f28d1e1e9c45040899dddc169c25114"></a>
+NSMutableDictionary *&#160;</td><td class="memItemRight" valign="bottom"><b>fullPathCache_</b></td></tr>
+<tr class="memitem:a7912381035ba411cc8a1ff27d8847895"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7912381035ba411cc8a1ff27d8847895"></a>
+NSMutableDictionary *&#160;</td><td class="memItemRight" valign="bottom"><b>removeSuffixCache_</b></td></tr>
+<tr><td colspan="2"><h2><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:ac8f770647594f09b3df11985205c5188"><td class="memItemLeft" align="right" valign="top">NSBundle *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_c_file_utils.html#ac8f770647594f09b3df11985205c5188">bundle</a></td></tr>
+<tr class="memitem:ac215683dea5e3d946585216861b90115"><td class="memItemLeft" align="right" valign="top">NSFileManager *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_c_file_utils.html#ac215683dea5e3d946585216861b90115">fileManager</a></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>详细描述</h2>
+<div class="textblock"><p>Helper class to handle file operations </p>
+</div><hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a270b676e357a8440376ef0883992c43c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSString *) <a class="el" href="class_c_c_file_utils.html#a270b676e357a8440376ef0883992c43c">fullPathFromRelativePath:</a> </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>relPath</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Returns the fullpath of an filename.</p>
+<p>If in iPhoneRetinaDisplay mode, and a RetinaDisplay file is found, it will return that path. If in iPad mode, and an iPad file is found, it will return that path.</p>
+<p>Examples:</p>
+<p>In iPad mode: "image.png" -&gt; "/full/path/image-ipad.png" (in case the -ipad file exists) In iPhone RetinaDisplay mode: "image.png" -&gt; "/full/path/image-hd.png" (in case the -hd file exists) In iPad RetinaDisplay mode: "image.png" -&gt; "/full/path/image-ipadhd.png" (in case the -ipadhd file exists) </p>
+
+</div>
+</div>
+<a class="anchor" id="a5c694b767ebf131e1a01d145cdbd1811"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSString *) <a class="el" href="class_c_c_file_utils.html#a270b676e357a8440376ef0883992c43c">fullPathFromRelativePath:</a> </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>relPath</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">resolutionType:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="cc_types_8h.html#a3fccc5ae3efabdf2bb0aebafe9620f5d">ccResolutionType</a>*)&#160;</td>
+          <td class="paramname"><em>resolutionType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Returns the fullpath of an filename including the resolution of the image.</p>
+<p>If in RetinaDisplay mode, and a RetinaDisplay file is found, it will return that path. If in iPad mode, and an iPad file is found, it will return that path.</p>
+<p>Examples:</p>
+<p>In iPad mode: "image.png" -&gt; "/full/path/image-ipad.png" (in case the -ipad file exists) In iPhone RetinaDisplay mode: "image.png" -&gt; "/full/path/image-hd.png" (in case the -hd file exists) In iPad RetinaDisplay mode: "image.png" -&gt; "/full/path/image-ipadhd.png" (in case the -ipadhd file exists)</p>
+<p>If an iPad file is found, it will set resolution type to kCCResolutioniPad If a RetinaDisplay file is found, it will set resolution type to kCCResolutionRetinaDisplay </p>
+
+</div>
+</div>
+<a class="anchor" id="afab26800906352ab0c9809d46cbdcc90"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) <a class="el" href="class_c_c_file_utils.html#afab26800906352ab0c9809d46cbdcc90">purgeCachedEntries</a> </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Purge cached entries. Will be called automatically by the Director when a memory warning is received </p>
+
+</div>
+</div>
+<a class="anchor" id="a22778340e63b61d0a5e1977b741b256b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) <a class="el" href="class_c_c_file_utils.html#a22778340e63b61d0a5e1977b741b256b">sharedFileUtils</a> </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>returns the shared file utils instance </p>
+
+</div>
+</div>
+<hr/><h2>属性文档</h2>
+<a class="anchor" id="ac8f770647594f09b3df11985205c5188"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSBundle*) <a class="el" href="class_c_c_file_utils.html#ac8f770647594f09b3df11985205c5188">bundle</a><code> [read, write, retain]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>NSBundle used by <a class="el" href="class_c_c_file_utils.html">CCFileUtils</a>. By default it uses [NSBundle mainBundle]. </p>
+<dl class="section since"><dt>自从:</dt><dd>v2.0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac215683dea5e3d946585216861b90115"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSFileManager*) <a class="el" href="class_c_c_file_utils.html#ac215683dea5e3d946585216861b90115">fileManager</a><code> [read, write, retain]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>NSFileManager used by <a class="el" href="class_c_c_file_utils.html">CCFileUtils</a>. By default it uses its own intance. </p>
+<dl class="section since"><dt>自从:</dt><dd>v2.0 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/cocos2d/ccDeprecated.m</li>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/cocos2d/Support/<a class="el" href="_c_c_file_utils_8h_source.html">CCFileUtils.h</a></li>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/cocos2d/Support/CCFileUtils.m</li>
+</ul>
+</div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年六月8日 星期五 23:24:12 for cocos2d-iphone-2.0-rc2 by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

@@ -1,0 +1,504 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>cocos2d-iphone-2.0-rc2: CCMenuItemSprite类参考</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="Icon-Small-50.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-iphone-2.0-rc2
+   &#160;<span id="projectnumber">2.0-rc2</span>
+   </div>
+   <div id="projectbrief">created:zhxubing@gmail.com</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="classes.html"><span>组合类型索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公有成员</a> &#124;
+<a href="#pub-static-methods">静态公有成员</a> &#124;
+<a href="#pro-attribs">保护属性</a> &#124;
+<a href="#properties">属性</a>  </div>
+  <div class="headertitle">
+<div class="title">CCMenuItemSprite类参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#import &lt;<a class="el" href="_c_c_menu_item_8h_source.html">CCMenuItem.h</a>&gt;</code></p>
+<div class="dynheader">
+类CCMenuItemSprite继承关系图：</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_c_c_menu_item_sprite.png" usemap="#CCMenuItemSprite_map" alt=""/>
+  <map id="CCMenuItemSprite_map" name="CCMenuItemSprite_map">
+<area href="interface_c_c_menu_item.html" alt="CCMenuItem" shape="rect" coords="0,56,125,80"/>
+<area href="protocol_c_c_r_g_b_a_protocol-p.html" title="CC RGBA protocol." alt="&lt;CCRGBAProtocol&gt;" shape="rect" coords="135,56,260,80"/>
+<area href="class_c_c_node.html" alt="CCNode" shape="rect" coords="0,0,125,24"/>
+<area href="class_c_c_menu_item_image.html" alt="CCMenuItemImage" shape="rect" coords="67,168,192,192"/>
+</map>
+ </div></div>
+
+<p><a href="class_c_c_menu_item_sprite-members.html">所有成员的列表。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+公有成员</h2></td></tr>
+<tr class="memitem:af4939c0eaddc6a18443afcaa67f71d35"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="class_c_c_menu_item_sprite.html#af4939c0eaddc6a18443afcaa67f71d35">initWithNormalSprite:selectedSprite:disabledSprite:target:selector:</a></td></tr>
+<tr class="memitem:acc5e155be2479ac34a0c97388b30c2a9"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="class_c_c_menu_item_sprite.html#acc5e155be2479ac34a0c97388b30c2a9">initWithNormalSprite:selectedSprite:disabledSprite:block:</a></td></tr>
+<tr class="memitem:abf4ff7115eacf9dac3bdc96b6df50826"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf4ff7115eacf9dac3bdc96b6df50826"></a>
+(id)&#160;</td><td class="memItemRight" valign="bottom">- <b>initFromNormalSprite:selectedSprite:disabledSprite:target:selector:</b></td></tr>
+<tr class="memitem:a415525be842040563227475c53c6fa83"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a415525be842040563227475c53c6fa83"></a>
+(id)&#160;</td><td class="memItemRight" valign="bottom">- <b>initFromNormalSprite:selectedSprite:disabledSprite:block:</b></td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+静态公有成员</h2></td></tr>
+<tr class="memitem:a3dfcb650ebf5c706ade2a79774d1afcf"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="class_c_c_menu_item_sprite.html#a3dfcb650ebf5c706ade2a79774d1afcf">itemWithNormalSprite:selectedSprite:</a></td></tr>
+<tr class="memitem:a4f5d33dabb4c009756d8c2d7d74e547f"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="class_c_c_menu_item_sprite.html#a4f5d33dabb4c009756d8c2d7d74e547f">itemWithNormalSprite:selectedSprite:target:selector:</a></td></tr>
+<tr class="memitem:af8cd62d76ab96244e2bf1445571497df"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="class_c_c_menu_item_sprite.html#af8cd62d76ab96244e2bf1445571497df">itemWithNormalSprite:selectedSprite:disabledSprite:target:selector:</a></td></tr>
+<tr class="memitem:a27560f01486fd5e874c29e1725d9e0ab"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="class_c_c_menu_item_sprite.html#a27560f01486fd5e874c29e1725d9e0ab">itemWithNormalSprite:selectedSprite:block:</a></td></tr>
+<tr class="memitem:aec29d51438db0239ca3c8a35c51111c2"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="class_c_c_menu_item_sprite.html#aec29d51438db0239ca3c8a35c51111c2">itemWithNormalSprite:selectedSprite:disabledSprite:block:</a></td></tr>
+<tr class="memitem:aab30fabf1443a8caa9c94f223f1bbbb3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab30fabf1443a8caa9c94f223f1bbbb3"></a>
+(id)&#160;</td><td class="memItemRight" valign="bottom">+ <b>itemFromNormalSprite:selectedSprite:</b></td></tr>
+<tr class="memitem:a91888c28d0b6b51f0cd26102f6c54168"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91888c28d0b6b51f0cd26102f6c54168"></a>
+(id)&#160;</td><td class="memItemRight" valign="bottom">+ <b>itemFromNormalSprite:selectedSprite:target:selector:</b></td></tr>
+<tr class="memitem:a5d687ea03c1c3ecab951f3ba70d2b301"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d687ea03c1c3ecab951f3ba70d2b301"></a>
+(id)&#160;</td><td class="memItemRight" valign="bottom">+ <b>itemFromNormalSprite:selectedSprite:disabledSprite:target:selector:</b></td></tr>
+<tr class="memitem:a34b20b99fe1370dfc38abe2eafb15fe1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34b20b99fe1370dfc38abe2eafb15fe1"></a>
+(id)&#160;</td><td class="memItemRight" valign="bottom">+ <b>itemFromNormalSprite:selectedSprite:block:</b></td></tr>
+<tr class="memitem:aea72fb7e424afd0ceb0d4c55b9377992"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea72fb7e424afd0ceb0d4c55b9377992"></a>
+(id)&#160;</td><td class="memItemRight" valign="bottom">+ <b>itemFromNormalSprite:selectedSprite:disabledSprite:block:</b></td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+保护属性</h2></td></tr>
+<tr class="memitem:a80409b2e6177210ff8d8539f64d4b99d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80409b2e6177210ff8d8539f64d4b99d"></a>
+<a class="el" href="class_c_c_node.html">CCNode</a>&lt; <a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html">CCRGBAProtocol</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>normalImage_</b></td></tr>
+<tr class="memitem:a9de8dba42c2d67c77fafa31e7333becf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9de8dba42c2d67c77fafa31e7333becf"></a>
+<a class="el" href="class_c_c_node.html">CCNode</a>&lt; <a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html">CCRGBAProtocol</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>selectedImage_</b></td></tr>
+<tr class="memitem:aeec034c0e3180e6cd6da0ad72373746b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeec034c0e3180e6cd6da0ad72373746b"></a>
+<a class="el" href="class_c_c_node.html">CCNode</a>&lt; <a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html">CCRGBAProtocol</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>disabledImage_</b></td></tr>
+<tr><td colspan="2"><h2><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:ae38e27f26826c36a351d0edec8531265"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_c_node.html">CCNode</a>&lt; <a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html">CCRGBAProtocol</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_c_menu_item_sprite.html#ae38e27f26826c36a351d0edec8531265">normalImage</a></td></tr>
+<tr class="memitem:ac171832023f58cbc07e532d4b19513b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_c_node.html">CCNode</a>&lt; <a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html">CCRGBAProtocol</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_c_menu_item_sprite.html#ac171832023f58cbc07e532d4b19513b7">selectedImage</a></td></tr>
+<tr class="memitem:aade8cdc45d22eeb8217b354f7ecf7992"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_c_node.html">CCNode</a>&lt; <a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html">CCRGBAProtocol</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_c_menu_item_sprite.html#aade8cdc45d22eeb8217b354f7ecf7992">disabledImage</a></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>详细描述</h2>
+<div class="textblock"><p><a class="el" href="class_c_c_menu_item_sprite.html">CCMenuItemSprite</a> accepts <a class="el" href="class_c_c_node.html">CCNode&lt;CCRGBAProtocol&gt;</a> objects as items. The images has 3 different states:</p>
+<ul>
+<li>unselected image</li>
+<li>selected image</li>
+<li>disabled image</li>
+</ul>
+<dl class="section since"><dt>自从:</dt><dd>v0.8.0 </dd></dl>
+</div><hr/><h2>成员函数文档</h2>
+<a class="anchor" id="acc5e155be2479ac34a0c97388b30c2a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) initWithNormalSprite: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_c_c_node.html">CCNode</a>&lt;<a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html">CCRGBAProtocol</a>&gt;*)&#160;</td>
+          <td class="paramname"><em>normalSprite</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">selectedSprite:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_c_c_node.html">CCNode</a>&lt;<a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html">CCRGBAProtocol</a>&gt;*)&#160;</td>
+          <td class="paramname"><em>selectedSprite</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">disabledSprite:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_c_c_node.html">CCNode</a>&lt;<a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html">CCRGBAProtocol</a>&gt;*)&#160;</td>
+          <td class="paramname"><em>disabledSprite</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">block:</td>
+          <td></td>
+          <td class="paramtype">(id sender)&#160;</td>
+          <td class="paramname"><em>block</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>initializes a menu item with a normal, selected and disabled image with a block. The block will be "copied". </p>
+
+</div>
+</div>
+<a class="anchor" id="af4939c0eaddc6a18443afcaa67f71d35"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) initWithNormalSprite: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_c_c_node.html">CCNode</a>&lt;<a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html">CCRGBAProtocol</a>&gt;*)&#160;</td>
+          <td class="paramname"><em>normalSprite</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">selectedSprite:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_c_c_node.html">CCNode</a>&lt;<a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html">CCRGBAProtocol</a>&gt;*)&#160;</td>
+          <td class="paramname"><em>selectedSprite</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">disabledSprite:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_c_c_node.html">CCNode</a>&lt;<a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html">CCRGBAProtocol</a>&gt;*)&#160;</td>
+          <td class="paramname"><em>disabledSprite</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">target:</td>
+          <td></td>
+          <td class="paramtype">(id)&#160;</td>
+          <td class="paramname"><em>target</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">selector:</td>
+          <td></td>
+          <td class="paramtype">(SEL)&#160;</td>
+          <td class="paramname"><em>selector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>initializes a menu item with a normal, selected and disabled image with target/selector. The "target" won't be retained. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3dfcb650ebf5c706ade2a79774d1afcf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) itemWithNormalSprite: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_c_c_node.html">CCNode</a>&lt;<a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html">CCRGBAProtocol</a>&gt;*)&#160;</td>
+          <td class="paramname"><em>normalSprite</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">selectedSprite:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_c_c_node.html">CCNode</a>&lt;<a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html">CCRGBAProtocol</a>&gt;*)&#160;</td>
+          <td class="paramname"><em>selectedSprite</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>creates a menu item with a normal and selected image </p>
+
+</div>
+</div>
+<a class="anchor" id="a27560f01486fd5e874c29e1725d9e0ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) itemWithNormalSprite: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_c_c_node.html">CCNode</a>&lt;<a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html">CCRGBAProtocol</a>&gt;*)&#160;</td>
+          <td class="paramname"><em>normalSprite</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">selectedSprite:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_c_c_node.html">CCNode</a>&lt;<a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html">CCRGBAProtocol</a>&gt;*)&#160;</td>
+          <td class="paramname"><em>selectedSprite</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">block:</td>
+          <td></td>
+          <td class="paramtype">(id sender)&#160;</td>
+          <td class="paramname"><em>block</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>creates a menu item with a normal and selected image with a block. The block will be "copied". </p>
+
+</div>
+</div>
+<a class="anchor" id="aec29d51438db0239ca3c8a35c51111c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) itemWithNormalSprite: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_c_c_node.html">CCNode</a>&lt;<a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html">CCRGBAProtocol</a>&gt;*)&#160;</td>
+          <td class="paramname"><em>normalSprite</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">selectedSprite:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_c_c_node.html">CCNode</a>&lt;<a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html">CCRGBAProtocol</a>&gt;*)&#160;</td>
+          <td class="paramname"><em>selectedSprite</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">disabledSprite:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_c_c_node.html">CCNode</a>&lt;<a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html">CCRGBAProtocol</a>&gt;*)&#160;</td>
+          <td class="paramname"><em>disabledSprite</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">block:</td>
+          <td></td>
+          <td class="paramtype">(id sender)&#160;</td>
+          <td class="paramname"><em>block</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>creates a menu item with a normal,selected and disabled image with a block. The block will be "copied". </p>
+
+</div>
+</div>
+<a class="anchor" id="af8cd62d76ab96244e2bf1445571497df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) itemWithNormalSprite: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_c_c_node.html">CCNode</a>&lt;<a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html">CCRGBAProtocol</a>&gt;*)&#160;</td>
+          <td class="paramname"><em>normalSprite</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">selectedSprite:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_c_c_node.html">CCNode</a>&lt;<a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html">CCRGBAProtocol</a>&gt;*)&#160;</td>
+          <td class="paramname"><em>selectedSprite</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">disabledSprite:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_c_c_node.html">CCNode</a>&lt;<a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html">CCRGBAProtocol</a>&gt;*)&#160;</td>
+          <td class="paramname"><em>disabledSprite</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">target:</td>
+          <td></td>
+          <td class="paramtype">(id)&#160;</td>
+          <td class="paramname"><em>target</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">selector:</td>
+          <td></td>
+          <td class="paramtype">(SEL)&#160;</td>
+          <td class="paramname"><em>selector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>creates a menu item with a normal,selected and disabled image with target/selector. The "target" won't be retained. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4f5d33dabb4c009756d8c2d7d74e547f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) itemWithNormalSprite: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_c_c_node.html">CCNode</a>&lt;<a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html">CCRGBAProtocol</a>&gt;*)&#160;</td>
+          <td class="paramname"><em>normalSprite</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">selectedSprite:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_c_c_node.html">CCNode</a>&lt;<a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html">CCRGBAProtocol</a>&gt;*)&#160;</td>
+          <td class="paramname"><em>selectedSprite</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">target:</td>
+          <td></td>
+          <td class="paramtype">(id)&#160;</td>
+          <td class="paramname"><em>target</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">selector:</td>
+          <td></td>
+          <td class="paramtype">(SEL)&#160;</td>
+          <td class="paramname"><em>selector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>creates a menu item with a normal and selected image with target/selector. The "target" won't be retained. </p>
+
+</div>
+</div>
+<hr/><h2>属性文档</h2>
+<a class="anchor" id="aade8cdc45d22eeb8217b354f7ecf7992"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="class_c_c_node.html">CCNode</a>&lt;<a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html">CCRGBAProtocol</a>&gt;*) <a class="el" href="class_c_c_menu_item_sprite.html#aade8cdc45d22eeb8217b354f7ecf7992">disabledImage</a><code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>the image used when the item is disabled </p>
+
+</div>
+</div>
+<a class="anchor" id="ae38e27f26826c36a351d0edec8531265"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="class_c_c_node.html">CCNode</a>&lt;<a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html">CCRGBAProtocol</a>&gt;*) <a class="el" href="class_c_c_menu_item_sprite.html#ae38e27f26826c36a351d0edec8531265">normalImage</a><code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>the image used when the item is not selected </p>
+
+</div>
+</div>
+<a class="anchor" id="ac171832023f58cbc07e532d4b19513b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="class_c_c_node.html">CCNode</a>&lt;<a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html">CCRGBAProtocol</a>&gt;*) <a class="el" href="class_c_c_menu_item_sprite.html#ac171832023f58cbc07e532d4b19513b7">selectedImage</a><code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>the image used when the item is selected </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/cocos2d/ccDeprecated.m</li>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/cocos2d/<a class="el" href="_c_c_menu_item_8h_source.html">CCMenuItem.h</a></li>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/cocos2d/CCMenuItem.m</li>
+</ul>
+</div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年六月8日 星期五 23:30:19 for cocos2d-iphone-2.0-rc2 by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

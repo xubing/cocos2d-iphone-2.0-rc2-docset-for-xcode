@@ -1,0 +1,462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>cocos2d-iphone-2.0-rc2: CCMenu类参考</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="Icon-Small-50.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-iphone-2.0-rc2
+   &#160;<span id="projectnumber">2.0-rc2</span>
+   </div>
+   <div id="projectbrief">created:zhxubing@gmail.com</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="classes.html"><span>组合类型索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公有成员</a> &#124;
+<a href="#pub-static-methods">静态公有成员</a> &#124;
+<a href="#pro-attribs">保护属性</a> &#124;
+<a href="#properties">属性</a>  </div>
+  <div class="headertitle">
+<div class="title">CCMenu类参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#import &lt;<a class="el" href="_c_c_menu_8h_source.html">CCMenu.h</a>&gt;</code></p>
+<div class="dynheader">
+类CCMenu继承关系图：</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_c_c_menu.png" usemap="#CCMenu_map" alt=""/>
+  <map id="CCMenu_map" name="CCMenu_map">
+<area href="class_c_c_layer.html" alt="CCLayer" shape="rect" coords="0,0,125,24"/>
+<area href="protocol_c_c_r_g_b_a_protocol-p.html" title="CC RGBA protocol." alt="&lt;CCRGBAProtocol&gt;" shape="rect" coords="135,0,260,24"/>
+</map>
+ </div></div>
+
+<p><a href="class_c_c_menu-members.html">所有成员的列表。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+公有成员</h2></td></tr>
+<tr class="memitem:ae0b659d19569f8d55ad7e341f8742a70"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_menu.html#ae0b659d19569f8d55ad7e341f8742a70">initWithItems:vaList:</a></td></tr>
+<tr class="memitem:a44da9168cb742fcb231c109c4ae1d01a"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_menu.html#a44da9168cb742fcb231c109c4ae1d01a">initWithArray:</a></td></tr>
+<tr class="memitem:a7ece4d7eefbf5a7ec83c10fb17c35c97"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_menu.html#a7ece4d7eefbf5a7ec83c10fb17c35c97">alignItemsVertically</a></td></tr>
+<tr class="memitem:aa5d86bac5fe76a7faf9389b768333ce2"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_menu.html#aa5d86bac5fe76a7faf9389b768333ce2">alignItemsVerticallyWithPadding:</a></td></tr>
+<tr class="memitem:a45144e502b1ac45aba167c84f9f0f1a9"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_menu.html#a45144e502b1ac45aba167c84f9f0f1a9">alignItemsHorizontally</a></td></tr>
+<tr class="memitem:aae6aa55b63b389c8cc94f26a7a8f59b3"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_menu.html#aae6aa55b63b389c8cc94f26a7a8f59b3">alignItemsHorizontallyWithPadding:</a></td></tr>
+<tr class="memitem:a13c62aa7f16a63afae59adaa590044bb"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_menu.html#a13c62aa7f16a63afae59adaa590044bb">alignItemsInColumns:</a></td></tr>
+<tr class="memitem:aa61f5f2702080ab7ad5f7b12b42cb055"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa61f5f2702080ab7ad5f7b12b42cb055"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>alignItemsInColumns:vaList:</b></td></tr>
+<tr class="memitem:a0c145a2d34a66950a7bea8a09d61a040"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_menu.html#a0c145a2d34a66950a7bea8a09d61a040">alignItemsInRows:</a></td></tr>
+<tr class="memitem:afe4e5486e231bea4522b62a549fee8ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe4e5486e231bea4522b62a549fee8ac"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>alignItemsInRows:vaList:</b></td></tr>
+<tr class="memitem:adf0a18c931f6e72356af38cd9e2a62cc"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_menu.html#adf0a18c931f6e72356af38cd9e2a62cc">setHandlerPriority:</a></td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+静态公有成员</h2></td></tr>
+<tr class="memitem:aefcb167ba03050c94e2e31c4faa2e6cf"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_c_c_menu.html#aefcb167ba03050c94e2e31c4faa2e6cf">menuWithItems:</a></td></tr>
+<tr class="memitem:a09ec48afb9919da68e3b56c43f83e70e"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_c_c_menu.html#a09ec48afb9919da68e3b56c43f83e70e">menuWithArray:</a></td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+保护属性</h2></td></tr>
+<tr class="memitem:a51e3a5373db2db4c76be2d194a3557d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51e3a5373db2db4c76be2d194a3557d8"></a>
+tCCMenuState&#160;</td><td class="memItemRight" valign="bottom"><b>state_</b></td></tr>
+<tr class="memitem:ae4ff16dc73f8bd8e87c06e48f7d5b711"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4ff16dc73f8bd8e87c06e48f7d5b711"></a>
+<a class="el" href="interface_c_c_menu_item.html">CCMenuItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>selectedItem_</b></td></tr>
+<tr class="memitem:a3499f0d82ea4b07217c751751fcd7a6f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3499f0d82ea4b07217c751751fcd7a6f"></a>
+GLubyte&#160;</td><td class="memItemRight" valign="bottom"><b>opacity_</b></td></tr>
+<tr class="memitem:a1e5390ec575da58041fdc3d7c7c85232"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e5390ec575da58041fdc3d7c7c85232"></a>
+<a class="el" href="cc_types_8h.html#a829b00c53e72f0115e3880cb508fec1e">ccColor3B</a>&#160;</td><td class="memItemRight" valign="bottom"><b>color_</b></td></tr>
+<tr class="memitem:a82e928d38fb2c2040a21d8113767bacc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82e928d38fb2c2040a21d8113767bacc"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>enabled_</b></td></tr>
+<tr><td colspan="2"><h2><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:aa8e735d5821c296df27a9238325ec427"><td class="memItemLeft" align="right" valign="top">GLubyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_menu.html#aa8e735d5821c296df27a9238325ec427">opacity</a></td></tr>
+<tr class="memitem:a49b749a8f0da9a6d377fb735301f7db8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cc_types_8h.html#a829b00c53e72f0115e3880cb508fec1e">ccColor3B</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_menu.html#a49b749a8f0da9a6d377fb735301f7db8">color</a></td></tr>
+<tr class="memitem:a5cd5e32ca21936168d1dcc704ca1a82f"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_menu.html#a5cd5e32ca21936168d1dcc704ca1a82f">enabled</a></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>详细描述</h2>
+<div class="textblock"><p>A <a class="el" href="interface_c_c_menu.html">CCMenu</a></p>
+<p>Features and Limitation:</p>
+<ul>
+<li>You can add MenuItem objects in runtime using addChild:</li>
+<li>But the only accecpted children are MenuItem objects </li>
+</ul>
+</div><hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a45144e502b1ac45aba167c84f9f0f1a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) <a class="el" href="interface_c_c_menu.html#a45144e502b1ac45aba167c84f9f0f1a9">alignItemsHorizontally</a> </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>align items horizontally </p>
+
+</div>
+</div>
+<a class="anchor" id="aae6aa55b63b389c8cc94f26a7a8f59b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) <a class="el" href="interface_c_c_menu.html#aae6aa55b63b389c8cc94f26a7a8f59b3">alignItemsHorizontallyWithPadding:</a> </td>
+          <td></td>
+          <td class="paramtype">(float)&#160;</td>
+          <td class="paramname"><em>padding</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>align items horizontally with padding </p>
+<dl class="section since"><dt>自从:</dt><dd>v0.7.2 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a13c62aa7f16a63afae59adaa590044bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) <a class="el" href="interface_c_c_menu.html#a13c62aa7f16a63afae59adaa590044bb">alignItemsInColumns:</a> </td>
+          <td></td>
+          <td class="paramtype">(NSNumber *)&#160;</td>
+          <td class="paramname"><em>columns</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">,</td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>NS_REQUIRES_NIL_TERMINATION</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>align items in rows of columns </p>
+
+</div>
+</div>
+<a class="anchor" id="a0c145a2d34a66950a7bea8a09d61a040"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) <a class="el" href="interface_c_c_menu.html#a0c145a2d34a66950a7bea8a09d61a040">alignItemsInRows:</a> </td>
+          <td></td>
+          <td class="paramtype">(NSNumber *)&#160;</td>
+          <td class="paramname"><em>rows</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">,</td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>NS_REQUIRES_NIL_TERMINATION</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>align items in columns of rows </p>
+
+</div>
+</div>
+<a class="anchor" id="a7ece4d7eefbf5a7ec83c10fb17c35c97"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) <a class="el" href="interface_c_c_menu.html#a7ece4d7eefbf5a7ec83c10fb17c35c97">alignItemsVertically</a> </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>align items vertically </p>
+
+</div>
+</div>
+<a class="anchor" id="aa5d86bac5fe76a7faf9389b768333ce2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) <a class="el" href="interface_c_c_menu.html#aa5d86bac5fe76a7faf9389b768333ce2">alignItemsVerticallyWithPadding:</a> </td>
+          <td></td>
+          <td class="paramtype">(float)&#160;</td>
+          <td class="paramname"><em>padding</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>align items vertically with padding </p>
+<dl class="section since"><dt>自从:</dt><dd>v0.7.2 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a44da9168cb742fcb231c109c4ae1d01a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) <a class="el" href="interface_c_c_menu.html#a44da9168cb742fcb231c109c4ae1d01a">initWithArray:</a> </td>
+          <td></td>
+          <td class="paramtype">(NSArray*)&#160;</td>
+          <td class="paramname"><em>arrayOfItems</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>initializes a <a class="el" href="interface_c_c_menu.html">CCMenu</a> with a NSArray of <a class="el" href="interface_c_c_menu_item.html">CCMenuItem</a> objects </p>
+
+</div>
+</div>
+<a class="anchor" id="ae0b659d19569f8d55ad7e341f8742a70"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) initWithItems: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_c_c_menu_item.html">CCMenuItem</a>*)&#160;</td>
+          <td class="paramname"><em>item</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">vaList:</td>
+          <td></td>
+          <td class="paramtype">(va_list)&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>initializes a <a class="el" href="interface_c_c_menu.html">CCMenu</a> with its items </p>
+
+</div>
+</div>
+<a class="anchor" id="a09ec48afb9919da68e3b56c43f83e70e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) <a class="el" href="interface_c_c_menu.html#a09ec48afb9919da68e3b56c43f83e70e">menuWithArray:</a> </td>
+          <td></td>
+          <td class="paramtype">(NSArray*)&#160;</td>
+          <td class="paramname"><em>arrayOfItems</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>creates a <a class="el" href="interface_c_c_menu.html">CCMenu</a> with a NSArray of <a class="el" href="interface_c_c_menu_item.html">CCMenuItem</a> objects </p>
+
+</div>
+</div>
+<a class="anchor" id="aefcb167ba03050c94e2e31c4faa2e6cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) <a class="el" href="interface_c_c_menu.html#aefcb167ba03050c94e2e31c4faa2e6cf">menuWithItems:</a> </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_c_c_menu_item.html">CCMenuItem</a>*)&#160;</td>
+          <td class="paramname"><em>item</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">,</td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>NS_REQUIRES_NIL_TERMINATION</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>creates a <a class="el" href="interface_c_c_menu.html">CCMenu</a> with its items </p>
+
+</div>
+</div>
+<a class="anchor" id="adf0a18c931f6e72356af38cd9e2a62cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) <a class="el" href="interface_c_c_menu.html#adf0a18c931f6e72356af38cd9e2a62cc">setHandlerPriority:</a> </td>
+          <td></td>
+          <td class="paramtype">(NSInteger)&#160;</td>
+          <td class="paramname"><em>newPriority</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>set event handler priority. By default it is: kCCMenuTouchPriority </p>
+
+</div>
+</div>
+<hr/><h2>属性文档</h2>
+<a class="anchor" id="a49b749a8f0da9a6d377fb735301f7db8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="cc_types_8h.html#a829b00c53e72f0115e3880cb508fec1e">ccColor3B</a>) <a class="el" href="interface_c_c_menu.html#a49b749a8f0da9a6d377fb735301f7db8">color</a><code> [read, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>conforms to <a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html" title="CC RGBA protocol.">CCRGBAProtocol</a> protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a5cd5e32ca21936168d1dcc704ca1a82f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) <a class="el" href="interface_c_c_menu.html#a5cd5e32ca21936168d1dcc704ca1a82f">enabled</a><code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>whether or not the menu will receive events </p>
+
+</div>
+</div>
+<a class="anchor" id="aa8e735d5821c296df27a9238325ec427"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (GLubyte) <a class="el" href="interface_c_c_menu.html#aa8e735d5821c296df27a9238325ec427">opacity</a><code> [read, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>conforms to <a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html" title="CC RGBA protocol.">CCRGBAProtocol</a> protocol </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/cocos2d/<a class="el" href="_c_c_menu_8h_source.html">CCMenu.h</a></li>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/cocos2d/CCMenu.m</li>
+</ul>
+</div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年六月8日 星期五 23:24:13 for cocos2d-iphone-2.0-rc2 by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>

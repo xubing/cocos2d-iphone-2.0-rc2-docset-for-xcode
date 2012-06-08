@@ -1,0 +1,377 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>cocos2d-iphone-2.0-rc2: CCMenuItemToggle类参考</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="Icon-Small-50.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">cocos2d-iphone-2.0-rc2
+   &#160;<span id="projectnumber">2.0-rc2</span>
+   </div>
+   <div id="projectbrief">created:zhxubing@gmail.com</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="classes.html"><span>组合类型索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>属性</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公有成员</a> &#124;
+<a href="#pub-static-methods">静态公有成员</a> &#124;
+<a href="#pro-attribs">保护属性</a> &#124;
+<a href="#properties">属性</a>  </div>
+  <div class="headertitle">
+<div class="title">CCMenuItemToggle类参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#import &lt;<a class="el" href="_c_c_menu_item_8h_source.html">CCMenuItem.h</a>&gt;</code></p>
+<div class="dynheader">
+类CCMenuItemToggle继承关系图：</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_c_c_menu_item_toggle.png" usemap="#CCMenuItemToggle_map" alt=""/>
+  <map id="CCMenuItemToggle_map" name="CCMenuItemToggle_map">
+<area href="interface_c_c_menu_item.html" alt="CCMenuItem" shape="rect" coords="0,56,125,80"/>
+<area href="protocol_c_c_r_g_b_a_protocol-p.html" title="CC RGBA protocol." alt="&lt;CCRGBAProtocol&gt;" shape="rect" coords="135,56,260,80"/>
+<area href="class_c_c_node.html" alt="CCNode" shape="rect" coords="0,0,125,24"/>
+</map>
+ </div></div>
+
+<p><a href="class_c_c_menu_item_toggle-members.html">所有成员的列表。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+公有成员</h2></td></tr>
+<tr class="memitem:a495b44a6b7810bd60862b9825cb8fe02"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_menu_item_toggle.html#a495b44a6b7810bd60862b9825cb8fe02">initWithTarget:selector:items:vaList:</a></td></tr>
+<tr class="memitem:a85d98fa3f4648093652eb6157de30bca"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_menu_item_toggle.html#a85d98fa3f4648093652eb6157de30bca">initWithItems:block:</a></td></tr>
+<tr class="memitem:a56f0c8529a3a81afad496cff8d50976d"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_c_c_menu_item.html">CCMenuItem</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_menu_item_toggle.html#a56f0c8529a3a81afad496cff8d50976d">selectedItem</a></td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+静态公有成员</h2></td></tr>
+<tr class="memitem:aa8b71ffeb6a73420c6de051b70c5744e"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_c_c_menu_item_toggle.html#aa8b71ffeb6a73420c6de051b70c5744e">itemWithTarget:selector:items:</a></td></tr>
+<tr class="memitem:a64c39bd7bd649000a54ea0b77bf12588"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_c_c_menu_item_toggle.html#a64c39bd7bd649000a54ea0b77bf12588">itemWithItems:block:</a></td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+保护属性</h2></td></tr>
+<tr class="memitem:a2c28e7c726dab7c84d347e5f620c2d53"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c28e7c726dab7c84d347e5f620c2d53"></a>
+NSUInteger&#160;</td><td class="memItemRight" valign="bottom"><b>selectedIndex_</b></td></tr>
+<tr class="memitem:a51a312d530bb7f5238c19bc2e95fc12e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51a312d530bb7f5238c19bc2e95fc12e"></a>
+NSMutableArray *&#160;</td><td class="memItemRight" valign="bottom"><b>subItems_</b></td></tr>
+<tr class="memitem:a255e434b4457bc4f33cd6e9bb6b6ffe2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a255e434b4457bc4f33cd6e9bb6b6ffe2"></a>
+GLubyte&#160;</td><td class="memItemRight" valign="bottom"><b>opacity_</b></td></tr>
+<tr class="memitem:a06fb653953e7e7c4ab1b3679e35956fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06fb653953e7e7c4ab1b3679e35956fd"></a>
+<a class="el" href="cc_types_8h.html#a829b00c53e72f0115e3880cb508fec1e">ccColor3B</a>&#160;</td><td class="memItemRight" valign="bottom"><b>color_</b></td></tr>
+<tr><td colspan="2"><h2><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a967a6de8d333f8053a4c586d97e99c6f"><td class="memItemLeft" align="right" valign="top">GLubyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_menu_item_toggle.html#a967a6de8d333f8053a4c586d97e99c6f">opacity</a></td></tr>
+<tr class="memitem:adbba1a59d4f0258b90d9c695b584a6fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cc_types_8h.html#a829b00c53e72f0115e3880cb508fec1e">ccColor3B</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_menu_item_toggle.html#adbba1a59d4f0258b90d9c695b584a6fe">color</a></td></tr>
+<tr class="memitem:adca18155325c3693317fa1b472dc6078"><td class="memItemLeft" align="right" valign="top">NSUInteger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_menu_item_toggle.html#adca18155325c3693317fa1b472dc6078">selectedIndex</a></td></tr>
+<tr class="memitem:a4f859da10f4904195ecf420297d8aa78"><td class="memItemLeft" align="right" valign="top">NSMutableArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_menu_item_toggle.html#a4f859da10f4904195ecf420297d8aa78">subItems</a></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>详细描述</h2>
+<div class="textblock"><p>A <a class="el" href="interface_c_c_menu_item_toggle.html">CCMenuItemToggle</a> A simple container class that "toggles" its inner items The inner itmes can be any MenuItem </p>
+</div><hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a85d98fa3f4648093652eb6157de30bca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) initWithItems: </td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>arrayOfItems</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">block:</td>
+          <td></td>
+          <td class="paramtype">(id)&#160;</td>
+          <td class="paramname"><em>block</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>initializes a menu item from a list of items with a block. The block will be "copied". </p>
+
+</div>
+</div>
+<a class="anchor" id="a495b44a6b7810bd60862b9825cb8fe02"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) initWithTarget: </td>
+          <td></td>
+          <td class="paramtype">(id)&#160;</td>
+          <td class="paramname"><em>target</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">selector:</td>
+          <td></td>
+          <td class="paramtype">(SEL)&#160;</td>
+          <td class="paramname"><em>selector</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">items:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_c_c_menu_item.html">CCMenuItem</a>*)&#160;</td>
+          <td class="paramname"><em>item</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">vaList:</td>
+          <td></td>
+          <td class="paramtype">(va_list)&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>initializes a menu item from a list of items with a target selector </p>
+
+</div>
+</div>
+<a class="anchor" id="a64c39bd7bd649000a54ea0b77bf12588"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) itemWithItems: </td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>arrayOfItems</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">block:</td>
+          <td></td>
+          <td class="paramtype">(id sender)&#160;</td>
+          <td class="paramname"><em>block</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>creates a menu item from a list of items and executes the given block when the item is selected. The block will be "copied". </p>
+
+</div>
+</div>
+<a class="anchor" id="aa8b71ffeb6a73420c6de051b70c5744e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) itemWithTarget: </td>
+          <td></td>
+          <td class="paramtype">(id)&#160;</td>
+          <td class="paramname"><em>target</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">selector:</td>
+          <td></td>
+          <td class="paramtype">(SEL)&#160;</td>
+          <td class="paramname"><em>selector</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">items:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_c_c_menu_item.html">CCMenuItem</a>*)&#160;</td>
+          <td class="paramname"><em>item</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">,</td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>NS_REQUIRES_NIL_TERMINATION</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>creates a menu item from a list of items with a target/selector </p>
+
+</div>
+</div>
+<a class="anchor" id="a56f0c8529a3a81afad496cff8d50976d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="interface_c_c_menu_item.html">CCMenuItem</a> *) <a class="el" href="interface_c_c_menu_item_toggle.html#a56f0c8529a3a81afad496cff8d50976d">selectedItem</a> </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>return the selected item </p>
+
+</div>
+</div>
+<hr/><h2>属性文档</h2>
+<a class="anchor" id="adbba1a59d4f0258b90d9c695b584a6fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="cc_types_8h.html#a829b00c53e72f0115e3880cb508fec1e">ccColor3B</a>) <a class="el" href="interface_c_c_menu_item_toggle.html#adbba1a59d4f0258b90d9c695b584a6fe">color</a><code> [read, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>conforms with <a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html" title="CC RGBA protocol.">CCRGBAProtocol</a> protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="a967a6de8d333f8053a4c586d97e99c6f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (GLubyte) <a class="el" href="interface_c_c_menu_item_toggle.html#a967a6de8d333f8053a4c586d97e99c6f">opacity</a><code> [read, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>conforms with <a class="el" href="protocol_c_c_r_g_b_a_protocol-p.html" title="CC RGBA protocol.">CCRGBAProtocol</a> protocol </p>
+
+</div>
+</div>
+<a class="anchor" id="adca18155325c3693317fa1b472dc6078"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSUInteger) <a class="el" href="interface_c_c_menu_item_toggle.html#adca18155325c3693317fa1b472dc6078">selectedIndex</a><code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>returns the selected item </p>
+
+</div>
+</div>
+<a class="anchor" id="a4f859da10f4904195ecf420297d8aa78"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSMutableArray*) <a class="el" href="interface_c_c_menu_item_toggle.html#a4f859da10f4904195ecf420297d8aa78">subItems</a><code> [read, write, retain]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>NSMutableArray that contains the subitems. You can add/remove items in runtime, and you can replace the array with a new one. </p>
+<dl class="section since"><dt>自从:</dt><dd>v0.7.2 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/cocos2d/<a class="el" href="_c_c_menu_item_8h_source.html">CCMenuItem.h</a></li>
+<li>/Bing/File/cocos2d/cocos2d-iphone-2.0-rc2/cocos2d/CCMenuItem.m</li>
+</ul>
+</div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年六月8日 星期五 23:24:14 for cocos2d-iphone-2.0-rc2 by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>
