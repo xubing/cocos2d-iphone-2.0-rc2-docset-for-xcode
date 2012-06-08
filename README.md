@@ -8,7 +8,8 @@ step 1: down the docset.
    
 step 2: quit xcode
 
-step 3: cope the docset to your ~/Library/Developer/Shared/Documentation/DocSets
+step 3: copy the docset to your ~/Library/Developer/Shared/Documentation/DocSets
+ 
  eg:
  cp -R org.cocos2d.2.0-rc2.docset ~/Library/Developer/Shared/Documentation/DocSets
  
