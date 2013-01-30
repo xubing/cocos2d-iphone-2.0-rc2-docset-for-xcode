@@ -1,0 +1,80 @@
+\hypertarget{interface_c_c_tiled_grid3_d_action}{\section{C\-C\-Tiled\-Grid3\-D\-Action Class Reference}
+\label{interface_c_c_tiled_grid3_d_action}\index{C\-C\-Tiled\-Grid3\-D\-Action@{C\-C\-Tiled\-Grid3\-D\-Action}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Grid.\-h$>$}
+
+Inheritance diagram for C\-C\-Tiled\-Grid3\-D\-Action\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interface_c_c_tiled_grid3_d_action}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{cc_types_8h_ad1788e6cb4630050d2f69887f812c73d}{cc\-Quad3}) -\/ \hyperlink{interface_c_c_tiled_grid3_d_action_a8fb92b1e25b6519918096eb11da43b17}{tile\-:}
+\item 
+(\hyperlink{cc_types_8h_ad1788e6cb4630050d2f69887f812c73d}{cc\-Quad3}) -\/ \hyperlink{interface_c_c_tiled_grid3_d_action_a2f51b76294be87cc0dc12bf6e5ae2dec}{original\-Tile\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_tiled_grid3_d_action_a86a27c13695489074589807a49faf794}{set\-Tile\-:coords\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for \hyperlink{interface_c_c_tiled_grid3_d}{C\-C\-Tiled\-Grid3\-D} actions 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_tiled_grid3_d_action_a2f51b76294be87cc0dc12bf6e5ae2dec}{\index{C\-C\-Tiled\-Grid3\-D\-Action@{C\-C\-Tiled\-Grid3\-D\-Action}!original\-Tile\-:@{original\-Tile\-:}}
+\index{original\-Tile\-:@{original\-Tile\-:}!CCTiledGrid3DAction@{C\-C\-Tiled\-Grid3\-D\-Action}}
+\subsubsection[{original\-Tile\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf cc\-Quad3}) {\bf original\-Tile\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Grid\-Size})}]{pos}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_tiled_grid3_d_action_a2f51b76294be87cc0dc12bf6e5ae2dec}
+returns the non-\/transformed tile that belongs to a certain position of the grid 
+\begin{DoxyCode}
+                      :(ccGridSize)pos
+{
+        CCTiledGrid3D *g = (CCTiledGrid3D *)[target_ grid];
+        return [g originalTile:pos];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_tiled_grid3_d_action_a86a27c13695489074589807a49faf794}{\index{C\-C\-Tiled\-Grid3\-D\-Action@{C\-C\-Tiled\-Grid3\-D\-Action}!set\-Tile\-:coords\-:@{set\-Tile\-:coords\-:}}
+\index{set\-Tile\-:coords\-:@{set\-Tile\-:coords\-:}!CCTiledGrid3DAction@{C\-C\-Tiled\-Grid3\-D\-Action}}
+\subsubsection[{set\-Tile\-:coords\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-Tile\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Grid\-Size})}]{pos}
+\item[{coords:({\bf cc\-Quad3})}]{coords}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_tiled_grid3_d_action_a86a27c13695489074589807a49faf794}
+sets a new tile to a certain position of the grid 
+\begin{DoxyCode}
+              :(ccGridSize)pos coords:(ccQuad3)coords
+{
+        CCTiledGrid3D *g = (CCTiledGrid3D *)[target_ grid];
+        [g setTile:pos coords:coords];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_tiled_grid3_d_action_a8fb92b1e25b6519918096eb11da43b17}{\index{C\-C\-Tiled\-Grid3\-D\-Action@{C\-C\-Tiled\-Grid3\-D\-Action}!tile\-:@{tile\-:}}
+\index{tile\-:@{tile\-:}!CCTiledGrid3DAction@{C\-C\-Tiled\-Grid3\-D\-Action}}
+\subsubsection[{tile\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf cc\-Quad3}) {\bf tile\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Grid\-Size})}]{pos}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_tiled_grid3_d_action_a8fb92b1e25b6519918096eb11da43b17}
+returns the tile that belongs to a certain position of the grid 
+\begin{DoxyCode}
+              :(ccGridSize)pos
+{
+        CCTiledGrid3D *g = (CCTiledGrid3D *)[target_ grid];
+        return [g tile:pos];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Grid.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Grid.\-m\end{DoxyCompactItemize}

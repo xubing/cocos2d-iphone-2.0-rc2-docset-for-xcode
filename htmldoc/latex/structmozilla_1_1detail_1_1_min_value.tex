@@ -1,0 +1,29 @@
+\hypertarget{structmozilla_1_1detail_1_1_min_value}{\section{mozilla\-:\-:detail\-:\-:Min\-Value$<$ Integer\-Type $>$ Struct Template Reference}
+\label{structmozilla_1_1detail_1_1_min_value}\index{mozilla\-::detail\-::\-Min\-Value$<$ Integer\-Type $>$@{mozilla\-::detail\-::\-Min\-Value$<$ Integer\-Type $>$}}
+}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const Integer\-Type {\bfseries value}
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$typename Integer\-Type$>$ struct mozilla\-::detail\-::\-Min\-Value$<$ Integer\-Type $>$}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structmozilla_1_1detail_1_1_min_value_af39ab01d26ab0d27c018534862c6faf1}{\index{mozilla\-::detail\-::\-Min\-Value@{mozilla\-::detail\-::\-Min\-Value}!value@{value}}
+\index{value@{value}!mozilla::detail::MinValue@{mozilla\-::detail\-::\-Min\-Value}}
+\subsubsection[{value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Integer\-Type $>$ static const Integer\-Type {\bf mozilla\-::detail\-::\-Min\-Value}$<$ Integer\-Type $>$\-::value\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{structmozilla_1_1detail_1_1_min_value_af39ab01d26ab0d27c018534862c6faf1}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+
+        IsSigned<IntegerType>::value
+        ? IntegerType(UnsignedIntegerType(1) << PosOfSignBit)
+        : IntegerType(0)
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Spider\-Monkey/ios/include/mozilla/Checked\-Int.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Spider\-Monkey/osx/include/mozilla/Checked\-Int.\-h\end{DoxyCompactItemize}

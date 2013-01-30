@@ -1,0 +1,211 @@
+\hypertarget{interface_c_c_particle_system_quad}{\section{C\-C\-Particle\-System\-Quad Class Reference}
+\label{interface_c_c_particle_system_quad}\index{C\-C\-Particle\-System\-Quad@{C\-C\-Particle\-System\-Quad}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Particle\-System\-Quad.\-h$>$}
+
+Inheritance diagram for C\-C\-Particle\-System\-Quad\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interface_c_c_particle_system_quad}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_c_c_particle_system_quad_ae8d4fe470607470d0f0940d44c03c420}{init\-Indices}
+\item 
+(void) -\/ \hyperlink{interface_c_c_particle_system_quad_adbca33e15ef011dfb00896921023022f}{init\-Tex\-Coords\-With\-Rect\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_particle_system_quad_adde96b4648de168d11e4ff2b4192ab98}{set\-Display\-Frame\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_particle_system_quad_a52cd3ecffa7df445cc2b7d9ac2fc22bc}{set\-Texture\-:with\-Rect\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_particle_system_quad_a2c3b4c688381291bdcad081f756b2ff2}{\hyperlink{cc_types_8h_ab2642984bbb3d2fa1fe4fedb5657a065}{cc\-V3\-F\-\_\-\-C4\-B\-\_\-\-T2\-F\-\_\-\-Quad} $\ast$ {\bfseries quads\-\_\-}}\label{interface_c_c_particle_system_quad_a2c3b4c688381291bdcad081f756b2ff2}
+
+\item 
+\hypertarget{interface_c_c_particle_system_quad_af75abd5780bb5d12e69c18515aeae49a}{G\-Lushort $\ast$ {\bfseries indices\-\_\-}}\label{interface_c_c_particle_system_quad_af75abd5780bb5d12e69c18515aeae49a}
+
+\item 
+\hypertarget{interface_c_c_particle_system_quad_aecbe47c91ff6aaa0aa54a847df7cf39b}{G\-Luint {\bfseries V\-A\-Oname\-\_\-}}\label{interface_c_c_particle_system_quad_aecbe47c91ff6aaa0aa54a847df7cf39b}
+
+\item 
+\hypertarget{interface_c_c_particle_system_quad_a3f3f78a189c0d89a2eeaad8dac86d5aa}{G\-Luint {\bfseries buffers\-V\-B\-O\-\_\-} \mbox{[}2\mbox{]}}\label{interface_c_c_particle_system_quad_a3f3f78a189c0d89a2eeaad8dac86d5aa}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_particle_system_quad}{C\-C\-Particle\-System\-Quad} is a subclass of \hyperlink{interface_c_c_particle_system}{C\-C\-Particle\-System}
+
+It includes all the features of Particle\-System.
+
+Special features and Limitations\-:
+\begin{DoxyItemize}
+\item Particle size can be any float number.
+\item The system can be scaled
+\item The particles can be rotated
+\item It supports subrects
+\item It supports batched rendering since 1.\-1 \begin{DoxySince}{Since}
+v0.\-8 
+\end{DoxySince}
+
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_particle_system_quad_ae8d4fe470607470d0f0940d44c03c420}{\index{C\-C\-Particle\-System\-Quad@{C\-C\-Particle\-System\-Quad}!init\-Indices@{init\-Indices}}
+\index{init\-Indices@{init\-Indices}!CCParticleSystemQuad@{C\-C\-Particle\-System\-Quad}}
+\subsubsection[{init\-Indices}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf init\-Indices} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_particle_system_quad_ae8d4fe470607470d0f0940d44c03c420}
+initialices the indices for the vertices 
+\begin{DoxyCode}
+{
+        for( NSUInteger i = 0; i < totalParticles; i++) {
+                const NSUInteger i6 = i*6;
+                const NSUInteger i4 = i*4;
+                indices_[i6+0] = (GLushort) i4+0;
+                indices_[i6+1] = (GLushort) i4+1;
+                indices_[i6+2] = (GLushort) i4+2;
+
+                indices_[i6+5] = (GLushort) i4+1;
+                indices_[i6+4] = (GLushort) i4+2;
+                indices_[i6+3] = (GLushort) i4+3;
+        }
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_particle_system_quad_adbca33e15ef011dfb00896921023022f}{\index{C\-C\-Particle\-System\-Quad@{C\-C\-Particle\-System\-Quad}!init\-Tex\-Coords\-With\-Rect\-:@{init\-Tex\-Coords\-With\-Rect\-:}}
+\index{init\-Tex\-Coords\-With\-Rect\-:@{init\-Tex\-Coords\-With\-Rect\-:}!CCParticleSystemQuad@{C\-C\-Particle\-System\-Quad}}
+\subsubsection[{init\-Tex\-Coords\-With\-Rect\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf init\-Tex\-Coords\-With\-Rect\-:} 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Rect)}]{rect}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_particle_system_quad_adbca33e15ef011dfb00896921023022f}
+initilizes the texture with a rectangle measured Points 
+
+Referenced by set\-Texture\-:with\-Rect\-:.
+
+
+\begin{DoxyCode}
+                             :(CGRect)pointRect
+{
+    // convert to Tex coords
+
+        CGRect rect = CGRectMake(
+                                                         pointRect.origin.x * 
+      CC_CONTENT_SCALE_FACTOR(),
+                                                         pointRect.origin.y * 
+      CC_CONTENT_SCALE_FACTOR(),
+                                                         pointRect.size.width *
+       CC_CONTENT_SCALE_FACTOR(),
+                                                         pointRect.size.height 
+      * CC_CONTENT_SCALE_FACTOR() );
+
+        GLfloat wide = [texture_ pixelsWide];
+        GLfloat high = [texture_ pixelsHigh];
+
+#if CC_FIX_ARTIFACTS_BY_STRECHING_TEXEL
+        GLfloat left = (rect.origin.x*2+1) / (wide*2);
+        GLfloat bottom = (rect.origin.y*2+1) / (high*2);
+        GLfloat right = left + (rect.size.width*2-2) / (wide*2);
+        GLfloat top = bottom + (rect.size.height*2-2) / (high*2);
+#else
+        GLfloat left = rect.origin.x / wide;
+        GLfloat bottom = rect.origin.y / high;
+        GLfloat right = left + rect.size.width / wide;
+        GLfloat top = bottom + rect.size.height / high;
+#endif // ! CC_FIX_ARTIFACTS_BY_STRECHING_TEXEL
+
+        // Important. Texture in cocos2d are inverted, so the Y component
+       should be inverted
+        CC_SWAP( top, bottom);
+
+        ccV3F_C4B_T2F_Quad *quads;
+        NSUInteger start, end;
+        if (batchNode_)
+        {
+                quads = [[batchNode_ textureAtlas] quads];
+                start = atlasIndex_;
+                end = atlasIndex_ + totalParticles;
+        }
+        else
+        {
+                quads = quads_;
+                start = 0;
+                end = totalParticles;
+        }
+
+        for(NSUInteger i=start; i<end; i++) {
+
+                // bottom-left vertex:
+                quads[i].bl.texCoords.u = left;
+                quads[i].bl.texCoords.v = bottom;
+                // bottom-right vertex:
+                quads[i].br.texCoords.u = right;
+                quads[i].br.texCoords.v = bottom;
+                // top-left vertex:
+                quads[i].tl.texCoords.u = left;
+                quads[i].tl.texCoords.v = top;
+                // top-right vertex:
+                quads[i].tr.texCoords.u = right;
+                quads[i].tr.texCoords.v = top;
+        }
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_particle_system_quad_adde96b4648de168d11e4ff2b4192ab98}{\index{C\-C\-Particle\-System\-Quad@{C\-C\-Particle\-System\-Quad}!set\-Display\-Frame\-:@{set\-Display\-Frame\-:}}
+\index{set\-Display\-Frame\-:@{set\-Display\-Frame\-:}!CCParticleSystemQuad@{C\-C\-Particle\-System\-Quad}}
+\subsubsection[{set\-Display\-Frame\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf set\-Display\-Frame\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Sprite\-Frame}$\ast$)}]{sprite\-Frame}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_particle_system_quad_adde96b4648de168d11e4ff2b4192ab98}
+Sets a new \hyperlink{interface_c_c_sprite_frame}{C\-C\-Sprite\-Frame} as particle. W\-A\-R\-N\-I\-N\-G\-: this method is experimental. Use set\-Texture\-:with\-Rect instead. \begin{DoxySince}{Since}
+v0.\-99.\-4 
+\end{DoxySince}
+
+\begin{DoxyCode}
+                       :(CCSpriteFrame *)spriteFrame
+{
+
+        NSAssert( CGPointEqualToPoint( spriteFrame.offsetInPixels , CGPointZero
+       ), @"QuadParticle only supports SpriteFrames with no offsets");
+    
+        // update texture before updating texture rect
+        if ( spriteFrame.texture.name != texture_.name )
+                [self setTexture: spriteFrame.texture];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_particle_system_quad_a52cd3ecffa7df445cc2b7d9ac2fc22bc}{\index{C\-C\-Particle\-System\-Quad@{C\-C\-Particle\-System\-Quad}!set\-Texture\-:with\-Rect\-:@{set\-Texture\-:with\-Rect\-:}}
+\index{set\-Texture\-:with\-Rect\-:@{set\-Texture\-:with\-Rect\-:}!CCParticleSystemQuad@{C\-C\-Particle\-System\-Quad}}
+\subsubsection[{set\-Texture\-:with\-Rect\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf set\-Texture\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Texture2\-D} $\ast$)}]{texture}
+\item[{withRect:(C\-G\-Rect)}]{rect}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_particle_system_quad_a52cd3ecffa7df445cc2b7d9ac2fc22bc}
+Sets a new texture with a rect. The rect is in Points. \begin{DoxySince}{Since}
+v0.\-99.\-4 
+\end{DoxySince}
+
+\begin{DoxyCode}
+                  :(CCTexture2D *)texture withRect:(CGRect)rect
+{
+        // Only update the texture if is different from the current one
+        if( [texture name] != [texture_ name] )
+                [super setTexture:texture];
+
+        [self initTexCoordsWithRect:rect];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Particle\-System\-Quad.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Particle\-System\-Quad.\-m\end{DoxyCompactItemize}

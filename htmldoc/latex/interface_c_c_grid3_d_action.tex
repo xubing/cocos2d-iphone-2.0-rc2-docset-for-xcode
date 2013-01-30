@@ -1,0 +1,88 @@
+\hypertarget{interface_c_c_grid3_d_action}{\section{C\-C\-Grid3\-D\-Action Class Reference}
+\label{interface_c_c_grid3_d_action}\index{C\-C\-Grid3\-D\-Action@{C\-C\-Grid3\-D\-Action}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Grid.\-h$>$}
+
+Inheritance diagram for C\-C\-Grid3\-D\-Action\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interface_c_c_grid3_d_action}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{cc_types_8h_a351ac51e9885af9a15676faf8cb49f8a}{cc\-Vertex3\-F}) -\/ \hyperlink{interface_c_c_grid3_d_action_a8749ac24f0808bb790ec4a5960e1fcfa}{vertex\-:}
+\item 
+(\hyperlink{cc_types_8h_a351ac51e9885af9a15676faf8cb49f8a}{cc\-Vertex3\-F}) -\/ \hyperlink{interface_c_c_grid3_d_action_afbcb9b175488960077d5f5c9d03042f4}{original\-Vertex\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_grid3_d_action_aa2ae1d562d48baec673b3722ada82bc8}{set\-Vertex\-:vertex\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for \hyperlink{interface_c_c_grid3_d}{C\-C\-Grid3\-D} actions. Grid3\-D actions can modify a non-\/tiled grid. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_grid3_d_action_afbcb9b175488960077d5f5c9d03042f4}{\index{C\-C\-Grid3\-D\-Action@{C\-C\-Grid3\-D\-Action}!original\-Vertex\-:@{original\-Vertex\-:}}
+\index{original\-Vertex\-:@{original\-Vertex\-:}!CCGrid3DAction@{C\-C\-Grid3\-D\-Action}}
+\subsubsection[{original\-Vertex\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf cc\-Vertex3\-F}) {\bf original\-Vertex\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Grid\-Size})}]{pos}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_grid3_d_action_afbcb9b175488960077d5f5c9d03042f4}
+returns the non-\/transformed vertex than belongs to certain position in the grid 
+
+Referenced by C\-C\-Flip\-Y3\-D\-::update\-:.
+
+
+\begin{DoxyCode}
+                           :(ccGridSize)pos
+{
+        CCGrid3D *g = (CCGrid3D *)[target_ grid];
+        return [g originalVertex:pos];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_grid3_d_action_aa2ae1d562d48baec673b3722ada82bc8}{\index{C\-C\-Grid3\-D\-Action@{C\-C\-Grid3\-D\-Action}!set\-Vertex\-:vertex\-:@{set\-Vertex\-:vertex\-:}}
+\index{set\-Vertex\-:vertex\-:@{set\-Vertex\-:vertex\-:}!CCGrid3DAction@{C\-C\-Grid3\-D\-Action}}
+\subsubsection[{set\-Vertex\-:vertex\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-Vertex\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Grid\-Size})}]{pos}
+\item[{vertex:({\bf cc\-Vertex3\-F})}]{vertex}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_grid3_d_action_aa2ae1d562d48baec673b3722ada82bc8}
+sets a new vertex to a certain position of the grid 
+
+Referenced by C\-C\-Flip\-Y3\-D\-::update\-:.
+
+
+\begin{DoxyCode}
+                :(ccGridSize)pos vertex:(ccVertex3F)vertex
+{
+        CCGrid3D *g = (CCGrid3D *)[target_ grid];
+        [g setVertex:pos vertex:vertex];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_grid3_d_action_a8749ac24f0808bb790ec4a5960e1fcfa}{\index{C\-C\-Grid3\-D\-Action@{C\-C\-Grid3\-D\-Action}!vertex\-:@{vertex\-:}}
+\index{vertex\-:@{vertex\-:}!CCGrid3DAction@{C\-C\-Grid3\-D\-Action}}
+\subsubsection[{vertex\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf cc\-Vertex3\-F}) {\bf vertex\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Grid\-Size})}]{pos}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_grid3_d_action_a8749ac24f0808bb790ec4a5960e1fcfa}
+returns the vertex than belongs to certain position in the grid 
+\begin{DoxyCode}
+                   :(ccGridSize)pos
+{
+        CCGrid3D *g = (CCGrid3D *)[target_ grid];
+        return [g vertex:pos];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Grid.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Grid.\-m\end{DoxyCompactItemize}

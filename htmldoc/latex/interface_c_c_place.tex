@@ -1,0 +1,72 @@
+\hypertarget{interface_c_c_place}{\section{C\-C\-Place Class Reference}
+\label{interface_c_c_place}\index{C\-C\-Place@{C\-C\-Place}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Instant.\-h$>$}
+
+Inheritance diagram for C\-C\-Place\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_c_c_place}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_place_a53e5d4a059ae00da30872e6b172fbe49}{init\-With\-Position\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_place_ae63d85b70a325d1006ef8db2a98a96a3}{action\-With\-Position\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_place_ab84db3c252acd256ca618cc01c84bde0}{C\-G\-Point {\bfseries position}}\label{interface_c_c_place_ab84db3c252acd256ca618cc01c84bde0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Places the node in a certain position 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_place_ae63d85b70a325d1006ef8db2a98a96a3}{\index{C\-C\-Place@{C\-C\-Place}!action\-With\-Position\-:@{action\-With\-Position\-:}}
+\index{action\-With\-Position\-:@{action\-With\-Position\-:}!CCPlace@{C\-C\-Place}}
+\subsubsection[{action\-With\-Position\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Position\-:} 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{pos}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_place_ae63d85b70a325d1006ef8db2a98a96a3}
+creates a Place action with a position 
+\begin{DoxyCode}
+                        : (CGPoint) pos
+{
+        return [[[self alloc]initWithPosition:pos]autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_place_a53e5d4a059ae00da30872e6b172fbe49}{\index{C\-C\-Place@{C\-C\-Place}!init\-With\-Position\-:@{init\-With\-Position\-:}}
+\index{init\-With\-Position\-:@{init\-With\-Position\-:}!CCPlace@{C\-C\-Place}}
+\subsubsection[{init\-With\-Position\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Position\-:} 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{pos}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_place_a53e5d4a059ae00da30872e6b172fbe49}
+Initializes a Place action with a position 
+\begin{DoxyCode}
+                      : (CGPoint) pos
+{
+        if( (self=[super init]) )
+                position = pos;
+
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Instant.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Instant.\-m\end{DoxyCompactItemize}

@@ -1,0 +1,70 @@
+\hypertarget{class_ray_cast}{\section{Ray\-Cast Class Reference}
+\label{class_ray_cast}\index{Ray\-Cast@{Ray\-Cast}}
+}
+Inheritance diagram for Ray\-Cast\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_ray_cast}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries e\-\_\-max\-Bodies} =  256
+ \}
+\item 
+enum {\bfseries Mode} \{ {\bfseries e\-\_\-closest}, 
+{\bfseries e\-\_\-any}, 
+{\bfseries e\-\_\-multiple}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_ray_cast_a3aec9b6e5bf0608834a1da841cbface0}{void {\bfseries Create} (int32 index)}\label{class_ray_cast_a3aec9b6e5bf0608834a1da841cbface0}
+
+\item 
+\hypertarget{class_ray_cast_a24eac0856517394a4c0ebb06e59de0e2}{void {\bfseries Destroy\-Body} ()}\label{class_ray_cast_a24eac0856517394a4c0ebb06e59de0e2}
+
+\item 
+\hypertarget{class_ray_cast_a017fa25de327ec45ec5cf9341b0905d0}{void {\bfseries Keyboard} (unsigned char key)}\label{class_ray_cast_a017fa25de327ec45ec5cf9341b0905d0}
+
+\item 
+\hypertarget{class_ray_cast_a27d2fb90e8fc4ab3b080c51744bbbed5}{void {\bfseries Step} (\hyperlink{struct_settings}{Settings} $\ast$settings)}\label{class_ray_cast_a27d2fb90e8fc4ab3b080c51744bbbed5}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_ray_cast_a507c1eccdf5e35c9e1597a6f95132558}{static \hyperlink{class_test}{Test} $\ast$ {\bfseries Create} ()}\label{class_ray_cast_a507c1eccdf5e35c9e1597a6f95132558}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_ray_cast_a400eade952a7d2a34eb0e03cddac380f}{int32 {\bfseries m\-\_\-body\-Index}}\label{class_ray_cast_a400eade952a7d2a34eb0e03cddac380f}
+
+\item 
+\hypertarget{class_ray_cast_ae04471a8e183219b88100e98d26a087f}{\hyperlink{classb2_body}{b2\-Body} $\ast$ {\bfseries m\-\_\-bodies} \mbox{[}e\-\_\-max\-Bodies\mbox{]}}\label{class_ray_cast_ae04471a8e183219b88100e98d26a087f}
+
+\item 
+\hypertarget{class_ray_cast_a7ab4a171d05591b17e86fceeb59b0de9}{int32 {\bfseries m\-\_\-user\-Data} \mbox{[}e\-\_\-max\-Bodies\mbox{]}}\label{class_ray_cast_a7ab4a171d05591b17e86fceeb59b0de9}
+
+\item 
+\hypertarget{class_ray_cast_a36a0c5669025a665856e9d797b9f9da4}{\hyperlink{classb2_polygon_shape}{b2\-Polygon\-Shape} {\bfseries m\-\_\-polygons} \mbox{[}4\mbox{]}}\label{class_ray_cast_a36a0c5669025a665856e9d797b9f9da4}
+
+\item 
+\hypertarget{class_ray_cast_aaa2bb324a7eab7f964c3273766b1f869}{\hyperlink{classb2_circle_shape}{b2\-Circle\-Shape} {\bfseries m\-\_\-circle}}\label{class_ray_cast_aaa2bb324a7eab7f964c3273766b1f869}
+
+\item 
+\hypertarget{class_ray_cast_a183b11a8ead163db928adb16470638ab}{float32 {\bfseries m\-\_\-angle}}\label{class_ray_cast_a183b11a8ead163db928adb16470638ab}
+
+\item 
+\hypertarget{class_ray_cast_a528ba94bf7059d5a32f9b74e740ed65f}{Mode {\bfseries m\-\_\-mode}}\label{class_ray_cast_a528ba94bf7059d5a32f9b74e740ed65f}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Testbed/\-Tests/Ray\-Cast.\-h\end{DoxyCompactItemize}

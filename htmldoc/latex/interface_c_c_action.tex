@@ -1,0 +1,181 @@
+\hypertarget{interface_c_c_action}{\section{C\-C\-Action Class Reference}
+\label{interface_c_c_action}\index{C\-C\-Action@{C\-C\-Action}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action.\-h$>$}
+
+Inheritance diagram for C\-C\-Action\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interface_c_c_action}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_action_a9388e3a5788c4a4bb076549571c37fe9}{init}
+\item 
+\hypertarget{interface_c_c_action_a178ffeaeca1469177f0ff7b6a9e24350}{(id) -\/ {\bfseries copy\-With\-Zone\-:}}\label{interface_c_c_action_a178ffeaeca1469177f0ff7b6a9e24350}
+
+\item 
+\hypertarget{interface_c_c_action_a22021b72225f153c351e442c9202965a}{(B\-O\-O\-L) -\/ \hyperlink{interface_c_c_action_a22021b72225f153c351e442c9202965a}{is\-Done}}\label{interface_c_c_action_a22021b72225f153c351e442c9202965a}
+
+\begin{DoxyCompactList}\small\item\em return Y\-E\-S if the action has finished \end{DoxyCompactList}\item 
+\hypertarget{interface_c_c_action_a791b44f936b12d01e2aab5df8af41bfb}{(void) -\/ \hyperlink{interface_c_c_action_a791b44f936b12d01e2aab5df8af41bfb}{start\-With\-Target\-:}}\label{interface_c_c_action_a791b44f936b12d01e2aab5df8af41bfb}
+
+\begin{DoxyCompactList}\small\item\em called before the action start. It will also set the target. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_c_c_action_aef4e1ef2a9c8072dbe92c927ccac83c4}{stop}
+\item 
+\hypertarget{interface_c_c_action_aa5b99a235d7eab4f2ff29ca7bca5054e}{(void) -\/ \hyperlink{interface_c_c_action_aa5b99a235d7eab4f2ff29ca7bca5054e}{step\-:}}\label{interface_c_c_action_aa5b99a235d7eab4f2ff29ca7bca5054e}
+
+\begin{DoxyCompactList}\small\item\em called every frame with its delta time. D\-O\-N'T override unless you know what you are doing. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_c_c_action_a41207f5e0f31713136c8b690fcf166ef}{update\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_action_ac8333ff6fa011cac61ea373525cde4c5}{action}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_action_ac311b1c88025024523002ababa9eb057}{id {\bfseries original\-Target\-\_\-}}\label{interface_c_c_action_ac311b1c88025024523002ababa9eb057}
+
+\item 
+\hypertarget{interface_c_c_action_a582c1c3b500d334b3421a873d6d3f14c}{id {\bfseries target\-\_\-}}\label{interface_c_c_action_a582c1c3b500d334b3421a873d6d3f14c}
+
+\item 
+\hypertarget{interface_c_c_action_a90ebd42e6dfb210fad4599e822e220ac}{N\-S\-Integer {\bfseries tag\-\_\-}}\label{interface_c_c_action_a90ebd42e6dfb210fad4599e822e220ac}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id \hyperlink{interface_c_c_action_a091582cf24bddda501fb6110991fb82c}{target}
+\item 
+id \hyperlink{interface_c_c_action_ad71b8a496d6d22b8854768276f0bb8c6}{original\-Target}
+\item 
+N\-S\-Integer \hyperlink{interface_c_c_action_a944bcf8bdf05e045b48888783cfbd223}{tag}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for \hyperlink{interface_c_c_action}{C\-C\-Action} objects. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_action_ac8333ff6fa011cac61ea373525cde4c5}{\index{C\-C\-Action@{C\-C\-Action}!action@{action}}
+\index{action@{action}!CCAction@{C\-C\-Action}}
+\subsubsection[{action}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_action_ac8333ff6fa011cac61ea373525cde4c5}
+Allocates and initializes the action 
+
+Referenced by Turn\-Off\-Tiles\-Demo\-::action\-With\-Duration\-:, C\-C\-Repeat\-Forever\-::init\-With\-Action\-:, C\-C\-Speed\-::init\-With\-Action\-:speed\-:, and C\-C\-Repeat\-::init\-With\-Action\-:times\-:.
+
+
+\begin{DoxyCode}
+{
+        return [[[self alloc] init] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_action_a9388e3a5788c4a4bb076549571c37fe9}{\index{C\-C\-Action@{C\-C\-Action}!init@{init}}
+\index{init@{init}!CCAction@{C\-C\-Action}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_action_a9388e3a5788c4a4bb076549571c37fe9}
+Initializes the action 
+
+Reimplemented in \hyperlink{interface_c_c_action_instant_a5f4c036018335705f1f4f5c2691c165b}{C\-C\-Action\-Instant}.
+
+
+
+Referenced by C\-C\-Repeat\-Forever\-::init\-With\-Action\-:, C\-C\-Speed\-::init\-With\-Action\-:speed\-:, C\-C\-Action\-Interval\-::init\-With\-Duration\-:, C\-C\-Follow\-::init\-With\-Target\-:, and C\-C\-Follow\-::init\-With\-Target\-:world\-Boundary\-:.
+
+
+\begin{DoxyCode}
+{
+        if( (self=[super init]) ) {
+                originalTarget_ = target_ = nil;
+                tag_ = kCCActionTagInvalid;
+        }
+        return self;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_action_aef4e1ef2a9c8072dbe92c927ccac83c4}{\index{C\-C\-Action@{C\-C\-Action}!stop@{stop}}
+\index{stop@{stop}!CCAction@{C\-C\-Action}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf stop} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_action_aef4e1ef2a9c8072dbe92c927ccac83c4}
+called after the action has finished. It will set the 'target' to nil. I\-M\-P\-O\-R\-T\-A\-N\-T\-: You should never call \char`\"{}\mbox{[}action stop\mbox{]}\char`\"{} manually. Instead, use\-: \char`\"{}\mbox{[}target stop\-Action\-:action\mbox{]};\char`\"{} 
+\begin{DoxyCode}
+{
+        target_ = nil;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_action_a41207f5e0f31713136c8b690fcf166ef}{\index{C\-C\-Action@{C\-C\-Action}!update\-:@{update\-:}}
+\index{update\-:@{update\-:}!CCAction@{C\-C\-Action}}
+\subsubsection[{update\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf update\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{time}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_action_a41207f5e0f31713136c8b690fcf166ef}
+called once per frame. time a value between 0 and 1 For example\-:
+\begin{DoxyItemize}
+\item 0 means that the action just started
+\item 0.\-5 means that the action is in the middle
+\item 1 means that the action is over 
+\end{DoxyItemize}
+
+Reimplemented in \hyperlink{interface_c_c_delay_time_aaa5640c9e87dcb73cf94dca6fe104d04}{C\-C\-Delay\-Time}, \hyperlink{interface_c_c_fade_out_a6440214d38d77a79a971db6eb0760162}{C\-C\-Fade\-Out}, \hyperlink{interface_c_c_fade_in_a0804c9113f29c407ea182b58a477653e}{C\-C\-Fade\-In}, \hyperlink{interface_c_c_ease_back_in_out_ab51c7ffcd14a89520fbef572796930dd}{C\-C\-Ease\-Back\-In\-Out}, \hyperlink{interface_c_c_ease_back_out_a16251a93e5e880967a9d684de561775d}{C\-C\-Ease\-Back\-Out}, \hyperlink{interface_c_c_ease_back_in_a53b77d4e1c03578cdfc3245ebb1bbee1}{C\-C\-Ease\-Back\-In}, \hyperlink{interface_c_c_ease_bounce_in_out_a06f5153e2ebb51fdd619670fa6b9a8e7}{C\-C\-Ease\-Bounce\-In\-Out}, \hyperlink{interface_c_c_ease_bounce_out_abdf721ee69ca6fe70171005d911ea0bb}{C\-C\-Ease\-Bounce\-Out}, \hyperlink{interface_c_c_ease_bounce_in_a8cebc9959536ec089b95d67577c7f85a}{C\-C\-Ease\-Bounce\-In}, \hyperlink{interface_c_c_ease_elastic_in_out_abb2ba1b2ee7d9691b7211d494a9b98fd}{C\-C\-Ease\-Elastic\-In\-Out}, \hyperlink{interface_c_c_ease_elastic_out_a069b3fce533cd8ef4cfd5e7be3e805cb}{C\-C\-Ease\-Elastic\-Out}, \hyperlink{interface_c_c_ease_elastic_in_abea6af2a0240a45f15a81a09b9e454c1}{C\-C\-Ease\-Elastic\-In}, \hyperlink{interface_c_c_ease_sine_in_out_a14d22c8e48c0fbc167ce1d9927dfefd4}{C\-C\-Ease\-Sine\-In\-Out}, \hyperlink{interface_c_c_ease_sine_out_a5ceb9465c34739755403ed5457887df5}{C\-C\-Ease\-Sine\-Out}, \hyperlink{interface_c_c_ease_sine_in_a786c99d69bd0b1de52ef1bcc6a44109d}{C\-C\-Ease\-Sine\-In}, \hyperlink{interface_c_c_ease_exponential_in_out_a8342f02e1d0678b0f4c8377a5b2de1be}{C\-C\-Ease\-Exponential\-In\-Out}, \hyperlink{interface_c_c_ease_exponential_out_a47842dd3cbfdb4360b8597517f1131b8}{C\-C\-Ease\-Exponential\-Out}, \hyperlink{interface_c_c_ease_exponential_in_af3bc4d09bcd537868b53a33ee1bfc342}{C\-C\-Ease\-Exponential\-In}, \hyperlink{interface_c_c_ease_in_out_ac514b0cef1f54314940bc00ae2a254a2}{C\-C\-Ease\-In\-Out}, \hyperlink{interface_c_c_ease_out_a93043577059639678d3dcfee09736c37}{C\-C\-Ease\-Out}, \hyperlink{interface_c_c_flip_y3_d_a66602435f5d1a7372eab7ee69b9849cb}{C\-C\-Flip\-Y3\-D}, \hyperlink{interface_c_c_ease_in_aff18692a06ac70b5a5f5ec5fb272bf2c}{C\-C\-Ease\-In}, \hyperlink{interface_c_c_toggle_visibility_ab70b05c8c66c0393919395aeb8e1a157}{C\-C\-Toggle\-Visibility}, \hyperlink{interface_c_c_hide_a8725141a1e3bee9dceb2d66fe7ef23a9}{C\-C\-Hide}, and \hyperlink{interface_c_c_show_ac717d18ab28fc7a473b1e0bf4b1f5b32}{C\-C\-Show}.
+
+
+
+Referenced by C\-C\-Ease\-In\-::update\-:, C\-C\-Ease\-Out\-::update\-:, C\-C\-Ease\-In\-Out\-::update\-:, C\-C\-Ease\-Exponential\-In\-::update\-:, C\-C\-Ease\-Exponential\-Out\-::update\-:, C\-C\-Ease\-Exponential\-In\-Out\-::update\-:, C\-C\-Ease\-Sine\-In\-::update\-:, C\-C\-Ease\-Sine\-Out\-::update\-:, C\-C\-Ease\-Sine\-In\-Out\-::update\-:, C\-C\-Ease\-Elastic\-In\-::update\-:, C\-C\-Ease\-Elastic\-Out\-::update\-:, C\-C\-Ease\-Elastic\-In\-Out\-::update\-:, C\-C\-Ease\-Bounce\-In\-::update\-:, C\-C\-Ease\-Bounce\-Out\-::update\-:, C\-C\-Ease\-Bounce\-In\-Out\-::update\-:, C\-C\-Ease\-Back\-In\-::update\-:, C\-C\-Ease\-Back\-Out\-::update\-:, and C\-C\-Ease\-Back\-In\-Out\-::update\-:.
+
+
+\begin{DoxyCode}
+              : (ccTime) time
+{
+        CCLOG(@"[Action update]. override me");
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_action_ad71b8a496d6d22b8854768276f0bb8c6}{\index{C\-C\-Action@{C\-C\-Action}!original\-Target@{original\-Target}}
+\index{original\-Target@{original\-Target}!CCAction@{C\-C\-Action}}
+\subsubsection[{original\-Target}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf original\-Target}\hspace{0.3cm}{\ttfamily  \mbox{[}read, assign\mbox{]}}}}\label{interface_c_c_action_ad71b8a496d6d22b8854768276f0bb8c6}
+The original target, since target can be nil. Is the target that were used to run the action. Unless you are doing something complex, like \hyperlink{interface_c_c_action_manager}{C\-C\-Action\-Manager}, you should N\-O\-T call this method. \begin{DoxySince}{Since}
+v0.\-8.\-2 
+\end{DoxySince}
+
+
+Referenced by C\-C\-Action\-Manager\-::remove\-Action\-:.
+
+\hypertarget{interface_c_c_action_a944bcf8bdf05e045b48888783cfbd223}{\index{C\-C\-Action@{C\-C\-Action}!tag@{tag}}
+\index{tag@{tag}!CCAction@{C\-C\-Action}}
+\subsubsection[{tag}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Integer) {\bf tag}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_action_a944bcf8bdf05e045b48888783cfbd223}
+The action tag. An identifier of the action 
+
+Referenced by C\-C\-Action\-Manager\-::get\-Action\-By\-Tag\-:target\-:, and C\-C\-Action\-Manager\-::remove\-Action\-By\-Tag\-:target\-:.
+
+\hypertarget{interface_c_c_action_a091582cf24bddda501fb6110991fb82c}{\index{C\-C\-Action@{C\-C\-Action}!target@{target}}
+\index{target@{target}!CCAction@{C\-C\-Action}}
+\subsubsection[{target}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf target}\hspace{0.3cm}{\ttfamily  \mbox{[}read, assign\mbox{]}}}}\label{interface_c_c_action_a091582cf24bddda501fb6110991fb82c}
+The \char`\"{}target\char`\"{}. The action will modify the target properties. The target will be set with the 'start\-With\-Target' method. When the 'stop' method is called, target will be set to nil. The target is 'assigned', it is not 'retained'. 
+
+Referenced by C\-C\-Cardinal\-Spline\-By\-::start\-With\-Target\-:.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action.\-m\end{DoxyCompactItemize}

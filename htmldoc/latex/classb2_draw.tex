@@ -1,0 +1,125 @@
+\hypertarget{classb2_draw}{\section{b2\-Draw Class Reference}
+\label{classb2_draw}\index{b2\-Draw@{b2\-Draw}}
+}
+
+
+{\ttfamily \#include $<$b2\-Draw.\-h$>$}
+
+Inheritance diagram for b2\-Draw\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classb2_draw}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \\*
+\hyperlink{classb2_draw_aa254f48fea4b3b559ed01da46579cd75a1c8964c4f1fdc39e98b58ac38ecda1f9}{e\-\_\-shape\-Bit} =  0x0001, 
+\hyperlink{classb2_draw_aa254f48fea4b3b559ed01da46579cd75a241137a63679720c41a271c11681e2b3}{e\-\_\-joint\-Bit} =  0x0002, 
+\hyperlink{classb2_draw_aa254f48fea4b3b559ed01da46579cd75acdf1370108930182a45f39e7cc9b0cc7}{e\-\_\-aabb\-Bit} =  0x0004, 
+\hyperlink{classb2_draw_aa254f48fea4b3b559ed01da46579cd75ac86bb64ac65e555db28827407f2f2d43}{e\-\_\-pair\-Bit} =  0x0008, 
+\\*
+\hyperlink{classb2_draw_aa254f48fea4b3b559ed01da46579cd75a7f1494d816479c7d23997a6c292cd8b6}{e\-\_\-center\-Of\-Mass\-Bit} =  0x0010
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_draw_ac2bbe31595478690e44de4ff1e7f347e}{void \hyperlink{classb2_draw_ac2bbe31595478690e44de4ff1e7f347e}{Set\-Flags} (uint32 flags)}\label{classb2_draw_ac2bbe31595478690e44de4ff1e7f347e}
+
+\begin{DoxyCompactList}\small\item\em Set the drawing flags. \end{DoxyCompactList}\item 
+\hypertarget{classb2_draw_acadab1a12ec06541814f6118950aa998}{uint32 \hyperlink{classb2_draw_acadab1a12ec06541814f6118950aa998}{Get\-Flags} () const }\label{classb2_draw_acadab1a12ec06541814f6118950aa998}
+
+\begin{DoxyCompactList}\small\item\em Get the drawing flags. \end{DoxyCompactList}\item 
+\hypertarget{classb2_draw_acc2fd4648ee0a65574770c64528f7166}{void \hyperlink{classb2_draw_acc2fd4648ee0a65574770c64528f7166}{Append\-Flags} (uint32 flags)}\label{classb2_draw_acc2fd4648ee0a65574770c64528f7166}
+
+\begin{DoxyCompactList}\small\item\em Append flags to the current flags. \end{DoxyCompactList}\item 
+\hypertarget{classb2_draw_afc240b71f4ba8c17440d6ed526d4e22e}{void \hyperlink{classb2_draw_afc240b71f4ba8c17440d6ed526d4e22e}{Clear\-Flags} (uint32 flags)}\label{classb2_draw_afc240b71f4ba8c17440d6ed526d4e22e}
+
+\begin{DoxyCompactList}\small\item\em Clear flags from the current flags. \end{DoxyCompactList}\item 
+\hypertarget{classb2_draw_acd5427d1d2e7d19f1b34ad3620134d28}{virtual void \hyperlink{classb2_draw_acd5427d1d2e7d19f1b34ad3620134d28}{Draw\-Polygon} (const \hyperlink{structb2_vec2}{b2\-Vec2} $\ast$vertices, int32 vertex\-Count, const \hyperlink{structb2_color}{b2\-Color} \&color)=0}\label{classb2_draw_acd5427d1d2e7d19f1b34ad3620134d28}
+
+\begin{DoxyCompactList}\small\item\em Draw a closed polygon provided in C\-C\-W order. \end{DoxyCompactList}\item 
+\hypertarget{classb2_draw_a76f2d67de0781a32cab116278c5c9eea}{virtual void \hyperlink{classb2_draw_a76f2d67de0781a32cab116278c5c9eea}{Draw\-Solid\-Polygon} (const \hyperlink{structb2_vec2}{b2\-Vec2} $\ast$vertices, int32 vertex\-Count, const \hyperlink{structb2_color}{b2\-Color} \&color)=0}\label{classb2_draw_a76f2d67de0781a32cab116278c5c9eea}
+
+\begin{DoxyCompactList}\small\item\em Draw a solid closed polygon provided in C\-C\-W order. \end{DoxyCompactList}\item 
+\hypertarget{classb2_draw_ae2effe9bca87c8d7cb90e860d13b7e9e}{virtual void \hyperlink{classb2_draw_ae2effe9bca87c8d7cb90e860d13b7e9e}{Draw\-Circle} (const \hyperlink{structb2_vec2}{b2\-Vec2} \&center, float32 radius, const \hyperlink{structb2_color}{b2\-Color} \&color)=0}\label{classb2_draw_ae2effe9bca87c8d7cb90e860d13b7e9e}
+
+\begin{DoxyCompactList}\small\item\em Draw a circle. \end{DoxyCompactList}\item 
+\hypertarget{classb2_draw_a775a1d0472c5980d597904c7b596a0a6}{virtual void \hyperlink{classb2_draw_a775a1d0472c5980d597904c7b596a0a6}{Draw\-Solid\-Circle} (const \hyperlink{structb2_vec2}{b2\-Vec2} \&center, float32 radius, const \hyperlink{structb2_vec2}{b2\-Vec2} \&axis, const \hyperlink{structb2_color}{b2\-Color} \&color)=0}\label{classb2_draw_a775a1d0472c5980d597904c7b596a0a6}
+
+\begin{DoxyCompactList}\small\item\em Draw a solid circle. \end{DoxyCompactList}\item 
+\hypertarget{classb2_draw_a1de5aaf50db875d1c644c596832af57d}{virtual void \hyperlink{classb2_draw_a1de5aaf50db875d1c644c596832af57d}{Draw\-Segment} (const \hyperlink{structb2_vec2}{b2\-Vec2} \&p1, const \hyperlink{structb2_vec2}{b2\-Vec2} \&p2, const \hyperlink{structb2_color}{b2\-Color} \&color)=0}\label{classb2_draw_a1de5aaf50db875d1c644c596832af57d}
+
+\begin{DoxyCompactList}\small\item\em Draw a line segment. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classb2_draw_ade698123482a491a7a61fa1fe4d3a4f4}{Draw\-Transform} (const \hyperlink{structb2_transform}{b2\-Transform} \&xf)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_draw_adfcd2e54ddaec6f0a111ec1a1cf8b9a0}{uint32 {\bfseries m\-\_\-draw\-Flags}}\label{classb2_draw_adfcd2e54ddaec6f0a111ec1a1cf8b9a0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implement and register this class with a \hyperlink{classb2_world}{b2\-World} to provide debug drawing of physics entities in your game. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classb2_draw_aa254f48fea4b3b559ed01da46579cd75}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{classb2_draw_aa254f48fea4b3b559ed01da46579cd75}
+\begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{e\-\_\-shape\-Bit@{e\-\_\-shape\-Bit}!b2\-Draw@{b2\-Draw}}\index{b2\-Draw@{b2\-Draw}!e\-\_\-shape\-Bit@{e\-\_\-shape\-Bit}}\item[{\em 
+\hypertarget{classb2_draw_aa254f48fea4b3b559ed01da46579cd75a1c8964c4f1fdc39e98b58ac38ecda1f9}{e\-\_\-shape\-Bit}\label{classb2_draw_aa254f48fea4b3b559ed01da46579cd75a1c8964c4f1fdc39e98b58ac38ecda1f9}
+}]draw shapes \index{e\-\_\-joint\-Bit@{e\-\_\-joint\-Bit}!b2\-Draw@{b2\-Draw}}\index{b2\-Draw@{b2\-Draw}!e\-\_\-joint\-Bit@{e\-\_\-joint\-Bit}}\item[{\em 
+\hypertarget{classb2_draw_aa254f48fea4b3b559ed01da46579cd75a241137a63679720c41a271c11681e2b3}{e\-\_\-joint\-Bit}\label{classb2_draw_aa254f48fea4b3b559ed01da46579cd75a241137a63679720c41a271c11681e2b3}
+}]draw joint connections \index{e\-\_\-aabb\-Bit@{e\-\_\-aabb\-Bit}!b2\-Draw@{b2\-Draw}}\index{b2\-Draw@{b2\-Draw}!e\-\_\-aabb\-Bit@{e\-\_\-aabb\-Bit}}\item[{\em 
+\hypertarget{classb2_draw_aa254f48fea4b3b559ed01da46579cd75acdf1370108930182a45f39e7cc9b0cc7}{e\-\_\-aabb\-Bit}\label{classb2_draw_aa254f48fea4b3b559ed01da46579cd75acdf1370108930182a45f39e7cc9b0cc7}
+}]draw axis aligned bounding boxes \index{e\-\_\-pair\-Bit@{e\-\_\-pair\-Bit}!b2\-Draw@{b2\-Draw}}\index{b2\-Draw@{b2\-Draw}!e\-\_\-pair\-Bit@{e\-\_\-pair\-Bit}}\item[{\em 
+\hypertarget{classb2_draw_aa254f48fea4b3b559ed01da46579cd75ac86bb64ac65e555db28827407f2f2d43}{e\-\_\-pair\-Bit}\label{classb2_draw_aa254f48fea4b3b559ed01da46579cd75ac86bb64ac65e555db28827407f2f2d43}
+}]draw broad-\/phase pairs \index{e\-\_\-center\-Of\-Mass\-Bit@{e\-\_\-center\-Of\-Mass\-Bit}!b2\-Draw@{b2\-Draw}}\index{b2\-Draw@{b2\-Draw}!e\-\_\-center\-Of\-Mass\-Bit@{e\-\_\-center\-Of\-Mass\-Bit}}\item[{\em 
+\hypertarget{classb2_draw_aa254f48fea4b3b559ed01da46579cd75a7f1494d816479c7d23997a6c292cd8b6}{e\-\_\-center\-Of\-Mass\-Bit}\label{classb2_draw_aa254f48fea4b3b559ed01da46579cd75a7f1494d816479c7d23997a6c292cd8b6}
+}]draw center of mass frame \end{description}
+\end{Desc}
+
+
+\begin{DoxyCode}
+        {
+                e_shapeBit                              = 0x0001,       
+                e_jointBit                              = 0x0002,       
+                e_aabbBit                               = 0x0004,       
+                e_pairBit                               = 0x0008,       
+                e_centerOfMassBit               = 0x0010        
+        };
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classb2_draw_ade698123482a491a7a61fa1fe4d3a4f4}{\index{b2\-Draw@{b2\-Draw}!Draw\-Transform@{Draw\-Transform}}
+\index{Draw\-Transform@{Draw\-Transform}!b2Draw@{b2\-Draw}}
+\subsubsection[{Draw\-Transform}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf b2\-Draw\-::\-Draw\-Transform} (
+\begin{DoxyParamCaption}
+\item[{const {\bf b2\-Transform} \&}]{xf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{classb2_draw_ade698123482a491a7a61fa1fe4d3a4f4}
+Draw a transform. Choose your own length scale. 
+\begin{DoxyParams}{Parameters}
+{\em xf} & a transform. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_g_l_e_s_debug_draw_a2306fb12b6f6e69d84fcb79bcddfcfbf}{G\-L\-E\-S\-Debug\-Draw}, \hyperlink{class_g_l_e_s_debug_draw_a2306fb12b6f6e69d84fcb79bcddfcfbf}{G\-L\-E\-S\-Debug\-Draw}, \hyperlink{class_g_l_e_s_debug_draw_a2306fb12b6f6e69d84fcb79bcddfcfbf}{G\-L\-E\-S\-Debug\-Draw}, and \hyperlink{class_debug_draw_a6f61d333e6e76865ec4a6099ab31ae75}{Debug\-Draw}.
+
+
+
+Referenced by b2\-World\-::\-Draw\-Debug\-Data().
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Common/b2\-Draw.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Common/b2\-Draw.\-cpp\end{DoxyCompactItemize}

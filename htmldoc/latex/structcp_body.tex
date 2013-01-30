@@ -1,0 +1,128 @@
+\hypertarget{structcp_body}{\section{cp\-Body Struct Reference}
+\label{structcp_body}\index{cp\-Body@{cp\-Body}}
+}
+
+
+Chipmunk's rigid body struct.  
+
+
+
+
+{\ttfamily \#include $<$cp\-Body.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structcp_body_a09a4f534aec9e4841fd202580abbcf42}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{structcp_vect}{cp\-Vect} v\-\_\-bias)}\label{structcp_body_a09a4f534aec9e4841fd202580abbcf42}
+
+\item 
+\hypertarget{structcp_body_a730d97128f0bd2ea456518d31d7ebe02}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} w\-\_\-bias)}\label{structcp_body_a730d97128f0bd2ea456518d31d7ebe02}
+
+\item 
+\hypertarget{structcp_body_acebf6fd11853b9cec39935b2e304b826}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{structcp_space}{cp\-Space} $\ast$space)}\label{structcp_body_acebf6fd11853b9cec39935b2e304b826}
+
+\item 
+\hypertarget{structcp_body_ae4c6facde2af5318b1b9b05b5c2552d5}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{structcp_shape}{cp\-Shape} $\ast$shape\-List)}\label{structcp_body_ae4c6facde2af5318b1b9b05b5c2552d5}
+
+\item 
+\hypertarget{structcp_body_a1c91786e0cd30a5dca21ec6f9f7a9345}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{structcp_arbiter}{cp\-Arbiter} $\ast$arbiter\-List)}\label{structcp_body_a1c91786e0cd30a5dca21ec6f9f7a9345}
+
+\item 
+\hypertarget{structcp_body_ab59478c4ebe9f7271f047c94b27bed5d}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{structcp_constraint}{cp\-Constraint} $\ast$constraint\-List)}\label{structcp_body_ab59478c4ebe9f7271f047c94b27bed5d}
+
+\item 
+\hypertarget{structcp_body_a030f8969c132ba085fe69c8a7fa7bd83}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{group__cp_body_gafd1d958a322b86c54e6b0a7109e4b0b9}{cp\-Component\-Node} node)}\label{structcp_body_a030f8969c132ba085fe69c8a7fa7bd83}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structcp_body_adc333a0be0d7953cad1fb4f6ee49dcf6}{\hyperlink{group__cp_body_ga728eb52bef6367e8e33abff7dba0a089}{cp\-Body\-Velocity\-Func} \hyperlink{structcp_body_adc333a0be0d7953cad1fb4f6ee49dcf6}{velocity\-\_\-func}}\label{structcp_body_adc333a0be0d7953cad1fb4f6ee49dcf6}
+
+\begin{DoxyCompactList}\small\item\em Function that is called to integrate the body's velocity. (Defaults to cp\-Body\-Update\-Velocity) \end{DoxyCompactList}\item 
+\hypertarget{structcp_body_a7da3dcd9ac7c689a1da1f97b37c292b9}{\hyperlink{group__cp_body_ga4f84c8fc20fcb9918d1553e6dc29ffbd}{cp\-Body\-Position\-Func} \hyperlink{structcp_body_a7da3dcd9ac7c689a1da1f97b37c292b9}{position\-\_\-func}}\label{structcp_body_a7da3dcd9ac7c689a1da1f97b37c292b9}
+
+\begin{DoxyCompactList}\small\item\em Function that is called to integrate the body's position. (Defaults to cp\-Body\-Update\-Position) \end{DoxyCompactList}\item 
+\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} \hyperlink{structcp_body_a883298164e53e4633b3daa4de92a9831}{m}
+\item 
+\hypertarget{structcp_body_a204a010e411c0f67e511a69f23d02025}{\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} \hyperlink{structcp_body_a204a010e411c0f67e511a69f23d02025}{m\-\_\-inv}}\label{structcp_body_a204a010e411c0f67e511a69f23d02025}
+
+\begin{DoxyCompactList}\small\item\em Mass inverse. \end{DoxyCompactList}\item 
+\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} \hyperlink{structcp_body_a4a47d0b30594a5fe28dd4de3cdf1450a}{i}
+\item 
+\hypertarget{structcp_body_a36b73e662173a240d1d8f09cdd468202}{\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} \hyperlink{structcp_body_a36b73e662173a240d1d8f09cdd468202}{i\-\_\-inv}}\label{structcp_body_a36b73e662173a240d1d8f09cdd468202}
+
+\begin{DoxyCompactList}\small\item\em Moment of inertia inverse. \end{DoxyCompactList}\item 
+\hypertarget{structcp_body_a2d66ed5ba3aa8fe5ec90371ad6aa5f59}{\hyperlink{structcp_vect}{cp\-Vect} \hyperlink{structcp_body_a2d66ed5ba3aa8fe5ec90371ad6aa5f59}{p}}\label{structcp_body_a2d66ed5ba3aa8fe5ec90371ad6aa5f59}
+
+\begin{DoxyCompactList}\small\item\em Position of the rigid body's center of gravity. \end{DoxyCompactList}\item 
+\hypertarget{structcp_body_a7d98e994ebcd10b12aa446ff9e5c67f1}{\hyperlink{structcp_vect}{cp\-Vect} \hyperlink{structcp_body_a7d98e994ebcd10b12aa446ff9e5c67f1}{v}}\label{structcp_body_a7d98e994ebcd10b12aa446ff9e5c67f1}
+
+\begin{DoxyCompactList}\small\item\em Velocity of the rigid body's center of gravity. \end{DoxyCompactList}\item 
+\hypertarget{structcp_body_adf7ea1cd2cc3840997e21d1b9baf3ee5}{\hyperlink{structcp_vect}{cp\-Vect} \hyperlink{structcp_body_adf7ea1cd2cc3840997e21d1b9baf3ee5}{f}}\label{structcp_body_adf7ea1cd2cc3840997e21d1b9baf3ee5}
+
+\begin{DoxyCompactList}\small\item\em Force acting on the rigid body's center of gravity. \end{DoxyCompactList}\item 
+\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} \hyperlink{structcp_body_a93996dfeb1565b8433b7d96773f7300c}{a}
+\item 
+\hypertarget{structcp_body_af7baaa8708ea16122bf226a2cb1a0bb1}{\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} \hyperlink{structcp_body_af7baaa8708ea16122bf226a2cb1a0bb1}{w}}\label{structcp_body_af7baaa8708ea16122bf226a2cb1a0bb1}
+
+\begin{DoxyCompactList}\small\item\em Angular velocity of the body around it's center of gravity in radians/second. \end{DoxyCompactList}\item 
+\hypertarget{structcp_body_a171f5a752bb920e036bba0b2a0b8b4fe}{\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} \hyperlink{structcp_body_a171f5a752bb920e036bba0b2a0b8b4fe}{t}}\label{structcp_body_a171f5a752bb920e036bba0b2a0b8b4fe}
+
+\begin{DoxyCompactList}\small\item\em Torque applied to the body around it's center of gravity. \end{DoxyCompactList}\item 
+\hyperlink{structcp_vect}{cp\-Vect} \hyperlink{structcp_body_a9ef833e4f67586894e497dbdc7f499ec}{rot}
+\item 
+\hyperlink{group__basic_types_ga2ac2c3c31e21893941f9e4f8ee279447}{cp\-Data\-Pointer} \hyperlink{structcp_body_a19fd1216b31f6778e90aa42f0a6322d5}{data}
+\item 
+\hypertarget{structcp_body_a87810a4f61bb8348186a1f300c713ddc}{\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} \hyperlink{structcp_body_a87810a4f61bb8348186a1f300c713ddc}{v\-\_\-limit}}\label{structcp_body_a87810a4f61bb8348186a1f300c713ddc}
+
+\begin{DoxyCompactList}\small\item\em Maximum velocity allowed when updating the velocity. \end{DoxyCompactList}\item 
+\hypertarget{structcp_body_a8d8eef20b9aa0586f5da0af6c332f7e9}{\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} \hyperlink{structcp_body_a8d8eef20b9aa0586f5da0af6c332f7e9}{w\-\_\-limit}}\label{structcp_body_a8d8eef20b9aa0586f5da0af6c332f7e9}
+
+\begin{DoxyCompactList}\small\item\em Maximum rotational rate (in radians/second) allowed when updating the angular velocity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Chipmunk's rigid body struct. 
+
+\subsection{Member Data Documentation}
+\hypertarget{structcp_body_a93996dfeb1565b8433b7d96773f7300c}{\index{cp\-Body@{cp\-Body}!a@{a}}
+\index{a@{a}!cpBody@{cp\-Body}}
+\subsubsection[{a}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cp\-Float} {\bf cp\-Body\-::a}}}\label{structcp_body_a93996dfeb1565b8433b7d96773f7300c}
+Rotation of the body around it's center of gravity in radians. Must agree with \hyperlink{structcp_body_a9ef833e4f67586894e497dbdc7f499ec}{cp\-Body.\-rot}! Use cp\-Body\-Set\-Angle() when changing the angle for this reason. 
+
+Referenced by cp\-Body\-Sanity\-Check(), and cp\-Ratchet\-Joint\-Init().
+
+\hypertarget{structcp_body_a19fd1216b31f6778e90aa42f0a6322d5}{\index{cp\-Body@{cp\-Body}!data@{data}}
+\index{data@{data}!cpBody@{cp\-Body}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cp\-Data\-Pointer} {\bf cp\-Body\-::data}}}\label{structcp_body_a19fd1216b31f6778e90aa42f0a6322d5}
+User definable data pointer. Generally this points to your the game object class so you can access it when given a \hyperlink{structcp_body}{cp\-Body} reference in a callback. 
+
+Referenced by cp\-Body\-Init().
+
+\hypertarget{structcp_body_a4a47d0b30594a5fe28dd4de3cdf1450a}{\index{cp\-Body@{cp\-Body}!i@{i}}
+\index{i@{i}!cpBody@{cp\-Body}}
+\subsubsection[{i}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cp\-Float} {\bf cp\-Body\-::i}}}\label{structcp_body_a4a47d0b30594a5fe28dd4de3cdf1450a}
+Moment of inertia of the body. Must agree with \hyperlink{structcp_body_a36b73e662173a240d1d8f09cdd468202}{cp\-Body.\-i\-\_\-inv}! Use cp\-Body\-Set\-Moment() when changing the moment for this reason. 
+
+Referenced by cp\-Body\-Sanity\-Check().
+
+\hypertarget{structcp_body_a883298164e53e4633b3daa4de92a9831}{\index{cp\-Body@{cp\-Body}!m@{m}}
+\index{m@{m}!cpBody@{cp\-Body}}
+\subsubsection[{m}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cp\-Float} {\bf cp\-Body\-::m}}}\label{structcp_body_a883298164e53e4633b3daa4de92a9831}
+Mass of the body. Must agree with \hyperlink{structcp_body_a204a010e411c0f67e511a69f23d02025}{cp\-Body.\-m\-\_\-inv}! Use \hyperlink{group__cp_body_gab9c94b87111398a5968f4ce7e94e7ff9}{cp\-Body\-Set\-Mass()} when changing the mass for this reason. 
+
+Referenced by cp\-Body\-Sanity\-Check(), and cp\-Body\-Set\-Mass().
+
+\hypertarget{structcp_body_a9ef833e4f67586894e497dbdc7f499ec}{\index{cp\-Body@{cp\-Body}!rot@{rot}}
+\index{rot@{rot}!cpBody@{cp\-Body}}
+\subsubsection[{rot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cp\-Vect} {\bf cp\-Body\-::rot}}}\label{structcp_body_a9ef833e4f67586894e497dbdc7f499ec}
+Cached unit length vector representing the angle of the body. Used for fast rotations using cpvrotate(). 
+
+Referenced by cp\-Body\-Get\-Vel\-At\-Local\-Point(), cp\-Body\-Sanity\-Check(), cp\-Body\-Sleep\-With\-Group(), cp\-Pin\-Joint\-Init(), cp\-Shape\-Cache\-B\-B(), cp\-Space\-Add\-Shape(), cp\-Space\-Add\-Static\-Shape(), cp\-Space\-Reindex\-Shape(), and cp\-Space\-Shape\-Query().
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Chipmunk/include/chipmunk/cp\-Body.\-h\end{DoxyCompactItemize}

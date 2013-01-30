@@ -1,0 +1,64 @@
+\hypertarget{protocol_c_d_audio_interrupt_protocol-p}{\section{$<$C\-D\-Audio\-Interrupt\-Protocol$>$ Protocol Reference}
+\label{protocol_c_d_audio_interrupt_protocol-p}\index{$<$\-C\-D\-Audio\-Interrupt\-Protocol$>$@{$<$\-C\-D\-Audio\-Interrupt\-Protocol$>$}}
+}
+Inheritance diagram for $<$C\-D\-Audio\-Interrupt\-Protocol$>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.987654cm]{protocol_c_d_audio_interrupt_protocol-p}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{protocol_c_d_audio_interrupt_protocol-p_a8c9279278e355b07f49c749fdbb02e17}{mute}
+\item 
+(void) -\/ \hyperlink{protocol_c_d_audio_interrupt_protocol-p_a6a6e2d00a68a0e83bc3562752cdc6aa1}{set\-Mute\-:}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{protocol_c_d_audio_interrupt_protocol-p_ac0773ba4bb34dedae61d8927a03bb565}{enabled}
+\item 
+(void) -\/ \hyperlink{protocol_c_d_audio_interrupt_protocol-p_a6ebf0c9ae6c5be1c410fe57373ec1ebd}{set\-Enabled\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{protocol_c_d_audio_interrupt_protocol-p_ac0773ba4bb34dedae61d8927a03bb565}{\index{C\-D\-Audio\-Interrupt\-Protocol-\/p@{C\-D\-Audio\-Interrupt\-Protocol-\/p}!enabled@{enabled}}
+\index{enabled@{enabled}!CDAudioInterruptProtocol-p@{C\-D\-Audio\-Interrupt\-Protocol-\/p}}
+\subsubsection[{enabled}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) {\bf enabled} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{protocol_c_d_audio_interrupt_protocol-p_ac0773ba4bb34dedae61d8927a03bb565}
+Is audio enabled 
+
+Referenced by C\-D\-Sound\-Engine\-::play\-Sound\-:source\-Group\-Id\-:pitch\-:pan\-:gain\-:loop\-:.
+
+\hypertarget{protocol_c_d_audio_interrupt_protocol-p_a8c9279278e355b07f49c749fdbb02e17}{\index{C\-D\-Audio\-Interrupt\-Protocol-\/p@{C\-D\-Audio\-Interrupt\-Protocol-\/p}!mute@{mute}}
+\index{mute@{mute}!CDAudioInterruptProtocol-p@{C\-D\-Audio\-Interrupt\-Protocol-\/p}}
+\subsubsection[{mute}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) {\bf mute} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{protocol_c_d_audio_interrupt_protocol-p_a8c9279278e355b07f49c749fdbb02e17}
+Is audio mute 
+
+Referenced by C\-D\-Long\-Audio\-Source\-::load\-:.
+
+\hypertarget{protocol_c_d_audio_interrupt_protocol-p_a6ebf0c9ae6c5be1c410fe57373ec1ebd}{\index{C\-D\-Audio\-Interrupt\-Protocol-\/p@{C\-D\-Audio\-Interrupt\-Protocol-\/p}!set\-Enabled\-:@{set\-Enabled\-:}}
+\index{set\-Enabled\-:@{set\-Enabled\-:}!CDAudioInterruptProtocol-p@{C\-D\-Audio\-Interrupt\-Protocol-\/p}}
+\subsubsection[{set\-Enabled\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf set\-Enabled\-:} 
+\begin{DoxyParamCaption}
+\item[{(B\-O\-O\-L)}]{enabled\-Value}
+\end{DoxyParamCaption}
+}}\label{protocol_c_d_audio_interrupt_protocol-p_a6ebf0c9ae6c5be1c410fe57373ec1ebd}
+If N\-O then all audio is stopped and any calls to start new audio will be ignored \hypertarget{protocol_c_d_audio_interrupt_protocol-p_a6a6e2d00a68a0e83bc3562752cdc6aa1}{\index{C\-D\-Audio\-Interrupt\-Protocol-\/p@{C\-D\-Audio\-Interrupt\-Protocol-\/p}!set\-Mute\-:@{set\-Mute\-:}}
+\index{set\-Mute\-:@{set\-Mute\-:}!CDAudioInterruptProtocol-p@{C\-D\-Audio\-Interrupt\-Protocol-\/p}}
+\subsubsection[{set\-Mute\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf set\-Mute\-:} 
+\begin{DoxyParamCaption}
+\item[{(B\-O\-O\-L)}]{mute\-Value}
+\end{DoxyParamCaption}
+}}\label{protocol_c_d_audio_interrupt_protocol-p_a6a6e2d00a68a0e83bc3562752cdc6aa1}
+If Y\-E\-S then audio is silenced but not stopped, calls to start new audio will proceed but silently 
+
+The documentation for this protocol was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/\-Cocos\-Denshion/\-Cocos\-Denshion/\hyperlink{_cocos_denshion_8h}{Cocos\-Denshion.\-h}\end{DoxyCompactItemize}

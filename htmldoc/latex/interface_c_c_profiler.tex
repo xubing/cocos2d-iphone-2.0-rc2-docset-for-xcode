@@ -1,0 +1,127 @@
+\hypertarget{interface_c_c_profiler}{\section{C\-C\-Profiler Class Reference}
+\label{interface_c_c_profiler}\index{C\-C\-Profiler@{C\-C\-Profiler}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Profiling.\-h$>$}
+
+Inheritance diagram for C\-C\-Profiler\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_c_c_profiler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_c_c_profiling_timer}{C\-C\-Profiling\-Timer} $\ast$) -\/ \hyperlink{interface_c_c_profiler_a3a578aa7f4e99e0ff80a84605946e57e}{create\-And\-Add\-Timer\-With\-Name\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_profiler_ab1cd2a11a1429a370126afe6d7202604}{release\-Timer\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_profiler_a277fbe38964f09f78faf6b9573d78ddd}{release\-All\-Timers}
+\item 
+(void) -\/ \hyperlink{interface_c_c_profiler_a32c7e90849dc44865be9ea55c5a0f5af}{display\-Timers}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_c_c_profiler}{C\-C\-Profiler} $\ast$) + \hyperlink{interface_c_c_profiler_ab0caeb707d184d1f30bd61aeb0436005}{shared\-Profiler}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_profiler_ac673cb6ffb771c1e39a34c62eb7e2259}{N\-S\-Mutable\-Dictionary $\ast$ {\bfseries active\-Timers}}\label{interface_c_c_profiler_ac673cb6ffb771c1e39a34c62eb7e2259}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_profiler}{C\-C\-Profiler} cocos2d builtin profiler.
+
+To use it, enable set the C\-C\-\_\-\-E\-N\-A\-B\-L\-E\-\_\-\-P\-R\-O\-F\-I\-L\-E\-R\-S=1 in the \hyperlink{cc_config_8h}{cc\-Config.\-h} file 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_profiler_a3a578aa7f4e99e0ff80a84605946e57e}{\index{C\-C\-Profiler@{C\-C\-Profiler}!create\-And\-Add\-Timer\-With\-Name\-:@{create\-And\-Add\-Timer\-With\-Name\-:}}
+\index{create\-And\-Add\-Timer\-With\-Name\-:@{create\-And\-Add\-Timer\-With\-Name\-:}!CCProfiler@{C\-C\-Profiler}}
+\subsubsection[{create\-And\-Add\-Timer\-With\-Name\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Profiling\-Timer} $\ast$) {\bf create\-And\-Add\-Timer\-With\-Name\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{timer\-Name}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_profiler_a3a578aa7f4e99e0ff80a84605946e57e}
+Creates and adds a new timer 
+\begin{DoxyCode}
+                                               :(NSString*)timerName
+{
+        CCProfilingTimer* t = [[CCProfilingTimer alloc] initWithName:timerName]
+      ;
+        [activeTimers setObject:t forKey:timerName];
+        [t release];
+        return t;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_profiler_a32c7e90849dc44865be9ea55c5a0f5af}{\index{C\-C\-Profiler@{C\-C\-Profiler}!display\-Timers@{display\-Timers}}
+\index{display\-Timers@{display\-Timers}!CCProfiler@{C\-C\-Profiler}}
+\subsubsection[{display\-Timers}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf display\-Timers} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_profiler_a32c7e90849dc44865be9ea55c5a0f5af}
+display the timers 
+\begin{DoxyCode}
+{
+        NSArray *values = [activeTimers allValues];
+        for (CCProfilingTimer *timer in values) {
+                printf("%s\n", [[timer description] cStringUsingEncoding:[
+      NSString defaultCStringEncoding]]);
+        }
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_profiler_a277fbe38964f09f78faf6b9573d78ddd}{\index{C\-C\-Profiler@{C\-C\-Profiler}!release\-All\-Timers@{release\-All\-Timers}}
+\index{release\-All\-Timers@{release\-All\-Timers}!CCProfiler@{C\-C\-Profiler}}
+\subsubsection[{release\-All\-Timers}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf release\-All\-Timers} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_profiler_a277fbe38964f09f78faf6b9573d78ddd}
+releases all timers 
+\begin{DoxyCode}
+{
+        [activeTimers removeAllObjects];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_profiler_ab1cd2a11a1429a370126afe6d7202604}{\index{C\-C\-Profiler@{C\-C\-Profiler}!release\-Timer\-:@{release\-Timer\-:}}
+\index{release\-Timer\-:@{release\-Timer\-:}!CCProfiler@{C\-C\-Profiler}}
+\subsubsection[{release\-Timer\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf release\-Timer\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{timer\-Name}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_profiler_ab1cd2a11a1429a370126afe6d7202604}
+releases a timer 
+\begin{DoxyCode}
+                    :(NSString*)timerName
+{
+        [activeTimers removeObjectForKey:timerName];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_profiler_ab0caeb707d184d1f30bd61aeb0436005}{\index{C\-C\-Profiler@{C\-C\-Profiler}!shared\-Profiler@{shared\-Profiler}}
+\index{shared\-Profiler@{shared\-Profiler}!CCProfiler@{C\-C\-Profiler}}
+\subsubsection[{shared\-Profiler}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf C\-C\-Profiler} $\ast$) {\bf shared\-Profiler} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_profiler_ab0caeb707d184d1f30bd61aeb0436005}
+shared instance 
+\begin{DoxyCode}
+{
+        if (!g_sharedProfiler)
+                g_sharedProfiler = [[CCProfiler alloc] init];
+
+        return g_sharedProfiler;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/\-Support/C\-C\-Profiling.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/\-Support/C\-C\-Profiling.\-m\end{DoxyCompactItemize}

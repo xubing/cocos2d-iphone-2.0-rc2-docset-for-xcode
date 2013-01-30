@@ -1,0 +1,238 @@
+\hypertarget{classb2_revolute_joint}{\section{b2\-Revolute\-Joint Class Reference}
+\label{classb2_revolute_joint}\index{b2\-Revolute\-Joint@{b2\-Revolute\-Joint}}
+}
+
+
+{\ttfamily \#include $<$b2\-Revolute\-Joint.\-h$>$}
+
+Inheritance diagram for b2\-Revolute\-Joint\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classb2_revolute_joint}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_revolute_joint_a7f266986c12009973fd74c9828b6c236}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{classb2_revolute_joint_a7f266986c12009973fd74c9828b6c236}{Get\-Anchor\-A} () const }\label{classb2_revolute_joint_a7f266986c12009973fd74c9828b6c236}
+
+\begin{DoxyCompactList}\small\item\em Get the anchor point on body\-A in world coordinates. \end{DoxyCompactList}\item 
+\hypertarget{classb2_revolute_joint_a3a67ad189b29ea8ab6602a28697807f6}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{classb2_revolute_joint_a3a67ad189b29ea8ab6602a28697807f6}{Get\-Anchor\-B} () const }\label{classb2_revolute_joint_a3a67ad189b29ea8ab6602a28697807f6}
+
+\begin{DoxyCompactList}\small\item\em Get the anchor point on body\-B in world coordinates. \end{DoxyCompactList}\item 
+\hypertarget{classb2_revolute_joint_af270a3029b2573bf85cde345c22d65ab}{const \hyperlink{structb2_vec2}{b2\-Vec2} \& \hyperlink{classb2_revolute_joint_af270a3029b2573bf85cde345c22d65ab}{Get\-Local\-Anchor\-A} () const }\label{classb2_revolute_joint_af270a3029b2573bf85cde345c22d65ab}
+
+\begin{DoxyCompactList}\small\item\em The local anchor point relative to body\-A's origin. \end{DoxyCompactList}\item 
+\hypertarget{classb2_revolute_joint_a985f788cffd53d7bb926b11cf77734e4}{const \hyperlink{structb2_vec2}{b2\-Vec2} \& \hyperlink{classb2_revolute_joint_a985f788cffd53d7bb926b11cf77734e4}{Get\-Local\-Anchor\-B} () const }\label{classb2_revolute_joint_a985f788cffd53d7bb926b11cf77734e4}
+
+\begin{DoxyCompactList}\small\item\em The local anchor point relative to body\-B's origin. \end{DoxyCompactList}\item 
+\hypertarget{classb2_revolute_joint_acfe881247b1f1f8f12aefd3a8f0cfd00}{float32 \hyperlink{classb2_revolute_joint_acfe881247b1f1f8f12aefd3a8f0cfd00}{Get\-Reference\-Angle} () const }\label{classb2_revolute_joint_acfe881247b1f1f8f12aefd3a8f0cfd00}
+
+\begin{DoxyCompactList}\small\item\em Get the reference angle. \end{DoxyCompactList}\item 
+\hypertarget{classb2_revolute_joint_ab20fc12ce5ad5d84a032eb613c80764a}{float32 \hyperlink{classb2_revolute_joint_ab20fc12ce5ad5d84a032eb613c80764a}{Get\-Joint\-Angle} () const }\label{classb2_revolute_joint_ab20fc12ce5ad5d84a032eb613c80764a}
+
+\begin{DoxyCompactList}\small\item\em Get the current joint angle in radians. \end{DoxyCompactList}\item 
+\hypertarget{classb2_revolute_joint_a48e4db13c187af159587d731656aa0c4}{float32 \hyperlink{classb2_revolute_joint_a48e4db13c187af159587d731656aa0c4}{Get\-Joint\-Speed} () const }\label{classb2_revolute_joint_a48e4db13c187af159587d731656aa0c4}
+
+\begin{DoxyCompactList}\small\item\em Get the current joint angle speed in radians per second. \end{DoxyCompactList}\item 
+\hypertarget{classb2_revolute_joint_a7711afbfbdba4451d2dbfa8e55b9ded8}{bool \hyperlink{classb2_revolute_joint_a7711afbfbdba4451d2dbfa8e55b9ded8}{Is\-Limit\-Enabled} () const }\label{classb2_revolute_joint_a7711afbfbdba4451d2dbfa8e55b9ded8}
+
+\begin{DoxyCompactList}\small\item\em Is the joint limit enabled? \end{DoxyCompactList}\item 
+\hypertarget{classb2_revolute_joint_a56bdfdd04e906e52d0258f6a481b9093}{void \hyperlink{classb2_revolute_joint_a56bdfdd04e906e52d0258f6a481b9093}{Enable\-Limit} (bool flag)}\label{classb2_revolute_joint_a56bdfdd04e906e52d0258f6a481b9093}
+
+\begin{DoxyCompactList}\small\item\em Enable/disable the joint limit. \end{DoxyCompactList}\item 
+\hypertarget{classb2_revolute_joint_a0f33656869e46ec9405f42d68e858220}{float32 \hyperlink{classb2_revolute_joint_a0f33656869e46ec9405f42d68e858220}{Get\-Lower\-Limit} () const }\label{classb2_revolute_joint_a0f33656869e46ec9405f42d68e858220}
+
+\begin{DoxyCompactList}\small\item\em Get the lower joint limit in radians. \end{DoxyCompactList}\item 
+\hypertarget{classb2_revolute_joint_a9bb683118879611e84e4cb26bdc8d39f}{float32 \hyperlink{classb2_revolute_joint_a9bb683118879611e84e4cb26bdc8d39f}{Get\-Upper\-Limit} () const }\label{classb2_revolute_joint_a9bb683118879611e84e4cb26bdc8d39f}
+
+\begin{DoxyCompactList}\small\item\em Get the upper joint limit in radians. \end{DoxyCompactList}\item 
+\hypertarget{classb2_revolute_joint_a32f9393d8a6b993fd523f0f643c28107}{void \hyperlink{classb2_revolute_joint_a32f9393d8a6b993fd523f0f643c28107}{Set\-Limits} (float32 lower, float32 upper)}\label{classb2_revolute_joint_a32f9393d8a6b993fd523f0f643c28107}
+
+\begin{DoxyCompactList}\small\item\em Set the joint limits in radians. \end{DoxyCompactList}\item 
+\hypertarget{classb2_revolute_joint_a9477b305db080e17dce8f2c6da0babb0}{bool \hyperlink{classb2_revolute_joint_a9477b305db080e17dce8f2c6da0babb0}{Is\-Motor\-Enabled} () const }\label{classb2_revolute_joint_a9477b305db080e17dce8f2c6da0babb0}
+
+\begin{DoxyCompactList}\small\item\em Is the joint motor enabled? \end{DoxyCompactList}\item 
+\hypertarget{classb2_revolute_joint_a80ed5a07d9a0e07d010808a73ffae6ff}{void \hyperlink{classb2_revolute_joint_a80ed5a07d9a0e07d010808a73ffae6ff}{Enable\-Motor} (bool flag)}\label{classb2_revolute_joint_a80ed5a07d9a0e07d010808a73ffae6ff}
+
+\begin{DoxyCompactList}\small\item\em Enable/disable the joint motor. \end{DoxyCompactList}\item 
+\hypertarget{classb2_revolute_joint_a56f60bb1ea69048c8a455da49d62bf65}{void \hyperlink{classb2_revolute_joint_a56f60bb1ea69048c8a455da49d62bf65}{Set\-Motor\-Speed} (float32 speed)}\label{classb2_revolute_joint_a56f60bb1ea69048c8a455da49d62bf65}
+
+\begin{DoxyCompactList}\small\item\em Set the motor speed in radians per second. \end{DoxyCompactList}\item 
+\hypertarget{classb2_revolute_joint_a5ebdb2b410725d2c7999d8fce792e0da}{float32 \hyperlink{classb2_revolute_joint_a5ebdb2b410725d2c7999d8fce792e0da}{Get\-Motor\-Speed} () const }\label{classb2_revolute_joint_a5ebdb2b410725d2c7999d8fce792e0da}
+
+\begin{DoxyCompactList}\small\item\em Get the motor speed in radians per second. \end{DoxyCompactList}\item 
+\hypertarget{classb2_revolute_joint_a41779d7ec05be33e6368ef00123a3581}{void \hyperlink{classb2_revolute_joint_a41779d7ec05be33e6368ef00123a3581}{Set\-Max\-Motor\-Torque} (float32 torque)}\label{classb2_revolute_joint_a41779d7ec05be33e6368ef00123a3581}
+
+\begin{DoxyCompactList}\small\item\em Set the maximum motor torque, usually in N-\/m. \end{DoxyCompactList}\item 
+\hypertarget{classb2_revolute_joint_a1e990f811430b831967c856adfe452a0}{float32 {\bfseries Get\-Max\-Motor\-Torque} () const }\label{classb2_revolute_joint_a1e990f811430b831967c856adfe452a0}
+
+\item 
+\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{classb2_revolute_joint_a1e5d6eb28f3f35e825cfc42dbd23d66e}{Get\-Reaction\-Force} (float32 inv\-\_\-dt) const 
+\item 
+float32 \hyperlink{classb2_revolute_joint_a85cdf204bf80dc0a4df6536e2e9a941e}{Get\-Reaction\-Torque} (float32 inv\-\_\-dt) const 
+\item 
+float32 \hyperlink{classb2_revolute_joint_a64579cb1db5e9674ec17244133c72920}{Get\-Motor\-Torque} (float32 inv\-\_\-dt) const 
+\item 
+\hypertarget{classb2_revolute_joint_aa9d88f5476c77a5c4a6ef5b2ad0d3e6f}{void \hyperlink{classb2_revolute_joint_aa9d88f5476c77a5c4a6ef5b2ad0d3e6f}{Dump} ()}\label{classb2_revolute_joint_aa9d88f5476c77a5c4a6ef5b2ad0d3e6f}
+
+\begin{DoxyCompactList}\small\item\em Dump to b2\-Log. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_revolute_joint_a2571c1438e909fb3518de6f88bb29e01}{{\bfseries b2\-Revolute\-Joint} (const \hyperlink{structb2_revolute_joint_def}{b2\-Revolute\-Joint\-Def} $\ast$def)}\label{classb2_revolute_joint_a2571c1438e909fb3518de6f88bb29e01}
+
+\item 
+\hypertarget{classb2_revolute_joint_af8f5a4b3fac025f0a0e5474b81667dfb}{void {\bfseries Init\-Velocity\-Constraints} (const \hyperlink{structb2_solver_data}{b2\-Solver\-Data} \&data)}\label{classb2_revolute_joint_af8f5a4b3fac025f0a0e5474b81667dfb}
+
+\item 
+\hypertarget{classb2_revolute_joint_a9971ccf2570c9bf8c2e816aa5c0db05a}{void {\bfseries Solve\-Velocity\-Constraints} (const \hyperlink{structb2_solver_data}{b2\-Solver\-Data} \&data)}\label{classb2_revolute_joint_a9971ccf2570c9bf8c2e816aa5c0db05a}
+
+\item 
+\hypertarget{classb2_revolute_joint_ad07e86dedb1f42c7d78129a65c0184fc}{bool {\bfseries Solve\-Position\-Constraints} (const \hyperlink{structb2_solver_data}{b2\-Solver\-Data} \&data)}\label{classb2_revolute_joint_ad07e86dedb1f42c7d78129a65c0184fc}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_revolute_joint_ad4ce801fa7bdd408b41310793e6b37f8}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Anchor\-A}}\label{classb2_revolute_joint_ad4ce801fa7bdd408b41310793e6b37f8}
+
+\item 
+\hypertarget{classb2_revolute_joint_ae206b6bcc7b6527d7d18f239d20a7ae9}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Anchor\-B}}\label{classb2_revolute_joint_ae206b6bcc7b6527d7d18f239d20a7ae9}
+
+\item 
+\hypertarget{classb2_revolute_joint_a00d576701b8e2ee886e9a59811b4df65}{\hyperlink{structb2_vec3}{b2\-Vec3} {\bfseries m\-\_\-impulse}}\label{classb2_revolute_joint_a00d576701b8e2ee886e9a59811b4df65}
+
+\item 
+\hypertarget{classb2_revolute_joint_a9275ac791803aa38c225d06b05ecfc26}{float32 {\bfseries m\-\_\-motor\-Impulse}}\label{classb2_revolute_joint_a9275ac791803aa38c225d06b05ecfc26}
+
+\item 
+\hypertarget{classb2_revolute_joint_a8fcdcbfc9fd51e8b5dc98ed8ea652e13}{bool {\bfseries m\-\_\-enable\-Motor}}\label{classb2_revolute_joint_a8fcdcbfc9fd51e8b5dc98ed8ea652e13}
+
+\item 
+\hypertarget{classb2_revolute_joint_a06ab30be0a455599bd3b5b6a11d6a43a}{float32 {\bfseries m\-\_\-max\-Motor\-Torque}}\label{classb2_revolute_joint_a06ab30be0a455599bd3b5b6a11d6a43a}
+
+\item 
+\hypertarget{classb2_revolute_joint_a7b6f51d7aa4b0132b12ec1091fdebfca}{float32 {\bfseries m\-\_\-motor\-Speed}}\label{classb2_revolute_joint_a7b6f51d7aa4b0132b12ec1091fdebfca}
+
+\item 
+\hypertarget{classb2_revolute_joint_adb179e134ac49c612201caa20340e090}{bool {\bfseries m\-\_\-enable\-Limit}}\label{classb2_revolute_joint_adb179e134ac49c612201caa20340e090}
+
+\item 
+\hypertarget{classb2_revolute_joint_a7648b770a9165ee9cd97edcf2df6ed9e}{float32 {\bfseries m\-\_\-reference\-Angle}}\label{classb2_revolute_joint_a7648b770a9165ee9cd97edcf2df6ed9e}
+
+\item 
+\hypertarget{classb2_revolute_joint_a7c57732200aae93368481970731630b1}{float32 {\bfseries m\-\_\-lower\-Angle}}\label{classb2_revolute_joint_a7c57732200aae93368481970731630b1}
+
+\item 
+\hypertarget{classb2_revolute_joint_adf7a2ab69e1e7a72697a2c9d92877c52}{float32 {\bfseries m\-\_\-upper\-Angle}}\label{classb2_revolute_joint_adf7a2ab69e1e7a72697a2c9d92877c52}
+
+\item 
+\hypertarget{classb2_revolute_joint_a2bdab138718ea7ccab67a37d0499286d}{int32 {\bfseries m\-\_\-index\-A}}\label{classb2_revolute_joint_a2bdab138718ea7ccab67a37d0499286d}
+
+\item 
+\hypertarget{classb2_revolute_joint_acbf266a053a6f3071bfdd53e0e6b3df8}{int32 {\bfseries m\-\_\-index\-B}}\label{classb2_revolute_joint_acbf266a053a6f3071bfdd53e0e6b3df8}
+
+\item 
+\hypertarget{classb2_revolute_joint_a6e33bbf932ce95efe072326199fa30f3}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-r\-A}}\label{classb2_revolute_joint_a6e33bbf932ce95efe072326199fa30f3}
+
+\item 
+\hypertarget{classb2_revolute_joint_afd72e453f92aa3214701a201c8f9dfe9}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-r\-B}}\label{classb2_revolute_joint_afd72e453f92aa3214701a201c8f9dfe9}
+
+\item 
+\hypertarget{classb2_revolute_joint_a70e2a385d097053453b4099094eb1154}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Center\-A}}\label{classb2_revolute_joint_a70e2a385d097053453b4099094eb1154}
+
+\item 
+\hypertarget{classb2_revolute_joint_a322ec1f7c33a358db73b53ec58e3356b}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Center\-B}}\label{classb2_revolute_joint_a322ec1f7c33a358db73b53ec58e3356b}
+
+\item 
+\hypertarget{classb2_revolute_joint_a28cd428903a7c62914d3473a40857fd2}{float32 {\bfseries m\-\_\-inv\-Mass\-A}}\label{classb2_revolute_joint_a28cd428903a7c62914d3473a40857fd2}
+
+\item 
+\hypertarget{classb2_revolute_joint_a4fd153ad1fcb65084455f9884fa8b9d7}{float32 {\bfseries m\-\_\-inv\-Mass\-B}}\label{classb2_revolute_joint_a4fd153ad1fcb65084455f9884fa8b9d7}
+
+\item 
+\hypertarget{classb2_revolute_joint_a948a49144e282f7db22b1f20379c6099}{float32 {\bfseries m\-\_\-inv\-I\-A}}\label{classb2_revolute_joint_a948a49144e282f7db22b1f20379c6099}
+
+\item 
+\hypertarget{classb2_revolute_joint_a7c224fc59adebaa00590217ab8a2c685}{float32 {\bfseries m\-\_\-inv\-I\-B}}\label{classb2_revolute_joint_a7c224fc59adebaa00590217ab8a2c685}
+
+\item 
+\hypertarget{classb2_revolute_joint_a284ae761074305d5032a2b666efb0650}{\hyperlink{structb2_mat33}{b2\-Mat33} {\bfseries m\-\_\-mass}}\label{classb2_revolute_joint_a284ae761074305d5032a2b666efb0650}
+
+\item 
+\hypertarget{classb2_revolute_joint_aced7e455dd33ccb17a1d4ff9bb80c442}{float32 {\bfseries m\-\_\-motor\-Mass}}\label{classb2_revolute_joint_aced7e455dd33ccb17a1d4ff9bb80c442}
+
+\item 
+\hypertarget{classb2_revolute_joint_abe77594f4773d21dabd8912d6630dc6a}{b2\-Limit\-State {\bfseries m\-\_\-limit\-State}}\label{classb2_revolute_joint_abe77594f4773d21dabd8912d6630dc6a}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_revolute_joint_a54ade8ed3d794298108d7f4c4e4793fa}{class {\bfseries b2\-Joint}}\label{classb2_revolute_joint_a54ade8ed3d794298108d7f4c4e4793fa}
+
+\item 
+\hypertarget{classb2_revolute_joint_a13c275221e30bb485e17e4e04553cb71}{class {\bfseries b2\-Gear\-Joint}}\label{classb2_revolute_joint_a13c275221e30bb485e17e4e04553cb71}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A revolute joint constrains two bodies to share a common point while they are free to rotate about the point. The relative rotation about the shared point is the joint angle. You can limit the relative rotation with a joint limit that specifies a lower and upper angle. You can use a motor to drive the relative rotation about the shared point. A maximum motor torque is provided so that infinite forces are not generated. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classb2_revolute_joint_a64579cb1db5e9674ec17244133c72920}{\index{b2\-Revolute\-Joint@{b2\-Revolute\-Joint}!Get\-Motor\-Torque@{Get\-Motor\-Torque}}
+\index{Get\-Motor\-Torque@{Get\-Motor\-Torque}!b2RevoluteJoint@{b2\-Revolute\-Joint}}
+\subsubsection[{Get\-Motor\-Torque}]{\setlength{\rightskip}{0pt plus 5cm}float32 {\bf b2\-Revolute\-Joint\-::\-Get\-Motor\-Torque} (
+\begin{DoxyParamCaption}
+\item[{float32}]{inv\-\_\-dt}
+\end{DoxyParamCaption}
+) const}}\label{classb2_revolute_joint_a64579cb1db5e9674ec17244133c72920}
+Get the current motor torque given the inverse time step. Unit is N$\ast$m. 
+\begin{DoxyCode}
+{
+        return inv_dt * m_motorImpulse;
+}
+\end{DoxyCode}
+\hypertarget{classb2_revolute_joint_a1e5d6eb28f3f35e825cfc42dbd23d66e}{\index{b2\-Revolute\-Joint@{b2\-Revolute\-Joint}!Get\-Reaction\-Force@{Get\-Reaction\-Force}}
+\index{Get\-Reaction\-Force@{Get\-Reaction\-Force}!b2RevoluteJoint@{b2\-Revolute\-Joint}}
+\subsubsection[{Get\-Reaction\-Force}]{\setlength{\rightskip}{0pt plus 5cm}{\bf b2\-Vec2} {\bf b2\-Revolute\-Joint\-::\-Get\-Reaction\-Force} (
+\begin{DoxyParamCaption}
+\item[{float32}]{inv\-\_\-dt}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classb2_revolute_joint_a1e5d6eb28f3f35e825cfc42dbd23d66e}
+Get the reaction force given the inverse time step. Unit is N. 
+
+Implements \hyperlink{classb2_joint_a7e0eddefb9b69ad050b8ef6425838a74}{b2\-Joint}.
+
+
+\begin{DoxyCode}
+{
+        b2Vec2 P(m_impulse.x, m_impulse.y);
+        return inv_dt * P;
+}
+\end{DoxyCode}
+\hypertarget{classb2_revolute_joint_a85cdf204bf80dc0a4df6536e2e9a941e}{\index{b2\-Revolute\-Joint@{b2\-Revolute\-Joint}!Get\-Reaction\-Torque@{Get\-Reaction\-Torque}}
+\index{Get\-Reaction\-Torque@{Get\-Reaction\-Torque}!b2RevoluteJoint@{b2\-Revolute\-Joint}}
+\subsubsection[{Get\-Reaction\-Torque}]{\setlength{\rightskip}{0pt plus 5cm}float32 {\bf b2\-Revolute\-Joint\-::\-Get\-Reaction\-Torque} (
+\begin{DoxyParamCaption}
+\item[{float32}]{inv\-\_\-dt}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classb2_revolute_joint_a85cdf204bf80dc0a4df6536e2e9a941e}
+Get the reaction torque due to the joint limit given the inverse time step. Unit is N$\ast$m. 
+
+Implements \hyperlink{classb2_joint_ae355e441c2aa842777dc04e24f15ced0}{b2\-Joint}.
+
+
+\begin{DoxyCode}
+{
+        return inv_dt * m_impulse.z;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Dynamics/\-Joints/b2\-Revolute\-Joint.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Dynamics/\-Joints/b2\-Revolute\-Joint.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,87 @@
+\hypertarget{interface_c_c_call_block_n}{\section{C\-C\-Call\-Block\-N Class Reference}
+\label{interface_c_c_call_block_n}\index{C\-C\-Call\-Block\-N@{C\-C\-Call\-Block\-N}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Instant.\-h$>$}
+
+Inheritance diagram for C\-C\-Call\-Block\-N\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_c_c_call_block_n}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_call_block_n_a4e7b481a6e2fe83f02d0a333da8a6834}{init\-With\-Block\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_call_block_n_aff147f233bfc4c0fee961a922c9d6110}{execute}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_call_block_n_aaaa011162c2d5054f49582f61c2a386e}{action\-With\-Block\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_call_block_n_a64e6d124dc7dad1a7d3fe610b96ff51e}{void($^\wedge$ {\bfseries block\-\_\-} )(\hyperlink{class_c_c_node}{C\-C\-Node} $\ast$)}\label{interface_c_c_call_block_n_a64e6d124dc7dad1a7d3fe610b96ff51e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Executes a callback using a block with a single \hyperlink{class_c_c_node}{C\-C\-Node} parameter. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_call_block_n_aaaa011162c2d5054f49582f61c2a386e}{\index{C\-C\-Call\-Block\-N@{C\-C\-Call\-Block\-N}!action\-With\-Block\-:@{action\-With\-Block\-:}}
+\index{action\-With\-Block\-:@{action\-With\-Block\-:}!CCCallBlockN@{C\-C\-Call\-Block\-N}}
+\subsubsection[{action\-With\-Block\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Block\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Node} $\ast$node)}]{block}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_call_block_n_aaaa011162c2d5054f49582f61c2a386e}
+creates the action with the specified block, to be used as a callback. The block will be \char`\"{}copied\char`\"{}. 
+\begin{DoxyCode}
+                     :(void(^)(CCNode *node))block
+{
+        return [[[self alloc] initWithBlock:block] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_call_block_n_aff147f233bfc4c0fee961a922c9d6110}{\index{C\-C\-Call\-Block\-N@{C\-C\-Call\-Block\-N}!execute@{execute}}
+\index{execute@{execute}!CCCallBlockN@{C\-C\-Call\-Block\-N}}
+\subsubsection[{execute}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf execute} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_call_block_n_aff147f233bfc4c0fee961a922c9d6110}
+executes the callback 
+\begin{DoxyCode}
+{
+        block_(target_);
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_call_block_n_a4e7b481a6e2fe83f02d0a333da8a6834}{\index{C\-C\-Call\-Block\-N@{C\-C\-Call\-Block\-N}!init\-With\-Block\-:@{init\-With\-Block\-:}}
+\index{init\-With\-Block\-:@{init\-With\-Block\-:}!CCCallBlockN@{C\-C\-Call\-Block\-N}}
+\subsubsection[{init\-With\-Block\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Block\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Node} $\ast$node)}]{block}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_call_block_n_a4e7b481a6e2fe83f02d0a333da8a6834}
+initialized the action with the specified block, to be used as a callback. The block will be \char`\"{}copied\char`\"{}. 
+\begin{DoxyCode}
+                   :(void(^)(CCNode *node))block
+{
+        if ((self = [super init]))
+                block_ = [block copy];
+
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Instant.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Instant.\-m\end{DoxyCompactItemize}

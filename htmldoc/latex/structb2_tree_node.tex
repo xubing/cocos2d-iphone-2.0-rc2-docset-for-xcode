@@ -1,0 +1,53 @@
+\hypertarget{structb2_tree_node}{\section{b2\-Tree\-Node Struct Reference}
+\label{structb2_tree_node}\index{b2\-Tree\-Node@{b2\-Tree\-Node}}
+}
+
+
+A node in the dynamic tree. The client does not interact with this directly.  
+
+
+
+
+{\ttfamily \#include $<$b2\-Dynamic\-Tree.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structb2_tree_node_a684e5a48e69fc38264ed8f8aa056ccc1}{bool {\bfseries Is\-Leaf} () const }\label{structb2_tree_node_a684e5a48e69fc38264ed8f8aa056ccc1}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structb2_tree_node_a798f1a594b33c713be45e76e79912239}{\hyperlink{structb2_a_a_b_b}{b2\-A\-A\-B\-B} \hyperlink{structb2_tree_node_a798f1a594b33c713be45e76e79912239}{aabb}}\label{structb2_tree_node_a798f1a594b33c713be45e76e79912239}
+
+\begin{DoxyCompactList}\small\item\em Enlarged A\-A\-B\-B. \end{DoxyCompactList}\item 
+\hypertarget{structb2_tree_node_aff77b3eb48326aca1b0762f5c45e56e7}{void $\ast$ {\bfseries user\-Data}}\label{structb2_tree_node_aff77b3eb48326aca1b0762f5c45e56e7}
+
+\item 
+\hypertarget{structb2_tree_node_a34d8707eb392afa270e39317b0ce6e25}{\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>int32 {\bfseries parent}\\
+\>int32 {\bfseries next}\\
+\}; }\label{structb2_tree_node_a34d8707eb392afa270e39317b0ce6e25}
+\\
+
+\end{tabbing}\item 
+\hypertarget{structb2_tree_node_a3a320f2afc7d223e92ee3629602be5ca}{int32 {\bfseries child1}}\label{structb2_tree_node_a3a320f2afc7d223e92ee3629602be5ca}
+
+\item 
+\hypertarget{structb2_tree_node_aa6774ce329715b20d8b7cc8b6e3d50bc}{int32 {\bfseries child2}}\label{structb2_tree_node_aa6774ce329715b20d8b7cc8b6e3d50bc}
+
+\item 
+\hypertarget{structb2_tree_node_acd183ac94a8d44195c787111be4c22e2}{int32 {\bfseries height}}\label{structb2_tree_node_acd183ac94a8d44195c787111be4c22e2}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A node in the dynamic tree. The client does not interact with this directly. 
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Collision/b2\-Dynamic\-Tree.\-h\end{DoxyCompactItemize}

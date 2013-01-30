@@ -1,0 +1,72 @@
+\hypertarget{structb2_weld_joint_def}{\section{b2\-Weld\-Joint\-Def Struct Reference}
+\label{structb2_weld_joint_def}\index{b2\-Weld\-Joint\-Def@{b2\-Weld\-Joint\-Def}}
+}
+
+
+{\ttfamily \#include $<$b2\-Weld\-Joint.\-h$>$}
+
+Inheritance diagram for b2\-Weld\-Joint\-Def\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structb2_weld_joint_def}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structb2_weld_joint_def_a9f6592c2a7eba6ce6e07e40c4e82aab5}{Initialize} (\hyperlink{classb2_body}{b2\-Body} $\ast$\hyperlink{structb2_joint_def_a8cd54c93da396be75a9788f2c6897f05}{body\-A}, \hyperlink{classb2_body}{b2\-Body} $\ast$\hyperlink{structb2_joint_def_aa4f4dee2fbcd12187b19506b60e68e3d}{body\-B}, const \hyperlink{structb2_vec2}{b2\-Vec2} \&anchor)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structb2_weld_joint_def_a3b04af6164bb32efc3f5cf3e8d2b7109}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{structb2_weld_joint_def_a3b04af6164bb32efc3f5cf3e8d2b7109}{local\-Anchor\-A}}\label{structb2_weld_joint_def_a3b04af6164bb32efc3f5cf3e8d2b7109}
+
+\begin{DoxyCompactList}\small\item\em The local anchor point relative to body\-A's origin. \end{DoxyCompactList}\item 
+\hypertarget{structb2_weld_joint_def_a528262b92dac10de37411ad8c5637149}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{structb2_weld_joint_def_a528262b92dac10de37411ad8c5637149}{local\-Anchor\-B}}\label{structb2_weld_joint_def_a528262b92dac10de37411ad8c5637149}
+
+\begin{DoxyCompactList}\small\item\em The local anchor point relative to body\-B's origin. \end{DoxyCompactList}\item 
+\hypertarget{structb2_weld_joint_def_a31aeb208f15842091c55e3f1bab6d8f1}{float32 \hyperlink{structb2_weld_joint_def_a31aeb208f15842091c55e3f1bab6d8f1}{reference\-Angle}}\label{structb2_weld_joint_def_a31aeb208f15842091c55e3f1bab6d8f1}
+
+\begin{DoxyCompactList}\small\item\em The body\-B angle minus body\-A angle in the reference state (radians). \end{DoxyCompactList}\item 
+float32 \hyperlink{structb2_weld_joint_def_abf42ce852914af845e9203b341f55c87}{frequency\-Hz}
+\item 
+\hypertarget{structb2_weld_joint_def_ace1f0131610f14558f3dbaaed7b10e24}{float32 \hyperlink{structb2_weld_joint_def_ace1f0131610f14558f3dbaaed7b10e24}{damping\-Ratio}}\label{structb2_weld_joint_def_ace1f0131610f14558f3dbaaed7b10e24}
+
+\begin{DoxyCompactList}\small\item\em The damping ratio. 0 = no damping, 1 = critical damping. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Weld joint definition. You need to specify local anchor points where they are attached and the relative body angle. The position of the anchor points is important for computing the reaction torque. 
+
+\subsection{Member Function Documentation}
+\hypertarget{structb2_weld_joint_def_a9f6592c2a7eba6ce6e07e40c4e82aab5}{\index{b2\-Weld\-Joint\-Def@{b2\-Weld\-Joint\-Def}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!b2WeldJointDef@{b2\-Weld\-Joint\-Def}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf b2\-Weld\-Joint\-Def\-::\-Initialize} (
+\begin{DoxyParamCaption}
+\item[{{\bf b2\-Body} $\ast$}]{body\-A, }
+\item[{{\bf b2\-Body} $\ast$}]{body\-B, }
+\item[{const {\bf b2\-Vec2} \&}]{anchor}
+\end{DoxyParamCaption}
+)}}\label{structb2_weld_joint_def_a9f6592c2a7eba6ce6e07e40c4e82aab5}
+Initialize the bodies, anchors, and reference angle using a world anchor point. 
+\begin{DoxyCode}
+{
+        bodyA = bA;
+        bodyB = bB;
+        localAnchorA = bodyA->GetLocalPoint(anchor);
+        localAnchorB = bodyB->GetLocalPoint(anchor);
+        referenceAngle = bodyB->GetAngle() - bodyA->GetAngle();
+}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structb2_weld_joint_def_abf42ce852914af845e9203b341f55c87}{\index{b2\-Weld\-Joint\-Def@{b2\-Weld\-Joint\-Def}!frequency\-Hz@{frequency\-Hz}}
+\index{frequency\-Hz@{frequency\-Hz}!b2WeldJointDef@{b2\-Weld\-Joint\-Def}}
+\subsubsection[{frequency\-Hz}]{\setlength{\rightskip}{0pt plus 5cm}float32 {\bf b2\-Weld\-Joint\-Def\-::frequency\-Hz}}}\label{structb2_weld_joint_def_abf42ce852914af845e9203b341f55c87}
+The mass-\/spring-\/damper frequency in Hertz. Rotation only. Disable softness with a value of 0. 
+
+The documentation for this struct was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Dynamics/\-Joints/b2\-Weld\-Joint.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Dynamics/\-Joints/b2\-Weld\-Joint.\-cpp\end{DoxyCompactItemize}

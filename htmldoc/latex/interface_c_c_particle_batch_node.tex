@@ -1,0 +1,355 @@
+\hypertarget{interface_c_c_particle_batch_node}{\section{C\-C\-Particle\-Batch\-Node Class Reference}
+\label{interface_c_c_particle_batch_node}\index{C\-C\-Particle\-Batch\-Node@{C\-C\-Particle\-Batch\-Node}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Particle\-Batch\-Node.\-h$>$}
+
+Inheritance diagram for C\-C\-Particle\-Batch\-Node\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_c_c_particle_batch_node}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_particle_batch_node_a4e6ccd6ef4fe5f8a0f525e75f6ad5812}{init\-With\-Texture\-:capacity\-:}
+\item 
+(id) -\/ \hyperlink{interface_c_c_particle_batch_node_aadce631b777ca21b2df162e4d15f86a2}{init\-With\-File\-:capacity\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_particle_batch_node_ae36f2e24858526e468215e0a19e299b5}{add\-Child\-:z\-:tag\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_particle_batch_node_a892326c74f8eee345d17f36060e809c1}{insert\-Child\-:in\-Atlas\-At\-Index\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_particle_batch_node_a44096e9e4b9d8a1d0953c8bc64217e36}{remove\-Child\-:cleanup\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_particle_batch_node_a1399625b3357d887349735462c4dd033}{disable\-Particle\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_particle_batch_node_aeefc2b898bb14b18f5ac565b35d8833b}{batch\-Node\-With\-Texture\-:}
+\item 
+(id) + \hyperlink{interface_c_c_particle_batch_node_a2fa3a0c7a68d7bf9200466c39b33d341}{batch\-Node\-With\-File\-:}
+\item 
+(id) + \hyperlink{interface_c_c_particle_batch_node_a2bb7197d9933fcb02f0665ae7f65f463}{batch\-Node\-With\-Texture\-:capacity\-:}
+\item 
+(id) + \hyperlink{interface_c_c_particle_batch_node_af23cd623a3b8b06a2a01cc1c732be167}{batch\-Node\-With\-File\-:capacity\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_particle_batch_node_a568ebba44c978a92cdb618d00e4e7ce3}{\hyperlink{interface_c_c_texture_atlas}{C\-C\-Texture\-Atlas} $\ast$ {\bfseries texture\-Atlas\-\_\-}}\label{interface_c_c_particle_batch_node_a568ebba44c978a92cdb618d00e4e7ce3}
+
+\item 
+\hypertarget{interface_c_c_particle_batch_node_ae3ec9d8f9dd2f38d250e1bcb6afe7359}{\hyperlink{cc_types_8h_a8c19c6f67219ecc0a6e4740cc046008d}{cc\-Blend\-Func} {\bfseries blend\-Func\-\_\-}}\label{interface_c_c_particle_batch_node_ae3ec9d8f9dd2f38d250e1bcb6afe7359}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_c_c_texture_atlas}{C\-C\-Texture\-Atlas} $\ast$ \hyperlink{interface_c_c_particle_batch_node_ac55a136114dcd1d3b7191448e0e0f70b}{texture\-Atlas}
+\item 
+\hyperlink{cc_types_8h_a8c19c6f67219ecc0a6e4740cc046008d}{cc\-Blend\-Func} \hyperlink{interface_c_c_particle_batch_node_a0b9e4c91f526e82daff2e1cb7f6d9988}{blend\-Func}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_particle_batch_node}{C\-C\-Particle\-Batch\-Node} is like a batch node\-: if it contains children, it will draw them in 1 single Open\-G\-L call (often known as \char`\"{}batch draw\char`\"{}).
+
+A \hyperlink{interface_c_c_particle_batch_node}{C\-C\-Particle\-Batch\-Node} can reference one and only one texture (one image file, one texture atlas). Only the C\-C\-Particle\-Systems that are contained in that texture can be added to the \hyperlink{interface_c_c_sprite_batch_node}{C\-C\-Sprite\-Batch\-Node}. All C\-C\-Particle\-Systems added to a \hyperlink{interface_c_c_sprite_batch_node}{C\-C\-Sprite\-Batch\-Node} are drawn in one Open\-G\-L E\-S draw call. If the C\-C\-Particle\-Systems are not added to a \hyperlink{interface_c_c_particle_batch_node}{C\-C\-Particle\-Batch\-Node} then an Open\-G\-L E\-S draw call will be needed for each one, which is less efficient.
+
+Limitations\-:
+\begin{DoxyItemize}
+\item At the moment only \hyperlink{interface_c_c_particle_system_quad}{C\-C\-Particle\-System\-Quad} is supported
+\item All systems need to be drawn with the same parameters, blend function, aliasing, texture
+\end{DoxyItemize}
+
+Most efficient usage
+\begin{DoxyItemize}
+\item Initialize the Particle\-Batch\-Node with the texture and enough capacity for all the particle systems
+\item Initialize all particle systems and add them as child to the batch node \begin{DoxySince}{Since}
+v1.\-1 
+\end{DoxySince}
+
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_particle_batch_node_ae36f2e24858526e468215e0a19e299b5}{\index{C\-C\-Particle\-Batch\-Node@{C\-C\-Particle\-Batch\-Node}!add\-Child\-:z\-:tag\-:@{add\-Child\-:z\-:tag\-:}}
+\index{add\-Child\-:z\-:tag\-:@{add\-Child\-:z\-:tag\-:}!CCParticleBatchNode@{C\-C\-Particle\-Batch\-Node}}
+\subsubsection[{add\-Child\-:z\-:tag\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf add\-Child\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Particle\-System}$\ast$)}]{child}
+\item[{z:(N\-S\-Integer)}]{z}
+\item[{tag:(N\-S\-Integer)}]{a\-Tag}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_particle_batch_node_ae36f2e24858526e468215e0a19e299b5}
+Add a child into the \hyperlink{interface_c_c_particle_batch_node}{C\-C\-Particle\-Batch\-Node} 
+\begin{DoxyCode}
+                :(CCParticleSystem*)child z:(NSInteger)z tag:(NSInteger) aTag
+{
+        NSAssert( child != nil, @"Argument must be non-nil");
+        NSAssert( [child isKindOfClass:[CCParticleSystem class]], @"
+      CCParticleBatchNode only supports CCQuadParticleSystems as children");
+        NSAssert( child.texture.name == textureAtlas_.texture.name, @"
+      CCParticleSystem is not using the same texture id");
+
+        // If this is the 1st children, then copy blending function
+        if( [children_ count] == 0 )
+                blendFunc_ = [child blendFunc];
+
+        NSAssert( blendFunc_.src  == child.blendFunc.src && blendFunc_.dst  == 
+      child.blendFunc.dst, @"Can't add a PaticleSystem that uses a differnt blending
+       function");
+
+        //no lazy sorting, so don't call super addChild, call helper instead
+        NSUInteger pos = [self addChildHelper:child z:z tag:aTag];
+
+        //get new atlasIndex
+        NSUInteger atlasIndex;
+
+        if (pos != 0)
+                atlasIndex = [[children_ objectAtIndex:pos-1] atlasIndex] + [[
+      children_ objectAtIndex:pos-1] totalParticles];
+        else
+                atlasIndex = 0;
+
+        [self insertChild:child inAtlasAtIndex:atlasIndex];
+
+        // update quad info
+        [child setBatchNode:self];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_particle_batch_node_a2fa3a0c7a68d7bf9200466c39b33d341}{\index{C\-C\-Particle\-Batch\-Node@{C\-C\-Particle\-Batch\-Node}!batch\-Node\-With\-File\-:@{batch\-Node\-With\-File\-:}}
+\index{batch\-Node\-With\-File\-:@{batch\-Node\-With\-File\-:}!CCParticleBatchNode@{C\-C\-Particle\-Batch\-Node}}
+\subsubsection[{batch\-Node\-With\-File\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf batch\-Node\-With\-File\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{image\-File}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_particle_batch_node_a2fa3a0c7a68d7bf9200466c39b33d341}
+initializes the particle system with the name of a file on disk (for a list of supported formats look at the \hyperlink{class_c_c_texture2_d}{C\-C\-Texture2\-D} class), a default capacity of 500 particles 
+\begin{DoxyCode}
+                      :(NSString*) imageFile
+{
+        return [[[self alloc] initWithFile:imageFile capacity:
+      kCCParticleDefaultCapacity] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_particle_batch_node_af23cd623a3b8b06a2a01cc1c732be167}{\index{C\-C\-Particle\-Batch\-Node@{C\-C\-Particle\-Batch\-Node}!batch\-Node\-With\-File\-:capacity\-:@{batch\-Node\-With\-File\-:capacity\-:}}
+\index{batch\-Node\-With\-File\-:capacity\-:@{batch\-Node\-With\-File\-:capacity\-:}!CCParticleBatchNode@{C\-C\-Particle\-Batch\-Node}}
+\subsubsection[{batch\-Node\-With\-File\-:capacity\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf batch\-Node\-With\-File\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{file\-Image}
+\item[{capacity:(N\-S\-U\-Integer)}]{capacity}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_particle_batch_node_af23cd623a3b8b06a2a01cc1c732be167}
+initializes the particle system with the name of a file on disk (for a list of supported formats look at the \hyperlink{class_c_c_texture2_d}{C\-C\-Texture2\-D} class), a capacity of particles 
+\begin{DoxyCode}
+                      :(NSString*)fileImage capacity:(NSUInteger)capacity
+{
+        return [[[self alloc] initWithFile:fileImage capacity:capacity] 
+      autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_particle_batch_node_aeefc2b898bb14b18f5ac565b35d8833b}{\index{C\-C\-Particle\-Batch\-Node@{C\-C\-Particle\-Batch\-Node}!batch\-Node\-With\-Texture\-:@{batch\-Node\-With\-Texture\-:}}
+\index{batch\-Node\-With\-Texture\-:@{batch\-Node\-With\-Texture\-:}!CCParticleBatchNode@{C\-C\-Particle\-Batch\-Node}}
+\subsubsection[{batch\-Node\-With\-Texture\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf batch\-Node\-With\-Texture\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Texture2\-D} $\ast$)}]{tex}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_particle_batch_node_aeefc2b898bb14b18f5ac565b35d8833b}
+initializes the particle system with \hyperlink{class_c_c_texture2_d}{C\-C\-Texture2\-D}, a default capacity of 500 
+\begin{DoxyCode}
+                         :(CCTexture2D *)tex
+{
+        return [[[self alloc] initWithTexture:tex capacity:
+      kCCParticleDefaultCapacity] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_particle_batch_node_a2bb7197d9933fcb02f0665ae7f65f463}{\index{C\-C\-Particle\-Batch\-Node@{C\-C\-Particle\-Batch\-Node}!batch\-Node\-With\-Texture\-:capacity\-:@{batch\-Node\-With\-Texture\-:capacity\-:}}
+\index{batch\-Node\-With\-Texture\-:capacity\-:@{batch\-Node\-With\-Texture\-:capacity\-:}!CCParticleBatchNode@{C\-C\-Particle\-Batch\-Node}}
+\subsubsection[{batch\-Node\-With\-Texture\-:capacity\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf batch\-Node\-With\-Texture\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Texture2\-D} $\ast$)}]{tex}
+\item[{capacity:(N\-S\-U\-Integer)}]{capacity}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_particle_batch_node_a2bb7197d9933fcb02f0665ae7f65f463}
+initializes the particle system with \hyperlink{class_c_c_texture2_d}{C\-C\-Texture2\-D}, a capacity of particles, which particle system to use 
+\begin{DoxyCode}
+                         :(CCTexture2D *)tex capacity:(NSUInteger) capacity
+{
+        return [[[self alloc] initWithTexture:tex capacity:capacity] 
+      autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_particle_batch_node_a1399625b3357d887349735462c4dd033}{\index{C\-C\-Particle\-Batch\-Node@{C\-C\-Particle\-Batch\-Node}!disable\-Particle\-:@{disable\-Particle\-:}}
+\index{disable\-Particle\-:@{disable\-Particle\-:}!CCParticleBatchNode@{C\-C\-Particle\-Batch\-Node}}
+\subsubsection[{disable\-Particle\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf disable\-Particle\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-U\-Integer)}]{particle\-Index}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_particle_batch_node_a1399625b3357d887349735462c4dd033}
+disables a particle by inserting a 0'd quad into the texture atlas 
+
+Referenced by C\-C\-Particle\-System\-::update\-:.
+
+
+\begin{DoxyCode}
+                       :(NSUInteger)particleIndex
+{
+        ccV3F_C4B_T2F_Quad* quad = &((textureAtlas_.quads)[particleIndex]);
+        quad->br.vertices.x = quad->br.vertices.y = quad->tr.vertices.x = quad
+      ->tr.vertices.y = quad->tl.vertices.x = quad->tl.vertices.y = quad->bl.vertices.x
+       = quad->bl.vertices.y = 0.0f;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_particle_batch_node_aadce631b777ca21b2df162e4d15f86a2}{\index{C\-C\-Particle\-Batch\-Node@{C\-C\-Particle\-Batch\-Node}!init\-With\-File\-:capacity\-:@{init\-With\-File\-:capacity\-:}}
+\index{init\-With\-File\-:capacity\-:@{init\-With\-File\-:capacity\-:}!CCParticleBatchNode@{C\-C\-Particle\-Batch\-Node}}
+\subsubsection[{init\-With\-File\-:capacity\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-File\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{file\-Image}
+\item[{capacity:(N\-S\-U\-Integer)}]{capacity}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_particle_batch_node_aadce631b777ca21b2df162e4d15f86a2}
+initializes the particle system with the name of a file on disk (for a list of supported formats look at the \hyperlink{class_c_c_texture2_d}{C\-C\-Texture2\-D} class), a capacity of particles 
+\begin{DoxyCode}
+                 :(NSString *)fileImage capacity:(NSUInteger)capacity
+{
+        CCTexture2D *tex = [[CCTextureCache sharedTextureCache] addImage:
+      fileImage];
+        return [self initWithTexture:tex capacity:capacity];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_particle_batch_node_a4e6ccd6ef4fe5f8a0f525e75f6ad5812}{\index{C\-C\-Particle\-Batch\-Node@{C\-C\-Particle\-Batch\-Node}!init\-With\-Texture\-:capacity\-:@{init\-With\-Texture\-:capacity\-:}}
+\index{init\-With\-Texture\-:capacity\-:@{init\-With\-Texture\-:capacity\-:}!CCParticleBatchNode@{C\-C\-Particle\-Batch\-Node}}
+\subsubsection[{init\-With\-Texture\-:capacity\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Texture\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Texture2\-D} $\ast$)}]{tex}
+\item[{capacity:(N\-S\-U\-Integer)}]{capacity}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_particle_batch_node_a4e6ccd6ef4fe5f8a0f525e75f6ad5812}
+initializes the particle system with \hyperlink{class_c_c_texture2_d}{C\-C\-Texture2\-D}, a capacity of particles 
+
+Referenced by init\-With\-File\-:capacity\-:.
+
+
+\begin{DoxyCode}
+                    :(CCTexture2D *)tex capacity:(NSUInteger)capacity
+{
+        if (self = [super init])
+        {
+                textureAtlas_ = [[CCTextureAtlas alloc] initWithTexture:tex 
+      capacity:capacity];
+
+                // no lazy alloc in this node
+                children_ = [[CCArray alloc] initWithCapacity:capacity];
+
+                blendFunc_.src = CC_BLEND_SRC;
+                blendFunc_.dst = CC_BLEND_DST;
+
+                self.shaderProgram = [[CCShaderCache sharedShaderCache] 
+      programForKey:kCCShader_PositionTextureColor];
+        }
+
+        return self;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_particle_batch_node_a892326c74f8eee345d17f36060e809c1}{\index{C\-C\-Particle\-Batch\-Node@{C\-C\-Particle\-Batch\-Node}!insert\-Child\-:in\-Atlas\-At\-Index\-:@{insert\-Child\-:in\-Atlas\-At\-Index\-:}}
+\index{insert\-Child\-:in\-Atlas\-At\-Index\-:@{insert\-Child\-:in\-Atlas\-At\-Index\-:}!CCParticleBatchNode@{C\-C\-Particle\-Batch\-Node}}
+\subsubsection[{insert\-Child\-:in\-Atlas\-At\-Index\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) insert\-Child\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Particle\-System}$\ast$)}]{p\-System}
+\item[{inAtlasAtIndex:(N\-S\-U\-Integer)}]{index}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_particle_batch_node_a892326c74f8eee345d17f36060e809c1}
+Inserts a child into the \hyperlink{interface_c_c_particle_batch_node}{C\-C\-Particle\-Batch\-Node} 
+
+Referenced by add\-Child\-:z\-:tag\-:.
+
+
+\begin{DoxyCode}
+                   :(CCParticleSystem*) pSystem inAtlasAtIndex:(NSUInteger)
+      index
+{
+        pSystem.atlasIndex = index;
+
+        if(textureAtlas_.totalQuads + pSystem.totalParticles > textureAtlas_.
+      capacity)
+        {
+                [self increaseAtlasCapacityTo:textureAtlas_.totalQuads + 
+      pSystem.totalParticles];
+
+                // after a realloc empty quads of textureAtlas can be filled
+       with gibberish (realloc doesn't perform calloc), insert empty quads to prevent it
+                [textureAtlas_ fillWithEmptyQuadsFromIndex:textureAtlas_.
+      capacity - pSystem.totalParticles amount:pSystem.totalParticles];
+        }
+
+        // make room for quads, not necessary for last child
+        if (pSystem.atlasIndex + pSystem.totalParticles != textureAtlas_.
+      totalQuads)
+                [textureAtlas_ moveQuadsFromIndex:index to:index+pSystem.
+      totalParticles];
+
+        // increase totalParticles here for new particles, update method of
+       particlesystem will fill the quads
+        [textureAtlas_ increaseTotalQuadsWith:pSystem.totalParticles];
+
+        [self updateAllAtlasIndexes];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_particle_batch_node_a44096e9e4b9d8a1d0953c8bc64217e36}{\index{C\-C\-Particle\-Batch\-Node@{C\-C\-Particle\-Batch\-Node}!remove\-Child\-:cleanup\-:@{remove\-Child\-:cleanup\-:}}
+\index{remove\-Child\-:cleanup\-:@{remove\-Child\-:cleanup\-:}!CCParticleBatchNode@{C\-C\-Particle\-Batch\-Node}}
+\subsubsection[{remove\-Child\-:cleanup\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\-Child\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Particle\-System}$\ast$)}]{p\-System}
+\item[{cleanup:(B\-O\-O\-L)}]{do\-Clean\-Up}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_particle_batch_node_a44096e9e4b9d8a1d0953c8bc64217e36}
+remove child from the \hyperlink{interface_c_c_particle_batch_node}{C\-C\-Particle\-Batch\-Node} 
+\begin{DoxyCode}
+                  : (CCParticleSystem*) child cleanup:(BOOL)doCleanup
+{
+        // explicit nil handling
+        if (child == nil)
+                return;
+
+        NSAssert([children_ containsObject:child], @"CCParticleBatchNode
+       doesn't contain the sprite. Can't remove it");
+
+        [super removeChild:child cleanup:doCleanup];
+
+        // remove child helper
+        [textureAtlas_ removeQuadsAtIndex:child.atlasIndex amount:child.
+      totalParticles];
+
+        // after memmove of data, empty the quads at the end of array
+        [textureAtlas_ fillWithEmptyQuadsFromIndex:textureAtlas_.totalQuads 
+      amount:child.totalParticles];
+
+        // paticle could be reused for self rendering
+        [child setBatchNode:nil];
+
+        [self updateAllAtlasIndexes];
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_particle_batch_node_a0b9e4c91f526e82daff2e1cb7f6d9988}{\index{C\-C\-Particle\-Batch\-Node@{C\-C\-Particle\-Batch\-Node}!blend\-Func@{blend\-Func}}
+\index{blend\-Func@{blend\-Func}!CCParticleBatchNode@{C\-C\-Particle\-Batch\-Node}}
+\subsubsection[{blend\-Func}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf cc\-Blend\-Func}) {\bf blend\-Func}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_batch_node_a0b9e4c91f526e82daff2e1cb7f6d9988}
+the blend function used for drawing the quads \hypertarget{interface_c_c_particle_batch_node_ac55a136114dcd1d3b7191448e0e0f70b}{\index{C\-C\-Particle\-Batch\-Node@{C\-C\-Particle\-Batch\-Node}!texture\-Atlas@{texture\-Atlas}}
+\index{texture\-Atlas@{texture\-Atlas}!CCParticleBatchNode@{C\-C\-Particle\-Batch\-Node}}
+\subsubsection[{texture\-Atlas}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Texture\-Atlas}$\ast$) {\bf texture\-Atlas}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}\label{interface_c_c_particle_batch_node_ac55a136114dcd1d3b7191448e0e0f70b}
+the texture atlas used for drawing the quads 
+
+Referenced by C\-C\-Particle\-System\-Quad\-::init\-Tex\-Coords\-With\-Rect\-:.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Particle\-Batch\-Node.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Particle\-Batch\-Node.\-m\end{DoxyCompactItemize}

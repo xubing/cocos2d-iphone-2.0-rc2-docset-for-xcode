@@ -1,0 +1,41 @@
+\hypertarget{interface_waves_tiles3_d_demo}{\section{Waves\-Tiles3\-D\-Demo Class Reference}
+\label{interface_waves_tiles3_d_demo}\index{Waves\-Tiles3\-D\-Demo@{Waves\-Tiles3\-D\-Demo}}
+}
+Inheritance diagram for Waves\-Tiles3\-D\-Demo\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.000000cm]{interface_waves_tiles3_d_demo}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_waves_tiles3_d_demo_a8831a929f08852b77475c64909598106}{action\-With\-Duration\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_waves_tiles3_d_demo_a8831a929f08852b77475c64909598106}{\index{Waves\-Tiles3\-D\-Demo@{Waves\-Tiles3\-D\-Demo}!action\-With\-Duration\-:@{action\-With\-Duration\-:}}
+\index{action\-With\-Duration\-:@{action\-With\-Duration\-:}!WavesTiles3DDemo@{Waves\-Tiles3\-D\-Demo}}
+\subsubsection[{action\-With\-Duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_waves_tiles3_d_demo_a8831a929f08852b77475c64909598106}
+creates the action 
+
+Reimplemented from \hyperlink{class_c_c_action_interval_a08fbc347478cca16ab1fe936a1770dc0}{C\-C\-Action\-Interval}.
+
+
+\begin{DoxyCode}
+                        :(ccTime)t
+{
+        return [self actionWithWaves:4 amplitude:120 grid:ccg(15,10) duration:t
+      ];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/tests/Effects\-Test.\-m\end{DoxyCompactItemize}

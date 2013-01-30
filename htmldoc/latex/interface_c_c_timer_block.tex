@@ -1,0 +1,107 @@
+\hypertarget{interface_c_c_timer_block}{\section{C\-C\-Timer\-Block Class Reference}
+\label{interface_c_c_timer_block}\index{C\-C\-Timer\-Block@{C\-C\-Timer\-Block}}
+}
+Inheritance diagram for C\-C\-Timer\-Block\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_c_c_timer_block}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_timer_block_af676007948f158e93fcf744eb2225d9b}{init\-With\-Target\-:interval\-:repeat\-:delay\-:key\-:block\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_timer_block_a045150fbdd966b2a963b8afa4de20f4a}{timer\-With\-Target\-:interval\-:key\-:block\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_timer_block_a70da43d8a527343176ef625dcfac8234}{void($^\wedge$ {\bfseries \-\_\-block} )(\hyperlink{cc_types_8h_ae6c674aac4bfb46a4e6cb1e89bb66b4f}{cc\-Time} delta)}\label{interface_c_c_timer_block_a70da43d8a527343176ef625dcfac8234}
+
+\item 
+\hypertarget{interface_c_c_timer_block_aa15f13b176ce34d5413983bef29c7156}{N\-S\-String $\ast$ {\bfseries \-\_\-key}}\label{interface_c_c_timer_block_aa15f13b176ce34d5413983bef29c7156}
+
+\item 
+\hypertarget{interface_c_c_timer_block_a78f4ac4827481014fe793092014e27e7}{id {\bfseries \-\_\-target}}\label{interface_c_c_timer_block_a78f4ac4827481014fe793092014e27e7}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\-S\-String $\ast$ \hyperlink{interface_c_c_timer_block_aeb9dbb416f077c810c30d6c2ffa3bf87}{key}
+\item 
+id \hyperlink{interface_c_c_timer_block_a818d961ff40f9f29415faa623b7242c5}{target}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_timer_block_af676007948f158e93fcf744eb2225d9b}{\index{C\-C\-Timer\-Block@{C\-C\-Timer\-Block}!init\-With\-Target\-:interval\-:repeat\-:delay\-:key\-:block\-:@{init\-With\-Target\-:interval\-:repeat\-:delay\-:key\-:block\-:}}
+\index{init\-With\-Target\-:interval\-:repeat\-:delay\-:key\-:block\-:@{init\-With\-Target\-:interval\-:repeat\-:delay\-:key\-:block\-:}!CCTimerBlock@{C\-C\-Timer\-Block}}
+\subsubsection[{init\-With\-Target\-:interval\-:repeat\-:delay\-:key\-:block\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Target\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{owner}
+\item[{interval:({\bf cc\-Time})}]{seconds}
+\item[{repeat:(uint)}]{r}
+\item[{delay:({\bf cc\-Time})}]{d}
+\item[{key:(N\-S\-String$\ast$)}]{key}
+\item[{block:({\bf cc\-Time} delta)}]{block}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_timer_block_af676007948f158e93fcf744eb2225d9b}
+Initializes a timer with a target(owner), interval in seconds, repeat in number of times to repeat, delay in seconds and a block 
+\begin{DoxyCode}
+                    :(id)owner interval:(ccTime) seconds repeat:(uint) r delay:
+      (ccTime)d key:(NSString*)key block:(void(^)(ccTime delta))block
+{
+        if( (self=[super init]) ) {
+                _block = [block copy];
+                _key = [key copy];
+                _target = owner;
+                
+                [self setupTimerWithInterval:seconds repeat:r delay:d];
+        }
+        
+        return self;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_timer_block_a045150fbdd966b2a963b8afa4de20f4a}{\index{C\-C\-Timer\-Block@{C\-C\-Timer\-Block}!timer\-With\-Target\-:interval\-:key\-:block\-:@{timer\-With\-Target\-:interval\-:key\-:block\-:}}
+\index{timer\-With\-Target\-:interval\-:key\-:block\-:@{timer\-With\-Target\-:interval\-:key\-:block\-:}!CCTimerBlock@{C\-C\-Timer\-Block}}
+\subsubsection[{timer\-With\-Target\-:interval\-:key\-:block\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) timer\-With\-Target\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{owner}
+\item[{interval:({\bf cc\-Time})}]{seconds}
+\item[{key:(N\-S\-String$\ast$)}]{key}
+\item[{block:({\bf cc\-Time} delta)}]{block}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_timer_block_a045150fbdd966b2a963b8afa4de20f4a}
+Allocates a timer with a target, interval in seconds, a key and a block 
+\begin{DoxyCode}
+                     :(id)owner interval:(ccTime)seconds key:(NSString*)key 
+      block:(void(^)(ccTime delta)) block
+{
+        return [[[self alloc] initWithTarget:(id)owner interval:seconds repeat:
+      kCCRepeatForever delay:0 key:key block:block] autorelease];
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_timer_block_aeb9dbb416f077c810c30d6c2ffa3bf87}{\index{C\-C\-Timer\-Block@{C\-C\-Timer\-Block}!key@{key}}
+\index{key@{key}!CCTimerBlock@{C\-C\-Timer\-Block}}
+\subsubsection[{key}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String$\ast$) {\bf key}\hspace{0.3cm}{\ttfamily  \mbox{[}read, assign\mbox{]}}}}\label{interface_c_c_timer_block_aeb9dbb416f077c810c30d6c2ffa3bf87}
+unique identifier of the block 
+
+Referenced by init\-With\-Target\-:interval\-:repeat\-:delay\-:key\-:block\-:.
+
+\hypertarget{interface_c_c_timer_block_a818d961ff40f9f29415faa623b7242c5}{\index{C\-C\-Timer\-Block@{C\-C\-Timer\-Block}!target@{target}}
+\index{target@{target}!CCTimerBlock@{C\-C\-Timer\-Block}}
+\subsubsection[{target}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf target}\hspace{0.3cm}{\ttfamily  \mbox{[}read, assign\mbox{]}}}}\label{interface_c_c_timer_block_a818d961ff40f9f29415faa623b7242c5}
+owner of the timer 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Scheduler.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Scheduler.\-m\end{DoxyCompactItemize}

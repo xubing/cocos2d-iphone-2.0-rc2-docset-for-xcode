@@ -1,0 +1,42 @@
+\hypertarget{interface_twirl_demo}{\section{Twirl\-Demo Class Reference}
+\label{interface_twirl_demo}\index{Twirl\-Demo@{Twirl\-Demo}}
+}
+Inheritance diagram for Twirl\-Demo\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.000000cm]{interface_twirl_demo}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_twirl_demo_a1992b8eecd0f5130043748641c6f38ce}{action\-With\-Duration\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_twirl_demo_a1992b8eecd0f5130043748641c6f38ce}{\index{Twirl\-Demo@{Twirl\-Demo}!action\-With\-Duration\-:@{action\-With\-Duration\-:}}
+\index{action\-With\-Duration\-:@{action\-With\-Duration\-:}!TwirlDemo@{Twirl\-Demo}}
+\subsubsection[{action\-With\-Duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_twirl_demo_a1992b8eecd0f5130043748641c6f38ce}
+creates the action 
+
+Reimplemented from \hyperlink{class_c_c_action_interval_a08fbc347478cca16ab1fe936a1770dc0}{C\-C\-Action\-Interval}.
+
+
+\begin{DoxyCode}
+                        :(ccTime)t
+{
+        CGSize size = [[CCDirector sharedDirector] winSize];
+        return [self actionWithPosition:ccp(size.width/2, size.height/2) twirls
+      :1 amplitude:2.5f grid:ccg(12,8) duration:t];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/tests/Effects\-Test.\-m\end{DoxyCompactItemize}

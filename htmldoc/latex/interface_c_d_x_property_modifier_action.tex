@@ -1,0 +1,104 @@
+\hypertarget{interface_c_d_x_property_modifier_action}{\section{C\-D\-X\-Property\-Modifier\-Action Class Reference}
+\label{interface_c_d_x_property_modifier_action}\index{C\-D\-X\-Property\-Modifier\-Action@{C\-D\-X\-Property\-Modifier\-Action}}
+}
+
+
+{\ttfamily \#import $<$C\-D\-X\-Property\-Modifier\-Action.\-h$>$}
+
+Inheritance diagram for C\-D\-X\-Property\-Modifier\-Action\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_c_d_x_property_modifier_action}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_d_x_property_modifier_action_a24e48541ff1b6b81dbab1a4f7f024746}{init\-With\-Duration\-:modifier\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_d_x_property_modifier_action_a46d04d4a1c089a70f9d6d4a5dfce2fa9}{action\-With\-Duration\-:modifier\-:}
+\item 
+\hypertarget{interface_c_d_x_property_modifier_action_aed148233eb81e742d2303752627ad12e}{(void) + {\bfseries fade\-Sound\-Effects\-:final\-Volume\-:curve\-Type\-:should\-Stop\-:}}\label{interface_c_d_x_property_modifier_action_aed148233eb81e742d2303752627ad12e}
+
+\item 
+\hypertarget{interface_c_d_x_property_modifier_action_abcb7eeef46cbaf3b005e7495ebdb67b1}{(void) + {\bfseries fade\-Sound\-Effect\-:final\-Volume\-:curve\-Type\-:should\-Stop\-:effect\-:}}\label{interface_c_d_x_property_modifier_action_abcb7eeef46cbaf3b005e7495ebdb67b1}
+
+\item 
+\hypertarget{interface_c_d_x_property_modifier_action_a6963b01463da78d769c6fb8f3524f528}{(void) + {\bfseries fade\-Background\-Music\-:final\-Volume\-:curve\-Type\-:should\-Stop\-:}}\label{interface_c_d_x_property_modifier_action_a6963b01463da78d769c6fb8f3524f528}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_d_x_property_modifier_action_a03a99d8be34bf86be9f36a718d6ce64c}{\hyperlink{interface_c_d_property_modifier}{C\-D\-Property\-Modifier} $\ast$ {\bfseries modifier}}\label{interface_c_d_x_property_modifier_action_a03a99d8be34bf86be9f36a718d6ce64c}
+
+\item 
+\hypertarget{interface_c_d_x_property_modifier_action_a8e2a5a8236507e3f8924bfd018d36c84}{float {\bfseries last\-Set\-Value}}\label{interface_c_d_x_property_modifier_action_a8e2a5a8236507e3f8924bfd018d36c84}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for actions that modify audio properties \begin{DoxySince}{Since}
+v 1.\-0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_d_x_property_modifier_action_a46d04d4a1c089a70f9d6d4a5dfce2fa9}{\index{C\-D\-X\-Property\-Modifier\-Action@{C\-D\-X\-Property\-Modifier\-Action}!action\-With\-Duration\-:modifier\-:@{action\-With\-Duration\-:modifier\-:}}
+\index{action\-With\-Duration\-:modifier\-:@{action\-With\-Duration\-:modifier\-:}!CDXPropertyModifierAction@{C\-D\-X\-Property\-Modifier\-Action}}
+\subsubsection[{action\-With\-Duration\-:modifier\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{t}
+\item[{modifier:({\bf C\-D\-Property\-Modifier}$\ast$)}]{a\-Modifier}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_x_property_modifier_action_a46d04d4a1c089a70f9d6d4a5dfce2fa9}
+creates the action 
+
+Referenced by The\-Audio\-Code\-::test\-Eight\-:.
+
+
+\begin{DoxyCode}
+                        :(ccTime)t modifier:(CDPropertyModifier*) aModifier;
+{
+        return [[[self alloc] initWithDuration:t modifier:aModifier] 
+      autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_x_property_modifier_action_a24e48541ff1b6b81dbab1a4f7f024746}{\index{C\-D\-X\-Property\-Modifier\-Action@{C\-D\-X\-Property\-Modifier\-Action}!init\-With\-Duration\-:modifier\-:@{init\-With\-Duration\-:modifier\-:}}
+\index{init\-With\-Duration\-:modifier\-:@{init\-With\-Duration\-:modifier\-:}!CDXPropertyModifierAction@{C\-D\-X\-Property\-Modifier\-Action}}
+\subsubsection[{init\-With\-Duration\-:modifier\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{t}
+\item[{modifier:({\bf C\-D\-Property\-Modifier}$\ast$)}]{a\-Modifier}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_x_property_modifier_action_a24e48541ff1b6b81dbab1a4f7f024746}
+initializes the action 
+
+Referenced by The\-Audio\-Code\-::test\-One\-:.
+
+
+\begin{DoxyCode}
+                      :(ccTime)t modifier:(CDPropertyModifier*) aModifier;
+{
+        if( (self=[super initWithDuration: t]) ) {
+                //Release the previous modifier
+                if (modifier) {
+                        [modifier release];
+                }
+                modifier = aModifier;
+                [modifier retain];
+                //lastSetValue = [modifier _getTargetProperty];//Issue 1304
+        }
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/\-Cocos\-Denshion/\-Cocos\-Denshion\-Extras/C\-D\-X\-Property\-Modifier\-Action.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/\-Cocos\-Denshion/\-Cocos\-Denshion\-Extras/C\-D\-X\-Property\-Modifier\-Action.\-m\end{DoxyCompactItemize}

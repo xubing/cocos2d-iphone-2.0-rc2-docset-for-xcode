@@ -1,0 +1,91 @@
+\hypertarget{interface_c_c_shaky3_d}{\section{C\-C\-Shaky3\-D Class Reference}
+\label{interface_c_c_shaky3_d}\index{C\-C\-Shaky3\-D@{C\-C\-Shaky3\-D}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Grid3\-D.\-h$>$}
+
+Inheritance diagram for C\-C\-Shaky3\-D\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.000000cm]{interface_c_c_shaky3_d}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_shaky3_d_aa012ce6b7d5e87f7b5d164116f465c64}{init\-With\-Range\-:shake\-Z\-:grid\-:duration\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_shaky3_d_a432e2f367823bf066d8fabf302087bb2}{action\-With\-Range\-:shake\-Z\-:grid\-:duration\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_shaky3_d_a90520aefe13a298111f95d807a3a7f10}{int {\bfseries randrange}}\label{interface_c_c_shaky3_d_a90520aefe13a298111f95d807a3a7f10}
+
+\item 
+\hypertarget{interface_c_c_shaky3_d_a65c9dfa44af7810de4faba6920a99781}{B\-O\-O\-L {\bfseries shake\-Z}}\label{interface_c_c_shaky3_d_a65c9dfa44af7810de4faba6920a99781}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_shaky3_d}{C\-C\-Shaky3\-D} action 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_shaky3_d_a432e2f367823bf066d8fabf302087bb2}{\index{C\-C\-Shaky3\-D@{C\-C\-Shaky3\-D}!action\-With\-Range\-:shake\-Z\-:grid\-:duration\-:@{action\-With\-Range\-:shake\-Z\-:grid\-:duration\-:}}
+\index{action\-With\-Range\-:shake\-Z\-:grid\-:duration\-:@{action\-With\-Range\-:shake\-Z\-:grid\-:duration\-:}!CCShaky3D@{C\-C\-Shaky3\-D}}
+\subsubsection[{action\-With\-Range\-:shake\-Z\-:grid\-:duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) action\-With\-Range\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{range}
+\item[{shakeZ:(B\-O\-O\-L)}]{shake\-Z}
+\item[{grid:({\bf cc\-Grid\-Size})}]{grid\-Size}
+\item[{duration:({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_shaky3_d_a432e2f367823bf066d8fabf302087bb2}
+creates the action with a range, shake Z vertices, a grid and duration 
+
+Referenced by Shaky3\-D\-Demo\-::action\-With\-Duration\-:.
+
+
+\begin{DoxyCode}
+                    :(int)range shakeZ:(BOOL)sz grid:(ccGridSize)gridSize 
+      duration:(ccTime)d
+{
+        return [[[self alloc] initWithRange:range shakeZ:sz grid:gridSize 
+      duration:d] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_shaky3_d_aa012ce6b7d5e87f7b5d164116f465c64}{\index{C\-C\-Shaky3\-D@{C\-C\-Shaky3\-D}!init\-With\-Range\-:shake\-Z\-:grid\-:duration\-:@{init\-With\-Range\-:shake\-Z\-:grid\-:duration\-:}}
+\index{init\-With\-Range\-:shake\-Z\-:grid\-:duration\-:@{init\-With\-Range\-:shake\-Z\-:grid\-:duration\-:}!CCShaky3D@{C\-C\-Shaky3\-D}}
+\subsubsection[{init\-With\-Range\-:shake\-Z\-:grid\-:duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Range\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{range}
+\item[{shakeZ:(B\-O\-O\-L)}]{shake\-Z}
+\item[{grid:({\bf cc\-Grid\-Size})}]{grid\-Size}
+\item[{duration:({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_shaky3_d_aa012ce6b7d5e87f7b5d164116f465c64}
+initializes the action with a range, shake Z vertices, a grid and duration 
+\begin{DoxyCode}
+                  :(int)range shakeZ:(BOOL)sz grid:(ccGridSize)gSize duration:(
+      ccTime)d
+{
+        if ( (self = [super initWithSize:gSize duration:d]) )
+        {
+                randrange = range;
+                shakeZ = sz;
+        }
+
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Grid3\-D.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Grid3\-D.\-m\end{DoxyCompactItemize}

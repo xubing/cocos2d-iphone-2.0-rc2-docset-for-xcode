@@ -1,0 +1,199 @@
+\hypertarget{classb2_gear_joint}{\section{b2\-Gear\-Joint Class Reference}
+\label{classb2_gear_joint}\index{b2\-Gear\-Joint@{b2\-Gear\-Joint}}
+}
+
+
+{\ttfamily \#include $<$b2\-Gear\-Joint.\-h$>$}
+
+Inheritance diagram for b2\-Gear\-Joint\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classb2_gear_joint}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_gear_joint_a2b5cdcb78c7ac3df4bd47e4195443a05}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{classb2_gear_joint_a2b5cdcb78c7ac3df4bd47e4195443a05}{Get\-Anchor\-A} () const }\label{classb2_gear_joint_a2b5cdcb78c7ac3df4bd47e4195443a05}
+
+\begin{DoxyCompactList}\small\item\em Get the anchor point on body\-A in world coordinates. \end{DoxyCompactList}\item 
+\hypertarget{classb2_gear_joint_a84b9aedb8918a98b84032c9f0f823e13}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{classb2_gear_joint_a84b9aedb8918a98b84032c9f0f823e13}{Get\-Anchor\-B} () const }\label{classb2_gear_joint_a84b9aedb8918a98b84032c9f0f823e13}
+
+\begin{DoxyCompactList}\small\item\em Get the anchor point on body\-B in world coordinates. \end{DoxyCompactList}\item 
+\hypertarget{classb2_gear_joint_ad415f3db70ba3e60a132ef668c263713}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{classb2_gear_joint_ad415f3db70ba3e60a132ef668c263713}{Get\-Reaction\-Force} (float32 inv\-\_\-dt) const }\label{classb2_gear_joint_ad415f3db70ba3e60a132ef668c263713}
+
+\begin{DoxyCompactList}\small\item\em Get the reaction force on body\-B at the joint anchor in Newtons. \end{DoxyCompactList}\item 
+\hypertarget{classb2_gear_joint_ae2c4b1ae1cf00f14331332c4fe9ae964}{float32 \hyperlink{classb2_gear_joint_ae2c4b1ae1cf00f14331332c4fe9ae964}{Get\-Reaction\-Torque} (float32 inv\-\_\-dt) const }\label{classb2_gear_joint_ae2c4b1ae1cf00f14331332c4fe9ae964}
+
+\begin{DoxyCompactList}\small\item\em Get the reaction torque on body\-B in N$\ast$m. \end{DoxyCompactList}\item 
+\hypertarget{classb2_gear_joint_acd3fb38982319f387d1eb7aeddd5311f}{\hyperlink{classb2_joint}{b2\-Joint} $\ast$ \hyperlink{classb2_gear_joint_acd3fb38982319f387d1eb7aeddd5311f}{Get\-Joint1} ()}\label{classb2_gear_joint_acd3fb38982319f387d1eb7aeddd5311f}
+
+\begin{DoxyCompactList}\small\item\em Get the first joint. \end{DoxyCompactList}\item 
+\hypertarget{classb2_gear_joint_af1673b8edd80f3ae3b868c3a18b7b058}{\hyperlink{classb2_joint}{b2\-Joint} $\ast$ \hyperlink{classb2_gear_joint_af1673b8edd80f3ae3b868c3a18b7b058}{Get\-Joint2} ()}\label{classb2_gear_joint_af1673b8edd80f3ae3b868c3a18b7b058}
+
+\begin{DoxyCompactList}\small\item\em Get the second joint. \end{DoxyCompactList}\item 
+\hypertarget{classb2_gear_joint_a21c867bdc00c15ade2f399d370f92636}{void \hyperlink{classb2_gear_joint_a21c867bdc00c15ade2f399d370f92636}{Set\-Ratio} (float32 ratio)}\label{classb2_gear_joint_a21c867bdc00c15ade2f399d370f92636}
+
+\begin{DoxyCompactList}\small\item\em Set/\-Get the gear ratio. \end{DoxyCompactList}\item 
+\hypertarget{classb2_gear_joint_a72758d0f94cb9bea6074d29a98d79162}{float32 {\bfseries Get\-Ratio} () const }\label{classb2_gear_joint_a72758d0f94cb9bea6074d29a98d79162}
+
+\item 
+\hypertarget{classb2_gear_joint_a1620b5a39e9da2b40d324c45736ad322}{void \hyperlink{classb2_gear_joint_a1620b5a39e9da2b40d324c45736ad322}{Dump} ()}\label{classb2_gear_joint_a1620b5a39e9da2b40d324c45736ad322}
+
+\begin{DoxyCompactList}\small\item\em Dump joint to dm\-Log. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_gear_joint_a4b247c79e74cb1e5b906527fe7d151ce}{{\bfseries b2\-Gear\-Joint} (const \hyperlink{structb2_gear_joint_def}{b2\-Gear\-Joint\-Def} $\ast$data)}\label{classb2_gear_joint_a4b247c79e74cb1e5b906527fe7d151ce}
+
+\item 
+\hypertarget{classb2_gear_joint_ad1d8e7b5434ad899c510dd223a72e6cb}{void {\bfseries Init\-Velocity\-Constraints} (const \hyperlink{structb2_solver_data}{b2\-Solver\-Data} \&data)}\label{classb2_gear_joint_ad1d8e7b5434ad899c510dd223a72e6cb}
+
+\item 
+\hypertarget{classb2_gear_joint_a7684e28e93a3dc88a0e84424be937355}{void {\bfseries Solve\-Velocity\-Constraints} (const \hyperlink{structb2_solver_data}{b2\-Solver\-Data} \&data)}\label{classb2_gear_joint_a7684e28e93a3dc88a0e84424be937355}
+
+\item 
+\hypertarget{classb2_gear_joint_a6be119465783ecb3f055695c7a713de2}{bool {\bfseries Solve\-Position\-Constraints} (const \hyperlink{structb2_solver_data}{b2\-Solver\-Data} \&data)}\label{classb2_gear_joint_a6be119465783ecb3f055695c7a713de2}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_gear_joint_a7694fc4574c774c22a8c202e0d49fd84}{\hyperlink{classb2_joint}{b2\-Joint} $\ast$ {\bfseries m\-\_\-joint1}}\label{classb2_gear_joint_a7694fc4574c774c22a8c202e0d49fd84}
+
+\item 
+\hypertarget{classb2_gear_joint_a94290117dd4f2467eee49ecc150b9eb6}{\hyperlink{classb2_joint}{b2\-Joint} $\ast$ {\bfseries m\-\_\-joint2}}\label{classb2_gear_joint_a94290117dd4f2467eee49ecc150b9eb6}
+
+\item 
+\hypertarget{classb2_gear_joint_a0819b72c766d69cb1995f6cca4e98853}{b2\-Joint\-Type {\bfseries m\-\_\-type\-A}}\label{classb2_gear_joint_a0819b72c766d69cb1995f6cca4e98853}
+
+\item 
+\hypertarget{classb2_gear_joint_a03e1959e04a361db79ae5da5ba76379e}{b2\-Joint\-Type {\bfseries m\-\_\-type\-B}}\label{classb2_gear_joint_a03e1959e04a361db79ae5da5ba76379e}
+
+\item 
+\hypertarget{classb2_gear_joint_a07e5f85b71bf335552835989dc013fe6}{\hyperlink{classb2_body}{b2\-Body} $\ast$ {\bfseries m\-\_\-body\-C}}\label{classb2_gear_joint_a07e5f85b71bf335552835989dc013fe6}
+
+\item 
+\hypertarget{classb2_gear_joint_ad3a1795c11b652b4b2f8bfc3ed96cb0b}{\hyperlink{classb2_body}{b2\-Body} $\ast$ {\bfseries m\-\_\-body\-D}}\label{classb2_gear_joint_ad3a1795c11b652b4b2f8bfc3ed96cb0b}
+
+\item 
+\hypertarget{classb2_gear_joint_acac78f2e3730fda540d1c7a74889bfc5}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Anchor\-A}}\label{classb2_gear_joint_acac78f2e3730fda540d1c7a74889bfc5}
+
+\item 
+\hypertarget{classb2_gear_joint_a864c3d4d7944f72783a073993530d9fd}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Anchor\-B}}\label{classb2_gear_joint_a864c3d4d7944f72783a073993530d9fd}
+
+\item 
+\hypertarget{classb2_gear_joint_a9361797683a30e70afd5b8690fe47ba3}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Anchor\-C}}\label{classb2_gear_joint_a9361797683a30e70afd5b8690fe47ba3}
+
+\item 
+\hypertarget{classb2_gear_joint_abdd5be52535b5b56e44fc27832d057d2}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Anchor\-D}}\label{classb2_gear_joint_abdd5be52535b5b56e44fc27832d057d2}
+
+\item 
+\hypertarget{classb2_gear_joint_a52ae3b3a06ad9dae6b3201404784cc18}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Axis\-C}}\label{classb2_gear_joint_a52ae3b3a06ad9dae6b3201404784cc18}
+
+\item 
+\hypertarget{classb2_gear_joint_a49cc9f1b74793dce3311cf7a35a8aee1}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Axis\-D}}\label{classb2_gear_joint_a49cc9f1b74793dce3311cf7a35a8aee1}
+
+\item 
+\hypertarget{classb2_gear_joint_a1ba0c6172cd2dd2017813bab7d1b268b}{float32 {\bfseries m\-\_\-reference\-Angle\-A}}\label{classb2_gear_joint_a1ba0c6172cd2dd2017813bab7d1b268b}
+
+\item 
+\hypertarget{classb2_gear_joint_a553920f723a1b7a38fd1d671101c5e4e}{float32 {\bfseries m\-\_\-reference\-Angle\-B}}\label{classb2_gear_joint_a553920f723a1b7a38fd1d671101c5e4e}
+
+\item 
+\hypertarget{classb2_gear_joint_af67d237380cdcbfe93053b1ceb72f17b}{float32 {\bfseries m\-\_\-constant}}\label{classb2_gear_joint_af67d237380cdcbfe93053b1ceb72f17b}
+
+\item 
+\hypertarget{classb2_gear_joint_ad6b9106922b65f873dd02c6e68e6778a}{float32 {\bfseries m\-\_\-ratio}}\label{classb2_gear_joint_ad6b9106922b65f873dd02c6e68e6778a}
+
+\item 
+\hypertarget{classb2_gear_joint_ae19e7fb67c7623f39776f1160b76d62f}{float32 {\bfseries m\-\_\-impulse}}\label{classb2_gear_joint_ae19e7fb67c7623f39776f1160b76d62f}
+
+\item 
+\hypertarget{classb2_gear_joint_adb00e71e60a222e432b57c95c38b8bd7}{int32 {\bfseries m\-\_\-index\-A}}\label{classb2_gear_joint_adb00e71e60a222e432b57c95c38b8bd7}
+
+\item 
+\hypertarget{classb2_gear_joint_a5cf185f4e4b5d5e1780ba2c085ec2e6e}{int32 {\bfseries m\-\_\-index\-B}}\label{classb2_gear_joint_a5cf185f4e4b5d5e1780ba2c085ec2e6e}
+
+\item 
+\hypertarget{classb2_gear_joint_a46528e9a9a33a4d67dd5b2abb3d1dec5}{int32 {\bfseries m\-\_\-index\-C}}\label{classb2_gear_joint_a46528e9a9a33a4d67dd5b2abb3d1dec5}
+
+\item 
+\hypertarget{classb2_gear_joint_a068be34dbdf39ac59c7a5bb7777d550f}{int32 {\bfseries m\-\_\-index\-D}}\label{classb2_gear_joint_a068be34dbdf39ac59c7a5bb7777d550f}
+
+\item 
+\hypertarget{classb2_gear_joint_afb46a5545846cc085f2aad02a05acc86}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-lc\-A}}\label{classb2_gear_joint_afb46a5545846cc085f2aad02a05acc86}
+
+\item 
+\hypertarget{classb2_gear_joint_a4f933756b7e6b9ec060b105d0fb6689b}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-lc\-B}}\label{classb2_gear_joint_a4f933756b7e6b9ec060b105d0fb6689b}
+
+\item 
+\hypertarget{classb2_gear_joint_a9eaca477247eb71dae06f12842bc636d}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-lc\-C}}\label{classb2_gear_joint_a9eaca477247eb71dae06f12842bc636d}
+
+\item 
+\hypertarget{classb2_gear_joint_a21c4c7aa8c0ba7ccf9d4f786a31e5553}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-lc\-D}}\label{classb2_gear_joint_a21c4c7aa8c0ba7ccf9d4f786a31e5553}
+
+\item 
+\hypertarget{classb2_gear_joint_a5f425a3ff6a4d08090be512ee56993c5}{float32 {\bfseries m\-\_\-m\-A}}\label{classb2_gear_joint_a5f425a3ff6a4d08090be512ee56993c5}
+
+\item 
+\hypertarget{classb2_gear_joint_a83985722b901f36b59e29b98c2bbb1af}{float32 {\bfseries m\-\_\-m\-B}}\label{classb2_gear_joint_a83985722b901f36b59e29b98c2bbb1af}
+
+\item 
+\hypertarget{classb2_gear_joint_a79253d1b43531e5acdf36a3f710c583a}{float32 {\bfseries m\-\_\-m\-C}}\label{classb2_gear_joint_a79253d1b43531e5acdf36a3f710c583a}
+
+\item 
+\hypertarget{classb2_gear_joint_a7a3685b9bb07b2d81c58b96ff662c5ce}{float32 {\bfseries m\-\_\-m\-D}}\label{classb2_gear_joint_a7a3685b9bb07b2d81c58b96ff662c5ce}
+
+\item 
+\hypertarget{classb2_gear_joint_a138784eb59950e25125e45087945b717}{float32 {\bfseries m\-\_\-i\-A}}\label{classb2_gear_joint_a138784eb59950e25125e45087945b717}
+
+\item 
+\hypertarget{classb2_gear_joint_acca792262071441bd6fbfc891fcaf942}{float32 {\bfseries m\-\_\-i\-B}}\label{classb2_gear_joint_acca792262071441bd6fbfc891fcaf942}
+
+\item 
+\hypertarget{classb2_gear_joint_ac4e6493093914f78e0c8f79248041a1c}{float32 {\bfseries m\-\_\-i\-C}}\label{classb2_gear_joint_ac4e6493093914f78e0c8f79248041a1c}
+
+\item 
+\hypertarget{classb2_gear_joint_ad05416c4e98a30e4eb9297ff20b38c1a}{float32 {\bfseries m\-\_\-i\-D}}\label{classb2_gear_joint_ad05416c4e98a30e4eb9297ff20b38c1a}
+
+\item 
+\hypertarget{classb2_gear_joint_a23eb9f668936f931d40f930e085dd5a0}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-\-Jv\-A\-C}}\label{classb2_gear_joint_a23eb9f668936f931d40f930e085dd5a0}
+
+\item 
+\hypertarget{classb2_gear_joint_ab00b00c061d8b9e461f76ac4d72aac8c}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-\-Jv\-B\-D}}\label{classb2_gear_joint_ab00b00c061d8b9e461f76ac4d72aac8c}
+
+\item 
+\hypertarget{classb2_gear_joint_a3774fc69538e658f123d9437934aed70}{float32 {\bfseries m\-\_\-\-Jw\-A}}\label{classb2_gear_joint_a3774fc69538e658f123d9437934aed70}
+
+\item 
+\hypertarget{classb2_gear_joint_afcdb0ebe31ff8039771d006f4b87645c}{float32 {\bfseries m\-\_\-\-Jw\-B}}\label{classb2_gear_joint_afcdb0ebe31ff8039771d006f4b87645c}
+
+\item 
+\hypertarget{classb2_gear_joint_ac9b8f418c8f79392049afdf18aa6dc3e}{float32 {\bfseries m\-\_\-\-Jw\-C}}\label{classb2_gear_joint_ac9b8f418c8f79392049afdf18aa6dc3e}
+
+\item 
+\hypertarget{classb2_gear_joint_ac2d00521ef5f7c27b1747ad54d4ad5c2}{float32 {\bfseries m\-\_\-\-Jw\-D}}\label{classb2_gear_joint_ac2d00521ef5f7c27b1747ad54d4ad5c2}
+
+\item 
+\hypertarget{classb2_gear_joint_a71ac3578918bc97d257d652777b6b87f}{float32 {\bfseries m\-\_\-mass}}\label{classb2_gear_joint_a71ac3578918bc97d257d652777b6b87f}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_gear_joint_a54ade8ed3d794298108d7f4c4e4793fa}{class {\bfseries b2\-Joint}}\label{classb2_gear_joint_a54ade8ed3d794298108d7f4c4e4793fa}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A gear joint is used to connect two joints together. Either joint can be a revolute or prismatic joint. You specify a gear ratio to bind the motions together\-: coordinate1 + ratio $\ast$ coordinate2 = constant The ratio can be negative or positive. If one joint is a revolute joint and the other joint is a prismatic joint, then the ratio will have units of length or units of 1/length. \begin{DoxyWarning}{Warning}
+You have to manually destroy the gear joint if joint1 or joint2 is destroyed. 
+\end{DoxyWarning}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Dynamics/\-Joints/b2\-Gear\-Joint.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Dynamics/\-Joints/b2\-Gear\-Joint.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,94 @@
+\hypertarget{interface_c_c_shuffle_tiles}{\section{C\-C\-Shuffle\-Tiles Class Reference}
+\label{interface_c_c_shuffle_tiles}\index{C\-C\-Shuffle\-Tiles@{C\-C\-Shuffle\-Tiles}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Tiled\-Grid.\-h$>$}
+
+Inheritance diagram for C\-C\-Shuffle\-Tiles\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.000000cm]{interface_c_c_shuffle_tiles}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_shuffle_tiles_a963e3e36bf67d22575ae949b7a56477f}{init\-With\-Seed\-:grid\-:duration\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_shuffle_tiles_acbe478d597e7b1edc4054f894b4c6970}{action\-With\-Seed\-:grid\-:duration\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_shuffle_tiles_a4e01ac965a3f3fcd1a9540fa669b45f0}{int {\bfseries seed}}\label{interface_c_c_shuffle_tiles_a4e01ac965a3f3fcd1a9540fa669b45f0}
+
+\item 
+\hypertarget{interface_c_c_shuffle_tiles_aa048d40d79d4eee8287e829e7c32fbab}{N\-S\-U\-Integer {\bfseries tiles\-Count}}\label{interface_c_c_shuffle_tiles_aa048d40d79d4eee8287e829e7c32fbab}
+
+\item 
+\hypertarget{interface_c_c_shuffle_tiles_aedeb48463358df263c59d36b3c3f5750}{int $\ast$ {\bfseries tiles\-Order}}\label{interface_c_c_shuffle_tiles_aedeb48463358df263c59d36b3c3f5750}
+
+\item 
+\hypertarget{interface_c_c_shuffle_tiles_ad398c11180f1a6bd613614252b34a98d}{void $\ast$ {\bfseries tiles}}\label{interface_c_c_shuffle_tiles_ad398c11180f1a6bd613614252b34a98d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_shuffle_tiles}{C\-C\-Shuffle\-Tiles} action Shuffle the tiles in random order 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_shuffle_tiles_acbe478d597e7b1edc4054f894b4c6970}{\index{C\-C\-Shuffle\-Tiles@{C\-C\-Shuffle\-Tiles}!action\-With\-Seed\-:grid\-:duration\-:@{action\-With\-Seed\-:grid\-:duration\-:}}
+\index{action\-With\-Seed\-:grid\-:duration\-:@{action\-With\-Seed\-:grid\-:duration\-:}!CCShuffleTiles@{C\-C\-Shuffle\-Tiles}}
+\subsubsection[{action\-With\-Seed\-:grid\-:duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) action\-With\-Seed\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{s}
+\item[{grid:({\bf cc\-Grid\-Size})}]{grid\-Size}
+\item[{duration:({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_shuffle_tiles_acbe478d597e7b1edc4054f894b4c6970}
+creates the action with a random seed, the grid size and the duration 
+
+Referenced by Shuffle\-Tiles\-Demo\-::action\-With\-Duration\-:.
+
+
+\begin{DoxyCode}
+                   :(int)s grid:(ccGridSize)gridSize duration:(ccTime)d
+{
+        return [[[self alloc] initWithSeed:s grid:gridSize duration:d] 
+      autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_shuffle_tiles_a963e3e36bf67d22575ae949b7a56477f}{\index{C\-C\-Shuffle\-Tiles@{C\-C\-Shuffle\-Tiles}!init\-With\-Seed\-:grid\-:duration\-:@{init\-With\-Seed\-:grid\-:duration\-:}}
+\index{init\-With\-Seed\-:grid\-:duration\-:@{init\-With\-Seed\-:grid\-:duration\-:}!CCShuffleTiles@{C\-C\-Shuffle\-Tiles}}
+\subsubsection[{init\-With\-Seed\-:grid\-:duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Seed\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{s}
+\item[{grid:({\bf cc\-Grid\-Size})}]{grid\-Size}
+\item[{duration:({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_shuffle_tiles_a963e3e36bf67d22575ae949b7a56477f}
+initializes the action with a random seed, the grid size and the duration 
+\begin{DoxyCode}
+                 :(int)s grid:(ccGridSize)gSize duration:(ccTime)d
+{
+        if ( (self = [super initWithSize:gSize duration:d]) )
+        {
+                seed = s;
+                tilesOrder = nil;
+                tiles = nil;
+        }
+
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Tiled\-Grid.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Tiled\-Grid.\-m\end{DoxyCompactItemize}

@@ -1,0 +1,314 @@
+\hypertarget{classjs_1_1_vector}{\section{js\-:\-:Vector$<$ T, N, Alloc\-Policy $>$ Class Template Reference}
+\label{classjs_1_1_vector}\index{js\-::\-Vector$<$ T, N, Alloc\-Policy $>$@{js\-::\-Vector$<$ T, N, Alloc\-Policy $>$}}
+}
+Inheritance diagram for js\-:\-:Vector$<$ T, N, Alloc\-Policy $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classjs_1_1_vector}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bfseries Elem\-Size}
+\item 
+struct {\bfseries Elem\-Size$<$ 0, Dummy $>$}
+\item 
+class \hyperlink{classjs_1_1_vector_1_1_range}{Range}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries Inline\-Length} =  N
+ \}
+\item 
+enum \{ {\bfseries Inline\-Length} =  N
+ \}
+\item 
+\hypertarget{classjs_1_1_vector_a8f587c6240a70748cdfdcae3c48cffda}{typedef T {\bfseries Element\-Type}}\label{classjs_1_1_vector_a8f587c6240a70748cdfdcae3c48cffda}
+
+\item 
+\hypertarget{classjs_1_1_vector_a8f587c6240a70748cdfdcae3c48cffda}{typedef T {\bfseries Element\-Type}}\label{classjs_1_1_vector_a8f587c6240a70748cdfdcae3c48cffda}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classjs_1_1_vector_aaba681664ad80aa6e49833597fda69bc}{{\bfseries Vector} (\hyperlink{class_alloc_policy}{Alloc\-Policy}=\hyperlink{class_alloc_policy}{Alloc\-Policy}())}\label{classjs_1_1_vector_aaba681664ad80aa6e49833597fda69bc}
+
+\item 
+\hypertarget{classjs_1_1_vector_a2039c1845b879b50433e200a75d5d6b1}{{\bfseries Vector} (Move\-Ref$<$ \hyperlink{classjs_1_1_vector}{Vector} $>$)}\label{classjs_1_1_vector_a2039c1845b879b50433e200a75d5d6b1}
+
+\item 
+\hypertarget{classjs_1_1_vector_a3709179d9318b43fb61afdfbc456a9d8}{\hyperlink{classjs_1_1_vector}{Vector} \& {\bfseries operator=} (Move\-Ref$<$ \hyperlink{classjs_1_1_vector}{Vector} $>$)}\label{classjs_1_1_vector_a3709179d9318b43fb61afdfbc456a9d8}
+
+\item 
+\hypertarget{classjs_1_1_vector_aef924f26c8d1857acf40d3aed7341275}{const \hyperlink{class_alloc_policy}{Alloc\-Policy} \& {\bfseries alloc\-Policy} () const }\label{classjs_1_1_vector_aef924f26c8d1857acf40d3aed7341275}
+
+\item 
+\hypertarget{classjs_1_1_vector_ab84d4645107b3f10c987f8f1bbba2371}{\hyperlink{class_alloc_policy}{Alloc\-Policy} \& {\bfseries alloc\-Policy} ()}\label{classjs_1_1_vector_ab84d4645107b3f10c987f8f1bbba2371}
+
+\item 
+\hypertarget{classjs_1_1_vector_a36d862370dce43281c541b842f20b009}{size\-\_\-t {\bfseries length} () const }\label{classjs_1_1_vector_a36d862370dce43281c541b842f20b009}
+
+\item 
+\hypertarget{classjs_1_1_vector_a413c3cdb80d72484fc2d5a8c2740f0c1}{bool {\bfseries empty} () const }\label{classjs_1_1_vector_a413c3cdb80d72484fc2d5a8c2740f0c1}
+
+\item 
+\hypertarget{classjs_1_1_vector_af989d8d525038c98eeabb4147f353e35}{size\-\_\-t {\bfseries capacity} () const }\label{classjs_1_1_vector_af989d8d525038c98eeabb4147f353e35}
+
+\item 
+\hypertarget{classjs_1_1_vector_a26a8efd9470e24c75e9776d5819b1476}{T $\ast$ {\bfseries begin} ()}\label{classjs_1_1_vector_a26a8efd9470e24c75e9776d5819b1476}
+
+\item 
+\hypertarget{classjs_1_1_vector_a47eaeb8efb888458f1e5d2f0be324bd9}{const T $\ast$ {\bfseries begin} () const }\label{classjs_1_1_vector_a47eaeb8efb888458f1e5d2f0be324bd9}
+
+\item 
+\hypertarget{classjs_1_1_vector_a372381fc9bdcccd29940a782402cf1f9}{T $\ast$ {\bfseries end} ()}\label{classjs_1_1_vector_a372381fc9bdcccd29940a782402cf1f9}
+
+\item 
+\hypertarget{classjs_1_1_vector_a77f60b63474d82969b8ab395c27ff2ae}{const T $\ast$ {\bfseries end} () const }\label{classjs_1_1_vector_a77f60b63474d82969b8ab395c27ff2ae}
+
+\item 
+\hypertarget{classjs_1_1_vector_a820f141cc552175beb200d1d57145e73}{T \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\-\_\-t i)}\label{classjs_1_1_vector_a820f141cc552175beb200d1d57145e73}
+
+\item 
+\hypertarget{classjs_1_1_vector_acffb298a779d3f8e064816ade535510e}{const T \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\-\_\-t i) const }\label{classjs_1_1_vector_acffb298a779d3f8e064816ade535510e}
+
+\item 
+\hypertarget{classjs_1_1_vector_afc533b99c9ab8e99d8c971094d931698}{T \& {\bfseries back} ()}\label{classjs_1_1_vector_afc533b99c9ab8e99d8c971094d931698}
+
+\item 
+\hypertarget{classjs_1_1_vector_a6b3d50495fc8ff0f6d705edcd9fd9d9a}{const T \& {\bfseries back} () const }\label{classjs_1_1_vector_a6b3d50495fc8ff0f6d705edcd9fd9d9a}
+
+\item 
+\hypertarget{classjs_1_1_vector_a82ccdcf96d6cb075116438fc51704a47}{\hyperlink{classjs_1_1_vector_1_1_range}{Range} {\bfseries all} ()}\label{classjs_1_1_vector_a82ccdcf96d6cb075116438fc51704a47}
+
+\item 
+\hypertarget{classjs_1_1_vector_a4fbba7d44280ca95ccbcaf67cf5d0645}{bool {\bfseries reserve} (size\-\_\-t capacity)}\label{classjs_1_1_vector_a4fbba7d44280ca95ccbcaf67cf5d0645}
+
+\item 
+\hypertarget{classjs_1_1_vector_afa66f3e3d545ee34eec4601422b318f4}{void {\bfseries shrink\-By} (size\-\_\-t incr)}\label{classjs_1_1_vector_afa66f3e3d545ee34eec4601422b318f4}
+
+\item 
+\hypertarget{classjs_1_1_vector_aa15923066a81fa1a6d00d180f9720daa}{bool {\bfseries grow\-By} (size\-\_\-t incr)}\label{classjs_1_1_vector_aa15923066a81fa1a6d00d180f9720daa}
+
+\item 
+\hypertarget{classjs_1_1_vector_a1a692bd843f50988a41c519a1ff71f2b}{bool {\bfseries resize} (size\-\_\-t new\-Length)}\label{classjs_1_1_vector_a1a692bd843f50988a41c519a1ff71f2b}
+
+\item 
+\hypertarget{classjs_1_1_vector_aaafdcb0553750298b8be3998eb87c489}{bool {\bfseries grow\-By\-Uninitialized} (size\-\_\-t incr)}\label{classjs_1_1_vector_aaafdcb0553750298b8be3998eb87c489}
+
+\item 
+\hypertarget{classjs_1_1_vector_a2237d7d028758ebe5502ef13c80c1f1a}{bool {\bfseries resize\-Uninitialized} (size\-\_\-t new\-Length)}\label{classjs_1_1_vector_a2237d7d028758ebe5502ef13c80c1f1a}
+
+\item 
+\hypertarget{classjs_1_1_vector_a70b3726667abddbc51262a04bb4c7fc1}{void {\bfseries clear} ()}\label{classjs_1_1_vector_a70b3726667abddbc51262a04bb4c7fc1}
+
+\item 
+\hypertarget{classjs_1_1_vector_af27d5449e9dedff4a151ab1c12cf5ec7}{void {\bfseries clear\-And\-Free} ()}\label{classjs_1_1_vector_af27d5449e9dedff4a151ab1c12cf5ec7}
+
+\item 
+\hypertarget{classjs_1_1_vector_a1dc45f8e9014a9d93473a7b2bd4b361d}{{\footnotesize template$<$class U $>$ }\\bool {\bfseries append} (U t)}\label{classjs_1_1_vector_a1dc45f8e9014a9d93473a7b2bd4b361d}
+
+\item 
+\hypertarget{classjs_1_1_vector_a91d7e6b6c9e3b6880b5b7353ab39204c}{bool {\bfseries append\-N} (const T \&t, size\-\_\-t n)}\label{classjs_1_1_vector_a91d7e6b6c9e3b6880b5b7353ab39204c}
+
+\item 
+\hypertarget{classjs_1_1_vector_a3e14a1d0d3fb816a30f9ba95b4092e93}{{\footnotesize template$<$class U $>$ }\\bool {\bfseries append} (const U $\ast$begin, const U $\ast$end)}\label{classjs_1_1_vector_a3e14a1d0d3fb816a30f9ba95b4092e93}
+
+\item 
+\hypertarget{classjs_1_1_vector_ae8eb7dfe0e0bdbb28b3c1e9ab390aca8}{{\footnotesize template$<$class U $>$ }\\bool {\bfseries append} (const U $\ast$begin, size\-\_\-t length)}\label{classjs_1_1_vector_ae8eb7dfe0e0bdbb28b3c1e9ab390aca8}
+
+\item 
+\hypertarget{classjs_1_1_vector_a11f18590dcfc862c0d3d25c83f906b0e}{{\footnotesize template$<$class U , size\-\_\-t O, class B\-P $>$ }\\bool {\bfseries append} (const \hyperlink{classjs_1_1_vector}{Vector}$<$ U, O, B\-P $>$ \&other)}\label{classjs_1_1_vector_a11f18590dcfc862c0d3d25c83f906b0e}
+
+\item 
+\hypertarget{classjs_1_1_vector_af90df066edf4db743317ce590b4e9273}{void {\bfseries infallible\-Append} (const T \&t)}\label{classjs_1_1_vector_af90df066edf4db743317ce590b4e9273}
+
+\item 
+\hypertarget{classjs_1_1_vector_a7049dead24cebcb64b6a594e3851a771}{void {\bfseries infallible\-Append\-N} (const T \&t, size\-\_\-t n)}\label{classjs_1_1_vector_a7049dead24cebcb64b6a594e3851a771}
+
+\item 
+\hypertarget{classjs_1_1_vector_addb38bd89f51ab343a76c0e9d48f0a47}{{\footnotesize template$<$class U $>$ }\\void {\bfseries infallible\-Append} (const U $\ast$begin, const U $\ast$end)}\label{classjs_1_1_vector_addb38bd89f51ab343a76c0e9d48f0a47}
+
+\item 
+\hypertarget{classjs_1_1_vector_a3607576bca45b162cf94adcdacea7cf0}{{\footnotesize template$<$class U $>$ }\\void {\bfseries infallible\-Append} (const U $\ast$begin, size\-\_\-t length)}\label{classjs_1_1_vector_a3607576bca45b162cf94adcdacea7cf0}
+
+\item 
+\hypertarget{classjs_1_1_vector_a4468968b2424fef8bfd860528b690ae8}{{\footnotesize template$<$class U , size\-\_\-t O, class B\-P $>$ }\\void {\bfseries infallible\-Append} (const \hyperlink{classjs_1_1_vector}{Vector}$<$ U, O, B\-P $>$ \&other)}\label{classjs_1_1_vector_a4468968b2424fef8bfd860528b690ae8}
+
+\item 
+\hypertarget{classjs_1_1_vector_ad8e2e0e181d936a8bdd2e893b7bcbf27}{void {\bfseries pop\-Back} ()}\label{classjs_1_1_vector_ad8e2e0e181d936a8bdd2e893b7bcbf27}
+
+\item 
+\hypertarget{classjs_1_1_vector_a4ecd1ca2a3fcadac05a2a49895f4e478}{T {\bfseries pop\-Copy} ()}\label{classjs_1_1_vector_a4ecd1ca2a3fcadac05a2a49895f4e478}
+
+\item 
+\hypertarget{classjs_1_1_vector_ae958f81772b58d0868aef629a9a4330f}{T $\ast$ {\bfseries extract\-Raw\-Buffer} ()}\label{classjs_1_1_vector_ae958f81772b58d0868aef629a9a4330f}
+
+\item 
+\hypertarget{classjs_1_1_vector_acd602ca06e8116719fd334f220090bb5}{void {\bfseries replace\-Raw\-Buffer} (T $\ast$p, size\-\_\-t length)}\label{classjs_1_1_vector_acd602ca06e8116719fd334f220090bb5}
+
+\item 
+\hypertarget{classjs_1_1_vector_ad13946bf7c66096a116104bd70a15250}{bool {\bfseries insert} (T $\ast$p, const T \&val)}\label{classjs_1_1_vector_ad13946bf7c66096a116104bd70a15250}
+
+\item 
+\hypertarget{classjs_1_1_vector_a1f69a134f4784e5e8ddaf457dd776504}{void {\bfseries erase} (T $\ast$t)}\label{classjs_1_1_vector_a1f69a134f4784e5e8ddaf457dd776504}
+
+\item 
+\hypertarget{classjs_1_1_vector_ad71e14f9a9fc82fe27a26f27edddac24}{size\-\_\-t {\bfseries size\-Of\-Excluding\-This} (J\-S\-Malloc\-Size\-Of\-Fun malloc\-Size\-Of) const }\label{classjs_1_1_vector_ad71e14f9a9fc82fe27a26f27edddac24}
+
+\item 
+\hypertarget{classjs_1_1_vector_a5c8d57fde1f949f5185ade2a08327ede}{size\-\_\-t {\bfseries size\-Of\-Including\-This} (J\-S\-Malloc\-Size\-Of\-Fun malloc\-Size\-Of) const }\label{classjs_1_1_vector_a5c8d57fde1f949f5185ade2a08327ede}
+
+\item 
+\hypertarget{classjs_1_1_vector_a6898671cd5ba28c4c818dead2666e0b6}{{\bfseries Vector} (\hyperlink{class_alloc_policy}{Alloc\-Policy}=\hyperlink{class_alloc_policy}{Alloc\-Policy}())}\label{classjs_1_1_vector_a6898671cd5ba28c4c818dead2666e0b6}
+
+\item 
+\hypertarget{classjs_1_1_vector_ac20f3e322439426f0a44c92fff23ac5b}{{\bfseries Vector} (Move\-Ref$<$ \hyperlink{classjs_1_1_vector}{Vector} $>$)}\label{classjs_1_1_vector_ac20f3e322439426f0a44c92fff23ac5b}
+
+\item 
+\hypertarget{classjs_1_1_vector_a8642d5157c4a60c8859ee4618452357f}{\hyperlink{classjs_1_1_vector}{Vector} \& {\bfseries operator=} (Move\-Ref$<$ \hyperlink{classjs_1_1_vector}{Vector} $>$)}\label{classjs_1_1_vector_a8642d5157c4a60c8859ee4618452357f}
+
+\item 
+\hypertarget{classjs_1_1_vector_aef924f26c8d1857acf40d3aed7341275}{const \hyperlink{class_alloc_policy}{Alloc\-Policy} \& {\bfseries alloc\-Policy} () const }\label{classjs_1_1_vector_aef924f26c8d1857acf40d3aed7341275}
+
+\item 
+\hypertarget{classjs_1_1_vector_ab84d4645107b3f10c987f8f1bbba2371}{\hyperlink{class_alloc_policy}{Alloc\-Policy} \& {\bfseries alloc\-Policy} ()}\label{classjs_1_1_vector_ab84d4645107b3f10c987f8f1bbba2371}
+
+\item 
+\hypertarget{classjs_1_1_vector_a36d862370dce43281c541b842f20b009}{size\-\_\-t {\bfseries length} () const }\label{classjs_1_1_vector_a36d862370dce43281c541b842f20b009}
+
+\item 
+\hypertarget{classjs_1_1_vector_a413c3cdb80d72484fc2d5a8c2740f0c1}{bool {\bfseries empty} () const }\label{classjs_1_1_vector_a413c3cdb80d72484fc2d5a8c2740f0c1}
+
+\item 
+\hypertarget{classjs_1_1_vector_af989d8d525038c98eeabb4147f353e35}{size\-\_\-t {\bfseries capacity} () const }\label{classjs_1_1_vector_af989d8d525038c98eeabb4147f353e35}
+
+\item 
+\hypertarget{classjs_1_1_vector_a26a8efd9470e24c75e9776d5819b1476}{T $\ast$ {\bfseries begin} ()}\label{classjs_1_1_vector_a26a8efd9470e24c75e9776d5819b1476}
+
+\item 
+\hypertarget{classjs_1_1_vector_a47eaeb8efb888458f1e5d2f0be324bd9}{const T $\ast$ {\bfseries begin} () const }\label{classjs_1_1_vector_a47eaeb8efb888458f1e5d2f0be324bd9}
+
+\item 
+\hypertarget{classjs_1_1_vector_a372381fc9bdcccd29940a782402cf1f9}{T $\ast$ {\bfseries end} ()}\label{classjs_1_1_vector_a372381fc9bdcccd29940a782402cf1f9}
+
+\item 
+\hypertarget{classjs_1_1_vector_a77f60b63474d82969b8ab395c27ff2ae}{const T $\ast$ {\bfseries end} () const }\label{classjs_1_1_vector_a77f60b63474d82969b8ab395c27ff2ae}
+
+\item 
+\hypertarget{classjs_1_1_vector_a820f141cc552175beb200d1d57145e73}{T \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\-\_\-t i)}\label{classjs_1_1_vector_a820f141cc552175beb200d1d57145e73}
+
+\item 
+\hypertarget{classjs_1_1_vector_acffb298a779d3f8e064816ade535510e}{const T \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\-\_\-t i) const }\label{classjs_1_1_vector_acffb298a779d3f8e064816ade535510e}
+
+\item 
+\hypertarget{classjs_1_1_vector_afc533b99c9ab8e99d8c971094d931698}{T \& {\bfseries back} ()}\label{classjs_1_1_vector_afc533b99c9ab8e99d8c971094d931698}
+
+\item 
+\hypertarget{classjs_1_1_vector_a6b3d50495fc8ff0f6d705edcd9fd9d9a}{const T \& {\bfseries back} () const }\label{classjs_1_1_vector_a6b3d50495fc8ff0f6d705edcd9fd9d9a}
+
+\item 
+\hypertarget{classjs_1_1_vector_a82ccdcf96d6cb075116438fc51704a47}{\hyperlink{classjs_1_1_vector_1_1_range}{Range} {\bfseries all} ()}\label{classjs_1_1_vector_a82ccdcf96d6cb075116438fc51704a47}
+
+\item 
+\hypertarget{classjs_1_1_vector_a01cb4ce2ddb51c2d6cc9eadd5a071271}{bool {\bfseries reserve} (size\-\_\-t capacity)}\label{classjs_1_1_vector_a01cb4ce2ddb51c2d6cc9eadd5a071271}
+
+\item 
+\hypertarget{classjs_1_1_vector_a641397eeeae2dc12653ea6fb19d697fa}{void {\bfseries shrink\-By} (size\-\_\-t incr)}\label{classjs_1_1_vector_a641397eeeae2dc12653ea6fb19d697fa}
+
+\item 
+\hypertarget{classjs_1_1_vector_a06fae19ee630bf7917778eb025f6d350}{bool {\bfseries grow\-By} (size\-\_\-t incr)}\label{classjs_1_1_vector_a06fae19ee630bf7917778eb025f6d350}
+
+\item 
+\hypertarget{classjs_1_1_vector_a1a692bd843f50988a41c519a1ff71f2b}{bool {\bfseries resize} (size\-\_\-t new\-Length)}\label{classjs_1_1_vector_a1a692bd843f50988a41c519a1ff71f2b}
+
+\item 
+\hypertarget{classjs_1_1_vector_a499fdf78a6fb97c4add4eff8d196f2b7}{bool {\bfseries grow\-By\-Uninitialized} (size\-\_\-t incr)}\label{classjs_1_1_vector_a499fdf78a6fb97c4add4eff8d196f2b7}
+
+\item 
+\hypertarget{classjs_1_1_vector_a6b5b2c43a3c7df24f06f2e8d856e0161}{bool {\bfseries resize\-Uninitialized} (size\-\_\-t new\-Length)}\label{classjs_1_1_vector_a6b5b2c43a3c7df24f06f2e8d856e0161}
+
+\item 
+\hypertarget{classjs_1_1_vector_a7736be066f2c716281516a5344d3cfc7}{void {\bfseries clear} ()}\label{classjs_1_1_vector_a7736be066f2c716281516a5344d3cfc7}
+
+\item 
+\hypertarget{classjs_1_1_vector_a9dd043059de6dfd18aed5ce60c3f0f6d}{void {\bfseries clear\-And\-Free} ()}\label{classjs_1_1_vector_a9dd043059de6dfd18aed5ce60c3f0f6d}
+
+\item 
+\hypertarget{classjs_1_1_vector_a575b79c9783c12b16d854b992746234b}{{\footnotesize template$<$class U $>$ }\\bool {\bfseries append} (U t)}\label{classjs_1_1_vector_a575b79c9783c12b16d854b992746234b}
+
+\item 
+\hypertarget{classjs_1_1_vector_a3c0e61afac84cb6430de9e654605c949}{bool {\bfseries append\-N} (const T \&t, size\-\_\-t n)}\label{classjs_1_1_vector_a3c0e61afac84cb6430de9e654605c949}
+
+\item 
+\hypertarget{classjs_1_1_vector_ab32e4edfef7beb1b12624a89435966d0}{{\footnotesize template$<$class U $>$ }\\bool {\bfseries append} (const U $\ast$begin, const U $\ast$end)}\label{classjs_1_1_vector_ab32e4edfef7beb1b12624a89435966d0}
+
+\item 
+\hypertarget{classjs_1_1_vector_aed8b348be5038015c04ebf9aa644a000}{{\footnotesize template$<$class U $>$ }\\bool {\bfseries append} (const U $\ast$begin, size\-\_\-t length)}\label{classjs_1_1_vector_aed8b348be5038015c04ebf9aa644a000}
+
+\item 
+\hypertarget{classjs_1_1_vector_a21f2bb19acb578a96d0467ee9a0a052c}{{\footnotesize template$<$class U , size\-\_\-t O, class B\-P $>$ }\\bool {\bfseries append} (const \hyperlink{classjs_1_1_vector}{Vector}$<$ U, O, B\-P $>$ \&other)}\label{classjs_1_1_vector_a21f2bb19acb578a96d0467ee9a0a052c}
+
+\item 
+\hypertarget{classjs_1_1_vector_af90df066edf4db743317ce590b4e9273}{void {\bfseries infallible\-Append} (const T \&t)}\label{classjs_1_1_vector_af90df066edf4db743317ce590b4e9273}
+
+\item 
+\hypertarget{classjs_1_1_vector_a7049dead24cebcb64b6a594e3851a771}{void {\bfseries infallible\-Append\-N} (const T \&t, size\-\_\-t n)}\label{classjs_1_1_vector_a7049dead24cebcb64b6a594e3851a771}
+
+\item 
+\hypertarget{classjs_1_1_vector_addb38bd89f51ab343a76c0e9d48f0a47}{{\footnotesize template$<$class U $>$ }\\void {\bfseries infallible\-Append} (const U $\ast$begin, const U $\ast$end)}\label{classjs_1_1_vector_addb38bd89f51ab343a76c0e9d48f0a47}
+
+\item 
+\hypertarget{classjs_1_1_vector_a3607576bca45b162cf94adcdacea7cf0}{{\footnotesize template$<$class U $>$ }\\void {\bfseries infallible\-Append} (const U $\ast$begin, size\-\_\-t length)}\label{classjs_1_1_vector_a3607576bca45b162cf94adcdacea7cf0}
+
+\item 
+\hypertarget{classjs_1_1_vector_a4468968b2424fef8bfd860528b690ae8}{{\footnotesize template$<$class U , size\-\_\-t O, class B\-P $>$ }\\void {\bfseries infallible\-Append} (const \hyperlink{classjs_1_1_vector}{Vector}$<$ U, O, B\-P $>$ \&other)}\label{classjs_1_1_vector_a4468968b2424fef8bfd860528b690ae8}
+
+\item 
+\hypertarget{classjs_1_1_vector_a34c89890e921ccd20a7c5ba58556e580}{void {\bfseries pop\-Back} ()}\label{classjs_1_1_vector_a34c89890e921ccd20a7c5ba58556e580}
+
+\item 
+\hypertarget{classjs_1_1_vector_abe0f8b9e0d6d0a86790f6834f0b66259}{T {\bfseries pop\-Copy} ()}\label{classjs_1_1_vector_abe0f8b9e0d6d0a86790f6834f0b66259}
+
+\item 
+\hypertarget{classjs_1_1_vector_a43b05a770cc6c0794513063ff5a9a087}{T $\ast$ {\bfseries extract\-Raw\-Buffer} ()}\label{classjs_1_1_vector_a43b05a770cc6c0794513063ff5a9a087}
+
+\item 
+\hypertarget{classjs_1_1_vector_a0d4e951feea0dc4dde345abb2c2b52a5}{void {\bfseries replace\-Raw\-Buffer} (T $\ast$p, size\-\_\-t length)}\label{classjs_1_1_vector_a0d4e951feea0dc4dde345abb2c2b52a5}
+
+\item 
+\hypertarget{classjs_1_1_vector_a3e2148d2700329c1968faba364b1dd7a}{bool {\bfseries insert} (T $\ast$p, const T \&val)}\label{classjs_1_1_vector_a3e2148d2700329c1968faba364b1dd7a}
+
+\item 
+\hypertarget{classjs_1_1_vector_a4046dc8b3efa90d7663c270ca8b406d1}{void {\bfseries erase} (T $\ast$t)}\label{classjs_1_1_vector_a4046dc8b3efa90d7663c270ca8b406d1}
+
+\item 
+\hypertarget{classjs_1_1_vector_aa78c701659c57b89674cc0bc692f18bb}{size\-\_\-t {\bfseries size\-Of\-Excluding\-This} (J\-S\-Malloc\-Size\-Of\-Fun malloc\-Size\-Of) const }\label{classjs_1_1_vector_aa78c701659c57b89674cc0bc692f18bb}
+
+\item 
+\hypertarget{classjs_1_1_vector_a8bd12c16d0213ace355fc41f653242d9}{size\-\_\-t {\bfseries size\-Of\-Including\-This} (J\-S\-Malloc\-Size\-Of\-Fun malloc\-Size\-Of) const }\label{classjs_1_1_vector_a8bd12c16d0213ace355fc41f653242d9}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classjs_1_1_vector_a58824443e52d5df03cf93269b0faf11a}{static const size\-\_\-t {\bfseries s\-Max\-Inline\-Storage} = N}\label{classjs_1_1_vector_a58824443e52d5df03cf93269b0faf11a}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classjs_1_1_vector_a47edab0dfe2fd77494d5f98f6a1520b3}{struct {\bfseries Vector\-Impl$<$ T, N, Alloc\-Policy, s\-Elem\-Is\-Pod $>$}}\label{classjs_1_1_vector_a47edab0dfe2fd77494d5f98f6a1520b3}
+
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$class T, size\-\_\-t N, class Alloc\-Policy$>$ class js\-::\-Vector$<$ T, N, Alloc\-Policy $>$}
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Spider\-Monkey/ios/include/js/Vector.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Spider\-Monkey/osx/include/js/Vector.\-h\end{DoxyCompactItemize}

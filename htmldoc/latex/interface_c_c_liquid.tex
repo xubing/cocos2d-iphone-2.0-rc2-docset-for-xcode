@@ -1,0 +1,113 @@
+\hypertarget{interface_c_c_liquid}{\section{C\-C\-Liquid Class Reference}
+\label{interface_c_c_liquid}\index{C\-C\-Liquid@{C\-C\-Liquid}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Grid3\-D.\-h$>$}
+
+Inheritance diagram for C\-C\-Liquid\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.000000cm]{interface_c_c_liquid}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_liquid_abd0bc7dcac068176fbb300d269e060e2}{init\-With\-Waves\-:amplitude\-:grid\-:duration\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_liquid_a5a70692a57ff138f24bdac85ab4484a2}{action\-With\-Waves\-:amplitude\-:grid\-:duration\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_liquid_a9724b0954da3c55a270eada96d16f889}{int {\bfseries waves}}\label{interface_c_c_liquid_a9724b0954da3c55a270eada96d16f889}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{interface_c_c_liquid_a362b858b7bc110a82d4e588cb1802e57}{amplitude}
+\item 
+float \hyperlink{interface_c_c_liquid_a14994638d5ea77d6295f0fee55d320f3}{amplitude\-Rate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_liquid}{C\-C\-Liquid} action 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_liquid_a5a70692a57ff138f24bdac85ab4484a2}{\index{C\-C\-Liquid@{C\-C\-Liquid}!action\-With\-Waves\-:amplitude\-:grid\-:duration\-:@{action\-With\-Waves\-:amplitude\-:grid\-:duration\-:}}
+\index{action\-With\-Waves\-:amplitude\-:grid\-:duration\-:@{action\-With\-Waves\-:amplitude\-:grid\-:duration\-:}!CCLiquid@{C\-C\-Liquid}}
+\subsubsection[{action\-With\-Waves\-:amplitude\-:grid\-:duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) action\-With\-Waves\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{wav}
+\item[{amplitude:(float)}]{amp}
+\item[{grid:({\bf cc\-Grid\-Size})}]{grid\-Size}
+\item[{duration:({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_liquid_a5a70692a57ff138f24bdac85ab4484a2}
+creates the action with amplitude, a grid and duration 
+
+Referenced by Liquid\-Demo\-::action\-With\-Duration\-:.
+
+
+\begin{DoxyCode}
+                    :(int)wav amplitude:(float)amp grid:(ccGridSize)gridSize 
+      duration:(ccTime)d
+{
+        return [[[self alloc] initWithWaves:wav amplitude:amp grid:gridSize 
+      duration:d] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_liquid_abd0bc7dcac068176fbb300d269e060e2}{\index{C\-C\-Liquid@{C\-C\-Liquid}!init\-With\-Waves\-:amplitude\-:grid\-:duration\-:@{init\-With\-Waves\-:amplitude\-:grid\-:duration\-:}}
+\index{init\-With\-Waves\-:amplitude\-:grid\-:duration\-:@{init\-With\-Waves\-:amplitude\-:grid\-:duration\-:}!CCLiquid@{C\-C\-Liquid}}
+\subsubsection[{init\-With\-Waves\-:amplitude\-:grid\-:duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Waves\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{wav}
+\item[{amplitude:(float)}]{amp}
+\item[{grid:({\bf cc\-Grid\-Size})}]{grid\-Size}
+\item[{duration:({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_liquid_abd0bc7dcac068176fbb300d269e060e2}
+initializes the action with amplitude, a grid and duration 
+\begin{DoxyCode}
+                  :(int)wav amplitude:(float)amp grid:(ccGridSize)gSize duration
+      :(ccTime)d
+{
+        if ( (self = [super initWithSize:gSize duration:d]) )
+        {
+                waves = wav;
+                amplitude = amp;
+                amplitudeRate = 1.0f;
+        }
+
+        return self;
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_liquid_a362b858b7bc110a82d4e588cb1802e57}{\index{C\-C\-Liquid@{C\-C\-Liquid}!amplitude@{amplitude}}
+\index{amplitude@{amplitude}!CCLiquid@{C\-C\-Liquid}}
+\subsubsection[{amplitude}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf amplitude}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_liquid_a362b858b7bc110a82d4e588cb1802e57}
+amplitude 
+
+Referenced by init\-With\-Waves\-:amplitude\-:grid\-:duration\-:.
+
+\hypertarget{interface_c_c_liquid_a14994638d5ea77d6295f0fee55d320f3}{\index{C\-C\-Liquid@{C\-C\-Liquid}!amplitude\-Rate@{amplitude\-Rate}}
+\index{amplitude\-Rate@{amplitude\-Rate}!CCLiquid@{C\-C\-Liquid}}
+\subsubsection[{amplitude\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf amplitude\-Rate}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_liquid_a14994638d5ea77d6295f0fee55d320f3}
+amplitude rate 
+
+Referenced by init\-With\-Waves\-:amplitude\-:grid\-:duration\-:.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Grid3\-D.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Grid3\-D.\-m\end{DoxyCompactItemize}

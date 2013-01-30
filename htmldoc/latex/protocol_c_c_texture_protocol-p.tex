@@ -1,0 +1,56 @@
+\hypertarget{protocol_c_c_texture_protocol-p}{\section{$<$C\-C\-Texture\-Protocol$>$ Protocol Reference}
+\label{protocol_c_c_texture_protocol-p}\index{$<$\-C\-C\-Texture\-Protocol$>$@{$<$\-C\-C\-Texture\-Protocol$>$}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Protocols.\-h$>$}
+
+Inheritance diagram for $<$C\-C\-Texture\-Protocol$>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.645569cm]{protocol_c_c_texture_protocol-p}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{class_c_c_texture2_d}{C\-C\-Texture2\-D} $\ast$) -\/ \hyperlink{protocol_c_c_texture_protocol-p_a6d5ce4477e7ceee21c7d0cd3302c3730}{texture}
+\item 
+(void) -\/ \hyperlink{protocol_c_c_texture_protocol-p_ab4f1328a2f24c9859b41280d935eb75d}{set\-Texture\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_c_c_node}{C\-C\-Node} objects that uses a Texture2\-D to render the images. The texture can have a blending function. If the texture has alpha premultiplied the default blending function is\-: src=G\-L\-\_\-\-O\-N\-E dst= G\-L\-\_\-\-O\-N\-E\-\_\-\-M\-I\-N\-U\-S\-\_\-\-S\-R\-C\-\_\-\-A\-L\-P\-H\-A else src=G\-L\-\_\-\-S\-R\-C\-\_\-\-A\-L\-P\-H\-A dst= G\-L\-\_\-\-O\-N\-E\-\_\-\-M\-I\-N\-U\-S\-\_\-\-S\-R\-C\-\_\-\-A\-L\-P\-H\-A But you can change the blending function at any time. \begin{DoxySince}{Since}
+v0.\-8.\-0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{protocol_c_c_texture_protocol-p_ab4f1328a2f24c9859b41280d935eb75d}{\index{C\-C\-Texture\-Protocol-\/p@{C\-C\-Texture\-Protocol-\/p}!set\-Texture\-:@{set\-Texture\-:}}
+\index{set\-Texture\-:@{set\-Texture\-:}!CCTextureProtocol-p@{C\-C\-Texture\-Protocol-\/p}}
+\subsubsection[{set\-Texture\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf set\-Texture\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Texture2\-D} $\ast$)}]{texture}
+\end{DoxyParamCaption}
+}}\label{protocol_c_c_texture_protocol-p_ab4f1328a2f24c9859b41280d935eb75d}
+sets a new texture. it will be retained 
+
+Referenced by C\-C\-Particle\-System\-::init\-With\-Dictionary\-:path\-:, C\-C\-Motion\-Streak\-::init\-With\-Fade\-:min\-Seg\-:width\-:color\-:texture\-:, C\-C\-Sprite\-::init\-With\-Texture\-:rect\-:rotated\-:, C\-C\-Particle\-System\-Quad\-::set\-Display\-Frame\-:, C\-C\-Sprite\-::set\-Display\-Frame\-:, and C\-C\-Particle\-System\-Quad\-::set\-Texture\-:with\-Rect\-:.
+
+\hypertarget{protocol_c_c_texture_protocol-p_a6d5ce4477e7ceee21c7d0cd3302c3730}{\index{C\-C\-Texture\-Protocol-\/p@{C\-C\-Texture\-Protocol-\/p}!texture@{texture}}
+\index{texture@{texture}!CCTextureProtocol-p@{C\-C\-Texture\-Protocol-\/p}}
+\subsubsection[{texture}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Texture2\-D}$\ast$) {\bf texture} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{protocol_c_c_texture_protocol-p_a6d5ce4477e7ceee21c7d0cd3302c3730}
+returns the used texture 
+
+Referenced by C\-C\-Director\-::create\-Stats\-Label, C\-C\-Particle\-System\-::init\-With\-Dictionary\-:path\-:, C\-C\-Label\-Atlas\-::init\-With\-String\-:char\-Map\-File\-:item\-Width\-:item\-Height\-:start\-Char\-Map\-:, and C\-C\-Atlas\-Node\-::init\-With\-Tile\-File\-:tile\-Width\-:tile\-Height\-:items\-To\-Render\-:.
+
+
+
+The documentation for this protocol was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Protocols.\-h\end{DoxyCompactItemize}

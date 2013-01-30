@@ -1,0 +1,41 @@
+\hypertarget{interface_liquid_demo}{\section{Liquid\-Demo Class Reference}
+\label{interface_liquid_demo}\index{Liquid\-Demo@{Liquid\-Demo}}
+}
+Inheritance diagram for Liquid\-Demo\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.000000cm]{interface_liquid_demo}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_liquid_demo_a4a50d2693efec8041c34b53b017491a1}{action\-With\-Duration\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_liquid_demo_a4a50d2693efec8041c34b53b017491a1}{\index{Liquid\-Demo@{Liquid\-Demo}!action\-With\-Duration\-:@{action\-With\-Duration\-:}}
+\index{action\-With\-Duration\-:@{action\-With\-Duration\-:}!LiquidDemo@{Liquid\-Demo}}
+\subsubsection[{action\-With\-Duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_liquid_demo_a4a50d2693efec8041c34b53b017491a1}
+creates the action 
+
+Reimplemented from \hyperlink{class_c_c_action_interval_a08fbc347478cca16ab1fe936a1770dc0}{C\-C\-Action\-Interval}.
+
+
+\begin{DoxyCode}
+                        :(ccTime)t
+{
+        return [self actionWithWaves:4 amplitude:20 grid:ccg(16,12) duration:t]
+      ;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/tests/Effects\-Test.\-m\end{DoxyCompactItemize}

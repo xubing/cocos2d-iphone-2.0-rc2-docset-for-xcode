@@ -1,0 +1,78 @@
+\hypertarget{structcp_shape}{\section{cp\-Shape Struct Reference}
+\label{structcp_shape}\index{cp\-Shape@{cp\-Shape}}
+}
+
+
+Opaque collision shape struct.  
+
+
+
+
+{\ttfamily \#include $<$cp\-Shape.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structcp_shape_aaf3ec3dc8a5d3c6efc732d6f2ea27b71}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (const cp\-Shape\-Class $\ast$klass)}\label{structcp_shape_aaf3ec3dc8a5d3c6efc732d6f2ea27b71}
+
+\item 
+\hypertarget{structcp_shape_a33d2b7f8faa1a29e24fec0a371730c8d}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{structcp_space}{cp\-Space} $\ast$space)}\label{structcp_shape_a33d2b7f8faa1a29e24fec0a371730c8d}
+
+\item 
+\hypertarget{structcp_shape_a053370dcca94d1e1b5386f55bb1cbc86}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{structcp_shape}{cp\-Shape} $\ast$next)}\label{structcp_shape_a053370dcca94d1e1b5386f55bb1cbc86}
+
+\item 
+\hypertarget{structcp_shape_a4b7c01af5e905c492e67f33336213979}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{structcp_shape}{cp\-Shape} $\ast$prev)}\label{structcp_shape_a4b7c01af5e905c492e67f33336213979}
+
+\item 
+\hypertarget{structcp_shape_a17e20412bc5a468a2ef4e8687c62950b}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{group__basic_types_gae7eb4775a9f43914a15553ca65a048f4}{cp\-Hash\-Value} hashid)}\label{structcp_shape_a17e20412bc5a468a2ef4e8687c62950b}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structcp_shape_a78d93185612c5dd17ca98574250c3bbf}{\hyperlink{structcp_body}{cp\-Body} $\ast$ \hyperlink{structcp_shape_a78d93185612c5dd17ca98574250c3bbf}{body}}\label{structcp_shape_a78d93185612c5dd17ca98574250c3bbf}
+
+\begin{DoxyCompactList}\small\item\em The rigid body this collision shape is attached to. \end{DoxyCompactList}\item 
+\hypertarget{structcp_shape_a116c20032e88c91b24bc4db58fe03281}{\hyperlink{structcp_b_b}{cp\-B\-B} \hyperlink{structcp_shape_a116c20032e88c91b24bc4db58fe03281}{bb}}\label{structcp_shape_a116c20032e88c91b24bc4db58fe03281}
+
+\begin{DoxyCompactList}\small\item\em The current bounding box of the shape. \end{DoxyCompactList}\item 
+\hyperlink{group__basic_types_gab6e5d8afee598a57cd323abae5310244}{cp\-Bool} \hyperlink{structcp_shape_a313e68986b75440efbce418429ad11e3}{sensor}
+\item 
+\hypertarget{structcp_shape_aa9c5e01e7c76b34e052a33ecb4df4df4}{\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} \hyperlink{structcp_shape_aa9c5e01e7c76b34e052a33ecb4df4df4}{e}}\label{structcp_shape_aa9c5e01e7c76b34e052a33ecb4df4df4}
+
+\begin{DoxyCompactList}\small\item\em Coefficient of restitution. (elasticity) \end{DoxyCompactList}\item 
+\hypertarget{structcp_shape_a9fbe92c5b0971f43fe0519241c6a1b0e}{\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} \hyperlink{structcp_shape_a9fbe92c5b0971f43fe0519241c6a1b0e}{u}}\label{structcp_shape_a9fbe92c5b0971f43fe0519241c6a1b0e}
+
+\begin{DoxyCompactList}\small\item\em Coefficient of friction. \end{DoxyCompactList}\item 
+\hypertarget{structcp_shape_a9c85993daba2b41274c1665b5546f6ab}{\hyperlink{structcp_vect}{cp\-Vect} \hyperlink{structcp_shape_a9c85993daba2b41274c1665b5546f6ab}{surface\-\_\-v}}\label{structcp_shape_a9c85993daba2b41274c1665b5546f6ab}
+
+\begin{DoxyCompactList}\small\item\em Surface velocity used when solving for friction. \end{DoxyCompactList}\item 
+\hyperlink{group__basic_types_ga2ac2c3c31e21893941f9e4f8ee279447}{cp\-Data\-Pointer} \hyperlink{structcp_shape_a25736bb8b57bfd8b73a364b503a47f68}{data}
+\item 
+\hypertarget{structcp_shape_ad6615f8cee565b76166a32ca11581054}{\hyperlink{group__basic_types_gae83e2f50965eb441e36ffff1e32e6d02}{cp\-Collision\-Type} \hyperlink{structcp_shape_ad6615f8cee565b76166a32ca11581054}{collision\-\_\-type}}\label{structcp_shape_ad6615f8cee565b76166a32ca11581054}
+
+\begin{DoxyCompactList}\small\item\em Collision type of this shape used when picking collision handlers. \end{DoxyCompactList}\item 
+\hypertarget{structcp_shape_a2e6aaffa5f4107eda1718e4f69628fc1}{\hyperlink{group__basic_types_gacd811b1135a8f4a3e5cc019552b18b1a}{cp\-Group} \hyperlink{structcp_shape_a2e6aaffa5f4107eda1718e4f69628fc1}{group}}\label{structcp_shape_a2e6aaffa5f4107eda1718e4f69628fc1}
+
+\begin{DoxyCompactList}\small\item\em Group of this shape. Shapes in the same group don't collide. \end{DoxyCompactList}\item 
+\hypertarget{structcp_shape_a8c5c82ec513ab15ed7da65fbb6a1b78d}{\hyperlink{group__basic_types_ga5ec31e87ed3973cab80f9bfbbbcb43bb}{cp\-Layers} {\bfseries layers}}\label{structcp_shape_a8c5c82ec513ab15ed7da65fbb6a1b78d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Opaque collision shape struct. 
+
+\subsection{Member Data Documentation}
+\hypertarget{structcp_shape_a25736bb8b57bfd8b73a364b503a47f68}{\index{cp\-Shape@{cp\-Shape}!data@{data}}
+\index{data@{data}!cpShape@{cp\-Shape}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cp\-Data\-Pointer} {\bf cp\-Shape\-::data}}}\label{structcp_shape_a25736bb8b57bfd8b73a364b503a47f68}
+User definable data pointer. Generally this points to your the game object class so you can access it when given a \hyperlink{structcp_shape}{cp\-Shape} reference in a callback. \hypertarget{structcp_shape_a313e68986b75440efbce418429ad11e3}{\index{cp\-Shape@{cp\-Shape}!sensor@{sensor}}
+\index{sensor@{sensor}!cpShape@{cp\-Shape}}
+\subsubsection[{sensor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cp\-Bool} {\bf cp\-Shape\-::sensor}}}\label{structcp_shape_a313e68986b75440efbce418429ad11e3}
+Sensor flag. Sensor shapes call collision callbacks but don't produce collisions. 
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Chipmunk/include/chipmunk/cp\-Shape.\-h\end{DoxyCompactItemize}

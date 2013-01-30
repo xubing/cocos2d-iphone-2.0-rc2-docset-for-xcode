@@ -1,0 +1,91 @@
+\hypertarget{interface_c_c_targeted_action}{\section{C\-C\-Targeted\-Action Class Reference}
+\label{interface_c_c_targeted_action}\index{C\-C\-Targeted\-Action@{C\-C\-Targeted\-Action}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Interval.\-h$>$}
+
+Inheritance diagram for C\-C\-Targeted\-Action\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_c_c_targeted_action}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_targeted_action_ae309e1906ed305f2b96ee7b4fb9ce2cd}{init\-With\-Target\-:action\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_targeted_action_a0c1ffe9d530caf7a5f335e351c06b40a}{action\-With\-Target\-:action\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_targeted_action_ac5b93da95e67d9f771714e4a612d9e53}{id {\bfseries forced\-Target\-\_\-}}\label{interface_c_c_targeted_action_ac5b93da95e67d9f771714e4a612d9e53}
+
+\item 
+\hypertarget{interface_c_c_targeted_action_a88b7ef25317bc28f002eebeac57aec36}{\hyperlink{interface_c_c_finite_time_action}{C\-C\-Finite\-Time\-Action} $\ast$ {\bfseries action\-\_\-}}\label{interface_c_c_targeted_action_a88b7ef25317bc28f002eebeac57aec36}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id \hyperlink{interface_c_c_targeted_action_ab58161c8edf18cb22ce1077e949f5c8e}{forced\-Target}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Overrides the target of an action so that it always runs on the target specified at action creation rather than the one specified by run\-Action. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_targeted_action_a0c1ffe9d530caf7a5f335e351c06b40a}{\index{C\-C\-Targeted\-Action@{C\-C\-Targeted\-Action}!action\-With\-Target\-:action\-:@{action\-With\-Target\-:action\-:}}
+\index{action\-With\-Target\-:action\-:@{action\-With\-Target\-:action\-:}!CCTargetedAction@{C\-C\-Targeted\-Action}}
+\subsubsection[{action\-With\-Target\-:action\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) action\-With\-Target\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{target}
+\item[{action:({\bf C\-C\-Finite\-Time\-Action}$\ast$)}]{action}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_targeted_action_a0c1ffe9d530caf7a5f335e351c06b40a}
+Create an action with the specified action and forced target 
+\begin{DoxyCode}
+                       :(id) target action:(CCFiniteTimeAction*) action
+{
+        return [[ (CCTargetedAction*)[self alloc] initWithTarget:target action:
+      action] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_targeted_action_ae309e1906ed305f2b96ee7b4fb9ce2cd}{\index{C\-C\-Targeted\-Action@{C\-C\-Targeted\-Action}!init\-With\-Target\-:action\-:@{init\-With\-Target\-:action\-:}}
+\index{init\-With\-Target\-:action\-:@{init\-With\-Target\-:action\-:}!CCTargetedAction@{C\-C\-Targeted\-Action}}
+\subsubsection[{init\-With\-Target\-:action\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Target\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{target}
+\item[{action:({\bf C\-C\-Finite\-Time\-Action}$\ast$)}]{action}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_targeted_action_ae309e1906ed305f2b96ee7b4fb9ce2cd}
+Init an action with the specified action and forced target 
+\begin{DoxyCode}
+                     :(id) targetIn action:(CCFiniteTimeAction*) actionIn
+{
+        if((self = [super initWithDuration:actionIn.duration]))
+        {
+                forcedTarget_ = [targetIn retain];
+                action_ = [actionIn retain];
+        }
+        return self;
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_targeted_action_ab58161c8edf18cb22ce1077e949f5c8e}{\index{C\-C\-Targeted\-Action@{C\-C\-Targeted\-Action}!forced\-Target@{forced\-Target}}
+\index{forced\-Target@{forced\-Target}!CCTargetedAction@{C\-C\-Targeted\-Action}}
+\subsubsection[{forced\-Target}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf forced\-Target}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}\label{interface_c_c_targeted_action_ab58161c8edf18cb22ce1077e949f5c8e}
+This is the target that the action will be forced to run with 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-m\end{DoxyCompactItemize}

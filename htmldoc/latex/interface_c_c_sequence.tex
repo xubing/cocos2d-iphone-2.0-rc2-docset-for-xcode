@@ -1,0 +1,185 @@
+\hypertarget{interface_c_c_sequence}{\section{C\-C\-Sequence Class Reference}
+\label{interface_c_c_sequence}\index{C\-C\-Sequence@{C\-C\-Sequence}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Interval.\-h$>$}
+
+Inheritance diagram for C\-C\-Sequence\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_c_c_sequence}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_sequence_a1673575f39ca5ac6dbda7c0a43649dfc}{init\-One\-:two\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_sequence_a8ee2b8d75923c9a3bb01378128021876}{actions\-:}
+\item 
+(id) + \hyperlink{interface_c_c_sequence_aa41494fe0880e980e33874f112afac86}{actions\-:va\-List\-:}
+\item 
+(id) + \hyperlink{interface_c_c_sequence_a24ae87c819dc1e4db65bde4de7b064f2}{action\-With\-Array\-:}
+\item 
+(id) + \hyperlink{interface_c_c_sequence_a91ba9a177ec53d42c4a2ad9af667f7ca}{action\-One\-:two\-:}
+\item 
+\hypertarget{interface_c_c_sequence_a98cf40c4f25f226631e204f476c48c93}{(id) + {\bfseries actions\-With\-Array\-:}}\label{interface_c_c_sequence_a98cf40c4f25f226631e204f476c48c93}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_sequence_a2ecd27786450569a664bc8fea4b9ac07}{\hyperlink{interface_c_c_finite_time_action}{C\-C\-Finite\-Time\-Action} $\ast$ {\bfseries actions\-\_\-} \mbox{[}2\mbox{]}}\label{interface_c_c_sequence_a2ecd27786450569a664bc8fea4b9ac07}
+
+\item 
+\hypertarget{interface_c_c_sequence_a1f05202ac4e1c4876e41788185d08a54}{\hyperlink{cc_types_8h_ae6c674aac4bfb46a4e6cb1e89bb66b4f}{cc\-Time} {\bfseries split\-\_\-}}\label{interface_c_c_sequence_a1f05202ac4e1c4876e41788185d08a54}
+
+\item 
+\hypertarget{interface_c_c_sequence_a2c9da28ecefe0a9b7db4d347ffb38bff}{int {\bfseries last\-\_\-}}\label{interface_c_c_sequence_a2c9da28ecefe0a9b7db4d347ffb38bff}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Runs actions sequentially, one after another 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_sequence_a91ba9a177ec53d42c4a2ad9af667f7ca}{\index{C\-C\-Sequence@{C\-C\-Sequence}!action\-One\-:two\-:@{action\-One\-:two\-:}}
+\index{action\-One\-:two\-:@{action\-One\-:two\-:}!CCSequence@{C\-C\-Sequence}}
+\subsubsection[{action\-One\-:two\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) action\-One\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Finite\-Time\-Action}$\ast$)}]{action\-One}
+\item[{two:({\bf C\-C\-Finite\-Time\-Action}$\ast$)}]{action\-Two}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_sequence_a91ba9a177ec53d42c4a2ad9af667f7ca}
+creates the action 
+
+Referenced by actions\-:va\-List\-:, and C\-C\-Spawn\-::init\-One\-:two\-:.
+
+
+\begin{DoxyCode}
+               : (CCFiniteTimeAction*) one two: (CCFiniteTimeAction*) two
+{
+        return [[[self alloc] initOne:one two:two ] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_sequence_a8ee2b8d75923c9a3bb01378128021876}{\index{C\-C\-Sequence@{C\-C\-Sequence}!actions\-:@{actions\-:}}
+\index{actions\-:@{actions\-:}!CCSequence@{C\-C\-Sequence}}
+\subsubsection[{actions\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf actions\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Finite\-Time\-Action}$\ast$)}]{action1}
+\item[{,}]{N\-S\-\_\-\-R\-E\-Q\-U\-I\-R\-E\-S\-\_\-\-N\-I\-L\-\_\-\-T\-E\-R\-M\-I\-N\-A\-T\-I\-O\-N}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_sequence_a8ee2b8d75923c9a3bb01378128021876}
+helper constructor to create an array of sequence-\/able actions 
+
+Referenced by Flip\-X3\-D\-Demo\-::action\-With\-Duration\-:, Flip\-Y3\-D\-Demo\-::action\-With\-Duration\-:, Shuffle\-Tiles\-Demo\-::action\-With\-Duration\-:, Fade\-Out\-T\-R\-Tiles\-Demo\-::action\-With\-Duration\-:, Fade\-Out\-B\-L\-Tiles\-Demo\-::action\-With\-Duration\-:, Fade\-Out\-Up\-Tiles\-Demo\-::action\-With\-Duration\-:, Fade\-Out\-Down\-Tiles\-Demo\-::action\-With\-Duration\-:, Turn\-Off\-Tiles\-Demo\-::action\-With\-Duration\-:, and The\-Audio\-Code\-::test\-Eight\-:.
+
+
+\begin{DoxyCode}
+             : (CCFiniteTimeAction*) action1, ...
+{
+        va_list args;
+        va_start(args, action1);
+
+        id ret = [self actions:action1 vaList:args];
+
+        va_end(args);
+
+        return  ret;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_sequence_aa41494fe0880e980e33874f112afac86}{\index{C\-C\-Sequence@{C\-C\-Sequence}!actions\-:va\-List\-:@{actions\-:va\-List\-:}}
+\index{actions\-:va\-List\-:@{actions\-:va\-List\-:}!CCSequence@{C\-C\-Sequence}}
+\subsubsection[{actions\-:va\-List\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf actions\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Finite\-Time\-Action}$\ast$)}]{action1}
+\item[{vaList:(va\-\_\-list)}]{args}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_sequence_aa41494fe0880e980e33874f112afac86}
+helper constructor to create an array of sequence-\/able actions 
+
+Referenced by actions\-:.
+
+
+\begin{DoxyCode}
+             : (CCFiniteTimeAction*) action1 vaList:(va_list)args
+{
+        CCFiniteTimeAction *now;
+        CCFiniteTimeAction *prev = action1;
+        
+        while( action1 ) {
+                now = va_arg(args,CCFiniteTimeAction*);
+                if ( now )
+                        prev = [self actionOne: prev two: now];
+                else
+                        break;
+        }
+
+        return prev;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_sequence_a24ae87c819dc1e4db65bde4de7b064f2}{\index{C\-C\-Sequence@{C\-C\-Sequence}!action\-With\-Array\-:@{action\-With\-Array\-:}}
+\index{action\-With\-Array\-:@{action\-With\-Array\-:}!CCSequence@{C\-C\-Sequence}}
+\subsubsection[{action\-With\-Array\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Array\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Array$\ast$)}]{array\-Of\-Actions}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_sequence_a24ae87c819dc1e4db65bde4de7b064f2}
+helper constructor to create an array of sequence-\/able actions given an array 
+\begin{DoxyCode}
+                     : (NSArray*) actions
+{
+        CCFiniteTimeAction *prev = [actions objectAtIndex:0];
+        
+        for (NSUInteger i = 1; i < [actions count]; i++)
+                prev = [self actionOne:prev two:[actions objectAtIndex:i]];
+        
+        return prev;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_sequence_a1673575f39ca5ac6dbda7c0a43649dfc}{\index{C\-C\-Sequence@{C\-C\-Sequence}!init\-One\-:two\-:@{init\-One\-:two\-:}}
+\index{init\-One\-:two\-:@{init\-One\-:two\-:}!CCSequence@{C\-C\-Sequence}}
+\subsubsection[{init\-One\-:two\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-One\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Finite\-Time\-Action}$\ast$)}]{action\-One}
+\item[{two:({\bf C\-C\-Finite\-Time\-Action}$\ast$)}]{action\-Two}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_sequence_a1673575f39ca5ac6dbda7c0a43649dfc}
+initializes the action 
+\begin{DoxyCode}
+             : (CCFiniteTimeAction*) one two: (CCFiniteTimeAction*) two
+{
+        NSAssert( one!=nil && two!=nil, @"Sequence: arguments must be non-nil")
+      ;
+        NSAssert( one!=actions_[0] && one!=actions_[1], @"Sequence: re-init
+       using the same parameters is not supported");
+        NSAssert( two!=actions_[1] && two!=actions_[0], @"Sequence: re-init
+       using the same parameters is not supported");
+        
+        ccTime d = [one duration] + [two duration];
+        
+        if( (self=[super initWithDuration: d]) ) {
+                
+                // XXX: Supports re-init without leaking. Fails if one==one_ ||
+       two==two_
+                [actions_[0] release];
+                [actions_[1] release];
+                
+                actions_[0] = [one retain];
+                actions_[1] = [two retain];
+        }
+        
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-m\end{DoxyCompactItemize}

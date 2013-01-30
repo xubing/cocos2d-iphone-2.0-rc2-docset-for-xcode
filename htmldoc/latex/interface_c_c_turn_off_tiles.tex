@@ -1,0 +1,90 @@
+\hypertarget{interface_c_c_turn_off_tiles}{\section{C\-C\-Turn\-Off\-Tiles Class Reference}
+\label{interface_c_c_turn_off_tiles}\index{C\-C\-Turn\-Off\-Tiles@{C\-C\-Turn\-Off\-Tiles}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Tiled\-Grid.\-h$>$}
+
+Inheritance diagram for C\-C\-Turn\-Off\-Tiles\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.000000cm]{interface_c_c_turn_off_tiles}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_turn_off_tiles_ae91fc94be17f78980ab010f5b4c394af}{init\-With\-Seed\-:grid\-:duration\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_turn_off_tiles_ac16a90a7eff2ca3ffe14be167a8471a4}{action\-With\-Seed\-:grid\-:duration\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_turn_off_tiles_a4a00eb97d01db6f6af4b7b6c1284c10d}{int {\bfseries seed}}\label{interface_c_c_turn_off_tiles_a4a00eb97d01db6f6af4b7b6c1284c10d}
+
+\item 
+\hypertarget{interface_c_c_turn_off_tiles_ae6cdccc3d51c71b94c35758f84a37368}{N\-S\-U\-Integer {\bfseries tiles\-Count}}\label{interface_c_c_turn_off_tiles_ae6cdccc3d51c71b94c35758f84a37368}
+
+\item 
+\hypertarget{interface_c_c_turn_off_tiles_a850b7469b300dce41a45876635ea082e}{int $\ast$ {\bfseries tiles\-Order}}\label{interface_c_c_turn_off_tiles_a850b7469b300dce41a45876635ea082e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_turn_off_tiles}{C\-C\-Turn\-Off\-Tiles} action. Turn off the files in random order 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_turn_off_tiles_ac16a90a7eff2ca3ffe14be167a8471a4}{\index{C\-C\-Turn\-Off\-Tiles@{C\-C\-Turn\-Off\-Tiles}!action\-With\-Seed\-:grid\-:duration\-:@{action\-With\-Seed\-:grid\-:duration\-:}}
+\index{action\-With\-Seed\-:grid\-:duration\-:@{action\-With\-Seed\-:grid\-:duration\-:}!CCTurnOffTiles@{C\-C\-Turn\-Off\-Tiles}}
+\subsubsection[{action\-With\-Seed\-:grid\-:duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) action\-With\-Seed\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{s}
+\item[{grid:({\bf cc\-Grid\-Size})}]{grid\-Size}
+\item[{duration:({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_turn_off_tiles_ac16a90a7eff2ca3ffe14be167a8471a4}
+creates the action with a random seed, the grid size and the duration 
+
+Referenced by Turn\-Off\-Tiles\-Demo\-::action\-With\-Duration\-:.
+
+
+\begin{DoxyCode}
+                   :(int)s grid:(ccGridSize)gridSize duration:(ccTime)d
+{
+        return [[[self alloc] initWithSeed:s grid:gridSize duration:d] 
+      autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_turn_off_tiles_ae91fc94be17f78980ab010f5b4c394af}{\index{C\-C\-Turn\-Off\-Tiles@{C\-C\-Turn\-Off\-Tiles}!init\-With\-Seed\-:grid\-:duration\-:@{init\-With\-Seed\-:grid\-:duration\-:}}
+\index{init\-With\-Seed\-:grid\-:duration\-:@{init\-With\-Seed\-:grid\-:duration\-:}!CCTurnOffTiles@{C\-C\-Turn\-Off\-Tiles}}
+\subsubsection[{init\-With\-Seed\-:grid\-:duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Seed\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{s}
+\item[{grid:({\bf cc\-Grid\-Size})}]{grid\-Size}
+\item[{duration:({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_turn_off_tiles_ae91fc94be17f78980ab010f5b4c394af}
+initializes the action with a random seed, the grid size and the duration 
+\begin{DoxyCode}
+                 :(int)s grid:(ccGridSize)gSize duration:(ccTime)d
+{
+        if ( (self = [super initWithSize:gSize duration:d]) )
+        {
+                seed = s;
+                tilesOrder = nil;
+        }
+
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Tiled\-Grid.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Tiled\-Grid.\-m\end{DoxyCompactItemize}

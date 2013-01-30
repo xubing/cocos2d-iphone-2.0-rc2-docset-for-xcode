@@ -1,0 +1,141 @@
+\hypertarget{interface_c_c_timer_target_selector}{\section{C\-C\-Timer\-Target\-Selector Class Reference}
+\label{interface_c_c_timer_target_selector}\index{C\-C\-Timer\-Target\-Selector@{C\-C\-Timer\-Target\-Selector}}
+}
+Inheritance diagram for C\-C\-Timer\-Target\-Selector\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_c_c_timer_target_selector}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_timer_target_selector_a5b2032c8c650bd8cfcc245ad6078c575}{init\-With\-Target\-:selector\-:}
+\item 
+(id) -\/ \hyperlink{interface_c_c_timer_target_selector_aaaf078216c645685874d02c14fbd40fe}{init\-With\-Target\-:selector\-:interval\-:repeat\-:delay\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_timer_target_selector_a19fad016616e647a4433ecfacb158e8a}{timer\-With\-Target\-:selector\-:}
+\item 
+(id) + \hyperlink{interface_c_c_timer_target_selector_aac27cce0cf8fa6125c8f866a16a266ab}{timer\-With\-Target\-:selector\-:interval\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_timer_target_selector_ad96cdf2fce395baef576a6b6d033f3f8}{id {\bfseries \-\_\-target}}\label{interface_c_c_timer_target_selector_ad96cdf2fce395baef576a6b6d033f3f8}
+
+\item 
+\hypertarget{interface_c_c_timer_target_selector_a9ae5a87769dd0d1e93f80404098da53e}{S\-E\-L {\bfseries \-\_\-selector}}\label{interface_c_c_timer_target_selector_a9ae5a87769dd0d1e93f80404098da53e}
+
+\item 
+\hypertarget{interface_c_c_timer_target_selector_a448237d83f297f2f808e3ebb805fdce0}{T\-I\-C\-K\-\_\-\-I\-M\-P {\bfseries \-\_\-imp\-Method}}\label{interface_c_c_timer_target_selector_a448237d83f297f2f808e3ebb805fdce0}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+S\-E\-L \hyperlink{interface_c_c_timer_target_selector_ad90c489d1c74ca62925dcd5f5f5739a1}{selector}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_timer_target_selector_a5b2032c8c650bd8cfcc245ad6078c575}{\index{C\-C\-Timer\-Target\-Selector@{C\-C\-Timer\-Target\-Selector}!init\-With\-Target\-:selector\-:@{init\-With\-Target\-:selector\-:}}
+\index{init\-With\-Target\-:selector\-:@{init\-With\-Target\-:selector\-:}!CCTimerTargetSelector@{C\-C\-Timer\-Target\-Selector}}
+\subsubsection[{init\-With\-Target\-:selector\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Target\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{t}
+\item[{selector:(S\-E\-L)}]{s}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_timer_target_selector_a5b2032c8c650bd8cfcc245ad6078c575}
+Initializes a timer with a target and a selector. 
+\begin{DoxyCode}
+                    :(id)t selector:(SEL)s
+{
+        return [self initWithTarget:t selector:s interval:0 repeat:
+      kCCRepeatForever delay: 0];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_timer_target_selector_aaaf078216c645685874d02c14fbd40fe}{\index{C\-C\-Timer\-Target\-Selector@{C\-C\-Timer\-Target\-Selector}!init\-With\-Target\-:selector\-:interval\-:repeat\-:delay\-:@{init\-With\-Target\-:selector\-:interval\-:repeat\-:delay\-:}}
+\index{init\-With\-Target\-:selector\-:interval\-:repeat\-:delay\-:@{init\-With\-Target\-:selector\-:interval\-:repeat\-:delay\-:}!CCTimerTargetSelector@{C\-C\-Timer\-Target\-Selector}}
+\subsubsection[{init\-With\-Target\-:selector\-:interval\-:repeat\-:delay\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Target\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{t}
+\item[{selector:(S\-E\-L)}]{s}
+\item[{interval:({\bf cc\-Time})}]{seconds}
+\item[{repeat:(uint)}]{r}
+\item[{delay:({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_timer_target_selector_aaaf078216c645685874d02c14fbd40fe}
+Initializes a timer with a target, a selector, an interval in seconds, repeat in number of times to repeat, delay in seconds 
+
+Referenced by init\-With\-Target\-:selector\-:.
+
+
+\begin{DoxyCode}
+                    :(id)t selector:(SEL)s interval:(ccTime) seconds repeat:(
+      uint) r delay:(ccTime) d
+{
+        if( (self=[super init]) ) {
+#if COCOS2D_DEBUG
+                NSMethodSignature *sig = [t methodSignatureForSelector:s];
+                NSAssert(sig !=0 , @"Signature not found for selector - does it
+       have the following form? -(void) name: (ccTime) dt");
+#endif
+
+                // target is not retained. It is retained in the hash structure
+                _target = t;
+                _selector = s;
+                _impMethod = (TICK_IMP) [t methodForSelector:s];
+                
+                [self setupTimerWithInterval:seconds repeat:r delay:d];
+        }
+        return self;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_timer_target_selector_a19fad016616e647a4433ecfacb158e8a}{\index{C\-C\-Timer\-Target\-Selector@{C\-C\-Timer\-Target\-Selector}!timer\-With\-Target\-:selector\-:@{timer\-With\-Target\-:selector\-:}}
+\index{timer\-With\-Target\-:selector\-:@{timer\-With\-Target\-:selector\-:}!CCTimerTargetSelector@{C\-C\-Timer\-Target\-Selector}}
+\subsubsection[{timer\-With\-Target\-:selector\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) timer\-With\-Target\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{t}
+\item[{selector:(S\-E\-L)}]{s}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_timer_target_selector_a19fad016616e647a4433ecfacb158e8a}
+Allocates a timer with a target and a selector. 
+\begin{DoxyCode}
+                     :(id)t selector:(SEL)s
+{
+        return [[[self alloc] initWithTarget:t selector:s interval:0 repeat:
+      kCCRepeatForever delay:0] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_timer_target_selector_aac27cce0cf8fa6125c8f866a16a266ab}{\index{C\-C\-Timer\-Target\-Selector@{C\-C\-Timer\-Target\-Selector}!timer\-With\-Target\-:selector\-:interval\-:@{timer\-With\-Target\-:selector\-:interval\-:}}
+\index{timer\-With\-Target\-:selector\-:interval\-:@{timer\-With\-Target\-:selector\-:interval\-:}!CCTimerTargetSelector@{C\-C\-Timer\-Target\-Selector}}
+\subsubsection[{timer\-With\-Target\-:selector\-:interval\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) timer\-With\-Target\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{t}
+\item[{selector:(S\-E\-L)}]{s}
+\item[{interval:({\bf cc\-Time})}]{seconds}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_timer_target_selector_aac27cce0cf8fa6125c8f866a16a266ab}
+Allocates a timer with a target, a selector and an interval in seconds. 
+\begin{DoxyCode}
+                     :(id)t selector:(SEL)s interval:(ccTime) i
+{
+        return [[[self alloc] initWithTarget:t selector:s interval:i repeat:
+      kCCRepeatForever delay:0] autorelease];
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_timer_target_selector_ad90c489d1c74ca62925dcd5f5f5739a1}{\index{C\-C\-Timer\-Target\-Selector@{C\-C\-Timer\-Target\-Selector}!selector@{selector}}
+\index{selector@{selector}!CCTimerTargetSelector@{C\-C\-Timer\-Target\-Selector}}
+\subsubsection[{selector}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (S\-E\-L) {\bf selector}\hspace{0.3cm}{\ttfamily  \mbox{[}read, assign\mbox{]}}}}\label{interface_c_c_timer_target_selector_ad90c489d1c74ca62925dcd5f5f5739a1}
+selector 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Scheduler.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Scheduler.\-m\end{DoxyCompactItemize}

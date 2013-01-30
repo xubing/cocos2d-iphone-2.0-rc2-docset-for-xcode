@@ -1,0 +1,54 @@
+\hypertarget{_t_g_alib_8h}{\section{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.1-\/beta4/cocos2d/\-Support/\-T\-G\-Alib.h File Reference}
+\label{_t_g_alib_8h}\index{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/\-Support/\-T\-G\-Alib.\-h@{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/\-Support/\-T\-G\-Alib.\-h}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structs_image_t_g_a}{s\-Image\-T\-G\-A}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structs_image_t_g_a}{s\-Image\-T\-G\-A} \hyperlink{_t_g_alib_8h_a4806b57fade9f651148a380a8b3100ac}{t\-Image\-T\-G\-A}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \\*
+{\bfseries T\-G\-A\-\_\-\-O\-K}, 
+{\bfseries T\-G\-A\-\_\-\-E\-R\-R\-O\-R\-\_\-\-F\-I\-L\-E\-\_\-\-O\-P\-E\-N}, 
+{\bfseries T\-G\-A\-\_\-\-E\-R\-R\-O\-R\-\_\-\-R\-E\-A\-D\-I\-N\-G\-\_\-\-F\-I\-L\-E}, 
+{\bfseries T\-G\-A\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-D\-E\-X\-E\-D\-\_\-\-C\-O\-L\-O\-R}, 
+\\*
+{\bfseries T\-G\-A\-\_\-\-E\-R\-R\-O\-R\-\_\-\-M\-E\-M\-O\-R\-Y}, 
+{\bfseries T\-G\-A\-\_\-\-E\-R\-R\-O\-R\-\_\-\-C\-O\-M\-P\-R\-E\-S\-S\-E\-D\-\_\-\-F\-I\-L\-E}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_t_g_alib_8h_ae4e4a746c9d9122a2a00e9ccff4b3b88}{void \hyperlink{_t_g_alib_8h_ae4e4a746c9d9122a2a00e9ccff4b3b88}{tga\-Load\-Header} (F\-I\-L\-E $\ast$file, \hyperlink{_t_g_alib_8h_a4806b57fade9f651148a380a8b3100ac}{t\-Image\-T\-G\-A} $\ast$info)}\label{_t_g_alib_8h_ae4e4a746c9d9122a2a00e9ccff4b3b88}
+
+\begin{DoxyCompactList}\small\item\em load the image header fields. We only keep those that matter! \end{DoxyCompactList}\item 
+\hypertarget{_t_g_alib_8h_a3004dc7778923df2e03e727d34d74760}{void \hyperlink{_t_g_alib_8h_a3004dc7778923df2e03e727d34d74760}{tga\-Load\-Image\-Data} (F\-I\-L\-E $\ast$file, \hyperlink{_t_g_alib_8h_a4806b57fade9f651148a380a8b3100ac}{t\-Image\-T\-G\-A} $\ast$info)}\label{_t_g_alib_8h_a3004dc7778923df2e03e727d34d74760}
+
+\begin{DoxyCompactList}\small\item\em loads the image pixels. You shouldn't call this function directly \end{DoxyCompactList}\item 
+\hypertarget{_t_g_alib_8h_ad350c7cfd82d472520e62e5b70f8a1d1}{\hyperlink{_t_g_alib_8h_a4806b57fade9f651148a380a8b3100ac}{t\-Image\-T\-G\-A} $\ast$ \hyperlink{_t_g_alib_8h_ad350c7cfd82d472520e62e5b70f8a1d1}{tga\-Load} (const char $\ast$filename)}\label{_t_g_alib_8h_ad350c7cfd82d472520e62e5b70f8a1d1}
+
+\begin{DoxyCompactList}\small\item\em this is the function to call when we want to load an image \end{DoxyCompactList}\item 
+\hypertarget{_t_g_alib_8h_ac6864d3fdf905f0f6c4adc08f5b96dae}{void {\bfseries tga\-R\-G\-Btogreyscale} (\hyperlink{_t_g_alib_8h_a4806b57fade9f651148a380a8b3100ac}{t\-Image\-T\-G\-A} $\ast$info)}\label{_t_g_alib_8h_ac6864d3fdf905f0f6c4adc08f5b96dae}
+
+\item 
+\hypertarget{_t_g_alib_8h_a32e91a02310314624879397d928fe69c}{void \hyperlink{_t_g_alib_8h_a32e91a02310314624879397d928fe69c}{tga\-Destroy} (\hyperlink{_t_g_alib_8h_a4806b57fade9f651148a380a8b3100ac}{t\-Image\-T\-G\-A} $\ast$info)}\label{_t_g_alib_8h_a32e91a02310314624879397d928fe69c}
+
+\begin{DoxyCompactList}\small\item\em releases the memory used for the image \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+T\-G\-A image support 
+
+\subsection{Typedef Documentation}
+\hypertarget{_t_g_alib_8h_a4806b57fade9f651148a380a8b3100ac}{\index{T\-G\-Alib.\-h@{T\-G\-Alib.\-h}!t\-Image\-T\-G\-A@{t\-Image\-T\-G\-A}}
+\index{t\-Image\-T\-G\-A@{t\-Image\-T\-G\-A}!TGAlib.h@{T\-G\-Alib.\-h}}
+\subsubsection[{t\-Image\-T\-G\-A}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf s\-Image\-T\-G\-A}  {\bf t\-Image\-T\-G\-A}}}\label{_t_g_alib_8h_a4806b57fade9f651148a380a8b3100ac}
+T\-G\-A format 

@@ -1,0 +1,483 @@
+\hypertarget{cc_g_l_state_cache_8h}{\section{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.1-\/beta4/cocos2d/cc\-G\-L\-State\-Cache.h File Reference}
+\label{cc_g_l_state_cache_8h}\index{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/cc\-G\-L\-State\-Cache.\-h@{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/cc\-G\-L\-State\-Cache.\-h}}
+}
+{\ttfamily \#import $<$Target\-Conditionals.\-h$>$}\\*
+{\ttfamily \#import \char`\"{}cc\-Macros.\-h\char`\"{}}\\*
+{\ttfamily \#import \char`\"{}Platforms/\-C\-C\-G\-L.\-h\char`\"{}}\\*
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \\*
+{\bfseries k\-C\-C\-Vertex\-Attrib\-Flag\-\_\-\-None} =  0, 
+{\bfseries k\-C\-C\-Vertex\-Attrib\-Flag\-\_\-\-Position} =  1 $<$$<$ 0, 
+{\bfseries k\-C\-C\-Vertex\-Attrib\-Flag\-\_\-\-Color} =  1 $<$$<$ 1, 
+{\bfseries k\-C\-C\-Vertex\-Attrib\-Flag\-\_\-\-Tex\-Coords} =  1 $<$$<$ 2, 
+\\*
+{\bfseries k\-C\-C\-Vertex\-Attrib\-Flag\-\_\-\-Pos\-Color\-Tex} =  ( k\-C\-C\-Vertex\-Attrib\-Flag\-\_\-\-Position $|$ k\-C\-C\-Vertex\-Attrib\-Flag\-\_\-\-Color $|$ k\-C\-C\-Vertex\-Attrib\-Flag\-\_\-\-Tex\-Coords )
+ \}
+\item 
+enum \hyperlink{cc_g_l_state_cache_8h_af395552034661147c3a67a20581a6294}{cc\-G\-L\-Server\-State} \{ {\bfseries C\-C\-\_\-\-G\-L\-\_\-\-A\-L\-L} =  0
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{cc_g_l_state_cache_8h_ab808c729c8978d63a915fb2784abeb2c}{cc\-G\-L\-Invalidate\-State\-Cache} (void)
+\item 
+void \hyperlink{cc_g_l_state_cache_8h_a353f977869c5601333c47f0c939db3da}{cc\-G\-L\-Use\-Program} (G\-Luint program)
+\item 
+void \hyperlink{cc_g_l_state_cache_8h_ac28fe4b928ce2b80c8106c9f17db749b}{cc\-G\-L\-Delete\-Program} (G\-Luint program)
+\item 
+void \hyperlink{cc_g_l_state_cache_8h_a38791a1d8d0b920a4138b2554015a028}{cc\-G\-L\-Blend\-Func} (G\-Lenum sfactor, G\-Lenum dfactor)
+\item 
+void \hyperlink{cc_g_l_state_cache_8h_ae74205fc321fbe576eb0a0358918c9bd}{cc\-G\-L\-Blend\-Reset\-To\-Cache} (void)
+\item 
+void \hyperlink{cc_g_l_state_cache_8h_a343497226a87e4ece563eae54d23bb5f}{cc\-Set\-Projection\-Matrix\-Dirty} (void)
+\item 
+void \hyperlink{cc_g_l_state_cache_8h_a1e1aad887ead71522a0ee83764f9236a}{cc\-G\-L\-Enable\-Vertex\-Attribs} (unsigned int flags)
+\item 
+void \hyperlink{cc_g_l_state_cache_8h_a8a0c0bb2650d111dd2f155070b6b4714}{cc\-G\-L\-Bind\-Texture2\-D} (G\-Luint texture\-Id)
+\item 
+void \hyperlink{cc_g_l_state_cache_8h_adcfcb3b7ed2db1941103f4ca8cd651a5}{cc\-G\-L\-Bind\-Texture2\-D\-N} (G\-Luint texture\-Unit, G\-Luint texture\-Id)
+\item 
+void \hyperlink{cc_g_l_state_cache_8h_ae6ea167c856dcd40971ad4ce237253d5}{cc\-G\-L\-Delete\-Texture} (G\-Luint texture\-Id)
+\item 
+void \hyperlink{cc_g_l_state_cache_8h_a35f5ea8ea73b7d9519e2547c76890e1e}{cc\-G\-L\-Delete\-Texture\-N} (G\-Luint texture\-Unit, G\-Luint texture\-Id)
+\item 
+void \hyperlink{cc_g_l_state_cache_8h_a993b02849588c8bbf28a6cfa6afbbd65}{cc\-G\-L\-Bind\-V\-A\-O} (G\-Luint vao\-Id)
+\item 
+void \hyperlink{cc_g_l_state_cache_8h_aec3952a24e906ffbce477954278eaded}{cc\-G\-L\-Enable} (\hyperlink{cc_g_l_state_cache_8h_af395552034661147c3a67a20581a6294}{cc\-G\-L\-Server\-State} flags)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{cc_g_l_state_cache_8h_abed82baf7f470b522273a3e37c24c600}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{cc_g_l_state_cache_8h_abed82baf7f470b522273a3e37c24c600}
+vertex attrib flags 
+\begin{DoxyCode}
+     {
+        kCCVertexAttribFlag_None                = 0,
+        
+        kCCVertexAttribFlag_Position    = 1 << 0,
+        kCCVertexAttribFlag_Color               = 1 << 1,
+        kCCVertexAttribFlag_TexCoords   = 1 << 2,
+        
+        kCCVertexAttribFlag_PosColorTex = ( kCCVertexAttribFlag_Position | 
+      kCCVertexAttribFlag_Color | kCCVertexAttribFlag_TexCoords ),
+};
+\end{DoxyCode}
+\hypertarget{cc_g_l_state_cache_8h_af395552034661147c3a67a20581a6294}{\index{cc\-G\-L\-State\-Cache.\-h@{cc\-G\-L\-State\-Cache.\-h}!cc\-G\-L\-Server\-State@{cc\-G\-L\-Server\-State}}
+\index{cc\-G\-L\-Server\-State@{cc\-G\-L\-Server\-State}!ccGLStateCache.h@{cc\-G\-L\-State\-Cache.\-h}}
+\subsubsection[{cc\-G\-L\-Server\-State}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf cc\-G\-L\-Server\-State}}}\label{cc_g_l_state_cache_8h_af395552034661147c3a67a20581a6294}
+G\-L server side states 
+\begin{DoxyCode}
+             {
+//      CC_GL_SCISSOR_TEST = 1 << 0,
+//      CC_GL_STENCIL_TEST = 1 << 1,
+//      CC_GL_DEPTH_TEST = 1 << 2,
+//      CC_GL_BLEND = 1 << 3,
+//      CC_GL_DITHER = 1 << 4,
+
+//      CC_GL_ALL = ( CC_GL_SCISSOR_TEST | CC_GL_STENCIL_TEST |
+       CC_GL_DEPTH_TEST | CC_GL_BLEND | CC_GL_DITHER ),
+//      CC_GL_ALL = ( CC_GL_BLEND ),
+        CC_GL_ALL = 0,
+        
+} ccGLServerState;
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\hypertarget{cc_g_l_state_cache_8h_a8a0c0bb2650d111dd2f155070b6b4714}{\index{cc\-G\-L\-State\-Cache.\-h@{cc\-G\-L\-State\-Cache.\-h}!cc\-G\-L\-Bind\-Texture2\-D@{cc\-G\-L\-Bind\-Texture2\-D}}
+\index{cc\-G\-L\-Bind\-Texture2\-D@{cc\-G\-L\-Bind\-Texture2\-D}!ccGLStateCache.h@{cc\-G\-L\-State\-Cache.\-h}}
+\subsubsection[{cc\-G\-L\-Bind\-Texture2\-D}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-G\-L\-Bind\-Texture2\-D} (
+\begin{DoxyParamCaption}
+\item[{G\-Luint}]{texture\-Id}
+\end{DoxyParamCaption}
+)}}\label{cc_g_l_state_cache_8h_a8a0c0bb2650d111dd2f155070b6b4714}
+If the texture is not already bound to texture unit 0, it binds it. If C\-C\-\_\-\-E\-N\-A\-B\-L\-E\-\_\-\-G\-L\-\_\-\-S\-T\-A\-T\-E\-\_\-\-C\-A\-C\-H\-E is disabled, it will call gl\-Bind\-Texture() directly. \begin{DoxySince}{Since}
+v2.\-0.\-0 
+\end{DoxySince}
+
+
+Referenced by cc\-G\-L\-Bind\-Texture2\-D(), C\-C\-Texture\-Atlas\-::draw\-Number\-Of\-Quads\-:from\-Index\-:, and C\-C\-Texture2\-D\-::init\-With\-Data\-:pixel\-Format\-:pixels\-Wide\-:pixels\-High\-:content\-Size\-:.
+
+
+\begin{DoxyCode}
+{
+        ccGLBindTexture2DN(0, textureId);
+}
+\end{DoxyCode}
+\hypertarget{cc_g_l_state_cache_8h_adcfcb3b7ed2db1941103f4ca8cd651a5}{\index{cc\-G\-L\-State\-Cache.\-h@{cc\-G\-L\-State\-Cache.\-h}!cc\-G\-L\-Bind\-Texture2\-D\-N@{cc\-G\-L\-Bind\-Texture2\-D\-N}}
+\index{cc\-G\-L\-Bind\-Texture2\-D\-N@{cc\-G\-L\-Bind\-Texture2\-D\-N}!ccGLStateCache.h@{cc\-G\-L\-State\-Cache.\-h}}
+\subsubsection[{cc\-G\-L\-Bind\-Texture2\-D\-N}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-G\-L\-Bind\-Texture2\-D\-N} (
+\begin{DoxyParamCaption}
+\item[{G\-Luint}]{texture\-Unit, }
+\item[{G\-Luint}]{texture\-Id}
+\end{DoxyParamCaption}
+)}}\label{cc_g_l_state_cache_8h_adcfcb3b7ed2db1941103f4ca8cd651a5}
+If the texture is not already bound to a given unit, it binds it. If C\-C\-\_\-\-E\-N\-A\-B\-L\-E\-\_\-\-G\-L\-\_\-\-S\-T\-A\-T\-E\-\_\-\-C\-A\-C\-H\-E is disabled, it will call gl\-Bind\-Texture() directly. \begin{DoxySince}{Since}
+v2.\-1.\-0 
+\end{DoxySince}
+
+
+Referenced by cc\-G\-L\-Bind\-Texture2\-D(), and cc\-G\-L\-Bind\-Texture2\-D\-N().
+
+
+\begin{DoxyCode}
+{
+#if CC_ENABLE_GL_STATE_CACHE
+        NSCAssert1( textureUnit < kCCMaxActiveTexture, @"cocos2d ERROR:
+       Increase kCCMaxActiveTexture to %d!", textureUnit - GL_TEXTURE0);
+        if( _ccCurrentBoundTexture[ textureUnit ] != textureId )
+        {
+                _ccCurrentBoundTexture[ textureUnit ] = textureId;
+                glActiveTexture( GL_TEXTURE0 + textureUnit );
+                glBindTexture(GL_TEXTURE_2D, textureId );
+        }
+#else
+        glActiveTexture( GL_TEXTURE0 + textureUnit );
+        glBindTexture(GL_TEXTURE_2D, textureId );
+#endif
+}
+\end{DoxyCode}
+\hypertarget{cc_g_l_state_cache_8h_a993b02849588c8bbf28a6cfa6afbbd65}{\index{cc\-G\-L\-State\-Cache.\-h@{cc\-G\-L\-State\-Cache.\-h}!cc\-G\-L\-Bind\-V\-A\-O@{cc\-G\-L\-Bind\-V\-A\-O}}
+\index{cc\-G\-L\-Bind\-V\-A\-O@{cc\-G\-L\-Bind\-V\-A\-O}!ccGLStateCache.h@{cc\-G\-L\-State\-Cache.\-h}}
+\subsubsection[{cc\-G\-L\-Bind\-V\-A\-O}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-G\-L\-Bind\-V\-A\-O} (
+\begin{DoxyParamCaption}
+\item[{G\-Luint}]{vao\-Id}
+\end{DoxyParamCaption}
+)}}\label{cc_g_l_state_cache_8h_a993b02849588c8bbf28a6cfa6afbbd65}
+If the vertex array is not already bound, it binds it. If C\-C\-\_\-\-E\-N\-A\-B\-L\-E\-\_\-\-G\-L\-\_\-\-S\-T\-A\-T\-E\-\_\-\-C\-A\-C\-H\-E is disabled, it will call gl\-Bind\-Vertex\-Array() directly. \begin{DoxySince}{Since}
+v2.\-0.\-0 
+\end{DoxySince}
+
+
+Referenced by cc\-G\-L\-Bind\-V\-A\-O(), cc\-G\-L\-Enable\-Vertex\-Attribs(), and C\-C\-Texture\-Atlas\-::draw\-Number\-Of\-Quads\-:from\-Index\-:.
+
+
+\begin{DoxyCode}
+{
+#if CC_ENABLE_GL_STATE_CACHE
+        if( _ccVAO != vaoId )
+        {
+                _ccVAO = vaoId;
+                glBindVertexArray(vaoId);
+        }
+#else
+        glBindVertexArray(vaoId);
+#endif
+}
+\end{DoxyCode}
+\hypertarget{cc_g_l_state_cache_8h_a38791a1d8d0b920a4138b2554015a028}{\index{cc\-G\-L\-State\-Cache.\-h@{cc\-G\-L\-State\-Cache.\-h}!cc\-G\-L\-Blend\-Func@{cc\-G\-L\-Blend\-Func}}
+\index{cc\-G\-L\-Blend\-Func@{cc\-G\-L\-Blend\-Func}!ccGLStateCache.h@{cc\-G\-L\-State\-Cache.\-h}}
+\subsubsection[{cc\-G\-L\-Blend\-Func}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-G\-L\-Blend\-Func} (
+\begin{DoxyParamCaption}
+\item[{G\-Lenum}]{sfactor, }
+\item[{G\-Lenum}]{dfactor}
+\end{DoxyParamCaption}
+)}}\label{cc_g_l_state_cache_8h_a38791a1d8d0b920a4138b2554015a028}
+Uses a blending function in case it not already used. If C\-C\-\_\-\-E\-N\-A\-B\-L\-E\-\_\-\-G\-L\-\_\-\-S\-T\-A\-T\-E\-\_\-\-C\-A\-C\-H\-E is disabled, it will the gl\-Blend\-Func() directly. \begin{DoxySince}{Since}
+v2.\-0.\-0 
+\end{DoxySince}
+
+
+Referenced by cc\-G\-L\-Blend\-Func(), and C\-C\-Director\-::set\-Alpha\-Blending\-:.
+
+
+\begin{DoxyCode}
+{
+#if CC_ENABLE_GL_STATE_CACHE
+        if( sfactor != _ccBlendingSource || dfactor != _ccBlendingDest ) {
+                _ccBlendingSource = sfactor;
+                _ccBlendingDest = dfactor;
+                SetBlending( sfactor, dfactor );
+        }
+#else
+        SetBlending( sfactor, dfactor );
+#endif // CC_ENABLE_GL_STATE_CACHE
+}
+\end{DoxyCode}
+\hypertarget{cc_g_l_state_cache_8h_ae74205fc321fbe576eb0a0358918c9bd}{\index{cc\-G\-L\-State\-Cache.\-h@{cc\-G\-L\-State\-Cache.\-h}!cc\-G\-L\-Blend\-Reset\-To\-Cache@{cc\-G\-L\-Blend\-Reset\-To\-Cache}}
+\index{cc\-G\-L\-Blend\-Reset\-To\-Cache@{cc\-G\-L\-Blend\-Reset\-To\-Cache}!ccGLStateCache.h@{cc\-G\-L\-State\-Cache.\-h}}
+\subsubsection[{cc\-G\-L\-Blend\-Reset\-To\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-G\-L\-Blend\-Reset\-To\-Cache} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{cc_g_l_state_cache_8h_ae74205fc321fbe576eb0a0358918c9bd}
+Resets the blending mode back to the cached state in case you used gl\-Blend\-Func\-Separate() or gl\-Blend\-Equation(). If C\-C\-\_\-\-E\-N\-A\-B\-L\-E\-\_\-\-G\-L\-\_\-\-S\-T\-A\-T\-E\-\_\-\-C\-A\-C\-H\-E is disabled, it will just set the default blending mode using G\-L\-\_\-\-F\-U\-N\-C\-\_\-\-A\-D\-D. \begin{DoxySince}{Since}
+v2.\-0.\-0 
+\end{DoxySince}
+
+
+Referenced by cc\-G\-L\-Blend\-Reset\-To\-Cache().
+
+
+\begin{DoxyCode}
+{
+        glBlendEquation(GL_FUNC_ADD);
+#if CC_ENABLE_GL_STATE_CACHE
+        SetBlending( _ccBlendingSource, _ccBlendingDest );
+#else
+        SetBlending( CC_BLEND_SRC, CC_BLEND_DST );
+#endif // CC_ENABLE_GL_STATE_CACHE
+}
+\end{DoxyCode}
+\hypertarget{cc_g_l_state_cache_8h_ac28fe4b928ce2b80c8106c9f17db749b}{\index{cc\-G\-L\-State\-Cache.\-h@{cc\-G\-L\-State\-Cache.\-h}!cc\-G\-L\-Delete\-Program@{cc\-G\-L\-Delete\-Program}}
+\index{cc\-G\-L\-Delete\-Program@{cc\-G\-L\-Delete\-Program}!ccGLStateCache.h@{cc\-G\-L\-State\-Cache.\-h}}
+\subsubsection[{cc\-G\-L\-Delete\-Program}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-G\-L\-Delete\-Program} (
+\begin{DoxyParamCaption}
+\item[{G\-Luint}]{program}
+\end{DoxyParamCaption}
+)}}\label{cc_g_l_state_cache_8h_ac28fe4b928ce2b80c8106c9f17db749b}
+Deletes the G\-L program. If it is the one that is being used, it invalidates it. If C\-C\-\_\-\-E\-N\-A\-B\-L\-E\-\_\-\-G\-L\-\_\-\-S\-T\-A\-T\-E\-\_\-\-C\-A\-C\-H\-E is disabled, it will the gl\-Delete\-Program() directly. \begin{DoxySince}{Since}
+v2.\-0.\-0 
+\end{DoxySince}
+
+
+Referenced by cc\-G\-L\-Delete\-Program(), and C\-C\-G\-L\-Program\-::link.
+
+
+\begin{DoxyCode}
+{
+#if CC_ENABLE_GL_STATE_CACHE
+        if( program == _ccCurrentShaderProgram )
+                _ccCurrentShaderProgram = -1;
+#endif // CC_ENABLE_GL_STATE_CACHE
+        
+        glDeleteProgram( program );
+}
+\end{DoxyCode}
+\hypertarget{cc_g_l_state_cache_8h_ae6ea167c856dcd40971ad4ce237253d5}{\index{cc\-G\-L\-State\-Cache.\-h@{cc\-G\-L\-State\-Cache.\-h}!cc\-G\-L\-Delete\-Texture@{cc\-G\-L\-Delete\-Texture}}
+\index{cc\-G\-L\-Delete\-Texture@{cc\-G\-L\-Delete\-Texture}!ccGLStateCache.h@{cc\-G\-L\-State\-Cache.\-h}}
+\subsubsection[{cc\-G\-L\-Delete\-Texture}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-G\-L\-Delete\-Texture} (
+\begin{DoxyParamCaption}
+\item[{G\-Luint}]{texture\-Id}
+\end{DoxyParamCaption}
+)}}\label{cc_g_l_state_cache_8h_ae6ea167c856dcd40971ad4ce237253d5}
+It will delete a given texture. If the texture was bound, it will invalidate the cached for texture unit 0. If C\-C\-\_\-\-E\-N\-A\-B\-L\-E\-\_\-\-G\-L\-\_\-\-S\-T\-A\-T\-E\-\_\-\-C\-A\-C\-H\-E is disabled, it will call gl\-Delete\-Textures() directly. \begin{DoxySince}{Since}
+v2.\-0.\-0 
+\end{DoxySince}
+
+
+Referenced by cc\-G\-L\-Delete\-Texture().
+
+
+\begin{DoxyCode}
+{
+        ccGLDeleteTextureN( 0, textureId );
+}
+\end{DoxyCode}
+\hypertarget{cc_g_l_state_cache_8h_a35f5ea8ea73b7d9519e2547c76890e1e}{\index{cc\-G\-L\-State\-Cache.\-h@{cc\-G\-L\-State\-Cache.\-h}!cc\-G\-L\-Delete\-Texture\-N@{cc\-G\-L\-Delete\-Texture\-N}}
+\index{cc\-G\-L\-Delete\-Texture\-N@{cc\-G\-L\-Delete\-Texture\-N}!ccGLStateCache.h@{cc\-G\-L\-State\-Cache.\-h}}
+\subsubsection[{cc\-G\-L\-Delete\-Texture\-N}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-G\-L\-Delete\-Texture\-N} (
+\begin{DoxyParamCaption}
+\item[{G\-Luint}]{texture\-Unit, }
+\item[{G\-Luint}]{texture\-Id}
+\end{DoxyParamCaption}
+)}}\label{cc_g_l_state_cache_8h_a35f5ea8ea73b7d9519e2547c76890e1e}
+It will delete a given texture. If the texture was bound, it will invalidate the cached for the given texture unit. If C\-C\-\_\-\-E\-N\-A\-B\-L\-E\-\_\-\-G\-L\-\_\-\-S\-T\-A\-T\-E\-\_\-\-C\-A\-C\-H\-E is disabled, it will call gl\-Delete\-Textures() directly. \begin{DoxySince}{Since}
+v2.\-1.\-0 
+\end{DoxySince}
+
+
+Referenced by cc\-G\-L\-Delete\-Texture(), and cc\-G\-L\-Delete\-Texture\-N().
+
+
+\begin{DoxyCode}
+{
+#if CC_ENABLE_GL_STATE_CACHE
+        if( _ccCurrentBoundTexture[ textureUnit ] == textureId )
+                _ccCurrentBoundTexture[ textureUnit ] = -1;
+#endif // CC_ENABLE_GL_STATE_CACHE
+
+        glDeleteTextures(1, &textureId );
+}
+\end{DoxyCode}
+\hypertarget{cc_g_l_state_cache_8h_aec3952a24e906ffbce477954278eaded}{\index{cc\-G\-L\-State\-Cache.\-h@{cc\-G\-L\-State\-Cache.\-h}!cc\-G\-L\-Enable@{cc\-G\-L\-Enable}}
+\index{cc\-G\-L\-Enable@{cc\-G\-L\-Enable}!ccGLStateCache.h@{cc\-G\-L\-State\-Cache.\-h}}
+\subsubsection[{cc\-G\-L\-Enable}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-G\-L\-Enable} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-G\-L\-Server\-State}}]{flags}
+\end{DoxyParamCaption}
+)}}\label{cc_g_l_state_cache_8h_aec3952a24e906ffbce477954278eaded}
+It will enable / disable the server side G\-L states. If C\-C\-\_\-\-E\-N\-A\-B\-L\-E\-\_\-\-G\-L\-\_\-\-S\-T\-A\-T\-E\-\_\-\-C\-A\-C\-H\-E is disabled, it will call gl\-Enable() directly. \begin{DoxySince}{Since}
+v2.\-0.\-0 
+\end{DoxySince}
+
+
+Referenced by cc\-G\-L\-Enable().
+
+
+\begin{DoxyCode}
+{
+#if CC_ENABLE_GL_STATE_CACHE
+        
+//      BOOL enabled = NO;
+//
+//      /* GL_BLEND */
+//      if( (enabled=(flags & CC_GL_BLEND)) != (_ccGLServerState & CC_GL_BLEND)
+       ) {
+//              if( enabled ) {
+//                      glEnable( GL_BLEND );
+//                      _ccGLServerState |= CC_GL_BLEND;
+//              } else {
+//                      glDisable( GL_BLEND );
+//                      _ccGLServerState &=  ~CC_GL_BLEND;
+//              }
+//      }
+        
+#else
+//      if( flags & CC_GL_BLEND )
+//              glEnable( GL_BLEND );
+//      else
+//              glDisable( GL_BLEND );
+#endif
+}
+\end{DoxyCode}
+\hypertarget{cc_g_l_state_cache_8h_a1e1aad887ead71522a0ee83764f9236a}{\index{cc\-G\-L\-State\-Cache.\-h@{cc\-G\-L\-State\-Cache.\-h}!cc\-G\-L\-Enable\-Vertex\-Attribs@{cc\-G\-L\-Enable\-Vertex\-Attribs}}
+\index{cc\-G\-L\-Enable\-Vertex\-Attribs@{cc\-G\-L\-Enable\-Vertex\-Attribs}!ccGLStateCache.h@{cc\-G\-L\-State\-Cache.\-h}}
+\subsubsection[{cc\-G\-L\-Enable\-Vertex\-Attribs}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-G\-L\-Enable\-Vertex\-Attribs} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{flags}
+\end{DoxyParamCaption}
+)}}\label{cc_g_l_state_cache_8h_a1e1aad887ead71522a0ee83764f9236a}
+Will enable the vertex attribs that are passed as flags. Possible flags\-:
+
+k\-C\-C\-Vertex\-Attrib\-Flag\-\_\-\-Position k\-C\-C\-Vertex\-Attrib\-Flag\-\_\-\-Color k\-C\-C\-Vertex\-Attrib\-Flag\-\_\-\-Tex\-Coords
+
+These flags can be O\-Red. The flags that are not present, will be disabled.
+
+\begin{DoxySince}{Since}
+v2.\-0.\-0 
+\end{DoxySince}
+
+
+Referenced by cc\-Draw\-Cardinal\-Spline(), cc\-Draw\-Circle(), cc\-Draw\-Cubic\-Bezier(), cc\-Draw\-Line(), cc\-Draw\-Point(), cc\-Draw\-Points(), cc\-Draw\-Poly(), cc\-Draw\-Quad\-Bezier(), cc\-Draw\-Solid\-Poly(), cc\-G\-L\-Enable\-Vertex\-Attribs(), and C\-C\-Texture\-Atlas\-::draw\-Number\-Of\-Quads\-:from\-Index\-:.
+
+
+\begin{DoxyCode}
+{
+        ccGLBindVAO(0);
+        
+        /* Position */
+        BOOL enablePosition = flags & kCCVertexAttribFlag_Position;
+        
+        if( enablePosition != _vertexAttribPosition ) {
+                if( enablePosition )
+                        glEnableVertexAttribArray( kCCVertexAttrib_Position );
+                else
+                        glDisableVertexAttribArray( kCCVertexAttrib_Position );
+
+                _vertexAttribPosition = enablePosition;
+        }
+
+        /* Color */
+        BOOL enableColor = flags & kCCVertexAttribFlag_Color;
+        
+        if( enableColor != _vertexAttribColor ) {
+                if( enableColor )
+                        glEnableVertexAttribArray( kCCVertexAttrib_Color );
+                else
+                        glDisableVertexAttribArray( kCCVertexAttrib_Color );
+
+                _vertexAttribColor = enableColor;
+        }
+
+        /* Tex Coords */
+        BOOL enableTexCoords = flags & kCCVertexAttribFlag_TexCoords;
+        
+        if( enableTexCoords != _vertexAttribTexCoords ) {
+                if( enableTexCoords )
+                        glEnableVertexAttribArray( kCCVertexAttrib_TexCoords );
+                else
+                        glDisableVertexAttribArray( kCCVertexAttrib_TexCoords )
+      ;
+
+                _vertexAttribTexCoords = enableTexCoords;
+        }
+}
+\end{DoxyCode}
+\hypertarget{cc_g_l_state_cache_8h_ab808c729c8978d63a915fb2784abeb2c}{\index{cc\-G\-L\-State\-Cache.\-h@{cc\-G\-L\-State\-Cache.\-h}!cc\-G\-L\-Invalidate\-State\-Cache@{cc\-G\-L\-Invalidate\-State\-Cache}}
+\index{cc\-G\-L\-Invalidate\-State\-Cache@{cc\-G\-L\-Invalidate\-State\-Cache}!ccGLStateCache.h@{cc\-G\-L\-State\-Cache.\-h}}
+\subsubsection[{cc\-G\-L\-Invalidate\-State\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-G\-L\-Invalidate\-State\-Cache} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{cc_g_l_state_cache_8h_ab808c729c8978d63a915fb2784abeb2c}
+Invalidates the G\-L state cache. If C\-C\-\_\-\-E\-N\-A\-B\-L\-E\-\_\-\-G\-L\-\_\-\-S\-T\-A\-T\-E\-\_\-\-C\-A\-C\-H\-E it will reset the G\-L state cache. \begin{DoxySince}{Since}
+v2.\-0.\-0 
+\end{DoxySince}
+
+
+Referenced by cc\-G\-L\-Invalidate\-State\-Cache(), and C\-C\-Director\-::end.
+
+
+\begin{DoxyCode}
+{
+        kmGLFreeAll();
+        
+        _ccCurrentProjectionMatrix = -1;
+        _vertexAttribPosition = NO;
+        _vertexAttribColor = NO;
+        _vertexAttribTexCoords = NO;
+        
+#if CC_ENABLE_GL_STATE_CACHE
+        _ccCurrentShaderProgram = -1;
+        for( NSInteger i=0; i < kCCMaxActiveTexture; i++ )
+                _ccCurrentBoundTexture[i] = -1;
+        _ccBlendingSource = -1;
+        _ccBlendingDest = -1;
+        _ccGLServerState = 0;
+#endif
+}
+\end{DoxyCode}
+\hypertarget{cc_g_l_state_cache_8h_a353f977869c5601333c47f0c939db3da}{\index{cc\-G\-L\-State\-Cache.\-h@{cc\-G\-L\-State\-Cache.\-h}!cc\-G\-L\-Use\-Program@{cc\-G\-L\-Use\-Program}}
+\index{cc\-G\-L\-Use\-Program@{cc\-G\-L\-Use\-Program}!ccGLStateCache.h@{cc\-G\-L\-State\-Cache.\-h}}
+\subsubsection[{cc\-G\-L\-Use\-Program}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-G\-L\-Use\-Program} (
+\begin{DoxyParamCaption}
+\item[{G\-Luint}]{program}
+\end{DoxyParamCaption}
+)}}\label{cc_g_l_state_cache_8h_a353f977869c5601333c47f0c939db3da}
+Uses the G\-L program in case program is different than the current one. If C\-C\-\_\-\-E\-N\-A\-B\-L\-E\-\_\-\-G\-L\-\_\-\-S\-T\-A\-T\-E\-\_\-\-C\-A\-C\-H\-E is disabled, it will the gl\-Use\-Program() directly. \begin{DoxySince}{Since}
+v2.\-0.\-0 
+\end{DoxySince}
+
+
+Referenced by cc\-G\-L\-Use\-Program(), and C\-C\-G\-L\-Program\-::use.
+
+
+\begin{DoxyCode}
+{
+#if CC_ENABLE_GL_STATE_CACHE
+        if( program != _ccCurrentShaderProgram ) {
+                _ccCurrentShaderProgram = program;
+                glUseProgram(program);
+        }
+#else
+        glUseProgram(program);
+#endif // CC_ENABLE_GL_STATE_CACHE
+}
+\end{DoxyCode}
+\hypertarget{cc_g_l_state_cache_8h_a343497226a87e4ece563eae54d23bb5f}{\index{cc\-G\-L\-State\-Cache.\-h@{cc\-G\-L\-State\-Cache.\-h}!cc\-Set\-Projection\-Matrix\-Dirty@{cc\-Set\-Projection\-Matrix\-Dirty}}
+\index{cc\-Set\-Projection\-Matrix\-Dirty@{cc\-Set\-Projection\-Matrix\-Dirty}!ccGLStateCache.h@{cc\-G\-L\-State\-Cache.\-h}}
+\subsubsection[{cc\-Set\-Projection\-Matrix\-Dirty}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Set\-Projection\-Matrix\-Dirty} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{cc_g_l_state_cache_8h_a343497226a87e4ece563eae54d23bb5f}
+sets the projection matrix as dirty \begin{DoxySince}{Since}
+v2.\-0.\-0 
+\end{DoxySince}
+
+
+Referenced by cc\-Set\-Projection\-Matrix\-Dirty().
+
+
+\begin{DoxyCode}
+{
+        _ccCurrentProjectionMatrix = -1;
+}
+\end{DoxyCode}

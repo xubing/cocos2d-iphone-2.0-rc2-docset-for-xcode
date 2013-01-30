@@ -1,0 +1,52 @@
+\hypertarget{structb2_pulley_joint_def}{\section{b2\-Pulley\-Joint\-Def Struct Reference}
+\label{structb2_pulley_joint_def}\index{b2\-Pulley\-Joint\-Def@{b2\-Pulley\-Joint\-Def}}
+}
+
+
+{\ttfamily \#include $<$b2\-Pulley\-Joint.\-h$>$}
+
+Inheritance diagram for b2\-Pulley\-Joint\-Def\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structb2_pulley_joint_def}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structb2_pulley_joint_def_abef614a93562b82aa3b5f8cac17d1ce8}{void \hyperlink{structb2_pulley_joint_def_abef614a93562b82aa3b5f8cac17d1ce8}{Initialize} (\hyperlink{classb2_body}{b2\-Body} $\ast$\hyperlink{structb2_joint_def_a8cd54c93da396be75a9788f2c6897f05}{body\-A}, \hyperlink{classb2_body}{b2\-Body} $\ast$\hyperlink{structb2_joint_def_aa4f4dee2fbcd12187b19506b60e68e3d}{body\-B}, const \hyperlink{structb2_vec2}{b2\-Vec2} \&\hyperlink{structb2_pulley_joint_def_aae77c020ce4629ab9e03560e28aa853d}{ground\-Anchor\-A}, const \hyperlink{structb2_vec2}{b2\-Vec2} \&\hyperlink{structb2_pulley_joint_def_aa412b9f3bffd1fb69ace14f9b3e03b82}{ground\-Anchor\-B}, const \hyperlink{structb2_vec2}{b2\-Vec2} \&anchor\-A, const \hyperlink{structb2_vec2}{b2\-Vec2} \&anchor\-B, float32 \hyperlink{structb2_pulley_joint_def_af35074246aeacbf239c11682642b31f5}{ratio})}\label{structb2_pulley_joint_def_abef614a93562b82aa3b5f8cac17d1ce8}
+
+\begin{DoxyCompactList}\small\item\em Initialize the bodies, anchors, lengths, max lengths, and ratio using the world anchors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structb2_pulley_joint_def_aae77c020ce4629ab9e03560e28aa853d}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{structb2_pulley_joint_def_aae77c020ce4629ab9e03560e28aa853d}{ground\-Anchor\-A}}\label{structb2_pulley_joint_def_aae77c020ce4629ab9e03560e28aa853d}
+
+\begin{DoxyCompactList}\small\item\em The first ground anchor in world coordinates. This point never moves. \end{DoxyCompactList}\item 
+\hypertarget{structb2_pulley_joint_def_aa412b9f3bffd1fb69ace14f9b3e03b82}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{structb2_pulley_joint_def_aa412b9f3bffd1fb69ace14f9b3e03b82}{ground\-Anchor\-B}}\label{structb2_pulley_joint_def_aa412b9f3bffd1fb69ace14f9b3e03b82}
+
+\begin{DoxyCompactList}\small\item\em The second ground anchor in world coordinates. This point never moves. \end{DoxyCompactList}\item 
+\hypertarget{structb2_pulley_joint_def_ad7677a4ad02a6e7cb8699fc5012eac3e}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{structb2_pulley_joint_def_ad7677a4ad02a6e7cb8699fc5012eac3e}{local\-Anchor\-A}}\label{structb2_pulley_joint_def_ad7677a4ad02a6e7cb8699fc5012eac3e}
+
+\begin{DoxyCompactList}\small\item\em The local anchor point relative to body\-A's origin. \end{DoxyCompactList}\item 
+\hypertarget{structb2_pulley_joint_def_aed3f9c9f5f4145ceb32e7e164de73144}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{structb2_pulley_joint_def_aed3f9c9f5f4145ceb32e7e164de73144}{local\-Anchor\-B}}\label{structb2_pulley_joint_def_aed3f9c9f5f4145ceb32e7e164de73144}
+
+\begin{DoxyCompactList}\small\item\em The local anchor point relative to body\-B's origin. \end{DoxyCompactList}\item 
+\hypertarget{structb2_pulley_joint_def_a51d945882c1d7a78af2b0e9ffb31a33b}{float32 \hyperlink{structb2_pulley_joint_def_a51d945882c1d7a78af2b0e9ffb31a33b}{length\-A}}\label{structb2_pulley_joint_def_a51d945882c1d7a78af2b0e9ffb31a33b}
+
+\begin{DoxyCompactList}\small\item\em The a reference length for the segment attached to body\-A. \end{DoxyCompactList}\item 
+\hypertarget{structb2_pulley_joint_def_a5857d5b5b9880b6c8201ce3ee8c3eef0}{float32 \hyperlink{structb2_pulley_joint_def_a5857d5b5b9880b6c8201ce3ee8c3eef0}{length\-B}}\label{structb2_pulley_joint_def_a5857d5b5b9880b6c8201ce3ee8c3eef0}
+
+\begin{DoxyCompactList}\small\item\em The a reference length for the segment attached to body\-B. \end{DoxyCompactList}\item 
+\hypertarget{structb2_pulley_joint_def_af35074246aeacbf239c11682642b31f5}{float32 \hyperlink{structb2_pulley_joint_def_af35074246aeacbf239c11682642b31f5}{ratio}}\label{structb2_pulley_joint_def_af35074246aeacbf239c11682642b31f5}
+
+\begin{DoxyCompactList}\small\item\em The pulley ratio, used to simulate a block-\/and-\/tackle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Pulley joint definition. This requires two ground anchors, two dynamic body anchor points, and a pulley ratio. 
+
+The documentation for this struct was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Dynamics/\-Joints/b2\-Pulley\-Joint.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Dynamics/\-Joints/b2\-Pulley\-Joint.\-cpp\end{DoxyCompactItemize}

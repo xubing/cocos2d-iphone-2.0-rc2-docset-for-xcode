@@ -1,0 +1,102 @@
+\hypertarget{class_destruction_listener}{\section{Destruction\-Listener Class Reference}
+\label{class_destruction_listener}\index{Destruction\-Listener@{Destruction\-Listener}}
+}
+Inheritance diagram for Destruction\-Listener\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_destruction_listener}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_destruction_listener_a51b3b045b48c33fbfaa0182b329d5d49}{Say\-Goodbye} (\hyperlink{classb2_fixture}{b2\-Fixture} $\ast$fixture)
+\item 
+void \hyperlink{class_destruction_listener_a55627bd55b8816d66e0f3d85a75c0552}{Say\-Goodbye} (\hyperlink{classb2_joint}{b2\-Joint} $\ast$joint)
+\item 
+void \hyperlink{class_destruction_listener_a51b3b045b48c33fbfaa0182b329d5d49}{Say\-Goodbye} (\hyperlink{classb2_fixture}{b2\-Fixture} $\ast$fixture)
+\item 
+void \hyperlink{class_destruction_listener_a55627bd55b8816d66e0f3d85a75c0552}{Say\-Goodbye} (\hyperlink{classb2_joint}{b2\-Joint} $\ast$joint)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_destruction_listener_a63bed410135cb56d7d40d3c05a9b20c2}{\hyperlink{class_test}{Test} $\ast$ {\bfseries test}}\label{class_destruction_listener_a63bed410135cb56d7d40d3c05a9b20c2}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_destruction_listener_a51b3b045b48c33fbfaa0182b329d5d49}{\index{Destruction\-Listener@{Destruction\-Listener}!Say\-Goodbye@{Say\-Goodbye}}
+\index{Say\-Goodbye@{Say\-Goodbye}!DestructionListener@{Destruction\-Listener}}
+\subsubsection[{Say\-Goodbye}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Destruction\-Listener\-::\-Say\-Goodbye} (
+\begin{DoxyParamCaption}
+\item[{{\bf b2\-Fixture} $\ast$}]{fixture}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_destruction_listener_a51b3b045b48c33fbfaa0182b329d5d49}
+Called when any fixture is about to be destroyed due to the destruction of its parent body. 
+
+Implements \hyperlink{classb2_destruction_listener_ab327c0073d162112c38d2fe8f8b9fce3}{b2\-Destruction\-Listener}.
+
+
+\begin{DoxyCode}
+{ B2_NOT_USED(fixture); }
+\end{DoxyCode}
+\hypertarget{class_destruction_listener_a55627bd55b8816d66e0f3d85a75c0552}{\index{Destruction\-Listener@{Destruction\-Listener}!Say\-Goodbye@{Say\-Goodbye}}
+\index{Say\-Goodbye@{Say\-Goodbye}!DestructionListener@{Destruction\-Listener}}
+\subsubsection[{Say\-Goodbye}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Destruction\-Listener\-::\-Say\-Goodbye} (
+\begin{DoxyParamCaption}
+\item[{{\bf b2\-Joint} $\ast$}]{joint}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_destruction_listener_a55627bd55b8816d66e0f3d85a75c0552}
+Called when any joint is about to be destroyed due to the destruction of one of its attached bodies. 
+
+Implements \hyperlink{classb2_destruction_listener_a6cd15baa6e5c33118cf7173ab5bf6d58}{b2\-Destruction\-Listener}.
+
+
+\begin{DoxyCode}
+{
+        if (test->m_mouseJoint == joint)
+        {
+                test->m_mouseJoint = NULL;
+        }
+        else
+        {
+                test->JointDestroyed(joint);
+        }
+}
+\end{DoxyCode}
+\hypertarget{class_destruction_listener_a51b3b045b48c33fbfaa0182b329d5d49}{\index{Destruction\-Listener@{Destruction\-Listener}!Say\-Goodbye@{Say\-Goodbye}}
+\index{Say\-Goodbye@{Say\-Goodbye}!DestructionListener@{Destruction\-Listener}}
+\subsubsection[{Say\-Goodbye}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Destruction\-Listener\-::\-Say\-Goodbye} (
+\begin{DoxyParamCaption}
+\item[{{\bf b2\-Fixture} $\ast$}]{fixture}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_destruction_listener_a51b3b045b48c33fbfaa0182b329d5d49}
+Called when any fixture is about to be destroyed due to the destruction of its parent body. 
+
+Implements \hyperlink{classb2_destruction_listener_ab327c0073d162112c38d2fe8f8b9fce3}{b2\-Destruction\-Listener}.
+
+
+\begin{DoxyCode}
+{ B2_NOT_USED(fixture); }
+\end{DoxyCode}
+\hypertarget{class_destruction_listener_a55627bd55b8816d66e0f3d85a75c0552}{\index{Destruction\-Listener@{Destruction\-Listener}!Say\-Goodbye@{Say\-Goodbye}}
+\index{Say\-Goodbye@{Say\-Goodbye}!DestructionListener@{Destruction\-Listener}}
+\subsubsection[{Say\-Goodbye}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Destruction\-Listener\-::\-Say\-Goodbye} (
+\begin{DoxyParamCaption}
+\item[{{\bf b2\-Joint} $\ast$}]{joint}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_destruction_listener_a55627bd55b8816d66e0f3d85a75c0552}
+Called when any joint is about to be destroyed due to the destruction of one of its attached bodies. 
+
+Implements \hyperlink{classb2_destruction_listener_a6cd15baa6e5c33118cf7173ab5bf6d58}{b2\-Destruction\-Listener}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Testbed/\-Framework/Test.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/tests/\-Box2\-D\-Test\-Bed-\/\-Cocos2d\-Integration/i\-Phone\-Test.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Testbed/\-Framework/Test.\-cpp\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/tests/\-Box2\-D\-Test\-Bed-\/\-Cocos2d\-Integration/i\-Phone\-Test.\-mm\end{DoxyCompactItemize}

@@ -1,0 +1,314 @@
+\hypertarget{interface_c_c_draw_node}{\section{C\-C\-Draw\-Node Class Reference}
+\label{interface_c_c_draw_node}\index{C\-C\-Draw\-Node@{C\-C\-Draw\-Node}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Draw\-Node.\-h$>$}
+
+Inheritance diagram for C\-C\-Draw\-Node\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_c_c_draw_node}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_c_c_draw_node_a5b9e1f35b31c70ffde2492b37b7fc25a}{draw\-Dot\-:radius\-:color\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_draw_node_aa25b3af4ce06706578938d8387178858}{draw\-Segment\-From\-:to\-:radius\-:color\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_draw_node_a8c42e649ebddd6fc7476e6087a8c0c6c}{draw\-Poly\-With\-Verts\-:count\-:fill\-Color\-:border\-Width\-:border\-Color\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_draw_node_aa9bddcfd40ab5a8f6fffd2771e94e401}{clear}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_draw_node_a327973d0c6f49be4246332ce4838fde4}{G\-Luint {\bfseries \-\_\-vao}}\label{interface_c_c_draw_node_a327973d0c6f49be4246332ce4838fde4}
+
+\item 
+\hypertarget{interface_c_c_draw_node_ad3a07f674aa28a6f0f9e94e59bfc92be}{G\-Luint {\bfseries \-\_\-vbo}}\label{interface_c_c_draw_node_ad3a07f674aa28a6f0f9e94e59bfc92be}
+
+\item 
+\hypertarget{interface_c_c_draw_node_a0fe851252a8e3a415f7b7804d5baa8f2}{N\-S\-U\-Integer {\bfseries \-\_\-buffer\-Capacity}}\label{interface_c_c_draw_node_a0fe851252a8e3a415f7b7804d5baa8f2}
+
+\item 
+\hypertarget{interface_c_c_draw_node_acb998d98562096e913493ad33a049e45}{G\-Lsizei {\bfseries \-\_\-buffer\-Count}}\label{interface_c_c_draw_node_acb998d98562096e913493ad33a049e45}
+
+\item 
+\hypertarget{interface_c_c_draw_node_a3fea8e8822a14583c8c6981278adeda1}{\hyperlink{cc_types_8h_aa3f3456208d3090768d2c9bff64412ac}{cc\-V2\-F\-\_\-\-C4\-B\-\_\-\-T2\-F} $\ast$ {\bfseries \-\_\-buffer}}\label{interface_c_c_draw_node_a3fea8e8822a14583c8c6981278adeda1}
+
+\item 
+\hypertarget{interface_c_c_draw_node_a6b3b2d749e576d368fd2b0395cc1ea9d}{\hyperlink{cc_types_8h_a8c19c6f67219ecc0a6e4740cc046008d}{cc\-Blend\-Func} {\bfseries \-\_\-blend\-Func}}\label{interface_c_c_draw_node_a6b3b2d749e576d368fd2b0395cc1ea9d}
+
+\item 
+\hypertarget{interface_c_c_draw_node_acf85a37de16cd029e9cb85f62121f264}{B\-O\-O\-L {\bfseries \-\_\-dirty}}\label{interface_c_c_draw_node_acf85a37de16cd029e9cb85f62121f264}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_draw_node_add03e9a03b0ced3213c003ef8c8bc44d}{\hyperlink{cc_types_8h_a8c19c6f67219ecc0a6e4740cc046008d}{cc\-Blend\-Func} {\bfseries blend\-Func}}\label{interface_c_c_draw_node_add03e9a03b0ced3213c003ef8c8bc44d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_draw_node}{C\-C\-Draw\-Node} \hyperlink{struct_node}{Node} that draws dots, segments and polygons. Faster than the \char`\"{}drawing primitives\char`\"{} since they it draws everything in one single batch.
+
+\begin{DoxySince}{Since}
+v2.\-1 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_draw_node_aa9bddcfd40ab5a8f6fffd2771e94e401}{\index{C\-C\-Draw\-Node@{C\-C\-Draw\-Node}!clear@{clear}}
+\index{clear@{clear}!CCDrawNode@{C\-C\-Draw\-Node}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf clear} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_draw_node_aa9bddcfd40ab5a8f6fffd2771e94e401}
+Clear the geometry in the node's buffer. 
+\begin{DoxyCode}
+{
+        _bufferCount = 0;
+        _dirty = YES;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_draw_node_a5b9e1f35b31c70ffde2492b37b7fc25a}{\index{C\-C\-Draw\-Node@{C\-C\-Draw\-Node}!draw\-Dot\-:radius\-:color\-:@{draw\-Dot\-:radius\-:color\-:}}
+\index{draw\-Dot\-:radius\-:color\-:@{draw\-Dot\-:radius\-:color\-:}!CCDrawNode@{C\-C\-Draw\-Node}}
+\subsubsection[{draw\-Dot\-:radius\-:color\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) draw\-Dot\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{pos}
+\item[{radius:(C\-G\-Float)}]{radius}
+\item[{color:({\bf cc\-Color4\-F})}]{color}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_draw_node_a5b9e1f35b31c70ffde2492b37b7fc25a}
+draw a dot at a position, with a given radius and color 
+\begin{DoxyCode}
+              :(CGPoint)pos radius:(CGFloat)radius color:(ccColor4F)color;
+{
+        NSUInteger vertex_count = 2*3;
+        [self ensureCapacity:vertex_count];
+        
+        ccV2F_C4B_T2F a = {{pos.x - radius, pos.y - radius}, ccc4BFromccc4F(
+      color), {-1.0, -1.0} };
+        ccV2F_C4B_T2F b = {{pos.x - radius, pos.y + radius}, ccc4BFromccc4F(
+      color), {-1.0,  1.0} };
+        ccV2F_C4B_T2F c = {{pos.x + radius, pos.y + radius}, ccc4BFromccc4F(
+      color), { 1.0,  1.0} };
+        ccV2F_C4B_T2F d = {{pos.x + radius, pos.y - radius}, ccc4BFromccc4F(
+      color), { 1.0, -1.0} };
+        
+        ccV2F_C4B_T2F_Triangle *triangles = (ccV2F_C4B_T2F_Triangle *)(_buffer 
+      + _bufferCount);
+        triangles[0] = (ccV2F_C4B_T2F_Triangle){a, b, c};
+        triangles[1] = (ccV2F_C4B_T2F_Triangle){a, c, d};
+        
+        _bufferCount += vertex_count;
+        
+        _dirty = YES;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_draw_node_a8c42e649ebddd6fc7476e6087a8c0c6c}{\index{C\-C\-Draw\-Node@{C\-C\-Draw\-Node}!draw\-Poly\-With\-Verts\-:count\-:fill\-Color\-:border\-Width\-:border\-Color\-:@{draw\-Poly\-With\-Verts\-:count\-:fill\-Color\-:border\-Width\-:border\-Color\-:}}
+\index{draw\-Poly\-With\-Verts\-:count\-:fill\-Color\-:border\-Width\-:border\-Color\-:@{draw\-Poly\-With\-Verts\-:count\-:fill\-Color\-:border\-Width\-:border\-Color\-:}!CCDrawNode@{C\-C\-Draw\-Node}}
+\subsubsection[{draw\-Poly\-With\-Verts\-:count\-:fill\-Color\-:border\-Width\-:border\-Color\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) draw\-Poly\-With\-Verts\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point$\ast$)}]{verts}
+\item[{count:(N\-S\-U\-Integer)}]{count}
+\item[{fillColor:({\bf cc\-Color4\-F})}]{fill}
+\item[{borderWidth:(C\-G\-Float)}]{width}
+\item[{borderColor:({\bf cc\-Color4\-F})}]{line}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_draw_node_a8c42e649ebddd6fc7476e6087a8c0c6c}
+draw a polygon with a fill color and line color 
+\begin{DoxyCode}
+                        :(CGPoint *)verts count:(NSUInteger)count fillColor:(
+      ccColor4F)fill  borderWidth:(CGFloat)width borderColor:(ccColor4F)line;
+{
+        struct ExtrudeVerts {ccVertex2F offset, n;};
+        struct ExtrudeVerts extrude[count];
+        bzero(extrude, sizeof(extrude) );
+        
+        for(int i=0; i<count; i++){
+                ccVertex2F v0 = __v2f( verts[(i-1+count)%count] );
+                ccVertex2F v1 = __v2f( verts[i] );
+                ccVertex2F v2 = __v2f( verts[(i+1)%count] );
+        
+                ccVertex2F n1 = v2fnormalize(v2fperp(v2fsub(v1, v0)));
+                ccVertex2F n2 = v2fnormalize(v2fperp(v2fsub(v2, v1)));
+                
+                ccVertex2F offset = v2fmult(v2fadd(n1, n2), 1.0/(v2fdot(n1, n2)
+       + 1.0));
+                extrude[i] = (struct ExtrudeVerts){offset, n2};
+        }
+        
+        BOOL outline = (line.a > 0.0 && width > 0.0);
+        
+        NSUInteger triangle_count = 3*count - 2;
+        NSUInteger vertex_count = 3*triangle_count;
+        [self ensureCapacity:vertex_count];
+        
+        ccV2F_C4B_T2F_Triangle *triangles = (ccV2F_C4B_T2F_Triangle *)(_buffer 
+      + _bufferCount);
+        ccV2F_C4B_T2F_Triangle *cursor = triangles;
+        
+        CGFloat inset = (outline == 0.0 ? 0.5 : 0.0);
+        for(int i=0; i<count-2; i++){
+                ccVertex2F v0 = v2fsub( __v2f(verts[0  ]), v2fmult(extrude[0  ]
+      .offset, inset));
+                ccVertex2F v1 = v2fsub( __v2f(verts[i+1]), v2fmult(extrude[i+1]
+      .offset, inset));
+                ccVertex2F v2 = v2fsub( __v2f(verts[i+2]), v2fmult(extrude[i+2]
+      .offset, inset));
+                
+                *cursor++ = (ccV2F_C4B_T2F_Triangle){
+                        {v0, ccc4BFromccc4F(fill), __t(v2fzero) },
+                        {v1, ccc4BFromccc4F(fill), __t(v2fzero) },
+                        {v2, ccc4BFromccc4F(fill), __t(v2fzero) },
+                };
+        }
+        
+        for(int i=0; i<count; i++){
+                int j = (i+1)%count;
+                ccVertex2F v0 = __v2f( verts[i] );
+                ccVertex2F v1 = __v2f( verts[j] );
+                
+                ccVertex2F n0 = extrude[i].n;
+                
+                ccVertex2F offset0 = extrude[i].offset;
+                ccVertex2F offset1 = extrude[j].offset;
+                
+                if(outline){
+                        ccVertex2F inner0 = v2fsub(v0, v2fmult(offset0, width))
+      ;
+                        ccVertex2F inner1 = v2fsub(v1, v2fmult(offset1, width))
+      ;
+                        ccVertex2F outer0 = v2fadd(v0, v2fmult(offset0, width))
+      ;
+                        ccVertex2F outer1 = v2fadd(v1, v2fmult(offset1, width))
+      ;
+                        
+                        *cursor++ = (ccV2F_C4B_T2F_Triangle){
+                                {inner0, ccc4BFromccc4F(line), __t(v2fneg(n0))}
+      ,
+                                {inner1, ccc4BFromccc4F(line), __t(v2fneg(n0))}
+      ,
+                                {outer1, ccc4BFromccc4F(line), __t(n0)}
+                        };
+                        *cursor++ = (ccV2F_C4B_T2F_Triangle){
+                                {inner0, ccc4BFromccc4F(line), __t(v2fneg(n0))}
+      ,
+                                {outer0, ccc4BFromccc4F(line), __t(n0)},
+                                {outer1, ccc4BFromccc4F(line), __t(n0)}
+                        };
+                } else {
+                        ccVertex2F inner0 = v2fsub(v0, v2fmult(offset0, 0.5));
+                        ccVertex2F inner1 = v2fsub(v1, v2fmult(offset1, 0.5));
+                        ccVertex2F outer0 = v2fadd(v0, v2fmult(offset0, 0.5));
+                        ccVertex2F outer1 = v2fadd(v1, v2fmult(offset1, 0.5));
+                        
+                        *cursor++ = (ccV2F_C4B_T2F_Triangle){
+                                {inner0, ccc4BFromccc4F(fill), __t(v2fzero)}, 
+                                {inner1, ccc4BFromccc4F(fill), __t(v2fzero)},
+                                {outer1, ccc4BFromccc4F(fill), __t(n0)}
+                        };
+                        *cursor++ = (ccV2F_C4B_T2F_Triangle){
+                                {inner0, ccc4BFromccc4F(fill), __t(v2fzero)},
+                                {outer0, ccc4BFromccc4F(fill), __t(n0)},
+                                {outer1, ccc4BFromccc4F(fill), __t(n0)}
+                        };
+                }
+        }
+        
+        _bufferCount += vertex_count;
+        
+        _dirty = YES;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_draw_node_aa25b3af4ce06706578938d8387178858}{\index{C\-C\-Draw\-Node@{C\-C\-Draw\-Node}!draw\-Segment\-From\-:to\-:radius\-:color\-:@{draw\-Segment\-From\-:to\-:radius\-:color\-:}}
+\index{draw\-Segment\-From\-:to\-:radius\-:color\-:@{draw\-Segment\-From\-:to\-:radius\-:color\-:}!CCDrawNode@{C\-C\-Draw\-Node}}
+\subsubsection[{draw\-Segment\-From\-:to\-:radius\-:color\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) draw\-Segment\-From\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{a}
+\item[{to:(C\-G\-Point)}]{b}
+\item[{radius:(C\-G\-Float)}]{radius}
+\item[{color:({\bf cc\-Color4\-F})}]{color}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_draw_node_aa25b3af4ce06706578938d8387178858}
+draw a segment with a radius and color 
+\begin{DoxyCode}
+                      :(CGPoint)_a to:(CGPoint)_b radius:(CGFloat)radius color:
+      (ccColor4F)color;
+{
+        NSUInteger vertex_count = 6*3;
+        [self ensureCapacity:vertex_count];
+        
+        ccVertex2F a = __v2f(_a);
+        ccVertex2F b = __v2f(_b);
+        
+        
+        ccVertex2F n = v2fnormalize(v2fperp(v2fsub(b, a)));
+        ccVertex2F t = v2fperp(n);
+        
+        ccVertex2F nw = v2fmult(n, radius);
+        ccVertex2F tw = v2fmult(t, radius);
+        ccVertex2F v0 = v2fsub(b, v2fadd(nw, tw));
+        ccVertex2F v1 = v2fadd(b, v2fsub(nw, tw));
+        ccVertex2F v2 = v2fsub(b, nw);
+        ccVertex2F v3 = v2fadd(b, nw);
+        ccVertex2F v4 = v2fsub(a, nw);
+        ccVertex2F v5 = v2fadd(a, nw);
+        ccVertex2F v6 = v2fsub(a, v2fsub(nw, tw));
+        ccVertex2F v7 = v2fadd(a, v2fadd(nw, tw));
+        
+        
+        ccV2F_C4B_T2F_Triangle *triangles = (ccV2F_C4B_T2F_Triangle *)(_buffer 
+      + _bufferCount);
+        
+        triangles[0] = (ccV2F_C4B_T2F_Triangle) {
+                {v0, ccc4BFromccc4F(color), __t(v2fneg(v2fadd(n, t))) },
+                {v1, ccc4BFromccc4F(color), __t(v2fsub(n, t)) },
+                {v2, ccc4BFromccc4F(color), __t(v2fneg(n)) },
+        };
+        
+        triangles[1] = (ccV2F_C4B_T2F_Triangle){
+                {v3, ccc4BFromccc4F(color), __t(n)},
+                {v1, ccc4BFromccc4F(color), __t(v2fsub(n, t)) },
+                {v2, ccc4BFromccc4F(color), __t(v2fneg(n)) },
+        };
+        
+        triangles[2] = (ccV2F_C4B_T2F_Triangle){
+                {v3, ccc4BFromccc4F(color), __t(n)},
+                {v4, ccc4BFromccc4F(color), __t(v2fneg(n)) },
+                {v2, ccc4BFromccc4F(color), __t(v2fneg(n)) },
+        };
+        triangles[3] = (ccV2F_C4B_T2F_Triangle){
+                {v3, ccc4BFromccc4F(color), __t(n) }, 
+                {v4, ccc4BFromccc4F(color), __t(v2fneg(n)) },
+                {v5, ccc4BFromccc4F(color), __t(n) },
+        };
+        triangles[4] = (ccV2F_C4B_T2F_Triangle){
+                {v6, ccc4BFromccc4F(color), __t(v2fsub(t, n))},
+                {v4, ccc4BFromccc4F(color), __t(v2fneg(n)) },
+                {v5, ccc4BFromccc4F(color), __t(n)},
+        };
+        triangles[5] = (ccV2F_C4B_T2F_Triangle){
+                {v6, ccc4BFromccc4F(color), __t(v2fsub(t, n)) },
+                {v7, ccc4BFromccc4F(color), __t(v2fadd(n, t)) },
+                {v5, ccc4BFromccc4F(color), __t(n)},
+        };
+        
+        _bufferCount += vertex_count;
+        
+        _dirty = YES;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Draw\-Node.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Draw\-Node.\-m\end{DoxyCompactItemize}

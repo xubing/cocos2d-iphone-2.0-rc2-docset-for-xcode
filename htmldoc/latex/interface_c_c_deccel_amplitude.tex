@@ -1,0 +1,91 @@
+\hypertarget{interface_c_c_deccel_amplitude}{\section{C\-C\-Deccel\-Amplitude Class Reference}
+\label{interface_c_c_deccel_amplitude}\index{C\-C\-Deccel\-Amplitude@{C\-C\-Deccel\-Amplitude}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Grid.\-h$>$}
+
+Inheritance diagram for C\-C\-Deccel\-Amplitude\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_c_c_deccel_amplitude}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_deccel_amplitude_a45919a8400869994260dac940cc9fec4}{init\-With\-Action\-:duration\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_deccel_amplitude_ae877f5b01e6e902eb76047f8feaeae94}{action\-With\-Action\-:duration\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_deccel_amplitude_af40a17b010e3660dbb4725f55ab32bc2}{float {\bfseries rate\-\_\-}}\label{interface_c_c_deccel_amplitude_af40a17b010e3660dbb4725f55ab32bc2}
+
+\item 
+\hypertarget{interface_c_c_deccel_amplitude_a302e45f0ac5c78676ca626178e756621}{\hyperlink{class_c_c_action_interval}{C\-C\-Action\-Interval} $\ast$ {\bfseries other\-\_\-}}\label{interface_c_c_deccel_amplitude_a302e45f0ac5c78676ca626178e756621}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{interface_c_c_deccel_amplitude_a852e0ca5c3ea10a23a0ad7cf4be3c907}{rate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_deccel_amplitude}{C\-C\-Deccel\-Amplitude} action 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_deccel_amplitude_ae877f5b01e6e902eb76047f8feaeae94}{\index{C\-C\-Deccel\-Amplitude@{C\-C\-Deccel\-Amplitude}!action\-With\-Action\-:duration\-:@{action\-With\-Action\-:duration\-:}}
+\index{action\-With\-Action\-:duration\-:@{action\-With\-Action\-:duration\-:}!CCDeccelAmplitude@{C\-C\-Deccel\-Amplitude}}
+\subsubsection[{action\-With\-Action\-:duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) action\-With\-Action\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Action}$\ast$)}]{action}
+\item[{duration:({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_deccel_amplitude_ae877f5b01e6e902eb76047f8feaeae94}
+creates the action with an inner action that has the amplitude property, and a duration time 
+\begin{DoxyCode}
+                     :(CCAction*)action duration:(ccTime)d
+{
+        return [[[self alloc] initWithAction:action duration:d ] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_deccel_amplitude_a45919a8400869994260dac940cc9fec4}{\index{C\-C\-Deccel\-Amplitude@{C\-C\-Deccel\-Amplitude}!init\-With\-Action\-:duration\-:@{init\-With\-Action\-:duration\-:}}
+\index{init\-With\-Action\-:duration\-:@{init\-With\-Action\-:duration\-:}!CCDeccelAmplitude@{C\-C\-Deccel\-Amplitude}}
+\subsubsection[{init\-With\-Action\-:duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Action\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Action}$\ast$)}]{action}
+\item[{duration:({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_deccel_amplitude_a45919a8400869994260dac940cc9fec4}
+initializes the action with an inner action that has the amplitude property, and a duration time 
+\begin{DoxyCode}
+                   :(CCAction *)action duration:(ccTime)d
+{
+        if ( (self = [super initWithDuration:d]) )
+        {
+                rate_ = 1.0f;
+                other_ = (CCActionInterval*)[action retain];
+        }
+
+        return self;
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_deccel_amplitude_a852e0ca5c3ea10a23a0ad7cf4be3c907}{\index{C\-C\-Deccel\-Amplitude@{C\-C\-Deccel\-Amplitude}!rate@{rate}}
+\index{rate@{rate}!CCDeccelAmplitude@{C\-C\-Deccel\-Amplitude}}
+\subsubsection[{rate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf rate}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_deccel_amplitude_a852e0ca5c3ea10a23a0ad7cf4be3c907}
+amplitude rate 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Grid.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Grid.\-m\end{DoxyCompactItemize}

@@ -1,0 +1,68 @@
+\hypertarget{class_query_callback}{\section{Query\-Callback Class Reference}
+\label{class_query_callback}\index{Query\-Callback@{Query\-Callback}}
+}
+Inheritance diagram for Query\-Callback\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_query_callback}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_query_callback_a9c15d04aa8895b319f93e6c9af1c59f6}{{\bfseries Query\-Callback} (const \hyperlink{structb2_vec2}{b2\-Vec2} \&point)}\label{class_query_callback_a9c15d04aa8895b319f93e6c9af1c59f6}
+
+\item 
+bool \hyperlink{class_query_callback_ac79cf9e2008bdea68ab3d9d64811dc62}{Report\-Fixture} (\hyperlink{classb2_fixture}{b2\-Fixture} $\ast$fixture)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_query_callback_a40f98612c1a6d7eeb57a3451b4898cda}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-point}}\label{class_query_callback_a40f98612c1a6d7eeb57a3451b4898cda}
+
+\item 
+\hypertarget{class_query_callback_acf7997f35f4f35b82a2aa6a9b3bd66db}{\hyperlink{classb2_fixture}{b2\-Fixture} $\ast$ {\bfseries m\-\_\-fixture}}\label{class_query_callback_acf7997f35f4f35b82a2aa6a9b3bd66db}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_query_callback_ac79cf9e2008bdea68ab3d9d64811dc62}{\index{Query\-Callback@{Query\-Callback}!Report\-Fixture@{Report\-Fixture}}
+\index{Report\-Fixture@{Report\-Fixture}!QueryCallback@{Query\-Callback}}
+\subsubsection[{Report\-Fixture}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf Query\-Callback\-::\-Report\-Fixture} (
+\begin{DoxyParamCaption}
+\item[{{\bf b2\-Fixture} $\ast$}]{fixture}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_query_callback_ac79cf9e2008bdea68ab3d9d64811dc62}
+Called for each fixture found in the query A\-A\-B\-B. \begin{DoxyReturn}{Returns}
+false to terminate the query. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classb2_query_callback_a187dd04dd0f5164fb05c2ce2cbfd9ee5}{b2\-Query\-Callback}.
+
+
+\begin{DoxyCode}
+        {
+                b2Body* body = fixture->GetBody();
+                if (body->GetType() == b2_dynamicBody)
+                {
+                        bool inside = fixture->TestPoint(m_point);
+                        if (inside)
+                        {
+                                m_fixture = fixture;
+
+                                // We are done, terminate the query.
+                                return false;
+                        }
+                }
+
+                // Continue the query.
+                return true;
+        }
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Testbed/\-Framework/Test.\-cpp\end{DoxyCompactItemize}

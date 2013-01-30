@@ -1,0 +1,108 @@
+\hypertarget{interface_c_c_animation_frame}{\section{C\-C\-Animation\-Frame Class Reference}
+\label{interface_c_c_animation_frame}\index{C\-C\-Animation\-Frame@{C\-C\-Animation\-Frame}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Animation.\-h$>$}
+
+Inheritance diagram for C\-C\-Animation\-Frame\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_c_c_animation_frame}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_animation_frame_a7d987b4f51cb75018382a2bb042d7d2d}{init\-With\-Sprite\-Frame\-:delay\-Units\-:user\-Info\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_animation_frame_a1dbdcf878fbfee68fc87f83cd924dc2a}{\hyperlink{interface_c_c_sprite_frame}{C\-C\-Sprite\-Frame} $\ast$ {\bfseries sprite\-Frame\-\_\-}}\label{interface_c_c_animation_frame_a1dbdcf878fbfee68fc87f83cd924dc2a}
+
+\item 
+\hypertarget{interface_c_c_animation_frame_a66659ce8832521a9e397e58b4bf82ff7}{float {\bfseries delay\-Units\-\_\-}}\label{interface_c_c_animation_frame_a66659ce8832521a9e397e58b4bf82ff7}
+
+\item 
+\hypertarget{interface_c_c_animation_frame_aed50d5526e3770e6918b568692fb29e0}{N\-S\-Dictionary $\ast$ {\bfseries user\-Info\-\_\-}}\label{interface_c_c_animation_frame_aed50d5526e3770e6918b568692fb29e0}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_c_c_sprite_frame}{C\-C\-Sprite\-Frame} $\ast$ \hyperlink{interface_c_c_animation_frame_a42391105614626578802667da59120fc}{sprite\-Frame}
+\item 
+float \hyperlink{interface_c_c_animation_frame_aa03ce459c21bb02117a0136d13f5b7ff}{delay\-Units}
+\item 
+N\-S\-Dictionary $\ast$ \hyperlink{interface_c_c_animation_frame_a9eb75cd1e56aafd7d4041ca0a50598b4}{user\-Info}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_animation_frame}{C\-C\-Animation\-Frame} A frame of the animation. It contains information like\-:
+\begin{DoxyItemize}
+\item sprite frame name
+\item \# of delay units.
+\item offset
+\end{DoxyItemize}
+
+\begin{DoxySince}{Since}
+v2.\-0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_animation_frame_a7d987b4f51cb75018382a2bb042d7d2d}{\index{C\-C\-Animation\-Frame@{C\-C\-Animation\-Frame}!init\-With\-Sprite\-Frame\-:delay\-Units\-:user\-Info\-:@{init\-With\-Sprite\-Frame\-:delay\-Units\-:user\-Info\-:}}
+\index{init\-With\-Sprite\-Frame\-:delay\-Units\-:user\-Info\-:@{init\-With\-Sprite\-Frame\-:delay\-Units\-:user\-Info\-:}!CCAnimationFrame@{C\-C\-Animation\-Frame}}
+\subsubsection[{init\-With\-Sprite\-Frame\-:delay\-Units\-:user\-Info\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Sprite\-Frame\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Sprite\-Frame}$\ast$)}]{sprite\-Frame}
+\item[{delayUnits:(float)}]{delay\-Units}
+\item[{userInfo:(N\-S\-Dictionary$\ast$)}]{user\-Info}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_animation_frame_a7d987b4f51cb75018382a2bb042d7d2d}
+initializes the animation frame with a spriteframe, number of delay units and a notification user info 
+\begin{DoxyCode}
+                         :(CCSpriteFrame *)spriteFrame delayUnits:(float)
+      delayUnits userInfo:(NSDictionary*)userInfo
+{
+        if( (self=[super init]) ) {
+                self.spriteFrame = spriteFrame;
+                self.delayUnits = delayUnits;
+                self.userInfo = userInfo;
+        }
+        
+        return self;
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_animation_frame_aa03ce459c21bb02117a0136d13f5b7ff}{\index{C\-C\-Animation\-Frame@{C\-C\-Animation\-Frame}!delay\-Units@{delay\-Units}}
+\index{delay\-Units@{delay\-Units}!CCAnimationFrame@{C\-C\-Animation\-Frame}}
+\subsubsection[{delay\-Units}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf delay\-Units}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_animation_frame_aa03ce459c21bb02117a0136d13f5b7ff}
+how many units of time the frame takes 
+
+Referenced by init\-With\-Sprite\-Frame\-:delay\-Units\-:user\-Info\-:.
+
+\hypertarget{interface_c_c_animation_frame_a42391105614626578802667da59120fc}{\index{C\-C\-Animation\-Frame@{C\-C\-Animation\-Frame}!sprite\-Frame@{sprite\-Frame}}
+\index{sprite\-Frame@{sprite\-Frame}!CCAnimationFrame@{C\-C\-Animation\-Frame}}
+\subsubsection[{sprite\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Sprite\-Frame}$\ast$) {\bf sprite\-Frame}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}\label{interface_c_c_animation_frame_a42391105614626578802667da59120fc}
+C\-C\-Sprite\-Frame\-Name to be used 
+
+Referenced by init\-With\-Sprite\-Frame\-:delay\-Units\-:user\-Info\-:.
+
+\hypertarget{interface_c_c_animation_frame_a9eb75cd1e56aafd7d4041ca0a50598b4}{\index{C\-C\-Animation\-Frame@{C\-C\-Animation\-Frame}!user\-Info@{user\-Info}}
+\index{user\-Info@{user\-Info}!CCAnimationFrame@{C\-C\-Animation\-Frame}}
+\subsubsection[{user\-Info}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Dictionary$\ast$) {\bf user\-Info}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}\label{interface_c_c_animation_frame_a9eb75cd1e56aafd7d4041ca0a50598b4}
+A C\-C\-Animation\-Frame\-Displayed\-Notification notification will be broadcasted when the frame is displayed with this dictionary as User\-Info. If User\-Info is nil, then no notification will be broadcasted. 
+
+Referenced by init\-With\-Sprite\-Frame\-:delay\-Units\-:user\-Info\-:.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Animation.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Animation.\-m\end{DoxyCompactItemize}

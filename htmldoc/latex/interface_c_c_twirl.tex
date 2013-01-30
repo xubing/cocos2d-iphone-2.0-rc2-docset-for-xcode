@@ -1,0 +1,122 @@
+\hypertarget{interface_c_c_twirl}{\section{C\-C\-Twirl Class Reference}
+\label{interface_c_c_twirl}\index{C\-C\-Twirl@{C\-C\-Twirl}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Grid3\-D.\-h$>$}
+
+Inheritance diagram for C\-C\-Twirl\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.000000cm]{interface_c_c_twirl}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_twirl_af0cabbb1ec79e2053bd14024896045f2}{init\-With\-Position\-:twirls\-:amplitude\-:grid\-:duration\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_twirl_a4f00e64ad1d7068b02848fd8647c6ecd}{action\-With\-Position\-:twirls\-:amplitude\-:grid\-:duration\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_twirl_ae7d92a5e34d72fd4b914e024f8e2d7b5}{C\-G\-Point {\bfseries position\-\_\-}}\label{interface_c_c_twirl_ae7d92a5e34d72fd4b914e024f8e2d7b5}
+
+\item 
+\hypertarget{interface_c_c_twirl_ad56fd14a57b0711445310cb2dac9a1e5}{int {\bfseries twirls\-\_\-}}\label{interface_c_c_twirl_ad56fd14a57b0711445310cb2dac9a1e5}
+
+\item 
+\hypertarget{interface_c_c_twirl_aa2674ef9ec9ad10b8c0a2f7dd763e024}{float {\bfseries amplitude\-\_\-}}\label{interface_c_c_twirl_aa2674ef9ec9ad10b8c0a2f7dd763e024}
+
+\item 
+\hypertarget{interface_c_c_twirl_a67426b13c28bf9b7862ee6faa0cad642}{float {\bfseries amplitude\-Rate\-\_\-}}\label{interface_c_c_twirl_a67426b13c28bf9b7862ee6faa0cad642}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+C\-G\-Point \hyperlink{interface_c_c_twirl_abbac5a09daa5e9be9ed1b9fdc2ce672d}{position}
+\item 
+float \hyperlink{interface_c_c_twirl_abb8aa6adc6cc79d802cb2ef5346be769}{amplitude}
+\item 
+float \hyperlink{interface_c_c_twirl_abb2856f816f3756c080f2be00a5a2afd}{amplitude\-Rate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_twirl}{C\-C\-Twirl} action 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_twirl_a4f00e64ad1d7068b02848fd8647c6ecd}{\index{C\-C\-Twirl@{C\-C\-Twirl}!action\-With\-Position\-:twirls\-:amplitude\-:grid\-:duration\-:@{action\-With\-Position\-:twirls\-:amplitude\-:grid\-:duration\-:}}
+\index{action\-With\-Position\-:twirls\-:amplitude\-:grid\-:duration\-:@{action\-With\-Position\-:twirls\-:amplitude\-:grid\-:duration\-:}!CCTwirl@{C\-C\-Twirl}}
+\subsubsection[{action\-With\-Position\-:twirls\-:amplitude\-:grid\-:duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) action\-With\-Position\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{pos}
+\item[{twirls:(int)}]{t}
+\item[{amplitude:(float)}]{amp}
+\item[{grid:({\bf cc\-Grid\-Size})}]{grid\-Size}
+\item[{duration:({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_twirl_a4f00e64ad1d7068b02848fd8647c6ecd}
+creates the action with center position, number of twirls, amplitude, a grid size and duration 
+
+Referenced by Twirl\-Demo\-::action\-With\-Duration\-:.
+
+
+\begin{DoxyCode}
+                       :(CGPoint)pos twirls:(int)t amplitude:(float)amp grid:(
+      ccGridSize)gridSize duration:(ccTime)d
+{
+        return [[[self alloc] initWithPosition:pos twirls:t amplitude:amp grid:
+      gridSize duration:d] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_twirl_af0cabbb1ec79e2053bd14024896045f2}{\index{C\-C\-Twirl@{C\-C\-Twirl}!init\-With\-Position\-:twirls\-:amplitude\-:grid\-:duration\-:@{init\-With\-Position\-:twirls\-:amplitude\-:grid\-:duration\-:}}
+\index{init\-With\-Position\-:twirls\-:amplitude\-:grid\-:duration\-:@{init\-With\-Position\-:twirls\-:amplitude\-:grid\-:duration\-:}!CCTwirl@{C\-C\-Twirl}}
+\subsubsection[{init\-With\-Position\-:twirls\-:amplitude\-:grid\-:duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Position\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{pos}
+\item[{twirls:(int)}]{t}
+\item[{amplitude:(float)}]{amp}
+\item[{grid:({\bf cc\-Grid\-Size})}]{grid\-Size}
+\item[{duration:({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_twirl_af0cabbb1ec79e2053bd14024896045f2}
+initializes the action with center position, number of twirls, amplitude, a grid size and duration 
+\begin{DoxyCode}
+                     :(CGPoint)pos twirls:(int)t amplitude:(float)amp grid:(
+      ccGridSize)gSize duration:(ccTime)d
+{
+        if ( (self = [super initWithSize:gSize duration:d]) )
+        {
+                self.position = pos;
+                twirls_ = t;
+                amplitude_ = amp;
+                amplitudeRate_ = 1.0f;
+        }
+
+        return self;
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_twirl_abb8aa6adc6cc79d802cb2ef5346be769}{\index{C\-C\-Twirl@{C\-C\-Twirl}!amplitude@{amplitude}}
+\index{amplitude@{amplitude}!CCTwirl@{C\-C\-Twirl}}
+\subsubsection[{amplitude}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf amplitude}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_twirl_abb8aa6adc6cc79d802cb2ef5346be769}
+amplitude \hypertarget{interface_c_c_twirl_abb2856f816f3756c080f2be00a5a2afd}{\index{C\-C\-Twirl@{C\-C\-Twirl}!amplitude\-Rate@{amplitude\-Rate}}
+\index{amplitude\-Rate@{amplitude\-Rate}!CCTwirl@{C\-C\-Twirl}}
+\subsubsection[{amplitude\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf amplitude\-Rate}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_twirl_abb2856f816f3756c080f2be00a5a2afd}
+amplitude rate \hypertarget{interface_c_c_twirl_abbac5a09daa5e9be9ed1b9fdc2ce672d}{\index{C\-C\-Twirl@{C\-C\-Twirl}!position@{position}}
+\index{position@{position}!CCTwirl@{C\-C\-Twirl}}
+\subsubsection[{position}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Point) {\bf position}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_twirl_abbac5a09daa5e9be9ed1b9fdc2ce672d}
+twirl center 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Grid3\-D.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Grid3\-D.\-m\end{DoxyCompactItemize}

@@ -1,0 +1,81 @@
+\hypertarget{interface_c_c_transition_scene_oriented}{\section{C\-C\-Transition\-Scene\-Oriented Class Reference}
+\label{interface_c_c_transition_scene_oriented}\index{C\-C\-Transition\-Scene\-Oriented@{C\-C\-Transition\-Scene\-Oriented}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Transition.\-h$>$}
+
+Inheritance diagram for C\-C\-Transition\-Scene\-Oriented\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.954625cm]{interface_c_c_transition_scene_oriented}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_transition_scene_oriented_a0539da9ef2dde47df1fb6edcdb794494}{init\-With\-Duration\-:scene\-:orientation\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_transition_scene_oriented_af473a390253a6ec07bf0eec6ca35146c}{transition\-With\-Duration\-:scene\-:orientation\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_transition_scene_oriented_afc7a76b174a30861a50827f8e376d4fc}{t\-Orientation {\bfseries orientation}}\label{interface_c_c_transition_scene_oriented_afc7a76b174a30861a50827f8e376d4fc}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A C\-C\-Transition that supports orientation like. Possible orientation\-: Left\-Over, Right\-Over, Up\-Over, Down\-Over 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_transition_scene_oriented_a0539da9ef2dde47df1fb6edcdb794494}{\index{C\-C\-Transition\-Scene\-Oriented@{C\-C\-Transition\-Scene\-Oriented}!init\-With\-Duration\-:scene\-:orientation\-:@{init\-With\-Duration\-:scene\-:orientation\-:}}
+\index{init\-With\-Duration\-:scene\-:orientation\-:@{init\-With\-Duration\-:scene\-:orientation\-:}!CCTransitionSceneOriented@{C\-C\-Transition\-Scene\-Oriented}}
+\subsubsection[{init\-With\-Duration\-:scene\-:orientation\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Duration\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{t}
+\item[{scene:({\bf C\-C\-Scene}$\ast$)}]{s}
+\item[{orientation:(t\-Orientation)}]{o}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_transition_scene_oriented_a0539da9ef2dde47df1fb6edcdb794494}
+initializes a transition with duration and incoming scene 
+\begin{DoxyCode}
+                      :(ccTime) t scene:(CCScene*)s orientation:(tOrientation)o
+{
+        if( (self=[super initWithDuration:t scene:s]) )
+                orientation = o;
+        return self;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_transition_scene_oriented_af473a390253a6ec07bf0eec6ca35146c}{\index{C\-C\-Transition\-Scene\-Oriented@{C\-C\-Transition\-Scene\-Oriented}!transition\-With\-Duration\-:scene\-:orientation\-:@{transition\-With\-Duration\-:scene\-:orientation\-:}}
+\index{transition\-With\-Duration\-:scene\-:orientation\-:@{transition\-With\-Duration\-:scene\-:orientation\-:}!CCTransitionSceneOriented@{C\-C\-Transition\-Scene\-Oriented}}
+\subsubsection[{transition\-With\-Duration\-:scene\-:orientation\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) transition\-With\-Duration\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{t}
+\item[{scene:({\bf C\-C\-Scene}$\ast$)}]{s}
+\item[{orientation:(t\-Orientation)}]{o}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_transition_scene_oriented_af473a390253a6ec07bf0eec6ca35146c}
+creates a base transition with duration and incoming scene 
+
+Referenced by Flip\-X\-Left\-Over\-::transition\-With\-Duration\-:scene\-:, Flip\-X\-Right\-Over\-::transition\-With\-Duration\-:scene\-:, Flip\-Y\-Up\-Over\-::transition\-With\-Duration\-:scene\-:, Flip\-Y\-Down\-Over\-::transition\-With\-Duration\-:scene\-:, Flip\-Angular\-Left\-Over\-::transition\-With\-Duration\-:scene\-:, Flip\-Angular\-Right\-Over\-::transition\-With\-Duration\-:scene\-:, Zoom\-Flip\-X\-Left\-Over\-::transition\-With\-Duration\-:scene\-:, Zoom\-Flip\-X\-Right\-Over\-::transition\-With\-Duration\-:scene\-:, Zoom\-Flip\-Y\-Up\-Over\-::transition\-With\-Duration\-:scene\-:, Zoom\-Flip\-Y\-Down\-Over\-::transition\-With\-Duration\-:scene\-:, Zoom\-Flip\-Angular\-Left\-Over\-::transition\-With\-Duration\-:scene\-:, and Zoom\-Flip\-Angular\-Right\-Over\-::transition\-With\-Duration\-:scene\-:.
+
+
+\begin{DoxyCode}
+                            :(ccTime) t scene:(CCScene*)s orientation:(
+      tOrientation)o
+{
+        return [[[self alloc] initWithDuration:t scene:s orientation:o] 
+      autorelease];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Transition.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Transition.\-m\end{DoxyCompactItemize}

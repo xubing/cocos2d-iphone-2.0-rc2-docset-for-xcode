@@ -1,0 +1,125 @@
+\hypertarget{interface_c_c_waves}{\section{C\-C\-Waves Class Reference}
+\label{interface_c_c_waves}\index{C\-C\-Waves@{C\-C\-Waves}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Grid3\-D.\-h$>$}
+
+Inheritance diagram for C\-C\-Waves\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.000000cm]{interface_c_c_waves}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_waves_a4205b35a5f1a8c0a9230f14eda485f12}{init\-With\-Waves\-:amplitude\-:horizontal\-:vertical\-:grid\-:duration\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_waves_a6fec83730f892b0d6036f946bda6d8bf}{action\-With\-Waves\-:amplitude\-:horizontal\-:vertical\-:grid\-:duration\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_waves_ab63f8e32d53f8e501c33f372edfebfbf}{int {\bfseries waves}}\label{interface_c_c_waves_ab63f8e32d53f8e501c33f372edfebfbf}
+
+\item 
+\hypertarget{interface_c_c_waves_a20525778f52901a1e06edd26c8bc0dc3}{B\-O\-O\-L {\bfseries vertical}}\label{interface_c_c_waves_a20525778f52901a1e06edd26c8bc0dc3}
+
+\item 
+\hypertarget{interface_c_c_waves_a5e5e0789bec7299eb4be1faafe7ac7a3}{B\-O\-O\-L {\bfseries horizontal}}\label{interface_c_c_waves_a5e5e0789bec7299eb4be1faafe7ac7a3}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{interface_c_c_waves_a7b04d8498cdedb3ee4bb4b1a3edfe2aa}{amplitude}
+\item 
+float \hyperlink{interface_c_c_waves_a86d4f9c57411c5b5e76a5d38b9435cb2}{amplitude\-Rate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_waves}{C\-C\-Waves} action 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_waves_a6fec83730f892b0d6036f946bda6d8bf}{\index{C\-C\-Waves@{C\-C\-Waves}!action\-With\-Waves\-:amplitude\-:horizontal\-:vertical\-:grid\-:duration\-:@{action\-With\-Waves\-:amplitude\-:horizontal\-:vertical\-:grid\-:duration\-:}}
+\index{action\-With\-Waves\-:amplitude\-:horizontal\-:vertical\-:grid\-:duration\-:@{action\-With\-Waves\-:amplitude\-:horizontal\-:vertical\-:grid\-:duration\-:}!CCWaves@{C\-C\-Waves}}
+\subsubsection[{action\-With\-Waves\-:amplitude\-:horizontal\-:vertical\-:grid\-:duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) action\-With\-Waves\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{wav}
+\item[{amplitude:(float)}]{amp}
+\item[{horizontal:(B\-O\-O\-L)}]{h}
+\item[{vertical:(B\-O\-O\-L)}]{v}
+\item[{grid:({\bf cc\-Grid\-Size})}]{grid\-Size}
+\item[{duration:({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_waves_a6fec83730f892b0d6036f946bda6d8bf}
+initializes the action with amplitude, horizontal sin, vertical sin, a grid and duration 
+
+Referenced by Waves\-Demo\-::action\-With\-Duration\-:.
+
+
+\begin{DoxyCode}
+                    :(int)wav amplitude:(float)amp horizontal:(BOOL)h vertical:
+      (BOOL)v grid:(ccGridSize)gridSize duration:(ccTime)d
+{
+        return [[[self alloc] initWithWaves:wav amplitude:amp horizontal:h 
+      vertical:v grid:gridSize duration:d] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_waves_a4205b35a5f1a8c0a9230f14eda485f12}{\index{C\-C\-Waves@{C\-C\-Waves}!init\-With\-Waves\-:amplitude\-:horizontal\-:vertical\-:grid\-:duration\-:@{init\-With\-Waves\-:amplitude\-:horizontal\-:vertical\-:grid\-:duration\-:}}
+\index{init\-With\-Waves\-:amplitude\-:horizontal\-:vertical\-:grid\-:duration\-:@{init\-With\-Waves\-:amplitude\-:horizontal\-:vertical\-:grid\-:duration\-:}!CCWaves@{C\-C\-Waves}}
+\subsubsection[{init\-With\-Waves\-:amplitude\-:horizontal\-:vertical\-:grid\-:duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Waves\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{wav}
+\item[{amplitude:(float)}]{amp}
+\item[{horizontal:(B\-O\-O\-L)}]{h}
+\item[{vertical:(B\-O\-O\-L)}]{v}
+\item[{grid:({\bf cc\-Grid\-Size})}]{grid\-Size}
+\item[{duration:({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_waves_a4205b35a5f1a8c0a9230f14eda485f12}
+creates the action with amplitude, horizontal sin, vertical sin, a grid and duration 
+\begin{DoxyCode}
+                  :(int)wav amplitude:(float)amp horizontal:(BOOL)h vertical:(
+      BOOL)v grid:(ccGridSize)gSize duration:(ccTime)d
+{
+        if ( (self = [super initWithSize:gSize duration:d]) )
+        {
+                waves = wav;
+                amplitude = amp;
+                amplitudeRate = 1.0f;
+                horizontal = h;
+                vertical = v;
+        }
+
+        return self;
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_waves_a7b04d8498cdedb3ee4bb4b1a3edfe2aa}{\index{C\-C\-Waves@{C\-C\-Waves}!amplitude@{amplitude}}
+\index{amplitude@{amplitude}!CCWaves@{C\-C\-Waves}}
+\subsubsection[{amplitude}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf amplitude}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_waves_a7b04d8498cdedb3ee4bb4b1a3edfe2aa}
+amplitude 
+
+Referenced by init\-With\-Waves\-:amplitude\-:horizontal\-:vertical\-:grid\-:duration\-:.
+
+\hypertarget{interface_c_c_waves_a86d4f9c57411c5b5e76a5d38b9435cb2}{\index{C\-C\-Waves@{C\-C\-Waves}!amplitude\-Rate@{amplitude\-Rate}}
+\index{amplitude\-Rate@{amplitude\-Rate}!CCWaves@{C\-C\-Waves}}
+\subsubsection[{amplitude\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf amplitude\-Rate}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_waves_a86d4f9c57411c5b5e76a5d38b9435cb2}
+amplitude rate 
+
+Referenced by init\-With\-Waves\-:amplitude\-:horizontal\-:vertical\-:grid\-:duration\-:.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Grid3\-D.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Grid3\-D.\-m\end{DoxyCompactItemize}

@@ -1,0 +1,386 @@
+\hypertarget{group__cp_space}{\section{cp\-Space}
+\label{group__cp_space}\index{cp\-Space@{cp\-Space}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcp_space}{cp\-Space}
+\begin{DoxyCompactList}\small\item\em Basic Unit of Simulation in Chipmunk. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__cp_space_ga4baa3370fb35f0ee69c554bc014f02b7}{\#define {\bfseries C\-P\-\_\-\-Define\-Space\-Struct\-Getter}(type, member, name)~static inline type cp\-Space\-Get\#\#name(const \hyperlink{structcp_space}{cp\-Space} $\ast$space)\{return space-\/$>$member;\}}\label{group__cp_space_ga4baa3370fb35f0ee69c554bc014f02b7}
+
+\item 
+\hypertarget{group__cp_space_ga044bac924cf9eb5142ec6df23d1031fb}{\#define {\bfseries C\-P\-\_\-\-Define\-Space\-Struct\-Setter}(type, member, name)~static inline void cp\-Space\-Set\#\#name(\hyperlink{structcp_space}{cp\-Space} $\ast$space, type value)\{space-\/$>$member = value;\}}\label{group__cp_space_ga044bac924cf9eb5142ec6df23d1031fb}
+
+\item 
+\#define {\bfseries C\-P\-\_\-\-Define\-Space\-Struct\-Property}(type, member, name)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__cp_space_ga0dcc2061b696a4f4563b6315d90651cd}{typedef struct \\*
+\hyperlink{structcp_contact_buffer_header}{cp\-Contact\-Buffer\-Header} {\bfseries cp\-Contact\-Buffer\-Header}}\label{group__cp_space_ga0dcc2061b696a4f4563b6315d90651cd}
+
+\item 
+\hypertarget{group__cp_space_ga5aacd6096c382bf106cf9c3f02ef0b17}{typedef void($\ast$ {\bfseries cp\-Space\-Arbiter\-Apply\-Impulse\-Func} )(\hyperlink{structcp_arbiter}{cp\-Arbiter} $\ast$arb)}\label{group__cp_space_ga5aacd6096c382bf106cf9c3f02ef0b17}
+
+\item 
+\hypertarget{group__cp_space_ga54254190b156e3b786c3f256fcc12348}{typedef void($\ast$ \hyperlink{group__cp_space_ga54254190b156e3b786c3f256fcc12348}{cp\-Post\-Step\-Func} )(\hyperlink{structcp_space}{cp\-Space} $\ast$space, void $\ast$key, void $\ast$data)}\label{group__cp_space_ga54254190b156e3b786c3f256fcc12348}
+
+\begin{DoxyCompactList}\small\item\em Post Step callback function type. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_ga6baa5a302b275b18516294fc3106ca58}{typedef void($\ast$ \hyperlink{group__cp_space_ga6baa5a302b275b18516294fc3106ca58}{cp\-Space\-Point\-Query\-Func} )(\hyperlink{structcp_shape}{cp\-Shape} $\ast$shape, void $\ast$data)}\label{group__cp_space_ga6baa5a302b275b18516294fc3106ca58}
+
+\begin{DoxyCompactList}\small\item\em Point query callback function type. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_gafcaf86d003ff9bc8ed04569ef07030cf}{typedef void($\ast$ \hyperlink{group__cp_space_gafcaf86d003ff9bc8ed04569ef07030cf}{cp\-Space\-Nearest\-Point\-Query\-Func} )(\hyperlink{structcp_shape}{cp\-Shape} $\ast$shape, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} distance, \hyperlink{structcp_vect}{cp\-Vect} point, void $\ast$data)}\label{group__cp_space_gafcaf86d003ff9bc8ed04569ef07030cf}
+
+\begin{DoxyCompactList}\small\item\em Nearest point query callback function type. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_gad48eefc60cdccc027c68b1f696e75838}{typedef void($\ast$ \hyperlink{group__cp_space_gad48eefc60cdccc027c68b1f696e75838}{cp\-Space\-Segment\-Query\-Func} )(\hyperlink{structcp_shape}{cp\-Shape} $\ast$shape, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} t, \hyperlink{structcp_vect}{cp\-Vect} n, void $\ast$data)}\label{group__cp_space_gad48eefc60cdccc027c68b1f696e75838}
+
+\begin{DoxyCompactList}\small\item\em Segment query callback function type. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_ga9f9d412c914ddec134554dde01dffbad}{typedef void($\ast$ \hyperlink{group__cp_space_ga9f9d412c914ddec134554dde01dffbad}{cp\-Space\-B\-B\-Query\-Func} )(\hyperlink{structcp_shape}{cp\-Shape} $\ast$shape, void $\ast$data)}\label{group__cp_space_ga9f9d412c914ddec134554dde01dffbad}
+
+\begin{DoxyCompactList}\small\item\em Rectangle Query callback function type. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_gaef86eb47a5ac16c373eb8b59599d1806}{typedef void($\ast$ \hyperlink{group__cp_space_gaef86eb47a5ac16c373eb8b59599d1806}{cp\-Space\-Shape\-Query\-Func} )(\hyperlink{structcp_shape}{cp\-Shape} $\ast$shape, \hyperlink{structcp_contact_point_set}{cp\-Contact\-Point\-Set} $\ast$points, void $\ast$data)}\label{group__cp_space_gaef86eb47a5ac16c373eb8b59599d1806}
+
+\begin{DoxyCompactList}\small\item\em Shape query callback function type. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_gac0cc4ac612fc81b31e3179b8a742570e}{typedef void($\ast$ \hyperlink{group__cp_space_gac0cc4ac612fc81b31e3179b8a742570e}{cp\-Space\-Body\-Iterator\-Func} )(\hyperlink{structcp_body}{cp\-Body} $\ast$body, void $\ast$data)}\label{group__cp_space_gac0cc4ac612fc81b31e3179b8a742570e}
+
+\begin{DoxyCompactList}\small\item\em Space/body iterator callback function type. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_ga780ed0f29f957005efb4e24df64883b2}{typedef void($\ast$ \hyperlink{group__cp_space_ga780ed0f29f957005efb4e24df64883b2}{cp\-Space\-Shape\-Iterator\-Func} )(\hyperlink{structcp_shape}{cp\-Shape} $\ast$shape, void $\ast$data)}\label{group__cp_space_ga780ed0f29f957005efb4e24df64883b2}
+
+\begin{DoxyCompactList}\small\item\em Space/body iterator callback function type. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_ga6818e027bac76ed80432f12ffc8d7a39}{typedef void($\ast$ \hyperlink{group__cp_space_ga6818e027bac76ed80432f12ffc8d7a39}{cp\-Space\-Constraint\-Iterator\-Func} )(\hyperlink{structcp_constraint}{cp\-Constraint} $\ast$constraint, void $\ast$data)}\label{group__cp_space_ga6818e027bac76ed80432f12ffc8d7a39}
+
+\begin{DoxyCompactList}\small\item\em Space/constraint iterator callback function type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__cp_space_gaeed23237c8a7b052ec816b339c7e60dd}{\hyperlink{structcp_space}{cp\-Space} $\ast$ \hyperlink{group__cp_space_gaeed23237c8a7b052ec816b339c7e60dd}{cp\-Space\-Alloc} (void)}\label{group__cp_space_gaeed23237c8a7b052ec816b339c7e60dd}
+
+\begin{DoxyCompactList}\small\item\em Allocate a \hyperlink{structcp_space}{cp\-Space}. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_ga3e668d762b5b6438b51f7af0fb32ff09}{\hyperlink{structcp_space}{cp\-Space} $\ast$ \hyperlink{group__cp_space_ga3e668d762b5b6438b51f7af0fb32ff09}{cp\-Space\-Init} (\hyperlink{structcp_space}{cp\-Space} $\ast$space)}\label{group__cp_space_ga3e668d762b5b6438b51f7af0fb32ff09}
+
+\begin{DoxyCompactList}\small\item\em Initialize a \hyperlink{structcp_space}{cp\-Space}. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_gac6293d85ec533d496e3005d194c1e62b}{\hyperlink{structcp_space}{cp\-Space} $\ast$ \hyperlink{group__cp_space_gac6293d85ec533d496e3005d194c1e62b}{cp\-Space\-New} (void)}\label{group__cp_space_gac6293d85ec533d496e3005d194c1e62b}
+
+\begin{DoxyCompactList}\small\item\em Allocate and initialize a \hyperlink{structcp_space}{cp\-Space}. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_ga964c2ec74cf2527fa17142b6009796c5}{void \hyperlink{group__cp_space_ga964c2ec74cf2527fa17142b6009796c5}{cp\-Space\-Destroy} (\hyperlink{structcp_space}{cp\-Space} $\ast$space)}\label{group__cp_space_ga964c2ec74cf2527fa17142b6009796c5}
+
+\begin{DoxyCompactList}\small\item\em Destroy a \hyperlink{structcp_space}{cp\-Space}. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_ga1fe399459fcb74d30eb29a73af26cd0c}{void \hyperlink{group__cp_space_ga1fe399459fcb74d30eb29a73af26cd0c}{cp\-Space\-Free} (\hyperlink{structcp_space}{cp\-Space} $\ast$space)}\label{group__cp_space_ga1fe399459fcb74d30eb29a73af26cd0c}
+
+\begin{DoxyCompactList}\small\item\em Destroy and free a \hyperlink{structcp_space}{cp\-Space}. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_ga4416ec77788a87c64524241af22d2913}{{\bfseries C\-P\-\_\-\-Define\-Space\-Struct\-Property} (int, iterations, Iterations) C\-P\-\_\-\-Define\-Space\-Struct\-Property(\hyperlink{structcp_vect}{cp\-Vect}}\label{group__cp_space_ga4416ec77788a87c64524241af22d2913}
+
+\item 
+\hypertarget{group__cp_space_ga053a4557b7b4775e12a312dfe5160fb7}{Gravity {\bfseries C\-P\-\_\-\-Define\-Space\-Struct\-Property} (\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float}, damping, Damping) C\-P\-\_\-\-Define\-Space\-Struct\-Property(\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float}}\label{group__cp_space_ga053a4557b7b4775e12a312dfe5160fb7}
+
+\item 
+\hypertarget{group__cp_space_gaa3bbaa447a85daca643352590001665b}{Gravity Idle\-Speed\-Threshold {\bfseries C\-P\-\_\-\-Define\-Space\-Struct\-Property} (\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float}, sleep\-Time\-Threshold, Sleep\-Time\-Threshold) C\-P\-\_\-\-Define\-Space\-Struct\-Property(\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float}}\label{group__cp_space_gaa3bbaa447a85daca643352590001665b}
+
+\item 
+\hypertarget{group__cp_space_gae071b5bc57f15016fc72bcc6b237f112}{Gravity Idle\-Speed\-Threshold \\*
+Collision\-Slop {\bfseries C\-P\-\_\-\-Define\-Space\-Struct\-Property} (\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float}, collision\-Bias, Collision\-Bias) C\-P\-\_\-\-Define\-Space\-Struct\-Property(\hyperlink{group__basic_types_gaa24652c104082d0725066ea5ac7dc83f}{cp\-Timestamp}}\label{group__cp_space_gae071b5bc57f15016fc72bcc6b237f112}
+
+\item 
+\hypertarget{group__cp_space_gaa46319f28d43c6d497cc3482f7e28669}{Gravity Idle\-Speed\-Threshold \\*
+Collision\-Slop \\*
+Collision\-Persistence {\bfseries C\-P\-\_\-\-Define\-Space\-Struct\-Property} (\hyperlink{group__basic_types_gab6e5d8afee598a57cd323abae5310244}{cp\-Bool}, enable\-Contact\-Graph, Enable\-Contact\-Graph) C\-P\-\_\-\-Define\-Space\-Struct\-Property(\hyperlink{group__basic_types_ga2ac2c3c31e21893941f9e4f8ee279447}{cp\-Data\-Pointer}}\label{group__cp_space_gaa46319f28d43c6d497cc3482f7e28669}
+
+\item 
+\hypertarget{group__cp_space_ga4f03f8af6df3a85bf7c0cc7ae4aaa54e}{Gravity Idle\-Speed\-Threshold \\*
+Collision\-Slop \\*
+Collision\-Persistence User\-Data {\bfseries C\-P\-\_\-\-Define\-Space\-Struct\-Getter} (\hyperlink{structcp_body}{cp\-Body} $\ast$, static\-Body, Static\-Body) C\-P\-\_\-\-Define\-Space\-Struct\-Getter(\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float}}\label{group__cp_space_ga4f03f8af6df3a85bf7c0cc7ae4aaa54e}
+
+\item 
+\hypertarget{group__cp_space_ga1600f6a20d8b378802701b8933d7a795}{Gravity Idle\-Speed\-Threshold \\*
+Collision\-Slop \\*
+Collision\-Persistence User\-Data {\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (curr\-\_\-dt)}\label{group__cp_space_ga1600f6a20d8b378802701b8933d7a795}
+
+\item 
+void \hyperlink{group__cp_space_gada7583f907d492b00b3f7f73398ace7d}{cp\-Space\-Set\-Default\-Collision\-Handler} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{group__cp_arbiter_ga1abb3a86eb2889bf32349de4c8237612}{cp\-Collision\-Begin\-Func} begin, \hyperlink{group__cp_arbiter_ga00b9651732d9674c945334ed1968d19b}{cp\-Collision\-Pre\-Solve\-Func} pre\-Solve, \hyperlink{group__cp_arbiter_gaf66f0db756c55c5168b4956954af2f12}{cp\-Collision\-Post\-Solve\-Func} post\-Solve, \hyperlink{group__cp_arbiter_ga70549bfa3ae4e806fa1afde420a71775}{cp\-Collision\-Separate\-Func} separate, void $\ast$data)
+\item 
+void \hyperlink{group__cp_space_ga4ba389406f5a498f5af8044386950d09}{cp\-Space\-Add\-Collision\-Handler} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{group__basic_types_gae83e2f50965eb441e36ffff1e32e6d02}{cp\-Collision\-Type} a, \hyperlink{group__basic_types_gae83e2f50965eb441e36ffff1e32e6d02}{cp\-Collision\-Type} b, \hyperlink{group__cp_arbiter_ga1abb3a86eb2889bf32349de4c8237612}{cp\-Collision\-Begin\-Func} begin, \hyperlink{group__cp_arbiter_ga00b9651732d9674c945334ed1968d19b}{cp\-Collision\-Pre\-Solve\-Func} pre\-Solve, \hyperlink{group__cp_arbiter_gaf66f0db756c55c5168b4956954af2f12}{cp\-Collision\-Post\-Solve\-Func} post\-Solve, \hyperlink{group__cp_arbiter_ga70549bfa3ae4e806fa1afde420a71775}{cp\-Collision\-Separate\-Func} separate, void $\ast$data)
+\item 
+\hypertarget{group__cp_space_gaa1483dd8e784ad0c420d60db90aa9a03}{void \hyperlink{group__cp_space_gaa1483dd8e784ad0c420d60db90aa9a03}{cp\-Space\-Remove\-Collision\-Handler} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{group__basic_types_gae83e2f50965eb441e36ffff1e32e6d02}{cp\-Collision\-Type} a, \hyperlink{group__basic_types_gae83e2f50965eb441e36ffff1e32e6d02}{cp\-Collision\-Type} b)}\label{group__cp_space_gaa1483dd8e784ad0c420d60db90aa9a03}
+
+\begin{DoxyCompactList}\small\item\em Unset a collision handler. \end{DoxyCompactList}\item 
+\hyperlink{structcp_shape}{cp\-Shape} $\ast$ \hyperlink{group__cp_space_ga5fd6bdb0b93c93a93eeab0611e070080}{cp\-Space\-Add\-Shape} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{structcp_shape}{cp\-Shape} $\ast$shape)
+\item 
+\hypertarget{group__cp_space_gab4c74f809628d9b8330f3e2259575759}{\hyperlink{structcp_shape}{cp\-Shape} $\ast$ \hyperlink{group__cp_space_gab4c74f809628d9b8330f3e2259575759}{cp\-Space\-Add\-Static\-Shape} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{structcp_shape}{cp\-Shape} $\ast$shape)}\label{group__cp_space_gab4c74f809628d9b8330f3e2259575759}
+
+\begin{DoxyCompactList}\small\item\em Explicity add a shape as a static shape to the simulation. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_ga0aa27863e6410512b73347e25e97b215}{\hyperlink{structcp_body}{cp\-Body} $\ast$ \hyperlink{group__cp_space_ga0aa27863e6410512b73347e25e97b215}{cp\-Space\-Add\-Body} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{structcp_body}{cp\-Body} $\ast$body)}\label{group__cp_space_ga0aa27863e6410512b73347e25e97b215}
+
+\begin{DoxyCompactList}\small\item\em Add a rigid body to the simulation. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_gad3fc61e25869131d30dca7b1a33ba102}{\hyperlink{structcp_constraint}{cp\-Constraint} $\ast$ \hyperlink{group__cp_space_gad3fc61e25869131d30dca7b1a33ba102}{cp\-Space\-Add\-Constraint} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{structcp_constraint}{cp\-Constraint} $\ast$constraint)}\label{group__cp_space_gad3fc61e25869131d30dca7b1a33ba102}
+
+\begin{DoxyCompactList}\small\item\em Add a constraint to the simulation. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_gaba39a56c766cf5094876685d7ed63734}{void \hyperlink{group__cp_space_gaba39a56c766cf5094876685d7ed63734}{cp\-Space\-Remove\-Shape} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{structcp_shape}{cp\-Shape} $\ast$shape)}\label{group__cp_space_gaba39a56c766cf5094876685d7ed63734}
+
+\begin{DoxyCompactList}\small\item\em Remove a collision shape from the simulation. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_gacec20f95fdfcf59a6795ba60cc9c7e8a}{void \hyperlink{group__cp_space_gacec20f95fdfcf59a6795ba60cc9c7e8a}{cp\-Space\-Remove\-Static\-Shape} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{structcp_shape}{cp\-Shape} $\ast$shape)}\label{group__cp_space_gacec20f95fdfcf59a6795ba60cc9c7e8a}
+
+\begin{DoxyCompactList}\small\item\em Remove a collision shape added using \hyperlink{group__cp_space_gab4c74f809628d9b8330f3e2259575759}{cp\-Space\-Add\-Static\-Shape()} from the simulation. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_gad2c0aab926b1796bb38deee21d8a9ef1}{void \hyperlink{group__cp_space_gad2c0aab926b1796bb38deee21d8a9ef1}{cp\-Space\-Remove\-Body} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{structcp_body}{cp\-Body} $\ast$body)}\label{group__cp_space_gad2c0aab926b1796bb38deee21d8a9ef1}
+
+\begin{DoxyCompactList}\small\item\em Remove a rigid body from the simulation. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_gae6a15d5809c8ca1cd786518b0198061b}{void \hyperlink{group__cp_space_gae6a15d5809c8ca1cd786518b0198061b}{cp\-Space\-Remove\-Constraint} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{structcp_constraint}{cp\-Constraint} $\ast$constraint)}\label{group__cp_space_gae6a15d5809c8ca1cd786518b0198061b}
+
+\begin{DoxyCompactList}\small\item\em Remove a constraint from the simulation. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_ga24236a160025c41df498804da57ebc08}{\hyperlink{group__basic_types_gab6e5d8afee598a57cd323abae5310244}{cp\-Bool} \hyperlink{group__cp_space_ga24236a160025c41df498804da57ebc08}{cp\-Space\-Contains\-Shape} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{structcp_shape}{cp\-Shape} $\ast$shape)}\label{group__cp_space_ga24236a160025c41df498804da57ebc08}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_test}{Test} if a collision shape has been added to the space. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_ga8aededc0029d164ebd419e6012a91034}{\hyperlink{group__basic_types_gab6e5d8afee598a57cd323abae5310244}{cp\-Bool} \hyperlink{group__cp_space_ga8aededc0029d164ebd419e6012a91034}{cp\-Space\-Contains\-Body} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{structcp_body}{cp\-Body} $\ast$body)}\label{group__cp_space_ga8aededc0029d164ebd419e6012a91034}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_test}{Test} if a rigid body has been added to the space. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_ga2e4cef3632535e485f1e0645e60c3ad2}{\hyperlink{group__basic_types_gab6e5d8afee598a57cd323abae5310244}{cp\-Bool} \hyperlink{group__cp_space_ga2e4cef3632535e485f1e0645e60c3ad2}{cp\-Space\-Contains\-Constraint} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{structcp_constraint}{cp\-Constraint} $\ast$constraint)}\label{group__cp_space_ga2e4cef3632535e485f1e0645e60c3ad2}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_test}{Test} if a constraint has been added to the space. \end{DoxyCompactList}\item 
+\hyperlink{group__basic_types_gab6e5d8afee598a57cd323abae5310244}{cp\-Bool} \hyperlink{group__cp_space_gae59563596af1bae44c2de59871cde5f8}{cp\-Space\-Add\-Post\-Step\-Callback} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{group__cp_space_ga54254190b156e3b786c3f256fcc12348}{cp\-Post\-Step\-Func} func, void $\ast$key, void $\ast$data)
+\item 
+\hypertarget{group__cp_space_gaa6e476502b5870cc410c153b3d0ba267}{void \hyperlink{group__cp_space_gaa6e476502b5870cc410c153b3d0ba267}{cp\-Space\-Point\-Query} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{structcp_vect}{cp\-Vect} point, \hyperlink{group__basic_types_ga5ec31e87ed3973cab80f9bfbbbcb43bb}{cp\-Layers} layers, \hyperlink{group__basic_types_gacd811b1135a8f4a3e5cc019552b18b1a}{cp\-Group} group, \hyperlink{group__cp_space_ga6baa5a302b275b18516294fc3106ca58}{cp\-Space\-Point\-Query\-Func} func, void $\ast$data)}\label{group__cp_space_gaa6e476502b5870cc410c153b3d0ba267}
+
+\begin{DoxyCompactList}\small\item\em Query the space at a point and call {\ttfamily func} for each shape found. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_gae6d8d0f438041fa2d3a8197c8b9d1962}{\hyperlink{structcp_shape}{cp\-Shape} $\ast$ \hyperlink{group__cp_space_gae6d8d0f438041fa2d3a8197c8b9d1962}{cp\-Space\-Point\-Query\-First} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{structcp_vect}{cp\-Vect} point, \hyperlink{group__basic_types_ga5ec31e87ed3973cab80f9bfbbbcb43bb}{cp\-Layers} layers, \hyperlink{group__basic_types_gacd811b1135a8f4a3e5cc019552b18b1a}{cp\-Group} group)}\label{group__cp_space_gae6d8d0f438041fa2d3a8197c8b9d1962}
+
+\begin{DoxyCompactList}\small\item\em Query the space at a point and return the first shape found. Returns N\-U\-L\-L if no shapes were found. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_ga1d504acdaa0d9b4726e6c986e008c3f9}{void \hyperlink{group__cp_space_ga1d504acdaa0d9b4726e6c986e008c3f9}{cp\-Space\-Nearest\-Point\-Query} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{structcp_vect}{cp\-Vect} point, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} max\-Distance, \hyperlink{group__basic_types_ga5ec31e87ed3973cab80f9bfbbbcb43bb}{cp\-Layers} layers, \hyperlink{group__basic_types_gacd811b1135a8f4a3e5cc019552b18b1a}{cp\-Group} group, \hyperlink{group__cp_space_gafcaf86d003ff9bc8ed04569ef07030cf}{cp\-Space\-Nearest\-Point\-Query\-Func} func, void $\ast$data)}\label{group__cp_space_ga1d504acdaa0d9b4726e6c986e008c3f9}
+
+\begin{DoxyCompactList}\small\item\em Query the space at a point and call {\ttfamily func} for each shape found. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_ga59027791c8f5e0895d85fe45a64e2457}{\hyperlink{structcp_shape}{cp\-Shape} $\ast$ \hyperlink{group__cp_space_ga59027791c8f5e0895d85fe45a64e2457}{cp\-Space\-Nearest\-Point\-Query\-Nearest} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{structcp_vect}{cp\-Vect} point, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} max\-Distance, \hyperlink{group__basic_types_ga5ec31e87ed3973cab80f9bfbbbcb43bb}{cp\-Layers} layers, \hyperlink{group__basic_types_gacd811b1135a8f4a3e5cc019552b18b1a}{cp\-Group} group, \hyperlink{structcp_nearest_point_query_info}{cp\-Nearest\-Point\-Query\-Info} $\ast$out)}\label{group__cp_space_ga59027791c8f5e0895d85fe45a64e2457}
+
+\begin{DoxyCompactList}\small\item\em Query the space at a point and return the nearest shape found. Returns N\-U\-L\-L if no shapes were found. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_ga26da8e0202d712d7bc3714332aff0ea6}{void \hyperlink{group__cp_space_ga26da8e0202d712d7bc3714332aff0ea6}{cp\-Space\-Segment\-Query} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{structcp_vect}{cp\-Vect} start, \hyperlink{structcp_vect}{cp\-Vect} end, \hyperlink{group__basic_types_ga5ec31e87ed3973cab80f9bfbbbcb43bb}{cp\-Layers} layers, \hyperlink{group__basic_types_gacd811b1135a8f4a3e5cc019552b18b1a}{cp\-Group} group, \hyperlink{group__cp_space_gad48eefc60cdccc027c68b1f696e75838}{cp\-Space\-Segment\-Query\-Func} func, void $\ast$data)}\label{group__cp_space_ga26da8e0202d712d7bc3714332aff0ea6}
+
+\begin{DoxyCompactList}\small\item\em Perform a directed line segment query (like a raycast) against the space calling {\ttfamily func} for each shape intersected. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_ga16901aee37e8830fe3900275a6a724aa}{\hyperlink{structcp_shape}{cp\-Shape} $\ast$ \hyperlink{group__cp_space_ga16901aee37e8830fe3900275a6a724aa}{cp\-Space\-Segment\-Query\-First} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{structcp_vect}{cp\-Vect} start, \hyperlink{structcp_vect}{cp\-Vect} end, \hyperlink{group__basic_types_ga5ec31e87ed3973cab80f9bfbbbcb43bb}{cp\-Layers} layers, \hyperlink{group__basic_types_gacd811b1135a8f4a3e5cc019552b18b1a}{cp\-Group} group, \hyperlink{structcp_segment_query_info}{cp\-Segment\-Query\-Info} $\ast$out)}\label{group__cp_space_ga16901aee37e8830fe3900275a6a724aa}
+
+\begin{DoxyCompactList}\small\item\em Perform a directed line segment query (like a raycast) against the space and return the first shape hit. Returns N\-U\-L\-L if no shapes were hit. \end{DoxyCompactList}\item 
+void \hyperlink{group__cp_space_ga8cc12bf144da470f4ba42fe81f36b4e8}{cp\-Space\-B\-B\-Query} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{structcp_b_b}{cp\-B\-B} bb, \hyperlink{group__basic_types_ga5ec31e87ed3973cab80f9bfbbbcb43bb}{cp\-Layers} layers, \hyperlink{group__basic_types_gacd811b1135a8f4a3e5cc019552b18b1a}{cp\-Group} group, \hyperlink{group__cp_space_ga9f9d412c914ddec134554dde01dffbad}{cp\-Space\-B\-B\-Query\-Func} func, void $\ast$data)
+\item 
+\hypertarget{group__cp_space_ga8415bcc9318df0a7e50e1e2cc612ccd2}{\hyperlink{group__basic_types_gab6e5d8afee598a57cd323abae5310244}{cp\-Bool} \hyperlink{group__cp_space_ga8415bcc9318df0a7e50e1e2cc612ccd2}{cp\-Space\-Shape\-Query} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{structcp_shape}{cp\-Shape} $\ast$shape, \hyperlink{group__cp_space_gaef86eb47a5ac16c373eb8b59599d1806}{cp\-Space\-Shape\-Query\-Func} func, void $\ast$data)}\label{group__cp_space_ga8415bcc9318df0a7e50e1e2cc612ccd2}
+
+\begin{DoxyCompactList}\small\item\em Query a space for any shapes overlapping the given shape and call {\ttfamily func} for each shape found. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_gad3e6bd83aa55c7ada13512c66c3740d3}{void \hyperlink{group__cp_space_gad3e6bd83aa55c7ada13512c66c3740d3}{cp\-Space\-Activate\-Shapes\-Touching\-Shape} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{structcp_shape}{cp\-Shape} $\ast$shape)}\label{group__cp_space_gad3e6bd83aa55c7ada13512c66c3740d3}
+
+\begin{DoxyCompactList}\small\item\em Call \hyperlink{group__cp_body_ga9f6b2af6329a2b5c32712576719d357a}{cp\-Body\-Activate()} for any shape that is overlaps the given shape. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_gab526f8e9ea517058d4d90509e971120d}{void \hyperlink{group__cp_space_gab526f8e9ea517058d4d90509e971120d}{cp\-Space\-Each\-Body} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{group__cp_space_gac0cc4ac612fc81b31e3179b8a742570e}{cp\-Space\-Body\-Iterator\-Func} func, void $\ast$data)}\label{group__cp_space_gab526f8e9ea517058d4d90509e971120d}
+
+\begin{DoxyCompactList}\small\item\em Call {\ttfamily func} for each body in the space. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_gac652c40a648d64651b4b36baab354802}{void \hyperlink{group__cp_space_gac652c40a648d64651b4b36baab354802}{cp\-Space\-Each\-Shape} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{group__cp_space_ga780ed0f29f957005efb4e24df64883b2}{cp\-Space\-Shape\-Iterator\-Func} func, void $\ast$data)}\label{group__cp_space_gac652c40a648d64651b4b36baab354802}
+
+\begin{DoxyCompactList}\small\item\em Call {\ttfamily func} for each shape in the space. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_gac388d8f773c2e080b214734af63a5b64}{void \hyperlink{group__cp_space_gac388d8f773c2e080b214734af63a5b64}{cp\-Space\-Each\-Constraint} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{group__cp_space_ga6818e027bac76ed80432f12ffc8d7a39}{cp\-Space\-Constraint\-Iterator\-Func} func, void $\ast$data)}\label{group__cp_space_gac388d8f773c2e080b214734af63a5b64}
+
+\begin{DoxyCompactList}\small\item\em Call {\ttfamily func} for each shape in the space. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_gad703cfe24cb148c49c6dd30aa6b091ff}{void \hyperlink{group__cp_space_gad703cfe24cb148c49c6dd30aa6b091ff}{cp\-Space\-Reindex\-Static} (\hyperlink{structcp_space}{cp\-Space} $\ast$space)}\label{group__cp_space_gad703cfe24cb148c49c6dd30aa6b091ff}
+
+\begin{DoxyCompactList}\small\item\em Update the collision detection info for the static shapes in the space. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_ga4dfab7bb0c43e49b321a5620c459f9d2}{void \hyperlink{group__cp_space_ga4dfab7bb0c43e49b321a5620c459f9d2}{cp\-Space\-Reindex\-Shape} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{structcp_shape}{cp\-Shape} $\ast$shape)}\label{group__cp_space_ga4dfab7bb0c43e49b321a5620c459f9d2}
+
+\begin{DoxyCompactList}\small\item\em Update the collision detection data for a specific shape in the space. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_ga93a9cc05205923058aa6c2dcdaeb2d44}{void \hyperlink{group__cp_space_ga93a9cc05205923058aa6c2dcdaeb2d44}{cp\-Space\-Reindex\-Shapes\-For\-Body} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{structcp_body}{cp\-Body} $\ast$body)}\label{group__cp_space_ga93a9cc05205923058aa6c2dcdaeb2d44}
+
+\begin{DoxyCompactList}\small\item\em Update the collision detection data for all shapes attached to a body. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_gae80141ab89b21e48a10850c3e2c81e91}{void \hyperlink{group__cp_space_gae80141ab89b21e48a10850c3e2c81e91}{cp\-Space\-Use\-Spatial\-Hash} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} dim, int count)}\label{group__cp_space_gae80141ab89b21e48a10850c3e2c81e91}
+
+\begin{DoxyCompactList}\small\item\em Switch the space to use a spatial has as it's spatial index. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_space_gad8a6c8e7e99ae268af224aa199124706}{void \hyperlink{group__cp_space_gad8a6c8e7e99ae268af224aa199124706}{cp\-Space\-Step} (\hyperlink{structcp_space}{cp\-Space} $\ast$space, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} dt)}\label{group__cp_space_gad8a6c8e7e99ae268af224aa199124706}
+
+\begin{DoxyCompactList}\small\item\em Step the space forward in time by {\ttfamily dt}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__cp_space_ga997bcc199be37e722fe2c00ae1a8366a}{{\bfseries gravity}}\label{group__cp_space_ga997bcc199be37e722fe2c00ae1a8366a}
+
+\item 
+\hypertarget{group__cp_space_ga814490352cbde523704af2ff28a9d5e7}{Gravity {\bfseries idle\-Speed\-Threshold}}\label{group__cp_space_ga814490352cbde523704af2ff28a9d5e7}
+
+\item 
+\hypertarget{group__cp_space_ga9a6fe0a2523193cb21ef12b0381f294e}{Gravity Idle\-Speed\-Threshold {\bfseries collision\-Slop}}\label{group__cp_space_ga9a6fe0a2523193cb21ef12b0381f294e}
+
+\item 
+\hypertarget{group__cp_space_ga3c40467208fb0d075a73fb1faf90262c}{Gravity Idle\-Speed\-Threshold \\*
+Collision\-Slop {\bfseries collision\-Persistence}}\label{group__cp_space_ga3c40467208fb0d075a73fb1faf90262c}
+
+\item 
+\hypertarget{group__cp_space_ga487b03cca9e6f9fc6c26b12d36a1b088}{Gravity Idle\-Speed\-Threshold \\*
+Collision\-Slop \\*
+Collision\-Persistence {\bfseries data}}\label{group__cp_space_ga487b03cca9e6f9fc6c26b12d36a1b088}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{group__cp_space_ga432cdfcc68e6cdf7b049fb49786ebb9c}{\index{cp\-Space@{cp\-Space}!C\-P\-\_\-\-Define\-Space\-Struct\-Property@{C\-P\-\_\-\-Define\-Space\-Struct\-Property}}
+\index{C\-P\-\_\-\-Define\-Space\-Struct\-Property@{C\-P\-\_\-\-Define\-Space\-Struct\-Property}!cpSpace@{cp\-Space}}
+\subsubsection[{C\-P\-\_\-\-Define\-Space\-Struct\-Property}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-\_\-\-Define\-Space\-Struct\-Property(
+\begin{DoxyParamCaption}
+\item[{}]{type, }
+\item[{}]{member, }
+\item[{}]{name}
+\end{DoxyParamCaption}
+)}}\label{group__cp_space_ga432cdfcc68e6cdf7b049fb49786ebb9c}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+CP_DefineSpaceStructGetter(type, member, name) \
+CP_DefineSpaceStructSetter(type, member, name)
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\hypertarget{group__cp_space_ga4ba389406f5a498f5af8044386950d09}{\index{cp\-Space@{cp\-Space}!cp\-Space\-Add\-Collision\-Handler@{cp\-Space\-Add\-Collision\-Handler}}
+\index{cp\-Space\-Add\-Collision\-Handler@{cp\-Space\-Add\-Collision\-Handler}!cpSpace@{cp\-Space}}
+\subsubsection[{cp\-Space\-Add\-Collision\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cp\-Space\-Add\-Collision\-Handler} (
+\begin{DoxyParamCaption}
+\item[{{\bf cp\-Space} $\ast$}]{space, }
+\item[{{\bf cp\-Collision\-Type}}]{a, }
+\item[{{\bf cp\-Collision\-Type}}]{b, }
+\item[{{\bf cp\-Collision\-Begin\-Func}}]{begin, }
+\item[{{\bf cp\-Collision\-Pre\-Solve\-Func}}]{pre\-Solve, }
+\item[{{\bf cp\-Collision\-Post\-Solve\-Func}}]{post\-Solve, }
+\item[{{\bf cp\-Collision\-Separate\-Func}}]{separate, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{group__cp_space_ga4ba389406f5a498f5af8044386950d09}
+Set a collision handler to be used whenever the two shapes with the given collision types collide. You can pass N\-U\-L\-L for any function you don't want to implement. 
+\begin{DoxyCode}
+ {
+        cpAssertSpaceUnlocked(space);
+        
+        // Remove any old function so the new one will get added.
+        cpSpaceRemoveCollisionHandler(space, a, b);
+        
+        cpCollisionHandler handler = {
+                a, b,
+                begin ? begin : alwaysCollide,
+                preSolve ? preSolve : alwaysCollide,
+                postSolve ? postSolve : nothing,
+                separate ? separate : nothing,
+                data
+        };
+        
+        cpHashSetInsert(space->collisionHandlers, CP_HASH_PAIR(a, b), &handler,
+       NULL, (cpHashSetTransFunc)handlerSetTrans);
+}
+\end{DoxyCode}
+\hypertarget{group__cp_space_gae59563596af1bae44c2de59871cde5f8}{\index{cp\-Space@{cp\-Space}!cp\-Space\-Add\-Post\-Step\-Callback@{cp\-Space\-Add\-Post\-Step\-Callback}}
+\index{cp\-Space\-Add\-Post\-Step\-Callback@{cp\-Space\-Add\-Post\-Step\-Callback}!cpSpace@{cp\-Space}}
+\subsubsection[{cp\-Space\-Add\-Post\-Step\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cp\-Bool} {\bf cp\-Space\-Add\-Post\-Step\-Callback} (
+\begin{DoxyParamCaption}
+\item[{{\bf cp\-Space} $\ast$}]{space, }
+\item[{{\bf cp\-Post\-Step\-Func}}]{func, }
+\item[{void $\ast$}]{key, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{group__cp_space_gae59563596af1bae44c2de59871cde5f8}
+Schedule a post-\/step callback to be called when \hyperlink{group__cp_space_gad8a6c8e7e99ae268af224aa199124706}{cp\-Space\-Step()} finishes. You can only register one callback per unique value for {\ttfamily key}. Returns true only if {\ttfamily key} has never been scheduled before. It's possible to pass {\ttfamily N\-U\-L\-L} for {\ttfamily func} if you only want to mark {\ttfamily key} as being used. 
+\begin{DoxyCode}
+{
+        cpAssertWarn(space->locked,
+                "Adding a post-step callback when the space is not locked is
+       unnecessary. "
+                "Post-step callbacks will not called until the end of the next
+       call to cpSpaceStep() or the next query.");
+        
+        if(!cpSpaceGetPostStepCallback(space, key)){
+                cpPostStepCallback *callback = (cpPostStepCallback *)cpcalloc(1
+      , sizeof(cpPostStepCallback));
+                callback->func = (func ? func : PostStepDoNothing);
+                callback->key = key;
+                callback->data = data;
+                
+                cpArrayPush(space->postStepCallbacks, callback);
+                return cpTrue;
+        } else {
+                return cpFalse;
+        }
+}
+\end{DoxyCode}
+\hypertarget{group__cp_space_ga5fd6bdb0b93c93a93eeab0611e070080}{\index{cp\-Space@{cp\-Space}!cp\-Space\-Add\-Shape@{cp\-Space\-Add\-Shape}}
+\index{cp\-Space\-Add\-Shape@{cp\-Space\-Add\-Shape}!cpSpace@{cp\-Space}}
+\subsubsection[{cp\-Space\-Add\-Shape}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cp\-Shape}$\ast$ {\bf cp\-Space\-Add\-Shape} (
+\begin{DoxyParamCaption}
+\item[{{\bf cp\-Space} $\ast$}]{space, }
+\item[{{\bf cp\-Shape} $\ast$}]{shape}
+\end{DoxyParamCaption}
+)}}\label{group__cp_space_ga5fd6bdb0b93c93a93eeab0611e070080}
+Add a collision shape to the simulation. If the shape is attached to a static body, it will be added as a static shape. 
+\begin{DoxyCode}
+{
+        cpBody *body = shape->body;
+        if(cpBodyIsStatic(body)) return cpSpaceAddStaticShape(space, shape);
+        
+        cpAssertHard(!shape->space, "This shape is already added to a space and
+       cannot be added to another.");
+        cpAssertSpaceUnlocked(space);
+        
+        cpBodyActivate(body);
+        cpBodyAddShape(body, shape);
+        
+        cpShapeUpdate(shape, body->p, body->rot);
+        cpSpatialIndexInsert(space->activeShapes, shape, shape->hashid);
+        shape->space = space;
+                
+        return shape;
+}
+\end{DoxyCode}
+\hypertarget{group__cp_space_ga8cc12bf144da470f4ba42fe81f36b4e8}{\index{cp\-Space@{cp\-Space}!cp\-Space\-B\-B\-Query@{cp\-Space\-B\-B\-Query}}
+\index{cp\-Space\-B\-B\-Query@{cp\-Space\-B\-B\-Query}!cpSpace@{cp\-Space}}
+\subsubsection[{cp\-Space\-B\-B\-Query}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cp\-Space\-B\-B\-Query} (
+\begin{DoxyParamCaption}
+\item[{{\bf cp\-Space} $\ast$}]{space, }
+\item[{{\bf cp\-B\-B}}]{bb, }
+\item[{{\bf cp\-Layers}}]{layers, }
+\item[{{\bf cp\-Group}}]{group, }
+\item[{{\bf cp\-Space\-B\-B\-Query\-Func}}]{func, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{group__cp_space_ga8cc12bf144da470f4ba42fe81f36b4e8}
+Perform a fast rectangle query on the space calling {\ttfamily func} for each shape found. Only the shape's bounding boxes are checked for overlap, not their full shape. 
+\begin{DoxyCode}
+{
+        struct BBQueryContext context = {bb, layers, group, func};
+        
+        cpSpaceLock(space); {
+    cpSpatialIndexQuery(space->activeShapes, &context, bb, (
+      cpSpatialIndexQueryFunc)BBQuery, data);
+    cpSpatialIndexQuery(space->staticShapes, &context, bb, (
+      cpSpatialIndexQueryFunc)BBQuery, data);
+        } cpSpaceUnlock(space, cpTrue);
+}
+\end{DoxyCode}
+\hypertarget{group__cp_space_gada7583f907d492b00b3f7f73398ace7d}{\index{cp\-Space@{cp\-Space}!cp\-Space\-Set\-Default\-Collision\-Handler@{cp\-Space\-Set\-Default\-Collision\-Handler}}
+\index{cp\-Space\-Set\-Default\-Collision\-Handler@{cp\-Space\-Set\-Default\-Collision\-Handler}!cpSpace@{cp\-Space}}
+\subsubsection[{cp\-Space\-Set\-Default\-Collision\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cp\-Space\-Set\-Default\-Collision\-Handler} (
+\begin{DoxyParamCaption}
+\item[{{\bf cp\-Space} $\ast$}]{space, }
+\item[{{\bf cp\-Collision\-Begin\-Func}}]{begin, }
+\item[{{\bf cp\-Collision\-Pre\-Solve\-Func}}]{pre\-Solve, }
+\item[{{\bf cp\-Collision\-Post\-Solve\-Func}}]{post\-Solve, }
+\item[{{\bf cp\-Collision\-Separate\-Func}}]{separate, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{group__cp_space_gada7583f907d492b00b3f7f73398ace7d}
+Set a default collision handler for this space. The default collision handler is invoked for each colliding pair of shapes that isn't explicitly handled by a specific collision handler. You can pass N\-U\-L\-L for any function you don't want to implement. 
+\begin{DoxyCode}
+ {
+        cpAssertSpaceUnlocked(space);
+        
+        cpCollisionHandler handler = {
+                0, 0,
+                begin ? begin : alwaysCollide,
+                preSolve ? preSolve : alwaysCollide,
+                postSolve ? postSolve : nothing,
+                separate ? separate : nothing,
+                data
+        };
+        
+        space->defaultHandler = handler;
+        cpHashSetSetDefaultValue(space->collisionHandlers, &space->
+      defaultHandler);
+}
+\end{DoxyCode}

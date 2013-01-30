@@ -1,0 +1,80 @@
+\hypertarget{interface_c_c_progress_to}{\section{C\-C\-Progress\-To Class Reference}
+\label{interface_c_c_progress_to}\index{C\-C\-Progress\-To@{C\-C\-Progress\-To}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Progress\-Timer.\-h$>$}
+
+Inheritance diagram for C\-C\-Progress\-To\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_c_c_progress_to}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_progress_to_ae15a134e782d4c80839ed5076ede0504}{init\-With\-Duration\-:percent\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_progress_to_ad24e37a25ee762a3b623e36061638e54}{action\-With\-Duration\-:percent\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_progress_to_ab5a58e7ef4984739b4f649e8320124c1}{float {\bfseries to\-\_\-}}\label{interface_c_c_progress_to_ab5a58e7ef4984739b4f649e8320124c1}
+
+\item 
+\hypertarget{interface_c_c_progress_to_a4068cd21968acb3151d8eaa150b6b706}{float {\bfseries from\-\_\-}}\label{interface_c_c_progress_to_a4068cd21968acb3151d8eaa150b6b706}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Progress to percentage \begin{DoxySince}{Since}
+v0.\-99.\-1 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_progress_to_ad24e37a25ee762a3b623e36061638e54}{\index{C\-C\-Progress\-To@{C\-C\-Progress\-To}!action\-With\-Duration\-:percent\-:@{action\-With\-Duration\-:percent\-:}}
+\index{action\-With\-Duration\-:percent\-:@{action\-With\-Duration\-:percent\-:}!CCProgressTo@{C\-C\-Progress\-To}}
+\subsubsection[{action\-With\-Duration\-:percent\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{duration}
+\item[{percent:(float)}]{percent}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_progress_to_ad24e37a25ee762a3b623e36061638e54}
+Creates and initializes with a duration and a percent 
+\begin{DoxyCode}
+                        : (ccTime) t percent: (float) v
+{
+        return [[[ self alloc] initWithDuration: t percent: v] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_progress_to_ae15a134e782d4c80839ed5076ede0504}{\index{C\-C\-Progress\-To@{C\-C\-Progress\-To}!init\-With\-Duration\-:percent\-:@{init\-With\-Duration\-:percent\-:}}
+\index{init\-With\-Duration\-:percent\-:@{init\-With\-Duration\-:percent\-:}!CCProgressTo@{C\-C\-Progress\-To}}
+\subsubsection[{init\-With\-Duration\-:percent\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{duration}
+\item[{percent:(float)}]{percent}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_progress_to_ae15a134e782d4c80839ed5076ede0504}
+Initializes with a duration and a percent 
+\begin{DoxyCode}
+                      : (ccTime) t percent: (float) v
+{
+        if( (self=[super initWithDuration: t] ) )
+                to_ = v;
+
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Progress\-Timer.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Progress\-Timer.\-m\end{DoxyCompactItemize}

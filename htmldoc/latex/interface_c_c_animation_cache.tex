@@ -1,0 +1,219 @@
+\hypertarget{interface_c_c_animation_cache}{\section{C\-C\-Animation\-Cache Class Reference}
+\label{interface_c_c_animation_cache}\index{C\-C\-Animation\-Cache@{C\-C\-Animation\-Cache}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Animation\-Cache.\-h$>$}
+
+Inheritance diagram for C\-C\-Animation\-Cache\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_c_c_animation_cache}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_c_c_animation_cache_ab137bd516a078ba912d7dcb3762107b6}{add\-Animation\-:name\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_animation_cache_af9890fd4eadff83febe5aac30f9f1709}{remove\-Animation\-By\-Name\-:}
+\item 
+(\hyperlink{interface_c_c_animation}{C\-C\-Animation} $\ast$) -\/ \hyperlink{interface_c_c_animation_cache_ad17c5f95aaea347caed500d8fa02b4ac}{animation\-By\-Name\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_animation_cache_a1005b4ef347685bf5860231331c09f84}{add\-Animations\-With\-Dictionary\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_animation_cache_a1312bc730d9abfb38c153489bd96bbd6}{add\-Animations\-With\-File\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_c_c_animation_cache}{C\-C\-Animation\-Cache} $\ast$) + \hyperlink{interface_c_c_animation_cache_adf619f2724f074683693bb4374a55571}{shared\-Animation\-Cache}
+\item 
+(void) + \hyperlink{interface_c_c_animation_cache_ad6998e692e308000fb2362e4a3d30ed0}{purge\-Shared\-Animation\-Cache}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_animation_cache_aea07c23c7d7de5989041b407a0afb7d1}{N\-S\-Mutable\-Dictionary $\ast$ {\bfseries animations\-\_\-}}\label{interface_c_c_animation_cache_aea07c23c7d7de5989041b407a0afb7d1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Singleton that manages the \hyperlink{interface_c_c_animation}{C\-C\-Animation} objects. It saves in a cache the animations. You should use this class if you want to save your animations in a cache.
+
+\begin{DoxySince}{Since}
+v0.\-99.\-5 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_animation_cache_ab137bd516a078ba912d7dcb3762107b6}{\index{C\-C\-Animation\-Cache@{C\-C\-Animation\-Cache}!add\-Animation\-:name\-:@{add\-Animation\-:name\-:}}
+\index{add\-Animation\-:name\-:@{add\-Animation\-:name\-:}!CCAnimationCache@{C\-C\-Animation\-Cache}}
+\subsubsection[{add\-Animation\-:name\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\-Animation\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Animation}$\ast$)}]{animation}
+\item[{name:(N\-S\-String$\ast$)}]{name}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_animation_cache_ab137bd516a078ba912d7dcb3762107b6}
+Adds a \hyperlink{interface_c_c_animation}{C\-C\-Animation} with a name. 
+\begin{DoxyCode}
+                    :(CCAnimation*)animation name:(NSString*)name
+{
+        [animations_ setObject:animation forKey:name];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_animation_cache_a1005b4ef347685bf5860231331c09f84}{\index{C\-C\-Animation\-Cache@{C\-C\-Animation\-Cache}!add\-Animations\-With\-Dictionary\-:@{add\-Animations\-With\-Dictionary\-:}}
+\index{add\-Animations\-With\-Dictionary\-:@{add\-Animations\-With\-Dictionary\-:}!CCAnimationCache@{C\-C\-Animation\-Cache}}
+\subsubsection[{add\-Animations\-With\-Dictionary\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf add\-Animations\-With\-Dictionary\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Dictionary $\ast$)}]{dictionary}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_animation_cache_a1005b4ef347685bf5860231331c09f84}
+Adds an animation from an N\-S\-Dictionary Make sure that the frames were previously loaded in the \hyperlink{class_c_c_sprite_frame_cache}{C\-C\-Sprite\-Frame\-Cache}. \begin{DoxySince}{Since}
+v1.\-1 
+\end{DoxySince}
+
+
+Referenced by add\-Animations\-With\-File\-:.
+
+
+\begin{DoxyCode}
+                                  :(NSDictionary *)dictionary
+{
+        NSDictionary *animations = [dictionary objectForKey:@"animations"];
+
+        if ( animations == nil ) {
+                CCLOG(@"cocos2d: CCAnimationCache: No animations were found in
+       provided dictionary.");
+                return;
+        }
+        
+        NSUInteger version = 1;
+        NSDictionary *properties = [dictionary objectForKey:@"properties"];
+        if( properties )
+                version = [[properties objectForKey:@"format"] intValue];
+        
+        NSArray *spritesheets = [properties objectForKey:@"spritesheets"];
+        for( NSString *name in spritesheets )
+                [[CCSpriteFrameCache sharedSpriteFrameCache] 
+      addSpriteFramesWithFile:name];
+
+        switch (version) {
+                case 1:
+                        [self parseVersion1:animations];
+                        break;
+                case 2:
+                        [self parseVersion2:animations];
+                        break;
+                default:
+                        NSAssert(NO, @"Invalid animation format");
+        }
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_animation_cache_a1312bc730d9abfb38c153489bd96bbd6}{\index{C\-C\-Animation\-Cache@{C\-C\-Animation\-Cache}!add\-Animations\-With\-File\-:@{add\-Animations\-With\-File\-:}}
+\index{add\-Animations\-With\-File\-:@{add\-Animations\-With\-File\-:}!CCAnimationCache@{C\-C\-Animation\-Cache}}
+\subsubsection[{add\-Animations\-With\-File\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf add\-Animations\-With\-File\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{plist}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_animation_cache_a1312bc730d9abfb38c153489bd96bbd6}
+Adds an animation from a plist file. Make sure that the frames were previously loaded in the \hyperlink{class_c_c_sprite_frame_cache}{C\-C\-Sprite\-Frame\-Cache}. \begin{DoxySince}{Since}
+v1.\-1
+\end{DoxySince}
+Read an N\-S\-Dictionary from a plist file and parse it automatically for animations 
+\begin{DoxyCode}
+                            :(NSString *)plist
+{
+        NSAssert( plist, @"Invalid texture file name");
+
+    NSString *path = [[CCFileUtils sharedFileUtils] fullPathFromRelativePath:
+      plist];
+        NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
+
+        NSAssert1( dict, @"CCAnimationCache: File could not be found: %@", 
+      plist);
+
+
+        [self addAnimationsWithDictionary:dict];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_animation_cache_ad17c5f95aaea347caed500d8fa02b4ac}{\index{C\-C\-Animation\-Cache@{C\-C\-Animation\-Cache}!animation\-By\-Name\-:@{animation\-By\-Name\-:}}
+\index{animation\-By\-Name\-:@{animation\-By\-Name\-:}!CCAnimationCache@{C\-C\-Animation\-Cache}}
+\subsubsection[{animation\-By\-Name\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Animation} $\ast$) {\bf animation\-By\-Name\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{name}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_animation_cache_ad17c5f95aaea347caed500d8fa02b4ac}
+Returns a \hyperlink{interface_c_c_animation}{C\-C\-Animation} that was previously added. If the name is not found it will return nil. You should retain the returned copy if you are going to use it. 
+
+Referenced by C\-C\-Sprite\-::set\-Display\-Frame\-With\-Animation\-Name\-:index\-:.
+
+
+\begin{DoxyCode}
+                               :(NSString*)name
+{
+        return [animations_ objectForKey:name];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_animation_cache_ad6998e692e308000fb2362e4a3d30ed0}{\index{C\-C\-Animation\-Cache@{C\-C\-Animation\-Cache}!purge\-Shared\-Animation\-Cache@{purge\-Shared\-Animation\-Cache}}
+\index{purge\-Shared\-Animation\-Cache@{purge\-Shared\-Animation\-Cache}!CCAnimationCache@{C\-C\-Animation\-Cache}}
+\subsubsection[{purge\-Shared\-Animation\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf purge\-Shared\-Animation\-Cache} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_animation_cache_ad6998e692e308000fb2362e4a3d30ed0}
+Purges the cache. It releases all the \hyperlink{interface_c_c_animation}{C\-C\-Animation} objects and the shared instance. 
+
+Referenced by C\-C\-Director\-::end.
+
+
+\begin{DoxyCode}
+{
+        [sharedAnimationCache_ release];
+        sharedAnimationCache_ = nil;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_animation_cache_af9890fd4eadff83febe5aac30f9f1709}{\index{C\-C\-Animation\-Cache@{C\-C\-Animation\-Cache}!remove\-Animation\-By\-Name\-:@{remove\-Animation\-By\-Name\-:}}
+\index{remove\-Animation\-By\-Name\-:@{remove\-Animation\-By\-Name\-:}!CCAnimationCache@{C\-C\-Animation\-Cache}}
+\subsubsection[{remove\-Animation\-By\-Name\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\-Animation\-By\-Name\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{name}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_animation_cache_af9890fd4eadff83febe5aac30f9f1709}
+Deletes a \hyperlink{interface_c_c_animation}{C\-C\-Animation} from the cache. 
+\begin{DoxyCode}
+                             :(NSString*)name
+{
+        if( ! name )
+                return;
+
+        [animations_ removeObjectForKey:name];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_animation_cache_adf619f2724f074683693bb4374a55571}{\index{C\-C\-Animation\-Cache@{C\-C\-Animation\-Cache}!shared\-Animation\-Cache@{shared\-Animation\-Cache}}
+\index{shared\-Animation\-Cache@{shared\-Animation\-Cache}!CCAnimationCache@{C\-C\-Animation\-Cache}}
+\subsubsection[{shared\-Animation\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf C\-C\-Animation\-Cache} $\ast$) {\bf shared\-Animation\-Cache} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_animation_cache_adf619f2724f074683693bb4374a55571}
+Returns the shared instance of the Animation cache 
+
+Referenced by C\-C\-Sprite\-::set\-Display\-Frame\-With\-Animation\-Name\-:index\-:.
+
+
+\begin{DoxyCode}
+{
+        if (!sharedAnimationCache_)
+                sharedAnimationCache_ = [[CCAnimationCache alloc] init];
+
+        return sharedAnimationCache_;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Animation\-Cache.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Animation\-Cache.\-m\end{DoxyCompactItemize}

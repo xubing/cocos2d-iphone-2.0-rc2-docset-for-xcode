@@ -1,0 +1,136 @@
+\hypertarget{classb2_friction_joint}{\section{b2\-Friction\-Joint Class Reference}
+\label{classb2_friction_joint}\index{b2\-Friction\-Joint@{b2\-Friction\-Joint}}
+}
+
+
+{\ttfamily \#include $<$b2\-Friction\-Joint.\-h$>$}
+
+Inheritance diagram for b2\-Friction\-Joint\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classb2_friction_joint}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_friction_joint_a01918be429fa5d37d51fda4fe0cc639b}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{classb2_friction_joint_a01918be429fa5d37d51fda4fe0cc639b}{Get\-Anchor\-A} () const }\label{classb2_friction_joint_a01918be429fa5d37d51fda4fe0cc639b}
+
+\begin{DoxyCompactList}\small\item\em Get the anchor point on body\-A in world coordinates. \end{DoxyCompactList}\item 
+\hypertarget{classb2_friction_joint_ac519021aadea0faf1df01f232023c745}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{classb2_friction_joint_ac519021aadea0faf1df01f232023c745}{Get\-Anchor\-B} () const }\label{classb2_friction_joint_ac519021aadea0faf1df01f232023c745}
+
+\begin{DoxyCompactList}\small\item\em Get the anchor point on body\-B in world coordinates. \end{DoxyCompactList}\item 
+\hypertarget{classb2_friction_joint_ae646d8a191e490f690b748f057cdd90b}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{classb2_friction_joint_ae646d8a191e490f690b748f057cdd90b}{Get\-Reaction\-Force} (float32 inv\-\_\-dt) const }\label{classb2_friction_joint_ae646d8a191e490f690b748f057cdd90b}
+
+\begin{DoxyCompactList}\small\item\em Get the reaction force on body\-B at the joint anchor in Newtons. \end{DoxyCompactList}\item 
+\hypertarget{classb2_friction_joint_a49479d4af9c4bffa0b146d153c78512c}{float32 \hyperlink{classb2_friction_joint_a49479d4af9c4bffa0b146d153c78512c}{Get\-Reaction\-Torque} (float32 inv\-\_\-dt) const }\label{classb2_friction_joint_a49479d4af9c4bffa0b146d153c78512c}
+
+\begin{DoxyCompactList}\small\item\em Get the reaction torque on body\-B in N$\ast$m. \end{DoxyCompactList}\item 
+\hypertarget{classb2_friction_joint_a91ef023d373f775c401ae359f6f74d60}{const \hyperlink{structb2_vec2}{b2\-Vec2} \& \hyperlink{classb2_friction_joint_a91ef023d373f775c401ae359f6f74d60}{Get\-Local\-Anchor\-A} () const }\label{classb2_friction_joint_a91ef023d373f775c401ae359f6f74d60}
+
+\begin{DoxyCompactList}\small\item\em The local anchor point relative to body\-A's origin. \end{DoxyCompactList}\item 
+\hypertarget{classb2_friction_joint_acd57698eb559d36eeac6df00dfd8b89f}{const \hyperlink{structb2_vec2}{b2\-Vec2} \& \hyperlink{classb2_friction_joint_acd57698eb559d36eeac6df00dfd8b89f}{Get\-Local\-Anchor\-B} () const }\label{classb2_friction_joint_acd57698eb559d36eeac6df00dfd8b89f}
+
+\begin{DoxyCompactList}\small\item\em The local anchor point relative to body\-B's origin. \end{DoxyCompactList}\item 
+\hypertarget{classb2_friction_joint_a7936d852b5ad71dc92efc397865dda41}{void \hyperlink{classb2_friction_joint_a7936d852b5ad71dc92efc397865dda41}{Set\-Max\-Force} (float32 force)}\label{classb2_friction_joint_a7936d852b5ad71dc92efc397865dda41}
+
+\begin{DoxyCompactList}\small\item\em Set the maximum friction force in N. \end{DoxyCompactList}\item 
+\hypertarget{classb2_friction_joint_af3abd33af3943197c89375057302fd0d}{float32 \hyperlink{classb2_friction_joint_af3abd33af3943197c89375057302fd0d}{Get\-Max\-Force} () const }\label{classb2_friction_joint_af3abd33af3943197c89375057302fd0d}
+
+\begin{DoxyCompactList}\small\item\em Get the maximum friction force in N. \end{DoxyCompactList}\item 
+\hypertarget{classb2_friction_joint_a9e3aaf485dc86a378bb62ee78cea43aa}{void \hyperlink{classb2_friction_joint_a9e3aaf485dc86a378bb62ee78cea43aa}{Set\-Max\-Torque} (float32 torque)}\label{classb2_friction_joint_a9e3aaf485dc86a378bb62ee78cea43aa}
+
+\begin{DoxyCompactList}\small\item\em Set the maximum friction torque in N$\ast$m. \end{DoxyCompactList}\item 
+\hypertarget{classb2_friction_joint_ae59d07030bded21f46a6a432553e71c1}{float32 \hyperlink{classb2_friction_joint_ae59d07030bded21f46a6a432553e71c1}{Get\-Max\-Torque} () const }\label{classb2_friction_joint_ae59d07030bded21f46a6a432553e71c1}
+
+\begin{DoxyCompactList}\small\item\em Get the maximum friction torque in N$\ast$m. \end{DoxyCompactList}\item 
+\hypertarget{classb2_friction_joint_a9a27084c9f4a7ea0a4f590f687ac1edb}{void \hyperlink{classb2_friction_joint_a9a27084c9f4a7ea0a4f590f687ac1edb}{Dump} ()}\label{classb2_friction_joint_a9a27084c9f4a7ea0a4f590f687ac1edb}
+
+\begin{DoxyCompactList}\small\item\em Dump joint to dm\-Log. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_friction_joint_a7413c5f289257f0e993b7e750fe95b99}{{\bfseries b2\-Friction\-Joint} (const \hyperlink{structb2_friction_joint_def}{b2\-Friction\-Joint\-Def} $\ast$def)}\label{classb2_friction_joint_a7413c5f289257f0e993b7e750fe95b99}
+
+\item 
+\hypertarget{classb2_friction_joint_a72fbe2a2dce2c90e1b68395e715e1254}{void {\bfseries Init\-Velocity\-Constraints} (const \hyperlink{structb2_solver_data}{b2\-Solver\-Data} \&data)}\label{classb2_friction_joint_a72fbe2a2dce2c90e1b68395e715e1254}
+
+\item 
+\hypertarget{classb2_friction_joint_a5aab459109e198a75e0151f36d50ee65}{void {\bfseries Solve\-Velocity\-Constraints} (const \hyperlink{structb2_solver_data}{b2\-Solver\-Data} \&data)}\label{classb2_friction_joint_a5aab459109e198a75e0151f36d50ee65}
+
+\item 
+\hypertarget{classb2_friction_joint_ac1998353c72787b6074b2ef50dd1c2d2}{bool {\bfseries Solve\-Position\-Constraints} (const \hyperlink{structb2_solver_data}{b2\-Solver\-Data} \&data)}\label{classb2_friction_joint_ac1998353c72787b6074b2ef50dd1c2d2}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_friction_joint_a8842818b75319de1e4f3ec70d784dce1}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Anchor\-A}}\label{classb2_friction_joint_a8842818b75319de1e4f3ec70d784dce1}
+
+\item 
+\hypertarget{classb2_friction_joint_aa5920c253c6564bfd04a11e767f2e2db}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Anchor\-B}}\label{classb2_friction_joint_aa5920c253c6564bfd04a11e767f2e2db}
+
+\item 
+\hypertarget{classb2_friction_joint_ad4f8286af03b0f37a9eec7e9884d7e26}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-linear\-Impulse}}\label{classb2_friction_joint_ad4f8286af03b0f37a9eec7e9884d7e26}
+
+\item 
+\hypertarget{classb2_friction_joint_ab199dba9687ece4b816589b9e1e14750}{float32 {\bfseries m\-\_\-angular\-Impulse}}\label{classb2_friction_joint_ab199dba9687ece4b816589b9e1e14750}
+
+\item 
+\hypertarget{classb2_friction_joint_ae666a8093844e2fb75e4c3de6b3f377a}{float32 {\bfseries m\-\_\-max\-Force}}\label{classb2_friction_joint_ae666a8093844e2fb75e4c3de6b3f377a}
+
+\item 
+\hypertarget{classb2_friction_joint_a42b3ac5d34ab2399a5e4f0ea9afe988d}{float32 {\bfseries m\-\_\-max\-Torque}}\label{classb2_friction_joint_a42b3ac5d34ab2399a5e4f0ea9afe988d}
+
+\item 
+\hypertarget{classb2_friction_joint_a069c815e1cdf78160cb96b4b0047f64e}{int32 {\bfseries m\-\_\-index\-A}}\label{classb2_friction_joint_a069c815e1cdf78160cb96b4b0047f64e}
+
+\item 
+\hypertarget{classb2_friction_joint_a378198c55100884de4587cb9ab22128f}{int32 {\bfseries m\-\_\-index\-B}}\label{classb2_friction_joint_a378198c55100884de4587cb9ab22128f}
+
+\item 
+\hypertarget{classb2_friction_joint_aa02b166017af5893b6b49b56dc96c70a}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-r\-A}}\label{classb2_friction_joint_aa02b166017af5893b6b49b56dc96c70a}
+
+\item 
+\hypertarget{classb2_friction_joint_a99b95a2dbfb119cbccccb137748aca44}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-r\-B}}\label{classb2_friction_joint_a99b95a2dbfb119cbccccb137748aca44}
+
+\item 
+\hypertarget{classb2_friction_joint_af732965abe1f29f7469e1ea17506218c}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Center\-A}}\label{classb2_friction_joint_af732965abe1f29f7469e1ea17506218c}
+
+\item 
+\hypertarget{classb2_friction_joint_a55739866c1f3423caf2116e0a869ec45}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Center\-B}}\label{classb2_friction_joint_a55739866c1f3423caf2116e0a869ec45}
+
+\item 
+\hypertarget{classb2_friction_joint_a7b7a482216efd081db94465db409fa21}{float32 {\bfseries m\-\_\-inv\-Mass\-A}}\label{classb2_friction_joint_a7b7a482216efd081db94465db409fa21}
+
+\item 
+\hypertarget{classb2_friction_joint_a189a3869e59f6b1e00c83fcaf6b08253}{float32 {\bfseries m\-\_\-inv\-Mass\-B}}\label{classb2_friction_joint_a189a3869e59f6b1e00c83fcaf6b08253}
+
+\item 
+\hypertarget{classb2_friction_joint_aad004207b7392e9828f55d8f15dc2aa8}{float32 {\bfseries m\-\_\-inv\-I\-A}}\label{classb2_friction_joint_aad004207b7392e9828f55d8f15dc2aa8}
+
+\item 
+\hypertarget{classb2_friction_joint_a79ab8b49c2d4ce6415e3fe9376947d4c}{float32 {\bfseries m\-\_\-inv\-I\-B}}\label{classb2_friction_joint_a79ab8b49c2d4ce6415e3fe9376947d4c}
+
+\item 
+\hypertarget{classb2_friction_joint_aa49bf4b20865a4976c3fae8398191182}{\hyperlink{structb2_mat22}{b2\-Mat22} {\bfseries m\-\_\-linear\-Mass}}\label{classb2_friction_joint_aa49bf4b20865a4976c3fae8398191182}
+
+\item 
+\hypertarget{classb2_friction_joint_ab8f9aa5e516d90f1c80f92b0eb410c38}{float32 {\bfseries m\-\_\-angular\-Mass}}\label{classb2_friction_joint_ab8f9aa5e516d90f1c80f92b0eb410c38}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_friction_joint_a54ade8ed3d794298108d7f4c4e4793fa}{class {\bfseries b2\-Joint}}\label{classb2_friction_joint_a54ade8ed3d794298108d7f4c4e4793fa}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Friction joint. This is used for top-\/down friction. It provides 2\-D translational friction and angular friction. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Dynamics/\-Joints/b2\-Friction\-Joint.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Dynamics/\-Joints/b2\-Friction\-Joint.\-cpp\end{DoxyCompactItemize}

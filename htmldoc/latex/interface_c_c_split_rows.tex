@@ -1,0 +1,79 @@
+\hypertarget{interface_c_c_split_rows}{\section{C\-C\-Split\-Rows Class Reference}
+\label{interface_c_c_split_rows}\index{C\-C\-Split\-Rows@{C\-C\-Split\-Rows}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Tiled\-Grid.\-h$>$}
+
+Inheritance diagram for C\-C\-Split\-Rows\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.000000cm]{interface_c_c_split_rows}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_split_rows_aaed984c961f3742446b9b4db0d460a79}{init\-With\-Rows\-:duration\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_split_rows_a4b2be0cfb7884336eead475ff49171db}{action\-With\-Rows\-:duration\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_split_rows_a3a5be7bdf6da12b168a29af34f8c6190}{int {\bfseries rows}}\label{interface_c_c_split_rows_a3a5be7bdf6da12b168a29af34f8c6190}
+
+\item 
+\hypertarget{interface_c_c_split_rows_a4aa8170d9c677ec313f30882ccd74cb3}{C\-G\-Size {\bfseries win\-Size}}\label{interface_c_c_split_rows_a4aa8170d9c677ec313f30882ccd74cb3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_split_rows}{C\-C\-Split\-Rows} action 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_split_rows_a4b2be0cfb7884336eead475ff49171db}{\index{C\-C\-Split\-Rows@{C\-C\-Split\-Rows}!action\-With\-Rows\-:duration\-:@{action\-With\-Rows\-:duration\-:}}
+\index{action\-With\-Rows\-:duration\-:@{action\-With\-Rows\-:duration\-:}!CCSplitRows@{C\-C\-Split\-Rows}}
+\subsubsection[{action\-With\-Rows\-:duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) action\-With\-Rows\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{rows}
+\item[{duration:({\bf cc\-Time})}]{duration}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_split_rows_a4b2be0cfb7884336eead475ff49171db}
+creates the action with the number of rows to split and the duration 
+
+Referenced by Split\-Rows\-Demo\-::action\-With\-Duration\-:.
+
+
+\begin{DoxyCode}
+                   :(int)r duration:(ccTime)d
+{
+        return [[[self alloc] initWithRows:r duration:d] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_split_rows_aaed984c961f3742446b9b4db0d460a79}{\index{C\-C\-Split\-Rows@{C\-C\-Split\-Rows}!init\-With\-Rows\-:duration\-:@{init\-With\-Rows\-:duration\-:}}
+\index{init\-With\-Rows\-:duration\-:@{init\-With\-Rows\-:duration\-:}!CCSplitRows@{C\-C\-Split\-Rows}}
+\subsubsection[{init\-With\-Rows\-:duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Rows\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{rows}
+\item[{duration:({\bf cc\-Time})}]{duration}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_split_rows_aaed984c961f3742446b9b4db0d460a79}
+initializes the action with the number of rows to split and the duration 
+\begin{DoxyCode}
+                 :(int)r duration:(ccTime)d
+{
+        rows = r;
+        return [super initWithSize:ccg(1,r) duration:d];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Tiled\-Grid.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Tiled\-Grid.\-m\end{DoxyCompactItemize}

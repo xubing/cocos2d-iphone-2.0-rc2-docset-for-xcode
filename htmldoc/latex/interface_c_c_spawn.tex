@@ -1,0 +1,186 @@
+\hypertarget{interface_c_c_spawn}{\section{C\-C\-Spawn Class Reference}
+\label{interface_c_c_spawn}\index{C\-C\-Spawn@{C\-C\-Spawn}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Interval.\-h$>$}
+
+Inheritance diagram for C\-C\-Spawn\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_c_c_spawn}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_spawn_aeb68fd5ff22e8c9511720d8cb4b8e2a1}{init\-One\-:two\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_spawn_a2b303ec44551f3a6086a61b3b10f004f}{actions\-:}
+\item 
+(id) + \hyperlink{interface_c_c_spawn_a1b6bbb2f5ff5edc7b450b883e6232b8e}{actions\-:va\-List\-:}
+\item 
+(id) + \hyperlink{interface_c_c_spawn_a0babd8e677501419c8f7c96afea3b030}{action\-With\-Array\-:}
+\item 
+(id) + \hyperlink{interface_c_c_spawn_ae11052bb5286f2642ae9fdec64d11e1f}{action\-One\-:two\-:}
+\item 
+\hypertarget{interface_c_c_spawn_addd450b89e3a68eae312d65ecbb99483}{(id) + {\bfseries actions\-With\-Array\-:}}\label{interface_c_c_spawn_addd450b89e3a68eae312d65ecbb99483}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_spawn_a25cb53ed99b7fc6c64f51b73df45c6ce}{\hyperlink{interface_c_c_finite_time_action}{C\-C\-Finite\-Time\-Action} $\ast$ {\bfseries one\-\_\-}}\label{interface_c_c_spawn_a25cb53ed99b7fc6c64f51b73df45c6ce}
+
+\item 
+\hypertarget{interface_c_c_spawn_a611a7781688f64146118cf849180788b}{\hyperlink{interface_c_c_finite_time_action}{C\-C\-Finite\-Time\-Action} $\ast$ {\bfseries two\-\_\-}}\label{interface_c_c_spawn_a611a7781688f64146118cf849180788b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Spawn a new action immediately 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_spawn_ae11052bb5286f2642ae9fdec64d11e1f}{\index{C\-C\-Spawn@{C\-C\-Spawn}!action\-One\-:two\-:@{action\-One\-:two\-:}}
+\index{action\-One\-:two\-:@{action\-One\-:two\-:}!CCSpawn@{C\-C\-Spawn}}
+\subsubsection[{action\-One\-:two\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) action\-One\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Finite\-Time\-Action}$\ast$)}]{one}
+\item[{two:({\bf C\-C\-Finite\-Time\-Action}$\ast$)}]{two}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_spawn_ae11052bb5286f2642ae9fdec64d11e1f}
+creates the Spawn action 
+
+Referenced by actions\-:va\-List\-:.
+
+
+\begin{DoxyCode}
+               : (CCFiniteTimeAction*) one two: (CCFiniteTimeAction*) two
+{
+        return [[[self alloc] initOne:one two:two ] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_spawn_a2b303ec44551f3a6086a61b3b10f004f}{\index{C\-C\-Spawn@{C\-C\-Spawn}!actions\-:@{actions\-:}}
+\index{actions\-:@{actions\-:}!CCSpawn@{C\-C\-Spawn}}
+\subsubsection[{actions\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf actions\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Finite\-Time\-Action}$\ast$)}]{action1}
+\item[{,}]{N\-S\-\_\-\-R\-E\-Q\-U\-I\-R\-E\-S\-\_\-\-N\-I\-L\-\_\-\-T\-E\-R\-M\-I\-N\-A\-T\-I\-O\-N}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_spawn_a2b303ec44551f3a6086a61b3b10f004f}
+helper constructor to create an array of spawned actions 
+\begin{DoxyCode}
+             : (CCFiniteTimeAction*) action1, ...
+{
+        va_list args;
+        va_start(args, action1);
+
+        id ret = [self actions:action1 vaList:args];
+
+        va_end(args);
+        return ret;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_spawn_a1b6bbb2f5ff5edc7b450b883e6232b8e}{\index{C\-C\-Spawn@{C\-C\-Spawn}!actions\-:va\-List\-:@{actions\-:va\-List\-:}}
+\index{actions\-:va\-List\-:@{actions\-:va\-List\-:}!CCSpawn@{C\-C\-Spawn}}
+\subsubsection[{actions\-:va\-List\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf actions\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Finite\-Time\-Action}$\ast$)}]{action1}
+\item[{vaList:(va\-\_\-list)}]{args}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_spawn_a1b6bbb2f5ff5edc7b450b883e6232b8e}
+helper constructor to create an array of spawned actions 
+
+Referenced by actions\-:.
+
+
+\begin{DoxyCode}
+             : (CCFiniteTimeAction*) action1 vaList:(va_list)args
+{
+        CCFiniteTimeAction *now;
+        CCFiniteTimeAction *prev = action1;
+        
+        while( action1 ) {
+                now = va_arg(args,CCFiniteTimeAction*);
+                if ( now )
+                        prev = [self actionOne: prev two: now];
+                else
+                        break;
+        }
+
+        return prev;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_spawn_a0babd8e677501419c8f7c96afea3b030}{\index{C\-C\-Spawn@{C\-C\-Spawn}!action\-With\-Array\-:@{action\-With\-Array\-:}}
+\index{action\-With\-Array\-:@{action\-With\-Array\-:}!CCSpawn@{C\-C\-Spawn}}
+\subsubsection[{action\-With\-Array\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Array\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Array$\ast$)}]{array\-Of\-Actions}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_spawn_a0babd8e677501419c8f7c96afea3b030}
+helper constructor to create an array of spawned actions given an array 
+\begin{DoxyCode}
+                     : (NSArray*) actions
+{
+        CCFiniteTimeAction *prev = [actions objectAtIndex:0];
+
+        for (NSUInteger i = 1; i < [actions count]; i++)
+                prev = [self actionOne:prev two:[actions objectAtIndex:i]];
+
+        return prev;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_spawn_aeb68fd5ff22e8c9511720d8cb4b8e2a1}{\index{C\-C\-Spawn@{C\-C\-Spawn}!init\-One\-:two\-:@{init\-One\-:two\-:}}
+\index{init\-One\-:two\-:@{init\-One\-:two\-:}!CCSpawn@{C\-C\-Spawn}}
+\subsubsection[{init\-One\-:two\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-One\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Finite\-Time\-Action}$\ast$)}]{one}
+\item[{two:({\bf C\-C\-Finite\-Time\-Action}$\ast$)}]{two}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_spawn_aeb68fd5ff22e8c9511720d8cb4b8e2a1}
+initializes the Spawn action with the 2 actions to spawn 
+\begin{DoxyCode}
+             : (CCFiniteTimeAction*) one two: (CCFiniteTimeAction*) two
+{
+        NSAssert( one!=nil && two!=nil, @"Spawn: arguments must be non-nil");
+        NSAssert( one!=one_ && one!=two_, @"Spawn: reinit using same parameters
+       is not supported");
+        NSAssert( two!=two_ && two!=one_, @"Spawn: reinit using same parameters
+       is not supported");
+
+        ccTime d1 = [one duration];
+        ccTime d2 = [two duration];
+
+        if( (self=[super initWithDuration: MAX(d1,d2)] ) ) {
+
+                // XXX: Supports re-init without leaking. Fails if one==one_ ||
+       two==two_
+                [one_ release];
+                [two_ release];
+
+                one_ = one;
+                two_ = two;
+
+                if( d1 > d2 )
+                        two_ = [CCSequence actionOne:two two:[CCDelayTime 
+      actionWithDuration: (d1-d2)] ];
+                else if( d1 < d2)
+                        one_ = [CCSequence actionOne:one two: [CCDelayTime 
+      actionWithDuration: (d2-d1)] ];
+
+                [one_ retain];
+                [two_ retain];
+        }
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-m\end{DoxyCompactItemize}

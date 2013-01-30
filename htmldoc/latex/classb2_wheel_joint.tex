@@ -1,0 +1,208 @@
+\hypertarget{classb2_wheel_joint}{\section{b2\-Wheel\-Joint Class Reference}
+\label{classb2_wheel_joint}\index{b2\-Wheel\-Joint@{b2\-Wheel\-Joint}}
+}
+
+
+{\ttfamily \#include $<$b2\-Wheel\-Joint.\-h$>$}
+
+Inheritance diagram for b2\-Wheel\-Joint\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classb2_wheel_joint}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_wheel_joint_a93f730702a2246be33c15f74861f0df5}{void {\bfseries Get\-Definition} (\hyperlink{structb2_wheel_joint_def}{b2\-Wheel\-Joint\-Def} $\ast$def) const }\label{classb2_wheel_joint_a93f730702a2246be33c15f74861f0df5}
+
+\item 
+\hypertarget{classb2_wheel_joint_a6499dcd788d29f06c2e1b28c755e01c8}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{classb2_wheel_joint_a6499dcd788d29f06c2e1b28c755e01c8}{Get\-Anchor\-A} () const }\label{classb2_wheel_joint_a6499dcd788d29f06c2e1b28c755e01c8}
+
+\begin{DoxyCompactList}\small\item\em Get the anchor point on body\-A in world coordinates. \end{DoxyCompactList}\item 
+\hypertarget{classb2_wheel_joint_ace182061f7f78ac2ec3f957a763ca5d3}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{classb2_wheel_joint_ace182061f7f78ac2ec3f957a763ca5d3}{Get\-Anchor\-B} () const }\label{classb2_wheel_joint_ace182061f7f78ac2ec3f957a763ca5d3}
+
+\begin{DoxyCompactList}\small\item\em Get the anchor point on body\-B in world coordinates. \end{DoxyCompactList}\item 
+\hypertarget{classb2_wheel_joint_aa16e3a1c0246017bc25e72cf494daa42}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{classb2_wheel_joint_aa16e3a1c0246017bc25e72cf494daa42}{Get\-Reaction\-Force} (float32 inv\-\_\-dt) const }\label{classb2_wheel_joint_aa16e3a1c0246017bc25e72cf494daa42}
+
+\begin{DoxyCompactList}\small\item\em Get the reaction force on body\-B at the joint anchor in Newtons. \end{DoxyCompactList}\item 
+\hypertarget{classb2_wheel_joint_ae88eeec295a19f216acab9b23d9c704b}{float32 \hyperlink{classb2_wheel_joint_ae88eeec295a19f216acab9b23d9c704b}{Get\-Reaction\-Torque} (float32 inv\-\_\-dt) const }\label{classb2_wheel_joint_ae88eeec295a19f216acab9b23d9c704b}
+
+\begin{DoxyCompactList}\small\item\em Get the reaction torque on body\-B in N$\ast$m. \end{DoxyCompactList}\item 
+\hypertarget{classb2_wheel_joint_abf725ee0fa640d1b9374283f6f50e82d}{const \hyperlink{structb2_vec2}{b2\-Vec2} \& \hyperlink{classb2_wheel_joint_abf725ee0fa640d1b9374283f6f50e82d}{Get\-Local\-Anchor\-A} () const }\label{classb2_wheel_joint_abf725ee0fa640d1b9374283f6f50e82d}
+
+\begin{DoxyCompactList}\small\item\em The local anchor point relative to body\-A's origin. \end{DoxyCompactList}\item 
+\hypertarget{classb2_wheel_joint_a38313bcd5d5a91f190956086b9d9b8e5}{const \hyperlink{structb2_vec2}{b2\-Vec2} \& \hyperlink{classb2_wheel_joint_a38313bcd5d5a91f190956086b9d9b8e5}{Get\-Local\-Anchor\-B} () const }\label{classb2_wheel_joint_a38313bcd5d5a91f190956086b9d9b8e5}
+
+\begin{DoxyCompactList}\small\item\em The local anchor point relative to body\-B's origin. \end{DoxyCompactList}\item 
+\hypertarget{classb2_wheel_joint_a03c1a1cf19dbada68630aa3cbf970a55}{const \hyperlink{structb2_vec2}{b2\-Vec2} \& \hyperlink{classb2_wheel_joint_a03c1a1cf19dbada68630aa3cbf970a55}{Get\-Local\-Axis\-A} () const }\label{classb2_wheel_joint_a03c1a1cf19dbada68630aa3cbf970a55}
+
+\begin{DoxyCompactList}\small\item\em The local joint axis relative to body\-A. \end{DoxyCompactList}\item 
+\hypertarget{classb2_wheel_joint_abc3791f9c8139e5c5ba0fb72d5c7f9df}{float32 \hyperlink{classb2_wheel_joint_abc3791f9c8139e5c5ba0fb72d5c7f9df}{Get\-Joint\-Translation} () const }\label{classb2_wheel_joint_abc3791f9c8139e5c5ba0fb72d5c7f9df}
+
+\begin{DoxyCompactList}\small\item\em Get the current joint translation, usually in meters. \end{DoxyCompactList}\item 
+\hypertarget{classb2_wheel_joint_a398bc3a1f807905e0923cc7d9bff640d}{float32 \hyperlink{classb2_wheel_joint_a398bc3a1f807905e0923cc7d9bff640d}{Get\-Joint\-Speed} () const }\label{classb2_wheel_joint_a398bc3a1f807905e0923cc7d9bff640d}
+
+\begin{DoxyCompactList}\small\item\em Get the current joint translation speed, usually in meters per second. \end{DoxyCompactList}\item 
+\hypertarget{classb2_wheel_joint_a419bc80e17cc4c1062a692ea79396d19}{bool \hyperlink{classb2_wheel_joint_a419bc80e17cc4c1062a692ea79396d19}{Is\-Motor\-Enabled} () const }\label{classb2_wheel_joint_a419bc80e17cc4c1062a692ea79396d19}
+
+\begin{DoxyCompactList}\small\item\em Is the joint motor enabled? \end{DoxyCompactList}\item 
+\hypertarget{classb2_wheel_joint_a7a832d814bdda135a78fad41ba671da6}{void \hyperlink{classb2_wheel_joint_a7a832d814bdda135a78fad41ba671da6}{Enable\-Motor} (bool flag)}\label{classb2_wheel_joint_a7a832d814bdda135a78fad41ba671da6}
+
+\begin{DoxyCompactList}\small\item\em Enable/disable the joint motor. \end{DoxyCompactList}\item 
+\hypertarget{classb2_wheel_joint_a6e3255fcf5c82b979ad7e3dc1c089c0b}{void \hyperlink{classb2_wheel_joint_a6e3255fcf5c82b979ad7e3dc1c089c0b}{Set\-Motor\-Speed} (float32 speed)}\label{classb2_wheel_joint_a6e3255fcf5c82b979ad7e3dc1c089c0b}
+
+\begin{DoxyCompactList}\small\item\em Set the motor speed, usually in radians per second. \end{DoxyCompactList}\item 
+\hypertarget{classb2_wheel_joint_acc7a31fdd444614ba1943f57f0c6ac5a}{float32 \hyperlink{classb2_wheel_joint_acc7a31fdd444614ba1943f57f0c6ac5a}{Get\-Motor\-Speed} () const }\label{classb2_wheel_joint_acc7a31fdd444614ba1943f57f0c6ac5a}
+
+\begin{DoxyCompactList}\small\item\em Get the motor speed, usually in radians per second. \end{DoxyCompactList}\item 
+\hypertarget{classb2_wheel_joint_a8aae3cd624ec9d48fc86c325c4595edc}{void \hyperlink{classb2_wheel_joint_a8aae3cd624ec9d48fc86c325c4595edc}{Set\-Max\-Motor\-Torque} (float32 torque)}\label{classb2_wheel_joint_a8aae3cd624ec9d48fc86c325c4595edc}
+
+\begin{DoxyCompactList}\small\item\em Set/\-Get the maximum motor force, usually in N-\/m. \end{DoxyCompactList}\item 
+\hypertarget{classb2_wheel_joint_ad2d9fb270f0a62cd87234d3ce55626f3}{float32 {\bfseries Get\-Max\-Motor\-Torque} () const }\label{classb2_wheel_joint_ad2d9fb270f0a62cd87234d3ce55626f3}
+
+\item 
+\hypertarget{classb2_wheel_joint_a4fbfb199ed267f7a2fad934cd2f4fbdc}{float32 \hyperlink{classb2_wheel_joint_a4fbfb199ed267f7a2fad934cd2f4fbdc}{Get\-Motor\-Torque} (float32 inv\-\_\-dt) const }\label{classb2_wheel_joint_a4fbfb199ed267f7a2fad934cd2f4fbdc}
+
+\begin{DoxyCompactList}\small\item\em Get the current motor torque given the inverse time step, usually in N-\/m. \end{DoxyCompactList}\item 
+\hypertarget{classb2_wheel_joint_af9f8fada5cb30f83aa2fbf486e9d347b}{void \hyperlink{classb2_wheel_joint_af9f8fada5cb30f83aa2fbf486e9d347b}{Set\-Spring\-Frequency\-Hz} (float32 hz)}\label{classb2_wheel_joint_af9f8fada5cb30f83aa2fbf486e9d347b}
+
+\begin{DoxyCompactList}\small\item\em Set/\-Get the spring frequency in hertz. Setting the frequency to zero disables the spring. \end{DoxyCompactList}\item 
+\hypertarget{classb2_wheel_joint_a475fe44e145a7e3869c0a0ff5602bb20}{float32 {\bfseries Get\-Spring\-Frequency\-Hz} () const }\label{classb2_wheel_joint_a475fe44e145a7e3869c0a0ff5602bb20}
+
+\item 
+\hypertarget{classb2_wheel_joint_a39b123ac045c8ec93faa65746e6655dc}{void \hyperlink{classb2_wheel_joint_a39b123ac045c8ec93faa65746e6655dc}{Set\-Spring\-Damping\-Ratio} (float32 ratio)}\label{classb2_wheel_joint_a39b123ac045c8ec93faa65746e6655dc}
+
+\begin{DoxyCompactList}\small\item\em Set/\-Get the spring damping ratio. \end{DoxyCompactList}\item 
+\hypertarget{classb2_wheel_joint_ad991b903dd8b3820dfe3a2263b89f5aa}{float32 {\bfseries Get\-Spring\-Damping\-Ratio} () const }\label{classb2_wheel_joint_ad991b903dd8b3820dfe3a2263b89f5aa}
+
+\item 
+\hypertarget{classb2_wheel_joint_a09534b6f4c5d0254711e0bcc7cf3b0e4}{void \hyperlink{classb2_wheel_joint_a09534b6f4c5d0254711e0bcc7cf3b0e4}{Dump} ()}\label{classb2_wheel_joint_a09534b6f4c5d0254711e0bcc7cf3b0e4}
+
+\begin{DoxyCompactList}\small\item\em Dump to b2\-Log. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_wheel_joint_a9c8bbb1068ddb46d074fe91802dd6a39}{{\bfseries b2\-Wheel\-Joint} (const \hyperlink{structb2_wheel_joint_def}{b2\-Wheel\-Joint\-Def} $\ast$def)}\label{classb2_wheel_joint_a9c8bbb1068ddb46d074fe91802dd6a39}
+
+\item 
+\hypertarget{classb2_wheel_joint_af3fc35c89dc253661297d69fe4a00a97}{void {\bfseries Init\-Velocity\-Constraints} (const \hyperlink{structb2_solver_data}{b2\-Solver\-Data} \&data)}\label{classb2_wheel_joint_af3fc35c89dc253661297d69fe4a00a97}
+
+\item 
+\hypertarget{classb2_wheel_joint_a09283ebe01298e6a2e897ca409b70289}{void {\bfseries Solve\-Velocity\-Constraints} (const \hyperlink{structb2_solver_data}{b2\-Solver\-Data} \&data)}\label{classb2_wheel_joint_a09283ebe01298e6a2e897ca409b70289}
+
+\item 
+\hypertarget{classb2_wheel_joint_ae14faaa2cd91bdea615e86c0dd2ccc97}{bool {\bfseries Solve\-Position\-Constraints} (const \hyperlink{structb2_solver_data}{b2\-Solver\-Data} \&data)}\label{classb2_wheel_joint_ae14faaa2cd91bdea615e86c0dd2ccc97}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_wheel_joint_a0570ebb1228c2baca4630c53b77792fa}{float32 {\bfseries m\-\_\-frequency\-Hz}}\label{classb2_wheel_joint_a0570ebb1228c2baca4630c53b77792fa}
+
+\item 
+\hypertarget{classb2_wheel_joint_a712554f6a298cf8a69bbf546fa465843}{float32 {\bfseries m\-\_\-damping\-Ratio}}\label{classb2_wheel_joint_a712554f6a298cf8a69bbf546fa465843}
+
+\item 
+\hypertarget{classb2_wheel_joint_a9911353143312dc352928a80c63813c8}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Anchor\-A}}\label{classb2_wheel_joint_a9911353143312dc352928a80c63813c8}
+
+\item 
+\hypertarget{classb2_wheel_joint_a1bc3fa1a0bad5eb2cc7b9962976c1d29}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Anchor\-B}}\label{classb2_wheel_joint_a1bc3fa1a0bad5eb2cc7b9962976c1d29}
+
+\item 
+\hypertarget{classb2_wheel_joint_ae1cadd777bdffbb726b15c438e081c21}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-X\-Axis\-A}}\label{classb2_wheel_joint_ae1cadd777bdffbb726b15c438e081c21}
+
+\item 
+\hypertarget{classb2_wheel_joint_a5e9566b969c24428d32ff2069d4180e3}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Y\-Axis\-A}}\label{classb2_wheel_joint_a5e9566b969c24428d32ff2069d4180e3}
+
+\item 
+\hypertarget{classb2_wheel_joint_a81a874642cc60caa2eb212eda3b266f0}{float32 {\bfseries m\-\_\-impulse}}\label{classb2_wheel_joint_a81a874642cc60caa2eb212eda3b266f0}
+
+\item 
+\hypertarget{classb2_wheel_joint_a1116db6834e3b62a651558f6bdfe000e}{float32 {\bfseries m\-\_\-motor\-Impulse}}\label{classb2_wheel_joint_a1116db6834e3b62a651558f6bdfe000e}
+
+\item 
+\hypertarget{classb2_wheel_joint_a83aa86813105dc1189fed8acf1767eb5}{float32 {\bfseries m\-\_\-spring\-Impulse}}\label{classb2_wheel_joint_a83aa86813105dc1189fed8acf1767eb5}
+
+\item 
+\hypertarget{classb2_wheel_joint_ad671dcec7ecd41baf87200b2f9c37c34}{float32 {\bfseries m\-\_\-max\-Motor\-Torque}}\label{classb2_wheel_joint_ad671dcec7ecd41baf87200b2f9c37c34}
+
+\item 
+\hypertarget{classb2_wheel_joint_a29194860b36867eb4349eee73e8d5908}{float32 {\bfseries m\-\_\-motor\-Speed}}\label{classb2_wheel_joint_a29194860b36867eb4349eee73e8d5908}
+
+\item 
+\hypertarget{classb2_wheel_joint_a46dae5c1e2630430ce7cf00dbccee8a1}{bool {\bfseries m\-\_\-enable\-Motor}}\label{classb2_wheel_joint_a46dae5c1e2630430ce7cf00dbccee8a1}
+
+\item 
+\hypertarget{classb2_wheel_joint_a0924e1788c097b3b05eac9cd53d1d997}{int32 {\bfseries m\-\_\-index\-A}}\label{classb2_wheel_joint_a0924e1788c097b3b05eac9cd53d1d997}
+
+\item 
+\hypertarget{classb2_wheel_joint_a76d74ec2f2bf7c941076c0e224c2a9e9}{int32 {\bfseries m\-\_\-index\-B}}\label{classb2_wheel_joint_a76d74ec2f2bf7c941076c0e224c2a9e9}
+
+\item 
+\hypertarget{classb2_wheel_joint_a60c54ed81993fd710b9499f2d6bcc274}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Center\-A}}\label{classb2_wheel_joint_a60c54ed81993fd710b9499f2d6bcc274}
+
+\item 
+\hypertarget{classb2_wheel_joint_a7631ce1cbb3b7f33d304eb87a5413277}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Center\-B}}\label{classb2_wheel_joint_a7631ce1cbb3b7f33d304eb87a5413277}
+
+\item 
+\hypertarget{classb2_wheel_joint_affa854f7bdde3468b46f416836791192}{float32 {\bfseries m\-\_\-inv\-Mass\-A}}\label{classb2_wheel_joint_affa854f7bdde3468b46f416836791192}
+
+\item 
+\hypertarget{classb2_wheel_joint_a8ca9663e91d3dd86bdb537248f09c5c7}{float32 {\bfseries m\-\_\-inv\-Mass\-B}}\label{classb2_wheel_joint_a8ca9663e91d3dd86bdb537248f09c5c7}
+
+\item 
+\hypertarget{classb2_wheel_joint_aa540d2ad4452012952fd42941eefa7d9}{float32 {\bfseries m\-\_\-inv\-I\-A}}\label{classb2_wheel_joint_aa540d2ad4452012952fd42941eefa7d9}
+
+\item 
+\hypertarget{classb2_wheel_joint_a6b76c82b51bdf6910d6c241146b1a696}{float32 {\bfseries m\-\_\-inv\-I\-B}}\label{classb2_wheel_joint_a6b76c82b51bdf6910d6c241146b1a696}
+
+\item 
+\hypertarget{classb2_wheel_joint_ae91286452d1941d4bed387bd7ee187c8}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-ax}}\label{classb2_wheel_joint_ae91286452d1941d4bed387bd7ee187c8}
+
+\item 
+\hypertarget{classb2_wheel_joint_a2f3b7d45948c68e5c5dd8636ed8a8db1}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-ay}}\label{classb2_wheel_joint_a2f3b7d45948c68e5c5dd8636ed8a8db1}
+
+\item 
+\hypertarget{classb2_wheel_joint_a0935bcd6aea2145f6c8e947159a1e59b}{float32 {\bfseries m\-\_\-s\-Ax}}\label{classb2_wheel_joint_a0935bcd6aea2145f6c8e947159a1e59b}
+
+\item 
+\hypertarget{classb2_wheel_joint_a0705a4e0dfd40bf25f518bb22d6e0177}{float32 {\bfseries m\-\_\-s\-Bx}}\label{classb2_wheel_joint_a0705a4e0dfd40bf25f518bb22d6e0177}
+
+\item 
+\hypertarget{classb2_wheel_joint_aaeb83f256ec67556cc1d7758f75b773e}{float32 {\bfseries m\-\_\-s\-Ay}}\label{classb2_wheel_joint_aaeb83f256ec67556cc1d7758f75b773e}
+
+\item 
+\hypertarget{classb2_wheel_joint_a4fa320609b2942eee344ac0d91003444}{float32 {\bfseries m\-\_\-s\-By}}\label{classb2_wheel_joint_a4fa320609b2942eee344ac0d91003444}
+
+\item 
+\hypertarget{classb2_wheel_joint_a80abc7c0fe5a4d6f362ec5cb13214ec1}{float32 {\bfseries m\-\_\-mass}}\label{classb2_wheel_joint_a80abc7c0fe5a4d6f362ec5cb13214ec1}
+
+\item 
+\hypertarget{classb2_wheel_joint_a64d20e079b2638995c7faa5d3a2aed68}{float32 {\bfseries m\-\_\-motor\-Mass}}\label{classb2_wheel_joint_a64d20e079b2638995c7faa5d3a2aed68}
+
+\item 
+\hypertarget{classb2_wheel_joint_ab24b6e3ad48961de7d78e4476531dd30}{float32 {\bfseries m\-\_\-spring\-Mass}}\label{classb2_wheel_joint_ab24b6e3ad48961de7d78e4476531dd30}
+
+\item 
+\hypertarget{classb2_wheel_joint_a82bec93fb4a2a3702455bede3d5c6ac8}{float32 {\bfseries m\-\_\-bias}}\label{classb2_wheel_joint_a82bec93fb4a2a3702455bede3d5c6ac8}
+
+\item 
+\hypertarget{classb2_wheel_joint_a3d4c8b3e96b517d13693285e63a917fb}{float32 {\bfseries m\-\_\-gamma}}\label{classb2_wheel_joint_a3d4c8b3e96b517d13693285e63a917fb}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_wheel_joint_a54ade8ed3d794298108d7f4c4e4793fa}{class {\bfseries b2\-Joint}}\label{classb2_wheel_joint_a54ade8ed3d794298108d7f4c4e4793fa}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A wheel joint. This joint provides two degrees of freedom\-: translation along an axis fixed in body\-A and rotation in the plane. You can use a joint limit to restrict the range of motion and a joint motor to drive the rotation or to model rotational friction. This joint is designed for vehicle suspensions. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Dynamics/\-Joints/b2\-Wheel\-Joint.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Dynamics/\-Joints/b2\-Wheel\-Joint.\-cpp\end{DoxyCompactItemize}

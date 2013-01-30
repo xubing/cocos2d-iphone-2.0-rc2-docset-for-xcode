@@ -1,0 +1,95 @@
+\hypertarget{interface_c_c_shattered_tiles3_d}{\section{C\-C\-Shattered\-Tiles3\-D Class Reference}
+\label{interface_c_c_shattered_tiles3_d}\index{C\-C\-Shattered\-Tiles3\-D@{C\-C\-Shattered\-Tiles3\-D}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Tiled\-Grid.\-h$>$}
+
+Inheritance diagram for C\-C\-Shattered\-Tiles3\-D\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.000000cm]{interface_c_c_shattered_tiles3_d}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_shattered_tiles3_d_a62f6a2137bbb3f0e691aa398177edfcc}{init\-With\-Range\-:shatter\-Z\-:grid\-:duration\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_shattered_tiles3_d_ac80a1129b5738fb44dc870d53cd9a562}{action\-With\-Range\-:shatter\-Z\-:grid\-:duration\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_shattered_tiles3_d_ae4d5f612cf5281768810ce925d51007c}{int {\bfseries randrange}}\label{interface_c_c_shattered_tiles3_d_ae4d5f612cf5281768810ce925d51007c}
+
+\item 
+\hypertarget{interface_c_c_shattered_tiles3_d_a66561c405c0d922014ec390026a1ffb2}{B\-O\-O\-L {\bfseries once}}\label{interface_c_c_shattered_tiles3_d_a66561c405c0d922014ec390026a1ffb2}
+
+\item 
+\hypertarget{interface_c_c_shattered_tiles3_d_a9869ed29e6a1ad6fd3dbb6d52600612f}{B\-O\-O\-L {\bfseries shatter\-Z}}\label{interface_c_c_shattered_tiles3_d_a9869ed29e6a1ad6fd3dbb6d52600612f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_shattered_tiles3_d}{C\-C\-Shattered\-Tiles3\-D} action 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_shattered_tiles3_d_ac80a1129b5738fb44dc870d53cd9a562}{\index{C\-C\-Shattered\-Tiles3\-D@{C\-C\-Shattered\-Tiles3\-D}!action\-With\-Range\-:shatter\-Z\-:grid\-:duration\-:@{action\-With\-Range\-:shatter\-Z\-:grid\-:duration\-:}}
+\index{action\-With\-Range\-:shatter\-Z\-:grid\-:duration\-:@{action\-With\-Range\-:shatter\-Z\-:grid\-:duration\-:}!CCShatteredTiles3D@{C\-C\-Shattered\-Tiles3\-D}}
+\subsubsection[{action\-With\-Range\-:shatter\-Z\-:grid\-:duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) action\-With\-Range\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{range}
+\item[{shatterZ:(B\-O\-O\-L)}]{shatter\-Z}
+\item[{grid:({\bf cc\-Grid\-Size})}]{grid\-Size}
+\item[{duration:({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_shattered_tiles3_d_ac80a1129b5738fb44dc870d53cd9a562}
+creates the action with a range, whether of not to shatter Z vertices, a grid size and duration 
+
+Referenced by Shattered\-Tiles3\-D\-Demo\-::action\-With\-Duration\-:.
+
+
+\begin{DoxyCode}
+                    :(int)range shatterZ:(BOOL)sz grid:(ccGridSize)gridSize 
+      duration:(ccTime)d
+{
+        return [[[self alloc] initWithRange:range shatterZ:sz grid:gridSize 
+      duration:d] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_shattered_tiles3_d_a62f6a2137bbb3f0e691aa398177edfcc}{\index{C\-C\-Shattered\-Tiles3\-D@{C\-C\-Shattered\-Tiles3\-D}!init\-With\-Range\-:shatter\-Z\-:grid\-:duration\-:@{init\-With\-Range\-:shatter\-Z\-:grid\-:duration\-:}}
+\index{init\-With\-Range\-:shatter\-Z\-:grid\-:duration\-:@{init\-With\-Range\-:shatter\-Z\-:grid\-:duration\-:}!CCShatteredTiles3D@{C\-C\-Shattered\-Tiles3\-D}}
+\subsubsection[{init\-With\-Range\-:shatter\-Z\-:grid\-:duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Range\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{range}
+\item[{shatterZ:(B\-O\-O\-L)}]{shatter\-Z}
+\item[{grid:({\bf cc\-Grid\-Size})}]{grid\-Size}
+\item[{duration:({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_shattered_tiles3_d_a62f6a2137bbb3f0e691aa398177edfcc}
+initializes the action with a range, whether or not to shatter Z vertices, a grid size and duration 
+\begin{DoxyCode}
+                  :(int)range shatterZ:(BOOL)sz grid:(ccGridSize)gSize duration
+      :(ccTime)d
+{
+        if ( (self = [super initWithSize:gSize duration:d]) )
+        {
+                once = NO;
+                randrange = range;
+                shatterZ = sz;
+        }
+
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Tiled\-Grid.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Tiled\-Grid.\-m\end{DoxyCompactItemize}

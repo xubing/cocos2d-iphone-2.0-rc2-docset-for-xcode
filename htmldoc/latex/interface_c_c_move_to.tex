@@ -1,0 +1,92 @@
+\hypertarget{interface_c_c_move_to}{\section{C\-C\-Move\-To Class Reference}
+\label{interface_c_c_move_to}\index{C\-C\-Move\-To@{C\-C\-Move\-To}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Interval.\-h$>$}
+
+Inheritance diagram for C\-C\-Move\-To\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{interface_c_c_move_to}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_move_to_a4f3d21350e8ef39c4ba8b9cff21e240b}{init\-With\-Duration\-:position\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_move_to_ac3317aacb1b5c544b9dc8875afa9f3e7}{action\-With\-Duration\-:position\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_move_to_a49157f837a474967fa6dfc22c572aaad}{C\-G\-Point {\bfseries end\-Position\-\_\-}}\label{interface_c_c_move_to_a49157f837a474967fa6dfc22c572aaad}
+
+\item 
+\hypertarget{interface_c_c_move_to_a792974afe5a0f6d84ca86b0df3313938}{C\-G\-Point {\bfseries start\-Position\-\_\-}}\label{interface_c_c_move_to_a792974afe5a0f6d84ca86b0df3313938}
+
+\item 
+\hypertarget{interface_c_c_move_to_a8d7075fcc2148150bd6f85a21c07d675}{C\-G\-Point {\bfseries delta\-\_\-}}\label{interface_c_c_move_to_a8d7075fcc2148150bd6f85a21c07d675}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Moves a \hyperlink{class_c_c_node}{C\-C\-Node} object to the position x,y. x and y are absolute coordinates by modifying its position attribute. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_move_to_ac3317aacb1b5c544b9dc8875afa9f3e7}{\index{C\-C\-Move\-To@{C\-C\-Move\-To}!action\-With\-Duration\-:position\-:@{action\-With\-Duration\-:position\-:}}
+\index{action\-With\-Duration\-:position\-:@{action\-With\-Duration\-:position\-:}!CCMoveTo@{C\-C\-Move\-To}}
+\subsubsection[{action\-With\-Duration\-:position\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{duration}
+\item[{position:(C\-G\-Point)}]{position}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_move_to_ac3317aacb1b5c544b9dc8875afa9f3e7}
+creates the action 
+
+Reimplemented in \hyperlink{interface_c_c_move_by_a7c60ceda09f1cb73515b8400a0392f51}{C\-C\-Move\-By}.
+
+
+
+Referenced by C\-C\-Transition\-Move\-In\-L\-::action.
+
+
+\begin{DoxyCode}
+                        : (ccTime) t position: (CGPoint) p
+{
+        return [[[self alloc] initWithDuration:t position:p ] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_move_to_a4f3d21350e8ef39c4ba8b9cff21e240b}{\index{C\-C\-Move\-To@{C\-C\-Move\-To}!init\-With\-Duration\-:position\-:@{init\-With\-Duration\-:position\-:}}
+\index{init\-With\-Duration\-:position\-:@{init\-With\-Duration\-:position\-:}!CCMoveTo@{C\-C\-Move\-To}}
+\subsubsection[{init\-With\-Duration\-:position\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{duration}
+\item[{position:(C\-G\-Point)}]{position}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_move_to_a4f3d21350e8ef39c4ba8b9cff21e240b}
+initializes the action 
+
+Reimplemented in \hyperlink{interface_c_c_move_by_a3599d5ef2b434522b459b69c6cb8fce0}{C\-C\-Move\-By}.
+
+
+\begin{DoxyCode}
+                      : (ccTime) t position: (CGPoint) p
+{
+        if( (self=[super initWithDuration: t]) )
+                endPosition_ = p;
+
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-m\end{DoxyCompactItemize}

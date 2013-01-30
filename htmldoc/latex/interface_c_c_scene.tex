@@ -1,0 +1,68 @@
+\hypertarget{interface_c_c_scene}{\section{C\-C\-Scene Class Reference}
+\label{interface_c_c_scene}\index{C\-C\-Scene@{C\-C\-Scene}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Scene.\-h$>$}
+
+Inheritance diagram for C\-C\-Scene\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interface_c_c_scene}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_scene_a6ced7d1397204cb5dc2a5579e547ed0c}{init}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_scene}{C\-C\-Scene} is a subclass of \hyperlink{class_c_c_node}{C\-C\-Node} that is used only as an abstract concept.
+
+\hyperlink{interface_c_c_scene}{C\-C\-Scene} an \hyperlink{class_c_c_node}{C\-C\-Node} are almost identical with the difference that \hyperlink{interface_c_c_scene}{C\-C\-Scene} has its anchor point (by default) at the center of the screen.
+
+For the moment \hyperlink{interface_c_c_scene}{C\-C\-Scene} has no other logic than that, but in future releases it might have additional logic.
+
+It is a good practice to use and \hyperlink{interface_c_c_scene}{C\-C\-Scene} as the parent of all your nodes. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_scene_a6ced7d1397204cb5dc2a5579e547ed0c}{\index{C\-C\-Scene@{C\-C\-Scene}!init@{init}}
+\index{init@{init}!CCScene@{C\-C\-Scene}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_scene_a6ced7d1397204cb5dc2a5579e547ed0c}
+initializes a node. The node will be created as \char`\"{}autorelease\char`\"{}. 
+
+Reimplemented from \hyperlink{class_c_c_node_ad789cad83aca65c130abd4452d1bc081}{C\-C\-Node}.
+
+
+
+Reimplemented in \hyperlink{interface_c_c_transition_turn_off_tiles_a002e9740f8487af7afd9fe157e99dfcc}{C\-C\-Transition\-Turn\-Off\-Tiles}, \hyperlink{interface_c_c_transition_cross_fade_a84e566a9c1ef713de1deaf006b6dbd0f}{C\-C\-Transition\-Cross\-Fade}, \hyperlink{interface_c_c_transition_zoom_flip_angular_aff9352d756a5f4688bac73395eed9c90}{C\-C\-Transition\-Zoom\-Flip\-Angular}, \hyperlink{interface_c_c_transition_zoom_flip_y_a5ca9edd127622a0d25322dde9daf7447}{C\-C\-Transition\-Zoom\-Flip\-Y}, \hyperlink{interface_c_c_transition_zoom_flip_x_a29c33d700630ff1e7b83ad4ba501935b}{C\-C\-Transition\-Zoom\-Flip\-X}, \hyperlink{interface_c_c_transition_flip_angular_acfbd2cd5d83cccb25e8566f39502df7e}{C\-C\-Transition\-Flip\-Angular}, \hyperlink{interface_c_c_transition_flip_y_a89a277a0795c44498c0dcdd0d15ffd78}{C\-C\-Transition\-Flip\-Y}, \hyperlink{interface_c_c_transition_flip_x_a826655c1f01b1edf2aaa7663544bc69c}{C\-C\-Transition\-Flip\-X}, \hyperlink{interface_c_c_transition_shrink_grow_aaa4d30491aec84748cf226918abd2987}{C\-C\-Transition\-Shrink\-Grow}, \hyperlink{interface_c_c_transition_jump_zoom_a520ada27cbde20c1b27c81d2bfbcd74a}{C\-C\-Transition\-Jump\-Zoom}, and \hyperlink{interface_c_c_transition_roto_zoom_a588b1d67980b94489bed54922ae3eb2a}{C\-C\-Transition\-Roto\-Zoom}.
+
+
+
+Referenced by C\-C\-Transition\-Roto\-Zoom\-::init, C\-C\-Transition\-Jump\-Zoom\-::init, C\-C\-Transition\-Shrink\-Grow\-::init, C\-C\-Transition\-Flip\-X\-::init, C\-C\-Transition\-Flip\-Y\-::init, C\-C\-Transition\-Flip\-Angular\-::init, C\-C\-Transition\-Zoom\-Flip\-X\-::init, C\-C\-Transition\-Zoom\-Flip\-Y\-::init, C\-C\-Transition\-Zoom\-Flip\-Angular\-::init, C\-C\-Transition\-Cross\-Fade\-::init, C\-C\-Transition\-Turn\-Off\-Tiles\-::init, and C\-C\-Transition\-Scene\-::init\-With\-Duration\-:scene\-:.
+
+
+\begin{DoxyCode}
+{
+        if( (self=[super init]) ) {
+                CGSize s = [[CCDirector sharedDirector] winSize];
+                self.ignoreAnchorPointForPosition = YES;
+                anchorPoint_ = ccp(0.5f, 0.5f);
+                [self setContentSize:s];
+        }
+
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Scene.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Scene.\-m\end{DoxyCompactItemize}

@@ -1,0 +1,44 @@
+\hypertarget{interface_fade_out_b_l_tiles_demo}{\section{Fade\-Out\-B\-L\-Tiles\-Demo Class Reference}
+\label{interface_fade_out_b_l_tiles_demo}\index{Fade\-Out\-B\-L\-Tiles\-Demo@{Fade\-Out\-B\-L\-Tiles\-Demo}}
+}
+Inheritance diagram for Fade\-Out\-B\-L\-Tiles\-Demo\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{interface_fade_out_b_l_tiles_demo}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_fade_out_b_l_tiles_demo_ad13752a704cedf99bc49df9a03b3cc92}{action\-With\-Duration\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_fade_out_b_l_tiles_demo_ad13752a704cedf99bc49df9a03b3cc92}{\index{Fade\-Out\-B\-L\-Tiles\-Demo@{Fade\-Out\-B\-L\-Tiles\-Demo}!action\-With\-Duration\-:@{action\-With\-Duration\-:}}
+\index{action\-With\-Duration\-:@{action\-With\-Duration\-:}!FadeOutBLTilesDemo@{Fade\-Out\-B\-L\-Tiles\-Demo}}
+\subsubsection[{action\-With\-Duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_fade_out_b_l_tiles_demo_ad13752a704cedf99bc49df9a03b3cc92}
+creates the action 
+
+Reimplemented from \hyperlink{class_c_c_action_interval_a08fbc347478cca16ab1fe936a1770dc0}{C\-C\-Action\-Interval}.
+
+
+\begin{DoxyCode}
+                        :(ccTime)t
+{
+        id fadeout = [CCFadeOutBLTiles actionWithSize:ccg(16,12) duration:t];
+        id back = [fadeout reverse];
+        id delay = [CCDelayTime actionWithDuration:0.5f];
+
+        return [CCSequence actions: fadeout, delay, back, nil];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/tests/Effects\-Test.\-m\end{DoxyCompactItemize}

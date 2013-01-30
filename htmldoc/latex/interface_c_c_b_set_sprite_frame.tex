@@ -1,0 +1,65 @@
+\hypertarget{interface_c_c_b_set_sprite_frame}{\section{C\-C\-B\-Set\-Sprite\-Frame Class Reference}
+\label{interface_c_c_b_set_sprite_frame}\index{C\-C\-B\-Set\-Sprite\-Frame@{C\-C\-B\-Set\-Sprite\-Frame}}
+}
+Inheritance diagram for C\-C\-B\-Set\-Sprite\-Frame\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_c_c_b_set_sprite_frame}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_b_set_sprite_frame_a69620b407fa23696865403207231310f}{init\-With\-Sprite\-Frame\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_b_set_sprite_frame_a5674ce86b30710f31841bb5cb446100b}{action\-With\-Sprite\-Frame\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_b_set_sprite_frame_a8abe3b2186605fff5eb38f43267d4c89}{\hyperlink{interface_c_c_sprite_frame}{C\-C\-Sprite\-Frame} $\ast$ {\bfseries sprite\-Frame}}\label{interface_c_c_b_set_sprite_frame_a8abe3b2186605fff5eb38f43267d4c89}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_b_set_sprite_frame_a5674ce86b30710f31841bb5cb446100b}{\index{C\-C\-B\-Set\-Sprite\-Frame@{C\-C\-B\-Set\-Sprite\-Frame}!action\-With\-Sprite\-Frame\-:@{action\-With\-Sprite\-Frame\-:}}
+\index{action\-With\-Sprite\-Frame\-:@{action\-With\-Sprite\-Frame\-:}!CCBSetSpriteFrame@{C\-C\-B\-Set\-Sprite\-Frame}}
+\subsubsection[{action\-With\-Sprite\-Frame\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Sprite\-Frame\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Sprite\-Frame}$\ast$)}]{sf}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_b_set_sprite_frame_a5674ce86b30710f31841bb5cb446100b}
+creates a Place action with a position 
+\begin{DoxyCode}
+                           : (CCSpriteFrame*) sf;
+{
+        return [[[self alloc]initWithSpriteFrame:sf]autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_b_set_sprite_frame_a69620b407fa23696865403207231310f}{\index{C\-C\-B\-Set\-Sprite\-Frame@{C\-C\-B\-Set\-Sprite\-Frame}!init\-With\-Sprite\-Frame\-:@{init\-With\-Sprite\-Frame\-:}}
+\index{init\-With\-Sprite\-Frame\-:@{init\-With\-Sprite\-Frame\-:}!CCBSetSpriteFrame@{C\-C\-B\-Set\-Sprite\-Frame}}
+\subsubsection[{init\-With\-Sprite\-Frame\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Sprite\-Frame\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Sprite\-Frame}$\ast$)}]{sf}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_b_set_sprite_frame_a69620b407fa23696865403207231310f}
+Initializes a Place action with a position 
+\begin{DoxyCode}
+                         : (CCSpriteFrame*) sf;
+{
+        if( (self=[super init]) )
+                spriteFrame = [sf retain];
+    
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Cocos\-Builder\-Reader/C\-C\-B\-Animation\-Manager.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Cocos\-Builder\-Reader/C\-C\-B\-Animation\-Manager.\-m\end{DoxyCompactItemize}

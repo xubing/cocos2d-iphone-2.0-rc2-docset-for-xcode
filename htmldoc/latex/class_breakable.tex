@@ -1,0 +1,108 @@
+\hypertarget{class_breakable}{\section{Breakable Class Reference}
+\label{class_breakable}\index{Breakable@{Breakable}}
+}
+Inheritance diagram for Breakable\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_breakable}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries e\-\_\-count} =  7
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_breakable_a357879fafdb8a0dec8684bff61bf0dfd}{Post\-Solve} (\hyperlink{classb2_contact}{b2\-Contact} $\ast$contact, const \hyperlink{structb2_contact_impulse}{b2\-Contact\-Impulse} $\ast$impulse)
+\item 
+\hypertarget{class_breakable_a7e4e124f5b4537f60ea5fbd7cb4f5251}{void {\bfseries Break} ()}\label{class_breakable_a7e4e124f5b4537f60ea5fbd7cb4f5251}
+
+\item 
+\hypertarget{class_breakable_aacddbc8ed4e0bb5ce9e69a34cd0a74a6}{void {\bfseries Step} (\hyperlink{struct_settings}{Settings} $\ast$settings)}\label{class_breakable_aacddbc8ed4e0bb5ce9e69a34cd0a74a6}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_breakable_a5c3ef04b9cfcc3f86ab6da7e8f6ee993}{static \hyperlink{class_test}{Test} $\ast$ {\bfseries Create} ()}\label{class_breakable_a5c3ef04b9cfcc3f86ab6da7e8f6ee993}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_breakable_ae62744a35f5ccf30c8167add887b5374}{\hyperlink{classb2_body}{b2\-Body} $\ast$ {\bfseries m\-\_\-body1}}\label{class_breakable_ae62744a35f5ccf30c8167add887b5374}
+
+\item 
+\hypertarget{class_breakable_a99497ec0e52f532c67e03e5fdc98d283}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-velocity}}\label{class_breakable_a99497ec0e52f532c67e03e5fdc98d283}
+
+\item 
+\hypertarget{class_breakable_ae110b3bb1da2830c7676e89504d7f80a}{float32 {\bfseries m\-\_\-angular\-Velocity}}\label{class_breakable_ae110b3bb1da2830c7676e89504d7f80a}
+
+\item 
+\hypertarget{class_breakable_a47360e9c879601bfd466721733337da5}{\hyperlink{classb2_polygon_shape}{b2\-Polygon\-Shape} {\bfseries m\-\_\-shape1}}\label{class_breakable_a47360e9c879601bfd466721733337da5}
+
+\item 
+\hypertarget{class_breakable_a2eb0e065b2986842b15b8b3fc156eea8}{\hyperlink{classb2_polygon_shape}{b2\-Polygon\-Shape} {\bfseries m\-\_\-shape2}}\label{class_breakable_a2eb0e065b2986842b15b8b3fc156eea8}
+
+\item 
+\hypertarget{class_breakable_a3b9213037ad381dad8a1d6da35d72c74}{\hyperlink{classb2_fixture}{b2\-Fixture} $\ast$ {\bfseries m\-\_\-piece1}}\label{class_breakable_a3b9213037ad381dad8a1d6da35d72c74}
+
+\item 
+\hypertarget{class_breakable_a33bcb946ca13b08fd693d47cf8e82fff}{\hyperlink{classb2_fixture}{b2\-Fixture} $\ast$ {\bfseries m\-\_\-piece2}}\label{class_breakable_a33bcb946ca13b08fd693d47cf8e82fff}
+
+\item 
+\hypertarget{class_breakable_ae3bbef8fcc1826964b4e8ee6ecb3a782}{bool {\bfseries m\-\_\-broke}}\label{class_breakable_ae3bbef8fcc1826964b4e8ee6ecb3a782}
+
+\item 
+\hypertarget{class_breakable_a998ce5ac42782318e9d1edf12fca72a0}{bool {\bfseries m\-\_\-break}}\label{class_breakable_a998ce5ac42782318e9d1edf12fca72a0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_breakable_a357879fafdb8a0dec8684bff61bf0dfd}{\index{Breakable@{Breakable}!Post\-Solve@{Post\-Solve}}
+\index{Post\-Solve@{Post\-Solve}!Breakable@{Breakable}}
+\subsubsection[{Post\-Solve}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Breakable\-::\-Post\-Solve} (
+\begin{DoxyParamCaption}
+\item[{{\bf b2\-Contact} $\ast$}]{contact, }
+\item[{const {\bf b2\-Contact\-Impulse} $\ast$}]{impulse}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_breakable_a357879fafdb8a0dec8684bff61bf0dfd}
+This lets you inspect a contact after the solver is finished. This is useful for inspecting impulses. Note\-: the contact manifold does not include time of impact impulses, which can be arbitrarily large if the sub-\/step is small. Hence the impulse is provided explicitly in a separate data structure. Note\-: this is only called for contacts that are touching, solid, and awake. 
+
+Reimplemented from \hyperlink{classb2_contact_listener_acd58ec96f7569b95eec65b8ca3f8013d}{b2\-Contact\-Listener}.
+
+
+\begin{DoxyCode}
+        {
+                if (m_broke)
+                {
+                        // The body already broke.
+                        return;
+                }
+
+                // Should the body break?
+                int32 count = contact->GetManifold()->pointCount;
+
+                float32 maxImpulse = 0.0f;
+                for (int32 i = 0; i < count; ++i)
+                {
+                        maxImpulse = b2Max(maxImpulse, impulse->normalImpulses[
+      i]);
+                }
+
+                if (maxImpulse > 40.0f)
+                {
+                        // Flag the body for breaking.
+                        m_break = true;
+                }
+        }
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Testbed/\-Tests/Breakable.\-h\end{DoxyCompactItemize}

@@ -1,0 +1,108 @@
+\hypertarget{interface_c_c_call_func}{\section{C\-C\-Call\-Func Class Reference}
+\label{interface_c_c_call_func}\index{C\-C\-Call\-Func@{C\-C\-Call\-Func}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Instant.\-h$>$}
+
+Inheritance diagram for C\-C\-Call\-Func\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{interface_c_c_call_func}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_call_func_a8757e74e58a9e163e087c66a5eec4c60}{init\-With\-Target\-:selector\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_call_func_ab2a87767fa9a0cd2dbf1a49bb4f04d94}{execute}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_call_func_a054440f71d690783f745bc7e17635f8f}{action\-With\-Target\-:selector\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_call_func_a53a590f689c89ff2e6b4ff1091d7a1be}{id {\bfseries target\-Callback\-\_\-}}\label{interface_c_c_call_func_a53a590f689c89ff2e6b4ff1091d7a1be}
+
+\item 
+\hypertarget{interface_c_c_call_func_a5c2e885cab6067aa37e254e258130c69}{S\-E\-L {\bfseries selector\-\_\-}}\label{interface_c_c_call_func_a5c2e885cab6067aa37e254e258130c69}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id \hyperlink{interface_c_c_call_func_acc274a007bfbeba47905391753188619}{target\-Callback}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Calls a 'callback' 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_call_func_a054440f71d690783f745bc7e17635f8f}{\index{C\-C\-Call\-Func@{C\-C\-Call\-Func}!action\-With\-Target\-:selector\-:@{action\-With\-Target\-:selector\-:}}
+\index{action\-With\-Target\-:selector\-:@{action\-With\-Target\-:selector\-:}!CCCallFunc@{C\-C\-Call\-Func}}
+\subsubsection[{action\-With\-Target\-:selector\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) action\-With\-Target\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{t}
+\item[{selector:(S\-E\-L)}]{s}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_call_func_a054440f71d690783f745bc7e17635f8f}
+creates the action with the callback 
+\begin{DoxyCode}
+                      : (id) t selector:(SEL) s
+{
+        return [[[self alloc] initWithTarget: t selector: s] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_call_func_ab2a87767fa9a0cd2dbf1a49bb4f04d94}{\index{C\-C\-Call\-Func@{C\-C\-Call\-Func}!execute@{execute}}
+\index{execute@{execute}!CCCallFunc@{C\-C\-Call\-Func}}
+\subsubsection[{execute}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf execute} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_call_func_ab2a87767fa9a0cd2dbf1a49bb4f04d94}
+executes the callback 
+
+Reimplemented in \hyperlink{interface_c_c_call_func_n_a05c18e1fa474e8f014a0bcb3c85e9932}{C\-C\-Call\-Func\-N}.
+
+
+\begin{DoxyCode}
+{
+        [targetCallback_ performSelector:selector_];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_call_func_a8757e74e58a9e163e087c66a5eec4c60}{\index{C\-C\-Call\-Func@{C\-C\-Call\-Func}!init\-With\-Target\-:selector\-:@{init\-With\-Target\-:selector\-:}}
+\index{init\-With\-Target\-:selector\-:@{init\-With\-Target\-:selector\-:}!CCCallFunc@{C\-C\-Call\-Func}}
+\subsubsection[{init\-With\-Target\-:selector\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Target\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{t}
+\item[{selector:(S\-E\-L)}]{s}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_call_func_a8757e74e58a9e163e087c66a5eec4c60}
+initializes the action with the callback 
+\begin{DoxyCode}
+                    : (id) t selector:(SEL) s
+{
+        if( (self=[super init]) ) {
+                self.targetCallback = t;
+                selector_ = s;
+        }
+        return self;
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_call_func_acc274a007bfbeba47905391753188619}{\index{C\-C\-Call\-Func@{C\-C\-Call\-Func}!target\-Callback@{target\-Callback}}
+\index{target\-Callback@{target\-Callback}!CCCallFunc@{C\-C\-Call\-Func}}
+\subsubsection[{target\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf target\-Callback}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}\label{interface_c_c_call_func_acc274a007bfbeba47905391753188619}
+Target that will be called 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Instant.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Instant.\-m\end{DoxyCompactItemize}

@@ -1,0 +1,84 @@
+\hypertarget{interface_c_c_parallax_node}{\section{C\-C\-Parallax\-Node Class Reference}
+\label{interface_c_c_parallax_node}\index{C\-C\-Parallax\-Node@{C\-C\-Parallax\-Node}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Parallax\-Node.\-h$>$}
+
+Inheritance diagram for C\-C\-Parallax\-Node\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_c_c_parallax_node}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_c_c_parallax_node_a47156fb7ca353893c6039ae8d26dbdf5}{add\-Child\-:z\-:parallax\-Ratio\-:position\-Offset\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_parallax_node_a8ce28831e8afaf61bafd07fae84d6871}{\hyperlink{structcc_array}{cc\-Array} $\ast$ {\bfseries parallax\-Array\-\_\-}}\label{interface_c_c_parallax_node_a8ce28831e8afaf61bafd07fae84d6871}
+
+\item 
+\hypertarget{interface_c_c_parallax_node_adab04d26086a11b40b9b384c018e7727}{C\-G\-Point {\bfseries last\-Position}}\label{interface_c_c_parallax_node_adab04d26086a11b40b9b384c018e7727}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structcc_array}{cc\-Array} $\ast$ \hyperlink{interface_c_c_parallax_node_ac06bed34e14b62be16a10fd9939eedc8}{parallax\-Array}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_parallax_node}{C\-C\-Parallax\-Node}\-: A node that simulates a parallax scroller
+
+The children will be moved faster / slower than the parent according the the parallax ratio. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_parallax_node_a47156fb7ca353893c6039ae8d26dbdf5}{\index{C\-C\-Parallax\-Node@{C\-C\-Parallax\-Node}!add\-Child\-:z\-:parallax\-Ratio\-:position\-Offset\-:@{add\-Child\-:z\-:parallax\-Ratio\-:position\-Offset\-:}}
+\index{add\-Child\-:z\-:parallax\-Ratio\-:position\-Offset\-:@{add\-Child\-:z\-:parallax\-Ratio\-:position\-Offset\-:}!CCParallaxNode@{C\-C\-Parallax\-Node}}
+\subsubsection[{add\-Child\-:z\-:parallax\-Ratio\-:position\-Offset\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf add\-Child\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Node}$\ast$)}]{node}
+\item[{z:(N\-S\-Integer)}]{z}
+\item[{parallaxRatio:(C\-G\-Point)}]{c}
+\item[{positionOffset:(C\-G\-Point)}]{position\-Offset}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_parallax_node_a47156fb7ca353893c6039ae8d26dbdf5}
+Adds a child to the container with a z-\/order, a parallax ratio and a position offset It returns self, so you can chain several add\-Childs. \begin{DoxySince}{Since}
+v0.\-8 
+\end{DoxySince}
+
+\begin{DoxyCode}
+                : (CCNode*) child z:(NSInteger)z parallaxRatio:(CGPoint)ratio 
+      positionOffset:(CGPoint)offset
+{
+        NSAssert( child != nil, @"Argument must be non-nil");
+        CGPointObject *obj = [CGPointObject pointWithCGPoint:ratio offset:
+      offset];
+        obj.child = child;
+        ccArrayAppendObjectWithResize(parallaxArray_, obj);
+
+        CGPoint pos = self.position;
+        pos.x = pos.x * ratio.x + offset.x;
+        pos.y = pos.y * ratio.y + offset.y;
+        child.position = pos;
+
+        [super addChild: child z:z tag:child.tag];
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_parallax_node_ac06bed34e14b62be16a10fd9939eedc8}{\index{C\-C\-Parallax\-Node@{C\-C\-Parallax\-Node}!parallax\-Array@{parallax\-Array}}
+\index{parallax\-Array@{parallax\-Array}!CCParallaxNode@{C\-C\-Parallax\-Node}}
+\subsubsection[{parallax\-Array}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf cc\-Array}$\ast$) {\bf parallax\-Array}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_parallax_node_ac06bed34e14b62be16a10fd9939eedc8}
+array that holds the offset / ratio of the children 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Parallax\-Node.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Parallax\-Node.\-m\end{DoxyCompactItemize}

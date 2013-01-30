@@ -1,0 +1,780 @@
+\hypertarget{interface_c_d_sound_engine}{\section{C\-D\-Sound\-Engine Class Reference}
+\label{interface_c_d_sound_engine}\index{C\-D\-Sound\-Engine@{C\-D\-Sound\-Engine}}
+}
+Inheritance diagram for C\-D\-Sound\-Engine\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_c_d_sound_engine}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_d_sound_engine_a013cb9b6cf86c0dbfca8fac6aae0bd6a}{init}
+\item 
+(A\-Luint) -\/ \hyperlink{interface_c_d_sound_engine_aba5e66f1767cf41ef07524e17a1e295e}{play\-Sound\-:source\-Group\-Id\-:pitch\-:pan\-:gain\-:loop\-:}
+\item 
+(\hyperlink{interface_c_d_sound_source}{C\-D\-Sound\-Source} $\ast$) -\/ \hyperlink{interface_c_d_sound_engine_afdd95c8c9b8ffe667db2215312830e8e}{sound\-Source\-For\-Sound\-:source\-Group\-Id\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_d_sound_engine_ae2bbd23eefecd32afcf6bc0109b5e7a2}{stop\-Sound\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_d_sound_engine_a5d6fbd530895fac2ce486a478e46fb23}{stop\-Source\-Group\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_d_sound_engine_a8bbc63632a5e72c9235c39730e8efb38}{stop\-All\-Sounds}
+\item 
+\hypertarget{interface_c_d_sound_engine_a5940b79595deabff5cab67987133c518}{(void) -\/ {\bfseries define\-Source\-Groups\-:}}\label{interface_c_d_sound_engine_a5940b79595deabff5cab67987133c518}
+
+\item 
+\hypertarget{interface_c_d_sound_engine_a60a79a0a54fcd18139a854d6b1a63be9}{(void) -\/ {\bfseries define\-Source\-Groups\-:total\-:}}\label{interface_c_d_sound_engine_a60a79a0a54fcd18139a854d6b1a63be9}
+
+\item 
+(void) -\/ \hyperlink{interface_c_d_sound_engine_ad49927027ac1c88db0bb96907f8ba03f}{set\-Source\-Group\-Non\-Interruptible\-:is\-Non\-Interruptible\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_d_sound_engine_af2e9e6ed68c37e25d2b9c7a671ab0ea4}{set\-Source\-Group\-Enabled\-:enabled\-:}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_c_d_sound_engine_a9e73b1f9ce070579469e18da0fdabf5a}{source\-Group\-Enabled\-:}
+\item 
+\hypertarget{interface_c_d_sound_engine_afec37cdfa7a31949aaa199f3aa56de9a}{(B\-O\-O\-L) -\/ {\bfseries load\-Buffer\-From\-Data\-:sound\-Data\-:format\-:size\-:freq\-:}}\label{interface_c_d_sound_engine_afec37cdfa7a31949aaa199f3aa56de9a}
+
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_c_d_sound_engine_ac3e13dbda55481b0b30e7ad8265867e4}{load\-Buffer\-:file\-Path\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_d_sound_engine_a8ab83905d8865c75c8055871f5c84fdd}{load\-Buffers\-Asynchronously\-:}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_c_d_sound_engine_a2a245d09bd9aa88de752c97dd889662e}{unload\-Buffer\-:}
+\item 
+\hypertarget{interface_c_d_sound_engine_a3207754d8ae7d5a63dc03fd43b698d12}{(A\-L\-Ccontext $\ast$) -\/ {\bfseries open\-A\-L\-Context}}\label{interface_c_d_sound_engine_a3207754d8ae7d5a63dc03fd43b698d12}
+
+\item 
+(float) -\/ \hyperlink{interface_c_d_sound_engine_a5731f4ec2052eb323ba1777f72c9da8c}{buffer\-Duration\-In\-Seconds\-:}
+\item 
+(A\-Lsizei) -\/ \hyperlink{interface_c_d_sound_engine_a91672bece24f10760d62cce27986573e}{buffer\-Size\-In\-Bytes\-:}
+\item 
+(A\-Lsizei) -\/ \hyperlink{interface_c_d_sound_engine_af8559b48f34ad22ba9a7cf27ffcb8648}{buffer\-Frequency\-In\-Hertz\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_d_sound_engine_ad05b4a121e37fe36d3df453989be82af}{\-\_\-sound\-Source\-Pre\-Release\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \hyperlink{interface_c_d_sound_engine_ab917455684b0ff4ea92e3d2a82d3530c}{set\-Mixer\-Sample\-Rate\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_d_sound_engine_a24c00fc3596fa6c480fe85b17d73ec11}{\hyperlink{struct__buffer_info}{buffer\-Info} $\ast$ {\bfseries \-\_\-buffers}}\label{interface_c_d_sound_engine_a24c00fc3596fa6c480fe85b17d73ec11}
+
+\item 
+\hypertarget{interface_c_d_sound_engine_afdfb398cff28e646f583c6ee649ca8c5}{\hyperlink{struct__source_info}{source\-Info} $\ast$ {\bfseries \-\_\-sources}}\label{interface_c_d_sound_engine_afdfb398cff28e646f583c6ee649ca8c5}
+
+\item 
+\hypertarget{interface_c_d_sound_engine_a9690bcaf60bd2dfed58916688e932227}{\hyperlink{struct__source_group}{source\-Group} $\ast$ {\bfseries \-\_\-source\-Groups}}\label{interface_c_d_sound_engine_a9690bcaf60bd2dfed58916688e932227}
+
+\item 
+\hypertarget{interface_c_d_sound_engine_a814a2bfd62e56c98d4db5371dcb44da1}{A\-L\-Ccontext $\ast$ {\bfseries context}}\label{interface_c_d_sound_engine_a814a2bfd62e56c98d4db5371dcb44da1}
+
+\item 
+\hypertarget{interface_c_d_sound_engine_a16ab034b0cda9256351f3e22a06e4fcf}{N\-S\-U\-Integer {\bfseries \-\_\-source\-Group\-Total}}\label{interface_c_d_sound_engine_a16ab034b0cda9256351f3e22a06e4fcf}
+
+\item 
+\hypertarget{interface_c_d_sound_engine_ad2126356e66caf4b92ecb57277c77d94}{U\-Int32 {\bfseries \-\_\-audio\-Session\-Category}}\label{interface_c_d_sound_engine_ad2126356e66caf4b92ecb57277c77d94}
+
+\item 
+\hypertarget{interface_c_d_sound_engine_a3baf5095e6dda801f7ad5b7d8ecd8224}{B\-O\-O\-L {\bfseries \-\_\-handle\-Audio\-Session}}\label{interface_c_d_sound_engine_a3baf5095e6dda801f7ad5b7d8ecd8224}
+
+\item 
+\hypertarget{interface_c_d_sound_engine_a5b962923ea973f81a867d00be27ebb49}{A\-Lfloat {\bfseries \-\_\-pre\-Mute\-Gain}}\label{interface_c_d_sound_engine_a5b962923ea973f81a867d00be27ebb49}
+
+\item 
+\hypertarget{interface_c_d_sound_engine_a259fd68f63e1cda4737eb6ae8d967200}{\hyperlink{class_n_s_object}{N\-S\-Object} $\ast$ {\bfseries \-\_\-mutex\-Buffer\-Load}}\label{interface_c_d_sound_engine_a259fd68f63e1cda4737eb6ae8d967200}
+
+\item 
+\hypertarget{interface_c_d_sound_engine_a0f895a12c62db7b02a742eaa3f543f0f}{B\-O\-O\-L {\bfseries mute\-\_\-}}\label{interface_c_d_sound_engine_a0f895a12c62db7b02a742eaa3f543f0f}
+
+\item 
+\hypertarget{interface_c_d_sound_engine_a7b1d6a808ba86ea16210b5415321d2be}{B\-O\-O\-L {\bfseries enabled\-\_\-}}\label{interface_c_d_sound_engine_a7b1d6a808ba86ea16210b5415321d2be}
+
+\item 
+\hypertarget{interface_c_d_sound_engine_afaf546a9c2e8bf500e5de983c17a99c4}{A\-Lenum {\bfseries last\-Error\-Code\-\_\-}}\label{interface_c_d_sound_engine_afaf546a9c2e8bf500e5de983c17a99c4}
+
+\item 
+\hypertarget{interface_c_d_sound_engine_aeb7a5e82782360886640ef09b0e74062}{B\-O\-O\-L {\bfseries functioning\-\_\-}}\label{interface_c_d_sound_engine_aeb7a5e82782360886640ef09b0e74062}
+
+\item 
+\hypertarget{interface_c_d_sound_engine_af71175549f6bc0df968f0808f25c9596}{float {\bfseries asynch\-Load\-Progress\-\_\-}}\label{interface_c_d_sound_engine_af71175549f6bc0df968f0808f25c9596}
+
+\item 
+\hypertarget{interface_c_d_sound_engine_aebd938a1808eafec585658d992b0ad50}{B\-O\-O\-L {\bfseries get\-Gain\-Works\-\_\-}}\label{interface_c_d_sound_engine_aebd938a1808eafec585658d992b0ad50}
+
+\item 
+\hypertarget{interface_c_d_sound_engine_a2b2e19f3b3fcd945504d7ac07936cb74}{int {\bfseries source\-Total\-\_\-}}\label{interface_c_d_sound_engine_a2b2e19f3b3fcd945504d7ac07936cb74}
+
+\item 
+\hypertarget{interface_c_d_sound_engine_af3c8da3458f32d8ceaf5517a3763ec25}{int {\bfseries buffer\-Total}}\label{interface_c_d_sound_engine_af3c8da3458f32d8ceaf5517a3763ec25}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_d_sound_engine_a96d6c388b213e392ff18d10dd5b65bcc}{A\-Lfloat {\bfseries master\-Gain}}\label{interface_c_d_sound_engine_a96d6c388b213e392ff18d10dd5b65bcc}
+
+\item 
+\hypertarget{interface_c_d_sound_engine_adcaee276e577e18c0695b3c898dc4b73}{A\-Lenum {\bfseries last\-Error\-Code}}\label{interface_c_d_sound_engine_adcaee276e577e18c0695b3c898dc4b73}
+
+\item 
+\hypertarget{interface_c_d_sound_engine_ae41ed791ec668d068862b5a3280f594e}{B\-O\-O\-L {\bfseries functioning}}\label{interface_c_d_sound_engine_ae41ed791ec668d068862b5a3280f594e}
+
+\item 
+\hypertarget{interface_c_d_sound_engine_a90eef03bd81033435088cfff2606fe39}{float {\bfseries asynch\-Load\-Progress}}\label{interface_c_d_sound_engine_a90eef03bd81033435088cfff2606fe39}
+
+\item 
+\hypertarget{interface_c_d_sound_engine_ab4b1226112dec878ada892eff9fb0244}{B\-O\-O\-L {\bfseries get\-Gain\-Works}}\label{interface_c_d_sound_engine_ab4b1226112dec878ada892eff9fb0244}
+
+\item 
+int \hyperlink{interface_c_d_sound_engine_a951c8a98f46192e4ed56ebe41f7abe59}{source\-Total}
+\item 
+N\-S\-U\-Integer \hyperlink{interface_c_d_sound_engine_a2e416630cc0722eac6ba889dcb9461ba}{source\-Group\-Total}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_d_sound_engine_ad05b4a121e37fe36d3df453989be82af}{\index{C\-D\-Sound\-Engine@{C\-D\-Sound\-Engine}!\-\_\-sound\-Source\-Pre\-Release\-:@{\-\_\-sound\-Source\-Pre\-Release\-:}}
+\index{\-\_\-sound\-Source\-Pre\-Release\-:@{\-\_\-sound\-Source\-Pre\-Release\-:}!CDSoundEngine@{C\-D\-Sound\-Engine}}
+\subsubsection[{\-\_\-sound\-Source\-Pre\-Release\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf \-\_\-sound\-Source\-Pre\-Release\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-D\-Sound\-Source} $\ast$)}]{sound\-Source}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_sound_engine_ad05b4a121e37fe36d3df453989be82af}
+Used internally, never call unless you know what you are doing 
+\begin{DoxyCode}
+                              :(CDSoundSource *) soundSource {
+        CDLOGINFO(@"Denshion::CDSoundEngine _soundSourcePreRelease %i",
+      soundSource->_sourceIndex);
+        //Unlock the sound source's source
+        [self _lockSource:soundSource->_sourceIndex lock:NO];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_sound_engine_a5731f4ec2052eb323ba1777f72c9da8c}{\index{C\-D\-Sound\-Engine@{C\-D\-Sound\-Engine}!buffer\-Duration\-In\-Seconds\-:@{buffer\-Duration\-In\-Seconds\-:}}
+\index{buffer\-Duration\-In\-Seconds\-:@{buffer\-Duration\-In\-Seconds\-:}!CDSoundEngine@{C\-D\-Sound\-Engine}}
+\subsubsection[{buffer\-Duration\-In\-Seconds\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf buffer\-Duration\-In\-Seconds\-:} 
+\begin{DoxyParamCaption}
+\item[{(int)}]{sound\-Id}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_sound_engine_a5731f4ec2052eb323ba1777f72c9da8c}
+Returns the duration of the buffer in seconds or a negative value if the buffer id is invalid 
+\begin{DoxyCode}
+                                :(int) soundId {
+        if ([self validateBufferId:soundId]) {
+                float factor = 0.0f;
+                switch (_buffers[soundId].format) {
+                        case AL_FORMAT_MONO8:
+                                factor = 1.0f;
+                                break;
+                        case AL_FORMAT_MONO16:
+                                factor = 0.5f;
+                                break;
+                        case AL_FORMAT_STEREO8:
+                                factor = 0.5f;
+                                break;
+                        case AL_FORMAT_STEREO16:
+                                factor = 0.25f;
+                                break;
+                }
+                return (float)_buffers[soundId].sizeInBytes/(float)_buffers[
+      soundId].frequencyInHertz * factor;
+        } else {
+                return -1.0f;
+        }
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_sound_engine_af8559b48f34ad22ba9a7cf27ffcb8648}{\index{C\-D\-Sound\-Engine@{C\-D\-Sound\-Engine}!buffer\-Frequency\-In\-Hertz\-:@{buffer\-Frequency\-In\-Hertz\-:}}
+\index{buffer\-Frequency\-In\-Hertz\-:@{buffer\-Frequency\-In\-Hertz\-:}!CDSoundEngine@{C\-D\-Sound\-Engine}}
+\subsubsection[{buffer\-Frequency\-In\-Hertz\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (A\-Lsizei) {\bf buffer\-Frequency\-In\-Hertz\-:} 
+\begin{DoxyParamCaption}
+\item[{(int)}]{sound\-Id}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_sound_engine_af8559b48f34ad22ba9a7cf27ffcb8648}
+Returns the sampling frequency of the buffer in hertz or a negative value if the buffer id is invalid 
+\begin{DoxyCode}
+                                 :(int) soundId {
+        if ([self validateBufferId:soundId]) {
+                return _buffers[soundId].frequencyInHertz;
+        } else {
+                return -1.0f;
+        }
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_sound_engine_a91672bece24f10760d62cce27986573e}{\index{C\-D\-Sound\-Engine@{C\-D\-Sound\-Engine}!buffer\-Size\-In\-Bytes\-:@{buffer\-Size\-In\-Bytes\-:}}
+\index{buffer\-Size\-In\-Bytes\-:@{buffer\-Size\-In\-Bytes\-:}!CDSoundEngine@{C\-D\-Sound\-Engine}}
+\subsubsection[{buffer\-Size\-In\-Bytes\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (A\-Lsizei) {\bf buffer\-Size\-In\-Bytes\-:} 
+\begin{DoxyParamCaption}
+\item[{(int)}]{sound\-Id}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_sound_engine_a91672bece24f10760d62cce27986573e}
+Returns the size of the buffer in bytes or a negative value if the buffer id is invalid 
+\begin{DoxyCode}
+                            :(int) soundId {
+        if ([self validateBufferId:soundId]) {
+                return _buffers[soundId].sizeInBytes;
+        } else {
+                return -1.0f;
+        }
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_sound_engine_a013cb9b6cf86c0dbfca8fac6aae0bd6a}{\index{C\-D\-Sound\-Engine@{C\-D\-Sound\-Engine}!init@{init}}
+\index{init@{init}!CDSoundEngine@{C\-D\-Sound\-Engine}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_sound_engine_a013cb9b6cf86c0dbfca8fac6aae0bd6a}
+Initializes the engine with a group definition and a total number of groups 
+\begin{DoxyCode}
+{
+        if ((self = [super init])) {
+
+                //Create mutexes
+                _mutexBufferLoad = [[NSObject alloc] init];
+
+                asynchLoadProgress_ = 0.0f;
+
+                bufferTotal = CD_BUFFERS_START;
+                _buffers = (bufferInfo *)malloc( sizeof(_buffers[0]) * 
+      bufferTotal);
+
+                // Initialize our OpenAL environment
+                if ([self _initOpenAL]) {
+                        //Set up the default source group - a single group that
+       contains all the sources
+                        int sourceDefs[1];
+                        sourceDefs[0] = self.sourceTotal;
+                        [self _setUpSourceGroups:sourceDefs total:1];
+
+                        functioning_ = YES;
+                        //Synchronize premute gain
+                        _preMuteGain = self.masterGain;
+                        mute_ = NO;
+                        enabled_ = YES;
+                        //Test whether get gain works for sources
+                        [self _testGetGain];
+                } else {
+                        //Something went wrong with OpenAL
+                        functioning_ = NO;
+                }
+        }
+
+        return self;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_sound_engine_ac3e13dbda55481b0b30e7ad8265867e4}{\index{C\-D\-Sound\-Engine@{C\-D\-Sound\-Engine}!load\-Buffer\-:file\-Path\-:@{load\-Buffer\-:file\-Path\-:}}
+\index{load\-Buffer\-:file\-Path\-:@{load\-Buffer\-:file\-Path\-:}!CDSoundEngine@{C\-D\-Sound\-Engine}}
+\subsubsection[{load\-Buffer\-:file\-Path\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) load\-Buffer\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{sound\-Id}
+\item[{filePath:(N\-S\-String$\ast$)}]{file\-Path}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_sound_engine_ac3e13dbda55481b0b30e7ad8265867e4}
+Load sound data for later play back. \begin{DoxyReturn}{Returns}
+T\-R\-U\-E if buffer loaded okay for play back otherwise false 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+                   :(int) soundId filePath:(NSString*) filePath
+{
+
+        ALvoid* data;
+        ALenum  format;
+        ALsizei size;
+        ALsizei freq;
+
+        CDLOGINFO(@"Denshion::CDSoundEngine - Loading openAL buffer %i %@", 
+      soundId, filePath);
+
+        CFURLRef fileURL = nil;
+        NSString *path = [CDUtilities fullPathFromRelativePath:filePath];
+        if (path) {
+                fileURL = (CFURLRef)[[NSURL fileURLWithPath:path] retain];
+        }
+
+        if (fileURL)
+        {
+                data = CDGetOpenALAudioData(fileURL, &size, &format, &freq);
+                CFRelease(fileURL);
+                BOOL result = [self loadBufferFromData:soundId soundData:data 
+      format:format size:size freq:freq];
+#ifndef CD_USE_STATIC_BUFFERS
+                free(data);//Data can be freed here because alBufferData
+       performs a memcpy
+#endif
+                return result;
+        } else {
+                CDLOG(@"Denshion::CDSoundEngine Could not find file!\n");
+                //Don't change buffer state here as it will be the same as
+       before method was called
+                return FALSE;
+        }
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_sound_engine_a8ab83905d8865c75c8055871f5c84fdd}{\index{C\-D\-Sound\-Engine@{C\-D\-Sound\-Engine}!load\-Buffers\-Asynchronously\-:@{load\-Buffers\-Asynchronously\-:}}
+\index{load\-Buffers\-Asynchronously\-:@{load\-Buffers\-Asynchronously\-:}!CDSoundEngine@{C\-D\-Sound\-Engine}}
+\subsubsection[{load\-Buffers\-Asynchronously\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf load\-Buffers\-Asynchronously\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Array $\ast$)}]{load\-Requests}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_sound_engine_a8ab83905d8865c75c8055871f5c84fdd}
+Load buffers asynchronously Check asynch\-Load\-Progress for progress. asynch\-Load\-Progress represents fraction of completion. When it equals 1.\-0 loading is complete. N\-B\-: asynch\-Load\-Progress is simply based on the number of load requests, it does not take into account file sizes. 
+\begin{DoxyParams}{Parameters}
+{\em An} & array of \hyperlink{interface_c_d_buffer_load_request}{C\-D\-Buffer\-Load\-Request} objects \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+                                  :(NSArray *) loadRequests {
+        @synchronized(self) {
+                asynchLoadProgress_ = 0.0f;
+                CDAsynchBufferLoader *loaderOp = [[[CDAsynchBufferLoader alloc]
+       init:loadRequests soundEngine:self] autorelease];
+                NSOperationQueue *opQ = [[[NSOperationQueue alloc] init] 
+      autorelease];
+                [opQ addOperation:loaderOp];
+        }
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_sound_engine_aba5e66f1767cf41ef07524e17a1e295e}{\index{C\-D\-Sound\-Engine@{C\-D\-Sound\-Engine}!play\-Sound\-:source\-Group\-Id\-:pitch\-:pan\-:gain\-:loop\-:@{play\-Sound\-:source\-Group\-Id\-:pitch\-:pan\-:gain\-:loop\-:}}
+\index{play\-Sound\-:source\-Group\-Id\-:pitch\-:pan\-:gain\-:loop\-:@{play\-Sound\-:source\-Group\-Id\-:pitch\-:pan\-:gain\-:loop\-:}!CDSoundEngine@{C\-D\-Sound\-Engine}}
+\subsubsection[{play\-Sound\-:source\-Group\-Id\-:pitch\-:pan\-:gain\-:loop\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (A\-Luint) play\-Sound\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{sound\-Id}
+\item[{sourceGroupId:(int)}]{source\-Group\-Id}
+\item[{pitch:(float)}]{pitch}
+\item[{pan:(float)}]{pan}
+\item[{gain:(float)}]{gain}
+\item[{loop:(B\-O\-O\-L)}]{loop}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_sound_engine_aba5e66f1767cf41ef07524e17a1e295e}
+Plays a sound in a channel group with a pitch, pan and gain. The sound could played looped or not
+
+Play a sound. 
+\begin{DoxyParams}{Parameters}
+{\em sound\-Id} & the id of the sound to play (buffer id). \\
+\hline
+{\em Source\-Group\-Id} & the source group that will be used to play the sound. \\
+\hline
+{\em pitch} & pitch multiplier. e.\-g 1.\-0 is unaltered, 0.\-5 is 1 octave lower. \\
+\hline
+{\em pan} & stereo position. -\/1 is fully left, 0 is centre and 1 is fully right. \\
+\hline
+{\em gain} & gain multiplier. e.\-g. 1.\-0 is unaltered, 0.\-5 is half the gain \\
+\hline
+{\em loop} & should the sound be looped or one shot. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the id of the source being used to play the sound or C\-D\-\_\-\-M\-U\-T\-E if the sound engine is muted or non functioning or C\-D\-\_\-\-N\-O\-\_\-\-S\-O\-U\-R\-C\-E if a problem occurs setting up the source 
+\end{DoxyReturn}
+
+
+Referenced by Simple\-Audio\-Engine\-::play\-Effect\-:pitch\-:pan\-:gain\-:.
+
+
+\begin{DoxyCode}
+                   :(int) soundId sourceGroupId:(int)sourceGroupId pitch:(float
+      ) pitch pan:(float) pan gain:(float) gain loop:(BOOL) loop {
+
+#ifdef CD_DEBUG
+        //Sanity check parameters - only in DEBUG
+        NSAssert(soundId >= 0, @"soundId can not be negative");
+        NSAssert(soundId < bufferTotal, @"soundId exceeds limit");
+        NSAssert(sourceGroupId >= 0, @"sourceGroupId can not be negative");
+        NSAssert(sourceGroupId < _sourceGroupTotal, @"sourceGroupId exceeds
+       limit");
+        NSAssert(pitch > 0, @"pitch must be greater than zero");
+        NSAssert(pan >= -1 && pan <= 1, @"pan must be between -1 and 1");
+        NSAssert(gain >= 0, @"gain can not be negative");
+#endif
+        //If mute or initialisation has failed or buffer is not loaded then do
+       nothing
+        if (!enabled_ || !functioning_ || _buffers[soundId].bufferState != 
+      CD_BS_LOADED || _sourceGroups[sourceGroupId].enabled) {
+#ifdef CD_DEBUG
+                if (!functioning_) {
+                        CDLOGINFO(@"Denshion::CDSoundEngine - sound playback
+       aborted because sound engine is not functioning");
+                } else if (_buffers[soundId].bufferState != CD_BS_LOADED) {
+                        CDLOGINFO(@"Denshion::CDSoundEngine - sound playback
+       aborted because buffer %i is not loaded", soundId);
+                }
+#endif
+                return CD_MUTE;
+        }
+
+        int sourceIndex = [self _getSourceIndexForSourceGroup:sourceGroupId];//
+      This method ensures sourceIndex is valid
+
+        if (sourceIndex != CD_NO_SOURCE) {
+                ALint state;
+                ALuint source = _sources[sourceIndex].sourceId;
+                ALuint buffer = _buffers[soundId].bufferId;
+                alGetError();//Clear the error code
+                alGetSourcei(source, AL_SOURCE_STATE, &state);
+                if (state == AL_PLAYING) {
+                        alSourceStop(source);
+                }
+                alSourcei(source, AL_BUFFER, buffer);//Attach to sound
+                alSourcef(source, AL_PITCH, pitch);//Set pitch
+                alSourcei(source, AL_LOOPING, loop);//Set looping
+                alSourcef(source, AL_GAIN, gain);//Set gain/volume
+                float sourcePosAL[] = {pan, 0.0f, 0.0f};//Set position - just
+       using left and right panning
+                alSourcefv(source, AL_POSITION, sourcePosAL);
+                alGetError();//Clear the error code
+                alSourcePlay(source);
+                if((lastErrorCode_ = alGetError()) == AL_NO_ERROR) {
+                        //Everything was okay
+                        _sources[sourceIndex].attachedBufferId = buffer;
+                        return source;
+                } else {
+                        if (alcGetCurrentContext() == NULL) {
+                                CDLOGINFO(@"Denshion::CDSoundEngine - posting
+       bad OpenAL context message");
+                                [[NSNotificationCenter defaultCenter] 
+      postNotificationName:kCDN_BadAlContext object:nil];
+                        }
+                        return CD_NO_SOURCE;
+                }
+        } else {
+                return CD_NO_SOURCE;
+        }
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_sound_engine_ab917455684b0ff4ea92e3d2a82d3530c}{\index{C\-D\-Sound\-Engine@{C\-D\-Sound\-Engine}!set\-Mixer\-Sample\-Rate\-:@{set\-Mixer\-Sample\-Rate\-:}}
+\index{set\-Mixer\-Sample\-Rate\-:@{set\-Mixer\-Sample\-Rate\-:}!CDSoundEngine@{C\-D\-Sound\-Engine}}
+\subsubsection[{set\-Mixer\-Sample\-Rate\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf set\-Mixer\-Sample\-Rate\-:} 
+\begin{DoxyParamCaption}
+\item[{(Float32)}]{sample\-Rate}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_sound_engine_ab917455684b0ff4ea92e3d2a82d3530c}
+Sets the sample rate for the audio mixer. For best performance this should match the sample rate of your audio content 
+\begin{DoxyCode}
+                           :(Float32) sampleRate {
+        _mixerRateSet = YES;
+        _mixerSampleRate = sampleRate;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_sound_engine_af2e9e6ed68c37e25d2b9c7a671ab0ea4}{\index{C\-D\-Sound\-Engine@{C\-D\-Sound\-Engine}!set\-Source\-Group\-Enabled\-:enabled\-:@{set\-Source\-Group\-Enabled\-:enabled\-:}}
+\index{set\-Source\-Group\-Enabled\-:enabled\-:@{set\-Source\-Group\-Enabled\-:enabled\-:}!CDSoundEngine@{C\-D\-Sound\-Engine}}
+\subsubsection[{set\-Source\-Group\-Enabled\-:enabled\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-Source\-Group\-Enabled\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{source\-Group\-Id}
+\item[{enabled:(B\-O\-O\-L)}]{enabled}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_sound_engine_af2e9e6ed68c37e25d2b9c7a671ab0ea4}
+Set the mute property for a source group. If mute is turned on any sounds in that source group will be stopped and further sounds in that source group will play. However, turning mute off will not restart any sounds that were playing when mute was turned on. Also the mute setting for the sound engine must be taken into account. If the sound engine is mute no sounds will play no matter what the source group mute setting is. 
+\begin{DoxyCode}
+                              :(int) sourceGroupId enabled:(BOOL) enabled {
+        //Ensure source group id is valid to prevent memory corruption
+        if (sourceGroupId < 0 || sourceGroupId >= _sourceGroupTotal) {
+                CDLOG(@"Denshion::CDSoundEngine setSourceGroupEnabled invalid
+       source group id %i",sourceGroupId);
+                return;
+        }
+
+        if (enabled) {
+                _sourceGroups[sourceGroupId].enabled = true;
+                [self stopSourceGroup:sourceGroupId];
+        } else {
+                _sourceGroups[sourceGroupId].enabled = false;
+        }
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_sound_engine_ad49927027ac1c88db0bb96907f8ba03f}{\index{C\-D\-Sound\-Engine@{C\-D\-Sound\-Engine}!set\-Source\-Group\-Non\-Interruptible\-:is\-Non\-Interruptible\-:@{set\-Source\-Group\-Non\-Interruptible\-:is\-Non\-Interruptible\-:}}
+\index{set\-Source\-Group\-Non\-Interruptible\-:is\-Non\-Interruptible\-:@{set\-Source\-Group\-Non\-Interruptible\-:is\-Non\-Interruptible\-:}!CDSoundEngine@{C\-D\-Sound\-Engine}}
+\subsubsection[{set\-Source\-Group\-Non\-Interruptible\-:is\-Non\-Interruptible\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-Source\-Group\-Non\-Interruptible\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{source\-Group\-Id}
+\item[{isNonInterruptible:(B\-O\-O\-L)}]{is\-Non\-Interruptible}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_sound_engine_ad49927027ac1c88db0bb96907f8ba03f}
+Set a source group as non interruptible. Default is that source groups are interruptible. Non interruptible means that if a request to play a sound is made for a source group and there are no free sources available then the play request will be ignored and C\-D\-\_\-\-N\-O\-\_\-\-S\-O\-U\-R\-C\-E will be returned. 
+\begin{DoxyCode}
+                                       :(int) sourceGroupId isNonInterruptible:
+      (BOOL) isNonInterruptible {
+        //Ensure source group id is valid to prevent memory corruption
+        if (sourceGroupId < 0 || sourceGroupId >= _sourceGroupTotal) {
+                CDLOG(@"Denshion::CDSoundEngine setSourceGroupNonInterruptible
+       invalid source group id %i",sourceGroupId);
+                return;
+        }
+
+        if (isNonInterruptible) {
+                _sourceGroups[sourceGroupId].nonInterruptible = true;
+        } else {
+                _sourceGroups[sourceGroupId].nonInterruptible = false;
+        }
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_sound_engine_afdd95c8c9b8ffe667db2215312830e8e}{\index{C\-D\-Sound\-Engine@{C\-D\-Sound\-Engine}!sound\-Source\-For\-Sound\-:source\-Group\-Id\-:@{sound\-Source\-For\-Sound\-:source\-Group\-Id\-:}}
+\index{sound\-Source\-For\-Sound\-:source\-Group\-Id\-:@{sound\-Source\-For\-Sound\-:source\-Group\-Id\-:}!CDSoundEngine@{C\-D\-Sound\-Engine}}
+\subsubsection[{sound\-Source\-For\-Sound\-:source\-Group\-Id\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-D\-Sound\-Source} $\ast$) sound\-Source\-For\-Sound\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{sound\-Id}
+\item[{sourceGroupId:(int)}]{source\-Group\-Id}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_sound_engine_afdd95c8c9b8ffe667db2215312830e8e}
+Creates and returns a sound source object for the specified sound within the specified source group.
+
+Get a sound source for the specified sound in the specified source group 
+
+Referenced by Simple\-Audio\-Engine\-::sound\-Source\-For\-File\-:.
+
+
+\begin{DoxyCode}
+                                      :(int) soundId sourceGroupId:(int) 
+      sourceGroupId
+{
+        if (!functioning_) {
+                return nil;
+        }
+        //Check if a source is available
+        int sourceIndex = [self _getSourceIndexForSourceGroup:sourceGroupId];
+        if (sourceIndex != CD_NO_SOURCE) {
+                CDSoundSource *result = [[CDSoundSource alloc] init:_sources[
+      sourceIndex].sourceId sourceIndex:sourceIndex soundEngine:self];
+                [self _lockSource:sourceIndex lock:YES];
+                //Try to attach to the buffer
+                if ([self _soundSourceAttachToBuffer:result soundId:soundId]) {
+                        //Set to a known state
+                        result.pitch = 1.0f;
+                        result.pan = 0.0f;
+                        result.gain = 1.0f;
+                        result.looping = NO;
+                        return [result autorelease];
+                } else {
+                        //Release the sound source we just created, this will
+       also unlock the source
+                        [result release];
+                        return nil;
+                }
+        } else {
+                //No available source within that source group
+                return nil;
+        }
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_sound_engine_a9e73b1f9ce070579469e18da0fdabf5a}{\index{C\-D\-Sound\-Engine@{C\-D\-Sound\-Engine}!source\-Group\-Enabled\-:@{source\-Group\-Enabled\-:}}
+\index{source\-Group\-Enabled\-:@{source\-Group\-Enabled\-:}!CDSoundEngine@{C\-D\-Sound\-Engine}}
+\subsubsection[{source\-Group\-Enabled\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) {\bf source\-Group\-Enabled\-:} 
+\begin{DoxyParamCaption}
+\item[{(int)}]{source\-Group\-Id}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_sound_engine_a9e73b1f9ce070579469e18da0fdabf5a}
+Return the mute property for the source group identified by source\-Group\-Id 
+\begin{DoxyCode}
+                           :(int) sourceGroupId {
+        return _sourceGroups[sourceGroupId].enabled;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_sound_engine_a8bbc63632a5e72c9235c39730e8efb38}{\index{C\-D\-Sound\-Engine@{C\-D\-Sound\-Engine}!stop\-All\-Sounds@{stop\-All\-Sounds}}
+\index{stop\-All\-Sounds@{stop\-All\-Sounds}!CDSoundEngine@{C\-D\-Sound\-Engine}}
+\subsubsection[{stop\-All\-Sounds}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf stop\-All\-Sounds} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_sound_engine_a8bbc63632a5e72c9235c39730e8efb38}
+Stops all playing sounds 
+\begin{DoxyCode}
+                       {
+        for (int i=0; i < sourceTotal_; i++) {
+                alSourceStop(_sources[i].sourceId);
+        }
+        alGetError();//Clear error in case we stopped any sounds that couldn't
+       be stopped
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_sound_engine_ae2bbd23eefecd32afcf6bc0109b5e7a2}{\index{C\-D\-Sound\-Engine@{C\-D\-Sound\-Engine}!stop\-Sound\-:@{stop\-Sound\-:}}
+\index{stop\-Sound\-:@{stop\-Sound\-:}!CDSoundEngine@{C\-D\-Sound\-Engine}}
+\subsubsection[{stop\-Sound\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf stop\-Sound\-:} 
+\begin{DoxyParamCaption}
+\item[{(A\-Luint)}]{source\-Id}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_sound_engine_ae2bbd23eefecd32afcf6bc0109b5e7a2}
+Stops playing a sound
+
+Stop a sound playing. 
+\begin{DoxyParams}{Parameters}
+{\em source\-Id} & an Open\-A\-L source identifier i.\-e. the return value of play\-Sound \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by Simple\-Audio\-Engine\-::stop\-Effect\-:.
+
+
+\begin{DoxyCode}
+                 :(ALuint) sourceId {
+        if (!functioning_) {
+                return;
+        }
+        alSourceStop(sourceId);
+        alGetError();//Clear error in case we stopped any sounds that couldn't
+       be stopped
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_sound_engine_a5d6fbd530895fac2ce486a478e46fb23}{\index{C\-D\-Sound\-Engine@{C\-D\-Sound\-Engine}!stop\-Source\-Group\-:@{stop\-Source\-Group\-:}}
+\index{stop\-Source\-Group\-:@{stop\-Source\-Group\-:}!CDSoundEngine@{C\-D\-Sound\-Engine}}
+\subsubsection[{stop\-Source\-Group\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf stop\-Source\-Group\-:} 
+\begin{DoxyParamCaption}
+\item[{(int)}]{source\-Group\-Id}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_sound_engine_a5d6fbd530895fac2ce486a478e46fb23}
+Stops playing a source group
+
+Stop all sounds playing within a source group 
+
+Referenced by set\-Source\-Group\-Enabled\-:enabled\-:.
+
+
+\begin{DoxyCode}
+                        :(int) sourceGroupId {
+
+        if (!functioning_ || sourceGroupId >= _sourceGroupTotal || 
+      sourceGroupId < 0) {
+                return;
+        }
+        int sourceCount = _sourceGroups[sourceGroupId].totalSources;
+        for (int i=0; i < sourceCount; i++) {
+                int sourceIndex = _sourceGroups[sourceGroupId].sourceStatuses[i
+      ] >> 1;
+                alSourceStop(_sources[sourceIndex].sourceId);
+        }
+        alGetError();//Clear error in case we stopped any sounds that couldn't
+       be stopped
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_sound_engine_a2a245d09bd9aa88de752c97dd889662e}{\index{C\-D\-Sound\-Engine@{C\-D\-Sound\-Engine}!unload\-Buffer\-:@{unload\-Buffer\-:}}
+\index{unload\-Buffer\-:@{unload\-Buffer\-:}!CDSoundEngine@{C\-D\-Sound\-Engine}}
+\subsubsection[{unload\-Buffer\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) {\bf unload\-Buffer\-:} 
+\begin{DoxyParamCaption}
+\item[{(int)}]{sound\-Id}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_sound_engine_a2a245d09bd9aa88de752c97dd889662e}
+Delete the buffer identified by sound\-Id \begin{DoxyReturn}{Returns}
+true if buffer deleted successfully, otherwise false 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+                     :(int) soundId
+{
+        //Ensure soundId is within array bounds otherwise memory corruption
+       will occur
+        if (soundId < 0 || soundId >= bufferTotal) {
+                CDLOG(@"Denshion::CDSoundEngine - soundId is outside array
+       bounds, maybe you need to increase CD_MAX_BUFFERS");
+                return FALSE;
+        }
+
+        //Before a buffer can be deleted any sources that are attached to it
+       must be stopped
+        for (int i=0; i < sourceTotal_; i++) {
+                //Note: tried getting the AL_BUFFER attribute of the source
+       instead but doesn't
+                //appear to work on a device - just returned zero.
+                if (_buffers[soundId].bufferId == _sources[i].attachedBufferId)
+       {
+
+                        CDLOG(@"Denshion::CDSoundEngine - Found attached source
+       %i %i %i",i,_buffers[soundId].bufferId,_sources[i].sourceId);
+#ifdef CD_USE_STATIC_BUFFERS
+                        //When using static buffers a crash may occur if a
+       source is playing with a buffer that is about
+                        //to be deleted even though we stop the source and
+       successfully delete the buffer. Crash is confirmed
+                        //on 2.2.1 and 3.1.2, however, it will only occur if a
+       source is used rapidly after having its prior
+                        //data deleted. To avoid any possibility of the crash
+       we wait for the source to finish playing.
+                        ALint state;
+
+                        alGetSourcei(_sources[i].sourceId, AL_SOURCE_STATE, &
+      state);
+
+                        if (state == AL_PLAYING) {
+                                CDLOG(@"Denshion::CDSoundEngine - waiting for
+       source to complete playing before removing buffer data");
+                                alSourcei(_sources[i].sourceId, AL_LOOPING, 
+      FALSE);//Turn off looping otherwise loops will never end
+                                while (state == AL_PLAYING) {
+                                        alGetSourcei(_sources[i].sourceId, 
+      AL_SOURCE_STATE, &state);
+                                        usleep(10000);
+                                }
+                        }
+#endif
+                        //Stop source and detach
+                        alSourceStop(_sources[i].sourceId);
+                        if((lastErrorCode_ = alGetError()) != AL_NO_ERROR) {
+                                CDLOG(@"Denshion::CDSoundEngine - error
+       stopping source: %x\n", lastErrorCode_);
+                        }
+
+                        alSourcei(_sources[i].sourceId, AL_BUFFER, 0);//Attach
+       to "NULL" buffer to detach
+                        if((lastErrorCode_ = alGetError()) != AL_NO_ERROR) {
+                                CDLOG(@"Denshion::CDSoundEngine - error
+       detaching buffer: %x\n", lastErrorCode_);
+                        } else {
+                                //Record that source is now attached to nothing
+                                _sources[i].attachedBufferId = 0;
+                        }
+                }
+        }
+
+        alDeleteBuffers(1, &_buffers[soundId].bufferId);
+        if((lastErrorCode_ = alGetError()) != AL_NO_ERROR) {
+                CDLOG(@"Denshion::CDSoundEngine - error deleting buffer: %x\n",
+       lastErrorCode_);
+                _buffers[soundId].bufferState = CD_BS_FAILED;
+                return FALSE;
+        } else {
+#ifdef CD_USE_STATIC_BUFFERS
+                //Free previous data, if alDeleteBuffer has returned without
+       error then no
+                if (_buffers[soundId].bufferData) {
+                        CDLOGINFO(@"Denshion::CDSoundEngine - freeing static
+       data for soundId %i @ %i",soundId,_buffers[soundId].bufferData);
+                        free(_buffers[soundId].bufferData);//Free the old data
+                        _buffers[soundId].bufferData = NULL;
+                }
+#endif
+        }
+
+        alGenBuffers(1, &_buffers[soundId].bufferId);
+        if((lastErrorCode_ = alGetError()) != AL_NO_ERROR) {
+                CDLOG(@"Denshion::CDSoundEngine - error regenerating buffer:
+       %x\n", lastErrorCode_);
+                _buffers[soundId].bufferState = CD_BS_FAILED;
+                return FALSE;
+        } else {
+                //We now have an empty buffer
+                _buffers[soundId].bufferState = CD_BS_EMPTY;
+                CDLOGINFO(@"Denshion::CDSoundEngine - buffer %i successfully
+       unloaded\n",soundId);
+                return TRUE;
+        }
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_d_sound_engine_a2e416630cc0722eac6ba889dcb9461ba}{\index{C\-D\-Sound\-Engine@{C\-D\-Sound\-Engine}!source\-Group\-Total@{source\-Group\-Total}}
+\index{source\-Group\-Total@{source\-Group\-Total}!CDSoundEngine@{C\-D\-Sound\-Engine}}
+\subsubsection[{source\-Group\-Total}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-U\-Integer) {\bf source\-Group\-Total}\hspace{0.3cm}{\ttfamily  \mbox{[}read, assign\mbox{]}}}}\label{interface_c_d_sound_engine_a2e416630cc0722eac6ba889dcb9461ba}
+Total number of source groups that have been defined \hypertarget{interface_c_d_sound_engine_a951c8a98f46192e4ed56ebe41f7abe59}{\index{C\-D\-Sound\-Engine@{C\-D\-Sound\-Engine}!source\-Total@{source\-Total}}
+\index{source\-Total@{source\-Total}!CDSoundEngine@{C\-D\-Sound\-Engine}}
+\subsubsection[{source\-Total}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) {\bf source\-Total}\hspace{0.3cm}{\ttfamily  \mbox{[}read, assign\mbox{]}}}}\label{interface_c_d_sound_engine_a951c8a98f46192e4ed56ebe41f7abe59}
+Total number of sources available 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/\-Cocos\-Denshion/\-Cocos\-Denshion/\hyperlink{_cocos_denshion_8h}{Cocos\-Denshion.\-h}\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/\-Cocos\-Denshion/\-Cocos\-Denshion/Cocos\-Denshion.\-m\end{DoxyCompactItemize}

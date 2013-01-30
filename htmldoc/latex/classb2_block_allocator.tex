@@ -1,0 +1,28 @@
+\hypertarget{classb2_block_allocator}{\section{b2\-Block\-Allocator Class Reference}
+\label{classb2_block_allocator}\index{b2\-Block\-Allocator@{b2\-Block\-Allocator}}
+}
+
+
+{\ttfamily \#include $<$b2\-Block\-Allocator.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_block_allocator_a437bf775c23f6e36af11a6d1653d7040}{void $\ast$ \hyperlink{classb2_block_allocator_a437bf775c23f6e36af11a6d1653d7040}{Allocate} (int32 size)}\label{classb2_block_allocator_a437bf775c23f6e36af11a6d1653d7040}
+
+\begin{DoxyCompactList}\small\item\em Allocate memory. This will use b2\-Alloc if the size is larger than b2\-\_\-max\-Block\-Size. \end{DoxyCompactList}\item 
+\hypertarget{classb2_block_allocator_a945fdf86e260318b930a53dcc887ca8b}{void \hyperlink{classb2_block_allocator_a945fdf86e260318b930a53dcc887ca8b}{Free} (void $\ast$p, int32 size)}\label{classb2_block_allocator_a945fdf86e260318b930a53dcc887ca8b}
+
+\begin{DoxyCompactList}\small\item\em Free memory. This will use b2\-Free if the size is larger than b2\-\_\-max\-Block\-Size. \end{DoxyCompactList}\item 
+\hypertarget{classb2_block_allocator_a3d3bac86217eba9d1eb6dff2acee0d77}{void {\bfseries Clear} ()}\label{classb2_block_allocator_a3d3bac86217eba9d1eb6dff2acee0d77}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is a small object allocator used for allocating small objects that persist for more than one time step. See\-: \href{http://www.codeproject.com/useritems/Small_Block_Allocator.asp}{\tt http\-://www.\-codeproject.\-com/useritems/\-Small\-\_\-\-Block\-\_\-\-Allocator.\-asp} 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Common/b2\-Block\-Allocator.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Common/b2\-Block\-Allocator.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,237 @@
+\hypertarget{interface_c_c_layer_color}{\section{C\-C\-Layer\-Color Class Reference}
+\label{interface_c_c_layer_color}\index{C\-C\-Layer\-Color@{C\-C\-Layer\-Color}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Layer.\-h$>$}
+
+Inheritance diagram for C\-C\-Layer\-Color\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interface_c_c_layer_color}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_layer_color_a3f04e69e1055ebbdbe42aecc70baa462}{init\-With\-Color\-:width\-:height\-:}
+\item 
+(id) -\/ \hyperlink{interface_c_c_layer_color_a9e880feb376a13156f3438adeb0b3f08}{init\-With\-Color\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_layer_color_af3bd20a1c07ba24e2de52e9065ab8e55}{change\-Width\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_layer_color_a5fc90d098e59d3721199c93b1f104be0}{change\-Height\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_layer_color_a962603ad032b623af5408c2f0c0c8e8e}{change\-Width\-:height\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_layer_color_ab41e7292f1c55d7e1f10855f548d1c9d}{layer\-With\-Color\-:width\-:height\-:}
+\item 
+(id) + \hyperlink{interface_c_c_layer_color_a392bb74c3a0e7407fe72f0815543b82b}{layer\-With\-Color\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_layer_color_a0d1f4846b379281ac2c190fa41534ee2}{G\-Lubyte {\bfseries \-\_\-opacity}}\label{interface_c_c_layer_color_a0d1f4846b379281ac2c190fa41534ee2}
+
+\item 
+\hypertarget{interface_c_c_layer_color_a7df7fe27c31087e89b877bb998bc0074}{\hyperlink{cc_types_8h_a829b00c53e72f0115e3880cb508fec1e}{cc\-Color3\-B} {\bfseries \-\_\-color}}\label{interface_c_c_layer_color_a7df7fe27c31087e89b877bb998bc0074}
+
+\item 
+\hypertarget{interface_c_c_layer_color_aa20629097c7db4ad31b68d4473cea8d7}{\hyperlink{cc_types_8h_a3d0a9a02a1f9787a9ede91b9a74bf41f}{cc\-Vertex2\-F} {\bfseries \-\_\-square\-Vertices} \mbox{[}4\mbox{]}}\label{interface_c_c_layer_color_aa20629097c7db4ad31b68d4473cea8d7}
+
+\item 
+\hypertarget{interface_c_c_layer_color_a904f33c9a73e347ab919aebc9482697a}{\hyperlink{cc_types_8h_aecc18290defe020343f1d7bb2ee73145}{cc\-Color4\-F} {\bfseries \-\_\-square\-Colors} \mbox{[}4\mbox{]}}\label{interface_c_c_layer_color_a904f33c9a73e347ab919aebc9482697a}
+
+\item 
+\hypertarget{interface_c_c_layer_color_a5be0f078fbd6460989eae5771f441a54}{\hyperlink{cc_types_8h_a8c19c6f67219ecc0a6e4740cc046008d}{cc\-Blend\-Func} {\bfseries \-\_\-blend\-Func}}\label{interface_c_c_layer_color_a5be0f078fbd6460989eae5771f441a54}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+G\-Lubyte \hyperlink{interface_c_c_layer_color_ad4f7cd76888fe08a03c5b2c540c0d781}{opacity}
+\item 
+\hyperlink{cc_types_8h_a829b00c53e72f0115e3880cb508fec1e}{cc\-Color3\-B} \hyperlink{interface_c_c_layer_color_ae3a34640db3336f78de9948081de990c}{color}
+\item 
+\hyperlink{cc_types_8h_a8c19c6f67219ecc0a6e4740cc046008d}{cc\-Blend\-Func} \hyperlink{interface_c_c_layer_color_a69f3fcf8b7afb0a9c0b0ae10dac690f1}{blend\-Func}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_c_c_layer}{C\-C\-Layer} is a subclass of \hyperlink{class_c_c_node}{C\-C\-Node} that implements the C\-C\-Touch\-Events\-Delegate protocol.
+
+All features from \hyperlink{class_c_c_node}{C\-C\-Node} are valid, plus the following new features\-:
+\begin{DoxyItemize}
+\item It can receive Touches both on i\-O\-S and Mac
+\item It can receive Accelerometer input on i\-O\-S
+\item It can receive Keyboard events on Mac
+\item It can receive Mouse events on Mac \hyperlink{interface_c_c_layer_color}{C\-C\-Layer\-Color} is a subclass of \hyperlink{class_c_c_layer}{C\-C\-Layer} that implements the \hyperlink{protocol_c_c_r_g_b_a_protocol-p}{C\-C\-R\-G\-B\-A\-Protocol} protocol.
+\end{DoxyItemize}
+
+All features from \hyperlink{class_c_c_layer}{C\-C\-Layer} are valid, plus the following new features\-:
+\begin{DoxyItemize}
+\item opacity
+\item R\-G\-B colors 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_layer_color_a5fc90d098e59d3721199c93b1f104be0}{\index{C\-C\-Layer\-Color@{C\-C\-Layer\-Color}!change\-Height\-:@{change\-Height\-:}}
+\index{change\-Height\-:@{change\-Height\-:}!CCLayerColor@{C\-C\-Layer\-Color}}
+\subsubsection[{change\-Height\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf change\-Height\-:} 
+\begin{DoxyParamCaption}
+\item[{(G\-Lfloat)}]{h}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_layer_color_a5fc90d098e59d3721199c93b1f104be0}
+change height in Points 
+\begin{DoxyCode}
+                    : (GLfloat) h
+{
+        [self setContentSize:CGSizeMake(contentSize_.width, h)];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_layer_color_af3bd20a1c07ba24e2de52e9065ab8e55}{\index{C\-C\-Layer\-Color@{C\-C\-Layer\-Color}!change\-Width\-:@{change\-Width\-:}}
+\index{change\-Width\-:@{change\-Width\-:}!CCLayerColor@{C\-C\-Layer\-Color}}
+\subsubsection[{change\-Width\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf change\-Width\-:} 
+\begin{DoxyParamCaption}
+\item[{(G\-Lfloat)}]{w}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_layer_color_af3bd20a1c07ba24e2de52e9065ab8e55}
+change width in Points 
+\begin{DoxyCode}
+                   : (GLfloat) w
+{
+        [self setContentSize:CGSizeMake(w, contentSize_.height)];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_layer_color_a962603ad032b623af5408c2f0c0c8e8e}{\index{C\-C\-Layer\-Color@{C\-C\-Layer\-Color}!change\-Width\-:height\-:@{change\-Width\-:height\-:}}
+\index{change\-Width\-:height\-:@{change\-Width\-:height\-:}!CCLayerColor@{C\-C\-Layer\-Color}}
+\subsubsection[{change\-Width\-:height\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf change\-Width\-:} 
+\begin{DoxyParamCaption}
+\item[{(G\-Lfloat)}]{w}
+\item[{height:(G\-Lfloat)}]{h}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_layer_color_a962603ad032b623af5408c2f0c0c8e8e}
+change width and height in Points \begin{DoxySince}{Since}
+v0.\-8 
+\end{DoxySince}
+
+\begin{DoxyCode}
+                    : (GLfloat) w height:(GLfloat) h
+{
+        [self setContentSize:CGSizeMake(w, h)];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_layer_color_a9e880feb376a13156f3438adeb0b3f08}{\index{C\-C\-Layer\-Color@{C\-C\-Layer\-Color}!init\-With\-Color\-:@{init\-With\-Color\-:}}
+\index{init\-With\-Color\-:@{init\-With\-Color\-:}!CCLayerColor@{C\-C\-Layer\-Color}}
+\subsubsection[{init\-With\-Color\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Color\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Color4\-B})}]{color}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_layer_color_a9e880feb376a13156f3438adeb0b3f08}
+initializes a \hyperlink{class_c_c_layer}{C\-C\-Layer} with color. Width and height are the window size. 
+
+Referenced by C\-C\-Layer\-Gradient\-::init\-With\-Color\-:fading\-To\-:along\-Vector\-:.
+
+
+\begin{DoxyCode}
+                    :(ccColor4B)color
+{
+        CGSize s = [[CCDirector sharedDirector] winSize];
+        return [self initWithColor:color width:s.width height:s.height];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_layer_color_a3f04e69e1055ebbdbe42aecc70baa462}{\index{C\-C\-Layer\-Color@{C\-C\-Layer\-Color}!init\-With\-Color\-:width\-:height\-:@{init\-With\-Color\-:width\-:height\-:}}
+\index{init\-With\-Color\-:width\-:height\-:@{init\-With\-Color\-:width\-:height\-:}!CCLayerColor@{C\-C\-Layer\-Color}}
+\subsubsection[{init\-With\-Color\-:width\-:height\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Color\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Color4\-B})}]{color}
+\item[{width:(G\-Lfloat)}]{w}
+\item[{height:(G\-Lfloat)}]{h}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_layer_color_a3f04e69e1055ebbdbe42aecc70baa462}
+initializes a \hyperlink{class_c_c_layer}{C\-C\-Layer} with color, width and height in Points. This is the designated initializer. 
+
+Referenced by init\-With\-Color\-:.
+
+
+\begin{DoxyCode}
+                    :(ccColor4B)color width:(GLfloat)w  height:(GLfloat) h
+{
+        if( (self=[super init]) ) {
+
+                // default blend function
+                blendFunc_ = (ccBlendFunc) { GL_SRC_ALPHA, 
+      GL_ONE_MINUS_SRC_ALPHA };
+
+                _color.r = color.r;
+                _color.g = color.g;
+                _color.b = color.b;
+                _opacity = color.a;
+
+                for (NSUInteger i = 0; i<sizeof(_squareVertices) / sizeof( 
+      _squareVertices[0]); i++ ) {
+                        _squareVertices[i].x = 0.0f;
+                        _squareVertices[i].y = 0.0f;
+                }
+
+                [self updateColor];
+                [self setContentSize:CGSizeMake(w, h) ];
+
+                self.shaderProgram = [[CCShaderCache sharedShaderCache] 
+      programForKey:kCCShader_PositionColor];
+        }
+        return self;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_layer_color_a392bb74c3a0e7407fe72f0815543b82b}{\index{C\-C\-Layer\-Color@{C\-C\-Layer\-Color}!layer\-With\-Color\-:@{layer\-With\-Color\-:}}
+\index{layer\-With\-Color\-:@{layer\-With\-Color\-:}!CCLayerColor@{C\-C\-Layer\-Color}}
+\subsubsection[{layer\-With\-Color\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf layer\-With\-Color\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Color4\-B})}]{color}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_layer_color_a392bb74c3a0e7407fe72f0815543b82b}
+creates a \hyperlink{class_c_c_layer}{C\-C\-Layer} with color. Width and height are the window size. 
+\begin{DoxyCode}
+                     :(ccColor4B)color
+{
+        return [[(CCLayerColor*)[self alloc] initWithColor:color] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_layer_color_ab41e7292f1c55d7e1f10855f548d1c9d}{\index{C\-C\-Layer\-Color@{C\-C\-Layer\-Color}!layer\-With\-Color\-:width\-:height\-:@{layer\-With\-Color\-:width\-:height\-:}}
+\index{layer\-With\-Color\-:width\-:height\-:@{layer\-With\-Color\-:width\-:height\-:}!CCLayerColor@{C\-C\-Layer\-Color}}
+\subsubsection[{layer\-With\-Color\-:width\-:height\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf layer\-With\-Color\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Color4\-B})}]{color}
+\item[{width:(G\-Lfloat)}]{w}
+\item[{height:(G\-Lfloat)}]{h}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_layer_color_ab41e7292f1c55d7e1f10855f548d1c9d}
+creates a \hyperlink{class_c_c_layer}{C\-C\-Layer} with color, width and height in Points 
+\begin{DoxyCode}
+                     :(ccColor4B)color width:(GLfloat)w  height:(GLfloat) h
+{
+        return [[[self alloc] initWithColor:color width:w height:h] autorelease
+      ];
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_layer_color_a69f3fcf8b7afb0a9c0b0ae10dac690f1}{\index{C\-C\-Layer\-Color@{C\-C\-Layer\-Color}!blend\-Func@{blend\-Func}}
+\index{blend\-Func@{blend\-Func}!CCLayerColor@{C\-C\-Layer\-Color}}
+\subsubsection[{blend\-Func}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf cc\-Blend\-Func}) {\bf blend\-Func}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_layer_color_a69f3fcf8b7afb0a9c0b0ae10dac690f1}
+Blend\-Function. Conforms to \hyperlink{protocol_c_c_blend_protocol-p}{C\-C\-Blend\-Protocol} protocol \hypertarget{interface_c_c_layer_color_ae3a34640db3336f78de9948081de990c}{\index{C\-C\-Layer\-Color@{C\-C\-Layer\-Color}!color@{color}}
+\index{color@{color}!CCLayerColor@{C\-C\-Layer\-Color}}
+\subsubsection[{color}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf cc\-Color3\-B}) {\bf color}\hspace{0.3cm}{\ttfamily  \mbox{[}read, assign\mbox{]}}}}\label{interface_c_c_layer_color_ae3a34640db3336f78de9948081de990c}
+Opacity\-: conforms to \hyperlink{protocol_c_c_r_g_b_a_protocol-p}{C\-C\-R\-G\-B\-A\-Protocol} protocol \hypertarget{interface_c_c_layer_color_ad4f7cd76888fe08a03c5b2c540c0d781}{\index{C\-C\-Layer\-Color@{C\-C\-Layer\-Color}!opacity@{opacity}}
+\index{opacity@{opacity}!CCLayerColor@{C\-C\-Layer\-Color}}
+\subsubsection[{opacity}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (G\-Lubyte) {\bf opacity}\hspace{0.3cm}{\ttfamily  \mbox{[}read, assign\mbox{]}}}}\label{interface_c_c_layer_color_ad4f7cd76888fe08a03c5b2c540c0d781}
+Opacity\-: conforms to \hyperlink{protocol_c_c_r_g_b_a_protocol-p}{C\-C\-R\-G\-B\-A\-Protocol} protocol 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Layer.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Layer.\-m\end{DoxyCompactItemize}

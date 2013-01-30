@@ -1,0 +1,40 @@
+\hypertarget{interface_transition_page_backward}{\section{Transition\-Page\-Backward Class Reference}
+\label{interface_transition_page_backward}\index{Transition\-Page\-Backward@{Transition\-Page\-Backward}}
+}
+Inheritance diagram for Transition\-Page\-Backward\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{interface_transition_page_backward}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_transition_page_backward_a6a7bf0fcfbe864540e59d903e767ee5f}{transition\-With\-Duration\-:scene\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_transition_page_backward_a6a7bf0fcfbe864540e59d903e767ee5f}{\index{Transition\-Page\-Backward@{Transition\-Page\-Backward}!transition\-With\-Duration\-:scene\-:@{transition\-With\-Duration\-:scene\-:}}
+\index{transition\-With\-Duration\-:scene\-:@{transition\-With\-Duration\-:scene\-:}!TransitionPageBackward@{Transition\-Page\-Backward}}
+\subsubsection[{transition\-With\-Duration\-:scene\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) transition\-With\-Duration\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{t}
+\item[{scene:({\bf C\-C\-Scene}$\ast$)}]{s}
+\end{DoxyParamCaption}
+}}\label{interface_transition_page_backward_a6a7bf0fcfbe864540e59d903e767ee5f}
+creates a base transition with duration and incoming scene 
+
+Reimplemented from \hyperlink{interface_c_c_transition_scene_af49d7862a7560b4b4954dda1363cfa28}{C\-C\-Transition\-Scene}.
+
+
+\begin{DoxyCode}
+                            :(ccTime) t scene:(CCScene*)s {
+        return [self transitionWithDuration:t scene:s backwards:YES];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/tests/Transitions\-Test.\-m\end{DoxyCompactItemize}

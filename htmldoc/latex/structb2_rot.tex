@@ -1,0 +1,94 @@
+\hypertarget{structb2_rot}{\section{b2\-Rot Struct Reference}
+\label{structb2_rot}\index{b2\-Rot@{b2\-Rot}}
+}
+
+
+Rotation.  
+
+
+
+
+{\ttfamily \#include $<$b2\-Math.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structb2_rot_aa40dda6d390a2f54c793c63027a9b46e}{b2\-Rot} (float32 angle)
+\begin{DoxyCompactList}\small\item\em Initialize from an angle in radians. \end{DoxyCompactList}\item 
+void \hyperlink{structb2_rot_acde9186de0a4a7397bf8ef714408ad60}{Set} (float32 angle)
+\begin{DoxyCompactList}\small\item\em Set using an angle in radians. \end{DoxyCompactList}\item 
+\hypertarget{structb2_rot_a7f534cb7ece8d325662d7d0e27d4f617}{void \hyperlink{structb2_rot_a7f534cb7ece8d325662d7d0e27d4f617}{Set\-Identity} ()}\label{structb2_rot_a7f534cb7ece8d325662d7d0e27d4f617}
+
+\begin{DoxyCompactList}\small\item\em Set to the identity rotation. \end{DoxyCompactList}\item 
+\hypertarget{structb2_rot_a67a6c08812c009654f00800256c8bfdc}{float32 \hyperlink{structb2_rot_a67a6c08812c009654f00800256c8bfdc}{Get\-Angle} () const }\label{structb2_rot_a67a6c08812c009654f00800256c8bfdc}
+
+\begin{DoxyCompactList}\small\item\em Get the angle in radians. \end{DoxyCompactList}\item 
+\hypertarget{structb2_rot_ac4ab7f262adb99f161775314852723d8}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{structb2_rot_ac4ab7f262adb99f161775314852723d8}{Get\-X\-Axis} () const }\label{structb2_rot_ac4ab7f262adb99f161775314852723d8}
+
+\begin{DoxyCompactList}\small\item\em Get the x-\/axis. \end{DoxyCompactList}\item 
+\hypertarget{structb2_rot_ae731c7434fe1754114ee70149df36c7f}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{structb2_rot_ae731c7434fe1754114ee70149df36c7f}{Get\-Y\-Axis} () const }\label{structb2_rot_ae731c7434fe1754114ee70149df36c7f}
+
+\begin{DoxyCompactList}\small\item\em Get the u-\/axis. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structb2_rot_a15725ce0a89cc735ad90687b4c0f4dce}{float32 \hyperlink{structb2_rot_a15725ce0a89cc735ad90687b4c0f4dce}{s}}\label{structb2_rot_a15725ce0a89cc735ad90687b4c0f4dce}
+
+\begin{DoxyCompactList}\small\item\em Sine and cosine. \end{DoxyCompactList}\item 
+\hypertarget{structb2_rot_af23e5d31889dcb806ce46ce55aa81261}{float32 {\bfseries c}}\label{structb2_rot_af23e5d31889dcb806ce46ce55aa81261}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Rotation. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structb2_rot_aa40dda6d390a2f54c793c63027a9b46e}{\index{b2\-Rot@{b2\-Rot}!b2\-Rot@{b2\-Rot}}
+\index{b2\-Rot@{b2\-Rot}!b2Rot@{b2\-Rot}}
+\subsubsection[{b2\-Rot}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Rot\-::b2\-Rot (
+\begin{DoxyParamCaption}
+\item[{float32}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, explicit\mbox{]}}}}\label{structb2_rot_aa40dda6d390a2f54c793c63027a9b46e}
+
+
+Initialize from an angle in radians. 
+
+T\-O\-D\-O\-\_\-\-E\-R\-I\-N optimize 
+\begin{DoxyCode}
+        {
+                s = sinf(angle);
+                c = cosf(angle);
+        }
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structb2_rot_acde9186de0a4a7397bf8ef714408ad60}{\index{b2\-Rot@{b2\-Rot}!Set@{Set}}
+\index{Set@{Set}!b2Rot@{b2\-Rot}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf b2\-Rot\-::\-Set} (
+\begin{DoxyParamCaption}
+\item[{float32}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structb2_rot_acde9186de0a4a7397bf8ef714408ad60}
+
+
+Set using an angle in radians. 
+
+T\-O\-D\-O\-\_\-\-E\-R\-I\-N optimize 
+
+Referenced by b2\-Sweep\-::\-Get\-Transform(), b2\-Transform\-::\-Set(), b2\-Polygon\-Shape\-::\-Set\-As\-Box(), and b2\-Body\-::\-Set\-Transform().
+
+
+\begin{DoxyCode}
+        {
+                s = sinf(angle);
+                c = cosf(angle);
+        }
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Common/b2\-Math.\-h\end{DoxyCompactItemize}

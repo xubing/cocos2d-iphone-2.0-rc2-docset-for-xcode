@@ -1,0 +1,63 @@
+\hypertarget{interface_c_c_transition_move_in_l}{\section{C\-C\-Transition\-Move\-In\-L Class Reference}
+\label{interface_c_c_transition_move_in_l}\index{C\-C\-Transition\-Move\-In\-L@{C\-C\-Transition\-Move\-In\-L}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Transition.\-h$>$}
+
+Inheritance diagram for C\-C\-Transition\-Move\-In\-L\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{interface_c_c_transition_move_in_l}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_c_c_transition_move_in_l_a0cb17195dedf0a4778ede1324068fdaf}{init\-Scenes}
+\item 
+(\hyperlink{class_c_c_action_interval}{C\-C\-Action\-Interval} $\ast$) -\/ \hyperlink{interface_c_c_transition_move_in_l_a17d6e390b9368cf823041bb632f71eb4}{action}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_transition_move_in_l}{C\-C\-Transition\-Move\-In\-L}\-: Move in from to the left the incoming scene. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_transition_move_in_l_a17d6e390b9368cf823041bb632f71eb4}{\index{C\-C\-Transition\-Move\-In\-L@{C\-C\-Transition\-Move\-In\-L}!action@{action}}
+\index{action@{action}!CCTransitionMoveInL@{C\-C\-Transition\-Move\-In\-L}}
+\subsubsection[{action}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Action\-Interval} $\ast$) {\bf action} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_transition_move_in_l_a17d6e390b9368cf823041bb632f71eb4}
+returns the action that will be performed 
+\begin{DoxyCode}
+{
+        return [CCMoveTo actionWithDuration:duration_ position:ccp(0,0)];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_transition_move_in_l_a0cb17195dedf0a4778ede1324068fdaf}{\index{C\-C\-Transition\-Move\-In\-L@{C\-C\-Transition\-Move\-In\-L}!init\-Scenes@{init\-Scenes}}
+\index{init\-Scenes@{init\-Scenes}!CCTransitionMoveInL@{C\-C\-Transition\-Move\-In\-L}}
+\subsubsection[{init\-Scenes}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf init\-Scenes} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_transition_move_in_l_a0cb17195dedf0a4778ede1324068fdaf}
+initializes the scenes 
+
+Reimplemented in \hyperlink{interface_c_c_transition_move_in_b_af18f184edbf523ed3fef87ce37f36ec0}{C\-C\-Transition\-Move\-In\-B}, \hyperlink{interface_c_c_transition_move_in_t_a083614326a840971b4fec544d9173406}{C\-C\-Transition\-Move\-In\-T}, and \hyperlink{interface_c_c_transition_move_in_r_a69f36ede071429dc72407b960d4ac5e5}{C\-C\-Transition\-Move\-In\-R}.
+
+
+\begin{DoxyCode}
+{
+        CGSize s = [[CCDirector sharedDirector] winSize];
+        [inScene_ setPosition: ccp( -s.width,0) ];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Transition.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Transition.\-m\end{DoxyCompactItemize}

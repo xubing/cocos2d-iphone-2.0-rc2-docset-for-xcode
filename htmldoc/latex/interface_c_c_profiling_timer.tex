@@ -1,0 +1,72 @@
+\hypertarget{interface_c_c_profiling_timer}{\section{C\-C\-Profiling\-Timer Class Reference}
+\label{interface_c_c_profiling_timer}\index{C\-C\-Profiling\-Timer@{C\-C\-Profiling\-Timer}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Profiling.\-h$>$}
+
+Inheritance diagram for C\-C\-Profiling\-Timer\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_c_c_profiling_timer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_c_c_profiling_timer_a6601f85377b89ff4c33131de30b37529}{reset}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_profiling_timer_a0964646b11a0fd1fd5000f3c0353a992}{N\-S\-String $\ast$ {\bfseries name}}\label{interface_c_c_profiling_timer_a0964646b11a0fd1fd5000f3c0353a992}
+
+\item 
+\hypertarget{interface_c_c_profiling_timer_aa597424995a185b597c9cc919fc67495}{struct timeval {\bfseries start\-Time}}\label{interface_c_c_profiling_timer_aa597424995a185b597c9cc919fc67495}
+
+\item 
+\hypertarget{interface_c_c_profiling_timer_a925a78feb17092d1241b6e040fb31c79}{double {\bfseries average\-Time}}\label{interface_c_c_profiling_timer_a925a78feb17092d1241b6e040fb31c79}
+
+\item 
+\hypertarget{interface_c_c_profiling_timer_adfe8194e434cea351d286b493072854c}{double {\bfseries min\-Time}}\label{interface_c_c_profiling_timer_adfe8194e434cea351d286b493072854c}
+
+\item 
+\hypertarget{interface_c_c_profiling_timer_a353b36dd239650b6df039bec1a4b52f4}{double {\bfseries max\-Time}}\label{interface_c_c_profiling_timer_a353b36dd239650b6df039bec1a4b52f4}
+
+\item 
+\hypertarget{interface_c_c_profiling_timer_a0bcf0bfcc42c88ff4c280228753c776d}{double {\bfseries total\-Time}}\label{interface_c_c_profiling_timer_a0bcf0bfcc42c88ff4c280228753c776d}
+
+\item 
+\hypertarget{interface_c_c_profiling_timer_ae3bc1b62a3e1b239d94be6dc9a1cd4d3}{N\-S\-U\-Integer {\bfseries number\-Of\-Calls}}\label{interface_c_c_profiling_timer_ae3bc1b62a3e1b239d94be6dc9a1cd4d3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_profiling_timer}{C\-C\-Profiling\-Timer} Profiling timers used by \hyperlink{interface_c_c_profiler}{C\-C\-Profiler} 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_profiling_timer_a6601f85377b89ff4c33131de30b37529}{\index{C\-C\-Profiling\-Timer@{C\-C\-Profiling\-Timer}!reset@{reset}}
+\index{reset@{reset}!CCProfilingTimer@{C\-C\-Profiling\-Timer}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf reset} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_profiling_timer_a6601f85377b89ff4c33131de30b37529}
+resets the timer properties 
+\begin{DoxyCode}
+{
+        numberOfCalls = 0;
+        averageTime = 0;
+        totalTime = 0;
+        minTime = 10000;
+        maxTime = 0;
+        gettimeofday(&startTime, NULL);
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/\-Support/C\-C\-Profiling.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/\-Support/C\-C\-Profiling.\-m\end{DoxyCompactItemize}

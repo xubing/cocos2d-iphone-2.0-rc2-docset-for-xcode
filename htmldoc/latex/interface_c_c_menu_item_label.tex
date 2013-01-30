@@ -1,0 +1,211 @@
+\hypertarget{interface_c_c_menu_item_label}{\section{C\-C\-Menu\-Item\-Label Class Reference}
+\label{interface_c_c_menu_item_label}\index{C\-C\-Menu\-Item\-Label@{C\-C\-Menu\-Item\-Label}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Menu\-Item.\-h$>$}
+
+Inheritance diagram for C\-C\-Menu\-Item\-Label\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_c_c_menu_item_label}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_menu_item_label_a512770415e746933b76df784b96fd600}{init\-With\-Label\-:target\-:selector\-:}
+\item 
+(id) -\/ \hyperlink{interface_c_c_menu_item_label_a5c1ae04ec7216509b9be538729f30622}{init\-With\-Label\-:block\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_menu_item_label_aeb4cb57bfbc2f9660a23af23794ab634}{set\-String\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_menu_item_label_a5dc90465215ad4496be102a6717564e3}{set\-Is\-Enabled\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_menu_item_label_adf3a0d5559dc0b2579bd457bf6af8270}{item\-With\-Label\-:}
+\item 
+(id) + \hyperlink{interface_c_c_menu_item_label_aaf06b821b67e718444e25ca2f996a6f3}{item\-With\-Label\-:target\-:selector\-:}
+\item 
+(id) + \hyperlink{interface_c_c_menu_item_label_a256b3c8bd7609a86613088a8e6cef1bc}{item\-With\-Label\-:block\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_menu_item_label_a28a2994c5252195e248986b237e548cb}{\hyperlink{class_c_c_node}{C\-C\-Node}$<$ \hyperlink{protocol_c_c_label_protocol-p}{C\-C\-Label\-Protocol}, \\*
+\hyperlink{protocol_c_c_r_g_b_a_protocol-p}{C\-C\-R\-G\-B\-A\-Protocol} $>$ $\ast$ {\bfseries \-\_\-label}}\label{interface_c_c_menu_item_label_a28a2994c5252195e248986b237e548cb}
+
+\item 
+\hypertarget{interface_c_c_menu_item_label_a50c0efd7a86c8b7ac150811c0707fdd1}{\hyperlink{cc_types_8h_a829b00c53e72f0115e3880cb508fec1e}{cc\-Color3\-B} {\bfseries \-\_\-color\-Backup}}\label{interface_c_c_menu_item_label_a50c0efd7a86c8b7ac150811c0707fdd1}
+
+\item 
+\hypertarget{interface_c_c_menu_item_label_aa57cc21b0c824fa991945006f52b84d5}{\hyperlink{cc_types_8h_a829b00c53e72f0115e3880cb508fec1e}{cc\-Color3\-B} {\bfseries \-\_\-disabled\-Color}}\label{interface_c_c_menu_item_label_aa57cc21b0c824fa991945006f52b84d5}
+
+\item 
+\hypertarget{interface_c_c_menu_item_label_a0b4cfdfc30dc56374553805db63340b2}{float {\bfseries \-\_\-original\-Scale}}\label{interface_c_c_menu_item_label_a0b4cfdfc30dc56374553805db63340b2}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{cc_types_8h_a829b00c53e72f0115e3880cb508fec1e}{cc\-Color3\-B} \hyperlink{interface_c_c_menu_item_label_a0af349543d90f4c4b64435adacb590a1}{disabled\-Color}
+\item 
+\hyperlink{class_c_c_node}{C\-C\-Node}$<$ \hyperlink{protocol_c_c_label_protocol-p}{C\-C\-Label\-Protocol}, \\*
+\hyperlink{protocol_c_c_r_g_b_a_protocol-p}{C\-C\-R\-G\-B\-A\-Protocol} $>$ $\ast$ \hyperlink{interface_c_c_menu_item_label_a43df0655d34a4852f9f74efb8d68d0ef}{label}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An abstract class for \char`\"{}label\char`\"{} \hyperlink{interface_c_c_menu_item_label}{C\-C\-Menu\-Item\-Label} items Any \hyperlink{class_c_c_node}{C\-C\-Node} that supports the \hyperlink{protocol_c_c_label_protocol-p}{C\-C\-Label\-Protocol} protocol can be added. Supported nodes\-:
+\begin{DoxyItemize}
+\item \hyperlink{interface_c_c_label_b_m_font}{C\-C\-Label\-B\-M\-Font}
+\item \hyperlink{interface_c_c_label_atlas}{C\-C\-Label\-Atlas}
+\item \hyperlink{class_c_c_label_t_t_f}{C\-C\-Label\-T\-T\-F} 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_menu_item_label_a5c1ae04ec7216509b9be538729f30622}{\index{C\-C\-Menu\-Item\-Label@{C\-C\-Menu\-Item\-Label}!init\-With\-Label\-:block\-:@{init\-With\-Label\-:block\-:}}
+\index{init\-With\-Label\-:block\-:@{init\-With\-Label\-:block\-:}!CCMenuItemLabel@{C\-C\-Menu\-Item\-Label}}
+\subsubsection[{init\-With\-Label\-:block\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Label\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Node}$<$ {\bf C\-C\-Label\-Protocol}, {\bf C\-C\-R\-G\-B\-A\-Protocol} $>$ $\ast$)}]{label}
+\item[{block:(id sender)}]{block}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_menu_item_label_a5c1ae04ec7216509b9be538729f30622}
+initializes a \hyperlink{interface_c_c_menu_item_label}{C\-C\-Menu\-Item\-Label} with a Label and a block to execute. The block will be \char`\"{}copied\char`\"{}. This is the designated initializer. 
+
+Referenced by init\-With\-Label\-:target\-:selector\-:, and C\-C\-Menu\-Item\-Atlas\-Font\-::init\-With\-String\-:char\-Map\-File\-:item\-Width\-:item\-Height\-:start\-Char\-Map\-:block\-:.
+
+\hypertarget{interface_c_c_menu_item_label_a512770415e746933b76df784b96fd600}{\index{C\-C\-Menu\-Item\-Label@{C\-C\-Menu\-Item\-Label}!init\-With\-Label\-:target\-:selector\-:@{init\-With\-Label\-:target\-:selector\-:}}
+\index{init\-With\-Label\-:target\-:selector\-:@{init\-With\-Label\-:target\-:selector\-:}!CCMenuItemLabel@{C\-C\-Menu\-Item\-Label}}
+\subsubsection[{init\-With\-Label\-:target\-:selector\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Label\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Node}$<${\bf C\-C\-Label\-Protocol},{\bf C\-C\-R\-G\-B\-A\-Protocol}$>$$\ast$)}]{label}
+\item[{target:(id)}]{target}
+\item[{selector:(S\-E\-L)}]{selector}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_menu_item_label_a512770415e746933b76df784b96fd600}
+initializes a \hyperlink{interface_c_c_menu_item_label}{C\-C\-Menu\-Item\-Label} with a Label, target and selector. Internally it will create a block that executes the target/selector. The \char`\"{}target\char`\"{} won't be retained. 
+\begin{DoxyCode}
+                   :(CCNode<CCLabelProtocol,CCRGBAProtocol>*)label target:(id)
+      target selector:(SEL)selector
+{
+        // avoid retain cycle
+        __block id t = target;
+
+        self = [self initWithLabel:label block: ^(id sender) {
+                [t performSelector:selector withObject:sender];
+        }
+                        ];
+        return self;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_menu_item_label_adf3a0d5559dc0b2579bd457bf6af8270}{\index{C\-C\-Menu\-Item\-Label@{C\-C\-Menu\-Item\-Label}!item\-With\-Label\-:@{item\-With\-Label\-:}}
+\index{item\-With\-Label\-:@{item\-With\-Label\-:}!CCMenuItemLabel@{C\-C\-Menu\-Item\-Label}}
+\subsubsection[{item\-With\-Label\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf item\-With\-Label\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Node}$<${\bf C\-C\-Label\-Protocol},{\bf C\-C\-R\-G\-B\-A\-Protocol}$>$$\ast$)}]{label}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_menu_item_label_adf3a0d5559dc0b2579bd457bf6af8270}
+creates a \hyperlink{interface_c_c_menu_item_label}{C\-C\-Menu\-Item\-Label} with a Label. 
+\begin{DoxyCode}
+                   :(CCNode<CCLabelProtocol,CCRGBAProtocol>*)label
+{
+        return [[[self alloc] initWithLabel:label block:nil] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_menu_item_label_a256b3c8bd7609a86613088a8e6cef1bc}{\index{C\-C\-Menu\-Item\-Label@{C\-C\-Menu\-Item\-Label}!item\-With\-Label\-:block\-:@{item\-With\-Label\-:block\-:}}
+\index{item\-With\-Label\-:block\-:@{item\-With\-Label\-:block\-:}!CCMenuItemLabel@{C\-C\-Menu\-Item\-Label}}
+\subsubsection[{item\-With\-Label\-:block\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf item\-With\-Label\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Node}$<${\bf C\-C\-Label\-Protocol},{\bf C\-C\-R\-G\-B\-A\-Protocol}$>$$\ast$)}]{label}
+\item[{block:(id sender)}]{block}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_menu_item_label_a256b3c8bd7609a86613088a8e6cef1bc}
+creates a \hyperlink{interface_c_c_menu_item_label}{C\-C\-Menu\-Item\-Label} with a Label and a block to execute. The block will be \char`\"{}copied\char`\"{}. 
+\begin{DoxyCode}
+                   :(CCNode<CCLabelProtocol,CCRGBAProtocol>*)label block:(void(
+      ^)(id sender))block {
+        return [[[self alloc] initWithLabel:label block:block] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_menu_item_label_aaf06b821b67e718444e25ca2f996a6f3}{\index{C\-C\-Menu\-Item\-Label@{C\-C\-Menu\-Item\-Label}!item\-With\-Label\-:target\-:selector\-:@{item\-With\-Label\-:target\-:selector\-:}}
+\index{item\-With\-Label\-:target\-:selector\-:@{item\-With\-Label\-:target\-:selector\-:}!CCMenuItemLabel@{C\-C\-Menu\-Item\-Label}}
+\subsubsection[{item\-With\-Label\-:target\-:selector\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf item\-With\-Label\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Node}$<${\bf C\-C\-Label\-Protocol},{\bf C\-C\-R\-G\-B\-A\-Protocol}$>$$\ast$)}]{label}
+\item[{target:(id)}]{target}
+\item[{selector:(S\-E\-L)}]{selector}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_menu_item_label_aaf06b821b67e718444e25ca2f996a6f3}
+creates a \hyperlink{interface_c_c_menu_item_label}{C\-C\-Menu\-Item\-Label} with a Label, target and selector. The \char`\"{}target\char`\"{} won't be retained. 
+\begin{DoxyCode}
+                   :(CCNode<CCLabelProtocol,CCRGBAProtocol>*)label target:(id)
+      target selector:(SEL)selector
+{
+        return [[[self alloc] initWithLabel:label target:target selector:
+      selector] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_menu_item_label_a5dc90465215ad4496be102a6717564e3}{\index{C\-C\-Menu\-Item\-Label@{C\-C\-Menu\-Item\-Label}!set\-Is\-Enabled\-:@{set\-Is\-Enabled\-:}}
+\index{set\-Is\-Enabled\-:@{set\-Is\-Enabled\-:}!CCMenuItemLabel@{C\-C\-Menu\-Item\-Label}}
+\subsubsection[{set\-Is\-Enabled\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf set\-Is\-Enabled\-:} 
+\begin{DoxyParamCaption}
+\item[{(B\-O\-O\-L)}]{enabled}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_menu_item_label_a5dc90465215ad4496be102a6717564e3}
+Enable or disabled the \hyperlink{class_c_c_menu_item_font}{C\-C\-Menu\-Item\-Font} \begin{DoxyWarning}{Warning}
+set\-Is\-Enabled changes the R\-G\-B color of the font 
+\end{DoxyWarning}
+
+
+Reimplemented from \hyperlink{interface_c_c_menu_item_a53be17d01c203759053fe58b4cfb7bc6}{C\-C\-Menu\-Item}.
+
+
+\begin{DoxyCode}
+                    : (BOOL)enabled
+{
+        if( _isEnabled != enabled ) {
+                if(enabled == NO) {
+                        _colorBackup = [_label color];
+                        [_label setColor: _disabledColor];
+                }
+                else
+                        [_label setColor:_colorBackup];
+        }
+
+        [super setIsEnabled:enabled];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_menu_item_label_aeb4cb57bfbc2f9660a23af23794ab634}{\index{C\-C\-Menu\-Item\-Label@{C\-C\-Menu\-Item\-Label}!set\-String\-:@{set\-String\-:}}
+\index{set\-String\-:@{set\-String\-:}!CCMenuItemLabel@{C\-C\-Menu\-Item\-Label}}
+\subsubsection[{set\-String\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf set\-String\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{label}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_menu_item_label_aeb4cb57bfbc2f9660a23af23794ab634}
+sets a new string to the inner label 
+\begin{DoxyCode}
+                 :(NSString *)string
+{
+        [_label setString:string];
+        [self setContentSize: [_label contentSize]];
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_menu_item_label_a0af349543d90f4c4b64435adacb590a1}{\index{C\-C\-Menu\-Item\-Label@{C\-C\-Menu\-Item\-Label}!disabled\-Color@{disabled\-Color}}
+\index{disabled\-Color@{disabled\-Color}!CCMenuItemLabel@{C\-C\-Menu\-Item\-Label}}
+\subsubsection[{disabled\-Color}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf cc\-Color3\-B}) {\bf disabled\-Color}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_menu_item_label_a0af349543d90f4c4b64435adacb590a1}
+the color that will be used to disable the item \hypertarget{interface_c_c_menu_item_label_a43df0655d34a4852f9f74efb8d68d0ef}{\index{C\-C\-Menu\-Item\-Label@{C\-C\-Menu\-Item\-Label}!label@{label}}
+\index{label@{label}!CCMenuItemLabel@{C\-C\-Menu\-Item\-Label}}
+\subsubsection[{label}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Node}$<$ {\bf C\-C\-Label\-Protocol}, {\bf C\-C\-R\-G\-B\-A\-Protocol} $>$ $\ast$) {\bf label}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_menu_item_label_a43df0655d34a4852f9f74efb8d68d0ef}
+Label that is rendered. It can be any \hyperlink{class_c_c_node}{C\-C\-Node} that implements the \hyperlink{protocol_c_c_label_protocol-p}{C\-C\-Label\-Protocol} 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Menu\-Item.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Menu\-Item.\-m\end{DoxyCompactItemize}

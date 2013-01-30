@@ -1,0 +1,40 @@
+\hypertarget{interface_fade_white_transition}{\section{Fade\-White\-Transition Class Reference}
+\label{interface_fade_white_transition}\index{Fade\-White\-Transition@{Fade\-White\-Transition}}
+}
+Inheritance diagram for Fade\-White\-Transition\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{interface_fade_white_transition}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_fade_white_transition_aba107ac0dc3d49d2e82204e24e644d26}{transition\-With\-Duration\-:scene\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_fade_white_transition_aba107ac0dc3d49d2e82204e24e644d26}{\index{Fade\-White\-Transition@{Fade\-White\-Transition}!transition\-With\-Duration\-:scene\-:@{transition\-With\-Duration\-:scene\-:}}
+\index{transition\-With\-Duration\-:scene\-:@{transition\-With\-Duration\-:scene\-:}!FadeWhiteTransition@{Fade\-White\-Transition}}
+\subsubsection[{transition\-With\-Duration\-:scene\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) transition\-With\-Duration\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{t}
+\item[{scene:({\bf C\-C\-Scene}$\ast$)}]{s}
+\end{DoxyParamCaption}
+}}\label{interface_fade_white_transition_aba107ac0dc3d49d2e82204e24e644d26}
+creates a base transition with duration and incoming scene 
+
+Reimplemented from \hyperlink{interface_c_c_transition_scene_af49d7862a7560b4b4954dda1363cfa28}{C\-C\-Transition\-Scene}.
+
+
+\begin{DoxyCode}
+                            :(ccTime) t scene:(CCScene*)s {
+        return [self transitionWithDuration:t scene:s withColor:ccWHITE];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/tests/Transitions\-Test.\-m\end{DoxyCompactItemize}

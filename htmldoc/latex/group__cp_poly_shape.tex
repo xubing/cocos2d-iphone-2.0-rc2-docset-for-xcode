@@ -1,0 +1,121 @@
+\hypertarget{group__cp_poly_shape}{\section{cp\-Poly\-Shape}
+\label{group__cp_poly_shape}\index{cp\-Poly\-Shape@{cp\-Poly\-Shape}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bfseries cp\-Splitting\-Plane}
+\item 
+struct {\bfseries cp\-Poly\-Shape}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__cp_poly_shape_ga1974848d5187f4deb72efdf36720c858}{typedef struct cp\-Splitting\-Plane {\bfseries cp\-Splitting\-Plane}}\label{group__cp_poly_shape_ga1974848d5187f4deb72efdf36720c858}
+
+\item 
+\hypertarget{group__cp_poly_shape_ga6b68c9908e0ca503d8d90446ae05442c}{typedef struct cp\-Poly\-Shape {\bfseries cp\-Poly\-Shape}}\label{group__cp_poly_shape_ga6b68c9908e0ca503d8d90446ae05442c}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__cp_poly_shape_ga3c45ef999add9db8c9d7115ace013b3e}{cp\-Poly\-Shape $\ast$ \hyperlink{group__cp_poly_shape_ga3c45ef999add9db8c9d7115ace013b3e}{cp\-Poly\-Shape\-Alloc} (void)}\label{group__cp_poly_shape_ga3c45ef999add9db8c9d7115ace013b3e}
+
+\begin{DoxyCompactList}\small\item\em Allocate a polygon shape. \end{DoxyCompactList}\item 
+cp\-Poly\-Shape $\ast$ \hyperlink{group__cp_poly_shape_ga9ee28361eca8a2ac440fe51476c6441d}{cp\-Poly\-Shape\-Init} (cp\-Poly\-Shape $\ast$poly, \hyperlink{structcp_body}{cp\-Body} $\ast$body, int num\-Verts, const \hyperlink{structcp_vect}{cp\-Vect} $\ast$verts, \hyperlink{structcp_vect}{cp\-Vect} offset)
+\item 
+\hyperlink{structcp_shape}{cp\-Shape} $\ast$ \hyperlink{group__cp_poly_shape_gab4a4748c2291066a87a81cf515fa336f}{cp\-Poly\-Shape\-New} (\hyperlink{structcp_body}{cp\-Body} $\ast$body, int num\-Verts, \hyperlink{structcp_vect}{cp\-Vect} $\ast$verts, \hyperlink{structcp_vect}{cp\-Vect} offset)
+\item 
+\hypertarget{group__cp_poly_shape_ga476f01323ea40342b8f08a32a158bf73}{cp\-Poly\-Shape $\ast$ \hyperlink{group__cp_poly_shape_ga476f01323ea40342b8f08a32a158bf73}{cp\-Box\-Shape\-Init} (cp\-Poly\-Shape $\ast$poly, \hyperlink{structcp_body}{cp\-Body} $\ast$body, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} width, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} height)}\label{group__cp_poly_shape_ga476f01323ea40342b8f08a32a158bf73}
+
+\begin{DoxyCompactList}\small\item\em Initialize a box shaped polygon shape. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_poly_shape_ga22965f0e9808961967267065518339f0}{cp\-Poly\-Shape $\ast$ \hyperlink{group__cp_poly_shape_ga22965f0e9808961967267065518339f0}{cp\-Box\-Shape\-Init2} (cp\-Poly\-Shape $\ast$poly, \hyperlink{structcp_body}{cp\-Body} $\ast$body, \hyperlink{structcp_b_b}{cp\-B\-B} box)}\label{group__cp_poly_shape_ga22965f0e9808961967267065518339f0}
+
+\begin{DoxyCompactList}\small\item\em Initialize an offset box shaped polygon shape. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_poly_shape_gacdeb44c68f1860e12048b339d56eef67}{\hyperlink{structcp_shape}{cp\-Shape} $\ast$ \hyperlink{group__cp_poly_shape_gacdeb44c68f1860e12048b339d56eef67}{cp\-Box\-Shape\-New} (\hyperlink{structcp_body}{cp\-Body} $\ast$body, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} width, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} height)}\label{group__cp_poly_shape_gacdeb44c68f1860e12048b339d56eef67}
+
+\begin{DoxyCompactList}\small\item\em Allocate and initialize a box shaped polygon shape. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_poly_shape_gaa7210464f25ddfd8a29f81f265d883df}{\hyperlink{structcp_shape}{cp\-Shape} $\ast$ \hyperlink{group__cp_poly_shape_gaa7210464f25ddfd8a29f81f265d883df}{cp\-Box\-Shape\-New2} (\hyperlink{structcp_body}{cp\-Body} $\ast$body, \hyperlink{structcp_b_b}{cp\-B\-B} box)}\label{group__cp_poly_shape_gaa7210464f25ddfd8a29f81f265d883df}
+
+\begin{DoxyCompactList}\small\item\em Allocate and initialize an offset box shaped polygon shape. \end{DoxyCompactList}\item 
+\hyperlink{group__basic_types_gab6e5d8afee598a57cd323abae5310244}{cp\-Bool} \hyperlink{group__cp_poly_shape_ga66e76627fbdd6032aaede226a0959620}{cp\-Poly\-Validate} (const \hyperlink{structcp_vect}{cp\-Vect} $\ast$verts, const int num\-Verts)
+\item 
+\hypertarget{group__cp_poly_shape_ga72ffc0d1f7ba9eb05ad105dc82531f23}{int \hyperlink{group__cp_poly_shape_ga72ffc0d1f7ba9eb05ad105dc82531f23}{cp\-Poly\-Shape\-Get\-Num\-Verts} (\hyperlink{structcp_shape}{cp\-Shape} $\ast$shape)}\label{group__cp_poly_shape_ga72ffc0d1f7ba9eb05ad105dc82531f23}
+
+\begin{DoxyCompactList}\small\item\em Get the number of verts in a polygon shape. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_poly_shape_ga1ef71ccf85d93b7f272d220511603823}{\hyperlink{structcp_vect}{cp\-Vect} \hyperlink{group__cp_poly_shape_ga1ef71ccf85d93b7f272d220511603823}{cp\-Poly\-Shape\-Get\-Vert} (\hyperlink{structcp_shape}{cp\-Shape} $\ast$shape, int idx)}\label{group__cp_poly_shape_ga1ef71ccf85d93b7f272d220511603823}
+
+\begin{DoxyCompactList}\small\item\em Get the {\ttfamily ith} vertex of a polygon shape. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{group__cp_poly_shape_ga9ee28361eca8a2ac440fe51476c6441d}{\index{cp\-Poly\-Shape@{cp\-Poly\-Shape}!cp\-Poly\-Shape\-Init@{cp\-Poly\-Shape\-Init}}
+\index{cp\-Poly\-Shape\-Init@{cp\-Poly\-Shape\-Init}!cpPolyShape@{cp\-Poly\-Shape}}
+\subsubsection[{cp\-Poly\-Shape\-Init}]{\setlength{\rightskip}{0pt plus 5cm}cp\-Poly\-Shape$\ast$ {\bf cp\-Poly\-Shape\-Init} (
+\begin{DoxyParamCaption}
+\item[{cp\-Poly\-Shape $\ast$}]{poly, }
+\item[{{\bf cp\-Body} $\ast$}]{body, }
+\item[{int}]{num\-Verts, }
+\item[{const {\bf cp\-Vect} $\ast$}]{verts, }
+\item[{{\bf cp\-Vect}}]{offset}
+\end{DoxyParamCaption}
+)}}\label{group__cp_poly_shape_ga9ee28361eca8a2ac440fe51476c6441d}
+Initialize a polygon shape. A convex hull will be created from the vertexes. 
+
+Referenced by cp\-Box\-Shape\-Init2(), and cp\-Poly\-Shape\-New().
+
+
+\begin{DoxyCode}
+{
+        setUpVerts(poly, numVerts, verts, offset);
+        cpShapeInit((cpShape *)poly, &polyClass, body);
+
+        return poly;
+}
+\end{DoxyCode}
+\hypertarget{group__cp_poly_shape_gab4a4748c2291066a87a81cf515fa336f}{\index{cp\-Poly\-Shape@{cp\-Poly\-Shape}!cp\-Poly\-Shape\-New@{cp\-Poly\-Shape\-New}}
+\index{cp\-Poly\-Shape\-New@{cp\-Poly\-Shape\-New}!cpPolyShape@{cp\-Poly\-Shape}}
+\subsubsection[{cp\-Poly\-Shape\-New}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cp\-Shape}$\ast$ {\bf cp\-Poly\-Shape\-New} (
+\begin{DoxyParamCaption}
+\item[{{\bf cp\-Body} $\ast$}]{body, }
+\item[{int}]{num\-Verts, }
+\item[{{\bf cp\-Vect} $\ast$}]{verts, }
+\item[{{\bf cp\-Vect}}]{offset}
+\end{DoxyParamCaption}
+)}}\label{group__cp_poly_shape_gab4a4748c2291066a87a81cf515fa336f}
+Allocate and initialize a polygon shape. A convex hull will be created from the vertexes. 
+\begin{DoxyCode}
+{
+        return (cpShape *)cpPolyShapeInit(cpPolyShapeAlloc(), body, numVerts, 
+      verts, offset);
+}
+\end{DoxyCode}
+\hypertarget{group__cp_poly_shape_ga66e76627fbdd6032aaede226a0959620}{\index{cp\-Poly\-Shape@{cp\-Poly\-Shape}!cp\-Poly\-Validate@{cp\-Poly\-Validate}}
+\index{cp\-Poly\-Validate@{cp\-Poly\-Validate}!cpPolyShape@{cp\-Poly\-Shape}}
+\subsubsection[{cp\-Poly\-Validate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cp\-Bool} {\bf cp\-Poly\-Validate} (
+\begin{DoxyParamCaption}
+\item[{const {\bf cp\-Vect} $\ast$}]{verts, }
+\item[{const int}]{num\-Verts}
+\end{DoxyParamCaption}
+)}}\label{group__cp_poly_shape_ga66e76627fbdd6032aaede226a0959620}
+Check that a set of vertexes is convex and has a clockwise winding. N\-O\-T\-E\-: Due to floating point precision issues, hulls created with cp\-Quick\-Hull() are not guaranteed to validate! 
+
+Referenced by cp\-Convex\-Hull().
+
+
+\begin{DoxyCode}
+{
+        for(int i=0; i<numVerts; i++){
+                cpVect a = verts[i];
+                cpVect b = verts[(i+1)%numVerts];
+                cpVect c = verts[(i+2)%numVerts];
+                
+                if(cpvcross(cpvsub(b, a), cpvsub(c, a)) > 0.0f){
+                        return cpFalse;
+                }
+        }
+        
+        return cpTrue;
+}
+\end{DoxyCode}

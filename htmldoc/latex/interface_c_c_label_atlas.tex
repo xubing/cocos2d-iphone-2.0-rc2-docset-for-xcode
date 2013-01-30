@@ -1,0 +1,196 @@
+\hypertarget{interface_c_c_label_atlas}{\section{C\-C\-Label\-Atlas Class Reference}
+\label{interface_c_c_label_atlas}\index{C\-C\-Label\-Atlas@{C\-C\-Label\-Atlas}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Label\-Atlas.\-h$>$}
+
+Inheritance diagram for C\-C\-Label\-Atlas\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{interface_c_c_label_atlas}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_label_atlas_a19dcf62a3873d49544c7369bb18395f3}{init\-With\-String\-:char\-Map\-File\-:item\-Width\-:item\-Height\-:start\-Char\-Map\-:}
+\item 
+(id) -\/ \hyperlink{interface_c_c_label_atlas_a68ba5e253c49551bef417d07870e9d3b}{init\-With\-String\-:texture\-:item\-Width\-:item\-Height\-:start\-Char\-Map\-:}
+\item 
+(id) -\/ \hyperlink{interface_c_c_label_atlas_a5993cb1943612efab6eb037e8a377856}{init\-With\-String\-:fnt\-File\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_label_atlas_ad3670884b30f800338858d9444cc1340}{label\-With\-String\-:char\-Map\-File\-:item\-Width\-:item\-Height\-:start\-Char\-Map\-:}
+\item 
+(id) + \hyperlink{interface_c_c_label_atlas_a0cfc0dfa7f377aeebc987d3010834725}{label\-With\-String\-:fnt\-File\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_label_atlas_ae02d0917f19698fcb273bf079460d60b}{N\-S\-String $\ast$ {\bfseries string\-\_\-}}\label{interface_c_c_label_atlas_ae02d0917f19698fcb273bf079460d60b}
+
+\item 
+\hypertarget{interface_c_c_label_atlas_a3a9d769ff2ac0e10ce57ec7883100f0d}{N\-S\-U\-Integer {\bfseries map\-Start\-Char\-\_\-}}\label{interface_c_c_label_atlas_a3a9d769ff2ac0e10ce57ec7883100f0d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_label_atlas}{C\-C\-Label\-Atlas} is a subclass of \hyperlink{interface_c_c_atlas_node}{C\-C\-Atlas\-Node}.
+
+It can be as a replacement of C\-C\-Label since it is M\-U\-C\-H faster.
+
+\hyperlink{interface_c_c_label_atlas}{C\-C\-Label\-Atlas} versus C\-C\-Label\-:
+\begin{DoxyItemize}
+\item \hyperlink{interface_c_c_label_atlas}{C\-C\-Label\-Atlas} is M\-U\-C\-H faster than C\-C\-Label
+\item \hyperlink{interface_c_c_label_atlas}{C\-C\-Label\-Atlas} \char`\"{}characters\char`\"{} have a fixed height and width
+\item \hyperlink{interface_c_c_label_atlas}{C\-C\-Label\-Atlas} \char`\"{}characters\char`\"{} can be anything you want since they are taken from an image file
+\end{DoxyItemize}
+
+A more flexible class is \hyperlink{interface_c_c_label_b_m_font}{C\-C\-Label\-B\-M\-Font}. It supports variable width characters and it also has a nice editor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_label_atlas_a19dcf62a3873d49544c7369bb18395f3}{\index{C\-C\-Label\-Atlas@{C\-C\-Label\-Atlas}!init\-With\-String\-:char\-Map\-File\-:item\-Width\-:item\-Height\-:start\-Char\-Map\-:@{init\-With\-String\-:char\-Map\-File\-:item\-Width\-:item\-Height\-:start\-Char\-Map\-:}}
+\index{init\-With\-String\-:char\-Map\-File\-:item\-Width\-:item\-Height\-:start\-Char\-Map\-:@{init\-With\-String\-:char\-Map\-File\-:item\-Width\-:item\-Height\-:start\-Char\-Map\-:}!CCLabelAtlas@{C\-C\-Label\-Atlas}}
+\subsubsection[{init\-With\-String\-:char\-Map\-File\-:item\-Width\-:item\-Height\-:start\-Char\-Map\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-String\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{string}
+\item[{charMapFile:(N\-S\-String$\ast$)}]{charmapfile}
+\item[{itemWidth:(N\-S\-U\-Integer)}]{w}
+\item[{itemHeight:(N\-S\-U\-Integer)}]{h}
+\item[{startCharMap:(N\-S\-U\-Integer)}]{first\-Element}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_label_atlas_a19dcf62a3873d49544c7369bb18395f3}
+initializes the \hyperlink{interface_c_c_label_atlas}{C\-C\-Label\-Atlas} with a string, a char map file(the atlas), the width and height in points of each element and the starting char of the atlas 
+
+Referenced by init\-With\-String\-:fnt\-File\-:.
+
+
+\begin{DoxyCode}
+                    :(NSString*)string charMapFile: (NSString*)filename 
+      itemWidth:(NSUInteger)w itemHeight:(NSUInteger)h startCharMap:(NSUInteger)c
+{
+        CCTexture2D *texture = [[CCTextureCache sharedTextureCache] addImage:
+      filename];
+        return [self initWithString:string texture:texture itemWidth:w 
+      itemHeight:h startCharMap:c];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_label_atlas_a5993cb1943612efab6eb037e8a377856}{\index{C\-C\-Label\-Atlas@{C\-C\-Label\-Atlas}!init\-With\-String\-:fnt\-File\-:@{init\-With\-String\-:fnt\-File\-:}}
+\index{init\-With\-String\-:fnt\-File\-:@{init\-With\-String\-:fnt\-File\-:}!CCLabelAtlas@{C\-C\-Label\-Atlas}}
+\subsubsection[{init\-With\-String\-:fnt\-File\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-String\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{string}
+\item[{fntFile:(N\-S\-String$\ast$)}]{font\-File}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_label_atlas_a5993cb1943612efab6eb037e8a377856}
+initializes the \hyperlink{interface_c_c_label_atlas}{C\-C\-Label\-Atlas} with a string and a configuration file \begin{DoxySince}{Since}
+v2.\-0 
+\end{DoxySince}
+
+\begin{DoxyCode}
+                    :(NSString*) theString fntFile:(NSString*)fntFile
+{
+        NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:[[
+      CCFileUtils sharedFileUtils] fullPathFromRelativePath:fntFile]];
+        
+        NSAssert( [[dict objectForKey:@"version"] intValue] == 1, @"Unsupported
+       version. Upgrade cocos2d version");
+
+        // obtain the path, and prepend it
+        NSString *path = [fntFile stringByDeletingLastPathComponent];
+        NSString *textureFilename = [path stringByAppendingPathComponent:[dict 
+      objectForKey:@"textureFilename"]];
+        
+        NSUInteger width = [[dict objectForKey:@"itemWidth"] unsignedIntValue] 
+       / CC_CONTENT_SCALE_FACTOR();
+        NSUInteger height = [[dict objectForKey:@"itemHeight"] unsignedIntValue
+      ] / CC_CONTENT_SCALE_FACTOR();
+        NSUInteger startChar = [[dict objectForKey:@"firstChar"] 
+      unsignedIntValue];
+        
+        return [self initWithString:theString
+                                        charMapFile:textureFilename
+                                          itemWidth:width
+                                         itemHeight:height
+                                   startCharMap:startChar];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_label_atlas_a68ba5e253c49551bef417d07870e9d3b}{\index{C\-C\-Label\-Atlas@{C\-C\-Label\-Atlas}!init\-With\-String\-:texture\-:item\-Width\-:item\-Height\-:start\-Char\-Map\-:@{init\-With\-String\-:texture\-:item\-Width\-:item\-Height\-:start\-Char\-Map\-:}}
+\index{init\-With\-String\-:texture\-:item\-Width\-:item\-Height\-:start\-Char\-Map\-:@{init\-With\-String\-:texture\-:item\-Width\-:item\-Height\-:start\-Char\-Map\-:}!CCLabelAtlas@{C\-C\-Label\-Atlas}}
+\subsubsection[{init\-With\-String\-:texture\-:item\-Width\-:item\-Height\-:start\-Char\-Map\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-String\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{the\-String}
+\item[{texture:({\bf C\-C\-Texture2\-D}$\ast$)}]{texture}
+\item[{itemWidth:(N\-S\-U\-Integer)}]{w}
+\item[{itemHeight:(N\-S\-U\-Integer)}]{h}
+\item[{startCharMap:(N\-S\-U\-Integer)}]{c}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_label_atlas_a68ba5e253c49551bef417d07870e9d3b}
+initializes the \hyperlink{interface_c_c_label_atlas}{C\-C\-Label\-Atlas} with a string, a texture, the width and height in points of each element and the starting char of the atlas 
+
+Referenced by init\-With\-String\-:char\-Map\-File\-:item\-Width\-:item\-Height\-:start\-Char\-Map\-:.
+
+
+\begin{DoxyCode}
+                    :(NSString*) theString texture:(CCTexture2D*)texture 
+      itemWidth:(NSUInteger)w itemHeight:(NSUInteger)h startCharMap:(NSUInteger)c
+{
+        if ((self=[super initWithTexture:texture tileWidth:w tileHeight:h 
+      itemsToRender:[theString length] ]) ) {
+                
+                mapStartChar_ = c;
+                [self setString: theString];
+        }
+        
+        return self;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_label_atlas_ad3670884b30f800338858d9444cc1340}{\index{C\-C\-Label\-Atlas@{C\-C\-Label\-Atlas}!label\-With\-String\-:char\-Map\-File\-:item\-Width\-:item\-Height\-:start\-Char\-Map\-:@{label\-With\-String\-:char\-Map\-File\-:item\-Width\-:item\-Height\-:start\-Char\-Map\-:}}
+\index{label\-With\-String\-:char\-Map\-File\-:item\-Width\-:item\-Height\-:start\-Char\-Map\-:@{label\-With\-String\-:char\-Map\-File\-:item\-Width\-:item\-Height\-:start\-Char\-Map\-:}!CCLabelAtlas@{C\-C\-Label\-Atlas}}
+\subsubsection[{label\-With\-String\-:char\-Map\-File\-:item\-Width\-:item\-Height\-:start\-Char\-Map\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) label\-With\-String\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{string}
+\item[{charMapFile:(N\-S\-String$\ast$)}]{charmapfile}
+\item[{itemWidth:(N\-S\-U\-Integer)}]{w}
+\item[{itemHeight:(N\-S\-U\-Integer)}]{h}
+\item[{startCharMap:(N\-S\-U\-Integer)}]{first\-Element}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_label_atlas_ad3670884b30f800338858d9444cc1340}
+creates the \hyperlink{interface_c_c_label_atlas}{C\-C\-Label\-Atlas} with a string, a char map file(the atlas), the width and height of each element in points and the starting char of the atlas 
+\begin{DoxyCode}
+                     :(NSString*)string charMapFile:(NSString*)charmapfile 
+      itemWidth:(NSUInteger)w itemHeight:(NSUInteger)h startCharMap:(NSUInteger)c
+{
+        return [[[self alloc] initWithString:string charMapFile:charmapfile 
+      itemWidth:w itemHeight:h startCharMap:c] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_label_atlas_a0cfc0dfa7f377aeebc987d3010834725}{\index{C\-C\-Label\-Atlas@{C\-C\-Label\-Atlas}!label\-With\-String\-:fnt\-File\-:@{label\-With\-String\-:fnt\-File\-:}}
+\index{label\-With\-String\-:fnt\-File\-:@{label\-With\-String\-:fnt\-File\-:}!CCLabelAtlas@{C\-C\-Label\-Atlas}}
+\subsubsection[{label\-With\-String\-:fnt\-File\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) label\-With\-String\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{string}
+\item[{fntFile:(N\-S\-String$\ast$)}]{font\-File}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_label_atlas_a0cfc0dfa7f377aeebc987d3010834725}
+creates the \hyperlink{interface_c_c_label_atlas}{C\-C\-Label\-Atlas} with a string and a configuration file \begin{DoxySince}{Since}
+v2.\-0 
+\end{DoxySince}
+
+\begin{DoxyCode}
+                     :(NSString*)string fntFile:(NSString*)fntFile
+{
+        return [[[self alloc] initWithString:string fntFile:fntFile] 
+      autorelease];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Label\-Atlas.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Label\-Atlas.\-m\end{DoxyCompactItemize}

@@ -1,0 +1,60 @@
+\hypertarget{structb2_fixture_def}{\section{b2\-Fixture\-Def Struct Reference}
+\label{structb2_fixture_def}\index{b2\-Fixture\-Def@{b2\-Fixture\-Def}}
+}
+
+
+{\ttfamily \#include $<$b2\-Fixture.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structb2_fixture_def_aa34ba06bcf0d6d981931a83cf124a602}{\hyperlink{structb2_fixture_def_aa34ba06bcf0d6d981931a83cf124a602}{b2\-Fixture\-Def} ()}\label{structb2_fixture_def_aa34ba06bcf0d6d981931a83cf124a602}
+
+\begin{DoxyCompactList}\small\item\em The constructor sets the default fixture definition values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classb2_shape}{b2\-Shape} $\ast$ \hyperlink{structb2_fixture_def_a1e41753d89abf3443e7897e2498a3240}{shape}
+\item 
+\hypertarget{structb2_fixture_def_a4f77ef2b2585a40899b61faf53db1093}{void $\ast$ \hyperlink{structb2_fixture_def_a4f77ef2b2585a40899b61faf53db1093}{user\-Data}}\label{structb2_fixture_def_a4f77ef2b2585a40899b61faf53db1093}
+
+\begin{DoxyCompactList}\small\item\em Use this to store application specific fixture data. \end{DoxyCompactList}\item 
+\hypertarget{structb2_fixture_def_a66081c8d0e12d4bdb0b341fb97b46eb6}{float32 \hyperlink{structb2_fixture_def_a66081c8d0e12d4bdb0b341fb97b46eb6}{friction}}\label{structb2_fixture_def_a66081c8d0e12d4bdb0b341fb97b46eb6}
+
+\begin{DoxyCompactList}\small\item\em The friction coefficient, usually in the range \mbox{[}0,1\mbox{]}. \end{DoxyCompactList}\item 
+\hypertarget{structb2_fixture_def_ad7ee26656e4749f7b548d2cc0cf9f168}{float32 \hyperlink{structb2_fixture_def_ad7ee26656e4749f7b548d2cc0cf9f168}{restitution}}\label{structb2_fixture_def_ad7ee26656e4749f7b548d2cc0cf9f168}
+
+\begin{DoxyCompactList}\small\item\em The restitution (elasticity) usually in the range \mbox{[}0,1\mbox{]}. \end{DoxyCompactList}\item 
+\hypertarget{structb2_fixture_def_a6e27d733789a35aa689af2b30a1de0ff}{float32 \hyperlink{structb2_fixture_def_a6e27d733789a35aa689af2b30a1de0ff}{density}}\label{structb2_fixture_def_a6e27d733789a35aa689af2b30a1de0ff}
+
+\begin{DoxyCompactList}\small\item\em The density, usually in kg/m$^\wedge$2. \end{DoxyCompactList}\item 
+bool \hyperlink{structb2_fixture_def_ac8cfcc6208663c92861eaab3b3fdc57e}{is\-Sensor}
+\item 
+\hypertarget{structb2_fixture_def_a4c3e493a13d11ab27fcc2eee9f52fd61}{\hyperlink{structb2_filter}{b2\-Filter} \hyperlink{structb2_fixture_def_a4c3e493a13d11ab27fcc2eee9f52fd61}{filter}}\label{structb2_fixture_def_a4c3e493a13d11ab27fcc2eee9f52fd61}
+
+\begin{DoxyCompactList}\small\item\em Contact filtering data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A fixture definition is used to create a fixture. This class defines an abstract fixture definition. You can reuse fixture definitions safely. 
+
+\subsection{Member Data Documentation}
+\hypertarget{structb2_fixture_def_ac8cfcc6208663c92861eaab3b3fdc57e}{\index{b2\-Fixture\-Def@{b2\-Fixture\-Def}!is\-Sensor@{is\-Sensor}}
+\index{is\-Sensor@{is\-Sensor}!b2FixtureDef@{b2\-Fixture\-Def}}
+\subsubsection[{is\-Sensor}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf b2\-Fixture\-Def\-::is\-Sensor}}}\label{structb2_fixture_def_ac8cfcc6208663c92861eaab3b3fdc57e}
+A sensor shape collects contact information but never generates a collision response. 
+
+Referenced by b2\-Fixture\-Def().
+
+\hypertarget{structb2_fixture_def_a1e41753d89abf3443e7897e2498a3240}{\index{b2\-Fixture\-Def@{b2\-Fixture\-Def}!shape@{shape}}
+\index{shape@{shape}!b2FixtureDef@{b2\-Fixture\-Def}}
+\subsubsection[{shape}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf b2\-Shape}$\ast$ {\bf b2\-Fixture\-Def\-::shape}}}\label{structb2_fixture_def_a1e41753d89abf3443e7897e2498a3240}
+The shape, this must be set. The shape will be cloned, so you can create the shape on the stack. 
+
+Referenced by b2\-Fixture\-Def(), and b2\-Body\-::\-Create\-Fixture().
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Dynamics/b2\-Fixture.\-h\end{DoxyCompactItemize}

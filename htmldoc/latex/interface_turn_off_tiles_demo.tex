@@ -1,0 +1,45 @@
+\hypertarget{interface_turn_off_tiles_demo}{\section{Turn\-Off\-Tiles\-Demo Class Reference}
+\label{interface_turn_off_tiles_demo}\index{Turn\-Off\-Tiles\-Demo@{Turn\-Off\-Tiles\-Demo}}
+}
+Inheritance diagram for Turn\-Off\-Tiles\-Demo\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.000000cm]{interface_turn_off_tiles_demo}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_turn_off_tiles_demo_aa72fdb390e5921f9d43bbf1c4cce48ad}{action\-With\-Duration\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_turn_off_tiles_demo_aa72fdb390e5921f9d43bbf1c4cce48ad}{\index{Turn\-Off\-Tiles\-Demo@{Turn\-Off\-Tiles\-Demo}!action\-With\-Duration\-:@{action\-With\-Duration\-:}}
+\index{action\-With\-Duration\-:@{action\-With\-Duration\-:}!TurnOffTilesDemo@{Turn\-Off\-Tiles\-Demo}}
+\subsubsection[{action\-With\-Duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_turn_off_tiles_demo_aa72fdb390e5921f9d43bbf1c4cce48ad}
+creates the action 
+
+Reimplemented from \hyperlink{class_c_c_action_interval_a08fbc347478cca16ab1fe936a1770dc0}{C\-C\-Action\-Interval}.
+
+
+\begin{DoxyCode}
+                        :(ccTime)t
+{
+        id action = [CCTurnOffTiles actionWithSeed:25 grid:ccg(48,32) duration:
+      t];
+        id back = [action reverse];
+        id delay = [CCDelayTime actionWithDuration:0.5f];
+
+        return [CCSequence actions: action, delay, back, nil];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/tests/Effects\-Test.\-m\end{DoxyCompactItemize}

@@ -1,0 +1,734 @@
+\hypertarget{interface_c_d_audio_manager}{\section{C\-D\-Audio\-Manager Class Reference}
+\label{interface_c_d_audio_manager}\index{C\-D\-Audio\-Manager@{C\-D\-Audio\-Manager}}
+}
+
+
+{\ttfamily \#import $<$C\-D\-Audio\-Manager.\-h$>$}
+
+Inheritance diagram for C\-D\-Audio\-Manager\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.830065cm]{interface_c_d_audio_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_d_audio_manager_ae2d8ef3daed8297ee37cd14b67687407}{init\-:}
+\item 
+\hypertarget{interface_c_d_audio_manager_aeeaf362faad4417ac15d22e0862c1641}{(void) -\/ {\bfseries audio\-Session\-Interrupted}}\label{interface_c_d_audio_manager_aeeaf362faad4417ac15d22e0862c1641}
+
+\item 
+\hypertarget{interface_c_d_audio_manager_a844dd2990cbadb04e35364abed23f690}{(void) -\/ {\bfseries audio\-Session\-Resumed}}\label{interface_c_d_audio_manager_a844dd2990cbadb04e35364abed23f690}
+
+\item 
+\hypertarget{interface_c_d_audio_manager_aa798467094d7ba507839edbeb54b8b56}{(void) -\/ {\bfseries set\-Resign\-Behavior\-:auto\-Handle\-:}}\label{interface_c_d_audio_manager_aa798467094d7ba507839edbeb54b8b56}
+
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_c_d_audio_manager_a5a4df8bc83cbc6e6723196d3d4ec4974}{is\-Device\-Muted}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_c_d_audio_manager_ab664b34e99f6f3e2158f2df910cf3a95}{is\-Other\-Audio\-Playing}
+\item 
+(void) -\/ \hyperlink{interface_c_d_audio_manager_a72fd182d62cc75dfa3701da4a5d97346}{set\-Mode\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_d_audio_manager_a5265cc9a823688a547aa60e8995ba423}{application\-Will\-Resign\-Active}
+\item 
+(void) -\/ \hyperlink{interface_c_d_audio_manager_aa572c7a296c0b2de3564f8da368835ef}{application\-Did\-Become\-Active}
+\item 
+(\hyperlink{interface_c_d_long_audio_source}{C\-D\-Long\-Audio\-Source} $\ast$) -\/ \hyperlink{interface_c_d_audio_manager_af1115f9197d62586dd0d16b440570c01}{audio\-Source\-Load\-:channel\-:}
+\item 
+(\hyperlink{interface_c_d_long_audio_source}{C\-D\-Long\-Audio\-Source} $\ast$) -\/ \hyperlink{interface_c_d_audio_manager_a07c2429b4ae8340c5aefe21c381f102f}{audio\-Source\-For\-Channel\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_d_audio_manager_a0d7307effb3adbf755b1de16d82e7c45}{play\-Background\-Music\-:loop\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_d_audio_manager_a613d13a6227a90dd5a073dbde1ac447b}{preload\-Background\-Music\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_d_audio_manager_a2403abdc32f144a0d57d915db42d35a6}{stop\-Background\-Music}
+\item 
+(void) -\/ \hyperlink{interface_c_d_audio_manager_acbd505494ec2f01e484dfca635b208b8}{pause\-Background\-Music}
+\item 
+(void) -\/ \hyperlink{interface_c_d_audio_manager_a98e99a2b9eabcf89ad7419f6f809c65a}{rewind\-Background\-Music}
+\item 
+(void) -\/ \hyperlink{interface_c_d_audio_manager_a9bcc620677df7b828dd69c951b445062}{resume\-Background\-Music}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_c_d_audio_manager_a3b519950dee5dd8e79c8bbbf3c0f7e26}{is\-Background\-Music\-Playing}
+\item 
+\hypertarget{interface_c_d_audio_manager_a6c3d719386b69c1a5b2d44a83ce4da55}{(void) -\/ {\bfseries set\-Background\-Music\-Completion\-Listener\-:selector\-:}}\label{interface_c_d_audio_manager_a6c3d719386b69c1a5b2d44a83ce4da55}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_c_d_audio_manager}{C\-D\-Audio\-Manager} $\ast$) + \hyperlink{interface_c_d_audio_manager_a757b69bd4a902166b3ffa81ea85ba6e8}{shared\-Manager}
+\item 
+\hypertarget{interface_c_d_audio_manager_a836401e9feed55d2276e880e5aca13fa}{(t\-Audio\-Manager\-State) + {\bfseries shared\-Manager\-State}}\label{interface_c_d_audio_manager_a836401e9feed55d2276e880e5aca13fa}
+
+\item 
+(void) + \hyperlink{interface_c_d_audio_manager_a4565c81bdaefd40cad943440c7a438ab}{configure\-:}
+\item 
+(void) + \hyperlink{interface_c_d_audio_manager_a208d173cd07d3ace248aff4bb16839b9}{init\-Asynchronously\-:}
+\item 
+(void) + \hyperlink{interface_c_d_audio_manager_a0d1e25778a1823456c3d65219a7d0562}{end}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_d_audio_manager_a617ca716e96fdd1e8d481982f9df7df2}{N\-S\-Mutable\-Array $\ast$ {\bfseries audio\-Source\-Channels}}\label{interface_c_d_audio_manager_a617ca716e96fdd1e8d481982f9df7df2}
+
+\item 
+\hypertarget{interface_c_d_audio_manager_a21709238bb6f0c125867e761937dd2fb}{N\-S\-String $\ast$ {\bfseries \-\_\-audio\-Session\-Category}}\label{interface_c_d_audio_manager_a21709238bb6f0c125867e761937dd2fb}
+
+\item 
+\hypertarget{interface_c_d_audio_manager_a6b102ac1022cab5d35d5e486cd527fc6}{B\-O\-O\-L {\bfseries \-\_\-audio\-Was\-Playing\-At\-Startup}}\label{interface_c_d_audio_manager_a6b102ac1022cab5d35d5e486cd527fc6}
+
+\item 
+\hypertarget{interface_c_d_audio_manager_a1ecb484491427443f47cf1d810d20fd4}{t\-Audio\-Manager\-Mode {\bfseries \-\_\-mode}}\label{interface_c_d_audio_manager_a1ecb484491427443f47cf1d810d20fd4}
+
+\item 
+\hypertarget{interface_c_d_audio_manager_a9c9bd976a757b6b4d8851ec6dd03be6e}{S\-E\-L {\bfseries background\-Music\-Completion\-Selector}}\label{interface_c_d_audio_manager_a9c9bd976a757b6b4d8851ec6dd03be6e}
+
+\item 
+\hypertarget{interface_c_d_audio_manager_a96ab8a0fa9e3480356ad4a6173bc3d4c}{id {\bfseries background\-Music\-Completion\-Listener}}\label{interface_c_d_audio_manager_a96ab8a0fa9e3480356ad4a6173bc3d4c}
+
+\item 
+\hypertarget{interface_c_d_audio_manager_a67d4323ad0b7fb59f96375b39c0f3480}{B\-O\-O\-L {\bfseries \-\_\-mute}}\label{interface_c_d_audio_manager_a67d4323ad0b7fb59f96375b39c0f3480}
+
+\item 
+\hypertarget{interface_c_d_audio_manager_a9f6929916f5ba0807262d100045ac512}{B\-O\-O\-L {\bfseries \-\_\-resigned}}\label{interface_c_d_audio_manager_a9f6929916f5ba0807262d100045ac512}
+
+\item 
+\hypertarget{interface_c_d_audio_manager_a69aa8f86be0608f599fead7368fb8133}{B\-O\-O\-L {\bfseries \-\_\-interrupted}}\label{interface_c_d_audio_manager_a69aa8f86be0608f599fead7368fb8133}
+
+\item 
+\hypertarget{interface_c_d_audio_manager_a01b2f1870ef239d99027e67833d24283}{B\-O\-O\-L {\bfseries \-\_\-audio\-Session\-Active}}\label{interface_c_d_audio_manager_a01b2f1870ef239d99027e67833d24283}
+
+\item 
+\hypertarget{interface_c_d_audio_manager_a91ce224485b38f8cbdd32443b73fa72d}{B\-O\-O\-L {\bfseries enabled\-\_\-}}\label{interface_c_d_audio_manager_a91ce224485b38f8cbdd32443b73fa72d}
+
+\item 
+\hypertarget{interface_c_d_audio_manager_aca6d7170a7ac7e6c0b109d3805fc2cb3}{B\-O\-O\-L {\bfseries \-\_\-is\-Observing\-App\-Events}}\label{interface_c_d_audio_manager_aca6d7170a7ac7e6c0b109d3805fc2cb3}
+
+\item 
+\hypertarget{interface_c_d_audio_manager_ad993da9d1c8f07f50ff6e9bc5481f774}{t\-Audio\-Manager\-Resign\-Behavior {\bfseries \-\_\-resign\-Behavior}}\label{interface_c_d_audio_manager_ad993da9d1c8f07f50ff6e9bc5481f774}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_d_audio_manager_a803ed647e9c1e174a5c03ded3b76dd63}{\hyperlink{interface_c_d_sound_engine}{C\-D\-Sound\-Engine} $\ast$ {\bfseries sound\-Engine}}\label{interface_c_d_audio_manager_a803ed647e9c1e174a5c03ded3b76dd63}
+
+\item 
+\hypertarget{interface_c_d_audio_manager_a533f9e39b345dfebf5708f3411cd5484}{\hyperlink{interface_c_d_long_audio_source}{C\-D\-Long\-Audio\-Source} $\ast$ {\bfseries background\-Music}}\label{interface_c_d_audio_manager_a533f9e39b345dfebf5708f3411cd5484}
+
+\item 
+\hypertarget{interface_c_d_audio_manager_aca1dba6de45c7939fa8cec46d2500ece}{B\-O\-O\-L {\bfseries will\-Play\-Background\-Music}}\label{interface_c_d_audio_manager_aca1dba6de45c7939fa8cec46d2500ece}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_d_audio_manager}{C\-D\-Audio\-Manager} manages audio requirements for a game. It provides access to a \hyperlink{interface_c_d_sound_engine}{C\-D\-Sound\-Engine} object for playing sound effects. It provides access to two \hyperlink{interface_c_d_long_audio_source}{C\-D\-Long\-Audio\-Source} object (left and right channel) for playing long duration audio such as background music and narration tracks. Additionally it manages the audio session to take care of things like audio session interruption and interacting with the audio of other apps that are running on the device.
+
+Requirements\-:
+\begin{DoxyItemize}
+\item Firmware\-: O\-S 2.\-2 or greater
+\item Files\-: \hyperlink{interface_c_d_audio_manager}{C\-D\-Audio\-Manager}.$\ast$, Cocos\-Denshion.$\ast$
+\item Frameworks\-: Open\-A\-L, Audio\-Toolbox, A\-V\-Foundation \begin{DoxySince}{Since}
+v0.\-8 
+\end{DoxySince}
+
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_d_audio_manager_aa572c7a296c0b2de3564f8da368835ef}{\index{C\-D\-Audio\-Manager@{C\-D\-Audio\-Manager}!application\-Did\-Become\-Active@{application\-Did\-Become\-Active}}
+\index{application\-Did\-Become\-Active@{application\-Did\-Become\-Active}!CDAudioManager@{C\-D\-Audio\-Manager}}
+\subsubsection[{application\-Did\-Become\-Active}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf application\-Did\-Become\-Active} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_audio_manager_aa572c7a296c0b2de3564f8da368835ef}
+Call if you want to use built in resign behavior but need to do some additional audio processing on become active. 
+\begin{DoxyCode}
+                                    {
+
+        if (self->_resigned) {
+                _resigned = NO;
+                //Reset the mode incase something changed with audio while we
+       were inactive
+                [self setMode:_mode];
+                switch (_resignBehavior) {
+
+                        case kAMRBStopPlay:
+
+                                //Music had been stopped but stop maintains
+       current time
+                                //so playing again will continue from where
+       music was before resign active.
+                                //We check if music can be played because while
+       we were inactive the user might have
+                                //done something that should force music to not
+       play such as starting a track in the iPod
+                                if (self.willPlayBackgroundMusic) {
+                                        for( CDLongAudioSource *audioSource in 
+      audioSourceChannels) {
+                                                if (audioSource->systemPaused) 
+      {
+                                                        [audioSource resume];
+                                                        audioSource->
+      systemPaused = NO;
+                                                }
+                                        }
+                                }
+                                break;
+
+                        default:
+                                break;
+
+                }
+                CDLOGINFO(@"Denshion::CDAudioManager - audio manager handled
+       become active");
+        }
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_audio_manager_a5265cc9a823688a547aa60e8995ba423}{\index{C\-D\-Audio\-Manager@{C\-D\-Audio\-Manager}!application\-Will\-Resign\-Active@{application\-Will\-Resign\-Active}}
+\index{application\-Will\-Resign\-Active@{application\-Will\-Resign\-Active}!CDAudioManager@{C\-D\-Audio\-Manager}}
+\subsubsection[{application\-Will\-Resign\-Active}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf application\-Will\-Resign\-Active} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_audio_manager_a5265cc9a823688a547aa60e8995ba423}
+Call if you want to use built in resign behavior but need to do some additional audio processing on resign active. 
+\begin{DoxyCode}
+                                     {
+        self->_resigned = YES;
+
+        //Set the audio sesssion to one that allows sharing so that other audio
+       won't be clobbered on resume
+        [self audioSessionSetCategory:AVAudioSessionCategoryAmbient];
+
+        switch (_resignBehavior) {
+
+                case kAMRBStopPlay:
+
+                        for( CDLongAudioSource *audioSource in 
+      audioSourceChannels) {
+                                if (audioSource.isPlaying) {
+                                        audioSource->systemPaused = YES;
+                                        audioSource->systemPauseLocation = 
+      audioSource.audioSourcePlayer.currentTime;
+                                        [audioSource stop];
+                                } else {
+                                        //Music is either paused or stopped, if
+       it is paused it will be restarted
+                                        //by OS so we will stop it.
+                                        audioSource->systemPaused = NO;
+                                        [audioSource stop];
+                                }
+                        }
+                        break;
+
+                case kAMRBStop:
+                        //Stop music regardless of whether it is playing or not
+       because if it was paused
+                        //then the OS would resume it
+                        for( CDLongAudioSource *audioSource in 
+      audioSourceChannels) {
+                                [audioSource stop];
+                        }
+
+                default:
+                        break;
+
+        }
+        CDLOGINFO(@"Denshion::CDAudioManager - handled resign active");
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_audio_manager_a07c2429b4ae8340c5aefe21c381f102f}{\index{C\-D\-Audio\-Manager@{C\-D\-Audio\-Manager}!audio\-Source\-For\-Channel\-:@{audio\-Source\-For\-Channel\-:}}
+\index{audio\-Source\-For\-Channel\-:@{audio\-Source\-For\-Channel\-:}!CDAudioManager@{C\-D\-Audio\-Manager}}
+\subsubsection[{audio\-Source\-For\-Channel\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-D\-Long\-Audio\-Source} $\ast$) {\bf audio\-Source\-For\-Channel\-:} 
+\begin{DoxyParamCaption}
+\item[{(t\-Audio\-Source\-Channel)}]{channel}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_audio_manager_a07c2429b4ae8340c5aefe21c381f102f}
+Retrieves the audio source for the specified channel 
+
+Referenced by audio\-Source\-Load\-:channel\-:, init\-:, and The\-Audio\-Code\-::test\-Eight\-:.
+
+
+\begin{DoxyCode}
+                                           :(tAudioSourceChannel) channel
+{
+        return (CDLongAudioSource*)[audioSourceChannels objectAtIndex:channel];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_audio_manager_af1115f9197d62586dd0d16b440570c01}{\index{C\-D\-Audio\-Manager@{C\-D\-Audio\-Manager}!audio\-Source\-Load\-:channel\-:@{audio\-Source\-Load\-:channel\-:}}
+\index{audio\-Source\-Load\-:channel\-:@{audio\-Source\-Load\-:channel\-:}!CDAudioManager@{C\-D\-Audio\-Manager}}
+\subsubsection[{audio\-Source\-Load\-:channel\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-D\-Long\-Audio\-Source} $\ast$) audio\-Source\-Load\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{file\-Path}
+\item[{channel:(t\-Audio\-Source\-Channel)}]{channel}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_audio_manager_af1115f9197d62586dd0d16b440570c01}
+Loads the data from the specified file path to the channel's audio source 
+\begin{DoxyCode}
+                                     :(NSString*) filePath channel:(
+      tAudioSourceChannel) channel
+{
+        CDLongAudioSource *audioSource = [self audioSourceForChannel:channel];
+        if (audioSource) {
+                [audioSource load:filePath];
+        }
+        return audioSource;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_audio_manager_a4565c81bdaefd40cad943440c7a438ab}{\index{C\-D\-Audio\-Manager@{C\-D\-Audio\-Manager}!configure\-:@{configure\-:}}
+\index{configure\-:@{configure\-:}!CDAudioManager@{C\-D\-Audio\-Manager}}
+\subsubsection[{configure\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf configure\-:} 
+\begin{DoxyParamCaption}
+\item[{(t\-Audio\-Manager\-Mode)}]{mode}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_audio_manager_a4565c81bdaefd40cad943440c7a438ab}
+Configures the shared singleton with a mode 
+
+Referenced by init\-Asynchronously\-:.
+
+
+\begin{DoxyCode}
+                  : (tAudioManagerMode) mode {
+        configuredMode = mode;
+        configured = TRUE;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_audio_manager_a0d1e25778a1823456c3d65219a7d0562}{\index{C\-D\-Audio\-Manager@{C\-D\-Audio\-Manager}!end@{end}}
+\index{end@{end}!CDAudioManager@{C\-D\-Audio\-Manager}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf end} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_audio_manager_a0d1e25778a1823456c3d65219a7d0562}
+Shuts down the shared audio manager instance so that it can be reinitialised 
+
+Referenced by Simple\-Audio\-Engine\-::end.
+
+
+\begin{DoxyCode}
+            {
+        [sharedManager release];
+        sharedManager = nil;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_audio_manager_ae2d8ef3daed8297ee37cd14b67687407}{\index{C\-D\-Audio\-Manager@{C\-D\-Audio\-Manager}!init\-:@{init\-:}}
+\index{init\-:@{init\-:}!CDAudioManager@{C\-D\-Audio\-Manager}}
+\subsubsection[{init\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-:} 
+\begin{DoxyParamCaption}
+\item[{(t\-Audio\-Manager\-Mode)}]{mode}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_audio_manager_ae2d8ef3daed8297ee37cd14b67687407}
+Initializes the engine synchronously with a mode, channel definition and a total number of channels 
+\begin{DoxyCode}
+           : (tAudioManagerMode) mode {
+        if ((self = [super init])) {
+
+                //Initialise the audio session
+                AVAudioSession* session = [AVAudioSession sharedInstance];
+                session.delegate = self;
+
+                _mode = mode;
+                backgroundMusicCompletionSelector = nil;
+                _isObservingAppEvents = FALSE;
+                _mute = NO;
+                _resigned = NO;
+                _interrupted = NO;
+                enabled_ = YES;
+                _audioSessionActive = NO;
+                [self setMode:mode];
+                soundEngine = [[CDSoundEngine alloc] init];
+
+                //Set up audioSource channels
+                audioSourceChannels = [[NSMutableArray alloc] init];
+                CDLongAudioSource *leftChannel = [[CDLongAudioSource alloc] 
+      init];
+                leftChannel.backgroundMusic = YES;
+                CDLongAudioSource *rightChannel = [[CDLongAudioSource alloc] 
+      init];
+                rightChannel.backgroundMusic = NO;
+                [audioSourceChannels insertObject:leftChannel atIndex:kASC_Left
+      ];
+                [audioSourceChannels insertObject:rightChannel atIndex:
+      kASC_Right];
+                [leftChannel release];
+                [rightChannel release];
+                //Used to support legacy APIs
+                backgroundMusic = [self audioSourceForChannel:
+      BACKGROUND_MUSIC_CHANNEL];
+                backgroundMusic.delegate = self;
+
+                //Add handler for bad al context messages, these are posted by
+       the sound engine.
+                [[NSNotificationCenter defaultCenter] addObserver:self  
+      selector:@selector(badAlContextHandler) name:kCDN_BadAlContext object:nil];
+
+        }
+        return self;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_audio_manager_a208d173cd07d3ace248aff4bb16839b9}{\index{C\-D\-Audio\-Manager@{C\-D\-Audio\-Manager}!init\-Asynchronously\-:@{init\-Asynchronously\-:}}
+\index{init\-Asynchronously\-:@{init\-Asynchronously\-:}!CDAudioManager@{C\-D\-Audio\-Manager}}
+\subsubsection[{init\-Asynchronously\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf init\-Asynchronously\-:} 
+\begin{DoxyParamCaption}
+\item[{(t\-Audio\-Manager\-Mode)}]{mode}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_audio_manager_a208d173cd07d3ace248aff4bb16839b9}
+Initializes the engine asynchronously with a mode
+
+Call this to set up audio manager asynchronously. Initialisation is finished when shared\-Manager\-State == k\-A\-M\-State\-Initialised 
+\begin{DoxyCode}
+                           : (tAudioManagerMode) mode {
+        @synchronized(self) {
+                if (_sharedManagerState == kAMStateUninitialised) {
+                        _sharedManagerState = kAMStateInitialising;
+                        [CDAudioManager configure:mode];
+                        CDAsynchInitialiser *initOp = [[[CDAsynchInitialiser 
+      alloc] init] autorelease];
+                        NSOperationQueue *opQ = [[[NSOperationQueue alloc] init
+      ] autorelease];
+                        [opQ addOperation:initOp];
+                }
+        }
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_audio_manager_a3b519950dee5dd8e79c8bbbf3c0f7e26}{\index{C\-D\-Audio\-Manager@{C\-D\-Audio\-Manager}!is\-Background\-Music\-Playing@{is\-Background\-Music\-Playing}}
+\index{is\-Background\-Music\-Playing@{is\-Background\-Music\-Playing}!CDAudioManager@{C\-D\-Audio\-Manager}}
+\subsubsection[{is\-Background\-Music\-Playing}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) {\bf is\-Background\-Music\-Playing} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_audio_manager_a3b519950dee5dd8e79c8bbbf3c0f7e26}
+Returns whether or not the background music is playing 
+
+Referenced by Simple\-Audio\-Engine\-::is\-Background\-Music\-Playing.
+
+
+\begin{DoxyCode}
+                                 {
+        return [self.backgroundMusic isPlaying];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_audio_manager_a5a4df8bc83cbc6e6723196d3d4ec4974}{\index{C\-D\-Audio\-Manager@{C\-D\-Audio\-Manager}!is\-Device\-Muted@{is\-Device\-Muted}}
+\index{is\-Device\-Muted@{is\-Device\-Muted}!CDAudioManager@{C\-D\-Audio\-Manager}}
+\subsubsection[{is\-Device\-Muted}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) {\bf is\-Device\-Muted} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_audio_manager_a5a4df8bc83cbc6e6723196d3d4ec4974}
+Returns true is audio is muted at a hardware level e.\-g user has ringer switch set to off 
+\begin{DoxyCode}
+                      {
+
+#if TARGET_IPHONE_SIMULATOR
+        //Calling audio route stuff on the simulator causes problems
+        return NO;
+#else
+        CFStringRef newAudioRoute;
+        UInt32 propertySize = sizeof (CFStringRef);
+
+        AudioSessionGetProperty (
+                                                         
+      kAudioSessionProperty_AudioRoute,
+                                                         &propertySize,
+                                                         &newAudioRoute
+                                                         );
+
+        if (newAudioRoute == NULL) {
+                //Don't expect this to happen but playing safe otherwise a null
+       in the CFStringCompare will cause a crash
+                return YES;
+        } else {
+                CFComparisonResult newDeviceIsMuted =   CFStringCompare (
+                                                                                                                                
+       newAudioRoute,
+                                                                                                                                
+       (CFStringRef) @"",
+                                                                                                                                
+       0
+                                                                                                                                
+       );
+
+                return (newDeviceIsMuted == kCFCompareEqualTo);
+        }
+#endif
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_audio_manager_ab664b34e99f6f3e2158f2df910cf3a95}{\index{C\-D\-Audio\-Manager@{C\-D\-Audio\-Manager}!is\-Other\-Audio\-Playing@{is\-Other\-Audio\-Playing}}
+\index{is\-Other\-Audio\-Playing@{is\-Other\-Audio\-Playing}!CDAudioManager@{C\-D\-Audio\-Manager}}
+\subsubsection[{is\-Other\-Audio\-Playing}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) {\bf is\-Other\-Audio\-Playing} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_audio_manager_ab664b34e99f6f3e2158f2df910cf3a95}
+Returns true if another app is playing audio such as the i\-Pod music player 
+
+Referenced by set\-Mode\-:.
+
+
+\begin{DoxyCode}
+                            {
+        UInt32 isPlaying = 0;
+        UInt32 varSize = sizeof(isPlaying);
+        AudioSessionGetProperty (kAudioSessionProperty_OtherAudioIsPlaying, &
+      varSize, &isPlaying);
+        return (isPlaying != 0);
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_audio_manager_acbd505494ec2f01e484dfca635b208b8}{\index{C\-D\-Audio\-Manager@{C\-D\-Audio\-Manager}!pause\-Background\-Music@{pause\-Background\-Music}}
+\index{pause\-Background\-Music@{pause\-Background\-Music}!CDAudioManager@{C\-D\-Audio\-Manager}}
+\subsubsection[{pause\-Background\-Music}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf pause\-Background\-Music} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_audio_manager_acbd505494ec2f01e484dfca635b208b8}
+Pauses the background music 
+
+Referenced by Simple\-Audio\-Engine\-::pause\-Background\-Music.
+
+
+\begin{DoxyCode}
+{
+        [self.backgroundMusic pause];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_audio_manager_a0d7307effb3adbf755b1de16d82e7c45}{\index{C\-D\-Audio\-Manager@{C\-D\-Audio\-Manager}!play\-Background\-Music\-:loop\-:@{play\-Background\-Music\-:loop\-:}}
+\index{play\-Background\-Music\-:loop\-:@{play\-Background\-Music\-:loop\-:}!CDAudioManager@{C\-D\-Audio\-Manager}}
+\subsubsection[{play\-Background\-Music\-:loop\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) play\-Background\-Music\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{file\-Path}
+\item[{loop:(B\-O\-O\-L)}]{loop}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_audio_manager_a0d7307effb3adbf755b1de16d82e7c45}
+Plays music in background. The music can be looped or not It is recommended to use .aac files as background music since they are decoded by the device (hardware). 
+
+Referenced by Simple\-Audio\-Engine\-::play\-Background\-Music\-:, and Simple\-Audio\-Engine\-::play\-Background\-Music\-:loop\-:.
+
+
+\begin{DoxyCode}
+                           :(NSString*) filePath loop:(BOOL) loop
+{
+        [self.backgroundMusic load:filePath];
+
+        if (loop) {
+                [self.backgroundMusic setNumberOfLoops:-1];
+        } else {
+                [self.backgroundMusic setNumberOfLoops:0];
+        }
+
+        if (!willPlayBackgroundMusic || _mute) {
+                CDLOGINFO(@"Denshion::CDAudioManager - play bgm aborted because
+       audio is not exclusive or sound is muted");
+                return;
+        }
+
+        [self.backgroundMusic play];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_audio_manager_a613d13a6227a90dd5a073dbde1ac447b}{\index{C\-D\-Audio\-Manager@{C\-D\-Audio\-Manager}!preload\-Background\-Music\-:@{preload\-Background\-Music\-:}}
+\index{preload\-Background\-Music\-:@{preload\-Background\-Music\-:}!CDAudioManager@{C\-D\-Audio\-Manager}}
+\subsubsection[{preload\-Background\-Music\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf preload\-Background\-Music\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{file\-Path}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_audio_manager_a613d13a6227a90dd5a073dbde1ac447b}
+Preloads a background music 
+
+Referenced by Simple\-Audio\-Engine\-::preload\-Background\-Music\-:.
+
+
+\begin{DoxyCode}
+                              :(NSString*) filePath
+{
+        [self.backgroundMusic load:filePath];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_audio_manager_a9bcc620677df7b828dd69c951b445062}{\index{C\-D\-Audio\-Manager@{C\-D\-Audio\-Manager}!resume\-Background\-Music@{resume\-Background\-Music}}
+\index{resume\-Background\-Music@{resume\-Background\-Music}!CDAudioManager@{C\-D\-Audio\-Manager}}
+\subsubsection[{resume\-Background\-Music}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf resume\-Background\-Music} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_audio_manager_a9bcc620677df7b828dd69c951b445062}
+Resumes playing the background music 
+
+Referenced by Simple\-Audio\-Engine\-::resume\-Background\-Music.
+
+
+\begin{DoxyCode}
+{
+        if (!willPlayBackgroundMusic || _mute) {
+                CDLOGINFO(@"Denshion::CDAudioManager - resume bgm aborted
+       because audio is not exclusive or sound is muted");
+                return;
+        }
+
+        [self.backgroundMusic resume];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_audio_manager_a98e99a2b9eabcf89ad7419f6f809c65a}{\index{C\-D\-Audio\-Manager@{C\-D\-Audio\-Manager}!rewind\-Background\-Music@{rewind\-Background\-Music}}
+\index{rewind\-Background\-Music@{rewind\-Background\-Music}!CDAudioManager@{C\-D\-Audio\-Manager}}
+\subsubsection[{rewind\-Background\-Music}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf rewind\-Background\-Music} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_audio_manager_a98e99a2b9eabcf89ad7419f6f809c65a}
+Rewinds the background music 
+
+Referenced by Simple\-Audio\-Engine\-::rewind\-Background\-Music.
+
+
+\begin{DoxyCode}
+{
+        [self.backgroundMusic rewind];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_audio_manager_a72fd182d62cc75dfa3701da4a5d97346}{\index{C\-D\-Audio\-Manager@{C\-D\-Audio\-Manager}!set\-Mode\-:@{set\-Mode\-:}}
+\index{set\-Mode\-:@{set\-Mode\-:}!CDAudioManager@{C\-D\-Audio\-Manager}}
+\subsubsection[{set\-Mode\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf set\-Mode\-:} 
+\begin{DoxyParamCaption}
+\item[{(t\-Audio\-Manager\-Mode)}]{mode}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_audio_manager_a72fd182d62cc75dfa3701da4a5d97346}
+Sets the way the audio manager interacts with the operating system such as whether it shares output with other apps or obeys the mute switch 
+
+Referenced by application\-Did\-Become\-Active, and init\-:.
+
+
+\begin{DoxyCode}
+               :(tAudioManagerMode) mode {
+
+        _mode = mode;
+        switch (_mode) {
+
+                case kAMM_FxOnly:
+                        //Share audio with other app
+                        CDLOGINFO(@"Denshion::CDAudioManager - Audio will be
+       shared");
+                        //_audioSessionCategory =
+       kAudioSessionCategory_AmbientSound;
+                        _audioSessionCategory = AVAudioSessionCategoryAmbient;
+                        willPlayBackgroundMusic = NO;
+                        break;
+
+                case kAMM_FxPlusMusic:
+                        //Use audio exclusively - if other audio is playing it
+       will be stopped
+                        CDLOGINFO(@"Denshion::CDAudioManager -  Audio will be
+       exclusive");
+                        //_audioSessionCategory =
+       kAudioSessionCategory_SoloAmbientSound;
+                        _audioSessionCategory = 
+      AVAudioSessionCategorySoloAmbient;
+                        willPlayBackgroundMusic = YES;
+                        break;
+
+                case kAMM_MediaPlayback:
+                        //Use audio exclusively, ignore mute switch and sleep
+                        CDLOGINFO(@"Denshion::CDAudioManager -  Media playback
+       mode, audio will be exclusive");
+                        //_audioSessionCategory =
+       kAudioSessionCategory_MediaPlayback;
+                        _audioSessionCategory = AVAudioSessionCategoryPlayback;
+                        willPlayBackgroundMusic = YES;
+                        break;
+
+                case kAMM_PlayAndRecord:
+                        //Use audio exclusively, ignore mute switch and sleep,
+       has inputs and outputs
+                        CDLOGINFO(@"Denshion::CDAudioManager -  Play and record
+       mode, audio will be exclusive");
+                        //_audioSessionCategory =
+       kAudioSessionCategory_PlayAndRecord;
+                        _audioSessionCategory = 
+      AVAudioSessionCategoryPlayAndRecord;
+                        willPlayBackgroundMusic = YES;
+                        break;
+
+                default:
+                        //kAudioManagerFxPlusMusicIfNoOtherAudio
+                        if ([self isOtherAudioPlaying]) {
+                                CDLOGINFO(@"Denshion::CDAudioManager - Other
+       audio is playing audio will be shared");
+                                //_audioSessionCategory =
+       kAudioSessionCategory_AmbientSound;
+                                _audioSessionCategory = 
+      AVAudioSessionCategoryAmbient;
+                                willPlayBackgroundMusic = NO;
+                        } else {
+                                CDLOGINFO(@"Denshion::CDAudioManager - Other
+       audio is not playing audio will be exclusive");
+                                //_audioSessionCategory =
+       kAudioSessionCategory_SoloAmbientSound;
+                                _audioSessionCategory = 
+      AVAudioSessionCategorySoloAmbient;
+                                willPlayBackgroundMusic = YES;
+                        }
+
+                        break;
+        }
+
+        [self audioSessionSetCategory:_audioSessionCategory];
+
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_audio_manager_a757b69bd4a902166b3ffa81ea85ba6e8}{\index{C\-D\-Audio\-Manager@{C\-D\-Audio\-Manager}!shared\-Manager@{shared\-Manager}}
+\index{shared\-Manager@{shared\-Manager}!CDAudioManager@{C\-D\-Audio\-Manager}}
+\subsubsection[{shared\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf C\-D\-Audio\-Manager} $\ast$) {\bf shared\-Manager} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_audio_manager_a757b69bd4a902166b3ffa81ea85ba6e8}
+Returns the shared singleton 
+
+Referenced by end, and The\-Audio\-Code\-::test\-Eight\-:.
+
+
+\begin{DoxyCode}
+{
+        @synchronized(self)     {
+                if (!sharedManager) {
+                        if (!configured) {
+                                //Set defaults here
+                                configuredMode = kAMM_FxPlusMusicIfNoOtherAudio
+      ;
+                        }
+                        sharedManager = [[CDAudioManager alloc] init:
+      configuredMode];
+                        _sharedManagerState = kAMStateInitialised;//This is
+       only really relevant when using asynchronous initialisation
+                        [[NSNotificationCenter defaultCenter] 
+      postNotificationName:kCDN_AudioManagerInitialised object:nil];
+                }
+        }
+        return sharedManager;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_d_audio_manager_a2403abdc32f144a0d57d915db42d35a6}{\index{C\-D\-Audio\-Manager@{C\-D\-Audio\-Manager}!stop\-Background\-Music@{stop\-Background\-Music}}
+\index{stop\-Background\-Music@{stop\-Background\-Music}!CDAudioManager@{C\-D\-Audio\-Manager}}
+\subsubsection[{stop\-Background\-Music}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf stop\-Background\-Music} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_audio_manager_a2403abdc32f144a0d57d915db42d35a6}
+Stops playing the background music 
+
+Referenced by Simple\-Audio\-Engine\-::stop\-Background\-Music.
+
+
+\begin{DoxyCode}
+{
+        [self.backgroundMusic stop];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/\-Cocos\-Denshion/\-Cocos\-Denshion/C\-D\-Audio\-Manager.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/\-Cocos\-Denshion/\-Cocos\-Denshion/C\-D\-Audio\-Manager.\-m\end{DoxyCompactItemize}

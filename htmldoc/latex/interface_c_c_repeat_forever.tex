@@ -1,0 +1,86 @@
+\hypertarget{interface_c_c_repeat_forever}{\section{C\-C\-Repeat\-Forever Class Reference}
+\label{interface_c_c_repeat_forever}\index{C\-C\-Repeat\-Forever@{C\-C\-Repeat\-Forever}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action.\-h$>$}
+
+Inheritance diagram for C\-C\-Repeat\-Forever\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_c_c_repeat_forever}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_repeat_forever_a53dc06b36b3ff4550dcad1ad3ad96923}{init\-With\-Action\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_repeat_forever_a411554b9ebf11782289f30032cf8f2e7}{action\-With\-Action\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_repeat_forever_a3352f652ee5529df550b4291bc823554}{\hyperlink{class_c_c_action_interval}{C\-C\-Action\-Interval} $\ast$ {\bfseries inner\-Action\-\_\-}}\label{interface_c_c_repeat_forever_a3352f652ee5529df550b4291bc823554}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_c_action_interval}{C\-C\-Action\-Interval} $\ast$ \hyperlink{interface_c_c_repeat_forever_a33ab7f675a5d722f903386ab2279ccd1}{inner\-Action}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Repeats an action for ever. To repeat the an action for a limited number of times use the Repeat action. \begin{DoxyWarning}{Warning}
+This action can't be Sequence-\/able because it is not an Interval\-Action 
+\end{DoxyWarning}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_repeat_forever_a411554b9ebf11782289f30032cf8f2e7}{\index{C\-C\-Repeat\-Forever@{C\-C\-Repeat\-Forever}!action\-With\-Action\-:@{action\-With\-Action\-:}}
+\index{action\-With\-Action\-:@{action\-With\-Action\-:}!CCRepeatForever@{C\-C\-Repeat\-Forever}}
+\subsubsection[{action\-With\-Action\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Action\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Action\-Interval}$\ast$)}]{action}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_repeat_forever_a411554b9ebf11782289f30032cf8f2e7}
+creates the action 
+\begin{DoxyCode}
+                      : (CCActionInterval*) action
+{
+        return [[[self alloc] initWithAction: action] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_repeat_forever_a53dc06b36b3ff4550dcad1ad3ad96923}{\index{C\-C\-Repeat\-Forever@{C\-C\-Repeat\-Forever}!init\-With\-Action\-:@{init\-With\-Action\-:}}
+\index{init\-With\-Action\-:@{init\-With\-Action\-:}!CCRepeatForever@{C\-C\-Repeat\-Forever}}
+\subsubsection[{init\-With\-Action\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Action\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Action\-Interval}$\ast$)}]{action}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_repeat_forever_a53dc06b36b3ff4550dcad1ad3ad96923}
+initializes the action 
+\begin{DoxyCode}
+                    : (CCActionInterval*) action
+{
+        if( (self=[super init]) )
+                self.innerAction = action;
+
+        return self;
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_repeat_forever_a33ab7f675a5d722f903386ab2279ccd1}{\index{C\-C\-Repeat\-Forever@{C\-C\-Repeat\-Forever}!inner\-Action@{inner\-Action}}
+\index{inner\-Action@{inner\-Action}!CCRepeatForever@{C\-C\-Repeat\-Forever}}
+\subsubsection[{inner\-Action}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Action\-Interval}$\ast$) {\bf inner\-Action}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}\label{interface_c_c_repeat_forever_a33ab7f675a5d722f903386ab2279ccd1}
+Inner action 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action.\-m\end{DoxyCompactItemize}

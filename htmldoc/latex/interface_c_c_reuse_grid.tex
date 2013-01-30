@@ -1,0 +1,72 @@
+\hypertarget{interface_c_c_reuse_grid}{\section{C\-C\-Reuse\-Grid Class Reference}
+\label{interface_c_c_reuse_grid}\index{C\-C\-Reuse\-Grid@{C\-C\-Reuse\-Grid}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Grid.\-h$>$}
+
+Inheritance diagram for C\-C\-Reuse\-Grid\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_c_c_reuse_grid}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_reuse_grid_a91042d8c3c96b4c1da6a60aaa175d046}{init\-With\-Times\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_reuse_grid_a30e9c88c208e824c2343173d7b637de8}{action\-With\-Times\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_reuse_grid_a896b2a680bdb10447a2d599cfe5a6be2}{int {\bfseries t\-\_\-}}\label{interface_c_c_reuse_grid_a896b2a680bdb10447a2d599cfe5a6be2}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_reuse_grid}{C\-C\-Reuse\-Grid} action 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_reuse_grid_a30e9c88c208e824c2343173d7b637de8}{\index{C\-C\-Reuse\-Grid@{C\-C\-Reuse\-Grid}!action\-With\-Times\-:@{action\-With\-Times\-:}}
+\index{action\-With\-Times\-:@{action\-With\-Times\-:}!CCReuseGrid@{C\-C\-Reuse\-Grid}}
+\subsubsection[{action\-With\-Times\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Times\-:} 
+\begin{DoxyParamCaption}
+\item[{(int)}]{times}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_reuse_grid_a30e9c88c208e824c2343173d7b637de8}
+creates an action with the number of times that the current grid will be reused 
+\begin{DoxyCode}
+                    :(int)times
+{
+        return [[[self alloc] initWithTimes:times ] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_reuse_grid_a91042d8c3c96b4c1da6a60aaa175d046}{\index{C\-C\-Reuse\-Grid@{C\-C\-Reuse\-Grid}!init\-With\-Times\-:@{init\-With\-Times\-:}}
+\index{init\-With\-Times\-:@{init\-With\-Times\-:}!CCReuseGrid@{C\-C\-Reuse\-Grid}}
+\subsubsection[{init\-With\-Times\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Times\-:} 
+\begin{DoxyParamCaption}
+\item[{(int)}]{times}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_reuse_grid_a91042d8c3c96b4c1da6a60aaa175d046}
+initializes an action with the number of times that the current grid will be reused 
+\begin{DoxyCode}
+                  :(int)times
+{
+        if ( (self = [super init]) )
+                t_ = times;
+
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Grid.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Grid.\-m\end{DoxyCompactItemize}

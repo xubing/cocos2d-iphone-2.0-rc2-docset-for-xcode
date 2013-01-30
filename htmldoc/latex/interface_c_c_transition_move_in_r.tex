@@ -1,0 +1,48 @@
+\hypertarget{interface_c_c_transition_move_in_r}{\section{C\-C\-Transition\-Move\-In\-R Class Reference}
+\label{interface_c_c_transition_move_in_r}\index{C\-C\-Transition\-Move\-In\-R@{C\-C\-Transition\-Move\-In\-R}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Transition.\-h$>$}
+
+Inheritance diagram for C\-C\-Transition\-Move\-In\-R\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{interface_c_c_transition_move_in_r}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_c_c_transition_move_in_r_a69f36ede071429dc72407b960d4ac5e5}{init\-Scenes}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_transition_move_in_r}{C\-C\-Transition\-Move\-In\-R}\-: Move in from to the right the incoming scene. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_transition_move_in_r_a69f36ede071429dc72407b960d4ac5e5}{\index{C\-C\-Transition\-Move\-In\-R@{C\-C\-Transition\-Move\-In\-R}!init\-Scenes@{init\-Scenes}}
+\index{init\-Scenes@{init\-Scenes}!CCTransitionMoveInR@{C\-C\-Transition\-Move\-In\-R}}
+\subsubsection[{init\-Scenes}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf init\-Scenes} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_transition_move_in_r_a69f36ede071429dc72407b960d4ac5e5}
+initializes the scenes 
+
+Reimplemented from \hyperlink{interface_c_c_transition_move_in_l_a0cb17195dedf0a4778ede1324068fdaf}{C\-C\-Transition\-Move\-In\-L}.
+
+
+\begin{DoxyCode}
+{
+        CGSize s = [[CCDirector sharedDirector] winSize];
+        [inScene_ setPosition: ccp( s.width,0) ];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Transition.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Transition.\-m\end{DoxyCompactItemize}

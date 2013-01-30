@@ -1,0 +1,1864 @@
+\hypertarget{class_c_c_node}{\section{C\-C\-Node Class Reference}
+\label{class_c_c_node}\index{C\-C\-Node@{C\-C\-Node}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Node.\-h$>$}
+
+Inheritance diagram for C\-C\-Node\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_c_c_node}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{class_c_c_node_ad789cad83aca65c130abd4452d1bc081}{init}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_aa63ddd790457e6a2f218aacecaf31462}{on\-Enter}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_adc2725d4b53407cfa7ee901e6e4f7002}{on\-Enter\-Transition\-Did\-Finish}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_af5b51ab87354940964d910e3a2f45516}{on\-Exit}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_a3f92e1e9244df87644efbb7f6d0f7e0f}{on\-Exit\-Transition\-Did\-Start}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_afa69e08c50aa394c748dcb585cbcb4df}{add\-Child\-:}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_a6cebb9eeff360d832360a4f5efbbfa30}{add\-Child\-:z\-:}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_ab3e142f4e18581046f811ae1489dd0c9}{add\-Child\-:z\-:tag\-:}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_ad2d43e047941be667b57c71e1389bede}{remove\-From\-Parent}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_a0d4e615f688458c74001acf10f0ae011}{remove\-From\-Parent\-And\-Cleanup\-:}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_a8f8badc448b36ae3d6b92b248b5a53a5}{remove\-Child\-:}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_a409c8fa79c0c6f26c7d84145f75d78ad}{remove\-Child\-:cleanup\-:}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_a19ee0f645690265a85110b8b8ed793fa}{remove\-Child\-By\-Tag\-:}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_aaea41be2508780d5870771ccd797fe54}{remove\-Child\-By\-Tag\-:cleanup\-:}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_a906f6067b0bedf421619c60f93f8e982}{remove\-All\-Children}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_a2d013deef5988b6c01fe5097147e02f3}{remove\-All\-Children\-With\-Cleanup\-:}
+\item 
+(\hyperlink{class_c_c_node}{C\-C\-Node} $\ast$) -\/ \hyperlink{class_c_c_node_ae6c33c3f1dc67730a492ac8b99efa151}{get\-Child\-By\-Tag\-:}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_ab35e8e10f73eb3ac074f5ef0cc087e78}{reorder\-Child\-:z\-:}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_a9aa8035fd4681485a5166590115d7e49}{sort\-All\-Children}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_ad7d1aee7e97990e049bb380a1a63ad26}{cleanup}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_ad1310bc9561e8ceaa15d37772da4e8c9}{draw}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_a36d86c671de265dc7e2a9f7a051d2428}{visit}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_a28462e8ba70bb61dc4f301b1180ec7e5}{transform}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_ab953e7552e84c54e2cb445ebc629e983}{transform\-Ancestors}
+\item 
+(C\-G\-Rect) -\/ \hyperlink{class_c_c_node_a22b9004c0baaffd656a46d0840e1c934}{bounding\-Box}
+\item 
+(\hyperlink{interface_c_c_action}{C\-C\-Action} $\ast$) -\/ \hyperlink{class_c_c_node_afba9468e339b4222bce6705cd328351d}{run\-Action\-:}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_a24f2916259df943e3f13cdd702673962}{stop\-All\-Actions}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_a6d2592ff2d9c559f25b4b1a6c01a5dc8}{stop\-Action\-:}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_a5e446f4095835d4a1d5a497fa7d9c338}{stop\-Action\-By\-Tag\-:}
+\item 
+(\hyperlink{interface_c_c_action}{C\-C\-Action} $\ast$) -\/ \hyperlink{class_c_c_node_a7100667a2dd3d9f6f421001afc9f734f}{get\-Action\-By\-Tag\-:}
+\item 
+(N\-S\-U\-Integer) -\/ \hyperlink{class_c_c_node_a83604b800f210921e8b8d6d478d98299}{number\-Of\-Running\-Actions}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_a3b9fd5b63a2f3e3ec56e40e13994fba7}{schedule\-Update}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_a3abe343042d72b5bff61ee5d43f4e651}{schedule\-Update\-With\-Priority\-:}
+\item 
+\hypertarget{class_c_c_node_aa076e0ef43527bd97e5a32512d52e12a}{(void) -\/ {\bfseries unschedule\-Update}}\label{class_c_c_node_aa076e0ef43527bd97e5a32512d52e12a}
+
+\item 
+(void) -\/ \hyperlink{class_c_c_node_afe99d609f17c4c849e4543805ffeceab}{schedule\-:}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_a7e0c230d398bba56d690e025544cb745}{schedule\-:interval\-:}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_ae12c910d6f81e4734aa575d70b3d4d45}{schedule\-:interval\-:repeat\-:delay\-:}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_ade03a2eb49bdf2683e8aee8dcc17c7b0}{schedule\-Once\-:delay\-:}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_a0226f1400d9401dc6b3d392e4d2d081e}{unschedule\-:}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_ae7e3b84d0a37ce086f1ca383302e53d2}{unschedule\-All\-Selectors}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_addb189bc4c6130cc5061f736d9b2fbe5}{resume\-Scheduler\-And\-Actions}
+\item 
+(void) -\/ \hyperlink{class_c_c_node_aea76a02e08a52a43dd3b0b7f9c5e4381}{pause\-Scheduler\-And\-Actions}
+\item 
+\hypertarget{class_c_c_node_a9c166dc62e7ad0ca7dee98c3e3221a1c}{(void) -\/ {\bfseries update\-:}}\label{class_c_c_node_a9c166dc62e7ad0ca7dee98c3e3221a1c}
+
+\item 
+(C\-G\-Affine\-Transform) -\/ \hyperlink{class_c_c_node_a2206d591f9ddf155833c3132702e10ef}{node\-To\-Parent\-Transform}
+\item 
+(C\-G\-Affine\-Transform) -\/ \hyperlink{class_c_c_node_aa6d2bef57768f2d9bc2e614e0c720b9b}{parent\-To\-Node\-Transform}
+\item 
+(C\-G\-Affine\-Transform) -\/ \hyperlink{class_c_c_node_a15e02989939daa4511b9eac9b2e5cbb7}{node\-To\-World\-Transform}
+\item 
+(C\-G\-Affine\-Transform) -\/ \hyperlink{class_c_c_node_a3a3a51a1b2980da9b39f1d5c46f42d92}{world\-To\-Node\-Transform}
+\item 
+(C\-G\-Point) -\/ \hyperlink{class_c_c_node_a4ccc894a826322d62e5d2791c2deb36b}{convert\-To\-Node\-Space\-:}
+\item 
+(C\-G\-Point) -\/ \hyperlink{class_c_c_node_a3f43b7356576a39f137ff24960ced8f2}{convert\-To\-World\-Space\-:}
+\item 
+(C\-G\-Point) -\/ \hyperlink{class_c_c_node_a98f80737a3c10e01e72741995457642f}{convert\-To\-Node\-Space\-A\-R\-:}
+\item 
+(C\-G\-Point) -\/ \hyperlink{class_c_c_node_a34627158fb2910b7e24a190c2f866a27}{convert\-To\-World\-Space\-A\-R\-:}
+\item 
+\hypertarget{class_c_c_node_a9d4984d2e010f990d4c269a69888fef6}{(float) -\/ {\bfseries resolution\-Scale}}\label{class_c_c_node_a9d4984d2e010f990d4c269a69888fef6}
+
+\item 
+\hypertarget{class_c_c_node_ad8bdd253feaba1a07ccee24e25e91b4b}{(C\-G\-Point) -\/ {\bfseries absolute\-Position\-From\-Relative\-:type\-:parent\-Size\-:property\-Name\-:}}\label{class_c_c_node_ad8bdd253feaba1a07ccee24e25e91b4b}
+
+\item 
+\hypertarget{class_c_c_node_a8b884fd372ef56322f5521987eddfedc}{(void) -\/ {\bfseries set\-Relative\-Position\-:type\-:parent\-Size\-:property\-Name\-:}}\label{class_c_c_node_a8b884fd372ef56322f5521987eddfedc}
+
+\item 
+\hypertarget{class_c_c_node_a65fb75104daed2d7ec5e71eb4fb5ee97}{(void) -\/ {\bfseries set\-Relative\-Position\-:type\-:parent\-Size\-:}}\label{class_c_c_node_a65fb75104daed2d7ec5e71eb4fb5ee97}
+
+\item 
+\hypertarget{class_c_c_node_a9122e05d77b835280893fd823719437d}{(void) -\/ {\bfseries set\-Relative\-Position\-:type\-:}}\label{class_c_c_node_a9122e05d77b835280893fd823719437d}
+
+\item 
+\hypertarget{class_c_c_node_a00c8379c1ef9530fdf3675d42ac87444}{(void) -\/ {\bfseries set\-Relative\-Size\-:type\-:parent\-Size\-:property\-Name\-:}}\label{class_c_c_node_a00c8379c1ef9530fdf3675d42ac87444}
+
+\item 
+\hypertarget{class_c_c_node_a2f441d725322541806e68a667cae23eb}{(void) -\/ {\bfseries set\-Relative\-Size\-:type\-:parent\-Size\-:}}\label{class_c_c_node_a2f441d725322541806e68a667cae23eb}
+
+\item 
+\hypertarget{class_c_c_node_a7830305f8843d9d13d17ac33b6742c3d}{(void) -\/ {\bfseries set\-Relative\-Size\-:type\-:}}\label{class_c_c_node_a7830305f8843d9d13d17ac33b6742c3d}
+
+\item 
+\hypertarget{class_c_c_node_af8d47bb6d1a039e2d8de44ba1cf2c41f}{(void) -\/ {\bfseries set\-Relative\-Scale\-X\-:\-Y\-:type\-:property\-Name\-:}}\label{class_c_c_node_af8d47bb6d1a039e2d8de44ba1cf2c41f}
+
+\item 
+\hypertarget{class_c_c_node_a1b97e191e5c88fc6b709b044454b482a}{(void) -\/ {\bfseries set\-Relative\-Scale\-X\-:\-Y\-:type\-:}}\label{class_c_c_node_a1b97e191e5c88fc6b709b044454b482a}
+
+\item 
+\hypertarget{class_c_c_node_a0d021d5fd3570df09407a07a69eee808}{(void) -\/ {\bfseries set\-Relative\-Float\-:type\-:property\-Name\-:}}\label{class_c_c_node_a0d021d5fd3570df09407a07a69eee808}
+
+\item 
+\hypertarget{class_c_c_node_a2aed7b5ec0d47d3f4130ff6377abe753}{(void) -\/ {\bfseries set\-Is\-Relative\-Anchor\-Point\-:}}\label{class_c_c_node_a2aed7b5ec0d47d3f4130ff6377abe753}
+
+\item 
+\hypertarget{class_c_c_node_a5d2579e2aa773e36cad111809d661b96}{(B\-O\-O\-L) -\/ {\bfseries D\-E\-P\-R\-E\-C\-A\-T\-E\-D\-\_\-\-A\-T\-T\-R\-I\-B\-U\-T\-E}}\label{class_c_c_node_a5d2579e2aa773e36cad111809d661b96}
+
+\item 
+\hypertarget{class_c_c_node_a9b162a6a43e20dbb96b96f3082c6133e}{(void) -\/ {\bfseries set\-Z\-Order\-:}}\label{class_c_c_node_a9b162a6a43e20dbb96b96f3082c6133e}
+
+\item 
+\hypertarget{class_c_c_node_a2357723b9403456a67b90acb5ed010f6}{(void) -\/ {\bfseries performance\-Rotation\-Scale}}\label{class_c_c_node_a2357723b9403456a67b90acb5ed010f6}
+
+\item 
+\hypertarget{class_c_c_node_acd8824ae392cc45f4e4633d234831d57}{(void) -\/ {\bfseries performance\-Scale}}\label{class_c_c_node_acd8824ae392cc45f4e4633d234831d57}
+
+\item 
+\hypertarget{class_c_c_node_ae30c74ecebca8dce48aefc0fb2c868bb}{(void) -\/ {\bfseries performance\-Position}}\label{class_c_c_node_ae30c74ecebca8dce48aefc0fb2c868bb}
+
+\item 
+\hypertarget{class_c_c_node_a125a4fa69b04a69ed3d99761e3a0de5b}{(void) -\/ {\bfseries performance\-Out100}}\label{class_c_c_node_a125a4fa69b04a69ed3d99761e3a0de5b}
+
+\item 
+\hypertarget{class_c_c_node_a96b1cfe213e36637b682b1b695cb0569}{(void) -\/ {\bfseries performanceout20}}\label{class_c_c_node_a96b1cfe213e36637b682b1b695cb0569}
+
+\item 
+\hypertarget{class_c_c_node_a0994cbfcfef78ef6c060b0af7d666c42}{(void) -\/ {\bfseries performance\-Actions}}\label{class_c_c_node_a0994cbfcfef78ef6c060b0af7d666c42}
+
+\item 
+\hypertarget{class_c_c_node_a5e1e437628e1670065ee965d1a06d841}{(void) -\/ {\bfseries performance\-Actions20}}\label{class_c_c_node_a5e1e437628e1670065ee965d1a06d841}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{class_c_c_node_a9493a9f28bcf4afcb95c66e31677d867}{node}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_c_node_a600b9d9b6f444c26f88cd175a19ef41c}{float {\bfseries rotation\-X\-\_\-}}\label{class_c_c_node_a600b9d9b6f444c26f88cd175a19ef41c}
+
+\item 
+\hypertarget{class_c_c_node_a730ae2402e5128beef52609b084ff435}{float {\bfseries rotation\-Y\-\_\-}}\label{class_c_c_node_a730ae2402e5128beef52609b084ff435}
+
+\item 
+\hypertarget{class_c_c_node_a43616c883969a1dc29142d2d8fe5399e}{float {\bfseries scale\-X\-\_\-}}\label{class_c_c_node_a43616c883969a1dc29142d2d8fe5399e}
+
+\item 
+\hypertarget{class_c_c_node_aa38abea726a622bf6c9f4148881ac087}{float {\bfseries scale\-Y\-\_\-}}\label{class_c_c_node_aa38abea726a622bf6c9f4148881ac087}
+
+\item 
+\hypertarget{class_c_c_node_ab790776b9a5cae2f917dc89353753da2}{float {\bfseries vertex\-Z\-\_\-}}\label{class_c_c_node_ab790776b9a5cae2f917dc89353753da2}
+
+\item 
+\hypertarget{class_c_c_node_a244a8a007902d7f5a118aa4213856b66}{C\-G\-Point {\bfseries position\-\_\-}}\label{class_c_c_node_a244a8a007902d7f5a118aa4213856b66}
+
+\item 
+\hypertarget{class_c_c_node_a20bd61cd03f6e80ed3b778040be14d91}{float {\bfseries skew\-X\-\_\-}}\label{class_c_c_node_a20bd61cd03f6e80ed3b778040be14d91}
+
+\item 
+\hypertarget{class_c_c_node_a741941f7c4493c65e133d52202ca4251}{float {\bfseries skew\-Y\-\_\-}}\label{class_c_c_node_a741941f7c4493c65e133d52202ca4251}
+
+\item 
+\hypertarget{class_c_c_node_a55e2bdb8c708adb3dbda181a7f4dce2a}{C\-G\-Point {\bfseries anchor\-Point\-In\-Points\-\_\-}}\label{class_c_c_node_a55e2bdb8c708adb3dbda181a7f4dce2a}
+
+\item 
+\hypertarget{class_c_c_node_aafbef83c41f190df99c8cfa9fba27cc3}{C\-G\-Point {\bfseries anchor\-Point\-\_\-}}\label{class_c_c_node_aafbef83c41f190df99c8cfa9fba27cc3}
+
+\item 
+\hypertarget{class_c_c_node_a34a827aac0618d3a976c35121a2010df}{C\-G\-Size {\bfseries content\-Size\-\_\-}}\label{class_c_c_node_a34a827aac0618d3a976c35121a2010df}
+
+\item 
+\hypertarget{class_c_c_node_a5ccec06a633c3ea9c6ca425b9720b0e9}{C\-G\-Affine\-Transform {\bfseries transform\-\_\-}}\label{class_c_c_node_a5ccec06a633c3ea9c6ca425b9720b0e9}
+
+\item 
+\hypertarget{class_c_c_node_ab3e1c7cbbbf59944dc7513fd0b4649a1}{C\-G\-Affine\-Transform {\bfseries inverse\-\_\-}}\label{class_c_c_node_ab3e1c7cbbbf59944dc7513fd0b4649a1}
+
+\item 
+\hypertarget{class_c_c_node_a59b4c75cddb53b63056f7b2f697df509}{\hyperlink{interface_c_c_camera}{C\-C\-Camera} $\ast$ {\bfseries camera\-\_\-}}\label{class_c_c_node_a59b4c75cddb53b63056f7b2f697df509}
+
+\item 
+\hypertarget{class_c_c_node_a18c190e1f9644490fd13821d31a1300b}{\hyperlink{interface_c_c_grid_base}{C\-C\-Grid\-Base} $\ast$ {\bfseries grid\-\_\-}}\label{class_c_c_node_a18c190e1f9644490fd13821d31a1300b}
+
+\item 
+\hypertarget{class_c_c_node_a37baa3c67031c34f71cba3898c378e48}{N\-S\-Integer {\bfseries z\-Order\-\_\-}}\label{class_c_c_node_a37baa3c67031c34f71cba3898c378e48}
+
+\item 
+\hypertarget{class_c_c_node_a8b5b3553a76bc08ac1ddb3355c7f0223}{\hyperlink{interface_c_c_array}{C\-C\-Array} $\ast$ {\bfseries children\-\_\-}}\label{class_c_c_node_a8b5b3553a76bc08ac1ddb3355c7f0223}
+
+\item 
+\hypertarget{class_c_c_node_a817a9091e517192b19437e16632fe2e9}{\hyperlink{class_c_c_node}{C\-C\-Node} $\ast$ {\bfseries parent\-\_\-}}\label{class_c_c_node_a817a9091e517192b19437e16632fe2e9}
+
+\item 
+\hypertarget{class_c_c_node_a8526aec3f30b174193ae0d89f9a0ad04}{N\-S\-Integer {\bfseries tag\-\_\-}}\label{class_c_c_node_a8526aec3f30b174193ae0d89f9a0ad04}
+
+\item 
+\hypertarget{class_c_c_node_ab3cb00819e92a8ba58a8b6cdda446855}{void $\ast$ {\bfseries user\-Data\-\_\-}}\label{class_c_c_node_ab3cb00819e92a8ba58a8b6cdda446855}
+
+\item 
+\hypertarget{class_c_c_node_a5e7f0db2c8bbd42b1b716cd2bd11ac87}{id {\bfseries user\-Object\-\_\-}}\label{class_c_c_node_a5e7f0db2c8bbd42b1b716cd2bd11ac87}
+
+\item 
+\hypertarget{class_c_c_node_a5bfcff4acbcf65f9665c268a8aa3aa7e}{\hyperlink{interface_c_c_g_l_program}{C\-C\-G\-L\-Program} $\ast$ {\bfseries shader\-Program\-\_\-}}\label{class_c_c_node_a5bfcff4acbcf65f9665c268a8aa3aa7e}
+
+\item 
+\hypertarget{class_c_c_node_a730ed92cd6501ce01a8982f3665283e2}{\hyperlink{cc_g_l_state_cache_8h_af395552034661147c3a67a20581a6294}{cc\-G\-L\-Server\-State} {\bfseries gl\-Server\-State\-\_\-}}\label{class_c_c_node_a730ed92cd6501ce01a8982f3665283e2}
+
+\item 
+\hypertarget{class_c_c_node_a1c22a4ac630a9fe1e6af3412d004a767}{N\-S\-U\-Integer {\bfseries order\-Of\-Arrival\-\_\-}}\label{class_c_c_node_a1c22a4ac630a9fe1e6af3412d004a767}
+
+\item 
+\hypertarget{class_c_c_node_a79a33579b4095222f78fa9975c9417e7}{\hyperlink{class_c_c_scheduler}{C\-C\-Scheduler} $\ast$ {\bfseries scheduler\-\_\-}}\label{class_c_c_node_a79a33579b4095222f78fa9975c9417e7}
+
+\item 
+\hypertarget{class_c_c_node_ae6e972a20bfd6073a24a1f4906aef9ca}{\hyperlink{interface_c_c_action_manager}{C\-C\-Action\-Manager} $\ast$ {\bfseries action\-Manager\-\_\-}}\label{class_c_c_node_ae6e972a20bfd6073a24a1f4906aef9ca}
+
+\item 
+\hypertarget{class_c_c_node_ade6ef6f66d651e0a31bfed1f45190516}{B\-O\-O\-L {\bfseries is\-Running\-\_\-}}\label{class_c_c_node_ade6ef6f66d651e0a31bfed1f45190516}
+
+\item 
+\hypertarget{class_c_c_node_a4fd87ac7f6b52bed6f26250d07da61c1}{B\-O\-O\-L {\bfseries is\-Transform\-Dirty\-\_\-}}\label{class_c_c_node_a4fd87ac7f6b52bed6f26250d07da61c1}
+
+\item 
+\hypertarget{class_c_c_node_aa80caf16882ced4ad4821ad2412015cf}{B\-O\-O\-L {\bfseries is\-Inverse\-Dirty\-\_\-}}\label{class_c_c_node_aa80caf16882ced4ad4821ad2412015cf}
+
+\item 
+\hypertarget{class_c_c_node_aee9fb6951aa83a856d3e713c9f91e1bc}{B\-O\-O\-L {\bfseries visible\-\_\-}}\label{class_c_c_node_aee9fb6951aa83a856d3e713c9f91e1bc}
+
+\item 
+\hypertarget{class_c_c_node_a3d4ea139055d399c2d26d43fe114c189}{B\-O\-O\-L {\bfseries ignore\-Anchor\-Point\-For\-Position\-\_\-}}\label{class_c_c_node_a3d4ea139055d399c2d26d43fe114c189}
+
+\item 
+\hypertarget{class_c_c_node_af434207c26f927da55e76558b30ff493}{B\-O\-O\-L {\bfseries is\-Reorder\-Child\-Dirty\-\_\-}}\label{class_c_c_node_af434207c26f927da55e76558b30ff493}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\-S\-Integer \hyperlink{class_c_c_node_a21434541d824d49ea4e84019f1445727}{z\-Order}
+\item 
+float \hyperlink{class_c_c_node_aad1293ecdafd361d5e62a47e83002835}{vertex\-Z}
+\item 
+float \hyperlink{class_c_c_node_a3ab54b6652338e7d575ee14971147cbf}{skew\-X}
+\item 
+float \hyperlink{class_c_c_node_a0adeb25bc880ed50012bdc8c8a811718}{skew\-Y}
+\item 
+float \hyperlink{class_c_c_node_aecbc1fc81f9adf0ce886644e190e2680}{rotation}
+\item 
+float \hyperlink{class_c_c_node_a9fd979e8636f47567654cdedbba55d90}{rotation\-X}
+\item 
+float \hyperlink{class_c_c_node_aab0973f1a68dd4362fc16ff5af4da440}{rotation\-Y}
+\item 
+float \hyperlink{class_c_c_node_a9c00de8556f267b63055ebd9e55f2415}{scale}
+\item 
+float \hyperlink{class_c_c_node_af98791d15ad50cac4131dadfec09d49f}{scale\-X}
+\item 
+float \hyperlink{class_c_c_node_ad19816ebddb7b5da1564e2c97d1361e7}{scale\-Y}
+\item 
+C\-G\-Point \hyperlink{class_c_c_node_a297b5e96d7c1372d35589a924e1eb286}{position}
+\item 
+\hyperlink{interface_c_c_camera}{C\-C\-Camera} $\ast$ \hyperlink{class_c_c_node_a14b2b20d96921f92ef12b661f6aeff72}{camera}
+\item 
+\hyperlink{interface_c_c_array}{C\-C\-Array} $\ast$ \hyperlink{class_c_c_node_a5e739ecda0c314283a89ac389dfca2fa}{children}
+\item 
+\hyperlink{interface_c_c_grid_base}{C\-C\-Grid\-Base} $\ast$ \hyperlink{class_c_c_node_ae7c8dade03d8bcd244766b97d21ef80f}{grid}
+\item 
+B\-O\-O\-L \hyperlink{class_c_c_node_a5385156c1a45907c9dff7dfb06e70b45}{visible}
+\item 
+C\-G\-Point \hyperlink{class_c_c_node_ac24fc742eb11ee96207052639224434c}{anchor\-Point}
+\item 
+C\-G\-Point \hyperlink{class_c_c_node_a8fd2bad5639f673a56eaf8b9c0302c48}{anchor\-Point\-In\-Points}
+\item 
+C\-G\-Size \hyperlink{class_c_c_node_a7b80fa1c9ea5db76137ed9e73646ba25}{content\-Size}
+\item 
+B\-O\-O\-L \hyperlink{class_c_c_node_a0ef88eaa1917c87173866f76dac006b3}{is\-Running}
+\item 
+\hyperlink{class_c_c_node}{C\-C\-Node} $\ast$ \hyperlink{class_c_c_node_a9504c37bbc9d2ca93c34784383b21a26}{parent}
+\item 
+B\-O\-O\-L \hyperlink{class_c_c_node_a1798f20ed00ae4514ab7f2fc9ffe7e2b}{ignore\-Anchor\-Point\-For\-Position}
+\item 
+N\-S\-Integer \hyperlink{class_c_c_node_a4ed1d0596afb7822a87e41b75b496af3}{tag}
+\item 
+void $\ast$ \hyperlink{class_c_c_node_aa59560e27cc9c1cc51f95def93c60125}{user\-Data}
+\item 
+id \hyperlink{class_c_c_node_a34b5b9ac2ad6129cae7cbdedfe6f12a1}{user\-Object}
+\item 
+\hyperlink{interface_c_c_g_l_program}{C\-C\-G\-L\-Program} $\ast$ \hyperlink{class_c_c_node_a6a14e4b8be7ff8fc766730abc73ce795}{shader\-Program}
+\item 
+N\-S\-U\-Integer \hyperlink{class_c_c_node_ae56cef8bc876f9f4d609266bc0f80a29}{order\-Of\-Arrival}
+\item 
+\hyperlink{cc_g_l_state_cache_8h_af395552034661147c3a67a20581a6294}{cc\-G\-L\-Server\-State} \hyperlink{class_c_c_node_ad0146f65e6d5edeee5bf80466d4cd738}{gl\-Server\-State}
+\item 
+\hyperlink{interface_c_c_action_manager}{C\-C\-Action\-Manager} $\ast$ \hyperlink{class_c_c_node_a23baea124da6113f8c3fe95b6f8eaa52}{action\-Manager}
+\item 
+\hyperlink{class_c_c_scheduler}{C\-C\-Scheduler} $\ast$ \hyperlink{class_c_c_node_a497798cf2d62b8b107069ff0fc1a07d0}{scheduler}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_c_c_node}{C\-C\-Node} is the main element. Anything thats gets drawn or contains things that get drawn is a \hyperlink{class_c_c_node}{C\-C\-Node}. The most popular C\-C\-Nodes are\-: \hyperlink{interface_c_c_scene}{C\-C\-Scene}, \hyperlink{class_c_c_layer}{C\-C\-Layer}, \hyperlink{class_c_c_sprite}{C\-C\-Sprite}, \hyperlink{interface_c_c_menu}{C\-C\-Menu}.
+
+The main features of a \hyperlink{class_c_c_node}{C\-C\-Node} are\-:
+\begin{DoxyItemize}
+\item They can contain other \hyperlink{class_c_c_node}{C\-C\-Node} nodes (add\-Child, get\-Child\-By\-Tag, remove\-Child, etc)
+\item They can schedule periodic callback (schedule, unschedule, etc)
+\item They can execute actions (run\-Action, stop\-Action, etc)
+\end{DoxyItemize}
+
+Some \hyperlink{class_c_c_node}{C\-C\-Node} nodes provide extra functionality for them or their children.
+
+Subclassing a \hyperlink{class_c_c_node}{C\-C\-Node} usually means (one/all) of\-:
+\begin{DoxyItemize}
+\item overriding init to initialize resources and schedule callbacks
+\item create callbacks to handle the advancement of time
+\item overriding draw to render the node
+\end{DoxyItemize}
+
+Features of \hyperlink{class_c_c_node}{C\-C\-Node}\-:
+\begin{DoxyItemize}
+\item position
+\item scale (x, y)
+\item rotation (in degrees, clockwise)
+\item \hyperlink{interface_c_c_camera}{C\-C\-Camera} (an interface to glu\-Look\-At )
+\item \hyperlink{interface_c_c_grid_base}{C\-C\-Grid\-Base} (to do mesh transformations)
+\item anchor point
+\item size
+\item visible
+\item z-\/order
+\item open\-G\-L z position
+\end{DoxyItemize}
+
+Default values\-:
+\begin{DoxyItemize}
+\item rotation\-: 0
+\item position\-: (x=0,y=0)
+\item scale\-: (x=1,y=1)
+\item content\-Size\-: (x=0,y=0)
+\item anchor\-Point\-: (x=0,y=0)
+\end{DoxyItemize}
+
+Limitations\-:
+\begin{DoxyItemize}
+\item A \hyperlink{class_c_c_node}{C\-C\-Node} is a \char`\"{}void\char`\"{} object. It doesn't have a texture
+\end{DoxyItemize}
+
+Order in transformations with grid disabled
+\begin{DoxyEnumerate}
+\item The node will be translated (position)
+\item The node will be rotated (rotation)
+\item The node will be skewed (skew\-X, skew\-Y)
+\item The node will be scaled (scale, scale\-X, scale\-Y)
+\item The node will be moved according to the camera values (camera)
+\end{DoxyEnumerate}
+
+Order in transformations with grid enabled
+\begin{DoxyEnumerate}
+\item The node will be translated (position)
+\item The node will be rotated (rotation, rotation\-X, rotation\-Y)
+\item The node will be skewed (skew\-X, skew\-Y)
+\item The node will be scaled (scale, scale\-X, scale\-Y)
+\item The grid will capture the screen
+\item The node will be moved according to the camera values (camera)
+\item The grid will render the captured screen
+\end{DoxyEnumerate}
+
+Camera\-:
+\begin{DoxyItemize}
+\item Each node has a camera. By default it points to the center of the \hyperlink{class_c_c_node}{C\-C\-Node}. 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_c_node_afa69e08c50aa394c748dcb585cbcb4df}{\index{C\-C\-Node@{C\-C\-Node}!add\-Child\-:@{add\-Child\-:}}
+\index{add\-Child\-:@{add\-Child\-:}!CCNode@{C\-C\-Node}}
+\subsubsection[{add\-Child\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf add\-Child\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Node}$\ast$)}]{node}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_afa69e08c50aa394c748dcb585cbcb4df}
+Adds a child to the container with z-\/order as 0. If the child is added to a 'running' node, then 'on\-Enter' and 'on\-Enter\-Transition\-Did\-Finish' will be called immediately. \begin{DoxySince}{Since}
+v0.\-7.\-1 
+\end{DoxySince}
+
+
+Referenced by C\-C\-Render\-Texture\-::init\-With\-Width\-:height\-:pixel\-Format\-:depth\-Stencil\-Format\-:.
+
+
+\begin{DoxyCode}
+                : (CCNode*) child
+{
+        NSAssert( child != nil, @"Argument must be non-nil");
+        [self addChild:child z:child.zOrder tag:child.tag];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a6cebb9eeff360d832360a4f5efbbfa30}{\index{C\-C\-Node@{C\-C\-Node}!add\-Child\-:z\-:@{add\-Child\-:z\-:}}
+\index{add\-Child\-:z\-:@{add\-Child\-:z\-:}!CCNode@{C\-C\-Node}}
+\subsubsection[{add\-Child\-:z\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf add\-Child\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Node}$\ast$)}]{node}
+\item[{z:(N\-S\-Integer)}]{z}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a6cebb9eeff360d832360a4f5efbbfa30}
+Adds a child to the container with a z-\/order. If the child is added to a 'running' node, then 'on\-Enter' and 'on\-Enter\-Transition\-Did\-Finish' will be called immediately. \begin{DoxySince}{Since}
+v0.\-7.\-1 
+\end{DoxySince}
+
+\begin{DoxyCode}
+                : (CCNode*) child z:(NSInteger)z
+{
+        NSAssert( child != nil, @"Argument must be non-nil");
+        [self addChild:child z:z tag:child.tag];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_ab3e142f4e18581046f811ae1489dd0c9}{\index{C\-C\-Node@{C\-C\-Node}!add\-Child\-:z\-:tag\-:@{add\-Child\-:z\-:tag\-:}}
+\index{add\-Child\-:z\-:tag\-:@{add\-Child\-:z\-:tag\-:}!CCNode@{C\-C\-Node}}
+\subsubsection[{add\-Child\-:z\-:tag\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf add\-Child\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Node}$\ast$)}]{node}
+\item[{z:(N\-S\-Integer)}]{z}
+\item[{tag:(N\-S\-Integer)}]{tag}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_ab3e142f4e18581046f811ae1489dd0c9}
+Adds a child to the container with z order and tag. If the child is added to a 'running' node, then 'on\-Enter' and 'on\-Enter\-Transition\-Did\-Finish' will be called immediately. \begin{DoxySince}{Since}
+v0.\-7.\-1 
+\end{DoxySince}
+
+
+Reimplemented in \hyperlink{interface_c_c_t_m_x_layer_a898f8a54b02cc7cdfc9236177d93a2c0}{C\-C\-T\-M\-X\-Layer}.
+
+
+
+Referenced by add\-Child\-:, add\-Child\-:z\-:, and C\-C\-Parallax\-Node\-::add\-Child\-:z\-:parallax\-Ratio\-:position\-Offset\-:.
+
+
+\begin{DoxyCode}
+                : (CCNode*) child z:(NSInteger)z tag:(NSInteger) aTag
+{
+        NSAssert( child != nil, @"Argument must be non-nil");
+        NSAssert( child.parent == nil, @"child already added. It can't be added
+       again");
+
+        if( ! children_ )
+                [self childrenAlloc];
+
+        [self insertChild:child z:z];
+
+        child.tag = aTag;
+
+        [child setParent: self];
+
+        [child setOrderOfArrival: globalOrderOfArrival++];
+
+        if( isRunning_ ) {
+                [child onEnter];
+                [child onEnterTransitionDidFinish];
+        }
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a22b9004c0baaffd656a46d0840e1c934}{\index{C\-C\-Node@{C\-C\-Node}!bounding\-Box@{bounding\-Box}}
+\index{bounding\-Box@{bounding\-Box}!CCNode@{C\-C\-Node}}
+\subsubsection[{bounding\-Box}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Rect) {\bf bounding\-Box} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a22b9004c0baaffd656a46d0840e1c934}
+returns a \char`\"{}local\char`\"{} axis aligned bounding box of the node in points. The returned box is relative only to its parent. The returned box is in Points.
+
+\begin{DoxySince}{Since}
+v0.\-8.\-2 
+\end{DoxySince}
+
+\begin{DoxyCode}
+{
+        CGRect rect = CGRectMake(0, 0, contentSize_.width, contentSize_.height)
+      ;
+        return CGRectApplyAffineTransform(rect, [self nodeToParentTransform]);
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_ad7d1aee7e97990e049bb380a1a63ad26}{\index{C\-C\-Node@{C\-C\-Node}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!CCNode@{C\-C\-Node}}
+\subsubsection[{cleanup}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf cleanup} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_ad7d1aee7e97990e049bb380a1a63ad26}
+Event that is called when the running node is no longer running (eg\-: its \hyperlink{interface_c_c_scene}{C\-C\-Scene} is being removed from the \char`\"{}stage\char`\"{} ). On cleanup you should break any possible circular references. \hyperlink{class_c_c_node}{C\-C\-Node}'s cleanup removes any possible scheduled timer and/or any possible action. If you override cleanup, you shall call \mbox{[}super cleanup\mbox{]} \begin{DoxySince}{Since}
+v0.\-8 
+\end{DoxySince}
+
+
+Reimplemented in \hyperlink{interface_c_c_menu_item_a9dacc63a07fd86adb30bd6c4ee28d47b}{C\-C\-Menu\-Item}.
+
+
+
+Referenced by C\-C\-Menu\-Item\-::cleanup, C\-C\-Director\-::end, C\-C\-Director\-::pop\-To\-Root\-Scene, and remove\-All\-Children\-With\-Cleanup\-:.
+
+
+\begin{DoxyCode}
+{
+        // actions
+        [self stopAllActions];
+        [self unscheduleAllSelectors];
+
+        // timers
+        [children_ makeObjectsPerformSelector:@selector(cleanup)];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a4ccc894a826322d62e5d2791c2deb36b}{\index{C\-C\-Node@{C\-C\-Node}!convert\-To\-Node\-Space\-:@{convert\-To\-Node\-Space\-:}}
+\index{convert\-To\-Node\-Space\-:@{convert\-To\-Node\-Space\-:}!CCNode@{C\-C\-Node}}
+\subsubsection[{convert\-To\-Node\-Space\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Point) {\bf convert\-To\-Node\-Space\-:} 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{world\-Point}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a4ccc894a826322d62e5d2791c2deb36b}
+Converts a Point to node (local) space coordinates. The result is in Points. \begin{DoxySince}{Since}
+v0.\-7.\-1 
+\end{DoxySince}
+
+
+Referenced by convert\-To\-Node\-Space\-A\-R\-:.
+
+
+\begin{DoxyCode}
+                             :(CGPoint)worldPoint
+{
+        CGPoint ret = CGPointApplyAffineTransform(worldPoint, [self 
+      worldToNodeTransform]);
+        return ret;
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a98f80737a3c10e01e72741995457642f}{\index{C\-C\-Node@{C\-C\-Node}!convert\-To\-Node\-Space\-A\-R\-:@{convert\-To\-Node\-Space\-A\-R\-:}}
+\index{convert\-To\-Node\-Space\-A\-R\-:@{convert\-To\-Node\-Space\-A\-R\-:}!CCNode@{C\-C\-Node}}
+\subsubsection[{convert\-To\-Node\-Space\-A\-R\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Point) {\bf convert\-To\-Node\-Space\-A\-R\-:} 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{world\-Point}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a98f80737a3c10e01e72741995457642f}
+Converts a Point to node (local) space coordinates. The result is in Points. treating the returned/received node point as anchor relative. \begin{DoxySince}{Since}
+v0.\-7.\-1 
+\end{DoxySince}
+
+\begin{DoxyCode}
+                               :(CGPoint)worldPoint
+{
+        CGPoint nodePoint = [self convertToNodeSpace:worldPoint];
+        return ccpSub(nodePoint, anchorPointInPoints_);
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a3f43b7356576a39f137ff24960ced8f2}{\index{C\-C\-Node@{C\-C\-Node}!convert\-To\-World\-Space\-:@{convert\-To\-World\-Space\-:}}
+\index{convert\-To\-World\-Space\-:@{convert\-To\-World\-Space\-:}!CCNode@{C\-C\-Node}}
+\subsubsection[{convert\-To\-World\-Space\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Point) {\bf convert\-To\-World\-Space\-:} 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{node\-Point}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a3f43b7356576a39f137ff24960ced8f2}
+Converts a Point to world space coordinates. The result is in Points. \begin{DoxySince}{Since}
+v0.\-7.\-1 
+\end{DoxySince}
+
+
+Referenced by convert\-To\-World\-Space\-A\-R\-:, and C\-C\-Particle\-System\-::update\-:.
+
+
+\begin{DoxyCode}
+                              :(CGPoint)nodePoint
+{
+        CGPoint ret = CGPointApplyAffineTransform(nodePoint, [self 
+      nodeToWorldTransform]);
+        return ret;
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a34627158fb2910b7e24a190c2f866a27}{\index{C\-C\-Node@{C\-C\-Node}!convert\-To\-World\-Space\-A\-R\-:@{convert\-To\-World\-Space\-A\-R\-:}}
+\index{convert\-To\-World\-Space\-A\-R\-:@{convert\-To\-World\-Space\-A\-R\-:}!CCNode@{C\-C\-Node}}
+\subsubsection[{convert\-To\-World\-Space\-A\-R\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Point) {\bf convert\-To\-World\-Space\-A\-R\-:} 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{node\-Point}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a34627158fb2910b7e24a190c2f866a27}
+Converts a local Point to world space coordinates.\-The result is in Points. treating the returned/received node point as anchor relative. \begin{DoxySince}{Since}
+v0.\-7.\-1 
+\end{DoxySince}
+
+\begin{DoxyCode}
+                                :(CGPoint)nodePoint
+{
+        nodePoint = ccpAdd(nodePoint, anchorPointInPoints_);
+        return [self convertToWorldSpace:nodePoint];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_ad1310bc9561e8ceaa15d37772da4e8c9}{\index{C\-C\-Node@{C\-C\-Node}!draw@{draw}}
+\index{draw@{draw}!CCNode@{C\-C\-Node}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf draw} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_ad1310bc9561e8ceaa15d37772da4e8c9}
+Override this method to draw your own node. You should use cocos2d's G\-L A\-P\-I to enable/disable the G\-L state / shaders. For further info, please see cc\-G\-Lstate.\-h. You shall N\-O\-T call \mbox{[}super draw\mbox{]}; 
+
+Referenced by visit.
+
+
+\begin{DoxyCode}
+{
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a7100667a2dd3d9f6f421001afc9f734f}{\index{C\-C\-Node@{C\-C\-Node}!get\-Action\-By\-Tag\-:@{get\-Action\-By\-Tag\-:}}
+\index{get\-Action\-By\-Tag\-:@{get\-Action\-By\-Tag\-:}!CCNode@{C\-C\-Node}}
+\subsubsection[{get\-Action\-By\-Tag\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Action} $\ast$) {\bf get\-Action\-By\-Tag\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Integer)}]{tag}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a7100667a2dd3d9f6f421001afc9f734f}
+Gets an action from the running action list given its tag \begin{DoxySince}{Since}
+v0.\-7.\-1 
+\end{DoxySince}
+\begin{DoxyReturn}{Returns}
+the Action the with the given tag 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+                           :(NSInteger) aTag
+{
+        NSAssert( aTag != kCCActionTagInvalid, @"Invalid tag");
+        return  [actionManager_ getActionByTag:aTag target:self];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_ae6c33c3f1dc67730a492ac8b99efa151}{\index{C\-C\-Node@{C\-C\-Node}!get\-Child\-By\-Tag\-:@{get\-Child\-By\-Tag\-:}}
+\index{get\-Child\-By\-Tag\-:@{get\-Child\-By\-Tag\-:}!CCNode@{C\-C\-Node}}
+\subsubsection[{get\-Child\-By\-Tag\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Node} $\ast$) {\bf get\-Child\-By\-Tag\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Integer)}]{tag}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_ae6c33c3f1dc67730a492ac8b99efa151}
+Gets a child from the container given its tag \begin{DoxyReturn}{Returns}
+returns a \hyperlink{class_c_c_node}{C\-C\-Node} object 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+v0.\-7.\-1 
+\end{DoxySince}
+
+
+Referenced by remove\-Child\-By\-Tag\-:cleanup\-:, and C\-C\-T\-M\-X\-Layer\-::remove\-Tile\-At\-:.
+
+
+\begin{DoxyCode}
+                        :(NSInteger) aTag
+{
+        NSAssert( aTag != kCCNodeTagInvalid, @"Invalid tag");
+
+        CCNode *node;
+        CCARRAY_FOREACH(children_, node){
+                if( node.tag == aTag )
+                        return node;
+        }
+        // not found
+        return nil;
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_ad789cad83aca65c130abd4452d1bc081}{\index{C\-C\-Node@{C\-C\-Node}!init@{init}}
+\index{init@{init}!CCNode@{C\-C\-Node}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_ad789cad83aca65c130abd4452d1bc081}
+initializes the node 
+
+Reimplemented in \hyperlink{interface_c_c_transition_turn_off_tiles_a002e9740f8487af7afd9fe157e99dfcc}{C\-C\-Transition\-Turn\-Off\-Tiles}, \hyperlink{interface_c_c_transition_cross_fade_a84e566a9c1ef713de1deaf006b6dbd0f}{C\-C\-Transition\-Cross\-Fade}, \hyperlink{interface_c_c_transition_zoom_flip_angular_aff9352d756a5f4688bac73395eed9c90}{C\-C\-Transition\-Zoom\-Flip\-Angular}, \hyperlink{interface_c_c_transition_zoom_flip_y_a5ca9edd127622a0d25322dde9daf7447}{C\-C\-Transition\-Zoom\-Flip\-Y}, \hyperlink{interface_c_c_transition_zoom_flip_x_a29c33d700630ff1e7b83ad4ba501935b}{C\-C\-Transition\-Zoom\-Flip\-X}, \hyperlink{interface_c_c_transition_flip_angular_acfbd2cd5d83cccb25e8566f39502df7e}{C\-C\-Transition\-Flip\-Angular}, \hyperlink{interface_c_c_transition_flip_y_a89a277a0795c44498c0dcdd0d15ffd78}{C\-C\-Transition\-Flip\-Y}, \hyperlink{interface_c_c_transition_flip_x_a826655c1f01b1edf2aaa7663544bc69c}{C\-C\-Transition\-Flip\-X}, \hyperlink{interface_c_c_transition_shrink_grow_aaa4d30491aec84748cf226918abd2987}{C\-C\-Transition\-Shrink\-Grow}, \hyperlink{interface_c_c_particle_rain_ac95df79d70f3f82eb60056b770ba463a}{C\-C\-Particle\-Rain}, \hyperlink{interface_c_c_transition_jump_zoom_a520ada27cbde20c1b27c81d2bfbcd74a}{C\-C\-Transition\-Jump\-Zoom}, \hyperlink{interface_c_c_particle_snow_a02c1c36b330a938b7acdc04e81bfdca9}{C\-C\-Particle\-Snow}, \hyperlink{interface_c_c_transition_roto_zoom_a588b1d67980b94489bed54922ae3eb2a}{C\-C\-Transition\-Roto\-Zoom}, \hyperlink{interface_c_c_particle_smoke_ae9c86fd3c3dacf114ce6b6e2bf8f3e36}{C\-C\-Particle\-Smoke}, \hyperlink{interface_c_c_particle_explosion_a23096de235891ce9328d019444294a27}{C\-C\-Particle\-Explosion}, \hyperlink{interface_c_c_particle_spiral_aa7607aa26814c372db7e96b413597f7b}{C\-C\-Particle\-Spiral}, \hyperlink{interface_c_c_particle_meteor_ad7402ac21d287939ed1252ad9a92b318}{C\-C\-Particle\-Meteor}, \hyperlink{interface_c_c_clipping_node_a20a68e2646b7659063e58aa4d4b6de1f}{C\-C\-Clipping\-Node}, \hyperlink{interface_c_c_particle_flower_a99aac34cc21adf80dfe6adc53025eb7b}{C\-C\-Particle\-Flower}, \hyperlink{interface_c_c_particle_galaxy_a02d1d1e4ddbaf7986763f593dd70db84}{C\-C\-Particle\-Galaxy}, \hyperlink{interface_c_c_particle_sun_ab84fe32e5cf6e091faa2dbdf43446683}{C\-C\-Particle\-Sun}, \hyperlink{interface_c_c_scene_a6ced7d1397204cb5dc2a5579e547ed0c}{C\-C\-Scene}, \hyperlink{interface_c_c_particle_fireworks_abbfff416ef6ab06eff1c36a229593fab}{C\-C\-Particle\-Fireworks}, and \hyperlink{interface_c_c_particle_fire_a9f025d19086e736df8df05426338a7ba}{C\-C\-Particle\-Fire}.
+
+
+
+Referenced by C\-C\-Motion\-Streak\-::init\-With\-Fade\-:min\-Seg\-:width\-:color\-:texture\-:, C\-C\-Progress\-Timer\-::init\-With\-Sprite\-:, C\-C\-Label\-T\-T\-F\-::init\-With\-String\-:font\-Name\-:font\-Size\-:dimensions\-:h\-Alignment\-:v\-Alignment\-:line\-Break\-Mode\-:, C\-C\-Particle\-Batch\-Node\-::init\-With\-Texture\-:capacity\-:, C\-C\-Sprite\-Batch\-Node\-::init\-With\-Texture\-:capacity\-:, C\-C\-Sprite\-::init\-With\-Texture\-:rect\-:rotated\-:, C\-C\-Atlas\-Node\-::init\-With\-Texture\-:tile\-Width\-:tile\-Height\-:items\-To\-Render\-:, C\-C\-T\-M\-X\-Tiled\-Map\-::init\-With\-T\-M\-X\-File\-:, C\-C\-Particle\-System\-::init\-With\-Total\-Particles\-:, C\-C\-Render\-Texture\-::init\-With\-Width\-:height\-:pixel\-Format\-:depth\-Stencil\-Format\-:, and C\-C\-T\-M\-X\-Tiled\-Map\-::init\-With\-X\-M\-L\-:resource\-Path\-:.
+
+
+\begin{DoxyCode}
+{
+        if ((self=[super init]) ) {
+
+                isRunning_ = NO;
+
+                skewX_ = skewY_ = 0.0f;
+                rotationX_ = rotationY_ = 0.0f;
+                scaleX_ = scaleY_ = 1.0f;
+        position_ = CGPointZero;
+        contentSize_ = CGSizeZero;
+                anchorPointInPoints_ = anchorPoint_ = CGPointZero;
+
+
+                // "whole screen" objects. like Scenes and Layers, should set
+       ignoreAnchorPointForPosition to YES
+                ignoreAnchorPointForPosition_ = NO;
+
+                isTransformDirty_ = isInverseDirty_ = YES;
+
+                vertexZ_ = 0;
+
+                grid_ = nil;
+
+                visible_ = YES;
+
+                tag_ = kCCNodeTagInvalid;
+
+                zOrder_ = 0;
+
+                // lazy alloc
+                camera_ = nil;
+
+                // children (lazy allocs)
+                children_ = nil;
+
+                // userData is always inited as nil
+                userData_ = NULL;
+                userObject_ = nil;
+
+                //initialize parent to nil
+                parent_ = nil;
+
+                shaderProgram_ = nil;
+
+                orderOfArrival_ = 0;
+
+                glServerState_ = 0;
+                
+                // set default scheduler and actionManager
+                CCDirector *director = [CCDirector sharedDirector];
+                self.actionManager = [director actionManager];
+                self.scheduler = [director scheduler];
+        }
+
+        return self;
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a9493a9f28bcf4afcb95c66e31677d867}{\index{C\-C\-Node@{C\-C\-Node}!node@{node}}
+\index{node@{node}!CCNode@{C\-C\-Node}}
+\subsubsection[{node}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf node} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a9493a9f28bcf4afcb95c66e31677d867}
+allocates and initializes a node. The node will be created as \char`\"{}autorelease\char`\"{}. 
+
+Referenced by C\-C\-Clipping\-Node\-::clipping\-Node, and get\-Child\-By\-Tag\-:.
+
+
+\begin{DoxyCode}
+{
+        return [[[self alloc] init] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a2206d591f9ddf155833c3132702e10ef}{\index{C\-C\-Node@{C\-C\-Node}!node\-To\-Parent\-Transform@{node\-To\-Parent\-Transform}}
+\index{node\-To\-Parent\-Transform@{node\-To\-Parent\-Transform}!CCNode@{C\-C\-Node}}
+\subsubsection[{node\-To\-Parent\-Transform}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Affine\-Transform) {\bf node\-To\-Parent\-Transform} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a2206d591f9ddf155833c3132702e10ef}
+Returns the matrix that transform the node's (local) space coordinates into the parent's space coordinates. The matrix is in Pixels. \begin{DoxySince}{Since}
+v0.\-7.\-1 
+\end{DoxySince}
+
+
+Referenced by bounding\-Box, node\-To\-World\-Transform, parent\-To\-Node\-Transform, transform, and C\-C\-Sprite\-::update\-Transform.
+
+
+\begin{DoxyCode}
+{
+        if ( isTransformDirty_ ) {
+
+                // Translate values
+                float x = position_.x;
+                float y = position_.y;
+
+                if ( ignoreAnchorPointForPosition_ ) {
+                        x += anchorPointInPoints_.x;
+                        y += anchorPointInPoints_.y;
+                }
+    
+                // Rotation values
+                // Change rotation code to handle X and Y
+                // If we skew with the exact same value for both x and y then
+       we're simply just rotating
+                float cx = 1, sx = 0, cy = 1, sy = 0;
+                if( rotationX_ || rotationY_ ) {
+                        float radiansX = -CC_DEGREES_TO_RADIANS(rotationX_);
+                        float radiansY = -CC_DEGREES_TO_RADIANS(rotationY_);
+                        cx = cosf(radiansX);
+                        sx = sinf(radiansX);
+                        cy = cosf(radiansY);
+                        sy = sinf(radiansY);
+                }
+
+                BOOL needsSkewMatrix = ( skewX_ || skewY_ );
+
+                // optimization:
+                // inline anchor point calculation if skew is not needed
+                // Adjusted transform calculation for rotational skew
+                if( !needsSkewMatrix && !CGPointEqualToPoint(
+      anchorPointInPoints_, CGPointZero) ) {
+                        x += cy * -anchorPointInPoints_.x * scaleX_ + -sx * -
+      anchorPointInPoints_.y * scaleY_;
+                        y += sy * -anchorPointInPoints_.x * scaleX_ +  cx * -
+      anchorPointInPoints_.y * scaleY_;
+                }
+
+
+                // Build Transform Matrix
+                // Adjusted transfor m calculation for rotational skew
+                transform_ = CGAffineTransformMake( cy * scaleX_, sy * scaleX_,
+                                                                                
+         -sx * scaleY_, cx * scaleY_,
+                                                                                
+         x, y );
+
+                // XXX: Try to inline skew
+                // If skew is needed, apply skew and then anchor point
+                if( needsSkewMatrix ) {
+                        CGAffineTransform skewMatrix = CGAffineTransformMake(1.
+      0f, tanf(CC_DEGREES_TO_RADIANS(skewY_)),
+                                                                                                                                
+       tanf(CC_DEGREES_TO_RADIANS(skewX_)), 1.0f,
+                                                                                                                                
+       0.0f, 0.0f );
+                        transform_ = CGAffineTransformConcat(skewMatrix, 
+      transform_);
+
+                        // adjust anchor point
+                        if( ! CGPointEqualToPoint(anchorPointInPoints_, 
+      CGPointZero) )
+                                transform_ = CGAffineTransformTranslate(
+      transform_, -anchorPointInPoints_.x, -anchorPointInPoints_.y);
+                }
+
+                isTransformDirty_ = NO;
+        }
+
+        return transform_;
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a15e02989939daa4511b9eac9b2e5cbb7}{\index{C\-C\-Node@{C\-C\-Node}!node\-To\-World\-Transform@{node\-To\-World\-Transform}}
+\index{node\-To\-World\-Transform@{node\-To\-World\-Transform}!CCNode@{C\-C\-Node}}
+\subsubsection[{node\-To\-World\-Transform}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Affine\-Transform) {\bf node\-To\-World\-Transform} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a15e02989939daa4511b9eac9b2e5cbb7}
+Returns the world affine transform matrix. The matrix is in Pixels. \begin{DoxySince}{Since}
+v0.\-7.\-1 
+\end{DoxySince}
+
+
+Referenced by convert\-To\-World\-Space\-:, and world\-To\-Node\-Transform.
+
+
+\begin{DoxyCode}
+{
+        CGAffineTransform t = [self nodeToParentTransform];
+
+        for (CCNode *p = parent_; p != nil; p = p.parent)
+                t = CGAffineTransformConcat(t, [p nodeToParentTransform]);
+
+        return t;
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a83604b800f210921e8b8d6d478d98299}{\index{C\-C\-Node@{C\-C\-Node}!number\-Of\-Running\-Actions@{number\-Of\-Running\-Actions}}
+\index{number\-Of\-Running\-Actions@{number\-Of\-Running\-Actions}!CCNode@{C\-C\-Node}}
+\subsubsection[{number\-Of\-Running\-Actions}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-U\-Integer) {\bf number\-Of\-Running\-Actions} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a83604b800f210921e8b8d6d478d98299}
+Returns the numbers of actions that are running plus the ones that are schedule to run (actions in actions\-To\-Add and actions arrays). Composable actions are counted as 1 action. Example\-: If you are running 1 Sequence of 7 actions, it will return 1. If you are running 7 Sequences of 2 actions, it will return 7. 
+\begin{DoxyCode}
+{
+        return [actionManager_ numberOfRunningActionsInTarget:self];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_aa63ddd790457e6a2f218aacecaf31462}{\index{C\-C\-Node@{C\-C\-Node}!on\-Enter@{on\-Enter}}
+\index{on\-Enter@{on\-Enter}!CCNode@{C\-C\-Node}}
+\subsubsection[{on\-Enter}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf on\-Enter} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_aa63ddd790457e6a2f218aacecaf31462}
+Event that is called every time the \hyperlink{class_c_c_node}{C\-C\-Node} enters the 'stage'. If the \hyperlink{class_c_c_node}{C\-C\-Node} enters the 'stage' with a transition, this event is called when the transition starts. During on\-Enter you can't access a sibling node. If you override on\-Enter, you shall call \mbox{[}super on\-Enter\mbox{]}. 
+
+Referenced by add\-Child\-:z\-:tag\-:.
+
+
+\begin{DoxyCode}
+{
+        [children_ makeObjectsPerformSelector:@selector(onEnter)];
+        [self resumeSchedulerAndActions];
+
+        isRunning_ = YES;
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_adc2725d4b53407cfa7ee901e6e4f7002}{\index{C\-C\-Node@{C\-C\-Node}!on\-Enter\-Transition\-Did\-Finish@{on\-Enter\-Transition\-Did\-Finish}}
+\index{on\-Enter\-Transition\-Did\-Finish@{on\-Enter\-Transition\-Did\-Finish}!CCNode@{C\-C\-Node}}
+\subsubsection[{on\-Enter\-Transition\-Did\-Finish}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf on\-Enter\-Transition\-Did\-Finish} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_adc2725d4b53407cfa7ee901e6e4f7002}
+Event that is called when the \hyperlink{class_c_c_node}{C\-C\-Node} enters in the 'stage'. If the \hyperlink{class_c_c_node}{C\-C\-Node} enters the 'stage' with a transition, this event is called when the transition finishes. If you override on\-Enter\-Transition\-Did\-Finish, you shall call \mbox{[}super on\-Enter\-Transition\-Did\-Finish\mbox{]}. \begin{DoxySince}{Since}
+v0.\-8 
+\end{DoxySince}
+
+
+Referenced by add\-Child\-:z\-:tag\-:.
+
+
+\begin{DoxyCode}
+{
+        [children_ makeObjectsPerformSelector:@selector(
+      onEnterTransitionDidFinish)];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_af5b51ab87354940964d910e3a2f45516}{\index{C\-C\-Node@{C\-C\-Node}!on\-Exit@{on\-Exit}}
+\index{on\-Exit@{on\-Exit}!CCNode@{C\-C\-Node}}
+\subsubsection[{on\-Exit}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf on\-Exit} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_af5b51ab87354940964d910e3a2f45516}
+Event that is called every time the \hyperlink{class_c_c_node}{C\-C\-Node} leaves the 'stage'. If the \hyperlink{class_c_c_node}{C\-C\-Node} leaves the 'stage' with a transition, this event is called when the transition finishes. During on\-Exit you can't access a sibling node. If you override on\-Exit, you shall call \mbox{[}super on\-Exit\mbox{]}. 
+
+Referenced by C\-C\-Director\-::end, C\-C\-Director\-::pop\-To\-Root\-Scene, and remove\-All\-Children\-With\-Cleanup\-:.
+
+
+\begin{DoxyCode}
+{
+        [self pauseSchedulerAndActions];
+        isRunning_ = NO;
+
+        [children_ makeObjectsPerformSelector:@selector(onExit)];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a3f92e1e9244df87644efbb7f6d0f7e0f}{\index{C\-C\-Node@{C\-C\-Node}!on\-Exit\-Transition\-Did\-Start@{on\-Exit\-Transition\-Did\-Start}}
+\index{on\-Exit\-Transition\-Did\-Start@{on\-Exit\-Transition\-Did\-Start}!CCNode@{C\-C\-Node}}
+\subsubsection[{on\-Exit\-Transition\-Did\-Start}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf on\-Exit\-Transition\-Did\-Start} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a3f92e1e9244df87644efbb7f6d0f7e0f}
+callback that is called every time the \hyperlink{class_c_c_node}{C\-C\-Node} leaves the 'stage'. If the \hyperlink{class_c_c_node}{C\-C\-Node} leaves the 'stage' with a transition, this callback is called when the transition starts. 
+
+Referenced by C\-C\-Director\-::end, C\-C\-Director\-::pop\-To\-Root\-Scene, and remove\-All\-Children\-With\-Cleanup\-:.
+
+
+\begin{DoxyCode}
+{
+        [children_ makeObjectsPerformSelector:@selector(
+      onExitTransitionDidStart)];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_aa6d2bef57768f2d9bc2e614e0c720b9b}{\index{C\-C\-Node@{C\-C\-Node}!parent\-To\-Node\-Transform@{parent\-To\-Node\-Transform}}
+\index{parent\-To\-Node\-Transform@{parent\-To\-Node\-Transform}!CCNode@{C\-C\-Node}}
+\subsubsection[{parent\-To\-Node\-Transform}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Affine\-Transform) {\bf parent\-To\-Node\-Transform} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_aa6d2bef57768f2d9bc2e614e0c720b9b}
+Returns the matrix that transform parent's space coordinates to the node's (local) space coordinates. The matrix is in Pixels. \begin{DoxySince}{Since}
+v0.\-7.\-1 
+\end{DoxySince}
+
+\begin{DoxyCode}
+{
+        if ( isInverseDirty_ ) {
+                inverse_ = CGAffineTransformInvert([self nodeToParentTransform]
+      );
+                isInverseDirty_ = NO;
+        }
+
+        return inverse_;
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_aea76a02e08a52a43dd3b0b7f9c5e4381}{\index{C\-C\-Node@{C\-C\-Node}!pause\-Scheduler\-And\-Actions@{pause\-Scheduler\-And\-Actions}}
+\index{pause\-Scheduler\-And\-Actions@{pause\-Scheduler\-And\-Actions}!CCNode@{C\-C\-Node}}
+\subsubsection[{pause\-Scheduler\-And\-Actions}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf pause\-Scheduler\-And\-Actions} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_aea76a02e08a52a43dd3b0b7f9c5e4381}
+pauses all scheduled selectors and actions. Called internally by on\-Exit 
+
+Referenced by on\-Exit.
+
+
+\begin{DoxyCode}
+{
+        [scheduler_ pauseTarget:self];
+        [actionManager_ pauseTarget:self];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a906f6067b0bedf421619c60f93f8e982}{\index{C\-C\-Node@{C\-C\-Node}!remove\-All\-Children@{remove\-All\-Children}}
+\index{remove\-All\-Children@{remove\-All\-Children}!CCNode@{C\-C\-Node}}
+\subsubsection[{remove\-All\-Children}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\-All\-Children} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a906f6067b0bedf421619c60f93f8e982}
+Removes all children from the container forcing a cleanup. \begin{DoxySince}{Since}
+v2.\-1 
+\end{DoxySince}
+
+\begin{DoxyCode}
+{
+        [self removeAllChildrenWithCleanup:YES];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a2d013deef5988b6c01fe5097147e02f3}{\index{C\-C\-Node@{C\-C\-Node}!remove\-All\-Children\-With\-Cleanup\-:@{remove\-All\-Children\-With\-Cleanup\-:}}
+\index{remove\-All\-Children\-With\-Cleanup\-:@{remove\-All\-Children\-With\-Cleanup\-:}!CCNode@{C\-C\-Node}}
+\subsubsection[{remove\-All\-Children\-With\-Cleanup\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\-All\-Children\-With\-Cleanup\-:} 
+\begin{DoxyParamCaption}
+\item[{(B\-O\-O\-L)}]{cleanup}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a2d013deef5988b6c01fe5097147e02f3}
+Removes all children from the container and do a cleanup all running actions depending on the cleanup parameter. \begin{DoxySince}{Since}
+v0.\-7.\-1 
+\end{DoxySince}
+
+
+Referenced by remove\-All\-Children.
+
+
+\begin{DoxyCode}
+                                    :(BOOL)cleanup
+{
+        // not using detachChild improves speed here
+        CCNode *c;
+        CCARRAY_FOREACH(children_, c)
+        {
+                // IMPORTANT:
+                //  -1st do onExit
+                //  -2nd cleanup
+                if (isRunning_)
+                {
+                        [c onExitTransitionDidStart];
+                        [c onExit];
+                }
+
+                if (cleanup)
+                        [c cleanup];
+
+                // set parent nil at the end (issue #476)
+                [c setParent:nil];
+        }
+
+        [children_ removeAllObjects];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a8f8badc448b36ae3d6b92b248b5a53a5}{\index{C\-C\-Node@{C\-C\-Node}!remove\-Child\-:@{remove\-Child\-:}}
+\index{remove\-Child\-:@{remove\-Child\-:}!CCNode@{C\-C\-Node}}
+\subsubsection[{remove\-Child\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\-Child\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Node}$\ast$)}]{child}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a8f8badc448b36ae3d6b92b248b5a53a5}
+Removes a child from the container forcing a cleanup \begin{DoxySince}{Since}
+v2.\-1 
+\end{DoxySince}
+
+\begin{DoxyCode}
+                   : (CCNode*)child
+{
+        [self removeChild:child cleanup:YES];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a409c8fa79c0c6f26c7d84145f75d78ad}{\index{C\-C\-Node@{C\-C\-Node}!remove\-Child\-:cleanup\-:@{remove\-Child\-:cleanup\-:}}
+\index{remove\-Child\-:cleanup\-:@{remove\-Child\-:cleanup\-:}!CCNode@{C\-C\-Node}}
+\subsubsection[{remove\-Child\-:cleanup\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\-Child\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Node}$\ast$)}]{node}
+\item[{cleanup:(B\-O\-O\-L)}]{cleanup}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a409c8fa79c0c6f26c7d84145f75d78ad}
+Removes a child from the container. It will also cleanup all running actions depending on the cleanup parameter. \begin{DoxySince}{Since}
+v0.\-7.\-1 
+\end{DoxySince}
+
+
+Referenced by remove\-Child\-:, C\-C\-Particle\-Batch\-Node\-::remove\-Child\-:cleanup\-:, C\-C\-Sprite\-Batch\-Node\-::remove\-Child\-:cleanup\-:, remove\-Child\-By\-Tag\-:cleanup\-:, remove\-From\-Parent\-And\-Cleanup\-:, and C\-C\-Particle\-System\-::update\-:.
+
+
+\begin{DoxyCode}
+                   : (CCNode*)child cleanup:(BOOL)cleanup
+{
+        // explicit nil handling
+        if (child == nil)
+                return;
+
+        if ( [children_ containsObject:child] )
+                [self detachChild:child cleanup:cleanup];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a19ee0f645690265a85110b8b8ed793fa}{\index{C\-C\-Node@{C\-C\-Node}!remove\-Child\-By\-Tag\-:@{remove\-Child\-By\-Tag\-:}}
+\index{remove\-Child\-By\-Tag\-:@{remove\-Child\-By\-Tag\-:}!CCNode@{C\-C\-Node}}
+\subsubsection[{remove\-Child\-By\-Tag\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\-Child\-By\-Tag\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Integer)}]{tag}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a19ee0f645690265a85110b8b8ed793fa}
+Removes a child from the container by tag value forcing a cleanup. \begin{DoxySince}{Since}
+v2.\-1 
+\end{DoxySince}
+
+\begin{DoxyCode}
+                        :(NSInteger)aTag
+{
+        [self removeChildByTag:aTag cleanup:YES];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_aaea41be2508780d5870771ccd797fe54}{\index{C\-C\-Node@{C\-C\-Node}!remove\-Child\-By\-Tag\-:cleanup\-:@{remove\-Child\-By\-Tag\-:cleanup\-:}}
+\index{remove\-Child\-By\-Tag\-:cleanup\-:@{remove\-Child\-By\-Tag\-:cleanup\-:}!CCNode@{C\-C\-Node}}
+\subsubsection[{remove\-Child\-By\-Tag\-:cleanup\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\-Child\-By\-Tag\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Integer)}]{tag}
+\item[{cleanup:(B\-O\-O\-L)}]{cleanup}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_aaea41be2508780d5870771ccd797fe54}
+Removes a child from the container by tag value. It will also cleanup all running actions depending on the cleanup parameter \begin{DoxySince}{Since}
+v0.\-7.\-1 
+\end{DoxySince}
+
+
+Referenced by remove\-Child\-By\-Tag\-:.
+
+
+\begin{DoxyCode}
+                        :(NSInteger)aTag cleanup:(BOOL)cleanup
+{
+        NSAssert( aTag != kCCNodeTagInvalid, @"Invalid tag");
+
+        CCNode *child = [self getChildByTag:aTag];
+
+        if (child == nil)
+                CCLOG(@"cocos2d: removeChildByTag: child not found!");
+        else
+                [self removeChild:child cleanup:cleanup];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_ad2d43e047941be667b57c71e1389bede}{\index{C\-C\-Node@{C\-C\-Node}!remove\-From\-Parent@{remove\-From\-Parent}}
+\index{remove\-From\-Parent@{remove\-From\-Parent}!CCNode@{C\-C\-Node}}
+\subsubsection[{remove\-From\-Parent}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\-From\-Parent} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_ad2d43e047941be667b57c71e1389bede}
+Remove itself from its parent node forcing a cleanup. If the node orphan, then nothing happens. \begin{DoxySince}{Since}
+v2.\-1 
+\end{DoxySince}
+
+\begin{DoxyCode}
+{
+        [self removeFromParentAndCleanup:YES];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a0d4e615f688458c74001acf10f0ae011}{\index{C\-C\-Node@{C\-C\-Node}!remove\-From\-Parent\-And\-Cleanup\-:@{remove\-From\-Parent\-And\-Cleanup\-:}}
+\index{remove\-From\-Parent\-And\-Cleanup\-:@{remove\-From\-Parent\-And\-Cleanup\-:}!CCNode@{C\-C\-Node}}
+\subsubsection[{remove\-From\-Parent\-And\-Cleanup\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\-From\-Parent\-And\-Cleanup\-:} 
+\begin{DoxyParamCaption}
+\item[{(B\-O\-O\-L)}]{cleanup}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a0d4e615f688458c74001acf10f0ae011}
+Remove itself from its parent node. If cleanup is Y\-E\-S, then also remove all actions and callbacks. If the node orphan, then nothing happens. \begin{DoxySince}{Since}
+v0.\-99.\-3 
+\end{DoxySince}
+
+
+Referenced by remove\-From\-Parent.
+
+
+\begin{DoxyCode}
+                                  :(BOOL)cleanup
+{
+        [parent_ removeChild:self cleanup:cleanup];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_ab35e8e10f73eb3ac074f5ef0cc087e78}{\index{C\-C\-Node@{C\-C\-Node}!reorder\-Child\-:z\-:@{reorder\-Child\-:z\-:}}
+\index{reorder\-Child\-:z\-:@{reorder\-Child\-:z\-:}!CCNode@{C\-C\-Node}}
+\subsubsection[{reorder\-Child\-:z\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) reorder\-Child\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Node}$\ast$)}]{child}
+\item[{z:(N\-S\-Integer)}]{z\-Order}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_ab35e8e10f73eb3ac074f5ef0cc087e78}
+Reorders a child according to a new z value. The child M\-U\-S\-T be already added. 
+\begin{DoxyCode}
+                    :(CCNode*) child z:(NSInteger)z
+{
+        NSAssert( child != nil, @"Child must be non-nil");
+
+        isReorderChildDirty_ = YES;
+
+        [child setOrderOfArrival: globalOrderOfArrival++];
+        [child _setZOrder:z];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_addb189bc4c6130cc5061f736d9b2fbe5}{\index{C\-C\-Node@{C\-C\-Node}!resume\-Scheduler\-And\-Actions@{resume\-Scheduler\-And\-Actions}}
+\index{resume\-Scheduler\-And\-Actions@{resume\-Scheduler\-And\-Actions}!CCNode@{C\-C\-Node}}
+\subsubsection[{resume\-Scheduler\-And\-Actions}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf resume\-Scheduler\-And\-Actions} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_addb189bc4c6130cc5061f736d9b2fbe5}
+resumes all scheduled selectors and actions. Called internally by on\-Enter 
+
+Referenced by on\-Enter.
+
+
+\begin{DoxyCode}
+{
+        [scheduler_ resumeTarget:self];
+        [actionManager_ resumeTarget:self];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_afba9468e339b4222bce6705cd328351d}{\index{C\-C\-Node@{C\-C\-Node}!run\-Action\-:@{run\-Action\-:}}
+\index{run\-Action\-:@{run\-Action\-:}!CCNode@{C\-C\-Node}}
+\subsubsection[{run\-Action\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Action} $\ast$) {\bf run\-Action\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Action}$\ast$)}]{action}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_afba9468e339b4222bce6705cd328351d}
+Executes an action, and returns the action that is executed. The node becomes the action's target. \begin{DoxyWarning}{Warning}
+Starting from v0.\-8 actions don't retain their target anymore. 
+\end{DoxyWarning}
+\begin{DoxySince}{Since}
+v0.\-7.\-1 
+\end{DoxySince}
+\begin{DoxyReturn}{Returns}
+An Action pointer 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+                      :(CCAction*) action
+{
+        NSAssert( action != nil, @"Argument must be non-nil");
+
+        [actionManager_ addAction:action target:self paused:!isRunning_];
+        return action;
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_afe99d609f17c4c849e4543805ffeceab}{\index{C\-C\-Node@{C\-C\-Node}!schedule\-:@{schedule\-:}}
+\index{schedule\-:@{schedule\-:}!CCNode@{C\-C\-Node}}
+\subsubsection[{schedule\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf schedule\-:} 
+\begin{DoxyParamCaption}
+\item[{(S\-E\-L)}]{s}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_afe99d609f17c4c849e4543805ffeceab}
+schedules a selector. The scheduled selector will be ticked every frame 
+\begin{DoxyCode}
+                :(SEL)selector
+{
+        [self schedule:selector interval:0 repeat:kCCRepeatForever delay:0];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a7e0c230d398bba56d690e025544cb745}{\index{C\-C\-Node@{C\-C\-Node}!schedule\-:interval\-:@{schedule\-:interval\-:}}
+\index{schedule\-:interval\-:@{schedule\-:interval\-:}!CCNode@{C\-C\-Node}}
+\subsubsection[{schedule\-:interval\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf schedule\-:} 
+\begin{DoxyParamCaption}
+\item[{(S\-E\-L)}]{s}
+\item[{interval:({\bf cc\-Time})}]{seconds}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a7e0c230d398bba56d690e025544cb745}
+schedules a custom selector with an interval time in seconds. If time is 0 it will be ticked every frame. If time is 0, it is recommended to use 'schedule\-Update' instead.
+
+If the selector is already scheduled, then the interval parameter will be updated without scheduling it again. 
+
+Referenced by C\-C\-Transition\-Scene\-::finish.
+
+
+\begin{DoxyCode}
+                :(SEL)selector interval:(ccTime)interval
+{
+        [self schedule:selector interval:interval repeat:kCCRepeatForever delay
+      :0];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_ae12c910d6f81e4734aa575d70b3d4d45}{\index{C\-C\-Node@{C\-C\-Node}!schedule\-:interval\-:repeat\-:delay\-:@{schedule\-:interval\-:repeat\-:delay\-:}}
+\index{schedule\-:interval\-:repeat\-:delay\-:@{schedule\-:interval\-:repeat\-:delay\-:}!CCNode@{C\-C\-Node}}
+\subsubsection[{schedule\-:interval\-:repeat\-:delay\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf schedule\-:} 
+\begin{DoxyParamCaption}
+\item[{(S\-E\-L)}]{selector}
+\item[{interval:({\bf cc\-Time})}]{interval}
+\item[{repeat:(uint)}]{repeat}
+\item[{delay:({\bf cc\-Time})}]{delay}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_ae12c910d6f81e4734aa575d70b3d4d45}
+repeat will execute the action repeat + 1 times, for a continues action use k\-C\-C\-Repeat\-Forever delay is the amount of time the action will wait before execution 
+
+Referenced by schedule\-:, schedule\-:interval\-:, and schedule\-Once\-:delay\-:.
+
+
+\begin{DoxyCode}
+                :(SEL)selector interval:(ccTime)interval repeat: (uint) repeat 
+      delay:(ccTime) delay
+{
+        NSAssert( selector != nil, @"Argument must be non-nil");
+        NSAssert( interval >=0, @"Arguemnt must be positive");
+
+        [scheduler_ scheduleSelector:selector forTarget:self interval:interval 
+      repeat:repeat delay:delay paused:!isRunning_];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_ade03a2eb49bdf2683e8aee8dcc17c7b0}{\index{C\-C\-Node@{C\-C\-Node}!schedule\-Once\-:delay\-:@{schedule\-Once\-:delay\-:}}
+\index{schedule\-Once\-:delay\-:@{schedule\-Once\-:delay\-:}!CCNode@{C\-C\-Node}}
+\subsubsection[{schedule\-Once\-:delay\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) schedule\-Once\-: 
+\begin{DoxyParamCaption}
+\item[{(S\-E\-L)}]{selector}
+\item[{delay:({\bf cc\-Time})}]{delay}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_ade03a2eb49bdf2683e8aee8dcc17c7b0}
+Schedules a selector that runs only once, with a delay of 0 or larger 
+\begin{DoxyCode}
+                     :(SEL) selector delay:(ccTime) delay
+{
+        [self schedule:selector interval:0.f repeat:0 delay:delay];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a3b9fd5b63a2f3e3ec56e40e13994fba7}{\index{C\-C\-Node@{C\-C\-Node}!schedule\-Update@{schedule\-Update}}
+\index{schedule\-Update@{schedule\-Update}!CCNode@{C\-C\-Node}}
+\subsubsection[{schedule\-Update}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf schedule\-Update} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a3b9fd5b63a2f3e3ec56e40e13994fba7}
+check whether a selector is scheduled. schedules the \char`\"{}update\char`\"{} method. It will use the order number 0. This method will be called every frame. Scheduled methods with a lower order value will be called before the ones that have a higher order value. Only one \char`\"{}update\char`\"{} method could be scheduled per node.
+
+\begin{DoxySince}{Since}
+v0.\-99.\-3 
+\end{DoxySince}
+
+
+Referenced by C\-C\-Motion\-Streak\-::init\-With\-Fade\-:min\-Seg\-:width\-:color\-:texture\-:.
+
+
+\begin{DoxyCode}
+{
+        [self scheduleUpdateWithPriority:0];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a3abe343042d72b5bff61ee5d43f4e651}{\index{C\-C\-Node@{C\-C\-Node}!schedule\-Update\-With\-Priority\-:@{schedule\-Update\-With\-Priority\-:}}
+\index{schedule\-Update\-With\-Priority\-:@{schedule\-Update\-With\-Priority\-:}!CCNode@{C\-C\-Node}}
+\subsubsection[{schedule\-Update\-With\-Priority\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf schedule\-Update\-With\-Priority\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Integer)}]{priority}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a3abe343042d72b5bff61ee5d43f4e651}
+schedules the \char`\"{}update\char`\"{} selector with a custom priority. This selector will be called every frame. Scheduled selectors with a lower priority will be called before the ones that have a higher value. Only one \char`\"{}update\char`\"{} selector could be scheduled per node (You can't have 2 'update' selectors).
+
+\begin{DoxySince}{Since}
+v0.\-99.\-3 
+\end{DoxySince}
+
+
+Referenced by C\-C\-Particle\-System\-::init\-With\-Total\-Particles\-:, and schedule\-Update.
+
+
+\begin{DoxyCode}
+                                  :(NSInteger)priority
+{
+        [scheduler_ scheduleUpdateForTarget:self priority:priority paused:!
+      isRunning_];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a9aa8035fd4681485a5166590115d7e49}{\index{C\-C\-Node@{C\-C\-Node}!sort\-All\-Children@{sort\-All\-Children}}
+\index{sort\-All\-Children@{sort\-All\-Children}!CCNode@{C\-C\-Node}}
+\subsubsection[{sort\-All\-Children}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf sort\-All\-Children} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a9aa8035fd4681485a5166590115d7e49}
+performance improvement, Sort the children array once before drawing, instead of every time when a child is added or reordered don't call this manually unless a child added needs to be removed in the same frame 
+
+Referenced by visit.
+
+
+\begin{DoxyCode}
+{
+        if (isReorderChildDirty_)
+        {
+                NSInteger i,j,length = children_->data->num;
+                CCNode ** x = children_->data->arr;
+                CCNode *tempItem;
+
+                // insertion sort
+                for(i=1; i<length; i++)
+                {
+                        tempItem = x[i];
+                        j = i-1;
+
+                        //continue moving element downwards while zOrder is
+       smaller or when zOrder is the same but mutatedIndex is smaller
+                        while(j>=0 && ( tempItem.zOrder < x[j].zOrder || ( 
+      tempItem.zOrder== x[j].zOrder && tempItem.orderOfArrival < x[j].orderOfArrival ) ) )
+                        {
+                                x[j+1] = x[j];
+                                j = j-1;
+                        }
+                        x[j+1] = tempItem;
+                }
+
+                //don't need to check children recursively, that's done in
+       visit of each child
+
+                isReorderChildDirty_ = NO;
+        }
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a6d2592ff2d9c559f25b4b1a6c01a5dc8}{\index{C\-C\-Node@{C\-C\-Node}!stop\-Action\-:@{stop\-Action\-:}}
+\index{stop\-Action\-:@{stop\-Action\-:}!CCNode@{C\-C\-Node}}
+\subsubsection[{stop\-Action\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf stop\-Action\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Action}$\ast$)}]{action}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a6d2592ff2d9c559f25b4b1a6c01a5dc8}
+Removes an action from the running action list 
+\begin{DoxyCode}
+                  : (CCAction*) action
+{
+        [actionManager_ removeAction:action];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a5e446f4095835d4a1d5a497fa7d9c338}{\index{C\-C\-Node@{C\-C\-Node}!stop\-Action\-By\-Tag\-:@{stop\-Action\-By\-Tag\-:}}
+\index{stop\-Action\-By\-Tag\-:@{stop\-Action\-By\-Tag\-:}!CCNode@{C\-C\-Node}}
+\subsubsection[{stop\-Action\-By\-Tag\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf stop\-Action\-By\-Tag\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Integer)}]{tag}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a5e446f4095835d4a1d5a497fa7d9c338}
+Removes an action from the running action list given its tag \begin{DoxySince}{Since}
+v0.\-7.\-1 
+\end{DoxySince}
+
+\begin{DoxyCode}
+                       :(NSInteger)aTag
+{
+        NSAssert( aTag != kCCActionTagInvalid, @"Invalid tag");
+        [actionManager_ removeActionByTag:aTag target:self];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a24f2916259df943e3f13cdd702673962}{\index{C\-C\-Node@{C\-C\-Node}!stop\-All\-Actions@{stop\-All\-Actions}}
+\index{stop\-All\-Actions@{stop\-All\-Actions}!CCNode@{C\-C\-Node}}
+\subsubsection[{stop\-All\-Actions}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf stop\-All\-Actions} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a24f2916259df943e3f13cdd702673962}
+Removes all actions from the running action list 
+
+Referenced by cleanup.
+
+
+\begin{DoxyCode}
+{
+        [actionManager_ removeAllActionsFromTarget:self];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a28462e8ba70bb61dc4f301b1180ec7e5}{\index{C\-C\-Node@{C\-C\-Node}!transform@{transform}}
+\index{transform@{transform}!CCNode@{C\-C\-Node}}
+\subsubsection[{transform}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf transform} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a28462e8ba70bb61dc4f301b1180ec7e5}
+performs Open\-G\-L view-\/matrix transformation based on position, scale, rotation and other attributes. 
+
+Referenced by transform\-Ancestors, and visit.
+
+
+\begin{DoxyCode}
+{
+        kmMat4 transfrom4x4;
+
+        // Convert 3x3 into 4x4 matrix
+        CGAffineTransform tmpAffine = [self nodeToParentTransform];
+        CGAffineToGL(&tmpAffine, transfrom4x4.mat);
+
+        // Update Z vertex manually
+        transfrom4x4.mat[14] = vertexZ_;
+
+        kmGLMultMatrix( &transfrom4x4 );
+
+
+        // XXX: Expensive calls. Camera should be integrated into the cached
+       affine matrix
+        if ( camera_ && !(grid_ && grid_.active) )
+        {
+                BOOL translate = (anchorPointInPoints_.x != 0.0f || 
+      anchorPointInPoints_.y != 0.0f);
+
+                if( translate )
+                        kmGLTranslatef(RENDER_IN_SUBPIXEL(anchorPointInPoints_.
+      x), RENDER_IN_SUBPIXEL(anchorPointInPoints_.y), 0 );
+
+                [camera_ locate];
+
+                if( translate )
+                        kmGLTranslatef(RENDER_IN_SUBPIXEL(-anchorPointInPoints_
+      .x), RENDER_IN_SUBPIXEL(-anchorPointInPoints_.y), 0 );
+        }
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_ab953e7552e84c54e2cb445ebc629e983}{\index{C\-C\-Node@{C\-C\-Node}!transform\-Ancestors@{transform\-Ancestors}}
+\index{transform\-Ancestors@{transform\-Ancestors}!CCNode@{C\-C\-Node}}
+\subsubsection[{transform\-Ancestors}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf transform\-Ancestors} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_ab953e7552e84c54e2cb445ebc629e983}
+performs Open\-G\-L view-\/matrix transformation of its ancestors. Generally the ancestors are already transformed, but in certain cases (eg\-: attaching a F\-B\-O) it is necessary to transform the ancestors again. \begin{DoxySince}{Since}
+v0.\-7.\-2 
+\end{DoxySince}
+
+
+Referenced by transform\-Ancestors.
+
+
+\begin{DoxyCode}
+{
+        if( parent_ ) {
+                [parent_ transformAncestors];
+                [parent_ transform];
+        }
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a0226f1400d9401dc6b3d392e4d2d081e}{\index{C\-C\-Node@{C\-C\-Node}!unschedule\-:@{unschedule\-:}}
+\index{unschedule\-:@{unschedule\-:}!CCNode@{C\-C\-Node}}
+\subsubsection[{unschedule\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf unschedule\-:} 
+\begin{DoxyParamCaption}
+\item[{(S\-E\-L)}]{s}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a0226f1400d9401dc6b3d392e4d2d081e}
+unschedules a custom selector. 
+\begin{DoxyCode}
+                  :(SEL)selector
+{
+        // explicit nil handling
+        if (selector == nil)
+                return;
+
+        [scheduler_ unscheduleSelector:selector forTarget:self];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_ae7e3b84d0a37ce086f1ca383302e53d2}{\index{C\-C\-Node@{C\-C\-Node}!unschedule\-All\-Selectors@{unschedule\-All\-Selectors}}
+\index{unschedule\-All\-Selectors@{unschedule\-All\-Selectors}!CCNode@{C\-C\-Node}}
+\subsubsection[{unschedule\-All\-Selectors}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf unschedule\-All\-Selectors} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_ae7e3b84d0a37ce086f1ca383302e53d2}
+unschedule all scheduled selectors\-: custom selectors, and the 'update' selector. Actions are not affected by this method. \begin{DoxySince}{Since}
+v0.\-99.\-3 
+\end{DoxySince}
+
+
+Referenced by cleanup.
+
+
+\begin{DoxyCode}
+{
+        [scheduler_ unscheduleAllForTarget:self];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a36d86c671de265dc7e2a9f7a051d2428}{\index{C\-C\-Node@{C\-C\-Node}!visit@{visit}}
+\index{visit@{visit}!CCNode@{C\-C\-Node}}
+\subsubsection[{visit}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf visit} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a36d86c671de265dc7e2a9f7a051d2428}
+recursive method that visit its children and draw them 
+
+Referenced by visit.
+
+
+\begin{DoxyCode}
+{
+        // quick return if not visible. children won't be drawn.
+        if (!visible_)
+                return;
+
+        kmGLPushMatrix();
+
+        if ( grid_ && grid_.active)
+                [grid_ beforeDraw];
+
+        [self transform];
+
+        if(children_) {
+
+                [self sortAllChildren];
+
+                ccArray *arrayData = children_->data;
+                NSUInteger i = 0;
+
+                // draw children zOrder < 0
+                for( ; i < arrayData->num; i++ ) {
+                        CCNode *child = arrayData->arr[i];
+                        if ( [child zOrder] < 0 )
+                                [child visit];
+                        else
+                                break;
+                }
+
+                // self draw
+                [self draw];
+
+                // draw children zOrder >= 0
+                for( ; i < arrayData->num; i++ ) {
+                        CCNode *child =  arrayData->arr[i];
+                        [child visit];
+                }
+
+        } else
+                [self draw];
+
+        // reset for next frame
+        orderOfArrival_ = 0;
+
+        if ( grid_ && grid_.active)
+                [grid_ afterDraw:self];
+
+        kmGLPopMatrix();
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_node_a3a3a51a1b2980da9b39f1d5c46f42d92}{\index{C\-C\-Node@{C\-C\-Node}!world\-To\-Node\-Transform@{world\-To\-Node\-Transform}}
+\index{world\-To\-Node\-Transform@{world\-To\-Node\-Transform}!CCNode@{C\-C\-Node}}
+\subsubsection[{world\-To\-Node\-Transform}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Affine\-Transform) {\bf world\-To\-Node\-Transform} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_node_a3a3a51a1b2980da9b39f1d5c46f42d92}
+Returns the inverse world affine transform matrix. The matrix is in Pixels. \begin{DoxySince}{Since}
+v0.\-7.\-1 
+\end{DoxySince}
+
+
+Referenced by convert\-To\-Node\-Space\-:.
+
+
+\begin{DoxyCode}
+{
+        return CGAffineTransformInvert([self nodeToWorldTransform]);
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{class_c_c_node_a23baea124da6113f8c3fe95b6f8eaa52}{\index{C\-C\-Node@{C\-C\-Node}!action\-Manager@{action\-Manager}}
+\index{action\-Manager@{action\-Manager}!CCNode@{C\-C\-Node}}
+\subsubsection[{action\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Action\-Manager} $\ast$) {\bf action\-Manager}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}\label{class_c_c_node_a23baea124da6113f8c3fe95b6f8eaa52}
+\hyperlink{interface_c_c_action_manager}{C\-C\-Action\-Manager} used by all the actions. I\-M\-P\-O\-R\-T\-A\-N\-T\-: If you set a new \hyperlink{interface_c_c_action_manager}{C\-C\-Action\-Manager}, then previously created actions are going to be removed. \begin{DoxySince}{Since}
+v2.\-0 
+\end{DoxySince}
+\hypertarget{class_c_c_node_ac24fc742eb11ee96207052639224434c}{\index{C\-C\-Node@{C\-C\-Node}!anchor\-Point@{anchor\-Point}}
+\index{anchor\-Point@{anchor\-Point}!CCNode@{C\-C\-Node}}
+\subsubsection[{anchor\-Point}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Point) {\bf anchor\-Point}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{class_c_c_node_ac24fc742eb11ee96207052639224434c}
+anchor\-Point is the point around which all transformations and positioning manipulations take place. It's like a pin in the node where it is \char`\"{}attached\char`\"{} to its parent. The anchor\-Point is normalized, like a percentage. (0,0) means the bottom-\/left corner and (1,1) means the top-\/right corner. But you can use values higher than (1,1) and lower than (0,0) too. The default anchor\-Point is (0,0). It starts in the bottom-\/left corner. \hyperlink{class_c_c_sprite}{C\-C\-Sprite} and other subclasses have a different default anchor\-Point. \begin{DoxySince}{Since}
+v0.\-8 
+\end{DoxySince}
+
+
+Referenced by C\-C\-T\-M\-X\-Layer\-::tile\-At\-:.
+
+\hypertarget{class_c_c_node_a8fd2bad5639f673a56eaf8b9c0302c48}{\index{C\-C\-Node@{C\-C\-Node}!anchor\-Point\-In\-Points@{anchor\-Point\-In\-Points}}
+\index{anchor\-Point\-In\-Points@{anchor\-Point\-In\-Points}!CCNode@{C\-C\-Node}}
+\subsubsection[{anchor\-Point\-In\-Points}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Point) {\bf anchor\-Point\-In\-Points}\hspace{0.3cm}{\ttfamily  \mbox{[}read, assign\mbox{]}}}}\label{class_c_c_node_a8fd2bad5639f673a56eaf8b9c0302c48}
+The anchor\-Point in absolute pixels. Since v0.\-8 you can only read it. If you wish to modify it, use anchor\-Point instead \hypertarget{class_c_c_node_a14b2b20d96921f92ef12b661f6aeff72}{\index{C\-C\-Node@{C\-C\-Node}!camera@{camera}}
+\index{camera@{camera}!CCNode@{C\-C\-Node}}
+\subsubsection[{camera}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Camera} $\ast$) {\bf camera}\hspace{0.3cm}{\ttfamily  \mbox{[}read, assign\mbox{]}}}}\label{class_c_c_node_a14b2b20d96921f92ef12b661f6aeff72}
+A \hyperlink{interface_c_c_camera}{C\-C\-Camera} object that lets you move the node using a glu\-Look\-At \hypertarget{class_c_c_node_a5e739ecda0c314283a89ac389dfca2fa}{\index{C\-C\-Node@{C\-C\-Node}!children@{children}}
+\index{children@{children}!CCNode@{C\-C\-Node}}
+\subsubsection[{children}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Array}$\ast$) {\bf children}\hspace{0.3cm}{\ttfamily  \mbox{[}read, assign\mbox{]}}}}\label{class_c_c_node_a5e739ecda0c314283a89ac389dfca2fa}
+Array of children \hypertarget{class_c_c_node_a7b80fa1c9ea5db76137ed9e73646ba25}{\index{C\-C\-Node@{C\-C\-Node}!content\-Size@{content\-Size}}
+\index{content\-Size@{content\-Size}!CCNode@{C\-C\-Node}}
+\subsubsection[{content\-Size}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Size) {\bf content\-Size}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{class_c_c_node_a7b80fa1c9ea5db76137ed9e73646ba25}
+The untransformed size of the node in Points The content\-Size remains the same no matter the node is scaled or rotated. All nodes has a size. Layer and Scene has the same size of the screen. \begin{DoxySince}{Since}
+v0.\-8 
+\end{DoxySince}
+
+
+Referenced by C\-C\-Menu\-::align\-Items\-Horizontally\-With\-Padding\-:, and C\-C\-Menu\-::align\-Items\-Vertically\-With\-Padding\-:.
+
+\hypertarget{class_c_c_node_ad0146f65e6d5edeee5bf80466d4cd738}{\index{C\-C\-Node@{C\-C\-Node}!gl\-Server\-State@{gl\-Server\-State}}
+\index{gl\-Server\-State@{gl\-Server\-State}!CCNode@{C\-C\-Node}}
+\subsubsection[{gl\-Server\-State}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf cc\-G\-L\-Server\-State}) {\bf gl\-Server\-State}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{class_c_c_node_ad0146f65e6d5edeee5bf80466d4cd738}
+G\-L server side state \begin{DoxySince}{Since}
+v2.\-0 
+\end{DoxySince}
+\hypertarget{class_c_c_node_ae7c8dade03d8bcd244766b97d21ef80f}{\index{C\-C\-Node@{C\-C\-Node}!grid@{grid}}
+\index{grid@{grid}!CCNode@{C\-C\-Node}}
+\subsubsection[{grid}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Grid\-Base}$\ast$) {\bf grid}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}\label{class_c_c_node_ae7c8dade03d8bcd244766b97d21ef80f}
+A C\-C\-Grid object that is used when applying effects \hypertarget{class_c_c_node_a1798f20ed00ae4514ab7f2fc9ffe7e2b}{\index{C\-C\-Node@{C\-C\-Node}!ignore\-Anchor\-Point\-For\-Position@{ignore\-Anchor\-Point\-For\-Position}}
+\index{ignore\-Anchor\-Point\-For\-Position@{ignore\-Anchor\-Point\-For\-Position}!CCNode@{C\-C\-Node}}
+\subsubsection[{ignore\-Anchor\-Point\-For\-Position}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) {\bf ignore\-Anchor\-Point\-For\-Position}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{class_c_c_node_a1798f20ed00ae4514ab7f2fc9ffe7e2b}
+If Y\-E\-S, the Anchor Point will be (0,0) when you position the \hyperlink{class_c_c_node}{C\-C\-Node}. Used by \hyperlink{class_c_c_layer}{C\-C\-Layer} and \hyperlink{interface_c_c_scene}{C\-C\-Scene}. \hypertarget{class_c_c_node_a0ef88eaa1917c87173866f76dac006b3}{\index{C\-C\-Node@{C\-C\-Node}!is\-Running@{is\-Running}}
+\index{is\-Running@{is\-Running}!CCNode@{C\-C\-Node}}
+\subsubsection[{is\-Running}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) {\bf is\-Running}\hspace{0.3cm}{\ttfamily  \mbox{[}read, assign\mbox{]}}}}\label{class_c_c_node_a0ef88eaa1917c87173866f76dac006b3}
+whether or not the node is running \hypertarget{class_c_c_node_ae56cef8bc876f9f4d609266bc0f80a29}{\index{C\-C\-Node@{C\-C\-Node}!order\-Of\-Arrival@{order\-Of\-Arrival}}
+\index{order\-Of\-Arrival@{order\-Of\-Arrival}!CCNode@{C\-C\-Node}}
+\subsubsection[{order\-Of\-Arrival}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-U\-Integer) {\bf order\-Of\-Arrival}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{class_c_c_node_ae56cef8bc876f9f4d609266bc0f80a29}
+used internally for z\-Order sorting, don't change this manually 
+
+Referenced by sort\-All\-Children.
+
+\hypertarget{class_c_c_node_a9504c37bbc9d2ca93c34784383b21a26}{\index{C\-C\-Node@{C\-C\-Node}!parent@{parent}}
+\index{parent@{parent}!CCNode@{C\-C\-Node}}
+\subsubsection[{parent}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Node}$\ast$) {\bf parent}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{class_c_c_node_a9504c37bbc9d2ca93c34784383b21a26}
+A weak reference to the parent 
+
+Referenced by add\-Child\-:z\-:tag\-:.
+
+\hypertarget{class_c_c_node_a297b5e96d7c1372d35589a924e1eb286}{\index{C\-C\-Node@{C\-C\-Node}!position@{position}}
+\index{position@{position}!CCNode@{C\-C\-Node}}
+\subsubsection[{position}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Point) {\bf position}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{class_c_c_node_a297b5e96d7c1372d35589a924e1eb286}
+Position (x,y) of the node in points. (0,0) is the left-\/bottom corner. 
+
+Referenced by C\-C\-Parallax\-Node\-::add\-Child\-:z\-:parallax\-Ratio\-:position\-Offset\-:, and C\-C\-T\-M\-X\-Layer\-::set\-Tile\-G\-I\-D\-:at\-:with\-Flags\-:.
+
+\hypertarget{class_c_c_node_aecbc1fc81f9adf0ce886644e190e2680}{\index{C\-C\-Node@{C\-C\-Node}!rotation@{rotation}}
+\index{rotation@{rotation}!CCNode@{C\-C\-Node}}
+\subsubsection[{rotation}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf rotation}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{class_c_c_node_aecbc1fc81f9adf0ce886644e190e2680}
+The rotation (angle) of the node in degrees. 0 is the default rotation angle. Positive values rotate node C\-W. \hypertarget{class_c_c_node_a9fd979e8636f47567654cdedbba55d90}{\index{C\-C\-Node@{C\-C\-Node}!rotation\-X@{rotation\-X}}
+\index{rotation\-X@{rotation\-X}!CCNode@{C\-C\-Node}}
+\subsubsection[{rotation\-X}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf rotation\-X}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{class_c_c_node_a9fd979e8636f47567654cdedbba55d90}
+The rotation (angle) of the node in degrees. 0 is the default rotation angle. Positive values rotate node C\-W. It only modifies the X rotation performing a horizontal rotational skew . \hypertarget{class_c_c_node_aab0973f1a68dd4362fc16ff5af4da440}{\index{C\-C\-Node@{C\-C\-Node}!rotation\-Y@{rotation\-Y}}
+\index{rotation\-Y@{rotation\-Y}!CCNode@{C\-C\-Node}}
+\subsubsection[{rotation\-Y}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf rotation\-Y}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{class_c_c_node_aab0973f1a68dd4362fc16ff5af4da440}
+The rotation (angle) of the node in degrees. 0 is the default rotation angle. Positive values rotate node C\-W. It only modifies the Y rotation performing a vertical rotational skew . \hypertarget{class_c_c_node_a9c00de8556f267b63055ebd9e55f2415}{\index{C\-C\-Node@{C\-C\-Node}!scale@{scale}}
+\index{scale@{scale}!CCNode@{C\-C\-Node}}
+\subsubsection[{scale}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf scale}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{class_c_c_node_a9c00de8556f267b63055ebd9e55f2415}
+The scale factor of the node. 1.\-0 is the default scale factor. It modifies the X and Y scale at the same time. \hypertarget{class_c_c_node_af98791d15ad50cac4131dadfec09d49f}{\index{C\-C\-Node@{C\-C\-Node}!scale\-X@{scale\-X}}
+\index{scale\-X@{scale\-X}!CCNode@{C\-C\-Node}}
+\subsubsection[{scale\-X}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf scale\-X}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{class_c_c_node_af98791d15ad50cac4131dadfec09d49f}
+The scale factor of the node. 1.\-0 is the default scale factor. It only modifies the X scale factor. 
+
+Referenced by C\-C\-Menu\-::align\-Items\-Horizontally\-With\-Padding\-:.
+
+\hypertarget{class_c_c_node_ad19816ebddb7b5da1564e2c97d1361e7}{\index{C\-C\-Node@{C\-C\-Node}!scale\-Y@{scale\-Y}}
+\index{scale\-Y@{scale\-Y}!CCNode@{C\-C\-Node}}
+\subsubsection[{scale\-Y}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf scale\-Y}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{class_c_c_node_ad19816ebddb7b5da1564e2c97d1361e7}
+The scale factor of the node. 1.\-0 is the default scale factor. It only modifies the Y scale factor. 
+
+Referenced by C\-C\-Menu\-::align\-Items\-Vertically\-With\-Padding\-:.
+
+\hypertarget{class_c_c_node_a497798cf2d62b8b107069ff0fc1a07d0}{\index{C\-C\-Node@{C\-C\-Node}!scheduler@{scheduler}}
+\index{scheduler@{scheduler}!CCNode@{C\-C\-Node}}
+\subsubsection[{scheduler}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Scheduler} $\ast$) {\bf scheduler}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}\label{class_c_c_node_a497798cf2d62b8b107069ff0fc1a07d0}
+\hyperlink{class_c_c_scheduler}{C\-C\-Scheduler} used to schedule all \char`\"{}updates\char`\"{} and timers. I\-M\-P\-O\-R\-T\-A\-N\-T\-: If you set a new \hyperlink{class_c_c_scheduler}{C\-C\-Scheduler}, then previously created timers/update are going to be removed. \begin{DoxySince}{Since}
+v2.\-0 
+\end{DoxySince}
+\hypertarget{class_c_c_node_a6a14e4b8be7ff8fc766730abc73ce795}{\index{C\-C\-Node@{C\-C\-Node}!shader\-Program@{shader\-Program}}
+\index{shader\-Program@{shader\-Program}!CCNode@{C\-C\-Node}}
+\subsubsection[{shader\-Program}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-G\-L\-Program}$\ast$) {\bf shader\-Program}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}\label{class_c_c_node_a6a14e4b8be7ff8fc766730abc73ce795}
+Shader Program \begin{DoxySince}{Since}
+v2.\-0 
+\end{DoxySince}
+
+
+Referenced by C\-C\-Progress\-Timer\-::init\-With\-Sprite\-:.
+
+\hypertarget{class_c_c_node_a3ab54b6652338e7d575ee14971147cbf}{\index{C\-C\-Node@{C\-C\-Node}!skew\-X@{skew\-X}}
+\index{skew\-X@{skew\-X}!CCNode@{C\-C\-Node}}
+\subsubsection[{skew\-X}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf skew\-X}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{class_c_c_node_a3ab54b6652338e7d575ee14971147cbf}
+The X skew angle of the node in degrees. This angle describes the shear distortion in the X direction. Thus, it is the angle between the Y axis and the left edge of the shape The default skew\-X angle is 0. Positive values distort the node in a C\-W direction. \hypertarget{class_c_c_node_a0adeb25bc880ed50012bdc8c8a811718}{\index{C\-C\-Node@{C\-C\-Node}!skew\-Y@{skew\-Y}}
+\index{skew\-Y@{skew\-Y}!CCNode@{C\-C\-Node}}
+\subsubsection[{skew\-Y}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf skew\-Y}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{class_c_c_node_a0adeb25bc880ed50012bdc8c8a811718}
+The Y skew angle of the node in degrees. This angle describes the shear distortion in the Y direction. Thus, it is the angle between the X axis and the bottom edge of the shape The default skew\-Y angle is 0. Positive values distort the node in a C\-C\-W direction. \hypertarget{class_c_c_node_a4ed1d0596afb7822a87e41b75b496af3}{\index{C\-C\-Node@{C\-C\-Node}!tag@{tag}}
+\index{tag@{tag}!CCNode@{C\-C\-Node}}
+\subsubsection[{tag}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Integer) {\bf tag}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{class_c_c_node_a4ed1d0596afb7822a87e41b75b496af3}
+A tag used to identify the node easily 
+
+Referenced by add\-Child\-:z\-:tag\-:, and get\-Child\-By\-Tag\-:.
+
+\hypertarget{class_c_c_node_aa59560e27cc9c1cc51f95def93c60125}{\index{C\-C\-Node@{C\-C\-Node}!user\-Data@{user\-Data}}
+\index{user\-Data@{user\-Data}!CCNode@{C\-C\-Node}}
+\subsubsection[{user\-Data}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void$\ast$) {\bf user\-Data}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{class_c_c_node_aa59560e27cc9c1cc51f95def93c60125}
+A custom user data pointer \hypertarget{class_c_c_node_a34b5b9ac2ad6129cae7cbdedfe6f12a1}{\index{C\-C\-Node@{C\-C\-Node}!user\-Object@{user\-Object}}
+\index{user\-Object@{user\-Object}!CCNode@{C\-C\-Node}}
+\subsubsection[{user\-Object}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf user\-Object}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}\label{class_c_c_node_a34b5b9ac2ad6129cae7cbdedfe6f12a1}
+Similar to user\-Data, but instead of holding a void$\ast$ it holds an id \hypertarget{class_c_c_node_aad1293ecdafd361d5e62a47e83002835}{\index{C\-C\-Node@{C\-C\-Node}!vertex\-Z@{vertex\-Z}}
+\index{vertex\-Z@{vertex\-Z}!CCNode@{C\-C\-Node}}
+\subsubsection[{vertex\-Z}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf vertex\-Z}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{class_c_c_node_aad1293ecdafd361d5e62a47e83002835}
+The real open\-G\-L Z vertex. Differences between open\-G\-L Z vertex and cocos2d Z order\-:
+\begin{DoxyItemize}
+\item Open\-G\-L Z modifies the Z vertex, and not the Z order in the relation between parent-\/children
+\item Open\-G\-L Z might require to set 2\-D projection
+\item cocos2d Z order works O\-K if all the nodes uses the same open\-G\-L Z vertex. eg\-: vertex\-Z = 0 \begin{DoxyWarning}{Warning}
+\-: Use it at your own risk since it might break the cocos2d parent-\/children z order 
+\end{DoxyWarning}
+\begin{DoxySince}{Since}
+v0.\-8 
+\end{DoxySince}
+
+\end{DoxyItemize}\hypertarget{class_c_c_node_a5385156c1a45907c9dff7dfb06e70b45}{\index{C\-C\-Node@{C\-C\-Node}!visible@{visible}}
+\index{visible@{visible}!CCNode@{C\-C\-Node}}
+\subsubsection[{visible}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) {\bf visible}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{class_c_c_node_a5385156c1a45907c9dff7dfb06e70b45}
+Whether of not the node is visible. Default is Y\-E\-S \hypertarget{class_c_c_node_a21434541d824d49ea4e84019f1445727}{\index{C\-C\-Node@{C\-C\-Node}!z\-Order@{z\-Order}}
+\index{z\-Order@{z\-Order}!CCNode@{C\-C\-Node}}
+\subsubsection[{z\-Order}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Integer) {\bf z\-Order}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{class_c_c_node_a21434541d824d49ea4e84019f1445727}
+The z order of the node relative to its \char`\"{}siblings\char`\"{}\-: children of the same parent 
+
+Referenced by sort\-All\-Children, and visit.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/cc\-Deprecated.\-m\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Node.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Node.\-m\end{DoxyCompactItemize}

@@ -1,0 +1,116 @@
+\hypertarget{interface_c_c_grid_action}{\section{C\-C\-Grid\-Action Class Reference}
+\label{interface_c_c_grid_action}\index{C\-C\-Grid\-Action@{C\-C\-Grid\-Action}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Grid.\-h$>$}
+
+Inheritance diagram for C\-C\-Grid\-Action\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interface_c_c_grid_action}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_grid_action_ae78d21251efbc9f3098266468311a0aa}{init\-With\-Size\-:duration\-:}
+\item 
+(\hyperlink{interface_c_c_grid_base}{C\-C\-Grid\-Base} $\ast$) -\/ \hyperlink{interface_c_c_grid_action_a473b261d16d711af079ec64f8b25675a}{grid}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_grid_action_a1e5a3442b182c00a675cdd3d377f9f1b}{action\-With\-Size\-:duration\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_grid_action_a860b0f8e87856bffd0e9f6c5adb7be55}{\hyperlink{cc_types_8h_a66489f5c8efbdb2aa26ecbf9184ec8ea}{cc\-Grid\-Size} {\bfseries grid\-Size\-\_\-}}\label{interface_c_c_grid_action_a860b0f8e87856bffd0e9f6c5adb7be55}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{cc_types_8h_a66489f5c8efbdb2aa26ecbf9184ec8ea}{cc\-Grid\-Size} \hyperlink{interface_c_c_grid_action_a6b7df840de5e93a48b1061f60b0c5fa7}{grid\-Size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for Grid actions 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_grid_action_a1e5a3442b182c00a675cdd3d377f9f1b}{\index{C\-C\-Grid\-Action@{C\-C\-Grid\-Action}!action\-With\-Size\-:duration\-:@{action\-With\-Size\-:duration\-:}}
+\index{action\-With\-Size\-:duration\-:@{action\-With\-Size\-:duration\-:}!CCGridAction@{C\-C\-Grid\-Action}}
+\subsubsection[{action\-With\-Size\-:duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) action\-With\-Size\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Grid\-Size})}]{size}
+\item[{duration:({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_grid_action_a1e5a3442b182c00a675cdd3d377f9f1b}
+creates the action with size and duration 
+
+Referenced by Fade\-Out\-T\-R\-Tiles\-Demo\-::action\-With\-Duration\-:, Fade\-Out\-B\-L\-Tiles\-Demo\-::action\-With\-Duration\-:, Fade\-Out\-Up\-Tiles\-Demo\-::action\-With\-Duration\-:, Fade\-Out\-Down\-Tiles\-Demo\-::action\-With\-Duration\-:, and Page\-Turn3\-D\-Demo\-::action\-With\-Duration\-:.
+
+
+\begin{DoxyCode}
+                    :(ccGridSize)size duration:(ccTime)d
+{
+        return [[[self alloc] initWithSize:size duration:d ] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_grid_action_a473b261d16d711af079ec64f8b25675a}{\index{C\-C\-Grid\-Action@{C\-C\-Grid\-Action}!grid@{grid}}
+\index{grid@{grid}!CCGridAction@{C\-C\-Grid\-Action}}
+\subsubsection[{grid}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Grid\-Base} $\ast$) {\bf grid} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_grid_action_a473b261d16d711af079ec64f8b25675a}
+returns the grid 
+
+Referenced by C\-C\-Tiled\-Grid3\-D\-Action\-::original\-Tile\-:, C\-C\-Grid3\-D\-Action\-::original\-Vertex\-:, C\-C\-Tiled\-Grid3\-D\-Action\-::set\-Tile\-:coords\-:, C\-C\-Grid3\-D\-Action\-::set\-Vertex\-:vertex\-:, C\-C\-Tiled\-Grid3\-D\-Action\-::tile\-:, and C\-C\-Grid3\-D\-Action\-::vertex\-:.
+
+
+\begin{DoxyCode}
+{
+        [NSException raise:@"GridBase" format:@"Abstract class needs implementa
+      tion"];
+        return nil;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_grid_action_ae78d21251efbc9f3098266468311a0aa}{\index{C\-C\-Grid\-Action@{C\-C\-Grid\-Action}!init\-With\-Size\-:duration\-:@{init\-With\-Size\-:duration\-:}}
+\index{init\-With\-Size\-:duration\-:@{init\-With\-Size\-:duration\-:}!CCGridAction@{C\-C\-Grid\-Action}}
+\subsubsection[{init\-With\-Size\-:duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Size\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Grid\-Size})}]{grid\-Size}
+\item[{duration:({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_grid_action_ae78d21251efbc9f3098266468311a0aa}
+initializes the action with size and duration 
+
+Referenced by C\-C\-Split\-Cols\-::init\-With\-Cols\-:duration\-:, C\-C\-Flip\-X3\-D\-::init\-With\-Duration\-:, and C\-C\-Split\-Rows\-::init\-With\-Rows\-:duration\-:.
+
+
+\begin{DoxyCode}
+                  :(ccGridSize)gSize duration:(ccTime)d
+{
+        if ( (self = [super initWithDuration:d]) )
+        {
+                gridSize_ = gSize;
+        }
+
+        return self;
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_grid_action_a6b7df840de5e93a48b1061f60b0c5fa7}{\index{C\-C\-Grid\-Action@{C\-C\-Grid\-Action}!grid\-Size@{grid\-Size}}
+\index{grid\-Size@{grid\-Size}!CCGridAction@{C\-C\-Grid\-Action}}
+\subsubsection[{grid\-Size}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf cc\-Grid\-Size}) {\bf grid\-Size}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_grid_action_a6b7df840de5e93a48b1061f60b0c5fa7}
+size of the grid 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Grid.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Grid.\-m\end{DoxyCompactItemize}

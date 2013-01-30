@@ -1,0 +1,101 @@
+\hypertarget{interface_c_c_tint_by}{\section{C\-C\-Tint\-By Class Reference}
+\label{interface_c_c_tint_by}\index{C\-C\-Tint\-By@{C\-C\-Tint\-By}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Interval.\-h$>$}
+
+Inheritance diagram for C\-C\-Tint\-By\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_c_c_tint_by}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_tint_by_a9da5bbea40f014952c67e0bbcb13d588}{init\-With\-Duration\-:red\-:green\-:blue\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_tint_by_a36d6121c5be85c147b4e3dea5401dfc0}{action\-With\-Duration\-:red\-:green\-:blue\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_tint_by_ae823acc38ce98abb71e72a5dcc0ea3cd}{G\-Lshort {\bfseries delta\-R\-\_\-}}\label{interface_c_c_tint_by_ae823acc38ce98abb71e72a5dcc0ea3cd}
+
+\item 
+\hypertarget{interface_c_c_tint_by_a61a99ace117a86d3e63230de343682a3}{G\-Lshort {\bfseries delta\-G\-\_\-}}\label{interface_c_c_tint_by_a61a99ace117a86d3e63230de343682a3}
+
+\item 
+\hypertarget{interface_c_c_tint_by_a057af9e5a266c73792bef73dfeff6faa}{G\-Lshort {\bfseries delta\-B\-\_\-}}\label{interface_c_c_tint_by_a057af9e5a266c73792bef73dfeff6faa}
+
+\item 
+\hypertarget{interface_c_c_tint_by_a4b0bea768f5ed8f63d29157fc55cebfa}{G\-Lshort {\bfseries from\-R\-\_\-}}\label{interface_c_c_tint_by_a4b0bea768f5ed8f63d29157fc55cebfa}
+
+\item 
+\hypertarget{interface_c_c_tint_by_ad5896145f98c9b2b4c6d6a1fb80ea7d4}{G\-Lshort {\bfseries from\-G\-\_\-}}\label{interface_c_c_tint_by_ad5896145f98c9b2b4c6d6a1fb80ea7d4}
+
+\item 
+\hypertarget{interface_c_c_tint_by_ab30c757c096cb1b326b5fb1cd184dd1d}{G\-Lshort {\bfseries from\-B\-\_\-}}\label{interface_c_c_tint_by_ab30c757c096cb1b326b5fb1cd184dd1d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Tints a \hyperlink{class_c_c_node}{C\-C\-Node} that implements the C\-C\-Node\-R\-G\-B protocol from current tint to a custom one. \begin{DoxySince}{Since}
+v0.\-7.\-2 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_tint_by_a36d6121c5be85c147b4e3dea5401dfc0}{\index{C\-C\-Tint\-By@{C\-C\-Tint\-By}!action\-With\-Duration\-:red\-:green\-:blue\-:@{action\-With\-Duration\-:red\-:green\-:blue\-:}}
+\index{action\-With\-Duration\-:red\-:green\-:blue\-:@{action\-With\-Duration\-:red\-:green\-:blue\-:}!CCTintBy@{C\-C\-Tint\-By}}
+\subsubsection[{action\-With\-Duration\-:red\-:green\-:blue\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{duration}
+\item[{red:(G\-Lshort)}]{delta\-Red}
+\item[{green:(G\-Lshort)}]{delta\-Green}
+\item[{blue:(G\-Lshort)}]{delta\-Blue}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_tint_by_a36d6121c5be85c147b4e3dea5401dfc0}
+creates an action with duration and color 
+\begin{DoxyCode}
+                        :(ccTime)t red:(GLshort)r green:(GLshort)g blue:(
+      GLshort)b
+{
+        return [[(CCTintBy*)[ self alloc] initWithDuration:t red:r green:g blue
+      :b] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_tint_by_a9da5bbea40f014952c67e0bbcb13d588}{\index{C\-C\-Tint\-By@{C\-C\-Tint\-By}!init\-With\-Duration\-:red\-:green\-:blue\-:@{init\-With\-Duration\-:red\-:green\-:blue\-:}}
+\index{init\-With\-Duration\-:red\-:green\-:blue\-:@{init\-With\-Duration\-:red\-:green\-:blue\-:}!CCTintBy@{C\-C\-Tint\-By}}
+\subsubsection[{init\-With\-Duration\-:red\-:green\-:blue\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{duration}
+\item[{red:(G\-Lshort)}]{delta\-Red}
+\item[{green:(G\-Lshort)}]{delta\-Green}
+\item[{blue:(G\-Lshort)}]{delta\-Blue}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_tint_by_a9da5bbea40f014952c67e0bbcb13d588}
+initializes the action with duration and color 
+\begin{DoxyCode}
+                      :(ccTime)t red:(GLshort)r green:(GLshort)g blue:(GLshort)
+      b
+{
+        if( (self=[super initWithDuration: t] ) ) {
+                deltaR_ = r;
+                deltaG_ = g;
+                deltaB_ = b;
+        }
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-m\end{DoxyCompactItemize}

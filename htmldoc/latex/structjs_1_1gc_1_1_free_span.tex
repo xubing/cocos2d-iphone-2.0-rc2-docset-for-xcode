@@ -1,0 +1,138 @@
+\hypertarget{structjs_1_1gc_1_1_free_span}{\section{js\-:\-:gc\-:\-:Free\-Span Struct Reference}
+\label{structjs_1_1gc_1_1_free_span}\index{js\-::gc\-::\-Free\-Span@{js\-::gc\-::\-Free\-Span}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_a3c1b0fc18bb82769bdf95a9c8d4a2831}{{\bfseries Free\-Span} (uintptr\-\_\-t first, uintptr\-\_\-t last)}\label{structjs_1_1gc_1_1_free_span_a3c1b0fc18bb82769bdf95a9c8d4a2831}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_ae5645b1e421dc8ea6972d4c40f002b40}{void {\bfseries init\-As\-Empty} (uintptr\-\_\-t arena\-Addr=0)}\label{structjs_1_1gc_1_1_free_span_ae5645b1e421dc8ea6972d4c40f002b40}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_a49eb7e79f203b4b2807b3790ccb30dda}{bool {\bfseries is\-Empty} () const }\label{structjs_1_1gc_1_1_free_span_a49eb7e79f203b4b2807b3790ccb30dda}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_af71321cb240bb9868cd24c402e0c9fad}{bool {\bfseries has\-Next} () const }\label{structjs_1_1gc_1_1_free_span_af71321cb240bb9868cd24c402e0c9fad}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_ab8992992a81f3c8ce22d2e93d8e89cd1}{const \hyperlink{structjs_1_1gc_1_1_free_span}{Free\-Span} $\ast$ {\bfseries next\-Span} () const }\label{structjs_1_1gc_1_1_free_span_ab8992992a81f3c8ce22d2e93d8e89cd1}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_a4eca3704828304ae9174ac41ba2d3b17}{\hyperlink{structjs_1_1gc_1_1_free_span}{Free\-Span} $\ast$ {\bfseries next\-Span\-Unchecked} (size\-\_\-t thing\-Size) const }\label{structjs_1_1gc_1_1_free_span_a4eca3704828304ae9174ac41ba2d3b17}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_a112e6a2b73b871921226a78eebc4496f}{uintptr\-\_\-t {\bfseries arena\-Address\-Unchecked} () const }\label{structjs_1_1gc_1_1_free_span_a112e6a2b73b871921226a78eebc4496f}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_adc3946a88b36f8fdb59682cb8c7ec34d}{uintptr\-\_\-t {\bfseries arena\-Address} () const }\label{structjs_1_1gc_1_1_free_span_adc3946a88b36f8fdb59682cb8c7ec34d}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_ad13f966786a54e3bac8fc79e075a3156}{\hyperlink{structjs_1_1gc_1_1_arena_header}{Arena\-Header} $\ast$ {\bfseries arena\-Header} () const }\label{structjs_1_1gc_1_1_free_span_ad13f966786a54e3bac8fc79e075a3156}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_ac6dc9952fdd856219bbe93c4a4d3386b}{bool {\bfseries is\-Same\-Non\-Empty\-Span} (const \hyperlink{structjs_1_1gc_1_1_free_span}{Free\-Span} $\ast$another) const }\label{structjs_1_1gc_1_1_free_span_ac6dc9952fdd856219bbe93c4a4d3386b}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_a4533af044d5d42385421140e5e96f251}{bool {\bfseries is\-Within\-Arena} (uintptr\-\_\-t arena\-Addr) const }\label{structjs_1_1gc_1_1_free_span_a4533af044d5d42385421140e5e96f251}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_abf5e1a69051aa04a4392dac5a7c8e684}{size\-\_\-t {\bfseries encode\-As\-Offsets} () const }\label{structjs_1_1gc_1_1_free_span_abf5e1a69051aa04a4392dac5a7c8e684}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_a261a76556a4b2f74d549385e7ed0c175}{M\-O\-Z\-\_\-\-A\-L\-W\-A\-Y\-S\-\_\-\-I\-N\-L\-I\-N\-E void $\ast$ {\bfseries allocate} (size\-\_\-t thing\-Size)}\label{structjs_1_1gc_1_1_free_span_a261a76556a4b2f74d549385e7ed0c175}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_a32bf8a5cec67f6c4a0bb4d9aba1a2dee}{M\-O\-Z\-\_\-\-A\-L\-W\-A\-Y\-S\-\_\-\-I\-N\-L\-I\-N\-E void $\ast$ {\bfseries infallible\-Allocate} (size\-\_\-t thing\-Size)}\label{structjs_1_1gc_1_1_free_span_a32bf8a5cec67f6c4a0bb4d9aba1a2dee}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_a042819545b290443454e638d06a9c720}{M\-O\-Z\-\_\-\-A\-L\-W\-A\-Y\-S\-\_\-\-I\-N\-L\-I\-N\-E void $\ast$ {\bfseries allocate\-From\-New\-Arena} (uintptr\-\_\-t arena\-Addr, size\-\_\-t first\-Thing\-Offset, size\-\_\-t thing\-Size)}\label{structjs_1_1gc_1_1_free_span_a042819545b290443454e638d06a9c720}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_acd7fdc7281e2a0be124c12e3779d1977}{void {\bfseries check\-Span} () const }\label{structjs_1_1gc_1_1_free_span_acd7fdc7281e2a0be124c12e3779d1977}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_a3c1b0fc18bb82769bdf95a9c8d4a2831}{{\bfseries Free\-Span} (uintptr\-\_\-t first, uintptr\-\_\-t last)}\label{structjs_1_1gc_1_1_free_span_a3c1b0fc18bb82769bdf95a9c8d4a2831}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_ae5645b1e421dc8ea6972d4c40f002b40}{void {\bfseries init\-As\-Empty} (uintptr\-\_\-t arena\-Addr=0)}\label{structjs_1_1gc_1_1_free_span_ae5645b1e421dc8ea6972d4c40f002b40}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_a49eb7e79f203b4b2807b3790ccb30dda}{bool {\bfseries is\-Empty} () const }\label{structjs_1_1gc_1_1_free_span_a49eb7e79f203b4b2807b3790ccb30dda}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_af71321cb240bb9868cd24c402e0c9fad}{bool {\bfseries has\-Next} () const }\label{structjs_1_1gc_1_1_free_span_af71321cb240bb9868cd24c402e0c9fad}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_ab8992992a81f3c8ce22d2e93d8e89cd1}{const \hyperlink{structjs_1_1gc_1_1_free_span}{Free\-Span} $\ast$ {\bfseries next\-Span} () const }\label{structjs_1_1gc_1_1_free_span_ab8992992a81f3c8ce22d2e93d8e89cd1}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_a4eca3704828304ae9174ac41ba2d3b17}{\hyperlink{structjs_1_1gc_1_1_free_span}{Free\-Span} $\ast$ {\bfseries next\-Span\-Unchecked} (size\-\_\-t thing\-Size) const }\label{structjs_1_1gc_1_1_free_span_a4eca3704828304ae9174ac41ba2d3b17}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_a112e6a2b73b871921226a78eebc4496f}{uintptr\-\_\-t {\bfseries arena\-Address\-Unchecked} () const }\label{structjs_1_1gc_1_1_free_span_a112e6a2b73b871921226a78eebc4496f}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_adc3946a88b36f8fdb59682cb8c7ec34d}{uintptr\-\_\-t {\bfseries arena\-Address} () const }\label{structjs_1_1gc_1_1_free_span_adc3946a88b36f8fdb59682cb8c7ec34d}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_ad13f966786a54e3bac8fc79e075a3156}{\hyperlink{structjs_1_1gc_1_1_arena_header}{Arena\-Header} $\ast$ {\bfseries arena\-Header} () const }\label{structjs_1_1gc_1_1_free_span_ad13f966786a54e3bac8fc79e075a3156}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_ac6dc9952fdd856219bbe93c4a4d3386b}{bool {\bfseries is\-Same\-Non\-Empty\-Span} (const \hyperlink{structjs_1_1gc_1_1_free_span}{Free\-Span} $\ast$another) const }\label{structjs_1_1gc_1_1_free_span_ac6dc9952fdd856219bbe93c4a4d3386b}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_a4533af044d5d42385421140e5e96f251}{bool {\bfseries is\-Within\-Arena} (uintptr\-\_\-t arena\-Addr) const }\label{structjs_1_1gc_1_1_free_span_a4533af044d5d42385421140e5e96f251}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_abf5e1a69051aa04a4392dac5a7c8e684}{size\-\_\-t {\bfseries encode\-As\-Offsets} () const }\label{structjs_1_1gc_1_1_free_span_abf5e1a69051aa04a4392dac5a7c8e684}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_a261a76556a4b2f74d549385e7ed0c175}{M\-O\-Z\-\_\-\-A\-L\-W\-A\-Y\-S\-\_\-\-I\-N\-L\-I\-N\-E void $\ast$ {\bfseries allocate} (size\-\_\-t thing\-Size)}\label{structjs_1_1gc_1_1_free_span_a261a76556a4b2f74d549385e7ed0c175}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_a32bf8a5cec67f6c4a0bb4d9aba1a2dee}{M\-O\-Z\-\_\-\-A\-L\-W\-A\-Y\-S\-\_\-\-I\-N\-L\-I\-N\-E void $\ast$ {\bfseries infallible\-Allocate} (size\-\_\-t thing\-Size)}\label{structjs_1_1gc_1_1_free_span_a32bf8a5cec67f6c4a0bb4d9aba1a2dee}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_a042819545b290443454e638d06a9c720}{M\-O\-Z\-\_\-\-A\-L\-W\-A\-Y\-S\-\_\-\-I\-N\-L\-I\-N\-E void $\ast$ {\bfseries allocate\-From\-New\-Arena} (uintptr\-\_\-t arena\-Addr, size\-\_\-t first\-Thing\-Offset, size\-\_\-t thing\-Size)}\label{structjs_1_1gc_1_1_free_span_a042819545b290443454e638d06a9c720}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_acd7fdc7281e2a0be124c12e3779d1977}{void {\bfseries check\-Span} () const }\label{structjs_1_1gc_1_1_free_span_acd7fdc7281e2a0be124c12e3779d1977}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_a1dfefd34d5dc2d13a442c0f802be9188}{static size\-\_\-t {\bfseries encode\-Offsets} (size\-\_\-t first\-Offset, size\-\_\-t last\-Offset)}\label{structjs_1_1gc_1_1_free_span_a1dfefd34d5dc2d13a442c0f802be9188}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_a558be40f316be9a7d63e00f05d3071a7}{static \hyperlink{structjs_1_1gc_1_1_free_span}{Free\-Span} {\bfseries decode\-Offsets} (uintptr\-\_\-t arena\-Addr, size\-\_\-t offsets)}\label{structjs_1_1gc_1_1_free_span_a558be40f316be9a7d63e00f05d3071a7}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_a1dfefd34d5dc2d13a442c0f802be9188}{static size\-\_\-t {\bfseries encode\-Offsets} (size\-\_\-t first\-Offset, size\-\_\-t last\-Offset)}\label{structjs_1_1gc_1_1_free_span_a1dfefd34d5dc2d13a442c0f802be9188}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_a558be40f316be9a7d63e00f05d3071a7}{static \hyperlink{structjs_1_1gc_1_1_free_span}{Free\-Span} {\bfseries decode\-Offsets} (uintptr\-\_\-t arena\-Addr, size\-\_\-t offsets)}\label{structjs_1_1gc_1_1_free_span_a558be40f316be9a7d63e00f05d3071a7}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_a0301aab597c0c71166047755f1e76401}{uintptr\-\_\-t {\bfseries first}}\label{structjs_1_1gc_1_1_free_span_a0301aab597c0c71166047755f1e76401}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_acba42065c5e1ef980c28f570a2d89844}{uintptr\-\_\-t {\bfseries last}}\label{structjs_1_1gc_1_1_free_span_acba42065c5e1ef980c28f570a2d89844}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structjs_1_1gc_1_1_free_span_ad78cd8a574b8a95b799af8196e12a4d0}{static const size\-\_\-t {\bfseries Full\-Arena\-Offsets} = Arena\-Size $|$ ((Arena\-Size -\/ 1) $<$$<$ 16)}\label{structjs_1_1gc_1_1_free_span_ad78cd8a574b8a95b799af8196e12a4d0}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Spider\-Monkey/ios/include/gc/Heap.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Spider\-Monkey/osx/include/gc/Heap.\-h\end{DoxyCompactItemize}

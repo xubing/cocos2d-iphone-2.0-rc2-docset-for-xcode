@@ -1,0 +1,198 @@
+\hypertarget{interface_c_c_layer_multiplex}{\section{C\-C\-Layer\-Multiplex Class Reference}
+\label{interface_c_c_layer_multiplex}\index{C\-C\-Layer\-Multiplex@{C\-C\-Layer\-Multiplex}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Layer.\-h$>$}
+
+Inheritance diagram for C\-C\-Layer\-Multiplex\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_c_c_layer_multiplex}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_layer_multiplex_a1a63566bbdaf96cccc4898167bfd2e57}{init\-With\-Array\-:}
+\item 
+(id) -\/ \hyperlink{interface_c_c_layer_multiplex_a0466ff97dbd68b74a356d4d50aa1ca57}{init\-With\-Layers\-:va\-List\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_layer_multiplex_aa90f9f4de1d496bb4ac0ac174a770d88}{switch\-To\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_layer_multiplex_afb62888b5ffbcd7f42d12d6629d543ae}{switch\-To\-And\-Release\-Me\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_layer_multiplex_a6e4e8f8fa4bf567c475ca4dc9691fbd9}{layer\-With\-Array\-:}
+\item 
+(id) + \hyperlink{interface_c_c_layer_multiplex_a4c05c2b18a1779925c76b33169c5673c}{layer\-With\-Layers\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_layer_multiplex_a0556a68a3074a6757371acb68dee828c}{N\-S\-Mutable\-Array $\ast$ {\bfseries \-\_\-layers}}\label{interface_c_c_layer_multiplex_a0556a68a3074a6757371acb68dee828c}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_layer_multiplex_a190285409f0030ead6af947201cb47e4}{unsigned int {\bfseries \-\_\-enabled\-Layer}}\label{interface_c_c_layer_multiplex_a190285409f0030ead6af947201cb47e4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_layer_multiplex}{C\-C\-Layer\-Multiplex} is a \hyperlink{class_c_c_layer}{C\-C\-Layer} with the ability to multiplex its children. Features\-:
+\begin{DoxyItemize}
+\item It supports one or more children
+\item Only one children will be active a time 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_layer_multiplex_a1a63566bbdaf96cccc4898167bfd2e57}{\index{C\-C\-Layer\-Multiplex@{C\-C\-Layer\-Multiplex}!init\-With\-Array\-:@{init\-With\-Array\-:}}
+\index{init\-With\-Array\-:@{init\-With\-Array\-:}!CCLayerMultiplex@{C\-C\-Layer\-Multiplex}}
+\subsubsection[{init\-With\-Array\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Array\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Array$\ast$)}]{array\-Of\-Layers}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_layer_multiplex_a1a63566bbdaf96cccc4898167bfd2e57}
+initializes a C\-C\-Multiplex\-Layer with an array of layers \begin{DoxySince}{Since}
+v2.\-1 
+\end{DoxySince}
+
+\begin{DoxyCode}
+                   :(NSArray *)arrayOfLayers
+{
+        if( (self=[super init])) {
+                _layers = [arrayOfLayers mutableCopy];
+
+                _enabledLayer = 0;
+
+                [self addChild: [_layers objectAtIndex:_enabledLayer]];
+        }
+
+
+        return self;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_layer_multiplex_a0466ff97dbd68b74a356d4d50aa1ca57}{\index{C\-C\-Layer\-Multiplex@{C\-C\-Layer\-Multiplex}!init\-With\-Layers\-:va\-List\-:@{init\-With\-Layers\-:va\-List\-:}}
+\index{init\-With\-Layers\-:va\-List\-:@{init\-With\-Layers\-:va\-List\-:}!CCLayerMultiplex@{C\-C\-Layer\-Multiplex}}
+\subsubsection[{init\-With\-Layers\-:va\-List\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Layers\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Layer}$\ast$)}]{layer}
+\item[{vaList:(va\-\_\-list)}]{params}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_layer_multiplex_a0466ff97dbd68b74a356d4d50aa1ca57}
+initializes a Multiplex\-Layer with one or more layers using a variable argument list. 
+\begin{DoxyCode}
+                    : (CCLayer*) layer vaList:(va_list) params
+{
+        if( (self=[super init]) ) {
+
+                _layers = [[NSMutableArray arrayWithCapacity:5] retain];
+
+                [_layers addObject: layer];
+
+                CCLayer *l = va_arg(params,CCLayer*);
+                while( l ) {
+                        [_layers addObject: l];
+                        l = va_arg(params,CCLayer*);
+                }
+
+                _enabledLayer = 0;
+                [self addChild: [_layers objectAtIndex: _enabledLayer]];
+        }
+
+        return self;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_layer_multiplex_a6e4e8f8fa4bf567c475ca4dc9691fbd9}{\index{C\-C\-Layer\-Multiplex@{C\-C\-Layer\-Multiplex}!layer\-With\-Array\-:@{layer\-With\-Array\-:}}
+\index{layer\-With\-Array\-:@{layer\-With\-Array\-:}!CCLayerMultiplex@{C\-C\-Layer\-Multiplex}}
+\subsubsection[{layer\-With\-Array\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf layer\-With\-Array\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Array$\ast$)}]{array\-Of\-Layers}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_layer_multiplex_a6e4e8f8fa4bf567c475ca4dc9691fbd9}
+creates a C\-C\-Multiplex\-Layer with an array of layers. \begin{DoxySince}{Since}
+v2.\-1 
+\end{DoxySince}
+
+\begin{DoxyCode}
+                    :(NSArray *)arrayOfLayers
+{
+        return [[[self alloc] initWithArray:arrayOfLayers] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_layer_multiplex_a4c05c2b18a1779925c76b33169c5673c}{\index{C\-C\-Layer\-Multiplex@{C\-C\-Layer\-Multiplex}!layer\-With\-Layers\-:@{layer\-With\-Layers\-:}}
+\index{layer\-With\-Layers\-:@{layer\-With\-Layers\-:}!CCLayerMultiplex@{C\-C\-Layer\-Multiplex}}
+\subsubsection[{layer\-With\-Layers\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf layer\-With\-Layers\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Layer}$\ast$)}]{layer}
+\item[{,}]{N\-S\-\_\-\-R\-E\-Q\-U\-I\-R\-E\-S\-\_\-\-N\-I\-L\-\_\-\-T\-E\-R\-M\-I\-N\-A\-T\-I\-O\-N}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_layer_multiplex_a4c05c2b18a1779925c76b33169c5673c}
+creates a C\-C\-Multiplex\-Layer with one or more layers using a variable argument list. 
+\begin{DoxyCode}
+                     : (CCLayer*) layer, ...
+{
+        va_list args;
+        va_start(args,layer);
+
+        id s = [[[self alloc] initWithLayers: layer vaList:args] autorelease];
+
+        va_end(args);
+        return s;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_layer_multiplex_aa90f9f4de1d496bb4ac0ac174a770d88}{\index{C\-C\-Layer\-Multiplex@{C\-C\-Layer\-Multiplex}!switch\-To\-:@{switch\-To\-:}}
+\index{switch\-To\-:@{switch\-To\-:}!CCLayerMultiplex@{C\-C\-Layer\-Multiplex}}
+\subsubsection[{switch\-To\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf switch\-To\-:} 
+\begin{DoxyParamCaption}
+\item[{(unsigned int)}]{n}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_layer_multiplex_aa90f9f4de1d496bb4ac0ac174a770d88}
+switches to a certain layer indexed by n. The current (old) layer will be removed from its parent with 'cleanup\-:Y\-E\-S'. 
+\begin{DoxyCode}
+                : (unsigned int) n
+{
+        NSAssert( n < [_layers count], @"Invalid index in MultiplexLayer
+       switchTo message" );
+
+        [self removeChild: [_layers objectAtIndex:_enabledLayer] cleanup:YES];
+
+        _enabledLayer = n;
+
+        [self addChild: [_layers objectAtIndex:n]];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_layer_multiplex_afb62888b5ffbcd7f42d12d6629d543ae}{\index{C\-C\-Layer\-Multiplex@{C\-C\-Layer\-Multiplex}!switch\-To\-And\-Release\-Me\-:@{switch\-To\-And\-Release\-Me\-:}}
+\index{switch\-To\-And\-Release\-Me\-:@{switch\-To\-And\-Release\-Me\-:}!CCLayerMultiplex@{C\-C\-Layer\-Multiplex}}
+\subsubsection[{switch\-To\-And\-Release\-Me\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf switch\-To\-And\-Release\-Me\-:} 
+\begin{DoxyParamCaption}
+\item[{(unsigned int)}]{n}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_layer_multiplex_afb62888b5ffbcd7f42d12d6629d543ae}
+release the current layer and switches to another layer indexed by n. The current (old) layer will be removed from its parent with 'cleanup\-:Y\-E\-S'. 
+\begin{DoxyCode}
+                            : (unsigned int) n
+{
+        NSAssert( n < [_layers count], @"Invalid index in MultiplexLayer
+       switchTo message" );
+
+        [self removeChild: [_layers objectAtIndex:_enabledLayer] cleanup:YES];
+
+        [_layers replaceObjectAtIndex:_enabledLayer withObject:[NSNull null]];
+
+        _enabledLayer = n;
+
+        [self addChild: [_layers objectAtIndex:n]];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Layer.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Layer.\-m\end{DoxyCompactItemize}

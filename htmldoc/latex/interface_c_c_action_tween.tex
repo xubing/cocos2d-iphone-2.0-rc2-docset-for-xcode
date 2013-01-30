@@ -1,0 +1,106 @@
+\hypertarget{interface_c_c_action_tween}{\section{C\-C\-Action\-Tween Class Reference}
+\label{interface_c_c_action_tween}\index{C\-C\-Action\-Tween@{C\-C\-Action\-Tween}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Tween.\-h$>$}
+
+Inheritance diagram for C\-C\-Action\-Tween\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_c_c_action_tween}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_action_tween_a5ff7d9611039655bbbbdfa28720b25e6}{init\-With\-Duration\-:key\-:from\-:to\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_action_tween_af76444667fbb59064d372c02759726a3}{action\-With\-Duration\-:key\-:from\-:to\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_action_tween_a1fe24c870dc5e8bad5cc46a9d9278094}{N\-S\-String $\ast$ {\bfseries key\-\_\-}}\label{interface_c_c_action_tween_a1fe24c870dc5e8bad5cc46a9d9278094}
+
+\item 
+\hypertarget{interface_c_c_action_tween_a8a72e7122c5e386d8a9a0d54a828b982}{float {\bfseries from\-\_\-}}\label{interface_c_c_action_tween_a8a72e7122c5e386d8a9a0d54a828b982}
+
+\item 
+\hypertarget{interface_c_c_action_tween_a548887d37dc1f101f171dbabab8d1bd5}{float {\bfseries to\-\_\-}}\label{interface_c_c_action_tween_a548887d37dc1f101f171dbabab8d1bd5}
+
+\item 
+\hypertarget{interface_c_c_action_tween_a99a24ee68436d571fc922bd9d31bdf3f}{float {\bfseries delta\-\_\-}}\label{interface_c_c_action_tween_a99a24ee68436d571fc922bd9d31bdf3f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_action_tween}{C\-C\-Action\-Tween}
+
+\hyperlink{interface_c_c_action_tween}{C\-C\-Action\-Tween} is an action that lets you update any property of an object. For example, if you want to modify the \char`\"{}width\char`\"{} property of a target from 200 to 300 in 2 seconds, then\-: \begin{DoxyVerb}   id modifyWidth = [CCActionTween actionWithDuration:2 key:@"width" from:200 to:300];
+   [target runAction:modifyWidth];\end{DoxyVerb}
+ Another example\-: \hyperlink{interface_c_c_scale_to}{C\-C\-Scale\-To} action could be rewriten using C\-C\-Property\-Action\-:
+
+scale\-A and scale\-B are equivalents id scale\-A = \mbox{[}\hyperlink{interface_c_c_scale_to}{C\-C\-Scale\-To} action\-With\-Duration\-:2 scale\-:3\mbox{]}; id scale\-B = \mbox{[}\hyperlink{interface_c_c_action_tween}{C\-C\-Action\-Tween} action\-With\-Duration\-:2 key\-:"scale" from\-:1 to\-:3\mbox{]};
+
+\begin{DoxySince}{Since}
+v0.\-99.\-2 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_action_tween_af76444667fbb59064d372c02759726a3}{\index{C\-C\-Action\-Tween@{C\-C\-Action\-Tween}!action\-With\-Duration\-:key\-:from\-:to\-:@{action\-With\-Duration\-:key\-:from\-:to\-:}}
+\index{action\-With\-Duration\-:key\-:from\-:to\-:@{action\-With\-Duration\-:key\-:from\-:to\-:}!CCActionTween@{C\-C\-Action\-Tween}}
+\subsubsection[{action\-With\-Duration\-:key\-:from\-:to\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{a\-Duration}
+\item[{key:(N\-S\-String $\ast$)}]{key}
+\item[{from:(float)}]{from}
+\item[{to:(float)}]{to}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_action_tween_af76444667fbb59064d372c02759726a3}
+creates an initializes the action with the property name (key), and the from and to parameters. 
+\begin{DoxyCode}
+                        :(ccTime)aDuration key:(NSString *)aKey from:(float)
+      aFrom to:(float)aTo {
+
+        return [[[[self class] alloc] initWithDuration:aDuration key:aKey from:
+      aFrom to:aTo] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_action_tween_a5ff7d9611039655bbbbdfa28720b25e6}{\index{C\-C\-Action\-Tween@{C\-C\-Action\-Tween}!init\-With\-Duration\-:key\-:from\-:to\-:@{init\-With\-Duration\-:key\-:from\-:to\-:}}
+\index{init\-With\-Duration\-:key\-:from\-:to\-:@{init\-With\-Duration\-:key\-:from\-:to\-:}!CCActionTween@{C\-C\-Action\-Tween}}
+\subsubsection[{init\-With\-Duration\-:key\-:from\-:to\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{a\-Duration}
+\item[{key:(N\-S\-String $\ast$)}]{key}
+\item[{from:(float)}]{from}
+\item[{to:(float)}]{to}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_action_tween_a5ff7d9611039655bbbbdfa28720b25e6}
+initializes the action with the property name (key), and the from and to parameters. 
+\begin{DoxyCode}
+                      :(ccTime)aDuration key:(NSString *)key from:(float)from 
+      to:(float)to {
+
+        if ((self = [super initWithDuration:aDuration])) {
+
+                key_    = [key copy];
+                to_             = to;
+                from_   = from;
+
+        }
+
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Tween.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Tween.\-m\end{DoxyCompactItemize}

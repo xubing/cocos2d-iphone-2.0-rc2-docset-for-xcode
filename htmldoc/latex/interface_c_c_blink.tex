@@ -1,0 +1,77 @@
+\hypertarget{interface_c_c_blink}{\section{C\-C\-Blink Class Reference}
+\label{interface_c_c_blink}\index{C\-C\-Blink@{C\-C\-Blink}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Interval.\-h$>$}
+
+Inheritance diagram for C\-C\-Blink\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_c_c_blink}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_blink_aecfa85f71a1969802fc5a5f2d743863a}{init\-With\-Duration\-:blinks\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_blink_a6e9781f940828bc29b6b45f01cbd3505}{action\-With\-Duration\-:blinks\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_blink_a3e1c0702fb99816e7aaf3978438234be}{N\-S\-U\-Integer {\bfseries times\-\_\-}}\label{interface_c_c_blink_a3e1c0702fb99816e7aaf3978438234be}
+
+\item 
+\hypertarget{interface_c_c_blink_a20a34fb7fa10f5f20eb172ad1c96d2eb}{B\-O\-O\-L {\bfseries original\-State\-\_\-}}\label{interface_c_c_blink_a20a34fb7fa10f5f20eb172ad1c96d2eb}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Blinks a \hyperlink{class_c_c_node}{C\-C\-Node} object by modifying its visible attribute 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_blink_a6e9781f940828bc29b6b45f01cbd3505}{\index{C\-C\-Blink@{C\-C\-Blink}!action\-With\-Duration\-:blinks\-:@{action\-With\-Duration\-:blinks\-:}}
+\index{action\-With\-Duration\-:blinks\-:@{action\-With\-Duration\-:blinks\-:}!CCBlink@{C\-C\-Blink}}
+\subsubsection[{action\-With\-Duration\-:blinks\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{duration}
+\item[{blinks:(N\-S\-U\-Integer)}]{blinks}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_blink_a6e9781f940828bc29b6b45f01cbd3505}
+creates the action 
+\begin{DoxyCode}
+                        : (ccTime) t blinks: (NSUInteger) b
+{
+        return [[[ self alloc] initWithDuration: t blinks: b] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_blink_aecfa85f71a1969802fc5a5f2d743863a}{\index{C\-C\-Blink@{C\-C\-Blink}!init\-With\-Duration\-:blinks\-:@{init\-With\-Duration\-:blinks\-:}}
+\index{init\-With\-Duration\-:blinks\-:@{init\-With\-Duration\-:blinks\-:}!CCBlink@{C\-C\-Blink}}
+\subsubsection[{init\-With\-Duration\-:blinks\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{duration}
+\item[{blinks:(N\-S\-U\-Integer)}]{blinks}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_blink_aecfa85f71a1969802fc5a5f2d743863a}
+initializes the action 
+\begin{DoxyCode}
+                      : (ccTime) t blinks: (NSUInteger) b
+{
+        if( (self=[super initWithDuration: t] ) )
+                times_ = b;
+
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-m\end{DoxyCompactItemize}

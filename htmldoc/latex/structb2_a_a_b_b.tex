@@ -1,0 +1,57 @@
+\hypertarget{structb2_a_a_b_b}{\section{b2\-A\-A\-B\-B Struct Reference}
+\label{structb2_a_a_b_b}\index{b2\-A\-A\-B\-B@{b2\-A\-A\-B\-B}}
+}
+
+
+An axis aligned bounding box.  
+
+
+
+
+{\ttfamily \#include $<$b2\-Collision.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structb2_a_a_b_b_a8d170a2de7a267c3e19f5365685b713d}{bool \hyperlink{structb2_a_a_b_b_a8d170a2de7a267c3e19f5365685b713d}{Is\-Valid} () const }\label{structb2_a_a_b_b_a8d170a2de7a267c3e19f5365685b713d}
+
+\begin{DoxyCompactList}\small\item\em Verify that the bounds are sorted. \end{DoxyCompactList}\item 
+\hypertarget{structb2_a_a_b_b_aa26703e234bd6fb30fd443cd5001795a}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{structb2_a_a_b_b_aa26703e234bd6fb30fd443cd5001795a}{Get\-Center} () const }\label{structb2_a_a_b_b_aa26703e234bd6fb30fd443cd5001795a}
+
+\begin{DoxyCompactList}\small\item\em Get the center of the A\-A\-B\-B. \end{DoxyCompactList}\item 
+\hypertarget{structb2_a_a_b_b_aff8b9aa64069a33fe45025299aa0e9b7}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{structb2_a_a_b_b_aff8b9aa64069a33fe45025299aa0e9b7}{Get\-Extents} () const }\label{structb2_a_a_b_b_aff8b9aa64069a33fe45025299aa0e9b7}
+
+\begin{DoxyCompactList}\small\item\em Get the extents of the A\-A\-B\-B (half-\/widths). \end{DoxyCompactList}\item 
+\hypertarget{structb2_a_a_b_b_ace4448c60ef309726e59247a8ae67db5}{float32 \hyperlink{structb2_a_a_b_b_ace4448c60ef309726e59247a8ae67db5}{Get\-Perimeter} () const }\label{structb2_a_a_b_b_ace4448c60ef309726e59247a8ae67db5}
+
+\begin{DoxyCompactList}\small\item\em Get the perimeter length. \end{DoxyCompactList}\item 
+\hypertarget{structb2_a_a_b_b_ad551edba62d2ad6094672a9ba3e26496}{void \hyperlink{structb2_a_a_b_b_ad551edba62d2ad6094672a9ba3e26496}{Combine} (const \hyperlink{structb2_a_a_b_b}{b2\-A\-A\-B\-B} \&aabb)}\label{structb2_a_a_b_b_ad551edba62d2ad6094672a9ba3e26496}
+
+\begin{DoxyCompactList}\small\item\em Combine an A\-A\-B\-B into this one. \end{DoxyCompactList}\item 
+\hypertarget{structb2_a_a_b_b_a34b9c7d824df845c10caa9c12ae90452}{void \hyperlink{structb2_a_a_b_b_a34b9c7d824df845c10caa9c12ae90452}{Combine} (const \hyperlink{structb2_a_a_b_b}{b2\-A\-A\-B\-B} \&aabb1, const \hyperlink{structb2_a_a_b_b}{b2\-A\-A\-B\-B} \&aabb2)}\label{structb2_a_a_b_b_a34b9c7d824df845c10caa9c12ae90452}
+
+\begin{DoxyCompactList}\small\item\em Combine two A\-A\-B\-Bs into this one. \end{DoxyCompactList}\item 
+\hypertarget{structb2_a_a_b_b_aba5fc112e3c8d05e034a21d95fc37704}{bool \hyperlink{structb2_a_a_b_b_aba5fc112e3c8d05e034a21d95fc37704}{Contains} (const \hyperlink{structb2_a_a_b_b}{b2\-A\-A\-B\-B} \&aabb) const }\label{structb2_a_a_b_b_aba5fc112e3c8d05e034a21d95fc37704}
+
+\begin{DoxyCompactList}\small\item\em Does this aabb contain the provided A\-A\-B\-B. \end{DoxyCompactList}\item 
+\hypertarget{structb2_a_a_b_b_a8a9a3dbc76c1175e80bb767437240ef5}{bool {\bfseries Ray\-Cast} (\hyperlink{structb2_ray_cast_output}{b2\-Ray\-Cast\-Output} $\ast$output, const \hyperlink{structb2_ray_cast_input}{b2\-Ray\-Cast\-Input} \&input) const }\label{structb2_a_a_b_b_a8a9a3dbc76c1175e80bb767437240ef5}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structb2_a_a_b_b_ab94b68fbad8348b22b0522469b11bdb5}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{structb2_a_a_b_b_ab94b68fbad8348b22b0522469b11bdb5}{lower\-Bound}}\label{structb2_a_a_b_b_ab94b68fbad8348b22b0522469b11bdb5}
+
+\begin{DoxyCompactList}\small\item\em the lower vertex \end{DoxyCompactList}\item 
+\hypertarget{structb2_a_a_b_b_ad4a8ec483ba13a2c02918b01d058a18f}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{structb2_a_a_b_b_ad4a8ec483ba13a2c02918b01d058a18f}{upper\-Bound}}\label{structb2_a_a_b_b_ad4a8ec483ba13a2c02918b01d058a18f}
+
+\begin{DoxyCompactList}\small\item\em the upper vertex \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An axis aligned bounding box. 
+
+The documentation for this struct was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Collision/\hyperlink{b2_collision_8h}{b2\-Collision.\-h}\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Collision/b2\-Collision.\-cpp\end{DoxyCompactItemize}

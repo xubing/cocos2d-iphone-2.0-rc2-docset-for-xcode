@@ -1,0 +1,28 @@
+var interface_c_c_b_animation_manager =
+[
+    [ "addNode:andSequences:", "interface_c_c_b_animation_manager.html#a2b6ca8217fb0cc3396d161981a7c6611", null ],
+    [ "containerSize:", "interface_c_c_b_animation_manager.html#a29aa97aef853d87bf5c1ea619cb0f1fb", null ],
+    [ "debug", "interface_c_c_b_animation_manager.html#a5023089d8c642408f4f13c8db9b4d191", null ],
+    [ "moveAnimationsFromNode:toNode:", "interface_c_c_b_animation_manager.html#a355862bc612f6833eb6716cafa438731", null ],
+    [ "runAnimationsForSequenceId:tweenDuration:", "interface_c_c_b_animation_manager.html#ab9606194e4f1d11695fbcd62473b81c4", null ],
+    [ "runAnimationsForSequenceNamed:", "interface_c_c_b_animation_manager.html#a093802bf926cff65ac9412203235a8df", null ],
+    [ "runAnimationsForSequenceNamed:tweenDuration:", "interface_c_c_b_animation_manager.html#ae25859a194e325dbdf69014b1cc593e5", null ],
+    [ "setBaseValue:forNode:propertyName:", "interface_c_c_b_animation_manager.html#a95adb78da4efadc888276a77ea0e1e66", null ],
+    [ "setCompletedAnimationCallbackBlock:", "interface_c_c_b_animation_manager.html#a3610a16d448fd178b6c3a1788445298e", null ],
+    [ "baseValues", "interface_c_c_b_animation_manager.html#a8f3f8c962e026443c6484c9e3de45911", null ],
+    [ "block", "interface_c_c_b_animation_manager.html#a711afc6382c6f072fb5873d80eca9e11", null ],
+    [ "nodeSequences", "interface_c_c_b_animation_manager.html#a4ccd30ac68965bd7304bc0e14d477944", null ],
+    [ "runningSequence", "interface_c_c_b_animation_manager.html#a58b8fcb98d9d8359d8affb8691e8bcb2", null ],
+    [ "autoPlaySequenceId", "interface_c_c_b_animation_manager.html#aeac01339572b60b0fdf1bdc27d4b26cc", null ],
+    [ "delegate", "interface_c_c_b_animation_manager.html#a87ba5affdbbcd73844eb09f5baf98576", null ],
+    [ "documentCallbackNames", "interface_c_c_b_animation_manager.html#aa42da34e25f0dfc64299ceb6a89804cd", null ],
+    [ "documentCallbackNodes", "interface_c_c_b_animation_manager.html#a6410825ef8cab0738b1a434832da96ec", null ],
+    [ "documentControllerName", "interface_c_c_b_animation_manager.html#abd6b8e20a679630977b9810760d27b33", null ],
+    [ "documentOutletNames", "interface_c_c_b_animation_manager.html#a223716f1b6ebfd4f244103ee153f50c6", null ],
+    [ "documentOutletNodes", "interface_c_c_b_animation_manager.html#af49830291c425c39cb50a1b8ae02f653", null ],
+    [ "lastCompletedSequenceName", "interface_c_c_b_animation_manager.html#a800e66c91144338b869a5bd77191c67c", null ],
+    [ "rootContainerSize", "interface_c_c_b_animation_manager.html#a46b6479cc186562eac13bee8bd82d022", null ],
+    [ "rootNode", "interface_c_c_b_animation_manager.html#aae68fa43ac4190cb5cd5f2f77445ff03", null ],
+    [ "runningSequenceName", "interface_c_c_b_animation_manager.html#a2354887b2ee1ae12d8069f8aec9d8c94", null ],
+    [ "sequences", "interface_c_c_b_animation_manager.html#af69ff36d05ffa37265b380cf47d57400", null ]
+];

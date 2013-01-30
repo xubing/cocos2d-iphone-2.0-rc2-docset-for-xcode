@@ -1,0 +1,68 @@
+\hypertarget{structb2_friction_joint_def}{\section{b2\-Friction\-Joint\-Def Struct Reference}
+\label{structb2_friction_joint_def}\index{b2\-Friction\-Joint\-Def@{b2\-Friction\-Joint\-Def}}
+}
+
+
+Friction joint definition.  
+
+
+
+
+{\ttfamily \#include $<$b2\-Friction\-Joint.\-h$>$}
+
+Inheritance diagram for b2\-Friction\-Joint\-Def\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structb2_friction_joint_def}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structb2_friction_joint_def_aee104f2aeb34dec4e17e3c52a98f7915}{Initialize} (\hyperlink{classb2_body}{b2\-Body} $\ast$\hyperlink{structb2_joint_def_a8cd54c93da396be75a9788f2c6897f05}{body\-A}, \hyperlink{classb2_body}{b2\-Body} $\ast$\hyperlink{structb2_joint_def_aa4f4dee2fbcd12187b19506b60e68e3d}{body\-B}, const \hyperlink{structb2_vec2}{b2\-Vec2} \&anchor)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structb2_friction_joint_def_a00b246e60ae282a956a42b662993e92a}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{structb2_friction_joint_def_a00b246e60ae282a956a42b662993e92a}{local\-Anchor\-A}}\label{structb2_friction_joint_def_a00b246e60ae282a956a42b662993e92a}
+
+\begin{DoxyCompactList}\small\item\em The local anchor point relative to body\-A's origin. \end{DoxyCompactList}\item 
+\hypertarget{structb2_friction_joint_def_ad6d5a5614a7ac77b13e53fda3e32ed05}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{structb2_friction_joint_def_ad6d5a5614a7ac77b13e53fda3e32ed05}{local\-Anchor\-B}}\label{structb2_friction_joint_def_ad6d5a5614a7ac77b13e53fda3e32ed05}
+
+\begin{DoxyCompactList}\small\item\em The local anchor point relative to body\-B's origin. \end{DoxyCompactList}\item 
+\hypertarget{structb2_friction_joint_def_ad30e97a80790d4ca64bac7a1fa7d1b35}{float32 \hyperlink{structb2_friction_joint_def_ad30e97a80790d4ca64bac7a1fa7d1b35}{max\-Force}}\label{structb2_friction_joint_def_ad30e97a80790d4ca64bac7a1fa7d1b35}
+
+\begin{DoxyCompactList}\small\item\em The maximum friction force in N. \end{DoxyCompactList}\item 
+\hypertarget{structb2_friction_joint_def_a61adfb0ee7c0ed4cb8feee8304c16ef6}{float32 \hyperlink{structb2_friction_joint_def_a61adfb0ee7c0ed4cb8feee8304c16ef6}{max\-Torque}}\label{structb2_friction_joint_def_a61adfb0ee7c0ed4cb8feee8304c16ef6}
+
+\begin{DoxyCompactList}\small\item\em The maximum friction torque in N-\/m. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Friction joint definition. 
+
+\subsection{Member Function Documentation}
+\hypertarget{structb2_friction_joint_def_aee104f2aeb34dec4e17e3c52a98f7915}{\index{b2\-Friction\-Joint\-Def@{b2\-Friction\-Joint\-Def}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!b2FrictionJointDef@{b2\-Friction\-Joint\-Def}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf b2\-Friction\-Joint\-Def\-::\-Initialize} (
+\begin{DoxyParamCaption}
+\item[{{\bf b2\-Body} $\ast$}]{body\-A, }
+\item[{{\bf b2\-Body} $\ast$}]{body\-B, }
+\item[{const {\bf b2\-Vec2} \&}]{anchor}
+\end{DoxyParamCaption}
+)}}\label{structb2_friction_joint_def_aee104f2aeb34dec4e17e3c52a98f7915}
+Initialize the bodies, anchors, axis, and reference angle using the world anchor and world axis. 
+\begin{DoxyCode}
+{
+        bodyA = bA;
+        bodyB = bB;
+        localAnchorA = bodyA->GetLocalPoint(anchor);
+        localAnchorB = bodyB->GetLocalPoint(anchor);
+}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Dynamics/\-Joints/b2\-Friction\-Joint.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Dynamics/\-Joints/b2\-Friction\-Joint.\-cpp\end{DoxyCompactItemize}

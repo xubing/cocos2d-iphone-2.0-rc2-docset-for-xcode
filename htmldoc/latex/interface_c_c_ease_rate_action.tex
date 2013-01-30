@@ -1,0 +1,79 @@
+\hypertarget{interface_c_c_ease_rate_action}{\section{C\-C\-Ease\-Rate\-Action Class Reference}
+\label{interface_c_c_ease_rate_action}\index{C\-C\-Ease\-Rate\-Action@{C\-C\-Ease\-Rate\-Action}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Ease.\-h$>$}
+
+Inheritance diagram for C\-C\-Ease\-Rate\-Action\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{interface_c_c_ease_rate_action}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_ease_rate_action_a48bb853d8f9c8e5030c2252014876776}{init\-With\-Action\-:rate\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_ease_rate_action_a8d962f7f67e5dc1db2966a6a5d2f8269}{action\-With\-Action\-:rate\-:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{interface_c_c_ease_rate_action_a65bc459f66b97752751340c9cfed8e74}{rate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for Easing actions with rate parameters 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_ease_rate_action_a8d962f7f67e5dc1db2966a6a5d2f8269}{\index{C\-C\-Ease\-Rate\-Action@{C\-C\-Ease\-Rate\-Action}!action\-With\-Action\-:rate\-:@{action\-With\-Action\-:rate\-:}}
+\index{action\-With\-Action\-:rate\-:@{action\-With\-Action\-:rate\-:}!CCEaseRateAction@{C\-C\-Ease\-Rate\-Action}}
+\subsubsection[{action\-With\-Action\-:rate\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Action\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Action\-Interval}$\ast$)}]{action}
+\item[{rate:(float)}]{rate}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_ease_rate_action_a8d962f7f67e5dc1db2966a6a5d2f8269}
+Creates the action with the inner action and the rate parameter 
+\begin{DoxyCode}
+                      : (CCActionInterval*) action rate:(float)aRate
+{
+        return [[[self alloc] initWithAction: action rate:aRate] autorelease ];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_ease_rate_action_a48bb853d8f9c8e5030c2252014876776}{\index{C\-C\-Ease\-Rate\-Action@{C\-C\-Ease\-Rate\-Action}!init\-With\-Action\-:rate\-:@{init\-With\-Action\-:rate\-:}}
+\index{init\-With\-Action\-:rate\-:@{init\-With\-Action\-:rate\-:}!CCEaseRateAction@{C\-C\-Ease\-Rate\-Action}}
+\subsubsection[{init\-With\-Action\-:rate\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Action\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Action\-Interval}$\ast$)}]{action}
+\item[{rate:(float)}]{rate}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_ease_rate_action_a48bb853d8f9c8e5030c2252014876776}
+Initializes the action with the inner action and the rate parameter 
+\begin{DoxyCode}
+                    : (CCActionInterval*) action rate:(float)aRate
+{
+        if( (self=[super initWithAction:action ]) )
+                self.rate = aRate;
+
+        return self;
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_ease_rate_action_a65bc459f66b97752751340c9cfed8e74}{\index{C\-C\-Ease\-Rate\-Action@{C\-C\-Ease\-Rate\-Action}!rate@{rate}}
+\index{rate@{rate}!CCEaseRateAction@{C\-C\-Ease\-Rate\-Action}}
+\subsubsection[{rate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf rate}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_ease_rate_action_a65bc459f66b97752751340c9cfed8e74}
+rate value for the actions 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Ease.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Ease.\-m\end{DoxyCompactItemize}

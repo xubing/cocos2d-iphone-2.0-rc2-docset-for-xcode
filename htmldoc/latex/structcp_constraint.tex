@@ -1,0 +1,85 @@
+\hypertarget{structcp_constraint}{\section{cp\-Constraint Struct Reference}
+\label{structcp_constraint}\index{cp\-Constraint@{cp\-Constraint}}
+}
+
+
+Opaque \hyperlink{structcp_constraint}{cp\-Constraint} struct.  
+
+
+
+
+{\ttfamily \#include $<$cp\-Constraint.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structcp_constraint_a44f5af613bf4c6e0511bc127d94aa78d}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (const cp\-Constraint\-Class $\ast$klass)}\label{structcp_constraint_a44f5af613bf4c6e0511bc127d94aa78d}
+
+\item 
+\hypertarget{structcp_constraint_aec1f02bf1958230e30c95bc18845556d}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{structcp_space}{cp\-Space} $\ast$space)}\label{structcp_constraint_aec1f02bf1958230e30c95bc18845556d}
+
+\item 
+\hypertarget{structcp_constraint_a8d81403729c24f480946b45a7a66a7b4}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{structcp_constraint}{cp\-Constraint} $\ast$next\-\_\-a)}\label{structcp_constraint_a8d81403729c24f480946b45a7a66a7b4}
+
+\item 
+\hypertarget{structcp_constraint_a0f9405946ef86a0be1ede8a6adb2b924}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{structcp_constraint}{cp\-Constraint} $\ast$next\-\_\-b)}\label{structcp_constraint_a0f9405946ef86a0be1ede8a6adb2b924}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structcp_constraint_a5740b2723545d943c2f45263e27fb9dd}{\hyperlink{structcp_body}{cp\-Body} $\ast$ \hyperlink{structcp_constraint_a5740b2723545d943c2f45263e27fb9dd}{a}}\label{structcp_constraint_a5740b2723545d943c2f45263e27fb9dd}
+
+\begin{DoxyCompactList}\small\item\em The first body connected to this constraint. \end{DoxyCompactList}\item 
+\hypertarget{structcp_constraint_aafa95efc3bad5b2f86f9db87b284cae7}{\hyperlink{structcp_body}{cp\-Body} $\ast$ \hyperlink{structcp_constraint_aafa95efc3bad5b2f86f9db87b284cae7}{b}}\label{structcp_constraint_aafa95efc3bad5b2f86f9db87b284cae7}
+
+\begin{DoxyCompactList}\small\item\em The second body connected to this constraint. \end{DoxyCompactList}\item 
+\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} \hyperlink{structcp_constraint_a993d4e5c9439d7b913bd391e955e0e5b}{max\-Force}
+\item 
+\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} \hyperlink{structcp_constraint_a4cfd0b995f500090fc5811635ed57614}{error\-Bias}
+\item 
+\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} \hyperlink{structcp_constraint_aac8ae38ee220e975dc4abbee86996e62}{max\-Bias}
+\item 
+\hyperlink{group__cp_constraint_ga31a2ad1ca9b9ecd4124a81b1292714e0}{cp\-Constraint\-Pre\-Solve\-Func} \hyperlink{structcp_constraint_a4a9e75379d50abaf80662cad350324d6}{pre\-Solve}
+\item 
+\hyperlink{group__cp_constraint_ga1adf3ccceb908229069aa2f10f21c1b1}{cp\-Constraint\-Post\-Solve\-Func} \hyperlink{structcp_constraint_a1be309feb59902e01cfcaeb5f6696930}{post\-Solve}
+\item 
+\hyperlink{group__basic_types_ga2ac2c3c31e21893941f9e4f8ee279447}{cp\-Data\-Pointer} \hyperlink{structcp_constraint_ae2adf6ccf6a057e05fa6eaf1d6843052}{data}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Opaque \hyperlink{structcp_constraint}{cp\-Constraint} struct. 
+
+\subsection{Member Data Documentation}
+\hypertarget{structcp_constraint_ae2adf6ccf6a057e05fa6eaf1d6843052}{\index{cp\-Constraint@{cp\-Constraint}!data@{data}}
+\index{data@{data}!cpConstraint@{cp\-Constraint}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cp\-Data\-Pointer} {\bf cp\-Constraint\-::data}}}\label{structcp_constraint_ae2adf6ccf6a057e05fa6eaf1d6843052}
+User definable data pointer. Generally this points to your the game object class so you can access it when given a \hyperlink{structcp_constraint}{cp\-Constraint} reference in a callback. \hypertarget{structcp_constraint_a4cfd0b995f500090fc5811635ed57614}{\index{cp\-Constraint@{cp\-Constraint}!error\-Bias@{error\-Bias}}
+\index{error\-Bias@{error\-Bias}!cpConstraint@{cp\-Constraint}}
+\subsubsection[{error\-Bias}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cp\-Float} {\bf cp\-Constraint\-::error\-Bias}}}\label{structcp_constraint_a4cfd0b995f500090fc5811635ed57614}
+The rate at which joint error is corrected. Defaults to pow(1.\-0 -\/ 0.\-1, 60.\-0) meaning that it will correct 10\% of the error every 1/60th of a second. \hypertarget{structcp_constraint_aac8ae38ee220e975dc4abbee86996e62}{\index{cp\-Constraint@{cp\-Constraint}!max\-Bias@{max\-Bias}}
+\index{max\-Bias@{max\-Bias}!cpConstraint@{cp\-Constraint}}
+\subsubsection[{max\-Bias}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cp\-Float} {\bf cp\-Constraint\-::max\-Bias}}}\label{structcp_constraint_aac8ae38ee220e975dc4abbee86996e62}
+The maximum rate at which joint error is corrected. Defaults to infinity. \hypertarget{structcp_constraint_a993d4e5c9439d7b913bd391e955e0e5b}{\index{cp\-Constraint@{cp\-Constraint}!max\-Force@{max\-Force}}
+\index{max\-Force@{max\-Force}!cpConstraint@{cp\-Constraint}}
+\subsubsection[{max\-Force}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cp\-Float} {\bf cp\-Constraint\-::max\-Force}}}\label{structcp_constraint_a993d4e5c9439d7b913bd391e955e0e5b}
+The maximum force that this constraint is allowed to use. Defaults to infinity. \hypertarget{structcp_constraint_a1be309feb59902e01cfcaeb5f6696930}{\index{cp\-Constraint@{cp\-Constraint}!post\-Solve@{post\-Solve}}
+\index{post\-Solve@{post\-Solve}!cpConstraint@{cp\-Constraint}}
+\subsubsection[{post\-Solve}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cp\-Constraint\-Post\-Solve\-Func} {\bf cp\-Constraint\-::post\-Solve}}}\label{structcp_constraint_a1be309feb59902e01cfcaeb5f6696930}
+Function called after the solver runs. Use the applied impulse to perform effects like breakable joints. 
+
+Referenced by cp\-Space\-Step().
+
+\hypertarget{structcp_constraint_a4a9e75379d50abaf80662cad350324d6}{\index{cp\-Constraint@{cp\-Constraint}!pre\-Solve@{pre\-Solve}}
+\index{pre\-Solve@{pre\-Solve}!cpConstraint@{cp\-Constraint}}
+\subsubsection[{pre\-Solve}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cp\-Constraint\-Pre\-Solve\-Func} {\bf cp\-Constraint\-::pre\-Solve}}}\label{structcp_constraint_a4a9e75379d50abaf80662cad350324d6}
+Function called before the solver runs. Animate your joint anchors, update your motor torque, etc. 
+
+Referenced by cp\-Space\-Step().
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Chipmunk/include/chipmunk/constraints/cp\-Constraint.\-h\end{DoxyCompactItemize}

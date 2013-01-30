@@ -1,0 +1,205 @@
+\hypertarget{interface_c_c_tile_map_atlas}{\section{C\-C\-Tile\-Map\-Atlas Class Reference}
+\label{interface_c_c_tile_map_atlas}\index{C\-C\-Tile\-Map\-Atlas@{C\-C\-Tile\-Map\-Atlas}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Tile\-Map\-Atlas.\-h$>$}
+
+Inheritance diagram for C\-C\-Tile\-Map\-Atlas\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{interface_c_c_tile_map_atlas}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_tile_map_atlas_a8023c0c1b472774619a6b98ea5907e11}{init\-With\-Tile\-File\-:map\-File\-:tile\-Width\-:tile\-Height\-:}
+\item 
+(\hyperlink{cc_types_8h_a829b00c53e72f0115e3880cb508fec1e}{cc\-Color3\-B}) -\/ \hyperlink{interface_c_c_tile_map_atlas_a7db2220cb9a025ea59d4948af4f440d2}{tile\-At\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_tile_map_atlas_a2883326f3407068ac464a42efe86f404}{set\-Tile\-:at\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_tile_map_atlas_ace2d60774d98bc68e986a40aa52e459a}{release\-Map}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_tile_map_atlas_a709bbea52bf725c3e19c507f0d0cdb6b}{tile\-Map\-Atlas\-With\-Tile\-File\-:map\-File\-:tile\-Width\-:tile\-Height\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_tile_map_atlas_a90bdb79daef7fbcdc26f3f9b190fb65c}{N\-S\-Mutable\-Dictionary $\ast$ \hyperlink{interface_c_c_tile_map_atlas_a90bdb79daef7fbcdc26f3f9b190fb65c}{pos\-To\-Atlas\-Index}}\label{interface_c_c_tile_map_atlas_a90bdb79daef7fbcdc26f3f9b190fb65c}
+
+\begin{DoxyCompactList}\small\item\em x,y to altas dictionary \end{DoxyCompactList}\item 
+\hypertarget{interface_c_c_tile_map_atlas_af8b798c035ee58c83f977507c91e48ac}{int \hyperlink{interface_c_c_tile_map_atlas_af8b798c035ee58c83f977507c91e48ac}{items\-To\-Render}}\label{interface_c_c_tile_map_atlas_af8b798c035ee58c83f977507c91e48ac}
+
+\begin{DoxyCompactList}\small\item\em numbers of tiles to render \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_t_g_alib_8h_a4806b57fade9f651148a380a8b3100ac}{t\-Image\-T\-G\-A} $\ast$ \hyperlink{interface_c_c_tile_map_atlas_aaeb4d528af3807a86bd3ea58f0ce27d0}{tga\-Info}
+\begin{DoxyCompactList}\small\item\em info about the map file \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_tile_map_atlas}{C\-C\-Tile\-Map\-Atlas} is a subclass of \hyperlink{interface_c_c_atlas_node}{C\-C\-Atlas\-Node}.
+
+It knows how to render a map based of tiles. The tiles must be in a .P\-N\-G format while the map must be a .T\-G\-A file.
+
+For more information regarding the format, please see this post\-: \href{http://www.cocos2d-iphone.org/archives/27}{\tt http\-://www.\-cocos2d-\/iphone.\-org/archives/27}
+
+All features from \hyperlink{interface_c_c_atlas_node}{C\-C\-Atlas\-Node} are valid in \hyperlink{interface_c_c_tile_map_atlas}{C\-C\-Tile\-Map\-Atlas}
+
+I\-M\-P\-O\-R\-T\-A\-N\-T\-: This class is deprecated. It is maintained for compatibility reasons only. You S\-H\-O\-U\-L\-D not use this class. Instead, use the newer T\-M\-X file format\-: \hyperlink{interface_c_c_t_m_x_tiled_map}{C\-C\-T\-M\-X\-Tiled\-Map} 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_tile_map_atlas_a8023c0c1b472774619a6b98ea5907e11}{\index{C\-C\-Tile\-Map\-Atlas@{C\-C\-Tile\-Map\-Atlas}!init\-With\-Tile\-File\-:map\-File\-:tile\-Width\-:tile\-Height\-:@{init\-With\-Tile\-File\-:map\-File\-:tile\-Width\-:tile\-Height\-:}}
+\index{init\-With\-Tile\-File\-:map\-File\-:tile\-Width\-:tile\-Height\-:@{init\-With\-Tile\-File\-:map\-File\-:tile\-Width\-:tile\-Height\-:}!CCTileMapAtlas@{C\-C\-Tile\-Map\-Atlas}}
+\subsubsection[{init\-With\-Tile\-File\-:map\-File\-:tile\-Width\-:tile\-Height\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Tile\-File\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{tile}
+\item[{mapFile:(N\-S\-String$\ast$)}]{map}
+\item[{tileWidth:(int)}]{w}
+\item[{tileHeight:(int)}]{h}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_tile_map_atlas_a8023c0c1b472774619a6b98ea5907e11}
+initializes a C\-C\-Tile\-Map with a tile file (atlas) with a map file and the width and height of each tile in points. The file will be loaded using the Texture\-Mgr. 
+\begin{DoxyCode}
+                      :(NSString*)tile mapFile:(NSString*)map tileWidth:(int)w 
+      tileHeight:(int)h
+{
+        [self loadTGAfile: map];
+        [self calculateItemsToRender];
+
+        if( (self=[super initWithTileFile:tile tileWidth:w tileHeight:h 
+      itemsToRender: itemsToRender]) ) {
+
+                color_ = ccWHITE;
+
+                posToAtlasIndex = [[NSMutableDictionary dictionaryWithCapacity:
+      itemsToRender] retain];
+
+                [self updateAtlasValues];
+
+                [self setContentSize: CGSizeMake(tgaInfo->width*itemWidth_, 
+      tgaInfo->height*itemHeight_)];
+        }
+
+        return self;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_tile_map_atlas_ace2d60774d98bc68e986a40aa52e459a}{\index{C\-C\-Tile\-Map\-Atlas@{C\-C\-Tile\-Map\-Atlas}!release\-Map@{release\-Map}}
+\index{release\-Map@{release\-Map}!CCTileMapAtlas@{C\-C\-Tile\-Map\-Atlas}}
+\subsubsection[{release\-Map}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf release\-Map} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_tile_map_atlas_ace2d60774d98bc68e986a40aa52e459a}
+dealloc the map from memory 
+\begin{DoxyCode}
+{
+        if( tgaInfo )
+                tgaDestroy(tgaInfo);
+
+        tgaInfo = nil;
+
+        [posToAtlasIndex release];
+        posToAtlasIndex = nil;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_tile_map_atlas_a2883326f3407068ac464a42efe86f404}{\index{C\-C\-Tile\-Map\-Atlas@{C\-C\-Tile\-Map\-Atlas}!set\-Tile\-:at\-:@{set\-Tile\-:at\-:}}
+\index{set\-Tile\-:at\-:@{set\-Tile\-:at\-:}!CCTileMapAtlas@{C\-C\-Tile\-Map\-Atlas}}
+\subsubsection[{set\-Tile\-:at\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-Tile\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Color3\-B})}]{tile}
+\item[{at:({\bf cc\-Grid\-Size})}]{position}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_tile_map_atlas_a2883326f3407068ac464a42efe86f404}
+sets a tile at position x,y. For the moment only channel R is used 
+\begin{DoxyCode}
+               :(ccColor3B) tile at:(ccGridSize) pos
+{
+        NSAssert( tgaInfo != nil, @"tgaInfo must not be nil");
+        NSAssert( posToAtlasIndex != nil, @"posToAtlasIndex must not be nil");
+        NSAssert( pos.x < tgaInfo->width, @"Invalid position.x");
+        NSAssert( pos.y < tgaInfo->height, @"Invalid position.x");
+        NSAssert( tile.r != 0, @"R component must be non 0");
+
+        ccColor3B *ptr = (ccColor3B*) tgaInfo->imageData;
+        ccColor3B value = ptr[pos.x + pos.y * tgaInfo->width];
+        if( value.r == 0 )
+                CCLOG(@"cocos2d: Value.r must be non 0.");
+        else {
+                ptr[pos.x + pos.y * tgaInfo->width] = tile;
+
+                // XXX: this method consumes a lot of memory
+                // XXX: a tree of something like that shall be impolemented
+                NSNumber *num = [posToAtlasIndex objectForKey: [NSString 
+      stringWithFormat:@"%ld,%ld", (long)pos.x, (long)pos.y]];
+                [self updateAtlasValueAt:pos withValue:tile withIndex: [num 
+      integerValue]];
+        }
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_tile_map_atlas_a7db2220cb9a025ea59d4948af4f440d2}{\index{C\-C\-Tile\-Map\-Atlas@{C\-C\-Tile\-Map\-Atlas}!tile\-At\-:@{tile\-At\-:}}
+\index{tile\-At\-:@{tile\-At\-:}!CCTileMapAtlas@{C\-C\-Tile\-Map\-Atlas}}
+\subsubsection[{tile\-At\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf cc\-Color3\-B}) {\bf tile\-At\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Grid\-Size})}]{position}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_tile_map_atlas_a7db2220cb9a025ea59d4948af4f440d2}
+returns a tile from position x,y. For the moment only channel R is used 
+\begin{DoxyCode}
+                   :(ccGridSize) pos
+{
+        NSAssert( tgaInfo != nil, @"tgaInfo must not be nil");
+        NSAssert( pos.x < tgaInfo->width, @"Invalid position.x");
+        NSAssert( pos.y < tgaInfo->height, @"Invalid position.y");
+
+        ccColor3B *ptr = (ccColor3B*) tgaInfo->imageData;
+        ccColor3B value = ptr[pos.x + pos.y * tgaInfo->width];
+
+        return value;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_tile_map_atlas_a709bbea52bf725c3e19c507f0d0cdb6b}{\index{C\-C\-Tile\-Map\-Atlas@{C\-C\-Tile\-Map\-Atlas}!tile\-Map\-Atlas\-With\-Tile\-File\-:map\-File\-:tile\-Width\-:tile\-Height\-:@{tile\-Map\-Atlas\-With\-Tile\-File\-:map\-File\-:tile\-Width\-:tile\-Height\-:}}
+\index{tile\-Map\-Atlas\-With\-Tile\-File\-:map\-File\-:tile\-Width\-:tile\-Height\-:@{tile\-Map\-Atlas\-With\-Tile\-File\-:map\-File\-:tile\-Width\-:tile\-Height\-:}!CCTileMapAtlas@{C\-C\-Tile\-Map\-Atlas}}
+\subsubsection[{tile\-Map\-Atlas\-With\-Tile\-File\-:map\-File\-:tile\-Width\-:tile\-Height\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) tile\-Map\-Atlas\-With\-Tile\-File\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{tile}
+\item[{mapFile:(N\-S\-String$\ast$)}]{map}
+\item[{tileWidth:(int)}]{w}
+\item[{tileHeight:(int)}]{h}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_tile_map_atlas_a709bbea52bf725c3e19c507f0d0cdb6b}
+creates a C\-C\-Tile\-Map with a tile file (atlas) with a map file and the width and height of each tile in points. The tile file will be loaded using the Texture\-Mgr. 
+\begin{DoxyCode}
+                              :(NSString*)tile mapFile:(NSString*)map tileWidth
+      :(int)w tileHeight:(int)h
+{
+        return [[[self alloc] initWithTileFile:tile mapFile:map tileWidth:w 
+      tileHeight:h] autorelease];
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_tile_map_atlas_aaeb4d528af3807a86bd3ea58f0ce27d0}{\index{C\-C\-Tile\-Map\-Atlas@{C\-C\-Tile\-Map\-Atlas}!tga\-Info@{tga\-Info}}
+\index{tga\-Info@{tga\-Info}!CCTileMapAtlas@{C\-C\-Tile\-Map\-Atlas}}
+\subsubsection[{tga\-Info}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf t\-Image\-T\-G\-A} $\ast$) {\bf tga\-Info}\hspace{0.3cm}{\ttfamily  \mbox{[}read, assign\mbox{]}}}}\label{interface_c_c_tile_map_atlas_aaeb4d528af3807a86bd3ea58f0ce27d0}
+
+
+info about the map file 
+
+Tile\-Map info 
+
+Referenced by release\-Map, set\-Tile\-:at\-:, and tile\-At\-:.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Tile\-Map\-Atlas.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Tile\-Map\-Atlas.\-m\end{DoxyCompactItemize}

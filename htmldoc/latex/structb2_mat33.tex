@@ -1,0 +1,161 @@
+\hypertarget{structb2_mat33}{\section{b2\-Mat33 Struct Reference}
+\label{structb2_mat33}\index{b2\-Mat33@{b2\-Mat33}}
+}
+
+
+A 3-\/by-\/3 matrix. Stored in column-\/major order.  
+
+
+
+
+{\ttfamily \#include $<$b2\-Math.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structb2_mat33_a1f4d7ddf1c8a202fc08ec64dfe191463}{\hyperlink{structb2_mat33_a1f4d7ddf1c8a202fc08ec64dfe191463}{b2\-Mat33} ()}\label{structb2_mat33_a1f4d7ddf1c8a202fc08ec64dfe191463}
+
+\begin{DoxyCompactList}\small\item\em The default constructor does nothing (for performance). \end{DoxyCompactList}\item 
+\hypertarget{structb2_mat33_a36d99a037008776c8d09fe0aeb5c759c}{\hyperlink{structb2_mat33_a36d99a037008776c8d09fe0aeb5c759c}{b2\-Mat33} (const \hyperlink{structb2_vec3}{b2\-Vec3} \&c1, const \hyperlink{structb2_vec3}{b2\-Vec3} \&c2, const \hyperlink{structb2_vec3}{b2\-Vec3} \&c3)}\label{structb2_mat33_a36d99a037008776c8d09fe0aeb5c759c}
+
+\begin{DoxyCompactList}\small\item\em Construct this matrix using columns. \end{DoxyCompactList}\item 
+\hypertarget{structb2_mat33_a42fc6953b025e1c8b59717d0ee7accde}{void \hyperlink{structb2_mat33_a42fc6953b025e1c8b59717d0ee7accde}{Set\-Zero} ()}\label{structb2_mat33_a42fc6953b025e1c8b59717d0ee7accde}
+
+\begin{DoxyCompactList}\small\item\em Set this matrix to all zeros. \end{DoxyCompactList}\item 
+\hyperlink{structb2_vec3}{b2\-Vec3} \hyperlink{structb2_mat33_a478872c7b6a3bedd13fbedd3ec7a2edb}{Solve33} (const \hyperlink{structb2_vec3}{b2\-Vec3} \&b) const 
+\item 
+\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{structb2_mat33_a2580ac2afadc48028a63ed4c8a1f16bc}{Solve22} (const \hyperlink{structb2_vec2}{b2\-Vec2} \&b) const 
+\item 
+void \hyperlink{structb2_mat33_a9eb5090b15d08ab495458adfec50e7cb}{Get\-Inverse22} (\hyperlink{structb2_mat33}{b2\-Mat33} $\ast$M) const 
+\item 
+void \hyperlink{structb2_mat33_a501f85edde8f080e4e9ecff0ec2ee27e}{Get\-Sym\-Inverse33} (\hyperlink{structb2_mat33}{b2\-Mat33} $\ast$M) const 
+\begin{DoxyCompactList}\small\item\em Returns the zero matrix if singular. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structb2_mat33_a132f00e6550d1e19c75fb60ce1229638}{\hyperlink{structb2_vec3}{b2\-Vec3} {\bfseries ex}}\label{structb2_mat33_a132f00e6550d1e19c75fb60ce1229638}
+
+\item 
+\hypertarget{structb2_mat33_ababc69c718c73a04a651f7a6a981ecf4}{\hyperlink{structb2_vec3}{b2\-Vec3} {\bfseries ey}}\label{structb2_mat33_ababc69c718c73a04a651f7a6a981ecf4}
+
+\item 
+\hypertarget{structb2_mat33_ae700fc46f679b4ef211a2517005b0557}{\hyperlink{structb2_vec3}{b2\-Vec3} {\bfseries ez}}\label{structb2_mat33_ae700fc46f679b4ef211a2517005b0557}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A 3-\/by-\/3 matrix. Stored in column-\/major order. 
+
+\subsection{Member Function Documentation}
+\hypertarget{structb2_mat33_a9eb5090b15d08ab495458adfec50e7cb}{\index{b2\-Mat33@{b2\-Mat33}!Get\-Inverse22@{Get\-Inverse22}}
+\index{Get\-Inverse22@{Get\-Inverse22}!b2Mat33@{b2\-Mat33}}
+\subsubsection[{Get\-Inverse22}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf b2\-Mat33\-::\-Get\-Inverse22} (
+\begin{DoxyParamCaption}
+\item[{{\bf b2\-Mat33} $\ast$}]{M}
+\end{DoxyParamCaption}
+) const}}\label{structb2_mat33_a9eb5090b15d08ab495458adfec50e7cb}
+Get the inverse of this matrix as a 2-\/by-\/2. Returns the zero matrix if singular. 
+\begin{DoxyCode}
+{
+        float32 a = ex.x, b = ey.x, c = ex.y, d = ey.y;
+        float32 det = a * d - b * c;
+        if (det != 0.0f)
+        {
+                det = 1.0f / det;
+        }
+
+        M->ex.x =  det * d;     M->ey.x = -det * b; M->ex.z = 0.0f;
+        M->ex.y = -det * c;     M->ey.y =  det * a; M->ey.z = 0.0f;
+        M->ez.x = 0.0f; M->ez.y = 0.0f; M->ez.z = 0.0f;
+}
+\end{DoxyCode}
+\hypertarget{structb2_mat33_a501f85edde8f080e4e9ecff0ec2ee27e}{\index{b2\-Mat33@{b2\-Mat33}!Get\-Sym\-Inverse33@{Get\-Sym\-Inverse33}}
+\index{Get\-Sym\-Inverse33@{Get\-Sym\-Inverse33}!b2Mat33@{b2\-Mat33}}
+\subsubsection[{Get\-Sym\-Inverse33}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf b2\-Mat33\-::\-Get\-Sym\-Inverse33} (
+\begin{DoxyParamCaption}
+\item[{{\bf b2\-Mat33} $\ast$}]{M}
+\end{DoxyParamCaption}
+) const}}\label{structb2_mat33_a501f85edde8f080e4e9ecff0ec2ee27e}
+
+
+Returns the zero matrix if singular. 
+
+Get the symmetric inverse of this matrix as a 3-\/by-\/3. Returns the zero matrix if singular. 
+\begin{DoxyCode}
+{
+        float32 det = b2Dot(ex, b2Cross(ey, ez));
+        if (det != 0.0f)
+        {
+                det = 1.0f / det;
+        }
+
+        float32 a11 = ex.x, a12 = ey.x, a13 = ez.x;
+        float32 a22 = ey.y, a23 = ez.y;
+        float32 a33 = ez.z;
+
+        M->ex.x = det * (a22 * a33 - a23 * a23);
+        M->ex.y = det * (a13 * a23 - a12 * a33);
+        M->ex.z = det * (a12 * a23 - a13 * a22);
+
+        M->ey.x = M->ex.y;
+        M->ey.y = det * (a11 * a33 - a13 * a13);
+        M->ey.z = det * (a13 * a12 - a11 * a23);
+
+        M->ez.x = M->ex.z;
+        M->ez.y = M->ey.z;
+        M->ez.z = det * (a11 * a22 - a12 * a12);
+}
+\end{DoxyCode}
+\hypertarget{structb2_mat33_a2580ac2afadc48028a63ed4c8a1f16bc}{\index{b2\-Mat33@{b2\-Mat33}!Solve22@{Solve22}}
+\index{Solve22@{Solve22}!b2Mat33@{b2\-Mat33}}
+\subsubsection[{Solve22}]{\setlength{\rightskip}{0pt plus 5cm}{\bf b2\-Vec2} {\bf b2\-Mat33\-::\-Solve22} (
+\begin{DoxyParamCaption}
+\item[{const {\bf b2\-Vec2} \&}]{b}
+\end{DoxyParamCaption}
+) const}}\label{structb2_mat33_a2580ac2afadc48028a63ed4c8a1f16bc}
+Solve A $\ast$ x = b, where b is a column vector. This is more efficient than computing the inverse in one-\/shot cases. Solve only the upper 2-\/by-\/2 matrix equation.
+
+Solve A $\ast$ x = b, where b is a column vector. This is more efficient than computing the inverse in one-\/shot cases. 
+\begin{DoxyCode}
+{
+        float32 a11 = ex.x, a12 = ey.x, a21 = ex.y, a22 = ey.y;
+        float32 det = a11 * a22 - a12 * a21;
+        if (det != 0.0f)
+        {
+                det = 1.0f / det;
+        }
+        b2Vec2 x;
+        x.x = det * (a22 * b.x - a12 * b.y);
+        x.y = det * (a11 * b.y - a21 * b.x);
+        return x;
+}
+\end{DoxyCode}
+\hypertarget{structb2_mat33_a478872c7b6a3bedd13fbedd3ec7a2edb}{\index{b2\-Mat33@{b2\-Mat33}!Solve33@{Solve33}}
+\index{Solve33@{Solve33}!b2Mat33@{b2\-Mat33}}
+\subsubsection[{Solve33}]{\setlength{\rightskip}{0pt plus 5cm}{\bf b2\-Vec3} {\bf b2\-Mat33\-::\-Solve33} (
+\begin{DoxyParamCaption}
+\item[{const {\bf b2\-Vec3} \&}]{b}
+\end{DoxyParamCaption}
+) const}}\label{structb2_mat33_a478872c7b6a3bedd13fbedd3ec7a2edb}
+Solve A $\ast$ x = b, where b is a column vector. This is more efficient than computing the inverse in one-\/shot cases. 
+\begin{DoxyCode}
+{
+        float32 det = b2Dot(ex, b2Cross(ey, ez));
+        if (det != 0.0f)
+        {
+                det = 1.0f / det;
+        }
+        b2Vec3 x;
+        x.x = det * b2Dot(b, b2Cross(ey, ez));
+        x.y = det * b2Dot(ex, b2Cross(b, ez));
+        x.z = det * b2Dot(ex, b2Cross(ey, b));
+        return x;
+}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Common/b2\-Math.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Common/b2\-Math.\-cpp\end{DoxyCompactItemize}

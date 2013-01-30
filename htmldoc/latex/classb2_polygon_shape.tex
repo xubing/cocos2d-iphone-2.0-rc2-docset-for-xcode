@@ -1,0 +1,399 @@
+\hypertarget{classb2_polygon_shape}{\section{b2\-Polygon\-Shape Class Reference}
+\label{classb2_polygon_shape}\index{b2\-Polygon\-Shape@{b2\-Polygon\-Shape}}
+}
+
+
+{\ttfamily \#include $<$b2\-Polygon\-Shape.\-h$>$}
+
+Inheritance diagram for b2\-Polygon\-Shape\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classb2_polygon_shape}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_polygon_shape_a38cf6a915a85691746465c9dbfc5aeb6}{\hyperlink{classb2_shape}{b2\-Shape} $\ast$ \hyperlink{classb2_polygon_shape_a38cf6a915a85691746465c9dbfc5aeb6}{Clone} (\hyperlink{classb2_block_allocator}{b2\-Block\-Allocator} $\ast$allocator) const }\label{classb2_polygon_shape_a38cf6a915a85691746465c9dbfc5aeb6}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{classb2_shape}{b2\-Shape}. \end{DoxyCompactList}\item 
+int32 \hyperlink{classb2_polygon_shape_ae844375297d19744e01a37b397a5baba}{Get\-Child\-Count} () const 
+\item 
+void \hyperlink{classb2_polygon_shape_a8aa13a7584b58f08be4d84181b5a86a8}{Set} (const \hyperlink{structb2_vec2}{b2\-Vec2} $\ast$vertices, int32 vertex\-Count)
+\item 
+void \hyperlink{classb2_polygon_shape_a6bb90df8b4a40d1c53b64cc352a855dd}{Set\-As\-Box} (float32 hx, float32 hy)
+\item 
+void \hyperlink{classb2_polygon_shape_a890690250115483da6c7d69829be087e}{Set\-As\-Box} (float32 hx, float32 hy, const \hyperlink{structb2_vec2}{b2\-Vec2} \&center, float32 angle)
+\item 
+bool \hyperlink{classb2_polygon_shape_a69ccc2f671394b3cc1a00a16ef36b12b}{Test\-Point} (const \hyperlink{structb2_transform}{b2\-Transform} \&transform, const \hyperlink{structb2_vec2}{b2\-Vec2} \&p) const 
+\item 
+\hypertarget{classb2_polygon_shape_ac13bded10d09c341f64aaa2750dda6b5}{bool \hyperlink{classb2_polygon_shape_ac13bded10d09c341f64aaa2750dda6b5}{Ray\-Cast} (\hyperlink{structb2_ray_cast_output}{b2\-Ray\-Cast\-Output} $\ast$output, const \hyperlink{structb2_ray_cast_input}{b2\-Ray\-Cast\-Input} \&input, const \hyperlink{structb2_transform}{b2\-Transform} \&transform, int32 child\-Index) const }\label{classb2_polygon_shape_ac13bded10d09c341f64aaa2750dda6b5}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{classb2_shape}{b2\-Shape}. \end{DoxyCompactList}\item 
+void \hyperlink{classb2_polygon_shape_a00e225b0321bf6bb231a554036ffdf23}{Compute\-A\-A\-B\-B} (\hyperlink{structb2_a_a_b_b}{b2\-A\-A\-B\-B} $\ast$aabb, const \hyperlink{structb2_transform}{b2\-Transform} \&transform, int32 child\-Index) const 
+\item 
+void \hyperlink{classb2_polygon_shape_ad86c4c2a83a7122599462da83bf35389}{Compute\-Mass} (\hyperlink{structb2_mass_data}{b2\-Mass\-Data} $\ast$mass\-Data, float32 density) const 
+\item 
+\hypertarget{classb2_polygon_shape_ae220f24c42eff4aef4cd452676ca2ced}{int32 \hyperlink{classb2_polygon_shape_ae220f24c42eff4aef4cd452676ca2ced}{Get\-Vertex\-Count} () const }\label{classb2_polygon_shape_ae220f24c42eff4aef4cd452676ca2ced}
+
+\begin{DoxyCompactList}\small\item\em Get the vertex count. \end{DoxyCompactList}\item 
+\hypertarget{classb2_polygon_shape_a88cdb687ec7dc0cbcf4bd25fd37f4da1}{const \hyperlink{structb2_vec2}{b2\-Vec2} \& \hyperlink{classb2_polygon_shape_a88cdb687ec7dc0cbcf4bd25fd37f4da1}{Get\-Vertex} (int32 index) const }\label{classb2_polygon_shape_a88cdb687ec7dc0cbcf4bd25fd37f4da1}
+
+\begin{DoxyCompactList}\small\item\em Get a vertex by index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_polygon_shape_ae8f5bd2f13f1e9b741c33350ba19cd9f}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-centroid}}\label{classb2_polygon_shape_ae8f5bd2f13f1e9b741c33350ba19cd9f}
+
+\item 
+\hypertarget{classb2_polygon_shape_a11ee5c107660be5da25f0e164aaccd53}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-vertices} \mbox{[}\hyperlink{b2_settings_8h_a09d71ee1993bee28b5b2e6d893b41884}{b2\-\_\-max\-Polygon\-Vertices}\mbox{]}}\label{classb2_polygon_shape_a11ee5c107660be5da25f0e164aaccd53}
+
+\item 
+\hypertarget{classb2_polygon_shape_a97cdcec277321c62ecdf93cb649958ce}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-normals} \mbox{[}\hyperlink{b2_settings_8h_a09d71ee1993bee28b5b2e6d893b41884}{b2\-\_\-max\-Polygon\-Vertices}\mbox{]}}\label{classb2_polygon_shape_a97cdcec277321c62ecdf93cb649958ce}
+
+\item 
+\hypertarget{classb2_polygon_shape_a45902db31f1a135b259f7967fd05f2f0}{int32 {\bfseries m\-\_\-vertex\-Count}}\label{classb2_polygon_shape_a45902db31f1a135b259f7967fd05f2f0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A convex polygon. It is assumed that the interior of the polygon is to the left of each edge. Polygons have a maximum number of vertices equal to b2\-\_\-max\-Polygon\-Vertices. In most cases you should not need many vertices for a convex polygon. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classb2_polygon_shape_a00e225b0321bf6bb231a554036ffdf23}{\index{b2\-Polygon\-Shape@{b2\-Polygon\-Shape}!Compute\-A\-A\-B\-B@{Compute\-A\-A\-B\-B}}
+\index{Compute\-A\-A\-B\-B@{Compute\-A\-A\-B\-B}!b2PolygonShape@{b2\-Polygon\-Shape}}
+\subsubsection[{Compute\-A\-A\-B\-B}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf b2\-Polygon\-Shape\-::\-Compute\-A\-A\-B\-B} (
+\begin{DoxyParamCaption}
+\item[{{\bf b2\-A\-A\-B\-B} $\ast$}]{aabb, }
+\item[{const {\bf b2\-Transform} \&}]{transform, }
+\item[{int32}]{child\-Index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classb2_polygon_shape_a00e225b0321bf6bb231a554036ffdf23}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classb2_shape_a88e9807fab0c8ca9a98d8926e50a1411}{b2\-Shape\-::\-Compute\-A\-A\-B\-B} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classb2_shape_a88e9807fab0c8ca9a98d8926e50a1411}{b2\-Shape}.
+
+
+\begin{DoxyCode}
+{
+        B2_NOT_USED(childIndex);
+
+        b2Vec2 lower = b2Mul(xf, m_vertices[0]);
+        b2Vec2 upper = lower;
+
+        for (int32 i = 1; i < m_vertexCount; ++i)
+        {
+                b2Vec2 v = b2Mul(xf, m_vertices[i]);
+                lower = b2Min(lower, v);
+                upper = b2Max(upper, v);
+        }
+
+        b2Vec2 r(m_radius, m_radius);
+        aabb->lowerBound = lower - r;
+        aabb->upperBound = upper + r;
+}
+\end{DoxyCode}
+\hypertarget{classb2_polygon_shape_ad86c4c2a83a7122599462da83bf35389}{\index{b2\-Polygon\-Shape@{b2\-Polygon\-Shape}!Compute\-Mass@{Compute\-Mass}}
+\index{Compute\-Mass@{Compute\-Mass}!b2PolygonShape@{b2\-Polygon\-Shape}}
+\subsubsection[{Compute\-Mass}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf b2\-Polygon\-Shape\-::\-Compute\-Mass} (
+\begin{DoxyParamCaption}
+\item[{{\bf b2\-Mass\-Data} $\ast$}]{mass\-Data, }
+\item[{float32}]{density}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classb2_polygon_shape_ad86c4c2a83a7122599462da83bf35389}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classb2_shape_a61b365526241b47f124789b0309cac69}{b2\-Shape\-::\-Compute\-Mass} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classb2_shape_a61b365526241b47f124789b0309cac69}{b2\-Shape}.
+
+
+\begin{DoxyCode}
+{
+        // Polygon mass, centroid, and inertia.
+        // Let rho be the polygon density in mass per unit area.
+        // Then:
+        // mass = rho * int(dA)
+        // centroid.x = (1/mass) * rho * int(x * dA)
+        // centroid.y = (1/mass) * rho * int(y * dA)
+        // I = rho * int((x*x + y*y) * dA)
+        //
+        // We can compute these integrals by summing all the integrals
+        // for each triangle of the polygon. To evaluate the integral
+        // for a single triangle, we make a change of variables to
+        // the (u,v) coordinates of the triangle:
+        // x = x0 + e1x * u + e2x * v
+        // y = y0 + e1y * u + e2y * v
+        // where 0 <= u && 0 <= v && u + v <= 1.
+        //
+        // We integrate u from [0,1-v] and then v from [0,1].
+        // We also need to use the Jacobian of the transformation:
+        // D = cross(e1, e2)
+        //
+        // Simplification: triangle centroid = (1/3) * (p1 + p2 + p3)
+        //
+        // The rest of the derivation is handled by computer algebra.
+
+        b2Assert(m_vertexCount >= 3);
+
+        b2Vec2 center; center.Set(0.0f, 0.0f);
+        float32 area = 0.0f;
+        float32 I = 0.0f;
+
+        // s is the reference point for forming triangles.
+        // It's location doesn't change the result (except for rounding error).
+        b2Vec2 s(0.0f, 0.0f);
+
+        // This code would put the reference point inside the polygon.
+        for (int32 i = 0; i < m_vertexCount; ++i)
+        {
+                s += m_vertices[i];
+        }
+        s *= 1.0f / m_vertexCount;
+
+        const float32 k_inv3 = 1.0f / 3.0f;
+
+        for (int32 i = 0; i < m_vertexCount; ++i)
+        {
+                // Triangle vertices.
+                b2Vec2 e1 = m_vertices[i] - s;
+                b2Vec2 e2 = i + 1 < m_vertexCount ? m_vertices[i+1] - s : 
+      m_vertices[0] - s;
+
+                float32 D = b2Cross(e1, e2);
+
+                float32 triangleArea = 0.5f * D;
+                area += triangleArea;
+
+                // Area weighted centroid
+                center += triangleArea * k_inv3 * (e1 + e2);
+
+                float32 ex1 = e1.x, ey1 = e1.y;
+                float32 ex2 = e2.x, ey2 = e2.y;
+
+                float32 intx2 = ex1*ex1 + ex2*ex1 + ex2*ex2;
+                float32 inty2 = ey1*ey1 + ey2*ey1 + ey2*ey2;
+
+                I += (0.25f * k_inv3 * D) * (intx2 + inty2);
+        }
+
+        // Total mass
+        massData->mass = density * area;
+
+        // Center of mass
+        b2Assert(area > b2_epsilon);
+        center *= 1.0f / area;
+        massData->center = center + s;
+
+        // Inertia tensor relative to the local origin (point s).
+        massData->I = density * I;
+
+        // Shift to center of mass then to original body origin.
+        massData->I += massData->mass * (b2Dot(massData->center, massData->
+      center) - b2Dot(center, center));
+}
+\end{DoxyCode}
+\hypertarget{classb2_polygon_shape_ae844375297d19744e01a37b397a5baba}{\index{b2\-Polygon\-Shape@{b2\-Polygon\-Shape}!Get\-Child\-Count@{Get\-Child\-Count}}
+\index{Get\-Child\-Count@{Get\-Child\-Count}!b2PolygonShape@{b2\-Polygon\-Shape}}
+\subsubsection[{Get\-Child\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int32 {\bf b2\-Polygon\-Shape\-::\-Get\-Child\-Count} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classb2_polygon_shape_ae844375297d19744e01a37b397a5baba}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classb2_shape_a05a3c445017d96df9238ceefe6ce37ab}{b2\-Shape\-::\-Get\-Child\-Count} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classb2_shape_a05a3c445017d96df9238ceefe6ce37ab}{b2\-Shape}.
+
+
+\begin{DoxyCode}
+{
+        return 1;
+}
+\end{DoxyCode}
+\hypertarget{classb2_polygon_shape_a8aa13a7584b58f08be4d84181b5a86a8}{\index{b2\-Polygon\-Shape@{b2\-Polygon\-Shape}!Set@{Set}}
+\index{Set@{Set}!b2PolygonShape@{b2\-Polygon\-Shape}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf b2\-Polygon\-Shape\-::\-Set} (
+\begin{DoxyParamCaption}
+\item[{const {\bf b2\-Vec2} $\ast$}]{vertices, }
+\item[{int32}]{vertex\-Count}
+\end{DoxyParamCaption}
+)}}\label{classb2_polygon_shape_a8aa13a7584b58f08be4d84181b5a86a8}
+Copy vertices. This assumes the vertices define a convex polygon. It is assumed that the exterior is the the right of each edge. The count must be in the range \mbox{[}3, b2\-\_\-max\-Polygon\-Vertices\mbox{]}. 
+\begin{DoxyCode}
+{
+        b2Assert(3 <= count && count <= b2_maxPolygonVertices);
+        m_vertexCount = count;
+
+        // Copy vertices.
+        for (int32 i = 0; i < m_vertexCount; ++i)
+        {
+                m_vertices[i] = vertices[i];
+        }
+
+        // Compute normals. Ensure the edges have non-zero length.
+        for (int32 i = 0; i < m_vertexCount; ++i)
+        {
+                int32 i1 = i;
+                int32 i2 = i + 1 < m_vertexCount ? i + 1 : 0;
+                b2Vec2 edge = m_vertices[i2] - m_vertices[i1];
+                b2Assert(edge.LengthSquared() > b2_epsilon * b2_epsilon);
+                m_normals[i] = b2Cross(edge, 1.0f);
+                m_normals[i].Normalize();
+        }
+
+#ifdef _DEBUG
+        // Ensure the polygon is convex and the interior
+        // is to the left of each edge.
+        for (int32 i = 0; i < m_vertexCount; ++i)
+        {
+                int32 i1 = i;
+                int32 i2 = i + 1 < m_vertexCount ? i + 1 : 0;
+                b2Vec2 edge = m_vertices[i2] - m_vertices[i1];
+
+                for (int32 j = 0; j < m_vertexCount; ++j)
+                {
+                        // Don't check vertices on the current edge.
+                        if (j == i1 || j == i2)
+                        {
+                                continue;
+                        }
+
+                        b2Vec2 r = m_vertices[j] - m_vertices[i1];
+
+                        // If this crashes, your polygon is non-convex, has
+       colinear edges,
+                        // or the winding order is wrong.
+                        float32 s = b2Cross(edge, r);
+                        b2Assert(s > 0.0f && "ERROR: Please ensure your polygon
+       is convex and has a CCW winding order");
+                }
+        }
+#endif
+
+        // Compute the polygon centroid.
+        m_centroid = ComputeCentroid(m_vertices, m_vertexCount);
+}
+\end{DoxyCode}
+\hypertarget{classb2_polygon_shape_a6bb90df8b4a40d1c53b64cc352a855dd}{\index{b2\-Polygon\-Shape@{b2\-Polygon\-Shape}!Set\-As\-Box@{Set\-As\-Box}}
+\index{Set\-As\-Box@{Set\-As\-Box}!b2PolygonShape@{b2\-Polygon\-Shape}}
+\subsubsection[{Set\-As\-Box}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf b2\-Polygon\-Shape\-::\-Set\-As\-Box} (
+\begin{DoxyParamCaption}
+\item[{float32}]{hx, }
+\item[{float32}]{hy}
+\end{DoxyParamCaption}
+)}}\label{classb2_polygon_shape_a6bb90df8b4a40d1c53b64cc352a855dd}
+Build vertices to represent an axis-\/aligned box. 
+\begin{DoxyParams}{Parameters}
+{\em hx} & the half-\/width. \\
+\hline
+{\em hy} & the half-\/height. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+{
+        m_vertexCount = 4;
+        m_vertices[0].Set(-hx, -hy);
+        m_vertices[1].Set( hx, -hy);
+        m_vertices[2].Set( hx,  hy);
+        m_vertices[3].Set(-hx,  hy);
+        m_normals[0].Set(0.0f, -1.0f);
+        m_normals[1].Set(1.0f, 0.0f);
+        m_normals[2].Set(0.0f, 1.0f);
+        m_normals[3].Set(-1.0f, 0.0f);
+        m_centroid.SetZero();
+}
+\end{DoxyCode}
+\hypertarget{classb2_polygon_shape_a890690250115483da6c7d69829be087e}{\index{b2\-Polygon\-Shape@{b2\-Polygon\-Shape}!Set\-As\-Box@{Set\-As\-Box}}
+\index{Set\-As\-Box@{Set\-As\-Box}!b2PolygonShape@{b2\-Polygon\-Shape}}
+\subsubsection[{Set\-As\-Box}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf b2\-Polygon\-Shape\-::\-Set\-As\-Box} (
+\begin{DoxyParamCaption}
+\item[{float32}]{hx, }
+\item[{float32}]{hy, }
+\item[{const {\bf b2\-Vec2} \&}]{center, }
+\item[{float32}]{angle}
+\end{DoxyParamCaption}
+)}}\label{classb2_polygon_shape_a890690250115483da6c7d69829be087e}
+Build vertices to represent an oriented box. 
+\begin{DoxyParams}{Parameters}
+{\em hx} & the half-\/width. \\
+\hline
+{\em hy} & the half-\/height. \\
+\hline
+{\em center} & the center of the box in local coordinates. \\
+\hline
+{\em angle} & the rotation of the box in local coordinates. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+{
+        m_vertexCount = 4;
+        m_vertices[0].Set(-hx, -hy);
+        m_vertices[1].Set( hx, -hy);
+        m_vertices[2].Set( hx,  hy);
+        m_vertices[3].Set(-hx,  hy);
+        m_normals[0].Set(0.0f, -1.0f);
+        m_normals[1].Set(1.0f, 0.0f);
+        m_normals[2].Set(0.0f, 1.0f);
+        m_normals[3].Set(-1.0f, 0.0f);
+        m_centroid = center;
+
+        b2Transform xf;
+        xf.p = center;
+        xf.q.Set(angle);
+
+        // Transform vertices and normals.
+        for (int32 i = 0; i < m_vertexCount; ++i)
+        {
+                m_vertices[i] = b2Mul(xf, m_vertices[i]);
+                m_normals[i] = b2Mul(xf.q, m_normals[i]);
+        }
+}
+\end{DoxyCode}
+\hypertarget{classb2_polygon_shape_a69ccc2f671394b3cc1a00a16ef36b12b}{\index{b2\-Polygon\-Shape@{b2\-Polygon\-Shape}!Test\-Point@{Test\-Point}}
+\index{Test\-Point@{Test\-Point}!b2PolygonShape@{b2\-Polygon\-Shape}}
+\subsubsection[{Test\-Point}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf b2\-Polygon\-Shape\-::\-Test\-Point} (
+\begin{DoxyParamCaption}
+\item[{const {\bf b2\-Transform} \&}]{transform, }
+\item[{const {\bf b2\-Vec2} \&}]{p}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classb2_polygon_shape_a69ccc2f671394b3cc1a00a16ef36b12b}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classb2_shape_a6ac968e403e2d93e8ae46d728a2e50fa}{b2\-Shape\-::\-Test\-Point} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classb2_shape_a6ac968e403e2d93e8ae46d728a2e50fa}{b2\-Shape}.
+
+
+\begin{DoxyCode}
+{
+        b2Vec2 pLocal = b2MulT(xf.q, p - xf.p);
+
+        for (int32 i = 0; i < m_vertexCount; ++i)
+        {
+                float32 dot = b2Dot(m_normals[i], pLocal - m_vertices[i]);
+                if (dot > 0.0f)
+                {
+                        return false;
+                }
+        }
+
+        return true;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Collision/\-Shapes/b2\-Polygon\-Shape.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Collision/\-Shapes/b2\-Polygon\-Shape.\-cpp\end{DoxyCompactItemize}

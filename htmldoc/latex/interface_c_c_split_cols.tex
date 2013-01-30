@@ -1,0 +1,79 @@
+\hypertarget{interface_c_c_split_cols}{\section{C\-C\-Split\-Cols Class Reference}
+\label{interface_c_c_split_cols}\index{C\-C\-Split\-Cols@{C\-C\-Split\-Cols}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Tiled\-Grid.\-h$>$}
+
+Inheritance diagram for C\-C\-Split\-Cols\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.000000cm]{interface_c_c_split_cols}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_split_cols_a2a4ae12ea0fe84ecb7cc33988b286d96}{init\-With\-Cols\-:duration\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_split_cols_ade79e7d5e011dfbf5e88b51a4481c42d}{action\-With\-Cols\-:duration\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_split_cols_afc97dcaa1961d1f4c6671d5b2a03b5ae}{int {\bfseries cols}}\label{interface_c_c_split_cols_afc97dcaa1961d1f4c6671d5b2a03b5ae}
+
+\item 
+\hypertarget{interface_c_c_split_cols_a666ce2aecd4b7acc924b2c1e923851bb}{C\-G\-Size {\bfseries win\-Size}}\label{interface_c_c_split_cols_a666ce2aecd4b7acc924b2c1e923851bb}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_split_cols}{C\-C\-Split\-Cols} action 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_split_cols_ade79e7d5e011dfbf5e88b51a4481c42d}{\index{C\-C\-Split\-Cols@{C\-C\-Split\-Cols}!action\-With\-Cols\-:duration\-:@{action\-With\-Cols\-:duration\-:}}
+\index{action\-With\-Cols\-:duration\-:@{action\-With\-Cols\-:duration\-:}!CCSplitCols@{C\-C\-Split\-Cols}}
+\subsubsection[{action\-With\-Cols\-:duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) action\-With\-Cols\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{cols}
+\item[{duration:({\bf cc\-Time})}]{duration}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_split_cols_ade79e7d5e011dfbf5e88b51a4481c42d}
+creates the action with the number of columns to split and the duration 
+
+Referenced by Split\-Cols\-Demo\-::action\-With\-Duration\-:.
+
+
+\begin{DoxyCode}
+                   :(int)c duration:(ccTime)d
+{
+        return [[[self alloc] initWithCols:c duration:d] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_split_cols_a2a4ae12ea0fe84ecb7cc33988b286d96}{\index{C\-C\-Split\-Cols@{C\-C\-Split\-Cols}!init\-With\-Cols\-:duration\-:@{init\-With\-Cols\-:duration\-:}}
+\index{init\-With\-Cols\-:duration\-:@{init\-With\-Cols\-:duration\-:}!CCSplitCols@{C\-C\-Split\-Cols}}
+\subsubsection[{init\-With\-Cols\-:duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Cols\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{cols}
+\item[{duration:({\bf cc\-Time})}]{duration}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_split_cols_a2a4ae12ea0fe84ecb7cc33988b286d96}
+initializes the action with the number of columns to split and the duration 
+\begin{DoxyCode}
+                 :(int)c duration:(ccTime)d
+{
+        cols = c;
+        return [super initWithSize:ccg(c,1) duration:d];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Tiled\-Grid.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Tiled\-Grid.\-m\end{DoxyCompactItemize}

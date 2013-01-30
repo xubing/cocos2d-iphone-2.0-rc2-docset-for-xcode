@@ -1,0 +1,106 @@
+\hypertarget{interface_c_c_cardinal_spline_to}{\section{C\-C\-Cardinal\-Spline\-To Class Reference}
+\label{interface_c_c_cardinal_spline_to}\index{C\-C\-Cardinal\-Spline\-To@{C\-C\-Cardinal\-Spline\-To}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Catmull\-Rom.\-h$>$}
+
+Inheritance diagram for C\-C\-Cardinal\-Spline\-To\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{interface_c_c_cardinal_spline_to}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_cardinal_spline_to_ada9539c4211dc170497809711d4d5c22}{init\-With\-Duration\-:points\-:tension\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_cardinal_spline_to_ac7c46c993b98b2ffc427349a834d1abd}{action\-With\-Duration\-:points\-:tension\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_cardinal_spline_to_ac932f71ff3bd127c0c414bef9bc33290}{\hyperlink{interface_c_c_point_array}{C\-C\-Point\-Array} $\ast$ {\bfseries points\-\_\-}}\label{interface_c_c_cardinal_spline_to_ac932f71ff3bd127c0c414bef9bc33290}
+
+\item 
+\hypertarget{interface_c_c_cardinal_spline_to_ac3c676a4e25fe0202576efa42484f98a}{C\-G\-Float {\bfseries delta\-T\-\_\-}}\label{interface_c_c_cardinal_spline_to_ac3c676a4e25fe0202576efa42484f98a}
+
+\item 
+\hypertarget{interface_c_c_cardinal_spline_to_ab1f39c734249c14d9481f9be9f93c111}{C\-G\-Float {\bfseries tension\-\_\-}}\label{interface_c_c_cardinal_spline_to_ab1f39c734249c14d9481f9be9f93c111}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_c_c_point_array}{C\-C\-Point\-Array} $\ast$ \hyperlink{interface_c_c_cardinal_spline_to_a580b5c52ae10ea8a920fcf1550bbf731}{points}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Cardinal Spline path. \href{http://en.wikipedia.org/wiki/Cubic_Hermite_spline#Cardinal_spline}{\tt http\-://en.\-wikipedia.\-org/wiki/\-Cubic\-\_\-\-Hermite\-\_\-spline\#\-Cardinal\-\_\-spline} 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_cardinal_spline_to_ac7c46c993b98b2ffc427349a834d1abd}{\index{C\-C\-Cardinal\-Spline\-To@{C\-C\-Cardinal\-Spline\-To}!action\-With\-Duration\-:points\-:tension\-:@{action\-With\-Duration\-:points\-:tension\-:}}
+\index{action\-With\-Duration\-:points\-:tension\-:@{action\-With\-Duration\-:points\-:tension\-:}!CCCardinalSplineTo@{C\-C\-Cardinal\-Spline\-To}}
+\subsubsection[{action\-With\-Duration\-:points\-:tension\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{duration}
+\item[{points:({\bf C\-C\-Point\-Array}$\ast$)}]{points}
+\item[{tension:(C\-G\-Float)}]{tension}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_cardinal_spline_to_ac7c46c993b98b2ffc427349a834d1abd}
+creates an action with a Cardinal Spline array of points and tension 
+\begin{DoxyCode}
+                        :(ccTime)duration points:(CCPointArray *)points tension
+      :(CGFloat)tension
+{
+        return [[[self alloc] initWithDuration:duration points:points tension:
+      tension ] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_cardinal_spline_to_ada9539c4211dc170497809711d4d5c22}{\index{C\-C\-Cardinal\-Spline\-To@{C\-C\-Cardinal\-Spline\-To}!init\-With\-Duration\-:points\-:tension\-:@{init\-With\-Duration\-:points\-:tension\-:}}
+\index{init\-With\-Duration\-:points\-:tension\-:@{init\-With\-Duration\-:points\-:tension\-:}!CCCardinalSplineTo@{C\-C\-Cardinal\-Spline\-To}}
+\subsubsection[{init\-With\-Duration\-:points\-:tension\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{duration}
+\item[{points:({\bf C\-C\-Point\-Array}$\ast$)}]{points}
+\item[{tension:(C\-G\-Float)}]{tension}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_cardinal_spline_to_ada9539c4211dc170497809711d4d5c22}
+initializes the action with a duration and an array of points 
+\begin{DoxyCode}
+                      :(ccTime)duration points:(CCPointArray *)points tension:(
+      CGFloat)tension                                                          
+{
+        NSAssert( [points count] > 0, @"Invalid configuration. It must at least
+       have one control point");
+
+        if( (self=[super initWithDuration:duration]) )
+        {
+                self.points = points;
+                tension_ = tension;
+        }
+
+        return self;
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_cardinal_spline_to_a580b5c52ae10ea8a920fcf1550bbf731}{\index{C\-C\-Cardinal\-Spline\-To@{C\-C\-Cardinal\-Spline\-To}!points@{points}}
+\index{points@{points}!CCCardinalSplineTo@{C\-C\-Cardinal\-Spline\-To}}
+\subsubsection[{points}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Point\-Array}$\ast$) {\bf points}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}\label{interface_c_c_cardinal_spline_to_a580b5c52ae10ea8a920fcf1550bbf731}
+Array of control points 
+
+Referenced by init\-With\-Duration\-:points\-:tension\-:.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Catmull\-Rom.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Catmull\-Rom.\-m\end{DoxyCompactItemize}

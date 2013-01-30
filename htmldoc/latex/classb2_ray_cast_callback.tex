@@ -1,0 +1,55 @@
+\hypertarget{classb2_ray_cast_callback}{\section{b2\-Ray\-Cast\-Callback Class Reference}
+\label{classb2_ray_cast_callback}\index{b2\-Ray\-Cast\-Callback@{b2\-Ray\-Cast\-Callback}}
+}
+
+
+{\ttfamily \#include $<$b2\-World\-Callbacks.\-h$>$}
+
+Inheritance diagram for b2\-Ray\-Cast\-Callback\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.750000cm]{classb2_ray_cast_callback}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual float32 \hyperlink{classb2_ray_cast_callback_a658d5c8e89e0c73230cc8bddade4f3a4}{Report\-Fixture} (\hyperlink{classb2_fixture}{b2\-Fixture} $\ast$fixture, const \hyperlink{structb2_vec2}{b2\-Vec2} \&point, const \hyperlink{structb2_vec2}{b2\-Vec2} \&normal, float32 fraction)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Callback class for ray casts. See \hyperlink{classb2_world_ad902548be84df9cc36eced0f4c89ab0a}{b2\-World\-::\-Ray\-Cast} 
+
+\subsection{Member Function Documentation}
+\hypertarget{classb2_ray_cast_callback_a658d5c8e89e0c73230cc8bddade4f3a4}{\index{b2\-Ray\-Cast\-Callback@{b2\-Ray\-Cast\-Callback}!Report\-Fixture@{Report\-Fixture}}
+\index{Report\-Fixture@{Report\-Fixture}!b2RayCastCallback@{b2\-Ray\-Cast\-Callback}}
+\subsubsection[{Report\-Fixture}]{\setlength{\rightskip}{0pt plus 5cm}virtual float32 {\bf b2\-Ray\-Cast\-Callback\-::\-Report\-Fixture} (
+\begin{DoxyParamCaption}
+\item[{{\bf b2\-Fixture} $\ast$}]{fixture, }
+\item[{const {\bf b2\-Vec2} \&}]{point, }
+\item[{const {\bf b2\-Vec2} \&}]{normal, }
+\item[{float32}]{fraction}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{classb2_ray_cast_callback_a658d5c8e89e0c73230cc8bddade4f3a4}
+Called for each fixture found in the query. You control how the ray cast proceeds by returning a float\-: return -\/1\-: ignore this fixture and continue return 0\-: terminate the ray cast return fraction\-: clip the ray to this point return 1\-: don't clip the ray and continue 
+\begin{DoxyParams}{Parameters}
+{\em fixture} & the fixture hit by the ray \\
+\hline
+{\em point} & the point of initial intersection \\
+\hline
+{\em normal} & the normal vector at the point of intersection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 to filter, 0 to terminate, fraction to clip the ray for closest hit, 1 to continue 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_ray_cast_multiple_callback_a7251b8332fc2eea398559d0ab797f7c6}{Ray\-Cast\-Multiple\-Callback}, \hyperlink{class_ray_cast_any_callback_a27492b490537b0196e868670f986d1d3}{Ray\-Cast\-Any\-Callback}, \hyperlink{class_ray_cast_closest_callback_aeea437e031fb1e2f3ab1f0c9b547e73b}{Ray\-Cast\-Closest\-Callback}, and \hyperlink{class_edge_shapes_callback_ad2a2a976f5bfe944ed38cb357a68faad}{Edge\-Shapes\-Callback}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Dynamics/b2\-World\-Callbacks.\-h\end{DoxyCompactItemize}

@@ -1,0 +1,90 @@
+\hypertarget{interface_c_d_property_modifier}{\section{C\-D\-Property\-Modifier Class Reference}
+\label{interface_c_d_property_modifier}\index{C\-D\-Property\-Modifier@{C\-D\-Property\-Modifier}}
+}
+
+
+{\ttfamily \#import $<$Cocos\-Denshion.\-h$>$}
+
+Inheritance diagram for C\-D\-Property\-Modifier\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.826087cm]{interface_c_d_property_modifier}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_d_property_modifier_a3fb9bdcf5457aae6a97e40a29623ecc1}{(id) -\/ {\bfseries init\-:interpolation\-Type\-:start\-Val\-:end\-Val\-:}}\label{interface_c_d_property_modifier_a3fb9bdcf5457aae6a97e40a29623ecc1}
+
+\item 
+(void) -\/ \hyperlink{interface_c_d_property_modifier_a8c2d8d098bc743ad13d80271a03f15d6}{modify\-:}
+\item 
+\hypertarget{interface_c_d_property_modifier_ab5661c86cd671b7393e7012d0e08a355}{(void) -\/ {\bfseries \-\_\-set\-Target\-Property\-:}}\label{interface_c_d_property_modifier_ab5661c86cd671b7393e7012d0e08a355}
+
+\item 
+\hypertarget{interface_c_d_property_modifier_a9aab6ce1e0e21603340230375fb8133e}{(float) -\/ {\bfseries \-\_\-get\-Target\-Property}}\label{interface_c_d_property_modifier_a9aab6ce1e0e21603340230375fb8133e}
+
+\item 
+\hypertarget{interface_c_d_property_modifier_ad4db2857a169bb8abf15b1596a5407de}{(void) -\/ {\bfseries \-\_\-stop\-Target}}\label{interface_c_d_property_modifier_ad4db2857a169bb8abf15b1596a5407de}
+
+\item 
+\hypertarget{interface_c_d_property_modifier_a8f4ee3a547824a5d2045bfbd7ed5474e}{(Class) -\/ {\bfseries \-\_\-allowable\-Type}}\label{interface_c_d_property_modifier_a8f4ee3a547824a5d2045bfbd7ed5474e}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_d_property_modifier_a8194c033d1601b3f9e6e27af913ccb5a}{\hyperlink{interface_c_d_float_interpolator}{C\-D\-Float\-Interpolator} $\ast$ {\bfseries interpolator}}\label{interface_c_d_property_modifier_a8194c033d1601b3f9e6e27af913ccb5a}
+
+\item 
+\hypertarget{interface_c_d_property_modifier_aef69ec3f2df7a26a7164ddc0f8a5006c}{id {\bfseries target}}\label{interface_c_d_property_modifier_aef69ec3f2df7a26a7164ddc0f8a5006c}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_d_property_modifier_a2bf99139e87f664206e7b136b8e5f358}{B\-O\-O\-L {\bfseries stop\-Target\-When\-Complete}}\label{interface_c_d_property_modifier_a2bf99139e87f664206e7b136b8e5f358}
+
+\item 
+\hypertarget{interface_c_d_property_modifier_ad8f165bf19b08dd43cf941ecc40154fd}{float {\bfseries start\-Value}}\label{interface_c_d_property_modifier_ad8f165bf19b08dd43cf941ecc40154fd}
+
+\item 
+\hypertarget{interface_c_d_property_modifier_a19c9dbbd4898b0ce15fd9d3eb4e38c59}{float {\bfseries end\-Value}}\label{interface_c_d_property_modifier_a19c9dbbd4898b0ce15fd9d3eb4e38c59}
+
+\item 
+\hypertarget{interface_c_d_property_modifier_af453b40550152fcb2e7d355ff6314e6a}{\hyperlink{_cocos_denshion_8h_abf5e3c49618c14630377c3696e7a3ab9}{t\-C\-D\-Interpolation\-Type} {\bfseries interpolation\-Type}}\label{interface_c_d_property_modifier_af453b40550152fcb2e7d355ff6314e6a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for classes that modify properties such as pitch, pan and gain 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_d_property_modifier_a8c2d8d098bc743ad13d80271a03f15d6}{\index{C\-D\-Property\-Modifier@{C\-D\-Property\-Modifier}!modify\-:@{modify\-:}}
+\index{modify\-:@{modify\-:}!CDPropertyModifier@{C\-D\-Property\-Modifier}}
+\subsubsection[{modify\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf modify\-:} 
+\begin{DoxyParamCaption}
+\item[{(float)}]{t}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_property_modifier_a8c2d8d098bc743ad13d80271a03f15d6}
+Set to a fractional value between 0 and 1 where 0 equals the start and 1 equals the end 
+\begin{DoxyCode}
+              :(float) t {
+        if (t < 1.0) {
+                [self _setTargetProperty:[interpolator interpolate:t]];
+        } else {
+                //At the end
+                [self _setTargetProperty:endValue];
+                if (stopTargetWhenComplete) {
+                        [self _stopTarget];
+                }
+        }
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/\-Cocos\-Denshion/\-Cocos\-Denshion/\hyperlink{_cocos_denshion_8h}{Cocos\-Denshion.\-h}\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/\-Cocos\-Denshion/\-Cocos\-Denshion/Cocos\-Denshion.\-m\end{DoxyCompactItemize}

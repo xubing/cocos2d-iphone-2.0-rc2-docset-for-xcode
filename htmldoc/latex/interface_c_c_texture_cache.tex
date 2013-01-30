@@ -1,0 +1,565 @@
+\hypertarget{interface_c_c_texture_cache}{\section{C\-C\-Texture\-Cache Class Reference}
+\label{interface_c_c_texture_cache}\index{C\-C\-Texture\-Cache@{C\-C\-Texture\-Cache}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Texture\-Cache.\-h$>$}
+
+Inheritance diagram for C\-C\-Texture\-Cache\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_c_c_texture_cache}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{class_c_c_texture2_d}{C\-C\-Texture2\-D} $\ast$) -\/ \hyperlink{interface_c_c_texture_cache_a76f5cb737d48b8046756b033b5da93cf}{add\-Image\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_texture_cache_a19844e2980e63b366605eaa97239ba59}{add\-Image\-Async\-:target\-:selector\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_texture_cache_a4d8bdd73c4dd06f5fd81a4908c279384}{add\-Image\-Async\-:with\-Block\-:}
+\item 
+(\hyperlink{class_c_c_texture2_d}{C\-C\-Texture2\-D} $\ast$) -\/ \hyperlink{interface_c_c_texture_cache_a921adee8faefcdb4aa8d248b8fe66692}{add\-C\-G\-Image\-:for\-Key\-:}
+\item 
+(\hyperlink{class_c_c_texture2_d}{C\-C\-Texture2\-D} $\ast$) -\/ \hyperlink{interface_c_c_texture_cache_a6ffdf7ce63a9e5c5b5b6d79d83eca27c}{texture\-For\-Key\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_texture_cache_abebd44b405b4162c98504548c3691633}{remove\-All\-Textures}
+\item 
+(void) -\/ \hyperlink{interface_c_c_texture_cache_adb206694c1459a898f357d2dd3638f72}{remove\-Unused\-Textures}
+\item 
+(void) -\/ \hyperlink{interface_c_c_texture_cache_a6959884d084296e1e32efdcbb2457a25}{remove\-Texture\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_texture_cache_aec3ada81d0420b798fde06c1a59334d6}{remove\-Texture\-For\-Key\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_texture_cache_ae2b40ef270a73cdfe2398578240b553f}{dump\-Cached\-Texture\-Info}
+\item 
+(\hyperlink{class_c_c_texture2_d}{C\-C\-Texture2\-D} $\ast$) -\/ \hyperlink{interface_c_c_texture_cache_ac4a262017e54ad68035c213a02488cc0}{add\-P\-V\-R\-Image\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_c_c_texture_cache}{C\-C\-Texture\-Cache} $\ast$) + \hyperlink{interface_c_c_texture_cache_a165dc20d3e1be71265250c70f735fc40}{shared\-Texture\-Cache}
+\item 
+(void) + \hyperlink{interface_c_c_texture_cache_ac673f75cd5418bdcecf1fb8717a40345}{purge\-Shared\-Texture\-Cache}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_texture_cache_a615df4e802382e18fdfb737a9f75b445}{N\-S\-Mutable\-Dictionary $\ast$ {\bfseries textures\-\_\-}}\label{interface_c_c_texture_cache_a615df4e802382e18fdfb737a9f75b445}
+
+\item 
+\hypertarget{interface_c_c_texture_cache_ab7cc623781bc53fd3f4b700ce42530aa}{dispatch\-\_\-queue\-\_\-t {\bfseries \-\_\-loading\-Queue}}\label{interface_c_c_texture_cache_ab7cc623781bc53fd3f4b700ce42530aa}
+
+\item 
+\hypertarget{interface_c_c_texture_cache_abdc4e30449fd0bac6a6d5b3757c954fc}{dispatch\-\_\-queue\-\_\-t {\bfseries \-\_\-dict\-Queue}}\label{interface_c_c_texture_cache_abdc4e30449fd0bac6a6d5b3757c954fc}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Singleton that handles the loading of textures Once the texture is loaded, the next time it will return a reference of the previously loaded texture reducing G\-P\-U \& C\-P\-U memory 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_texture_cache_a921adee8faefcdb4aa8d248b8fe66692}{\index{C\-C\-Texture\-Cache@{C\-C\-Texture\-Cache}!add\-C\-G\-Image\-:for\-Key\-:@{add\-C\-G\-Image\-:for\-Key\-:}}
+\index{add\-C\-G\-Image\-:for\-Key\-:@{add\-C\-G\-Image\-:for\-Key\-:}!CCTextureCache@{C\-C\-Texture\-Cache}}
+\subsubsection[{add\-C\-G\-Image\-:for\-Key\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Texture2\-D} $\ast$) add\-C\-G\-Image\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Image\-Ref)}]{image}
+\item[{forKey:(N\-S\-String $\ast$)}]{key}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_cache_a921adee8faefcdb4aa8d248b8fe66692}
+Returns a Texture2\-D object given an C\-G\-Image\-Ref image If the image was not previously loaded, it will create a new \hyperlink{class_c_c_texture2_d}{C\-C\-Texture2\-D} object and it will return it. Otherwise it will return a reference of a previously loaded image The \char`\"{}key\char`\"{} parameter will be used as the \char`\"{}key\char`\"{} for the cache. If \char`\"{}key\char`\"{} is nil, then a new texture will be created each time. \begin{DoxySince}{Since}
+v0.\-8 
+\end{DoxySince}
+
+
+Referenced by C\-C\-Director\-::create\-Stats\-Label, C\-C\-Sprite\-::init\-With\-C\-G\-Image\-:key\-:, and C\-C\-Particle\-System\-::init\-With\-Dictionary\-:path\-:.
+
+
+\begin{DoxyCode}
+                          : (CGImageRef) imageref forKey: (NSString *)key
+{
+        NSAssert(imageref != nil, @"TextureCache: image MUST not be nill");
+
+        __block CCTexture2D * tex = nil;
+
+        // If key is nil, then create a new texture each time
+        if( key ) {
+                dispatch_sync(_dictQueue, ^{
+                        tex = [textures_ objectForKey:key];
+                });
+                if(tex)
+                        return tex;
+        }
+
+        tex = [[CCTexture2D alloc] initWithCGImage:imageref resolutionType:
+      kCCResolutionUnknown];
+
+        if(tex && key){
+                dispatch_sync(_dictQueue, ^{
+                        [textures_ setObject: tex forKey:key];
+                });
+        }else{
+                CCLOG(@"cocos2d: Couldn't add CGImage in CCTextureCache");
+        }
+
+        return [tex autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_texture_cache_a76f5cb737d48b8046756b033b5da93cf}{\index{C\-C\-Texture\-Cache@{C\-C\-Texture\-Cache}!add\-Image\-:@{add\-Image\-:}}
+\index{add\-Image\-:@{add\-Image\-:}!CCTextureCache@{C\-C\-Texture\-Cache}}
+\subsubsection[{add\-Image\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Texture2\-D} $\ast$) {\bf add\-Image\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{fileimage}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_cache_a76f5cb737d48b8046756b033b5da93cf}
+Returns a Texture2\-D object given an file image If the file image was not previously loaded, it will create a new \hyperlink{class_c_c_texture2_d}{C\-C\-Texture2\-D} object and it will return it. It will use the filename as a key. Otherwise it will return a reference of a previously loaded image. Supported image extensions\-: .png, .bmp, .tiff, .jpeg, .pvr, .gif 
+
+Referenced by add\-Image\-Async\-:target\-:selector\-:, add\-Image\-Async\-:with\-Block\-:, C\-C\-Animation\-::add\-Sprite\-Frame\-With\-Filename\-:, C\-C\-Particle\-System\-::init\-With\-Dictionary\-:path\-:, C\-C\-Motion\-Streak\-::init\-With\-Fade\-:min\-Seg\-:width\-:color\-:texture\-Filename\-:, C\-C\-Sprite\-::init\-With\-File\-:, C\-C\-Texture\-Atlas\-::init\-With\-File\-:capacity\-:, C\-C\-Particle\-Batch\-Node\-::init\-With\-File\-:capacity\-:, C\-C\-Sprite\-Batch\-Node\-::init\-With\-File\-:capacity\-:, C\-C\-Sprite\-::init\-With\-File\-:rect\-:, C\-C\-Label\-Atlas\-::init\-With\-String\-:char\-Map\-File\-:item\-Width\-:item\-Height\-:start\-Char\-Map\-:, C\-C\-Atlas\-Node\-::init\-With\-Tile\-File\-:tile\-Width\-:tile\-Height\-:items\-To\-Render\-:, and C\-C\-T\-M\-X\-Layer\-::init\-With\-Tileset\-Info\-:layer\-Info\-:map\-Info\-:.
+
+
+\begin{DoxyCode}
+                        : (NSString*) path
+{
+        NSAssert(path != nil, @"TextureCache: fileimage MUST not be nill");
+
+        path = [path stringByStandardizingPath];
+        
+        __block CCTexture2D * tex = nil;
+
+        // remove possible -HD suffix to prevent caching the same image twice
+       (issue #1040)
+#ifdef __CC_PLATFORM_IOS
+        path = [[CCFileUtils sharedFileUtils] removeSuffixFromFile: path];
+#endif
+
+        dispatch_sync(_dictQueue, ^{
+                tex = [textures_ objectForKey: path];
+        });
+
+        if( ! tex ) {
+
+                NSString *lowerCase = [path lowercaseString];
+
+                // all images are handled by UIKit/AppKit except PVR extension
+       that is handled by cocos2d's handler
+
+
+                if ( [lowerCase hasSuffix:@".pvr"] || [lowerCase hasSuffix:@"
+      .pvr.gz"] || [lowerCase hasSuffix:@".pvr.ccz"] )
+                        tex = [self addPVRImage:path];
+
+#ifdef __CC_PLATFORM_IOS
+
+                else {
+                        ccResolutionType resolution;
+                        NSString *fullpath = [[CCFileUtils sharedFileUtils] 
+      fullPathFromRelativePath:path resolutionType:&resolution];
+
+                        UIImage *image = [[UIImage alloc] 
+      initWithContentsOfFile:fullpath];
+                        tex = [[CCTexture2D alloc] initWithCGImage:image.
+      CGImage resolutionType:resolution];
+                        [image release];
+
+                        if( tex ){
+                                dispatch_sync(_dictQueue, ^{
+                                        [textures_ setObject: tex forKey:path];
+                                });
+                        }else{
+                                CCLOG(@"cocos2d: Couldn't add image:%@ in
+       CCTextureCache", path);
+                        }
+
+                        // autorelease prevents possible crash in multithreaded
+       environments
+                        [tex autorelease];
+                }
+
+
+#elif defined(__CC_PLATFORM_MAC)
+                else {
+                        ccResolutionType resolution;
+                        NSString *fullpath = [[CCFileUtils sharedFileUtils] 
+      fullPathFromRelativePath:path resolutionType:&resolution];
+
+                        NSData *data = [[NSData alloc] initWithContentsOfFile:
+      fullpath];
+                        NSBitmapImageRep *image = [[NSBitmapImageRep alloc] 
+      initWithData:data];
+                        tex = [ [CCTexture2D alloc] initWithCGImage:[image 
+      CGImage] resolutionType:resolution];
+
+                        [data release];
+                        [image release];
+
+                        if( tex ){
+                                dispatch_sync(_dictQueue, ^{
+                                        [textures_ setObject: tex forKey:path];
+                                });
+                        }else{
+                                CCLOG(@"cocos2d: Couldn't add image:%@ in
+       CCTextureCache", path);
+                        }
+
+                        // autorelease prevents possible crash in multithreaded
+       environments
+                        [tex autorelease];
+                }
+#endif // __CC_PLATFORM_MAC
+
+        }
+
+        return tex;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_texture_cache_a19844e2980e63b366605eaa97239ba59}{\index{C\-C\-Texture\-Cache@{C\-C\-Texture\-Cache}!add\-Image\-Async\-:target\-:selector\-:@{add\-Image\-Async\-:target\-:selector\-:}}
+\index{add\-Image\-Async\-:target\-:selector\-:@{add\-Image\-Async\-:target\-:selector\-:}!CCTextureCache@{C\-C\-Texture\-Cache}}
+\subsubsection[{add\-Image\-Async\-:target\-:selector\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\-Image\-Async\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{filename}
+\item[{target:(id)}]{target}
+\item[{selector:(S\-E\-L)}]{selector}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_cache_a19844e2980e63b366605eaa97239ba59}
+Asynchronously, load a texture2d from a file. If the file image was previously loaded, it will use it. Otherwise it will load a texture in a new thread, and when the image is loaded, the callback will be called with the Texture2\-D as a parameter. The callback will be called in the cocos2d thread, so it is safe to create any cocos2d object from the callback. Supported image extensions\-: .png, .bmp, .tiff, .jpeg, .pvr, .gif \begin{DoxySince}{Since}
+v0.\-8 
+\end{DoxySince}
+
+\begin{DoxyCode}
+                     : (NSString*)path target:(id)target selector:(SEL)selector
+{
+        NSAssert(path != nil, @"TextureCache: fileimage MUST not be nill");
+        NSAssert(target != nil, @"TextureCache: target can't be nil");
+        NSAssert(selector != NULL, @"TextureCache: selector can't be NULL");
+
+        path = [path stringByStandardizingPath];
+
+        // optimization
+        __block CCTexture2D * tex;
+
+#ifdef __CC_PLATFORM_IOS
+        path = [[CCFileUtils sharedFileUtils] removeSuffixFromFile:path];
+#endif
+
+        dispatch_sync(_dictQueue, ^{
+                tex = [textures_ objectForKey:path];
+        });
+
+        if(tex) {
+                [target performSelector:selector withObject:tex];
+                return;
+        }
+
+        // dispatch it serially
+        dispatch_async(_loadingQueue, ^{
+
+                CCTexture2D *texture;
+
+#ifdef __CC_PLATFORM_IOS
+                if( [EAGLContext setCurrentContext:_auxGLcontext] ) {
+
+                        // load / create the texture
+                        texture = [self addImage:path];
+
+                        glFlush();
+
+                        // callback should be executed in cocos2d thread
+                        [target performSelector:selector onThread:[[CCDirector 
+      sharedDirector] runningThread] withObject:texture waitUntilDone:NO];
+
+                        [EAGLContext setCurrentContext:nil];
+                } else {
+                        CCLOG(@"cocos2d: ERROR: TetureCache: Could not set
+       EAGLContext");
+                }
+
+#elif defined(__CC_PLATFORM_MAC)
+
+                [_auxGLcontext makeCurrentContext];
+
+                // load / create the texture
+                texture = [self addImage:path];
+
+                glFlush();
+
+                // callback should be executed in cocos2d thread
+                [target performSelector:selector onThread:[[CCDirector 
+      sharedDirector] runningThread] withObject:texture waitUntilDone:NO];
+
+                [NSOpenGLContext clearCurrentContext];
+
+#endif // __CC_PLATFORM_MAC
+
+        });
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_texture_cache_a4d8bdd73c4dd06f5fd81a4908c279384}{\index{C\-C\-Texture\-Cache@{C\-C\-Texture\-Cache}!add\-Image\-Async\-:with\-Block\-:@{add\-Image\-Async\-:with\-Block\-:}}
+\index{add\-Image\-Async\-:with\-Block\-:@{add\-Image\-Async\-:with\-Block\-:}!CCTextureCache@{C\-C\-Texture\-Cache}}
+\subsubsection[{add\-Image\-Async\-:with\-Block\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\-Image\-Async\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{filename}
+\item[{withBlock:({\bf C\-C\-Texture2\-D} $\ast$tex)}]{block}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_cache_a4d8bdd73c4dd06f5fd81a4908c279384}
+Asynchronously, load a texture2d from a file. If the file image was previously loaded, it will use it. Otherwise it will load a texture in a new thread, and when the image is loaded, the block will be called. The callback will be called in the cocos2d thread, so it is safe to create any cocos2d object from the callback. Supported image extensions\-: .png, .bmp, .tiff, .jpeg, .pvr, .gif \begin{DoxySince}{Since}
+v2.\-0 
+\end{DoxySince}
+
+\begin{DoxyCode}
+                     :(NSString*)path withBlock:(void(^)(CCTexture2D *tex))
+      block
+{
+        NSAssert(path != nil, @"TextureCache: fileimage MUST not be nil");
+
+        path = [path stringByStandardizingPath];
+
+        // optimization
+        __block CCTexture2D * tex;
+
+#ifdef __CC_PLATFORM_IOS
+        path = [[CCFileUtils sharedFileUtils] removeSuffixFromFile:path];
+#endif
+
+        dispatch_sync(_dictQueue, ^{
+                tex = [textures_ objectForKey:path];
+        });
+
+        if(tex) {
+                block(tex);
+                return;
+        }
+
+        // dispatch it serially
+        dispatch_async( _loadingQueue, ^{
+
+                CCTexture2D *texture;
+
+#ifdef __CC_PLATFORM_IOS
+                if( [EAGLContext setCurrentContext:_auxGLcontext] ) {
+
+                        // load / create the texture
+                        texture = [self addImage:path];
+
+                        glFlush();
+
+                        // callback should be executed in cocos2d thread
+                        NSThread *thread = [[CCDirector sharedDirector] 
+      runningThread];
+                        [thread performBlock:block withObject:texture 
+      waitUntilDone:NO];
+
+                        [EAGLContext setCurrentContext:nil];
+                } else {
+                        CCLOG(@"cocos2d: ERROR: TetureCache: Could not set
+       EAGLContext");
+                }
+
+#elif defined(__CC_PLATFORM_MAC)
+
+                [_auxGLcontext makeCurrentContext];
+
+                // load / create the texture
+                texture = [self addImage:path];
+
+                glFlush();
+
+                // callback should be executed in cocos2d thread
+                NSThread *thread = [[CCDirector sharedDirector] runningThread];
+                [thread performBlock:block withObject:texture waitUntilDone:NO]
+      ;
+
+                [NSOpenGLContext clearCurrentContext];
+
+#endif // __CC_PLATFORM_MAC
+
+        });
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_texture_cache_ac4a262017e54ad68035c213a02488cc0}{\index{C\-C\-Texture\-Cache@{C\-C\-Texture\-Cache}!add\-P\-V\-R\-Image\-:@{add\-P\-V\-R\-Image\-:}}
+\index{add\-P\-V\-R\-Image\-:@{add\-P\-V\-R\-Image\-:}!CCTextureCache@{C\-C\-Texture\-Cache}}
+\subsubsection[{add\-P\-V\-R\-Image\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Texture2\-D}$\ast$) {\bf add\-P\-V\-R\-Image\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{filename}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_cache_ac4a262017e54ad68035c213a02488cc0}
+Returns a Texture2\-D object given an P\-V\-R filename. If the file image was not previously loaded, it will create a new \hyperlink{class_c_c_texture2_d}{C\-C\-Texture2\-D} object and it will return it. Otherwise it will return a reference of a previously loaded image 
+
+Referenced by add\-Image\-:.
+
+\hypertarget{interface_c_c_texture_cache_ae2b40ef270a73cdfe2398578240b553f}{\index{C\-C\-Texture\-Cache@{C\-C\-Texture\-Cache}!dump\-Cached\-Texture\-Info@{dump\-Cached\-Texture\-Info}}
+\index{dump\-Cached\-Texture\-Info@{dump\-Cached\-Texture\-Info}!CCTextureCache@{C\-C\-Texture\-Cache}}
+\subsubsection[{dump\-Cached\-Texture\-Info}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf dump\-Cached\-Texture\-Info} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_cache_ae2b40ef270a73cdfe2398578240b553f}
+Output to C\-C\-L\-O\-G the current contents of this \hyperlink{interface_c_c_texture_cache}{C\-C\-Texture\-Cache} This will attempt to calculate the size of each texture, and the total texture memory in use
+
+\begin{DoxySince}{Since}
+v1.\-0 
+\end{DoxySince}
+\hypertarget{interface_c_c_texture_cache_ac673f75cd5418bdcecf1fb8717a40345}{\index{C\-C\-Texture\-Cache@{C\-C\-Texture\-Cache}!purge\-Shared\-Texture\-Cache@{purge\-Shared\-Texture\-Cache}}
+\index{purge\-Shared\-Texture\-Cache@{purge\-Shared\-Texture\-Cache}!CCTextureCache@{C\-C\-Texture\-Cache}}
+\subsubsection[{purge\-Shared\-Texture\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf purge\-Shared\-Texture\-Cache} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_cache_ac673f75cd5418bdcecf1fb8717a40345}
+purges the cache. It releases the retained instance. \begin{DoxySince}{Since}
+v0.\-99.\-0 
+\end{DoxySince}
+
+
+Referenced by C\-C\-Director\-::end.
+
+
+\begin{DoxyCode}
+{
+        [sharedTextureCache release];
+        sharedTextureCache = nil;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_texture_cache_abebd44b405b4162c98504548c3691633}{\index{C\-C\-Texture\-Cache@{C\-C\-Texture\-Cache}!remove\-All\-Textures@{remove\-All\-Textures}}
+\index{remove\-All\-Textures@{remove\-All\-Textures}!CCTextureCache@{C\-C\-Texture\-Cache}}
+\subsubsection[{remove\-All\-Textures}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\-All\-Textures} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_cache_abebd44b405b4162c98504548c3691633}
+Purges the dictionary of loaded textures. Call this method if you receive the \char`\"{}\-Memory Warning\char`\"{} In the short term\-: it will free some resources preventing your app from being killed In the medium term\-: it will allocate more resources In the long term\-: it will be the same 
+\begin{DoxyCode}
+{
+        dispatch_sync(_dictQueue, ^{
+                [textures_ removeAllObjects];
+        });
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_texture_cache_a6959884d084296e1e32efdcbb2457a25}{\index{C\-C\-Texture\-Cache@{C\-C\-Texture\-Cache}!remove\-Texture\-:@{remove\-Texture\-:}}
+\index{remove\-Texture\-:@{remove\-Texture\-:}!CCTextureCache@{C\-C\-Texture\-Cache}}
+\subsubsection[{remove\-Texture\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\-Texture\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Texture2\-D}$\ast$)}]{tex}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_cache_a6959884d084296e1e32efdcbb2457a25}
+Deletes a texture from the cache given a texture 
+\begin{DoxyCode}
+                     : (CCTexture2D*) tex
+{
+        if( ! tex )
+                return;
+
+        dispatch_sync(_dictQueue, ^{
+                NSArray *keys = [textures_ allKeysForObject:tex];
+
+                for( NSUInteger i = 0; i < [keys count]; i++ )
+                        [textures_ removeObjectForKey:[keys objectAtIndex:i]];
+        });
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_texture_cache_aec3ada81d0420b798fde06c1a59334d6}{\index{C\-C\-Texture\-Cache@{C\-C\-Texture\-Cache}!remove\-Texture\-For\-Key\-:@{remove\-Texture\-For\-Key\-:}}
+\index{remove\-Texture\-For\-Key\-:@{remove\-Texture\-For\-Key\-:}!CCTextureCache@{C\-C\-Texture\-Cache}}
+\subsubsection[{remove\-Texture\-For\-Key\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\-Texture\-For\-Key\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{texture\-Key\-Name}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_cache_aec3ada81d0420b798fde06c1a59334d6}
+Deletes a texture from the cache given a its key name \begin{DoxySince}{Since}
+v0.\-99.\-4 
+\end{DoxySince}
+
+
+Referenced by C\-C\-Director\-::create\-Stats\-Label.
+
+
+\begin{DoxyCode}
+                           :(NSString*)name
+{
+        if( ! name )
+                return;
+
+        dispatch_sync(_dictQueue, ^{
+                [textures_ removeObjectForKey:name];
+        });
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_texture_cache_adb206694c1459a898f357d2dd3638f72}{\index{C\-C\-Texture\-Cache@{C\-C\-Texture\-Cache}!remove\-Unused\-Textures@{remove\-Unused\-Textures}}
+\index{remove\-Unused\-Textures@{remove\-Unused\-Textures}!CCTextureCache@{C\-C\-Texture\-Cache}}
+\subsubsection[{remove\-Unused\-Textures}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\-Unused\-Textures} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_cache_adb206694c1459a898f357d2dd3638f72}
+Removes unused textures Textures that have a retain count of 1 will be deleted It is convenient to call this method after when starting a new Scene \begin{DoxySince}{Since}
+v0.\-8 
+\end{DoxySince}
+
+
+Referenced by C\-C\-Director\-::purge\-Cached\-Data.
+
+
+\begin{DoxyCode}
+{
+        dispatch_sync(_dictQueue, ^{
+                NSArray *keys = [textures_ allKeys];
+                for( id key in keys ) {
+                        id value = [textures_ objectForKey:key];
+                        if( [value retainCount] == 1 ) {
+                                CCLOG(@"cocos2d: CCTextureCache: removing
+       unused texture: %@", key);
+                                [textures_ removeObjectForKey:key];
+                        }
+                }
+        });
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_texture_cache_a165dc20d3e1be71265250c70f735fc40}{\index{C\-C\-Texture\-Cache@{C\-C\-Texture\-Cache}!shared\-Texture\-Cache@{shared\-Texture\-Cache}}
+\index{shared\-Texture\-Cache@{shared\-Texture\-Cache}!CCTextureCache@{C\-C\-Texture\-Cache}}
+\subsubsection[{shared\-Texture\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf C\-C\-Texture\-Cache} $\ast$) {\bf shared\-Texture\-Cache} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_cache_a165dc20d3e1be71265250c70f735fc40}
+Retruns ths shared instance of the cache 
+
+Referenced by C\-C\-Animation\-::add\-Sprite\-Frame\-With\-Filename\-:, C\-C\-Director\-::create\-Stats\-Label, C\-C\-Sprite\-::init\-With\-C\-G\-Image\-:key\-:, C\-C\-Particle\-System\-::init\-With\-Dictionary\-:path\-:, C\-C\-Motion\-Streak\-::init\-With\-Fade\-:min\-Seg\-:width\-:color\-:texture\-Filename\-:, C\-C\-Sprite\-::init\-With\-File\-:, C\-C\-Texture\-Atlas\-::init\-With\-File\-:capacity\-:, C\-C\-Particle\-Batch\-Node\-::init\-With\-File\-:capacity\-:, C\-C\-Sprite\-Batch\-Node\-::init\-With\-File\-:capacity\-:, C\-C\-Sprite\-::init\-With\-File\-:rect\-:, C\-C\-Label\-Atlas\-::init\-With\-String\-:char\-Map\-File\-:item\-Width\-:item\-Height\-:start\-Char\-Map\-:, C\-C\-Atlas\-Node\-::init\-With\-Tile\-File\-:tile\-Width\-:tile\-Height\-:items\-To\-Render\-:, C\-C\-T\-M\-X\-Layer\-::init\-With\-Tileset\-Info\-:layer\-Info\-:map\-Info\-:, and C\-C\-Director\-::purge\-Cached\-Data.
+
+
+\begin{DoxyCode}
+{
+        if (!sharedTextureCache)
+                sharedTextureCache = [[self alloc] init];
+
+        return sharedTextureCache;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_texture_cache_a6ffdf7ce63a9e5c5b5b6d79d83eca27c}{\index{C\-C\-Texture\-Cache@{C\-C\-Texture\-Cache}!texture\-For\-Key\-:@{texture\-For\-Key\-:}}
+\index{texture\-For\-Key\-:@{texture\-For\-Key\-:}!CCTextureCache@{C\-C\-Texture\-Cache}}
+\subsubsection[{texture\-For\-Key\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Texture2\-D} $\ast$) {\bf texture\-For\-Key\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{key}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_cache_a6ffdf7ce63a9e5c5b5b6d79d83eca27c}
+Returns an already created texture. Returns nil if the texture doesn't exist. \begin{DoxySince}{Since}
+v0.\-99.\-5 
+\end{DoxySince}
+
+\begin{DoxyCode}
+                              :(NSString *)key
+{
+        __block CCTexture2D *tex = nil;
+
+        dispatch_sync(_dictQueue, ^{
+                tex = [textures_ objectForKey:key];
+        });
+
+        return tex;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Texture\-Cache.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Texture\-Cache.\-m\end{DoxyCompactItemize}

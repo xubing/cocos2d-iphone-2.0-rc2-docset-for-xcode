@@ -1,0 +1,92 @@
+\hypertarget{interface_c_c_jump_by}{\section{C\-C\-Jump\-By Class Reference}
+\label{interface_c_c_jump_by}\index{C\-C\-Jump\-By@{C\-C\-Jump\-By}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Interval.\-h$>$}
+
+Inheritance diagram for C\-C\-Jump\-By\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{interface_c_c_jump_by}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_jump_by_ad94b2075916a71183cc339be8e0e5660}{init\-With\-Duration\-:position\-:height\-:jumps\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_jump_by_ad59992b4e3b9198ed78a6ff4539000fa}{action\-With\-Duration\-:position\-:height\-:jumps\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_jump_by_af86c9ec10f8a7c7a73caff8ccf083383}{C\-G\-Point {\bfseries start\-Position\-\_\-}}\label{interface_c_c_jump_by_af86c9ec10f8a7c7a73caff8ccf083383}
+
+\item 
+\hypertarget{interface_c_c_jump_by_a4155293b23d8dd175de23860f7f63013}{C\-G\-Point {\bfseries delta\-\_\-}}\label{interface_c_c_jump_by_a4155293b23d8dd175de23860f7f63013}
+
+\item 
+\hypertarget{interface_c_c_jump_by_a854f06bdf7738a76cb6f2a527c0ab10f}{\hyperlink{cc_types_8h_ae6c674aac4bfb46a4e6cb1e89bb66b4f}{cc\-Time} {\bfseries height\-\_\-}}\label{interface_c_c_jump_by_a854f06bdf7738a76cb6f2a527c0ab10f}
+
+\item 
+\hypertarget{interface_c_c_jump_by_a46884c98841fca9e28e7f08626ecced5}{N\-S\-U\-Integer {\bfseries jumps\-\_\-}}\label{interface_c_c_jump_by_a46884c98841fca9e28e7f08626ecced5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Moves a \hyperlink{class_c_c_node}{C\-C\-Node} object simulating a parabolic jump movement by modifying its position attribute. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_jump_by_ad59992b4e3b9198ed78a6ff4539000fa}{\index{C\-C\-Jump\-By@{C\-C\-Jump\-By}!action\-With\-Duration\-:position\-:height\-:jumps\-:@{action\-With\-Duration\-:position\-:height\-:jumps\-:}}
+\index{action\-With\-Duration\-:position\-:height\-:jumps\-:@{action\-With\-Duration\-:position\-:height\-:jumps\-:}!CCJumpBy@{C\-C\-Jump\-By}}
+\subsubsection[{action\-With\-Duration\-:position\-:height\-:jumps\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{duration}
+\item[{position:(C\-G\-Point)}]{position}
+\item[{height:({\bf cc\-Time})}]{height}
+\item[{jumps:(N\-S\-U\-Integer)}]{jumps}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_jump_by_ad59992b4e3b9198ed78a6ff4539000fa}
+creates the action 
+\begin{DoxyCode}
+                        : (ccTime) t position: (CGPoint) pos height: (ccTime) h
+       jumps:(NSUInteger)j
+{
+        return [[[self alloc] initWithDuration: t position: pos height: h jumps
+      :j] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_jump_by_ad94b2075916a71183cc339be8e0e5660}{\index{C\-C\-Jump\-By@{C\-C\-Jump\-By}!init\-With\-Duration\-:position\-:height\-:jumps\-:@{init\-With\-Duration\-:position\-:height\-:jumps\-:}}
+\index{init\-With\-Duration\-:position\-:height\-:jumps\-:@{init\-With\-Duration\-:position\-:height\-:jumps\-:}!CCJumpBy@{C\-C\-Jump\-By}}
+\subsubsection[{init\-With\-Duration\-:position\-:height\-:jumps\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{duration}
+\item[{position:(C\-G\-Point)}]{position}
+\item[{height:({\bf cc\-Time})}]{height}
+\item[{jumps:(N\-S\-U\-Integer)}]{jumps}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_jump_by_ad94b2075916a71183cc339be8e0e5660}
+initializes the action 
+\begin{DoxyCode}
+                      : (ccTime) t position: (CGPoint) pos height: (ccTime) h 
+      jumps:(NSUInteger)j
+{
+        if( (self=[super initWithDuration:t]) ) {
+                delta_ = pos;
+                height_ = h;
+                jumps_ = j;
+        }
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-m\end{DoxyCompactItemize}

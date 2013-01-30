@@ -1,0 +1,445 @@
+\hypertarget{interface_j_s_b_core}{\section{J\-S\-B\-Core Class Reference}
+\label{interface_j_s_b_core}\index{J\-S\-B\-Core@{J\-S\-B\-Core}}
+}
+Inheritance diagram for J\-S\-B\-Core\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_j_s_b_core}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_j_s_b_core_afbcc896c287ad29621f9a265dfae0a01}{create\-Runtime}
+\item 
+(void) -\/ \hyperlink{interface_j_s_b_core_a5ff187c93667b13def2cc751650b5f45}{restart\-Runtime}
+\item 
+(void) -\/ \hyperlink{interface_j_s_b_core_aba38b3995ddd9789fce361b3ea456f17}{shutdown}
+\item 
+(void) -\/ \hyperlink{interface_j_s_b_core_abf66b707fd7046f5a6ca3f4fe11053f6}{purge\-Cache}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_j_s_b_core_a115ae6b034d1367fdeb63d76d13acb7a}{eval\-String\-:out\-Val\-:}
+\item 
+(J\-S\-Bool) -\/ \hyperlink{interface_j_s_b_core_aa5871a453904a0c133a30a837958ccad}{run\-Script\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_j_s_b_core}{J\-S\-B\-Core} $\ast$) + \hyperlink{interface_j_s_b_core_a2cb2b4e530c120ad846a15ca6777a1a8}{shared\-Instance}
+\item 
+(void) + \hyperlink{interface_j_s_b_core_ad5ff7903db0393fac9876cca4358e6de}{report\-Error\-With\-Context\-:message\-:report\-:}
+\item 
+(J\-S\-Bool) + \hyperlink{interface_j_s_b_core_aaa7792cbf8a2b6b810e9c96cc6c57b87}{log\-With\-Context\-:argc\-:vp\-:}
+\item 
+(J\-S\-Bool) + \hyperlink{interface_j_s_b_core_a7242dacac8378050a58bd5b29647975f}{execute\-Script\-With\-Context\-:argc\-:vp\-:}
+\item 
+(J\-S\-Bool) + \hyperlink{interface_j_s_b_core_ac0a30ab3d415806ab0936648c775be00}{add\-Root\-J\-S\-With\-Context\-:argc\-:vp\-:}
+\item 
+(J\-S\-Bool) + \hyperlink{interface_j_s_b_core_a52c79f9b9a0c4b01c88ac42f276ac4b0}{remove\-Root\-J\-S\-With\-Context\-:argc\-:vp\-:}
+\item 
+(J\-S\-Bool) + \hyperlink{interface_j_s_b_core_ad242f84d423ac8176405d6d24b059728}{force\-G\-C\-With\-Context\-:argc\-:vp\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_j_s_b_core_a3db80a5a798a3a42365c2dde37a47ce6}{J\-S\-Runtime $\ast$ {\bfseries \-\_\-rt}}\label{interface_j_s_b_core_a3db80a5a798a3a42365c2dde37a47ce6}
+
+\item 
+\hypertarget{interface_j_s_b_core_ace54e2d2ceca135638d637e2c5df6b56}{J\-S\-Context $\ast$ {\bfseries \-\_\-cx}}\label{interface_j_s_b_core_ace54e2d2ceca135638d637e2c5df6b56}
+
+\item 
+\hypertarget{interface_j_s_b_core_a6b05b24e276d82c03f70ea798da6e465}{J\-S\-Object $\ast$ {\bfseries \-\_\-object}}\label{interface_j_s_b_core_a6b05b24e276d82c03f70ea798da6e465}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+J\-S\-Runtime $\ast$ \hyperlink{interface_j_s_b_core_af67248bae04a5693ffc847fd819695f7}{runtime}
+\item 
+J\-S\-Context $\ast$ \hyperlink{interface_j_s_b_core_a7afd78647c38e37ec9421a49bc3c1304}{global\-Context}
+\item 
+J\-S\-Object $\ast$ \hyperlink{interface_j_s_b_core_afbb9849ede00729797bde912965525ed}{global\-Object}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_j_s_b_core_ac0a30ab3d415806ab0936648c775be00}{\index{J\-S\-B\-Core@{J\-S\-B\-Core}!add\-Root\-J\-S\-With\-Context\-:argc\-:vp\-:@{add\-Root\-J\-S\-With\-Context\-:argc\-:vp\-:}}
+\index{add\-Root\-J\-S\-With\-Context\-:argc\-:vp\-:@{add\-Root\-J\-S\-With\-Context\-:argc\-:vp\-:}!JSBCore@{J\-S\-B\-Core}}
+\subsubsection[{add\-Root\-J\-S\-With\-Context\-:argc\-:vp\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (J\-S\-Bool) add\-Root\-J\-S\-With\-Context\-: 
+\begin{DoxyParamCaption}
+\item[{(J\-S\-Context$\ast$)}]{cx}
+\item[{argc:(uint32\-\_\-t)}]{argc}
+\item[{vp:(jsval$\ast$)}]{vp}
+\end{DoxyParamCaption}
+}}\label{interface_j_s_b_core_ac0a30ab3d415806ab0936648c775be00}
+Register an object as a member of the G\-C's root set, preventing them from being G\-C'ed 
+\begin{DoxyCode}
+                              :(JSContext*)cx argc:(uint32_t)argc vp:(jsval*)vp
+{
+        return JS_TRUE;
+}
+\end{DoxyCode}
+\hypertarget{interface_j_s_b_core_afbcc896c287ad29621f9a265dfae0a01}{\index{J\-S\-B\-Core@{J\-S\-B\-Core}!create\-Runtime@{create\-Runtime}}
+\index{create\-Runtime@{create\-Runtime}!JSBCore@{J\-S\-B\-Core}}
+\subsubsection[{create\-Runtime}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf create\-Runtime} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_j_s_b_core_afbcc896c287ad29621f9a265dfae0a01}
+creates a new runtime 
+
+Referenced by restart\-Runtime.
+
+
+\begin{DoxyCode}
+{
+        NSAssert(_rt == NULL && _cx==NULL, @"runtime already created. Reset it
+       first");
+
+        _rt = JS_NewRuntime(8 * 1024 * 1024);
+        _cx = JS_NewContext( _rt, 8192);
+        JS_SetOptions(_cx, JSOPTION_VAROBJFIX);
+        JS_SetVersion(_cx, JSVERSION_LATEST);
+        JS_SetErrorReporter(_cx, reportError);
+        _object = JS_NewGlobalObject( _cx, &global_class, NULL);
+        if (!JS_InitStandardClasses( _cx, _object)) {
+                CCLOGWARN(@"js error");
+        }
+
+        
+        //
+        // globals
+        //
+        JS_DefineFunction(_cx, _object, "require", JSBCore_executeScript, 1, 
+      JSPROP_READONLY | JSPROP_PERMANENT);
+        JS_DefineFunction(_cx, _object, "__associateObjWithNative", 
+      JSBCore_associateObjectWithNative, 2, JSPROP_READONLY | JSPROP_PERMANENT);
+        JS_DefineFunction(_cx, _object, "__getAssociatedNative", 
+      JSBCore_getAssociatedNative, 2, JSPROP_READONLY | JSPROP_PERMANENT);
+        JS_DefineFunction(_cx, _object, "__getPlatform", JSBCore_platform, 0, 
+      JSPROP_READONLY | JSPROP_PERMANENT);
+
+        // 
+        // Javascript controller (__jsc__)
+        //
+        JSObject *jsc = JS_NewObject( _cx, NULL, NULL, NULL);
+        jsval jscVal = OBJECT_TO_JSVAL(jsc);
+        JS_SetProperty(_cx, _object, "__jsc__", &jscVal);
+
+        JS_DefineFunction(_cx, jsc, "garbageCollect", JSBCore_forceGC, 0, 
+      JSPROP_READONLY | JSPROP_PERMANENT | JSPROP_ENUMERATE );
+        JS_DefineFunction(_cx, jsc, "dumpRoot", JSBCore_dumpRoot, 0, 
+      JSPROP_READONLY | JSPROP_PERMANENT | JSPROP_ENUMERATE );
+        JS_DefineFunction(_cx, jsc, "addGCRootObject", JSBCore_addRootJS, 1, 
+      JSPROP_READONLY | JSPROP_PERMANENT | JSPROP_ENUMERATE );
+        JS_DefineFunction(_cx, jsc, "removeGCRootObject", JSBCore_removeRootJS,
+       1, JSPROP_READONLY | JSPROP_PERMANENT | JSPROP_ENUMERATE );
+        JS_DefineFunction(_cx, jsc, "executeScript", JSBCore_executeScript, 1, 
+      JSPROP_READONLY | JSPROP_PERMANENT | JSPROP_ENUMERATE );
+        JS_DefineFunction(_cx, jsc, "restart", JSBCore_restartVM, 0, 
+      JSPROP_READONLY | JSPROP_PERMANENT | JSPROP_ENUMERATE );
+
+        //
+        // 3rd party developer ?
+        // Add here your own classes registration
+        //
+        
+        // registers cocos2d, cocosdenshion and cocosbuilder reader bindings
+#if JSB_INCLUDE_COCOS2D
+        jsb_register_cocos2d(_cx, _object);
+#endif // JSB_INCLUDE_COCOS2D
+        
+        // registers chipmunk bindings
+#if JSB_INCLUDE_CHIPMUNK
+        jsb_register_chipmunk(_cx, _object);
+#endif // JSB_INCLUDE_CHIPMUNK
+}
+\end{DoxyCode}
+\hypertarget{interface_j_s_b_core_a115ae6b034d1367fdeb63d76d13acb7a}{\index{J\-S\-B\-Core@{J\-S\-B\-Core}!eval\-String\-:out\-Val\-:@{eval\-String\-:out\-Val\-:}}
+\index{eval\-String\-:out\-Val\-:@{eval\-String\-:out\-Val\-:}!JSBCore@{J\-S\-B\-Core}}
+\subsubsection[{eval\-String\-:out\-Val\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) eval\-String\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{string}
+\item[{outVal:(jsval$\ast$)}]{out\-Val}
+\end{DoxyParamCaption}
+}}\label{interface_j_s_b_core_a115ae6b034d1367fdeb63d76d13acb7a}
+will eval the specified string 
+\begin{DoxyParams}{Parameters}
+{\em string} & The string with the javascript code to be evaluated \\
+\hline
+{\em out\-Val} & The jsval that will hold the return value of the evaluation. Can be N\-U\-L\-L. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+                  :(NSString*)string outVal:(jsval*)outVal
+{
+        jsval rval;
+        JSString *str;
+        JSBool ok;
+        const char *filename = "noname";
+        uint32_t lineno = 0;
+        if (outVal == NULL) {
+                outVal = &rval;
+        }
+        const char *cstr = [string UTF8String];
+        ok = JS_EvaluateScript( _cx, _object, cstr, (unsigned)strlen(cstr), 
+      filename, lineno, outVal);
+        if (ok == JS_FALSE) {
+                CCLOGWARN(@"error evaluating script:%@", string);
+        }
+        str = JS_ValueToString( _cx, rval);
+        return ok;
+}
+\end{DoxyCode}
+\hypertarget{interface_j_s_b_core_a7242dacac8378050a58bd5b29647975f}{\index{J\-S\-B\-Core@{J\-S\-B\-Core}!execute\-Script\-With\-Context\-:argc\-:vp\-:@{execute\-Script\-With\-Context\-:argc\-:vp\-:}}
+\index{execute\-Script\-With\-Context\-:argc\-:vp\-:@{execute\-Script\-With\-Context\-:argc\-:vp\-:}!JSBCore@{J\-S\-B\-Core}}
+\subsubsection[{execute\-Script\-With\-Context\-:argc\-:vp\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (J\-S\-Bool) execute\-Script\-With\-Context\-: 
+\begin{DoxyParamCaption}
+\item[{(J\-S\-Context$\ast$)}]{cx}
+\item[{argc:(uint32\-\_\-t)}]{argc}
+\item[{vp:(jsval$\ast$)}]{vp}
+\end{DoxyParamCaption}
+}}\label{interface_j_s_b_core_a7242dacac8378050a58bd5b29647975f}
+run a script from script \-:) 
+\begin{DoxyCode}
+                                  :(JSContext*)cx argc:(uint32_t)argc vp:(jsval
+      *)vp
+{
+        return JS_TRUE; 
+}
+\end{DoxyCode}
+\hypertarget{interface_j_s_b_core_ad242f84d423ac8176405d6d24b059728}{\index{J\-S\-B\-Core@{J\-S\-B\-Core}!force\-G\-C\-With\-Context\-:argc\-:vp\-:@{force\-G\-C\-With\-Context\-:argc\-:vp\-:}}
+\index{force\-G\-C\-With\-Context\-:argc\-:vp\-:@{force\-G\-C\-With\-Context\-:argc\-:vp\-:}!JSBCore@{J\-S\-B\-Core}}
+\subsubsection[{force\-G\-C\-With\-Context\-:argc\-:vp\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (J\-S\-Bool) force\-G\-C\-With\-Context\-: 
+\begin{DoxyParamCaption}
+\item[{(J\-S\-Context$\ast$)}]{cx}
+\item[{argc:(uint32\-\_\-t)}]{argc}
+\item[{vp:(jsval$\ast$)}]{vp}
+\end{DoxyParamCaption}
+}}\label{interface_j_s_b_core_ad242f84d423ac8176405d6d24b059728}
+Force a cycle of G\-C 
+\begin{DoxyCode}
+                            :(JSContext*)cx argc:(uint32_t)argc vp:(jsval*)vp
+{
+        return JS_TRUE;
+}
+\end{DoxyCode}
+\hypertarget{interface_j_s_b_core_aaa7792cbf8a2b6b810e9c96cc6c57b87}{\index{J\-S\-B\-Core@{J\-S\-B\-Core}!log\-With\-Context\-:argc\-:vp\-:@{log\-With\-Context\-:argc\-:vp\-:}}
+\index{log\-With\-Context\-:argc\-:vp\-:@{log\-With\-Context\-:argc\-:vp\-:}!JSBCore@{J\-S\-B\-Core}}
+\subsubsection[{log\-With\-Context\-:argc\-:vp\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (J\-S\-Bool) log\-With\-Context\-: 
+\begin{DoxyParamCaption}
+\item[{(J\-S\-Context$\ast$)}]{cx}
+\item[{argc:(uint32\-\_\-t)}]{argc}
+\item[{vp:(jsval$\ast$)}]{vp}
+\end{DoxyParamCaption}
+}}\label{interface_j_s_b_core_aaa7792cbf8a2b6b810e9c96cc6c57b87}
+Log something using C\-C\-Log 
+\begin{DoxyParams}{Parameters}
+{\em cx} & \\
+\hline
+{\em argc} & \\
+\hline
+{\em vp} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+                        :(JSContext*)cx argc:(uint32_t)argc vp:(jsval*)vp
+{
+        return JS_TRUE; 
+}
+\end{DoxyCode}
+\hypertarget{interface_j_s_b_core_abf66b707fd7046f5a6ca3f4fe11053f6}{\index{J\-S\-B\-Core@{J\-S\-B\-Core}!purge\-Cache@{purge\-Cache}}
+\index{purge\-Cache@{purge\-Cache}!JSBCore@{J\-S\-B\-Core}}
+\subsubsection[{purge\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf purge\-Cache} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_j_s_b_core_abf66b707fd7046f5a6ca3f4fe11053f6}
+Purge the caches that mantains associations between native and J\-S objects 
+
+Referenced by shutdown.
+
+
+\begin{DoxyCode}
+{
+    tHashJSObject *current, *tmp;
+    HASH_ITER(hh, hash, current, tmp) {
+                HASH_DEL(hash, current);
+                JSB_NSObject *proxy = (JSB_NSObject*) current->proxy;
+                [proxy unrootJSObject];
+                free(current);
+    }
+
+        HASH_ITER(hh, reverse_hash, current, tmp) {
+                HASH_DEL(reverse_hash, current);
+                free(current);
+    }
+}
+\end{DoxyCode}
+\hypertarget{interface_j_s_b_core_a52c79f9b9a0c4b01c88ac42f276ac4b0}{\index{J\-S\-B\-Core@{J\-S\-B\-Core}!remove\-Root\-J\-S\-With\-Context\-:argc\-:vp\-:@{remove\-Root\-J\-S\-With\-Context\-:argc\-:vp\-:}}
+\index{remove\-Root\-J\-S\-With\-Context\-:argc\-:vp\-:@{remove\-Root\-J\-S\-With\-Context\-:argc\-:vp\-:}!JSBCore@{J\-S\-B\-Core}}
+\subsubsection[{remove\-Root\-J\-S\-With\-Context\-:argc\-:vp\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (J\-S\-Bool) remove\-Root\-J\-S\-With\-Context\-: 
+\begin{DoxyParamCaption}
+\item[{(J\-S\-Context$\ast$)}]{cx}
+\item[{argc:(uint32\-\_\-t)}]{argc}
+\item[{vp:(jsval$\ast$)}]{vp}
+\end{DoxyParamCaption}
+}}\label{interface_j_s_b_core_a52c79f9b9a0c4b01c88ac42f276ac4b0}
+removes an object from the G\-C's root, allowing them to be G\-C'ed if no longer referenced. 
+\begin{DoxyCode}
+                                 :(JSContext*)cx argc:(uint32_t)argc vp:(jsval*
+      )vp
+{
+        return JS_TRUE; 
+}
+\end{DoxyCode}
+\hypertarget{interface_j_s_b_core_ad5ff7903db0393fac9876cca4358e6de}{\index{J\-S\-B\-Core@{J\-S\-B\-Core}!report\-Error\-With\-Context\-:message\-:report\-:@{report\-Error\-With\-Context\-:message\-:report\-:}}
+\index{report\-Error\-With\-Context\-:message\-:report\-:@{report\-Error\-With\-Context\-:message\-:report\-:}!JSBCore@{J\-S\-B\-Core}}
+\subsubsection[{report\-Error\-With\-Context\-:message\-:report\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) report\-Error\-With\-Context\-: 
+\begin{DoxyParamCaption}
+\item[{(J\-S\-Context$\ast$)}]{cx}
+\item[{message:(N\-S\-String$\ast$)}]{message}
+\item[{report:({\bf J\-S\-Error\-Report}$\ast$)}]{report}
+\end{DoxyParamCaption}
+}}\label{interface_j_s_b_core_ad5ff7903db0393fac9876cca4358e6de}
+
+\begin{DoxyParams}{Parameters}
+{\em cx} & \\
+\hline
+{\em message} & \\
+\hline
+{\em report} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+                              :(JSContext*)cx message:(NSString*)message report
+      :(JSErrorReport*)report
+{
+        
+}
+\end{DoxyCode}
+\hypertarget{interface_j_s_b_core_a5ff187c93667b13def2cc751650b5f45}{\index{J\-S\-B\-Core@{J\-S\-B\-Core}!restart\-Runtime@{restart\-Runtime}}
+\index{restart\-Runtime@{restart\-Runtime}!JSBCore@{J\-S\-B\-Core}}
+\subsubsection[{restart\-Runtime}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf restart\-Runtime} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_j_s_b_core_a5ff187c93667b13def2cc751650b5f45}
+restarts the J\-S runtime. It will call {\ttfamily shutdown} and then it will call {\ttfamily create\-Runtime}. 
+\begin{DoxyCode}
+{
+        [self shutdown];
+        [self createRuntime];
+}
+\end{DoxyCode}
+\hypertarget{interface_j_s_b_core_aa5871a453904a0c133a30a837958ccad}{\index{J\-S\-B\-Core@{J\-S\-B\-Core}!run\-Script\-:@{run\-Script\-:}}
+\index{run\-Script\-:@{run\-Script\-:}!JSBCore@{J\-S\-B\-Core}}
+\subsubsection[{run\-Script\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (J\-S\-Bool) {\bf run\-Script\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{filename}
+\end{DoxyParamCaption}
+}}\label{interface_j_s_b_core_aa5871a453904a0c133a30a837958ccad}
+will run the specified string 
+\begin{DoxyParams}{Parameters}
+{\em string} & The path of the script to be run \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+                   :(NSString*)filename
+{
+        JSBool ok = JS_FALSE;
+
+        static JSScript *script;
+        
+        CCFileUtils *fileUtils = [CCFileUtils sharedFileUtils];
+        NSString *fullpath = [fileUtils 
+      fullPathFromRelativePathIgnoringResolutions:filename];
+
+        script = JS_CompileUTF8File(_cx, _object, [fullpath UTF8String] );
+
+        JSB_PRECONDITION(script, "Error compiling script");
+                
+        const char * name = [[NSString stringWithFormat:@"script %@", filename]
+       UTF8String];
+        char *static_name = (char*) malloc(strlen(name)+1);
+        strcpy(static_name, name );
+
+    if (!JS_AddNamedScriptRoot(_cx, &script, static_name ) )
+        return JS_FALSE;
+        
+        jsval result;   
+        ok = JS_ExecuteScript(_cx, _object, script, &result);
+                
+    JS_RemoveScriptRoot(_cx, &script);  /* scriptObj becomes unreachable
+                                                                                
+         and will eventually be collected. */
+        free( static_name);
+
+        JSB_PRECONDITION(ok, "Error executing script");
+        
+    return ok;
+}
+\end{DoxyCode}
+\hypertarget{interface_j_s_b_core_a2cb2b4e530c120ad846a15ca6777a1a8}{\index{J\-S\-B\-Core@{J\-S\-B\-Core}!shared\-Instance@{shared\-Instance}}
+\index{shared\-Instance@{shared\-Instance}!JSBCore@{J\-S\-B\-Core}}
+\subsubsection[{shared\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf shared\-Instance} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_j_s_b_core_a2cb2b4e530c120ad846a15ca6777a1a8}
+returns the shared instance 
+\begin{DoxyCode}
+{
+        static dispatch_once_t pred;
+        static JSBCore *instance = nil;
+        dispatch_once(&pred, ^{
+                instance = [[self alloc] init];
+        });
+        return instance;
+}
+\end{DoxyCode}
+\hypertarget{interface_j_s_b_core_aba38b3995ddd9789fce361b3ea456f17}{\index{J\-S\-B\-Core@{J\-S\-B\-Core}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!JSBCore@{J\-S\-B\-Core}}
+\subsubsection[{shutdown}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf shutdown} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_j_s_b_core_aba38b3995ddd9789fce361b3ea456f17}
+Shutdown the V\-M. All created objects are going to be destroyed, including the caches 
+
+Referenced by restart\-Runtime.
+
+
+\begin{DoxyCode}
+{
+        // clean cache
+        [self purgeCache];
+        
+        JS_DestroyContext(_cx);
+        JS_DestroyRuntime(_rt);
+        _cx = NULL;
+        _rt = NULL;
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_j_s_b_core_a7afd78647c38e37ec9421a49bc3c1304}{\index{J\-S\-B\-Core@{J\-S\-B\-Core}!global\-Context@{global\-Context}}
+\index{global\-Context@{global\-Context}!JSBCore@{J\-S\-B\-Core}}
+\subsubsection[{global\-Context}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (J\-S\-Context$\ast$) {\bf global\-Context}\hspace{0.3cm}{\ttfamily  \mbox{[}read, assign\mbox{]}}}}\label{interface_j_s_b_core_a7afd78647c38e37ec9421a49bc3c1304}
+return the global context \hypertarget{interface_j_s_b_core_afbb9849ede00729797bde912965525ed}{\index{J\-S\-B\-Core@{J\-S\-B\-Core}!global\-Object@{global\-Object}}
+\index{global\-Object@{global\-Object}!JSBCore@{J\-S\-B\-Core}}
+\subsubsection[{global\-Object}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (J\-S\-Object$\ast$) {\bf global\-Object}\hspace{0.3cm}{\ttfamily  \mbox{[}read, assign\mbox{]}}}}\label{interface_j_s_b_core_afbb9849ede00729797bde912965525ed}
+return the global context \hypertarget{interface_j_s_b_core_af67248bae04a5693ffc847fd819695f7}{\index{J\-S\-B\-Core@{J\-S\-B\-Core}!runtime@{runtime}}
+\index{runtime@{runtime}!JSBCore@{J\-S\-B\-Core}}
+\subsubsection[{runtime}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (J\-S\-Runtime$\ast$) {\bf runtime}\hspace{0.3cm}{\ttfamily  \mbox{[}read, assign\mbox{]}}}}\label{interface_j_s_b_core_af67248bae04a5693ffc847fd819695f7}
+return the global context 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/jsbindings/src/manual/js\-\_\-bindings\-\_\-core.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/jsbindings/src/manual/js\-\_\-bindings\-\_\-core.\-mm\end{DoxyCompactItemize}

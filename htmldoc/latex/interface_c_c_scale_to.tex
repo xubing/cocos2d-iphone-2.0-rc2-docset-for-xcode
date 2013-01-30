@@ -1,0 +1,140 @@
+\hypertarget{interface_c_c_scale_to}{\section{C\-C\-Scale\-To Class Reference}
+\label{interface_c_c_scale_to}\index{C\-C\-Scale\-To@{C\-C\-Scale\-To}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Interval.\-h$>$}
+
+Inheritance diagram for C\-C\-Scale\-To\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{interface_c_c_scale_to}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_scale_to_a9dc30fcec55edd72f339aa3709ae7361}{init\-With\-Duration\-:scale\-:}
+\item 
+(id) -\/ \hyperlink{interface_c_c_scale_to_a0c7f0b0b6a9b5f2fbdc9452df9e3e6c4}{init\-With\-Duration\-:scale\-X\-:scale\-Y\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_scale_to_af7f0258bf243c89963c22b9ad70acb67}{action\-With\-Duration\-:scale\-:}
+\item 
+(id) + \hyperlink{interface_c_c_scale_to_a7ca94dd7c0608b30e0b8d828fdd0d1c7}{action\-With\-Duration\-:scale\-X\-:scale\-Y\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_scale_to_a6af50d1c761736ee99d93f4b179c37c0}{float {\bfseries scale\-X\-\_\-}}\label{interface_c_c_scale_to_a6af50d1c761736ee99d93f4b179c37c0}
+
+\item 
+\hypertarget{interface_c_c_scale_to_ac29214e36f1b0363c439dc9dfc73526d}{float {\bfseries scale\-Y\-\_\-}}\label{interface_c_c_scale_to_ac29214e36f1b0363c439dc9dfc73526d}
+
+\item 
+\hypertarget{interface_c_c_scale_to_a199441ce850f57e19b351412ffaee7c6}{float {\bfseries start\-Scale\-X\-\_\-}}\label{interface_c_c_scale_to_a199441ce850f57e19b351412ffaee7c6}
+
+\item 
+\hypertarget{interface_c_c_scale_to_acde721ee77e14190e3cb181dad8984f6}{float {\bfseries start\-Scale\-Y\-\_\-}}\label{interface_c_c_scale_to_acde721ee77e14190e3cb181dad8984f6}
+
+\item 
+\hypertarget{interface_c_c_scale_to_abdde49682a8790d074b70ab80b26d80e}{float {\bfseries end\-Scale\-X\-\_\-}}\label{interface_c_c_scale_to_abdde49682a8790d074b70ab80b26d80e}
+
+\item 
+\hypertarget{interface_c_c_scale_to_a653ac1e9dc971c8e0e86a98e077f4e14}{float {\bfseries end\-Scale\-Y\-\_\-}}\label{interface_c_c_scale_to_a653ac1e9dc971c8e0e86a98e077f4e14}
+
+\item 
+\hypertarget{interface_c_c_scale_to_ab774b8d0c76954de82545024ec5c76db}{float {\bfseries delta\-X\-\_\-}}\label{interface_c_c_scale_to_ab774b8d0c76954de82545024ec5c76db}
+
+\item 
+\hypertarget{interface_c_c_scale_to_a90da12afdad1e84699814cf2cd3ae592}{float {\bfseries delta\-Y\-\_\-}}\label{interface_c_c_scale_to_a90da12afdad1e84699814cf2cd3ae592}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Scales a \hyperlink{class_c_c_node}{C\-C\-Node} object to a zoom factor by modifying its scale attribute. \begin{DoxyWarning}{Warning}
+This action doesn't support \char`\"{}reverse\char`\"{} 
+\end{DoxyWarning}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_scale_to_af7f0258bf243c89963c22b9ad70acb67}{\index{C\-C\-Scale\-To@{C\-C\-Scale\-To}!action\-With\-Duration\-:scale\-:@{action\-With\-Duration\-:scale\-:}}
+\index{action\-With\-Duration\-:scale\-:@{action\-With\-Duration\-:scale\-:}!CCScaleTo@{C\-C\-Scale\-To}}
+\subsubsection[{action\-With\-Duration\-:scale\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{duration}
+\item[{scale:(float)}]{s}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_scale_to_af7f0258bf243c89963c22b9ad70acb67}
+creates the action with the same scale factor for X and Y 
+\begin{DoxyCode}
+                        : (ccTime) t scale:(float) s
+{
+        return [[[self alloc] initWithDuration: t scale:s] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_scale_to_a7ca94dd7c0608b30e0b8d828fdd0d1c7}{\index{C\-C\-Scale\-To@{C\-C\-Scale\-To}!action\-With\-Duration\-:scale\-X\-:scale\-Y\-:@{action\-With\-Duration\-:scale\-X\-:scale\-Y\-:}}
+\index{action\-With\-Duration\-:scale\-X\-:scale\-Y\-:@{action\-With\-Duration\-:scale\-X\-:scale\-Y\-:}!CCScaleTo@{C\-C\-Scale\-To}}
+\subsubsection[{action\-With\-Duration\-:scale\-X\-:scale\-Y\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{duration}
+\item[{scaleX:(float)}]{sx}
+\item[{scaleY:(float)}]{sy}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_scale_to_a7ca94dd7c0608b30e0b8d828fdd0d1c7}
+creates the action with and X factor and a Y factor 
+\begin{DoxyCode}
+                        : (ccTime) t scaleX:(float)sx scaleY:(float)sy
+{
+        return [[[self alloc] initWithDuration: t scaleX:sx scaleY:sy] 
+      autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_scale_to_a9dc30fcec55edd72f339aa3709ae7361}{\index{C\-C\-Scale\-To@{C\-C\-Scale\-To}!init\-With\-Duration\-:scale\-:@{init\-With\-Duration\-:scale\-:}}
+\index{init\-With\-Duration\-:scale\-:@{init\-With\-Duration\-:scale\-:}!CCScaleTo@{C\-C\-Scale\-To}}
+\subsubsection[{init\-With\-Duration\-:scale\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{duration}
+\item[{scale:(float)}]{s}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_scale_to_a9dc30fcec55edd72f339aa3709ae7361}
+initializes the action with the same scale factor for X and Y 
+\begin{DoxyCode}
+                      : (ccTime) t scale:(float) s
+{
+        if( (self=[super initWithDuration: t]) ) {
+                endScaleX_ = s;
+                endScaleY_ = s;
+        }
+        return self;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_scale_to_a0c7f0b0b6a9b5f2fbdc9452df9e3e6c4}{\index{C\-C\-Scale\-To@{C\-C\-Scale\-To}!init\-With\-Duration\-:scale\-X\-:scale\-Y\-:@{init\-With\-Duration\-:scale\-X\-:scale\-Y\-:}}
+\index{init\-With\-Duration\-:scale\-X\-:scale\-Y\-:@{init\-With\-Duration\-:scale\-X\-:scale\-Y\-:}!CCScaleTo@{C\-C\-Scale\-To}}
+\subsubsection[{init\-With\-Duration\-:scale\-X\-:scale\-Y\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{duration}
+\item[{scaleX:(float)}]{sx}
+\item[{scaleY:(float)}]{sy}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_scale_to_a0c7f0b0b6a9b5f2fbdc9452df9e3e6c4}
+initializes the action with and X factor and a Y factor 
+\begin{DoxyCode}
+                      : (ccTime) t scaleX:(float)sx scaleY:(float)sy
+{
+        if( (self=[super initWithDuration: t]) ) {
+                endScaleX_ = sx;
+                endScaleY_ = sy;
+        }
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-m\end{DoxyCompactItemize}

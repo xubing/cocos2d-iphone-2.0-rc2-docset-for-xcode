@@ -1,0 +1,118 @@
+\hypertarget{interface_c_c_tiled_grid3_d}{\section{C\-C\-Tiled\-Grid3\-D Class Reference}
+\label{interface_c_c_tiled_grid3_d}\index{C\-C\-Tiled\-Grid3\-D@{C\-C\-Tiled\-Grid3\-D}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Grid.\-h$>$}
+
+Inheritance diagram for C\-C\-Tiled\-Grid3\-D\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_c_c_tiled_grid3_d}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{cc_types_8h_ad1788e6cb4630050d2f69887f812c73d}{cc\-Quad3}) -\/ \hyperlink{interface_c_c_tiled_grid3_d_a5cd1254d733dd4fdbcbd1d3e858d64da}{tile\-:}
+\item 
+(\hyperlink{cc_types_8h_ad1788e6cb4630050d2f69887f812c73d}{cc\-Quad3}) -\/ \hyperlink{interface_c_c_tiled_grid3_d_ace57204b70f5e31cb25659264d7dd31d}{original\-Tile\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_tiled_grid3_d_afbe9f2e02f6ae5244fdd675a37448d19}{set\-Tile\-:coords\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_tiled_grid3_d_aac1ed370f6f1411153994ffab1f09587}{G\-Lvoid $\ast$ {\bfseries tex\-Coordinates}}\label{interface_c_c_tiled_grid3_d_aac1ed370f6f1411153994ffab1f09587}
+
+\item 
+\hypertarget{interface_c_c_tiled_grid3_d_a9d7faeabb97dd3ada6b90b6c131a3ce3}{G\-Lvoid $\ast$ {\bfseries vertices}}\label{interface_c_c_tiled_grid3_d_a9d7faeabb97dd3ada6b90b6c131a3ce3}
+
+\item 
+\hypertarget{interface_c_c_tiled_grid3_d_aeb1a386e4b52221eb25052875c26d797}{G\-Lvoid $\ast$ {\bfseries original\-Vertices}}\label{interface_c_c_tiled_grid3_d_aeb1a386e4b52221eb25052875c26d797}
+
+\item 
+\hypertarget{interface_c_c_tiled_grid3_d_af4a387a87b3c7ae27571cae08ca17d5d}{G\-Lushort $\ast$ {\bfseries indices}}\label{interface_c_c_tiled_grid3_d_af4a387a87b3c7ae27571cae08ca17d5d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_tiled_grid3_d}{C\-C\-Tiled\-Grid3\-D} is a 3\-D grid implementation. It differs from Grid3\-D in that the tiles can be separated from the grid. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_tiled_grid3_d_ace57204b70f5e31cb25659264d7dd31d}{\index{C\-C\-Tiled\-Grid3\-D@{C\-C\-Tiled\-Grid3\-D}!original\-Tile\-:@{original\-Tile\-:}}
+\index{original\-Tile\-:@{original\-Tile\-:}!CCTiledGrid3D@{C\-C\-Tiled\-Grid3\-D}}
+\subsubsection[{original\-Tile\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf cc\-Quad3}) {\bf original\-Tile\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Grid\-Size})}]{pos}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_tiled_grid3_d_ace57204b70f5e31cb25659264d7dd31d}
+returns the original tile (untransformed) at the given position 
+
+Referenced by C\-C\-Tiled\-Grid3\-D\-Action\-::original\-Tile\-:.
+
+
+\begin{DoxyCode}
+                      :(ccGridSize)pos
+{
+        NSInteger idx = (gridSize_.y * pos.x + pos.y) * 4 * 3;
+        float *vertArray = (float*)originalVertices;
+
+        ccQuad3 ret;
+        memcpy(&ret, &vertArray[idx], sizeof(ccQuad3));
+
+        return ret;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_tiled_grid3_d_afbe9f2e02f6ae5244fdd675a37448d19}{\index{C\-C\-Tiled\-Grid3\-D@{C\-C\-Tiled\-Grid3\-D}!set\-Tile\-:coords\-:@{set\-Tile\-:coords\-:}}
+\index{set\-Tile\-:coords\-:@{set\-Tile\-:coords\-:}!CCTiledGrid3D@{C\-C\-Tiled\-Grid3\-D}}
+\subsubsection[{set\-Tile\-:coords\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-Tile\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Grid\-Size})}]{pos}
+\item[{coords:({\bf cc\-Quad3})}]{coords}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_tiled_grid3_d_afbe9f2e02f6ae5244fdd675a37448d19}
+sets a new tile 
+
+Referenced by C\-C\-Tiled\-Grid3\-D\-Action\-::set\-Tile\-:coords\-:.
+
+
+\begin{DoxyCode}
+              :(ccGridSize)pos coords:(ccQuad3)coords
+{
+        NSInteger idx = (gridSize_.y * pos.x + pos.y) * 4 * 3;
+        float *vertArray = (float*)vertices;
+        memcpy(&vertArray[idx], &coords, sizeof(ccQuad3));
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_tiled_grid3_d_a5cd1254d733dd4fdbcbd1d3e858d64da}{\index{C\-C\-Tiled\-Grid3\-D@{C\-C\-Tiled\-Grid3\-D}!tile\-:@{tile\-:}}
+\index{tile\-:@{tile\-:}!CCTiledGrid3D@{C\-C\-Tiled\-Grid3\-D}}
+\subsubsection[{tile\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf cc\-Quad3}) {\bf tile\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Grid\-Size})}]{pos}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_tiled_grid3_d_a5cd1254d733dd4fdbcbd1d3e858d64da}
+returns the tile at the given position 
+
+Referenced by C\-C\-Tiled\-Grid3\-D\-Action\-::tile\-:.
+
+
+\begin{DoxyCode}
+              :(ccGridSize)pos
+{
+        NSInteger idx = (gridSize_.y * pos.x + pos.y) * 4 * 3;
+        float *vertArray = (float*)vertices;
+
+        ccQuad3 ret;
+        memcpy(&ret, &vertArray[idx], sizeof(ccQuad3));
+
+        return ret;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Grid.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Grid.\-m\end{DoxyCompactItemize}

@@ -1,0 +1,64 @@
+\hypertarget{interface_c_c_finite_time_action}{\section{C\-C\-Finite\-Time\-Action Class Reference}
+\label{interface_c_c_finite_time_action}\index{C\-C\-Finite\-Time\-Action@{C\-C\-Finite\-Time\-Action}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action.\-h$>$}
+
+Inheritance diagram for C\-C\-Finite\-Time\-Action\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interface_c_c_finite_time_action}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_c_c_finite_time_action}{C\-C\-Finite\-Time\-Action} $\ast$) -\/ \hyperlink{interface_c_c_finite_time_action_a16c1b5753dbf16a0267a069c45b3b550}{reverse}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_finite_time_action_a890461e18c6786dbcaf3bb7933bdcc3d}{\hyperlink{cc_types_8h_ae6c674aac4bfb46a4e6cb1e89bb66b4f}{cc\-Time} \hyperlink{interface_c_c_finite_time_action_a890461e18c6786dbcaf3bb7933bdcc3d}{duration\-\_\-}}\label{interface_c_c_finite_time_action_a890461e18c6786dbcaf3bb7933bdcc3d}
+
+\begin{DoxyCompactList}\small\item\em duration in seconds \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_finite_time_action_a2ae40d81bb49ccd630981aebfd37baa3}{\hyperlink{cc_types_8h_ae6c674aac4bfb46a4e6cb1e89bb66b4f}{cc\-Time} \hyperlink{interface_c_c_finite_time_action_a2ae40d81bb49ccd630981aebfd37baa3}{duration}}\label{interface_c_c_finite_time_action_a2ae40d81bb49ccd630981aebfd37baa3}
+
+\begin{DoxyCompactList}\small\item\em duration in seconds of the action \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class actions that do have a finite time duration. Possible actions\-:
+\begin{DoxyItemize}
+\item An action with a duration of 0 seconds
+\item An action with a duration of 35.\-5 seconds Infinite time actions are valid 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_finite_time_action_a16c1b5753dbf16a0267a069c45b3b550}{\index{C\-C\-Finite\-Time\-Action@{C\-C\-Finite\-Time\-Action}!reverse@{reverse}}
+\index{reverse@{reverse}!CCFiniteTimeAction@{C\-C\-Finite\-Time\-Action}}
+\subsubsection[{reverse}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Finite\-Time\-Action} $\ast$) {\bf reverse} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_finite_time_action_a16c1b5753dbf16a0267a069c45b3b550}
+returns a reversed action 
+
+Reimplemented in \hyperlink{class_c_c_action_interval_a9a31f528b229f08d3aada08423f20094}{C\-C\-Action\-Interval}.
+
+
+\begin{DoxyCode}
+{
+        CCLOG(@"cocos2d: FiniteTimeAction#reverse: Implement me");
+        return nil;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action.\-m\end{DoxyCompactItemize}

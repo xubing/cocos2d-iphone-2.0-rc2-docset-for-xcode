@@ -1,0 +1,189 @@
+\hypertarget{b2_settings_8h}{\section{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.1-\/beta4/external/\-Box2d/\-Box2\-D/\-Common/b2\-Settings.h File Reference}
+\label{b2_settings_8h}\index{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Common/b2\-Settings.\-h@{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Common/b2\-Settings.\-h}}
+}
+{\ttfamily \#include $<$cassert$>$}\\*
+{\ttfamily \#include $<$cmath$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structb2_version}{b2\-Version}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{b2_settings_8h_a24cdaa0e73463ad545524b9aee142b7b}{\#define {\bfseries B2\-\_\-\-N\-O\-T\-\_\-\-U\-S\-E\-D}(x)~((void)(x))}\label{b2_settings_8h_a24cdaa0e73463ad545524b9aee142b7b}
+
+\item 
+\hypertarget{b2_settings_8h_ab3fe3791ea4d700d5cc1f8124d2edf33}{\#define {\bfseries b2\-Assert}(A)~assert(A)}\label{b2_settings_8h_ab3fe3791ea4d700d5cc1f8124d2edf33}
+
+\item 
+\hypertarget{b2_settings_8h_a034400dadc97431610fe4a0f38d5c1c7}{\#define {\bfseries b2\-\_\-max\-Float}~F\-L\-T\-\_\-\-M\-A\-X}\label{b2_settings_8h_a034400dadc97431610fe4a0f38d5c1c7}
+
+\item 
+\hypertarget{b2_settings_8h_ae6bc48338c82daa4598d38f8ebc6f075}{\#define {\bfseries b2\-\_\-epsilon}~F\-L\-T\-\_\-\-E\-P\-S\-I\-L\-O\-N}\label{b2_settings_8h_ae6bc48338c82daa4598d38f8ebc6f075}
+
+\item 
+\hypertarget{b2_settings_8h_a3f1872f3fc3c46abc809e7f7d467eb6c}{\#define {\bfseries b2\-\_\-pi}~3.\-14159265359f}\label{b2_settings_8h_a3f1872f3fc3c46abc809e7f7d467eb6c}
+
+\item 
+\#define \hyperlink{b2_settings_8h_aa5f44cc9edf711433dea2b2ec94f3c42}{b2\-\_\-max\-Manifold\-Points}~2
+\item 
+\#define \hyperlink{b2_settings_8h_a09d71ee1993bee28b5b2e6d893b41884}{b2\-\_\-max\-Polygon\-Vertices}~8
+\item 
+\#define \hyperlink{b2_settings_8h_adb86e231496fdd6ac7795ce58d40c870}{b2\-\_\-aabb\-Extension}~0.\-1f
+\item 
+\#define \hyperlink{b2_settings_8h_a7d1bd1594f20601d4079bccbd0a6a03c}{b2\-\_\-aabb\-Multiplier}~2.\-0f
+\item 
+\#define \hyperlink{b2_settings_8h_a57268ade379c5c3373d0ff558b0350cf}{b2\-\_\-linear\-Slop}~0.\-005f
+\item 
+\#define \hyperlink{b2_settings_8h_a67810fb101bb7a7e0b3afc14845383ee}{b2\-\_\-angular\-Slop}~(2.\-0f / 180.\-0f $\ast$ b2\-\_\-pi)
+\item 
+\#define \hyperlink{b2_settings_8h_afc0f934dabffb1e83e081249133ad860}{b2\-\_\-polygon\-Radius}~(2.\-0f $\ast$ b2\-\_\-linear\-Slop)
+\item 
+\hypertarget{b2_settings_8h_ac1fd56e39ab8499f344b6398b7332e55}{\#define \hyperlink{b2_settings_8h_ac1fd56e39ab8499f344b6398b7332e55}{b2\-\_\-max\-Sub\-Steps}~8}\label{b2_settings_8h_ac1fd56e39ab8499f344b6398b7332e55}
+
+\begin{DoxyCompactList}\small\item\em Maximum number of sub-\/steps per contact in continuous physics simulation. \end{DoxyCompactList}\item 
+\hypertarget{b2_settings_8h_aad3a54bcae5f7ec0235963403c2fccc9}{\#define \hyperlink{b2_settings_8h_aad3a54bcae5f7ec0235963403c2fccc9}{b2\-\_\-max\-T\-O\-I\-Contacts}~32}\label{b2_settings_8h_aad3a54bcae5f7ec0235963403c2fccc9}
+
+\begin{DoxyCompactList}\small\item\em Maximum number of contacts to be handled to solve a T\-O\-I impact. \end{DoxyCompactList}\item 
+\#define \hyperlink{b2_settings_8h_a690b448aa2dba2a1393781f8c059c22a}{b2\-\_\-velocity\-Threshold}~1.\-0f
+\item 
+\#define \hyperlink{b2_settings_8h_a23ab70e4809f5ee23abcd52018d5eb88}{b2\-\_\-max\-Linear\-Correction}~0.\-2f
+\item 
+\#define \hyperlink{b2_settings_8h_a823e4f9a6fa4b9de3c97da696571400a}{b2\-\_\-max\-Angular\-Correction}~(8.\-0f / 180.\-0f $\ast$ b2\-\_\-pi)
+\item 
+\#define \hyperlink{b2_settings_8h_af2bad257bfbafed3665df3e243ba2b52}{b2\-\_\-max\-Translation}~2.\-0f
+\item 
+\hypertarget{b2_settings_8h_a06db101442fde26e8ffb875af5c2f588}{\#define {\bfseries b2\-\_\-max\-Translation\-Squared}~(\hyperlink{b2_settings_8h_af2bad257bfbafed3665df3e243ba2b52}{b2\-\_\-max\-Translation} $\ast$ \hyperlink{b2_settings_8h_af2bad257bfbafed3665df3e243ba2b52}{b2\-\_\-max\-Translation})}\label{b2_settings_8h_a06db101442fde26e8ffb875af5c2f588}
+
+\item 
+\#define \hyperlink{b2_settings_8h_a5808c5f1e946205d8f7458101ccc698e}{b2\-\_\-max\-Rotation}~(0.\-5f $\ast$ b2\-\_\-pi)
+\item 
+\hypertarget{b2_settings_8h_ac0ea425673819f24093ef7875c1025dd}{\#define {\bfseries b2\-\_\-max\-Rotation\-Squared}~(\hyperlink{b2_settings_8h_a5808c5f1e946205d8f7458101ccc698e}{b2\-\_\-max\-Rotation} $\ast$ \hyperlink{b2_settings_8h_a5808c5f1e946205d8f7458101ccc698e}{b2\-\_\-max\-Rotation})}\label{b2_settings_8h_ac0ea425673819f24093ef7875c1025dd}
+
+\item 
+\#define \hyperlink{b2_settings_8h_a88e32539e0f9e69e3832e1321eba3caa}{b2\-\_\-baumgarte}~0.\-2f
+\item 
+\hypertarget{b2_settings_8h_addf67cb7c89ad8a0370b488e8120a6ed}{\#define {\bfseries b2\-\_\-toi\-Baugarte}~0.\-75f}\label{b2_settings_8h_addf67cb7c89ad8a0370b488e8120a6ed}
+
+\item 
+\hypertarget{b2_settings_8h_ab021adb740e4a5e1f5f7d9913ed94781}{\#define \hyperlink{b2_settings_8h_ab021adb740e4a5e1f5f7d9913ed94781}{b2\-\_\-time\-To\-Sleep}~0.\-5f}\label{b2_settings_8h_ab021adb740e4a5e1f5f7d9913ed94781}
+
+\begin{DoxyCompactList}\small\item\em The time that a body must be still before it will go to sleep. \end{DoxyCompactList}\item 
+\hypertarget{b2_settings_8h_a6d882c48142a8c73011b576e20dc6dd8}{\#define \hyperlink{b2_settings_8h_a6d882c48142a8c73011b576e20dc6dd8}{b2\-\_\-linear\-Sleep\-Tolerance}~0.\-01f}\label{b2_settings_8h_a6d882c48142a8c73011b576e20dc6dd8}
+
+\begin{DoxyCompactList}\small\item\em A body cannot sleep if its linear velocity is above this tolerance. \end{DoxyCompactList}\item 
+\hypertarget{b2_settings_8h_a571f3e7c864aca14141b163205600eef}{\#define \hyperlink{b2_settings_8h_a571f3e7c864aca14141b163205600eef}{b2\-\_\-angular\-Sleep\-Tolerance}~(2.\-0f / 180.\-0f $\ast$ b2\-\_\-pi)}\label{b2_settings_8h_a571f3e7c864aca14141b163205600eef}
+
+\begin{DoxyCompactList}\small\item\em A body cannot sleep if its angular velocity is above this tolerance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{b2_settings_8h_a1b956fe1df85f3c132b21edb4e116458}{typedef signed char {\bfseries int8}}\label{b2_settings_8h_a1b956fe1df85f3c132b21edb4e116458}
+
+\item 
+\hypertarget{b2_settings_8h_a259fa4834387bd68627ddf37bb3ebdb9}{typedef signed short {\bfseries int16}}\label{b2_settings_8h_a259fa4834387bd68627ddf37bb3ebdb9}
+
+\item 
+\hypertarget{b2_settings_8h_a43d43196463bde49cb067f5c20ab8481}{typedef signed int {\bfseries int32}}\label{b2_settings_8h_a43d43196463bde49cb067f5c20ab8481}
+
+\item 
+\hypertarget{b2_settings_8h_adde6aaee8457bee49c2a92621fe22b79}{typedef unsigned char {\bfseries uint8}}\label{b2_settings_8h_adde6aaee8457bee49c2a92621fe22b79}
+
+\item 
+\hypertarget{b2_settings_8h_a05f6b0ae8f6a6e135b0e290c25fe0e4e}{typedef unsigned short {\bfseries uint16}}\label{b2_settings_8h_a05f6b0ae8f6a6e135b0e290c25fe0e4e}
+
+\item 
+\hypertarget{b2_settings_8h_a1134b580f8da4de94ca6b1de4d37975e}{typedef unsigned int {\bfseries uint32}}\label{b2_settings_8h_a1134b580f8da4de94ca6b1de4d37975e}
+
+\item 
+\hypertarget{b2_settings_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{typedef float {\bfseries float32}}\label{b2_settings_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}
+
+\item 
+\hypertarget{b2_settings_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{typedef double {\bfseries float64}}\label{b2_settings_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{b2_settings_8h_a2dca9b286e9b9d6d022055fd61534bd7}{void $\ast$ \hyperlink{b2_settings_8h_a2dca9b286e9b9d6d022055fd61534bd7}{b2\-Alloc} (int32 size)}\label{b2_settings_8h_a2dca9b286e9b9d6d022055fd61534bd7}
+
+\begin{DoxyCompactList}\small\item\em Implement this function to use your own memory allocator. \end{DoxyCompactList}\item 
+\hypertarget{b2_settings_8h_a50f4abf5edeabd0300946edbd542e24d}{void \hyperlink{b2_settings_8h_a50f4abf5edeabd0300946edbd542e24d}{b2\-Free} (void $\ast$mem)}\label{b2_settings_8h_a50f4abf5edeabd0300946edbd542e24d}
+
+\begin{DoxyCompactList}\small\item\em If you implement b2\-Alloc, you should also implement this function. \end{DoxyCompactList}\item 
+\hypertarget{b2_settings_8h_a9f10095d05c74eebfe535931c9061ab2}{void \hyperlink{b2_settings_8h_a9f10095d05c74eebfe535931c9061ab2}{b2\-Log} (const char $\ast$string,...)}\label{b2_settings_8h_a9f10095d05c74eebfe535931c9061ab2}
+
+\begin{DoxyCompactList}\small\item\em Logging function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{b2_settings_8h_a3a20e3b6a8b05633d911fea031f7a44f}{\hyperlink{structb2_version}{b2\-Version} \hyperlink{b2_settings_8h_a3a20e3b6a8b05633d911fea031f7a44f}{b2\-\_\-version}}\label{b2_settings_8h_a3a20e3b6a8b05633d911fea031f7a44f}
+
+\begin{DoxyCompactList}\small\item\em Current version. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Global tuning constants based on meters-\/kilograms-\/seconds (M\-K\-S) units. 
+
+\subsection{Define Documentation}
+\hypertarget{b2_settings_8h_adb86e231496fdd6ac7795ce58d40c870}{\index{b2\-Settings.\-h@{b2\-Settings.\-h}!b2\-\_\-aabb\-Extension@{b2\-\_\-aabb\-Extension}}
+\index{b2\-\_\-aabb\-Extension@{b2\-\_\-aabb\-Extension}!b2Settings.h@{b2\-Settings.\-h}}
+\subsubsection[{b2\-\_\-aabb\-Extension}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf b2\-\_\-aabb\-Extension}~0.\-1f}}\label{b2_settings_8h_adb86e231496fdd6ac7795ce58d40c870}
+This is used to fatten A\-A\-B\-Bs in the dynamic tree. This allows proxies to move by a small amount without triggering a tree adjustment. This is in meters. 
+
+Referenced by b2\-Dynamic\-Tree\-::\-Create\-Proxy(), and b2\-Dynamic\-Tree\-::\-Move\-Proxy().
+
+\hypertarget{b2_settings_8h_a7d1bd1594f20601d4079bccbd0a6a03c}{\index{b2\-Settings.\-h@{b2\-Settings.\-h}!b2\-\_\-aabb\-Multiplier@{b2\-\_\-aabb\-Multiplier}}
+\index{b2\-\_\-aabb\-Multiplier@{b2\-\_\-aabb\-Multiplier}!b2Settings.h@{b2\-Settings.\-h}}
+\subsubsection[{b2\-\_\-aabb\-Multiplier}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf b2\-\_\-aabb\-Multiplier}~2.\-0f}}\label{b2_settings_8h_a7d1bd1594f20601d4079bccbd0a6a03c}
+This is used to fatten A\-A\-B\-Bs in the dynamic tree. This is used to predict the future position based on the current displacement. This is a dimensionless multiplier. 
+
+Referenced by b2\-Dynamic\-Tree\-::\-Move\-Proxy().
+
+\hypertarget{b2_settings_8h_a67810fb101bb7a7e0b3afc14845383ee}{\index{b2\-Settings.\-h@{b2\-Settings.\-h}!b2\-\_\-angular\-Slop@{b2\-\_\-angular\-Slop}}
+\index{b2\-\_\-angular\-Slop@{b2\-\_\-angular\-Slop}!b2Settings.h@{b2\-Settings.\-h}}
+\subsubsection[{b2\-\_\-angular\-Slop}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf b2\-\_\-angular\-Slop}~(2.\-0f / 180.\-0f $\ast$ b2\-\_\-pi)}}\label{b2_settings_8h_a67810fb101bb7a7e0b3afc14845383ee}
+A small angle used as a collision and constraint tolerance. Usually it is chosen to be numerically significant, but visually insignificant. \hypertarget{b2_settings_8h_a88e32539e0f9e69e3832e1321eba3caa}{\index{b2\-Settings.\-h@{b2\-Settings.\-h}!b2\-\_\-baumgarte@{b2\-\_\-baumgarte}}
+\index{b2\-\_\-baumgarte@{b2\-\_\-baumgarte}!b2Settings.h@{b2\-Settings.\-h}}
+\subsubsection[{b2\-\_\-baumgarte}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf b2\-\_\-baumgarte}~0.\-2f}}\label{b2_settings_8h_a88e32539e0f9e69e3832e1321eba3caa}
+This scale factor controls how fast overlap is resolved. Ideally this would be 1 so that overlap is removed in one time step. However using values close to 1 often lead to overshoot. \hypertarget{b2_settings_8h_a57268ade379c5c3373d0ff558b0350cf}{\index{b2\-Settings.\-h@{b2\-Settings.\-h}!b2\-\_\-linear\-Slop@{b2\-\_\-linear\-Slop}}
+\index{b2\-\_\-linear\-Slop@{b2\-\_\-linear\-Slop}!b2Settings.h@{b2\-Settings.\-h}}
+\subsubsection[{b2\-\_\-linear\-Slop}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf b2\-\_\-linear\-Slop}~0.\-005f}}\label{b2_settings_8h_a57268ade379c5c3373d0ff558b0350cf}
+A small length used as a collision and constraint tolerance. Usually it is chosen to be numerically significant, but visually insignificant. 
+
+Referenced by One\-Sided\-Platform\-::\-Pre\-Solve().
+
+\hypertarget{b2_settings_8h_a823e4f9a6fa4b9de3c97da696571400a}{\index{b2\-Settings.\-h@{b2\-Settings.\-h}!b2\-\_\-max\-Angular\-Correction@{b2\-\_\-max\-Angular\-Correction}}
+\index{b2\-\_\-max\-Angular\-Correction@{b2\-\_\-max\-Angular\-Correction}!b2Settings.h@{b2\-Settings.\-h}}
+\subsubsection[{b2\-\_\-max\-Angular\-Correction}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf b2\-\_\-max\-Angular\-Correction}~(8.\-0f / 180.\-0f $\ast$ b2\-\_\-pi)}}\label{b2_settings_8h_a823e4f9a6fa4b9de3c97da696571400a}
+The maximum angular position correction used when solving constraints. This helps to prevent overshoot. \hypertarget{b2_settings_8h_a23ab70e4809f5ee23abcd52018d5eb88}{\index{b2\-Settings.\-h@{b2\-Settings.\-h}!b2\-\_\-max\-Linear\-Correction@{b2\-\_\-max\-Linear\-Correction}}
+\index{b2\-\_\-max\-Linear\-Correction@{b2\-\_\-max\-Linear\-Correction}!b2Settings.h@{b2\-Settings.\-h}}
+\subsubsection[{b2\-\_\-max\-Linear\-Correction}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf b2\-\_\-max\-Linear\-Correction}~0.\-2f}}\label{b2_settings_8h_a23ab70e4809f5ee23abcd52018d5eb88}
+The maximum linear position correction used when solving constraints. This helps to prevent overshoot. \hypertarget{b2_settings_8h_aa5f44cc9edf711433dea2b2ec94f3c42}{\index{b2\-Settings.\-h@{b2\-Settings.\-h}!b2\-\_\-max\-Manifold\-Points@{b2\-\_\-max\-Manifold\-Points}}
+\index{b2\-\_\-max\-Manifold\-Points@{b2\-\_\-max\-Manifold\-Points}!b2Settings.h@{b2\-Settings.\-h}}
+\subsubsection[{b2\-\_\-max\-Manifold\-Points}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf b2\-\_\-max\-Manifold\-Points}~2}}\label{b2_settings_8h_aa5f44cc9edf711433dea2b2ec94f3c42}
+The maximum number of contact points between two convex shapes. Do not change this value. 
+
+Referenced by b2\-Collide\-Polygons(), b2\-Get\-Point\-States(), and Test\-::\-Pre\-Solve().
+
+\hypertarget{b2_settings_8h_a09d71ee1993bee28b5b2e6d893b41884}{\index{b2\-Settings.\-h@{b2\-Settings.\-h}!b2\-\_\-max\-Polygon\-Vertices@{b2\-\_\-max\-Polygon\-Vertices}}
+\index{b2\-\_\-max\-Polygon\-Vertices@{b2\-\_\-max\-Polygon\-Vertices}!b2Settings.h@{b2\-Settings.\-h}}
+\subsubsection[{b2\-\_\-max\-Polygon\-Vertices}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf b2\-\_\-max\-Polygon\-Vertices}~8}}\label{b2_settings_8h_a09d71ee1993bee28b5b2e6d893b41884}
+The maximum number of vertices on a convex polygon. You cannot increase this too much because \hyperlink{classb2_block_allocator}{b2\-Block\-Allocator} has a maximum object size. 
+
+Referenced by b2\-Fixture\-::\-Dump(), and b2\-Polygon\-Shape\-::\-Set().
+
+\hypertarget{b2_settings_8h_a5808c5f1e946205d8f7458101ccc698e}{\index{b2\-Settings.\-h@{b2\-Settings.\-h}!b2\-\_\-max\-Rotation@{b2\-\_\-max\-Rotation}}
+\index{b2\-\_\-max\-Rotation@{b2\-\_\-max\-Rotation}!b2Settings.h@{b2\-Settings.\-h}}
+\subsubsection[{b2\-\_\-max\-Rotation}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf b2\-\_\-max\-Rotation}~(0.\-5f $\ast$ b2\-\_\-pi)}}\label{b2_settings_8h_a5808c5f1e946205d8f7458101ccc698e}
+The maximum angular velocity of a body. This limit is very large and is used to prevent numerical problems. You shouldn't need to adjust this. \hypertarget{b2_settings_8h_af2bad257bfbafed3665df3e243ba2b52}{\index{b2\-Settings.\-h@{b2\-Settings.\-h}!b2\-\_\-max\-Translation@{b2\-\_\-max\-Translation}}
+\index{b2\-\_\-max\-Translation@{b2\-\_\-max\-Translation}!b2Settings.h@{b2\-Settings.\-h}}
+\subsubsection[{b2\-\_\-max\-Translation}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf b2\-\_\-max\-Translation}~2.\-0f}}\label{b2_settings_8h_af2bad257bfbafed3665df3e243ba2b52}
+The maximum linear velocity of a body. This limit is very large and is used to prevent numerical problems. You shouldn't need to adjust this. \hypertarget{b2_settings_8h_afc0f934dabffb1e83e081249133ad860}{\index{b2\-Settings.\-h@{b2\-Settings.\-h}!b2\-\_\-polygon\-Radius@{b2\-\_\-polygon\-Radius}}
+\index{b2\-\_\-polygon\-Radius@{b2\-\_\-polygon\-Radius}!b2Settings.h@{b2\-Settings.\-h}}
+\subsubsection[{b2\-\_\-polygon\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf b2\-\_\-polygon\-Radius}~(2.\-0f $\ast$ b2\-\_\-linear\-Slop)}}\label{b2_settings_8h_afc0f934dabffb1e83e081249133ad860}
+The radius of the polygon/edge shape skin. This should not be modified. Making this smaller means polygons will have an insufficient buffer for continuous collision. Making it larger may create artifacts for vertex collision. \hypertarget{b2_settings_8h_a690b448aa2dba2a1393781f8c059c22a}{\index{b2\-Settings.\-h@{b2\-Settings.\-h}!b2\-\_\-velocity\-Threshold@{b2\-\_\-velocity\-Threshold}}
+\index{b2\-\_\-velocity\-Threshold@{b2\-\_\-velocity\-Threshold}!b2Settings.h@{b2\-Settings.\-h}}
+\subsubsection[{b2\-\_\-velocity\-Threshold}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf b2\-\_\-velocity\-Threshold}~1.\-0f}}\label{b2_settings_8h_a690b448aa2dba2a1393781f8c059c22a}
+A velocity threshold for elastic collisions. Any collision with a relative linear velocity below this threshold will be treated as inelastic. 

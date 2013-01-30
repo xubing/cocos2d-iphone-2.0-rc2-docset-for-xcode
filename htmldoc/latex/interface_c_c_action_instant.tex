@@ -1,0 +1,54 @@
+\hypertarget{interface_c_c_action_instant}{\section{C\-C\-Action\-Instant Class Reference}
+\label{interface_c_c_action_instant}\index{C\-C\-Action\-Instant@{C\-C\-Action\-Instant}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Instant.\-h$>$}
+
+Inheritance diagram for C\-C\-Action\-Instant\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interface_c_c_action_instant}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_action_instant_a5f4c036018335705f1f4f5c2691c165b}{init}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Instant actions are immediate actions. They don't have a duration like the C\-C\-Interval\-Action actions. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_action_instant_a5f4c036018335705f1f4f5c2691c165b}{\index{C\-C\-Action\-Instant@{C\-C\-Action\-Instant}!init@{init}}
+\index{init@{init}!CCActionInstant@{C\-C\-Action\-Instant}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_action_instant_a5f4c036018335705f1f4f5c2691c165b}
+Initializes the action 
+
+Reimplemented from \hyperlink{interface_c_c_action_a9388e3a5788c4a4bb076549571c37fe9}{C\-C\-Action}.
+
+
+
+Referenced by C\-C\-Call\-Block\-::init\-With\-Block\-:, C\-C\-Call\-Block\-N\-::init\-With\-Block\-:, C\-C\-Call\-Block\-O\-::init\-With\-Block\-:object\-:, C\-C\-Place\-::init\-With\-Position\-:, C\-C\-B\-Set\-Sprite\-Frame\-::init\-With\-Sprite\-Frame\-:, C\-C\-Call\-Func\-::init\-With\-Target\-:selector\-:, and C\-C\-Reuse\-Grid\-::init\-With\-Times\-:.
+
+
+\begin{DoxyCode}
+{
+        if( (self=[super init]) )
+                duration_ = 0;
+
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Instant.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Instant.\-m\end{DoxyCompactItemize}

@@ -1,0 +1,99 @@
+\hypertarget{interface_c_c_call_func_o}{\section{C\-C\-Call\-Func\-O Class Reference}
+\label{interface_c_c_call_func_o}\index{C\-C\-Call\-Func\-O@{C\-C\-Call\-Func\-O}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Instant.\-h$>$}
+
+Inheritance diagram for C\-C\-Call\-Func\-O\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{interface_c_c_call_func_o}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_call_func_o_a449da6db7ef0d52e2fa5794a8276f85b}{init\-With\-Target\-:selector\-:object\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_call_func_o_a2444389a377c5baf05bec11db16badb6}{action\-With\-Target\-:selector\-:object\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_call_func_o_a5ed49e2b56d9dae47dbbf151f7e02192}{id {\bfseries object\-\_\-}}\label{interface_c_c_call_func_o_a5ed49e2b56d9dae47dbbf151f7e02192}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id \hyperlink{interface_c_c_call_func_o_ab74a42b17f6fa277e54b9cd466960d82}{object}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Calls a 'callback' with an object as the first argument. O means Object. \begin{DoxySince}{Since}
+v0.\-99.\-5 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_call_func_o_a2444389a377c5baf05bec11db16badb6}{\index{C\-C\-Call\-Func\-O@{C\-C\-Call\-Func\-O}!action\-With\-Target\-:selector\-:object\-:@{action\-With\-Target\-:selector\-:object\-:}}
+\index{action\-With\-Target\-:selector\-:object\-:@{action\-With\-Target\-:selector\-:object\-:}!CCCallFuncO@{C\-C\-Call\-Func\-O}}
+\subsubsection[{action\-With\-Target\-:selector\-:object\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) action\-With\-Target\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{t}
+\item[{selector:(S\-E\-L)}]{s}
+\item[{object:(id)}]{object}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_call_func_o_a2444389a377c5baf05bec11db16badb6}
+creates the action with the callback and the object to pass as an argument 
+
+Referenced by The\-Audio\-Code\-::test\-Eight\-:.
+
+
+\begin{DoxyCode}
+                      : (id) t selector:(SEL) s object:(id)object
+{
+        return [[[self alloc] initWithTarget:t selector:s object:object] 
+      autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_call_func_o_a449da6db7ef0d52e2fa5794a8276f85b}{\index{C\-C\-Call\-Func\-O@{C\-C\-Call\-Func\-O}!init\-With\-Target\-:selector\-:object\-:@{init\-With\-Target\-:selector\-:object\-:}}
+\index{init\-With\-Target\-:selector\-:object\-:@{init\-With\-Target\-:selector\-:object\-:}!CCCallFuncO@{C\-C\-Call\-Func\-O}}
+\subsubsection[{init\-With\-Target\-:selector\-:object\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Target\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{t}
+\item[{selector:(S\-E\-L)}]{s}
+\item[{object:(id)}]{object}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_call_func_o_a449da6db7ef0d52e2fa5794a8276f85b}
+initializes the action with the callback and the object to pass as an argument 
+\begin{DoxyCode}
+                    :(id) t selector:(SEL) s object:(id)object
+{
+        if( (self=[super initWithTarget:t selector:s] ) )
+                self.object = object;
+
+        return self;
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_call_func_o_ab74a42b17f6fa277e54b9cd466960d82}{\index{C\-C\-Call\-Func\-O@{C\-C\-Call\-Func\-O}!object@{object}}
+\index{object@{object}!CCCallFuncO@{C\-C\-Call\-Func\-O}}
+\subsubsection[{object}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf object}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}\label{interface_c_c_call_func_o_ab74a42b17f6fa277e54b9cd466960d82}
+object to be passed as argument 
+
+Referenced by init\-With\-Target\-:selector\-:object\-:.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Instant.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Instant.\-m\end{DoxyCompactItemize}

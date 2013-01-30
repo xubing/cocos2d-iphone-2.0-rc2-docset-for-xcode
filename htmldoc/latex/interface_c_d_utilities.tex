@@ -1,0 +1,72 @@
+\hypertarget{interface_c_d_utilities}{\section{C\-D\-Utilities Class Reference}
+\label{interface_c_d_utilities}\index{C\-D\-Utilities@{C\-D\-Utilities}}
+}
+
+
+{\ttfamily \#import $<$Cocos\-Denshion.\-h$>$}
+
+Inheritance diagram for C\-D\-Utilities\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_c_d_utilities}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(N\-S\-String $\ast$) + \hyperlink{interface_c_d_utilities_a0b870cdbce4ca5a7f13a992034d668d6}{full\-Path\-From\-Relative\-Path\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Collection of utilities required by Cocos\-Denshion 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_d_utilities_a0b870cdbce4ca5a7f13a992034d668d6}{\index{C\-D\-Utilities@{C\-D\-Utilities}!full\-Path\-From\-Relative\-Path\-:@{full\-Path\-From\-Relative\-Path\-:}}
+\index{full\-Path\-From\-Relative\-Path\-:@{full\-Path\-From\-Relative\-Path\-:}!CDUtilities@{C\-D\-Utilities}}
+\subsubsection[{full\-Path\-From\-Relative\-Path\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (N\-S\-String $\ast$) {\bf full\-Path\-From\-Relative\-Path\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{rel\-Path}
+\end{DoxyParamCaption}
+}}\label{interface_c_d_utilities_a0b870cdbce4ca5a7f13a992034d668d6}
+Fundamentally the same as the corresponding method is \hyperlink{class_c_c_file_utils}{C\-C\-File\-Utils} but added to break binding to cocos2d 
+
+Referenced by C\-D\-Long\-Audio\-Source\-::load\-:, and C\-D\-Sound\-Engine\-::load\-Buffer\-:file\-Path\-:.
+
+
+\begin{DoxyCode}
+                                     :(NSString*) relPath
+{
+#ifndef CD_USE_OWN_FILEUTILS
+    return [[CCFileUtils sharedFileUtils] 
+      fullPathFromRelativePathIgnoringResolutions:relPath];
+#else
+        // do not convert an absolute path (starting with '/')
+        if(([relPath length] > 0) && ([relPath characterAtIndex:0] == '/'))
+        {
+                return relPath;
+        }
+
+        NSMutableArray *imagePathComponents = [NSMutableArray arrayWithArray:[
+      relPath pathComponents]];
+        NSString *file = [imagePathComponents lastObject];
+
+        [imagePathComponents removeLastObject];
+        NSString *imageDirectory = [NSString pathWithComponents:
+      imagePathComponents];
+
+        NSString *fullpath = [[NSBundle mainBundle] pathForResource:file ofType
+      :nil inDirectory:imageDirectory];
+        if (fullpath == nil)
+                fullpath = relPath;
+
+        return fullpath;
+#endif
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/\-Cocos\-Denshion/\-Cocos\-Denshion/\hyperlink{_cocos_denshion_8h}{Cocos\-Denshion.\-h}\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/\-Cocos\-Denshion/\-Cocos\-Denshion/Cocos\-Denshion.\-m\end{DoxyCompactItemize}

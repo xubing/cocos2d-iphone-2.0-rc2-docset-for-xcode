@@ -1,0 +1,59 @@
+\hypertarget{group__cp_damped_spring}{\section{cp\-Damped\-Spring}
+\label{group__cp_damped_spring}\index{cp\-Damped\-Spring@{cp\-Damped\-Spring}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bfseries cp\-Damped\-Spring}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__cp_damped_spring_gab4c3629bf0daa6e27aaff6ac1bdc0fb7}{typedef struct cp\-Damped\-Spring {\bfseries cp\-Damped\-Spring}}\label{group__cp_damped_spring_gab4c3629bf0daa6e27aaff6ac1bdc0fb7}
+
+\item 
+\hypertarget{group__cp_damped_spring_gadb36cc6401c8dcc249d067330ac1a57c}{typedef \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float}($\ast$ {\bfseries cp\-Damped\-Spring\-Force\-Func} )(\hyperlink{structcp_constraint}{cp\-Constraint} $\ast$spring, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} dist)}\label{group__cp_damped_spring_gadb36cc6401c8dcc249d067330ac1a57c}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__cp_damped_spring_ga35ce65a4f11813f9ba2eaf53c0c45d6b}{const cp\-Constraint\-Class $\ast$ {\bfseries cp\-Damped\-Spring\-Get\-Class} (void)}\label{group__cp_damped_spring_ga35ce65a4f11813f9ba2eaf53c0c45d6b}
+
+\item 
+\hypertarget{group__cp_damped_spring_ga09c3c3729dd0e2b920948afa15cbd9e1}{cp\-Damped\-Spring $\ast$ \hyperlink{group__cp_damped_spring_ga09c3c3729dd0e2b920948afa15cbd9e1}{cp\-Damped\-Spring\-Alloc} (void)}\label{group__cp_damped_spring_ga09c3c3729dd0e2b920948afa15cbd9e1}
+
+\begin{DoxyCompactList}\small\item\em Allocate a damped spring. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_damped_spring_gac85a83615b67b539dddb16929e494c36}{cp\-Damped\-Spring $\ast$ \hyperlink{group__cp_damped_spring_gac85a83615b67b539dddb16929e494c36}{cp\-Damped\-Spring\-Init} (cp\-Damped\-Spring $\ast$joint, \hyperlink{structcp_body}{cp\-Body} $\ast$a, \hyperlink{structcp_body}{cp\-Body} $\ast$b, \hyperlink{structcp_vect}{cp\-Vect} anchr1, \hyperlink{structcp_vect}{cp\-Vect} anchr2, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} rest\-Length, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} stiffness, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} damping)}\label{group__cp_damped_spring_gac85a83615b67b539dddb16929e494c36}
+
+\begin{DoxyCompactList}\small\item\em Initialize a damped spring. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_damped_spring_gacc53f549a34c60819a0f50e523edc553}{\hyperlink{structcp_constraint}{cp\-Constraint} $\ast$ \hyperlink{group__cp_damped_spring_gacc53f549a34c60819a0f50e523edc553}{cp\-Damped\-Spring\-New} (\hyperlink{structcp_body}{cp\-Body} $\ast$a, \hyperlink{structcp_body}{cp\-Body} $\ast$b, \hyperlink{structcp_vect}{cp\-Vect} anchr1, \hyperlink{structcp_vect}{cp\-Vect} anchr2, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} rest\-Length, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} stiffness, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} damping)}\label{group__cp_damped_spring_gacc53f549a34c60819a0f50e523edc553}
+
+\begin{DoxyCompactList}\small\item\em Allocate and initialize a damped spring. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_damped_spring_ga90cb7c67e0e3bcd5628797e1323ae2ce}{{\bfseries C\-P\-\_\-\-Define\-Constraint\-Property} (cp\-Damped\-Spring, \hyperlink{structcp_vect}{cp\-Vect}, anchr1, Anchr1) C\-P\-\_\-\-Define\-Constraint\-Property(cp\-Damped\-Spring}\label{group__cp_damped_spring_ga90cb7c67e0e3bcd5628797e1323ae2ce}
+
+\item 
+\hypertarget{group__cp_damped_spring_ga81966b1d211a71446c9d3cedd3e20779}{Anchr2 {\bfseries C\-P\-\_\-\-Define\-Constraint\-Property} (cp\-Damped\-Spring, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float}, rest\-Length, Rest\-Length) C\-P\-\_\-\-Define\-Constraint\-Property(cp\-Damped\-Spring}\label{group__cp_damped_spring_ga81966b1d211a71446c9d3cedd3e20779}
+
+\item 
+\hypertarget{group__cp_damped_spring_ga9420bd88d2ba259908431f5f6544546d}{Anchr2 Stiffness {\bfseries C\-P\-\_\-\-Define\-Constraint\-Property} (cp\-Damped\-Spring, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float}, damping, Damping) C\-P\-\_\-\-Define\-Constraint\-Property(cp\-Damped\-Spring}\label{group__cp_damped_spring_ga9420bd88d2ba259908431f5f6544546d}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__cp_damped_spring_gae5bb48004c89589d2d4b8008db38754e}{{\bfseries cp\-Vect}}\label{group__cp_damped_spring_gae5bb48004c89589d2d4b8008db38754e}
+
+\item 
+\hypertarget{group__cp_damped_spring_gaed362236d55092056b72ea837860308b}{{\bfseries anchr2}}\label{group__cp_damped_spring_gaed362236d55092056b72ea837860308b}
+
+\item 
+\hypertarget{group__cp_damped_spring_ga5f57e6b0ab08a954e9c313bcb2a59732}{Anchr2 {\bfseries cp\-Float}}\label{group__cp_damped_spring_ga5f57e6b0ab08a954e9c313bcb2a59732}
+
+\item 
+\hypertarget{group__cp_damped_spring_ga88a872c6ca3e8c872a32d9e7299b99f0}{Anchr2 {\bfseries stiffness}}\label{group__cp_damped_spring_ga88a872c6ca3e8c872a32d9e7299b99f0}
+
+\item 
+\hypertarget{group__cp_damped_spring_gab77e135fe4cc6beffc8fd3cbe657f0c7}{Anchr2 Stiffness {\bfseries spring\-Force\-Func}}\label{group__cp_damped_spring_gab77e135fe4cc6beffc8fd3cbe657f0c7}
+
+\end{DoxyCompactItemize}

@@ -1,0 +1,39 @@
+\hypertarget{structcp_contact_point_set}{\section{cp\-Contact\-Point\-Set Struct Reference}
+\label{structcp_contact_point_set}\index{cp\-Contact\-Point\-Set@{cp\-Contact\-Point\-Set}}
+}
+
+
+A struct that wraps up the important collision data for an arbiter.  
+
+
+
+
+{\ttfamily \#include $<$cp\-Arbiter.\-h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structcp_contact_point_set_a06dadd34b06a8c7f00def95ca6a1ff88}{int \hyperlink{structcp_contact_point_set_a06dadd34b06a8c7f00def95ca6a1ff88}{count}}\label{structcp_contact_point_set_a06dadd34b06a8c7f00def95ca6a1ff88}
+
+\begin{DoxyCompactList}\small\item\em The number of contact points in the set. \end{DoxyCompactList}\item 
+\hypertarget{structcp_contact_point_set_a7c95205d8eab50f2e482eada4aeec153}{\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\hyperlink{structcp_vect}{cpVect} \hyperlink{structcp_contact_point_set_a6b9722098368532286bb5e09c64ee9b8}{point}\\
+\>\>{\em The position of the contact point. }\\
+\>\hyperlink{structcp_vect}{cpVect} \hyperlink{structcp_contact_point_set_a2fab2c7e343e14833185b2c97e9fd5b8}{normal}\\
+\>\>{\em The normal of the contact point. }\\
+\>\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cpFloat} \hyperlink{structcp_contact_point_set_a2fbd7271bed7d99c02fee8c032f385e5}{dist}\\
+\>\>{\em The depth of the contact point. }\\
+\} \hyperlink{structcp_contact_point_set_a7c95205d8eab50f2e482eada4aeec153}{points} \mbox{[}CP\_MAX\_CONTACTS\_PER\_ARBITER\mbox{]}}\label{structcp_contact_point_set_a7c95205d8eab50f2e482eada4aeec153}
+\\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em The array of contact points. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A struct that wraps up the important collision data for an arbiter. 
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Chipmunk/include/chipmunk/cp\-Arbiter.\-h\end{DoxyCompactItemize}

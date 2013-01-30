@@ -1,0 +1,121 @@
+\hypertarget{structb2_distance_proxy}{\section{b2\-Distance\-Proxy Struct Reference}
+\label{structb2_distance_proxy}\index{b2\-Distance\-Proxy@{b2\-Distance\-Proxy}}
+}
+
+
+{\ttfamily \#include $<$b2\-Distance.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structb2_distance_proxy_a80a59a9c9e952482a8fc6db4b883365d}{Set} (const \hyperlink{classb2_shape}{b2\-Shape} $\ast$shape, int32 index)
+\item 
+\hypertarget{structb2_distance_proxy_ad763543846db0c220e6b0a29275d723e}{int32 \hyperlink{structb2_distance_proxy_ad763543846db0c220e6b0a29275d723e}{Get\-Support} (const \hyperlink{structb2_vec2}{b2\-Vec2} \&d) const }\label{structb2_distance_proxy_ad763543846db0c220e6b0a29275d723e}
+
+\begin{DoxyCompactList}\small\item\em Get the supporting vertex index in the given direction. \end{DoxyCompactList}\item 
+\hypertarget{structb2_distance_proxy_ad98a909b9aee9e42ba184b1e6bd526ba}{const \hyperlink{structb2_vec2}{b2\-Vec2} \& \hyperlink{structb2_distance_proxy_ad98a909b9aee9e42ba184b1e6bd526ba}{Get\-Support\-Vertex} (const \hyperlink{structb2_vec2}{b2\-Vec2} \&d) const }\label{structb2_distance_proxy_ad98a909b9aee9e42ba184b1e6bd526ba}
+
+\begin{DoxyCompactList}\small\item\em Get the supporting vertex in the given direction. \end{DoxyCompactList}\item 
+\hypertarget{structb2_distance_proxy_a43c51168f2829c55dacc8b9adbd90206}{int32 \hyperlink{structb2_distance_proxy_a43c51168f2829c55dacc8b9adbd90206}{Get\-Vertex\-Count} () const }\label{structb2_distance_proxy_a43c51168f2829c55dacc8b9adbd90206}
+
+\begin{DoxyCompactList}\small\item\em Get the vertex count. \end{DoxyCompactList}\item 
+\hypertarget{structb2_distance_proxy_ac5ecae62c2a96afdf220074118c71a92}{const \hyperlink{structb2_vec2}{b2\-Vec2} \& \hyperlink{structb2_distance_proxy_ac5ecae62c2a96afdf220074118c71a92}{Get\-Vertex} (int32 index) const }\label{structb2_distance_proxy_ac5ecae62c2a96afdf220074118c71a92}
+
+\begin{DoxyCompactList}\small\item\em Get a vertex by index. Used by b2\-Distance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structb2_distance_proxy_a3fc5ebfa3d34ac66390b88f9277fb330}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-buffer} \mbox{[}2\mbox{]}}\label{structb2_distance_proxy_a3fc5ebfa3d34ac66390b88f9277fb330}
+
+\item 
+\hypertarget{structb2_distance_proxy_abaf1495b8214b74d944b57170a762f32}{const \hyperlink{structb2_vec2}{b2\-Vec2} $\ast$ {\bfseries m\-\_\-vertices}}\label{structb2_distance_proxy_abaf1495b8214b74d944b57170a762f32}
+
+\item 
+\hypertarget{structb2_distance_proxy_ae36efab1361bb1f94e32f9b956c6f1b3}{int32 {\bfseries m\-\_\-count}}\label{structb2_distance_proxy_ae36efab1361bb1f94e32f9b956c6f1b3}
+
+\item 
+\hypertarget{structb2_distance_proxy_a459c93f35b1e62d583bd73d8c478ce89}{float32 {\bfseries m\-\_\-radius}}\label{structb2_distance_proxy_a459c93f35b1e62d583bd73d8c478ce89}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A distance proxy is used by the G\-J\-K algorithm. It encapsulates any shape. 
+
+\subsection{Member Function Documentation}
+\hypertarget{structb2_distance_proxy_a80a59a9c9e952482a8fc6db4b883365d}{\index{b2\-Distance\-Proxy@{b2\-Distance\-Proxy}!Set@{Set}}
+\index{Set@{Set}!b2DistanceProxy@{b2\-Distance\-Proxy}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf b2\-Distance\-Proxy\-::\-Set} (
+\begin{DoxyParamCaption}
+\item[{const {\bf b2\-Shape} $\ast$}]{shape, }
+\item[{int32}]{index}
+\end{DoxyParamCaption}
+)}}\label{structb2_distance_proxy_a80a59a9c9e952482a8fc6db4b883365d}
+Initialize the proxy using the given shape. The shape must remain in scope while the proxy is in use. 
+
+Referenced by b2\-Test\-Overlap().
+
+
+\begin{DoxyCode}
+{
+        switch (shape->GetType())
+        {
+        case b2Shape::e_circle:
+                {
+                        const b2CircleShape* circle = (b2CircleShape*)shape;
+                        m_vertices = &circle->m_p;
+                        m_count = 1;
+                        m_radius = circle->m_radius;
+                }
+                break;
+
+        case b2Shape::e_polygon:
+                {
+                        const b2PolygonShape* polygon = (b2PolygonShape*)shape;
+                        m_vertices = polygon->m_vertices;
+                        m_count = polygon->m_vertexCount;
+                        m_radius = polygon->m_radius;
+                }
+                break;
+
+        case b2Shape::e_chain:
+                {
+                        const b2ChainShape* chain = (b2ChainShape*)shape;
+                        b2Assert(0 <= index && index < chain->m_count);
+
+                        m_buffer[0] = chain->m_vertices[index];
+                        if (index + 1 < chain->m_count)
+                        {
+                                m_buffer[1] = chain->m_vertices[index + 1];
+                        }
+                        else
+                        {
+                                m_buffer[1] = chain->m_vertices[0];
+                        }
+
+                        m_vertices = m_buffer;
+                        m_count = 2;
+                        m_radius = chain->m_radius;
+                }
+                break;
+
+        case b2Shape::e_edge:
+                {
+                        const b2EdgeShape* edge = (b2EdgeShape*)shape;
+                        m_vertices = &edge->m_vertex1;
+                        m_count = 2;
+                        m_radius = edge->m_radius;
+                }
+                break;
+
+        default:
+                b2Assert(false);
+        }
+}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Collision/b2\-Distance.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Collision/b2\-Distance.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,79 @@
+\hypertarget{interface_c_c_flip_x3_d}{\section{C\-C\-Flip\-X3\-D Class Reference}
+\label{interface_c_c_flip_x3_d}\index{C\-C\-Flip\-X3\-D@{C\-C\-Flip\-X3\-D}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Grid3\-D.\-h$>$}
+
+Inheritance diagram for C\-C\-Flip\-X3\-D\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{interface_c_c_flip_x3_d}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_flip_x3_d_a95b1926ed0a5624adcddab23394ad443}{init\-With\-Duration\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_flip_x3_d_a61912e0504905ba58097d732977c416f}{action\-With\-Duration\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_flip_x3_d}{C\-C\-Flip\-X3\-D} action 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_flip_x3_d_a61912e0504905ba58097d732977c416f}{\index{C\-C\-Flip\-X3\-D@{C\-C\-Flip\-X3\-D}!action\-With\-Duration\-:@{action\-With\-Duration\-:}}
+\index{action\-With\-Duration\-:@{action\-With\-Duration\-:}!CCFlipX3D@{C\-C\-Flip\-X3\-D}}
+\subsubsection[{action\-With\-Duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_flip_x3_d_a61912e0504905ba58097d732977c416f}
+creates the action with duration 
+
+Reimplemented from \hyperlink{class_c_c_action_interval_a08fbc347478cca16ab1fe936a1770dc0}{C\-C\-Action\-Interval}.
+
+
+
+Reimplemented in \hyperlink{interface_flip_y3_d_demo_abe7a83e351b66a957b13624a3aa4c140}{Flip\-Y3\-D\-Demo}, and \hyperlink{interface_flip_x3_d_demo_ad3338f96edfbf5b140c591829e933b5d}{Flip\-X3\-D\-Demo}.
+
+
+
+Referenced by Flip\-X3\-D\-Demo\-::action\-With\-Duration\-:, and Flip\-Y3\-D\-Demo\-::action\-With\-Duration\-:.
+
+
+\begin{DoxyCode}
+                        :(ccTime)d
+{
+        return [[[self alloc] initWithSize:ccg(1,1) duration:d] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_flip_x3_d_a95b1926ed0a5624adcddab23394ad443}{\index{C\-C\-Flip\-X3\-D@{C\-C\-Flip\-X3\-D}!init\-With\-Duration\-:@{init\-With\-Duration\-:}}
+\index{init\-With\-Duration\-:@{init\-With\-Duration\-:}!CCFlipX3D@{C\-C\-Flip\-X3\-D}}
+\subsubsection[{init\-With\-Duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_flip_x3_d_a95b1926ed0a5624adcddab23394ad443}
+initializes the action with duration 
+
+Reimplemented from \hyperlink{class_c_c_action_interval_a720052392c29747218924b70af412d6c}{C\-C\-Action\-Interval}.
+
+
+\begin{DoxyCode}
+                      :(ccTime)d
+{
+        return [super initWithSize:ccg(1,1) duration:d];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Grid3\-D.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Grid3\-D.\-m\end{DoxyCompactItemize}

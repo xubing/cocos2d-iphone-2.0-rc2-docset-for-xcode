@@ -1,0 +1,378 @@
+\hypertarget{interface_simple_audio_engine}{\section{Simple\-Audio\-Engine Class Reference}
+\label{interface_simple_audio_engine}\index{Simple\-Audio\-Engine@{Simple\-Audio\-Engine}}
+}
+
+
+{\ttfamily \#import $<$Simple\-Audio\-Engine.\-h$>$}
+
+Inheritance diagram for Simple\-Audio\-Engine\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_simple_audio_engine}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_simple_audio_engine_a289e2e89ab55d63a38792fd8f2e5b645}{preload\-Background\-Music\-:}
+\item 
+(void) -\/ \hyperlink{interface_simple_audio_engine_ae48157a1dea7e96833cb705bd6cd6709}{play\-Background\-Music\-:}
+\item 
+(void) -\/ \hyperlink{interface_simple_audio_engine_aec9fc4c618da2902f26615c087179508}{play\-Background\-Music\-:loop\-:}
+\item 
+(void) -\/ \hyperlink{interface_simple_audio_engine_a81e61f21116fc8d46b8242e9caa48006}{stop\-Background\-Music}
+\item 
+(void) -\/ \hyperlink{interface_simple_audio_engine_addf0536bfbb9ad38668108ee289ccaf6}{pause\-Background\-Music}
+\item 
+(void) -\/ \hyperlink{interface_simple_audio_engine_a565f2d3e28072b6a7173064b797767c0}{resume\-Background\-Music}
+\item 
+(void) -\/ \hyperlink{interface_simple_audio_engine_ab91dfde414f3ef20ccd891e59ba5a67d}{rewind\-Background\-Music}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_simple_audio_engine_a973125b75501bf21ae82f30ab1aea87c}{is\-Background\-Music\-Playing}
+\item 
+(A\-Luint) -\/ \hyperlink{interface_simple_audio_engine_a520f061be6fdb4ea0d22cc258ea4f431}{play\-Effect\-:}
+\item 
+(void) -\/ \hyperlink{interface_simple_audio_engine_a4d818613fe0acb6fa8dc9fac400327f0}{stop\-Effect\-:}
+\item 
+(A\-Luint) -\/ \hyperlink{interface_simple_audio_engine_aed4a3e55cdbae87e3129c9ed54db1ced}{play\-Effect\-:pitch\-:pan\-:gain\-:}
+\item 
+(void) -\/ \hyperlink{interface_simple_audio_engine_a0f27d03cab04292f2dcbfc1ba8344e54}{preload\-Effect\-:}
+\item 
+(void) -\/ \hyperlink{interface_simple_audio_engine_a1f3f121b3664c6b5bcfc33c8af63e52c}{unload\-Effect\-:}
+\item 
+(\hyperlink{interface_c_d_sound_source}{C\-D\-Sound\-Source} $\ast$) -\/ \hyperlink{interface_simple_audio_engine_a8ab8450895ef35d23744db31e5826d01}{sound\-Source\-For\-File\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_simple_audio_engine}{Simple\-Audio\-Engine} $\ast$) + \hyperlink{interface_simple_audio_engine_aa571a8e565bfe5153919b3151d9f26f4}{shared\-Engine}
+\item 
+(void) + \hyperlink{interface_simple_audio_engine_a2750af49fe41ee3fcf3d544f05ef3c73}{end}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_simple_audio_engine_a9370736b2fbf3ca0927010f837c04a87}{B\-O\-O\-L {\bfseries mute\-\_\-}}\label{interface_simple_audio_engine_a9370736b2fbf3ca0927010f837c04a87}
+
+\item 
+\hypertarget{interface_simple_audio_engine_a5d889af8713eaf7bdd4900bd6319c580}{B\-O\-O\-L {\bfseries enabled\-\_\-}}\label{interface_simple_audio_engine_a5d889af8713eaf7bdd4900bd6319c580}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{interface_simple_audio_engine_a7e28cfae58e49d3b6dd4a1ca9b8b54b5}{background\-Music\-Volume}
+\item 
+float \hyperlink{interface_simple_audio_engine_a0c529082c00086142cdc19b92098453a}{effects\-Volume}
+\item 
+B\-O\-O\-L \hyperlink{interface_simple_audio_engine_a2838b12d2c986358cb16d7527ad644ac}{will\-Play\-Background\-Music}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A wrapper to the \hyperlink{interface_c_d_audio_manager}{C\-D\-Audio\-Manager} object. This is recommended for basic audio requirements. If you just want to play some sound fx and some background music and have no interest in learning the lower level workings then this is the interface to use.
+
+Requirements\-:
+\begin{DoxyItemize}
+\item Firmware\-: O\-S 2.\-2 or greater
+\item Files\-: \hyperlink{interface_simple_audio_engine}{Simple\-Audio\-Engine}.$\ast$, Cocos\-Denshion.$\ast$
+\item Frameworks\-: Open\-A\-L, Audio\-Toolbox, A\-V\-Foundation \begin{DoxySince}{Since}
+v0.\-8 
+\end{DoxySince}
+
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_simple_audio_engine_a2750af49fe41ee3fcf3d544f05ef3c73}{\index{Simple\-Audio\-Engine@{Simple\-Audio\-Engine}!end@{end}}
+\index{end@{end}!SimpleAudioEngine@{Simple\-Audio\-Engine}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf end} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_simple_audio_engine_a2750af49fe41ee3fcf3d544f05ef3c73}
+Shuts down the shared audio engine instance so that it can be reinitialised 
+\begin{DoxyCode}
+{
+        am = nil;
+        [CDAudioManager end];
+        [bufferManager release];
+        [sharedEngine release];
+        sharedEngine = nil;
+}
+\end{DoxyCode}
+\hypertarget{interface_simple_audio_engine_a973125b75501bf21ae82f30ab1aea87c}{\index{Simple\-Audio\-Engine@{Simple\-Audio\-Engine}!is\-Background\-Music\-Playing@{is\-Background\-Music\-Playing}}
+\index{is\-Background\-Music\-Playing@{is\-Background\-Music\-Playing}!SimpleAudioEngine@{Simple\-Audio\-Engine}}
+\subsubsection[{is\-Background\-Music\-Playing}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) {\bf is\-Background\-Music\-Playing} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_simple_audio_engine_a973125b75501bf21ae82f30ab1aea87c}
+returns whether or not the background music is playing 
+\begin{DoxyCode}
+                                 {
+        return [am isBackgroundMusicPlaying];
+}
+\end{DoxyCode}
+\hypertarget{interface_simple_audio_engine_addf0536bfbb9ad38668108ee289ccaf6}{\index{Simple\-Audio\-Engine@{Simple\-Audio\-Engine}!pause\-Background\-Music@{pause\-Background\-Music}}
+\index{pause\-Background\-Music@{pause\-Background\-Music}!SimpleAudioEngine@{Simple\-Audio\-Engine}}
+\subsubsection[{pause\-Background\-Music}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf pause\-Background\-Music} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_simple_audio_engine_addf0536bfbb9ad38668108ee289ccaf6}
+pauses the background music 
+\begin{DoxyCode}
+                             {
+        [am pauseBackgroundMusic];
+}
+\end{DoxyCode}
+\hypertarget{interface_simple_audio_engine_ae48157a1dea7e96833cb705bd6cd6709}{\index{Simple\-Audio\-Engine@{Simple\-Audio\-Engine}!play\-Background\-Music\-:@{play\-Background\-Music\-:}}
+\index{play\-Background\-Music\-:@{play\-Background\-Music\-:}!SimpleAudioEngine@{Simple\-Audio\-Engine}}
+\subsubsection[{play\-Background\-Music\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf play\-Background\-Music\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{file\-Path}
+\end{DoxyParamCaption}
+}}\label{interface_simple_audio_engine_ae48157a1dea7e96833cb705bd6cd6709}
+plays background music in a loop 
+
+Referenced by The\-Audio\-Code\-::test\-Eight\-:, and The\-Audio\-Code\-::test\-Five\-:.
+
+
+\begin{DoxyCode}
+                           :(NSString*) filePath
+{
+        [am playBackgroundMusic:filePath loop:TRUE];
+}
+\end{DoxyCode}
+\hypertarget{interface_simple_audio_engine_aec9fc4c618da2902f26615c087179508}{\index{Simple\-Audio\-Engine@{Simple\-Audio\-Engine}!play\-Background\-Music\-:loop\-:@{play\-Background\-Music\-:loop\-:}}
+\index{play\-Background\-Music\-:loop\-:@{play\-Background\-Music\-:loop\-:}!SimpleAudioEngine@{Simple\-Audio\-Engine}}
+\subsubsection[{play\-Background\-Music\-:loop\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf play\-Background\-Music\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{file\-Path}
+\item[{loop:(B\-O\-O\-L)}]{loop}
+\end{DoxyParamCaption}
+}}\label{interface_simple_audio_engine_aec9fc4c618da2902f26615c087179508}
+plays background music, if loop is true the music will repeat otherwise it will be played once 
+\begin{DoxyCode}
+                           :(NSString*) filePath loop:(BOOL) loop
+{
+        [am playBackgroundMusic:filePath loop:loop];
+}
+\end{DoxyCode}
+\hypertarget{interface_simple_audio_engine_a520f061be6fdb4ea0d22cc258ea4f431}{\index{Simple\-Audio\-Engine@{Simple\-Audio\-Engine}!play\-Effect\-:@{play\-Effect\-:}}
+\index{play\-Effect\-:@{play\-Effect\-:}!SimpleAudioEngine@{Simple\-Audio\-Engine}}
+\subsubsection[{play\-Effect\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (A\-Luint) {\bf play\-Effect\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{file\-Path}
+\end{DoxyParamCaption}
+}}\label{interface_simple_audio_engine_a520f061be6fdb4ea0d22cc258ea4f431}
+plays an audio effect with a file path 
+
+Referenced by The\-Audio\-Code\-::test\-Seven\-:.
+
+
+\begin{DoxyCode}
+                    :(NSString*) filePath
+{
+        return [self playEffect:filePath pitch:1.0f pan:0.0f gain:1.0f];
+}
+\end{DoxyCode}
+\hypertarget{interface_simple_audio_engine_aed4a3e55cdbae87e3129c9ed54db1ced}{\index{Simple\-Audio\-Engine@{Simple\-Audio\-Engine}!play\-Effect\-:pitch\-:pan\-:gain\-:@{play\-Effect\-:pitch\-:pan\-:gain\-:}}
+\index{play\-Effect\-:pitch\-:pan\-:gain\-:@{play\-Effect\-:pitch\-:pan\-:gain\-:}!SimpleAudioEngine@{Simple\-Audio\-Engine}}
+\subsubsection[{play\-Effect\-:pitch\-:pan\-:gain\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (A\-Luint) {\bf play\-Effect\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{file\-Path}
+\item[{pitch:(Float32)}]{pitch}
+\item[{pan:(Float32)}]{pan}
+\item[{gain:(Float32)}]{gain}
+\end{DoxyParamCaption}
+}}\label{interface_simple_audio_engine_aed4a3e55cdbae87e3129c9ed54db1ced}
+plays an audio effect with a file path, pitch, pan and gain 
+
+Referenced by play\-Effect\-:, and The\-Audio\-Code\-::test\-Four\-:.
+
+
+\begin{DoxyCode}
+                    :(NSString*) filePath pitch:(Float32) pitch pan:(Float32) 
+      pan gain:(Float32) gain
+{
+        int soundId = [bufferManager bufferForFile:filePath create:YES];
+        if (soundId != kCDNoBuffer) {
+                return [soundEngine playSound:soundId sourceGroupId:0 pitch:
+      pitch pan:pan gain:gain loop:false];
+        } else {
+                return CD_MUTE;
+        }
+}
+\end{DoxyCode}
+\hypertarget{interface_simple_audio_engine_a289e2e89ab55d63a38792fd8f2e5b645}{\index{Simple\-Audio\-Engine@{Simple\-Audio\-Engine}!preload\-Background\-Music\-:@{preload\-Background\-Music\-:}}
+\index{preload\-Background\-Music\-:@{preload\-Background\-Music\-:}!SimpleAudioEngine@{Simple\-Audio\-Engine}}
+\subsubsection[{preload\-Background\-Music\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf preload\-Background\-Music\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{file\-Path}
+\end{DoxyParamCaption}
+}}\label{interface_simple_audio_engine_a289e2e89ab55d63a38792fd8f2e5b645}
+Preloads a music file so it will be ready to play as background music 
+\begin{DoxyCode}
+                              :(NSString*) filePath {
+        [am preloadBackgroundMusic:filePath];
+}
+\end{DoxyCode}
+\hypertarget{interface_simple_audio_engine_a0f27d03cab04292f2dcbfc1ba8344e54}{\index{Simple\-Audio\-Engine@{Simple\-Audio\-Engine}!preload\-Effect\-:@{preload\-Effect\-:}}
+\index{preload\-Effect\-:@{preload\-Effect\-:}!SimpleAudioEngine@{Simple\-Audio\-Engine}}
+\subsubsection[{preload\-Effect\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf preload\-Effect\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{file\-Path}
+\end{DoxyParamCaption}
+}}\label{interface_simple_audio_engine_a0f27d03cab04292f2dcbfc1ba8344e54}
+preloads an audio effect 
+
+Referenced by The\-Audio\-Code\-::test\-Seven\-:.
+
+
+\begin{DoxyCode}
+                     :(NSString*) filePath
+{
+        int soundId = [bufferManager bufferForFile:filePath create:YES];
+        if (soundId == kCDNoBuffer) {
+                CDLOG(@"Denshion::SimpleAudioEngine sound failed to preload %@"
+      ,filePath);
+        }
+}
+\end{DoxyCode}
+\hypertarget{interface_simple_audio_engine_a565f2d3e28072b6a7173064b797767c0}{\index{Simple\-Audio\-Engine@{Simple\-Audio\-Engine}!resume\-Background\-Music@{resume\-Background\-Music}}
+\index{resume\-Background\-Music@{resume\-Background\-Music}!SimpleAudioEngine@{Simple\-Audio\-Engine}}
+\subsubsection[{resume\-Background\-Music}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf resume\-Background\-Music} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_simple_audio_engine_a565f2d3e28072b6a7173064b797767c0}
+resume background music that has been paused 
+\begin{DoxyCode}
+                              {
+        [am resumeBackgroundMusic];
+}
+\end{DoxyCode}
+\hypertarget{interface_simple_audio_engine_ab91dfde414f3ef20ccd891e59ba5a67d}{\index{Simple\-Audio\-Engine@{Simple\-Audio\-Engine}!rewind\-Background\-Music@{rewind\-Background\-Music}}
+\index{rewind\-Background\-Music@{rewind\-Background\-Music}!SimpleAudioEngine@{Simple\-Audio\-Engine}}
+\subsubsection[{rewind\-Background\-Music}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf rewind\-Background\-Music} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_simple_audio_engine_ab91dfde414f3ef20ccd891e59ba5a67d}
+rewind the background music 
+
+Referenced by The\-Audio\-Code\-::test\-Eight\-:, and The\-Audio\-Code\-::test\-Five\-:.
+
+
+\begin{DoxyCode}
+                              {
+        [am rewindBackgroundMusic];
+}
+\end{DoxyCode}
+\hypertarget{interface_simple_audio_engine_aa571a8e565bfe5153919b3151d9f26f4}{\index{Simple\-Audio\-Engine@{Simple\-Audio\-Engine}!shared\-Engine@{shared\-Engine}}
+\index{shared\-Engine@{shared\-Engine}!SimpleAudioEngine@{Simple\-Audio\-Engine}}
+\subsubsection[{shared\-Engine}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf Simple\-Audio\-Engine} $\ast$) {\bf shared\-Engine} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_simple_audio_engine_aa571a8e565bfe5153919b3151d9f26f4}
+returns the shared instance of the \hyperlink{interface_simple_audio_engine}{Simple\-Audio\-Engine} object 
+\begin{DoxyCode}
+{
+        @synchronized(self)     {
+                if (!sharedEngine)
+                        sharedEngine = [[SimpleAudioEngine alloc] init];
+        }
+        return sharedEngine;
+}
+\end{DoxyCode}
+\hypertarget{interface_simple_audio_engine_a8ab8450895ef35d23744db31e5826d01}{\index{Simple\-Audio\-Engine@{Simple\-Audio\-Engine}!sound\-Source\-For\-File\-:@{sound\-Source\-For\-File\-:}}
+\index{sound\-Source\-For\-File\-:@{sound\-Source\-For\-File\-:}!SimpleAudioEngine@{Simple\-Audio\-Engine}}
+\subsubsection[{sound\-Source\-For\-File\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-D\-Sound\-Source} $\ast$) {\bf sound\-Source\-For\-File\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{file\-Path}
+\end{DoxyParamCaption}
+}}\label{interface_simple_audio_engine_a8ab8450895ef35d23744db31e5826d01}
+Gets a \hyperlink{interface_c_d_sound_source}{C\-D\-Sound\-Source} object set up to play the specified file. 
+\begin{DoxyCode}
+                                     :(NSString*) filePath {
+        int soundId = [bufferManager bufferForFile:filePath create:YES];
+        if (soundId != kCDNoBuffer) {
+                CDSoundSource *result = [soundEngine soundSourceForSound:
+      soundId sourceGroupId:0];
+                CDLOGINFO(@"Denshion::SimpleAudioEngine sound source created
+       for %@",filePath);
+                return result;
+        } else {
+                return nil;
+        }
+}
+\end{DoxyCode}
+\hypertarget{interface_simple_audio_engine_a81e61f21116fc8d46b8242e9caa48006}{\index{Simple\-Audio\-Engine@{Simple\-Audio\-Engine}!stop\-Background\-Music@{stop\-Background\-Music}}
+\index{stop\-Background\-Music@{stop\-Background\-Music}!SimpleAudioEngine@{Simple\-Audio\-Engine}}
+\subsubsection[{stop\-Background\-Music}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf stop\-Background\-Music} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_simple_audio_engine_a81e61f21116fc8d46b8242e9caa48006}
+stops playing background music 
+\begin{DoxyCode}
+{
+        [am stopBackgroundMusic];
+}
+\end{DoxyCode}
+\hypertarget{interface_simple_audio_engine_a4d818613fe0acb6fa8dc9fac400327f0}{\index{Simple\-Audio\-Engine@{Simple\-Audio\-Engine}!stop\-Effect\-:@{stop\-Effect\-:}}
+\index{stop\-Effect\-:@{stop\-Effect\-:}!SimpleAudioEngine@{Simple\-Audio\-Engine}}
+\subsubsection[{stop\-Effect\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf stop\-Effect\-:} 
+\begin{DoxyParamCaption}
+\item[{(A\-Luint)}]{sound\-Id}
+\end{DoxyParamCaption}
+}}\label{interface_simple_audio_engine_a4d818613fe0acb6fa8dc9fac400327f0}
+stop a sound that is playing, note you must pass in the sound\-Id that is returned when you started playing the sound with play\-Effect 
+\begin{DoxyCode}
+                  :(ALuint) soundId {
+        [soundEngine stopSound:soundId];
+}
+\end{DoxyCode}
+\hypertarget{interface_simple_audio_engine_a1f3f121b3664c6b5bcfc33c8af63e52c}{\index{Simple\-Audio\-Engine@{Simple\-Audio\-Engine}!unload\-Effect\-:@{unload\-Effect\-:}}
+\index{unload\-Effect\-:@{unload\-Effect\-:}!SimpleAudioEngine@{Simple\-Audio\-Engine}}
+\subsubsection[{unload\-Effect\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf unload\-Effect\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{file\-Path}
+\end{DoxyParamCaption}
+}}\label{interface_simple_audio_engine_a1f3f121b3664c6b5bcfc33c8af63e52c}
+unloads an audio effect from memory 
+
+Referenced by The\-Audio\-Code\-::test\-Seven\-:.
+
+
+\begin{DoxyCode}
+                    :(NSString*) filePath
+{
+        CDLOGINFO(@"Denshion::SimpleAudioEngine unloadedEffect %@",filePath);
+        [bufferManager releaseBufferForFile:filePath];
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_simple_audio_engine_a7e28cfae58e49d3b6dd4a1ca9b8b54b5}{\index{Simple\-Audio\-Engine@{Simple\-Audio\-Engine}!background\-Music\-Volume@{background\-Music\-Volume}}
+\index{background\-Music\-Volume@{background\-Music\-Volume}!SimpleAudioEngine@{Simple\-Audio\-Engine}}
+\subsubsection[{background\-Music\-Volume}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf background\-Music\-Volume}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_simple_audio_engine_a7e28cfae58e49d3b6dd4a1ca9b8b54b5}
+Background music volume. Range is 0.\-0f to 1.\-0f. This will only have an effect if will\-Play\-Background\-Music returns Y\-E\-S \hypertarget{interface_simple_audio_engine_a0c529082c00086142cdc19b92098453a}{\index{Simple\-Audio\-Engine@{Simple\-Audio\-Engine}!effects\-Volume@{effects\-Volume}}
+\index{effects\-Volume@{effects\-Volume}!SimpleAudioEngine@{Simple\-Audio\-Engine}}
+\subsubsection[{effects\-Volume}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf effects\-Volume}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_simple_audio_engine_a0c529082c00086142cdc19b92098453a}
+Effects volume. Range is 0.\-0f to 1.\-0f 
+
+Referenced by The\-Audio\-Code\-::test\-Six\-:.
+
+\hypertarget{interface_simple_audio_engine_a2838b12d2c986358cb16d7527ad644ac}{\index{Simple\-Audio\-Engine@{Simple\-Audio\-Engine}!will\-Play\-Background\-Music@{will\-Play\-Background\-Music}}
+\index{will\-Play\-Background\-Music@{will\-Play\-Background\-Music}!SimpleAudioEngine@{Simple\-Audio\-Engine}}
+\subsubsection[{will\-Play\-Background\-Music}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) {\bf will\-Play\-Background\-Music}\hspace{0.3cm}{\ttfamily  \mbox{[}read, assign\mbox{]}}}}\label{interface_simple_audio_engine_a2838b12d2c986358cb16d7527ad644ac}
+If N\-O it indicates background music will not be played either because no background music is loaded or the audio session does not permit it. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/\-Cocos\-Denshion/\-Cocos\-Denshion/Simple\-Audio\-Engine.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/\-Cocos\-Denshion/\-Cocos\-Denshion/Simple\-Audio\-Engine.\-m\end{DoxyCompactItemize}

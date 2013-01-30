@@ -1,0 +1,210 @@
+\hypertarget{group__cp_body}{\section{cp\-Body}
+\label{group__cp_body}\index{cp\-Body@{cp\-Body}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bfseries cp\-Component\-Node}
+\item 
+struct \hyperlink{structcp_body}{cp\-Body}
+\begin{DoxyCompactList}\small\item\em Chipmunk's rigid body struct. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__cp_body_ga135d8e824aade5d6923910593cfb1b4e}{\#define {\bfseries cp\-Body\-Assert\-Sane}(body)~\hyperlink{group__cp_body_ga21607229d9fd49281a7a94a1b09664de}{cp\-Body\-Sanity\-Check}(body)}\label{group__cp_body_ga135d8e824aade5d6923910593cfb1b4e}
+
+\item 
+\hypertarget{group__cp_body_ga40c9bac4cf4b0637f64cb53402413d68}{\#define {\bfseries C\-P\-\_\-\-Define\-Body\-Struct\-Getter}(type, member, name)~static inline type cp\-Body\-Get\#\#name(const \hyperlink{structcp_body}{cp\-Body} $\ast$body)\{return body-\/$>$member;\}}\label{group__cp_body_ga40c9bac4cf4b0637f64cb53402413d68}
+
+\item 
+\#define {\bfseries C\-P\-\_\-\-Define\-Body\-Struct\-Setter}(type, member, name)
+\item 
+\#define {\bfseries C\-P\-\_\-\-Define\-Body\-Struct\-Property}(type, member, name)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__cp_body_ga728eb52bef6367e8e33abff7dba0a089}{typedef void($\ast$ \hyperlink{group__cp_body_ga728eb52bef6367e8e33abff7dba0a089}{cp\-Body\-Velocity\-Func} )(\hyperlink{structcp_body}{cp\-Body} $\ast$body, \hyperlink{structcp_vect}{cp\-Vect} gravity, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} damping, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} dt)}\label{group__cp_body_ga728eb52bef6367e8e33abff7dba0a089}
+
+\begin{DoxyCompactList}\small\item\em Rigid body velocity update function type. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_body_ga4f84c8fc20fcb9918d1553e6dc29ffbd}{typedef void($\ast$ \hyperlink{group__cp_body_ga4f84c8fc20fcb9918d1553e6dc29ffbd}{cp\-Body\-Position\-Func} )(\hyperlink{structcp_body}{cp\-Body} $\ast$body, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} dt)}\label{group__cp_body_ga4f84c8fc20fcb9918d1553e6dc29ffbd}
+
+\begin{DoxyCompactList}\small\item\em Rigid body position update function type. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{group__cp_body_gafd1d958a322b86c54e6b0a7109e4b0b9}{cp\-Component\-Node} \hyperlink{group__cp_body_gafd1d958a322b86c54e6b0a7109e4b0b9}{cp\-Component\-Node}
+\item 
+\hypertarget{group__cp_body_ga2a71c91a297ece9ab06101df4b726645}{typedef void($\ast$ \hyperlink{group__cp_body_ga2a71c91a297ece9ab06101df4b726645}{cp\-Body\-Shape\-Iterator\-Func} )(\hyperlink{structcp_body}{cp\-Body} $\ast$body, \hyperlink{structcp_shape}{cp\-Shape} $\ast$shape, void $\ast$data)}\label{group__cp_body_ga2a71c91a297ece9ab06101df4b726645}
+
+\begin{DoxyCompactList}\small\item\em Body/shape iterator callback function type. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_body_ga79c674e7767d6ff8769a9676404f589b}{typedef void($\ast$ \hyperlink{group__cp_body_ga79c674e7767d6ff8769a9676404f589b}{cp\-Body\-Constraint\-Iterator\-Func} )(\hyperlink{structcp_body}{cp\-Body} $\ast$body, \hyperlink{structcp_constraint}{cp\-Constraint} $\ast$constraint, void $\ast$data)}\label{group__cp_body_ga79c674e7767d6ff8769a9676404f589b}
+
+\begin{DoxyCompactList}\small\item\em Body/constraint iterator callback function type. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_body_gacdd17a9f98ca6e6c088b72f7d5f32ea3}{typedef void($\ast$ \hyperlink{group__cp_body_gacdd17a9f98ca6e6c088b72f7d5f32ea3}{cp\-Body\-Arbiter\-Iterator\-Func} )(\hyperlink{structcp_body}{cp\-Body} $\ast$body, \hyperlink{structcp_arbiter}{cp\-Arbiter} $\ast$arbiter, void $\ast$data)}\label{group__cp_body_gacdd17a9f98ca6e6c088b72f7d5f32ea3}
+
+\begin{DoxyCompactList}\small\item\em Body/arbiter iterator callback function type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__cp_body_gadd622b6503c89fa5a8c0f43a0917d2a2}{\hyperlink{structcp_body}{cp\-Body} $\ast$ \hyperlink{group__cp_body_gadd622b6503c89fa5a8c0f43a0917d2a2}{cp\-Body\-Alloc} (void)}\label{group__cp_body_gadd622b6503c89fa5a8c0f43a0917d2a2}
+
+\begin{DoxyCompactList}\small\item\em Allocate a \hyperlink{structcp_body}{cp\-Body}. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_body_gad91c665ae18b191e8de5f59e1e20eea9}{\hyperlink{structcp_body}{cp\-Body} $\ast$ \hyperlink{group__cp_body_gad91c665ae18b191e8de5f59e1e20eea9}{cp\-Body\-Init} (\hyperlink{structcp_body}{cp\-Body} $\ast$body, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} m, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} i)}\label{group__cp_body_gad91c665ae18b191e8de5f59e1e20eea9}
+
+\begin{DoxyCompactList}\small\item\em Initialize a \hyperlink{structcp_body}{cp\-Body}. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_body_ga0d0be6b47dee41b4989f5feebc7a5ce4}{\hyperlink{structcp_body}{cp\-Body} $\ast$ \hyperlink{group__cp_body_ga0d0be6b47dee41b4989f5feebc7a5ce4}{cp\-Body\-New} (\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} m, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} i)}\label{group__cp_body_ga0d0be6b47dee41b4989f5feebc7a5ce4}
+
+\begin{DoxyCompactList}\small\item\em Allocate and initialize a \hyperlink{structcp_body}{cp\-Body}. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_body_gad9c3073c3fc9f0c0acd29a32761868c2}{\hyperlink{structcp_body}{cp\-Body} $\ast$ \hyperlink{group__cp_body_gad9c3073c3fc9f0c0acd29a32761868c2}{cp\-Body\-Init\-Static} (\hyperlink{structcp_body}{cp\-Body} $\ast$body)}\label{group__cp_body_gad9c3073c3fc9f0c0acd29a32761868c2}
+
+\begin{DoxyCompactList}\small\item\em Initialize a static \hyperlink{structcp_body}{cp\-Body}. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_body_gaef08bd4d7afd793e859f5d7b1001344c}{\hyperlink{structcp_body}{cp\-Body} $\ast$ \hyperlink{group__cp_body_gaef08bd4d7afd793e859f5d7b1001344c}{cp\-Body\-New\-Static} (void)}\label{group__cp_body_gaef08bd4d7afd793e859f5d7b1001344c}
+
+\begin{DoxyCompactList}\small\item\em Allocate and initialize a static \hyperlink{structcp_body}{cp\-Body}. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_body_ga7691fd53f979e5f1e23fbdbc7b0ab31a}{void \hyperlink{group__cp_body_ga7691fd53f979e5f1e23fbdbc7b0ab31a}{cp\-Body\-Destroy} (\hyperlink{structcp_body}{cp\-Body} $\ast$body)}\label{group__cp_body_ga7691fd53f979e5f1e23fbdbc7b0ab31a}
+
+\begin{DoxyCompactList}\small\item\em Destroy a \hyperlink{structcp_body}{cp\-Body}. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_body_gab122c9fc675a7f2cb6a644a1532c60f7}{void \hyperlink{group__cp_body_gab122c9fc675a7f2cb6a644a1532c60f7}{cp\-Body\-Free} (\hyperlink{structcp_body}{cp\-Body} $\ast$body)}\label{group__cp_body_gab122c9fc675a7f2cb6a644a1532c60f7}
+
+\begin{DoxyCompactList}\small\item\em Destroy and free a \hyperlink{structcp_body}{cp\-Body}. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_body_ga21607229d9fd49281a7a94a1b09664de}{void \hyperlink{group__cp_body_ga21607229d9fd49281a7a94a1b09664de}{cp\-Body\-Sanity\-Check} (\hyperlink{structcp_body}{cp\-Body} $\ast$body)}\label{group__cp_body_ga21607229d9fd49281a7a94a1b09664de}
+
+\begin{DoxyCompactList}\small\item\em Check that the properties of a body is sane. (Only in debug mode) \end{DoxyCompactList}\item 
+\hypertarget{group__cp_body_ga9f6b2af6329a2b5c32712576719d357a}{void \hyperlink{group__cp_body_ga9f6b2af6329a2b5c32712576719d357a}{cp\-Body\-Activate} (\hyperlink{structcp_body}{cp\-Body} $\ast$body)}\label{group__cp_body_ga9f6b2af6329a2b5c32712576719d357a}
+
+\begin{DoxyCompactList}\small\item\em Wake up a sleeping or idle body. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_body_gaad8cfcc01f2a5a4ab4e98c49e2442063}{void \hyperlink{group__cp_body_gaad8cfcc01f2a5a4ab4e98c49e2442063}{cp\-Body\-Activate\-Static} (\hyperlink{structcp_body}{cp\-Body} $\ast$body, \hyperlink{structcp_shape}{cp\-Shape} $\ast$filter)}\label{group__cp_body_gaad8cfcc01f2a5a4ab4e98c49e2442063}
+
+\begin{DoxyCompactList}\small\item\em Wake up any sleeping or idle bodies touching a static body. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_body_ga7308ff2bd6dc2832230636c02c682e82}{void \hyperlink{group__cp_body_ga7308ff2bd6dc2832230636c02c682e82}{cp\-Body\-Sleep} (\hyperlink{structcp_body}{cp\-Body} $\ast$body)}\label{group__cp_body_ga7308ff2bd6dc2832230636c02c682e82}
+
+\begin{DoxyCompactList}\small\item\em Force a body to fall asleep immediately. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_body_gaaa53f3fb37c705c4fbbd5b607f29c721}{void \hyperlink{group__cp_body_gaaa53f3fb37c705c4fbbd5b607f29c721}{cp\-Body\-Sleep\-With\-Group} (\hyperlink{structcp_body}{cp\-Body} $\ast$body, \hyperlink{structcp_body}{cp\-Body} $\ast$group)}\label{group__cp_body_gaaa53f3fb37c705c4fbbd5b607f29c721}
+
+\begin{DoxyCompactList}\small\item\em Force a body to fall asleep immediately along with other bodies in a group. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_body_gab7a0675765d7fe5c6b756d106236bb20}{{\bfseries C\-P\-\_\-\-Define\-Body\-Struct\-Getter} (\hyperlink{structcp_space}{cp\-Space} $\ast$, C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E(space), Space) \hyperlink{group__cp_body_gab5b6d43e0e8bdfbdad54fddc6cbb7795}{C\-P\-\_\-\-Define\-Body\-Struct\-Getter}(\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float}}\label{group__cp_body_gab7a0675765d7fe5c6b756d106236bb20}
+
+\item 
+\hypertarget{group__cp_body_gab9c94b87111398a5968f4ce7e94e7ff9}{Mass void \hyperlink{group__cp_body_gab9c94b87111398a5968f4ce7e94e7ff9}{cp\-Body\-Set\-Mass} (\hyperlink{structcp_body}{cp\-Body} $\ast$body, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} m)}\label{group__cp_body_gab9c94b87111398a5968f4ce7e94e7ff9}
+
+\begin{DoxyCompactList}\small\item\em Set the mass of a body. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_body_ga930b59d1f8ae4688e7b56c9fdacfbbec}{\hyperlink{group__cp_body_ga930b59d1f8ae4688e7b56c9fdacfbbec}{C\-P\-\_\-\-Define\-Body\-Struct\-Getter} (\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float}, i, Moment) void cp\-Body\-Set\-Moment(\hyperlink{structcp_body}{cp\-Body} $\ast$body}\label{group__cp_body_ga930b59d1f8ae4688e7b56c9fdacfbbec}
+
+\begin{DoxyCompactList}\small\item\em Set the moment of a body. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_body_ga72fdbae73f60586e69a6af11fd0a3c49}{\hyperlink{group__cp_body_ga72fdbae73f60586e69a6af11fd0a3c49}{C\-P\-\_\-\-Define\-Body\-Struct\-Getter} (\hyperlink{structcp_vect}{cp\-Vect}, p, Pos) void cp\-Body\-Set\-Pos(\hyperlink{structcp_body}{cp\-Body} $\ast$body}\label{group__cp_body_ga72fdbae73f60586e69a6af11fd0a3c49}
+
+\begin{DoxyCompactList}\small\item\em Set the position of a body. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_body_ga1ea4ebb9a7e560390eb8fd945eadb9ac}{{\bfseries C\-P\-\_\-\-Define\-Body\-Struct\-Property} (\hyperlink{structcp_vect}{cp\-Vect}, v, Vel) C\-P\-\_\-\-Define\-Body\-Struct\-Property(\hyperlink{structcp_vect}{cp\-Vect}}\label{group__cp_body_ga1ea4ebb9a7e560390eb8fd945eadb9ac}
+
+\item 
+\hypertarget{group__cp_body_gab5b6d43e0e8bdfbdad54fddc6cbb7795}{Force \hyperlink{group__cp_body_gab5b6d43e0e8bdfbdad54fddc6cbb7795}{C\-P\-\_\-\-Define\-Body\-Struct\-Getter} (\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float}, a, Angle) void cp\-Body\-Set\-Angle(\hyperlink{structcp_body}{cp\-Body} $\ast$body}\label{group__cp_body_gab5b6d43e0e8bdfbdad54fddc6cbb7795}
+
+\begin{DoxyCompactList}\small\item\em Set the angle of a body. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_body_ga7e3da7eca5ede0bb23269a43cfa99a31}{{\bfseries C\-P\-\_\-\-Define\-Body\-Struct\-Property} (\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float}, w, Ang\-Vel) C\-P\-\_\-\-Define\-Body\-Struct\-Property(\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float}}\label{group__cp_body_ga7e3da7eca5ede0bb23269a43cfa99a31}
+
+\item 
+\hypertarget{group__cp_body_ga9b8827fea3da8a9313e6deb15732b5d0}{Torque {\bfseries C\-P\-\_\-\-Define\-Body\-Struct\-Getter} (\hyperlink{structcp_vect}{cp\-Vect}, rot, Rot) C\-P\-\_\-\-Define\-Body\-Struct\-Property(\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float}}\label{group__cp_body_ga9b8827fea3da8a9313e6deb15732b5d0}
+
+\item 
+\hypertarget{group__cp_body_ga6eed95c1d4bc6b9a7b8bba71ab550ccc}{Torque Vel\-Limit {\bfseries C\-P\-\_\-\-Define\-Body\-Struct\-Property} (\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float}, w\-\_\-limit, Ang\-Vel\-Limit) C\-P\-\_\-\-Define\-Body\-Struct\-Property(\hyperlink{group__basic_types_ga2ac2c3c31e21893941f9e4f8ee279447}{cp\-Data\-Pointer}}\label{group__cp_body_ga6eed95c1d4bc6b9a7b8bba71ab550ccc}
+
+\item 
+\hypertarget{group__cp_body_ga2fad56fa6ea09ec1f1ce5811c102505a}{Torque Vel\-Limit User\-Data void \hyperlink{group__cp_body_ga2fad56fa6ea09ec1f1ce5811c102505a}{cp\-Body\-Update\-Velocity} (\hyperlink{structcp_body}{cp\-Body} $\ast$body, \hyperlink{structcp_vect}{cp\-Vect} gravity, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} damping, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} dt)}\label{group__cp_body_ga2fad56fa6ea09ec1f1ce5811c102505a}
+
+\begin{DoxyCompactList}\small\item\em Default Integration functions. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_body_gaa42e82480140a790aabbe72b71ee929b}{void {\bfseries cp\-Body\-Update\-Position} (\hyperlink{structcp_body}{cp\-Body} $\ast$body, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} dt)}\label{group__cp_body_gaa42e82480140a790aabbe72b71ee929b}
+
+\item 
+\hypertarget{group__cp_body_ga55cecf4d82aa37cd626c2c208de48801}{void \hyperlink{group__cp_body_ga55cecf4d82aa37cd626c2c208de48801}{cp\-Body\-Reset\-Forces} (\hyperlink{structcp_body}{cp\-Body} $\ast$body)}\label{group__cp_body_ga55cecf4d82aa37cd626c2c208de48801}
+
+\begin{DoxyCompactList}\small\item\em Set the forces and torque or a body to zero. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_body_ga201b11a766af3d8471ceaa3ae2ae85c9}{void \hyperlink{group__cp_body_ga201b11a766af3d8471ceaa3ae2ae85c9}{cp\-Body\-Apply\-Force} (\hyperlink{structcp_body}{cp\-Body} $\ast$body, const \hyperlink{structcp_vect}{cp\-Vect} f, const \hyperlink{structcp_vect}{cp\-Vect} r)}\label{group__cp_body_ga201b11a766af3d8471ceaa3ae2ae85c9}
+
+\begin{DoxyCompactList}\small\item\em Apply an force (in world coordinates) to the body at a point relative to the center of gravity (also in world coordinates). \end{DoxyCompactList}\item 
+\hypertarget{group__cp_body_ga1759ee27171704c75564ca3a414cf730}{void \hyperlink{group__cp_body_ga1759ee27171704c75564ca3a414cf730}{cp\-Body\-Apply\-Impulse} (\hyperlink{structcp_body}{cp\-Body} $\ast$body, const \hyperlink{structcp_vect}{cp\-Vect} j, const \hyperlink{structcp_vect}{cp\-Vect} r)}\label{group__cp_body_ga1759ee27171704c75564ca3a414cf730}
+
+\begin{DoxyCompactList}\small\item\em Apply an impulse (in world coordinates) to the body at a point relative to the center of gravity (also in world coordinates). \end{DoxyCompactList}\item 
+\hypertarget{group__cp_body_gad805b6e8a23a49428642295238d7bb9b}{\hyperlink{structcp_vect}{cp\-Vect} \hyperlink{group__cp_body_gad805b6e8a23a49428642295238d7bb9b}{cp\-Body\-Get\-Vel\-At\-World\-Point} (\hyperlink{structcp_body}{cp\-Body} $\ast$body, \hyperlink{structcp_vect}{cp\-Vect} point)}\label{group__cp_body_gad805b6e8a23a49428642295238d7bb9b}
+
+\begin{DoxyCompactList}\small\item\em Get the velocity on a body (in world units) at a point on the body in world coordinates. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_body_ga00ceb0eede2419e84eb7e4b107fa0bd3}{\hyperlink{structcp_vect}{cp\-Vect} \hyperlink{group__cp_body_ga00ceb0eede2419e84eb7e4b107fa0bd3}{cp\-Body\-Get\-Vel\-At\-Local\-Point} (\hyperlink{structcp_body}{cp\-Body} $\ast$body, \hyperlink{structcp_vect}{cp\-Vect} point)}\label{group__cp_body_ga00ceb0eede2419e84eb7e4b107fa0bd3}
+
+\begin{DoxyCompactList}\small\item\em Get the velocity on a body (in world units) at a point on the body in local coordinates. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_body_ga51f56b6099dc8321ce284ecc6241b285}{void \hyperlink{group__cp_body_ga51f56b6099dc8321ce284ecc6241b285}{cp\-Body\-Each\-Shape} (\hyperlink{structcp_body}{cp\-Body} $\ast$body, \hyperlink{group__cp_body_ga2a71c91a297ece9ab06101df4b726645}{cp\-Body\-Shape\-Iterator\-Func} func, void $\ast$data)}\label{group__cp_body_ga51f56b6099dc8321ce284ecc6241b285}
+
+\begin{DoxyCompactList}\small\item\em Call {\ttfamily func} once for each shape attached to {\ttfamily body} and added to the space. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_body_ga377e83841ec8a67ca93685cb0bd6525e}{void \hyperlink{group__cp_body_ga377e83841ec8a67ca93685cb0bd6525e}{cp\-Body\-Each\-Constraint} (\hyperlink{structcp_body}{cp\-Body} $\ast$body, \hyperlink{group__cp_body_ga79c674e7767d6ff8769a9676404f589b}{cp\-Body\-Constraint\-Iterator\-Func} func, void $\ast$data)}\label{group__cp_body_ga377e83841ec8a67ca93685cb0bd6525e}
+
+\begin{DoxyCompactList}\small\item\em Call {\ttfamily func} once for each constraint attached to {\ttfamily body} and added to the space. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_body_gacc958b3adad795e718682bea830d4135}{void \hyperlink{group__cp_body_gacc958b3adad795e718682bea830d4135}{cp\-Body\-Each\-Arbiter} (\hyperlink{structcp_body}{cp\-Body} $\ast$body, \hyperlink{group__cp_body_gacdd17a9f98ca6e6c088b72f7d5f32ea3}{cp\-Body\-Arbiter\-Iterator\-Func} func, void $\ast$data)}\label{group__cp_body_gacc958b3adad795e718682bea830d4135}
+
+\begin{DoxyCompactList}\small\item\em Call {\ttfamily func} once for each arbiter that is currently active on the body. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__cp_body_gab3cd915d758008bd19d0f2428fbb354a}{{\bfseries m}}\label{group__cp_body_gab3cd915d758008bd19d0f2428fbb354a}
+
+\item 
+\hypertarget{group__cp_body_gac8936188af0c1d2f8b9d0cd25fde43b2}{\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} {\bfseries i}}\label{group__cp_body_gac8936188af0c1d2f8b9d0cd25fde43b2}
+
+\item 
+\hypertarget{group__cp_body_gac6f6a32d60dacd7e21e11cfe946e2b37}{\hyperlink{structcp_vect}{cp\-Vect} {\bfseries pos}}\label{group__cp_body_gac6f6a32d60dacd7e21e11cfe946e2b37}
+
+\item 
+\hypertarget{group__cp_body_ga633de4b0c14ca52ea2432a3c8a5c4c31}{{\bfseries f}}\label{group__cp_body_ga633de4b0c14ca52ea2432a3c8a5c4c31}
+
+\item 
+\hypertarget{group__cp_body_ga49306e2f9579c9e38c3ba6624731927a}{Force \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} {\bfseries a}}\label{group__cp_body_ga49306e2f9579c9e38c3ba6624731927a}
+
+\item 
+\hypertarget{group__cp_body_gaaccc9105df5383111407fd5b41255e23}{{\bfseries t}}\label{group__cp_body_gaaccc9105df5383111407fd5b41255e23}
+
+\item 
+\hypertarget{group__cp_body_gaf341ccd8029e7ae2c8ee67e57e9582ad}{Torque {\bfseries v\-\_\-limit}}\label{group__cp_body_gaf341ccd8029e7ae2c8ee67e57e9582ad}
+
+\item 
+\hypertarget{group__cp_body_gad5671404902c80eea7f71eeb4628d34e}{Torque Vel\-Limit {\bfseries data}}\label{group__cp_body_gad5671404902c80eea7f71eeb4628d34e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Chipmunk's rigid body type. Rigid bodies hold the physical properties of an object like it's mass, and position and velocity of it's center of gravity. They don't have an shape on their own. They are given a shape by creating collision shapes (\hyperlink{structcp_shape}{cp\-Shape}) that point to the body. 
+
+\subsection{Define Documentation}
+\hypertarget{group__cp_body_gaa3f9cc97ed101b1e8f3100db601bb9e8}{\index{cp\-Body@{cp\-Body}!C\-P\-\_\-\-Define\-Body\-Struct\-Property@{C\-P\-\_\-\-Define\-Body\-Struct\-Property}}
+\index{C\-P\-\_\-\-Define\-Body\-Struct\-Property@{C\-P\-\_\-\-Define\-Body\-Struct\-Property}!cpBody@{cp\-Body}}
+\subsubsection[{C\-P\-\_\-\-Define\-Body\-Struct\-Property}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-\_\-\-Define\-Body\-Struct\-Property(
+\begin{DoxyParamCaption}
+\item[{}]{type, }
+\item[{}]{member, }
+\item[{}]{name}
+\end{DoxyParamCaption}
+)}}\label{group__cp_body_gaa3f9cc97ed101b1e8f3100db601bb9e8}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+CP_DefineBodyStructGetter(type, member, name) \
+CP_DefineBodyStructSetter(type, member, name)
+\end{DoxyCode}
+\hypertarget{group__cp_body_ga3a4a3ce737d391609355e0d9ba5fb2b6}{\index{cp\-Body@{cp\-Body}!C\-P\-\_\-\-Define\-Body\-Struct\-Setter@{C\-P\-\_\-\-Define\-Body\-Struct\-Setter}}
+\index{C\-P\-\_\-\-Define\-Body\-Struct\-Setter@{C\-P\-\_\-\-Define\-Body\-Struct\-Setter}!cpBody@{cp\-Body}}
+\subsubsection[{C\-P\-\_\-\-Define\-Body\-Struct\-Setter}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-\_\-\-Define\-Body\-Struct\-Setter(
+\begin{DoxyParamCaption}
+\item[{}]{type, }
+\item[{}]{member, }
+\item[{}]{name}
+\end{DoxyParamCaption}
+)}}\label{group__cp_body_ga3a4a3ce737d391609355e0d9ba5fb2b6}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+static inline void cpBodySet##name(cpBody *body, const type value){ \
+        cpBodyActivate(body); \
+        body->member = value; \
+        cpBodyAssertSane(body); \
+}
+\end{DoxyCode}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{group__cp_body_gafd1d958a322b86c54e6b0a7109e4b0b9}{\index{cp\-Body@{cp\-Body}!cp\-Component\-Node@{cp\-Component\-Node}}
+\index{cp\-Component\-Node@{cp\-Component\-Node}!cpBody@{cp\-Body}}
+\subsubsection[{cp\-Component\-Node}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf cp\-Component\-Node}  {\bf cp\-Component\-Node}}}\label{group__cp_body_gafd1d958a322b86c54e6b0a7109e4b0b9}
+Used internally to track information on the collision graph. 

@@ -1,0 +1,81 @@
+\hypertarget{class_ray_cast_any_callback}{\section{Ray\-Cast\-Any\-Callback Class Reference}
+\label{class_ray_cast_any_callback}\index{Ray\-Cast\-Any\-Callback@{Ray\-Cast\-Any\-Callback}}
+}
+Inheritance diagram for Ray\-Cast\-Any\-Callback\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ray_cast_any_callback}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float32 \hyperlink{class_ray_cast_any_callback_a27492b490537b0196e868670f986d1d3}{Report\-Fixture} (\hyperlink{classb2_fixture}{b2\-Fixture} $\ast$fixture, const \hyperlink{structb2_vec2}{b2\-Vec2} \&point, const \hyperlink{structb2_vec2}{b2\-Vec2} \&normal, float32 fraction)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_ray_cast_any_callback_a25ecb156d955f6cc54cf35d5f705bf38}{bool {\bfseries m\-\_\-hit}}\label{class_ray_cast_any_callback_a25ecb156d955f6cc54cf35d5f705bf38}
+
+\item 
+\hypertarget{class_ray_cast_any_callback_a983e3b8036ca5727514e5e95229f12f2}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-point}}\label{class_ray_cast_any_callback_a983e3b8036ca5727514e5e95229f12f2}
+
+\item 
+\hypertarget{class_ray_cast_any_callback_adcf5bde1bd5de121f6ed5d0b4f7aa20d}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-normal}}\label{class_ray_cast_any_callback_adcf5bde1bd5de121f6ed5d0b4f7aa20d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_ray_cast_any_callback_a27492b490537b0196e868670f986d1d3}{\index{Ray\-Cast\-Any\-Callback@{Ray\-Cast\-Any\-Callback}!Report\-Fixture@{Report\-Fixture}}
+\index{Report\-Fixture@{Report\-Fixture}!RayCastAnyCallback@{Ray\-Cast\-Any\-Callback}}
+\subsubsection[{Report\-Fixture}]{\setlength{\rightskip}{0pt plus 5cm}float32 {\bf Ray\-Cast\-Any\-Callback\-::\-Report\-Fixture} (
+\begin{DoxyParamCaption}
+\item[{{\bf b2\-Fixture} $\ast$}]{fixture, }
+\item[{const {\bf b2\-Vec2} \&}]{point, }
+\item[{const {\bf b2\-Vec2} \&}]{normal, }
+\item[{float32}]{fraction}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_ray_cast_any_callback_a27492b490537b0196e868670f986d1d3}
+Called for each fixture found in the query. You control how the ray cast proceeds by returning a float\-: return -\/1\-: ignore this fixture and continue return 0\-: terminate the ray cast return fraction\-: clip the ray to this point return 1\-: don't clip the ray and continue 
+\begin{DoxyParams}{Parameters}
+{\em fixture} & the fixture hit by the ray \\
+\hline
+{\em point} & the point of initial intersection \\
+\hline
+{\em normal} & the normal vector at the point of intersection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 to filter, 0 to terminate, fraction to clip the ray for closest hit, 1 to continue 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classb2_ray_cast_callback_a658d5c8e89e0c73230cc8bddade4f3a4}{b2\-Ray\-Cast\-Callback}.
+
+
+\begin{DoxyCode}
+        {
+                b2Body* body = fixture->GetBody();
+                void* userData = body->GetUserData();
+                if (userData)
+                {
+                        int32 index = *(int32*)userData;
+                        if (index == 0)
+                        {
+                                // filter
+                                return -1.0f;
+                        }
+                }
+
+                m_hit = true;
+                m_point = point;
+                m_normal = normal;
+                return 0.0f;
+        }
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Testbed/\-Tests/Ray\-Cast.\-h\end{DoxyCompactItemize}

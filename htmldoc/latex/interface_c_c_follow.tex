@@ -1,0 +1,195 @@
+\hypertarget{interface_c_c_follow}{\section{C\-C\-Follow Class Reference}
+\label{interface_c_c_follow}\index{C\-C\-Follow@{C\-C\-Follow}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action.\-h$>$}
+
+Inheritance diagram for C\-C\-Follow\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_c_c_follow}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_follow_ad7aacfebff2323e38f0268293890c59e}{init\-With\-Target\-:}
+\item 
+(id) -\/ \hyperlink{interface_c_c_follow_a2c3ec0bcb450878f417b10a0dd751e25}{init\-With\-Target\-:world\-Boundary\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_follow_a38cffdc56dc7d0a1b1942f33133e3fb4}{action\-With\-Target\-:}
+\item 
+(id) + \hyperlink{interface_c_c_follow_aa431e577396f063fcb032c66539c98ca}{action\-With\-Target\-:world\-Boundary\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_follow_ae43821a33173744db154c09f9658028f}{\hyperlink{class_c_c_node}{C\-C\-Node} $\ast$ {\bfseries followed\-Node\-\_\-}}\label{interface_c_c_follow_ae43821a33173744db154c09f9658028f}
+
+\item 
+\hypertarget{interface_c_c_follow_a9c8ad8b15485a739a657604aa3699974}{B\-O\-O\-L {\bfseries boundary\-Fully\-Covered}}\label{interface_c_c_follow_a9c8ad8b15485a739a657604aa3699974}
+
+\item 
+\hypertarget{interface_c_c_follow_aed502a2e5fe6d2a11eb281242aee70f1}{C\-G\-Point {\bfseries half\-Screen\-Size}}\label{interface_c_c_follow_aed502a2e5fe6d2a11eb281242aee70f1}
+
+\item 
+\hypertarget{interface_c_c_follow_a8c666a0f9b42d848b244e9494dddadf1}{C\-G\-Point {\bfseries full\-Screen\-Size}}\label{interface_c_c_follow_a8c666a0f9b42d848b244e9494dddadf1}
+
+\item 
+\hypertarget{interface_c_c_follow_a0afe2aea3a0fe017812e20d628e4766c}{float {\bfseries left\-Boundary}}\label{interface_c_c_follow_a0afe2aea3a0fe017812e20d628e4766c}
+
+\item 
+\hypertarget{interface_c_c_follow_a052c8688d8514db767680fc85a22aff4}{float {\bfseries right\-Boundary}}\label{interface_c_c_follow_a052c8688d8514db767680fc85a22aff4}
+
+\item 
+\hypertarget{interface_c_c_follow_ae31fc04f9746b6224b3bfddaa0f48721}{float {\bfseries top\-Boundary}}\label{interface_c_c_follow_ae31fc04f9746b6224b3bfddaa0f48721}
+
+\item 
+\hypertarget{interface_c_c_follow_ab064431de84b5714079b8497947905be}{float {\bfseries bottom\-Boundary}}\label{interface_c_c_follow_ab064431de84b5714079b8497947905be}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+B\-O\-O\-L \hyperlink{interface_c_c_follow_a2e8c9c693c6996f161a091b1dd6bf144}{boundary\-Set}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_follow}{C\-C\-Follow} is an action that \char`\"{}follows\char`\"{} a node.
+
+Eg\-: \mbox{[}layer run\-Action\-: \mbox{[}\hyperlink{interface_c_c_follow}{C\-C\-Follow} action\-With\-Target\-:hero\mbox{]}\mbox{]};
+
+Instead of using \hyperlink{interface_c_c_camera}{C\-C\-Camera} as a \char`\"{}follower\char`\"{}, use this action instead. \begin{DoxySince}{Since}
+v0.\-99.\-2 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_follow_a38cffdc56dc7d0a1b1942f33133e3fb4}{\index{C\-C\-Follow@{C\-C\-Follow}!action\-With\-Target\-:@{action\-With\-Target\-:}}
+\index{action\-With\-Target\-:@{action\-With\-Target\-:}!CCFollow@{C\-C\-Follow}}
+\subsubsection[{action\-With\-Target\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Target\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Node} $\ast$)}]{followed\-Node}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_follow_a38cffdc56dc7d0a1b1942f33133e3fb4}
+creates the action with no boundary set 
+\begin{DoxyCode}
+                      :(CCNode *) fNode
+{
+        return [[[self alloc] initWithTarget:fNode] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_follow_aa431e577396f063fcb032c66539c98ca}{\index{C\-C\-Follow@{C\-C\-Follow}!action\-With\-Target\-:world\-Boundary\-:@{action\-With\-Target\-:world\-Boundary\-:}}
+\index{action\-With\-Target\-:world\-Boundary\-:@{action\-With\-Target\-:world\-Boundary\-:}!CCFollow@{C\-C\-Follow}}
+\subsubsection[{action\-With\-Target\-:world\-Boundary\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Target\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Node} $\ast$)}]{followed\-Node}
+\item[{worldBoundary:(C\-G\-Rect)}]{rect}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_follow_aa431e577396f063fcb032c66539c98ca}
+creates the action with a set boundary 
+\begin{DoxyCode}
+                      :(CCNode *) fNode worldBoundary:(CGRect)rect
+{
+        return [[[self alloc] initWithTarget:fNode worldBoundary:rect] 
+      autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_follow_ad7aacfebff2323e38f0268293890c59e}{\index{C\-C\-Follow@{C\-C\-Follow}!init\-With\-Target\-:@{init\-With\-Target\-:}}
+\index{init\-With\-Target\-:@{init\-With\-Target\-:}!CCFollow@{C\-C\-Follow}}
+\subsubsection[{init\-With\-Target\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Target\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Node} $\ast$)}]{followed\-Node}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_follow_ad7aacfebff2323e38f0268293890c59e}
+initializes the action 
+\begin{DoxyCode}
+                    :(CCNode *)fNode
+{
+        if( (self=[super init]) ) {
+
+                followedNode_ = [fNode retain];
+                boundarySet = FALSE;
+                boundaryFullyCovered = FALSE;
+
+                CGSize s = [[CCDirector sharedDirector] winSize];
+                fullScreenSize = CGPointMake(s.width, s.height);
+                halfScreenSize = ccpMult(fullScreenSize, .5f);
+        }
+
+        return self;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_follow_a2c3ec0bcb450878f417b10a0dd751e25}{\index{C\-C\-Follow@{C\-C\-Follow}!init\-With\-Target\-:world\-Boundary\-:@{init\-With\-Target\-:world\-Boundary\-:}}
+\index{init\-With\-Target\-:world\-Boundary\-:@{init\-With\-Target\-:world\-Boundary\-:}!CCFollow@{C\-C\-Follow}}
+\subsubsection[{init\-With\-Target\-:world\-Boundary\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Target\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Node} $\ast$)}]{followed\-Node}
+\item[{worldBoundary:(C\-G\-Rect)}]{rect}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_follow_a2c3ec0bcb450878f417b10a0dd751e25}
+initializes the action with a set boundary 
+\begin{DoxyCode}
+                    :(CCNode *)fNode worldBoundary:(CGRect)rect
+{
+        if( (self=[super init]) ) {
+
+                followedNode_ = [fNode retain];
+                boundarySet = TRUE;
+                boundaryFullyCovered = FALSE;
+
+                CGSize winSize = [[CCDirector sharedDirector] winSize];
+                fullScreenSize = CGPointMake(winSize.width, winSize.height);
+                halfScreenSize = ccpMult(fullScreenSize, .5f);
+
+                leftBoundary = -((rect.origin.x+rect.size.width) - 
+      fullScreenSize.x);
+                rightBoundary = -rect.origin.x ;
+                topBoundary = -rect.origin.y;
+                bottomBoundary = -((rect.origin.y+rect.size.height) - 
+      fullScreenSize.y);
+
+                if(rightBoundary < leftBoundary)
+                {
+                        // screen width is larger than world's boundary width
+                        //set both in the middle of the world
+                        rightBoundary = leftBoundary = (leftBoundary + 
+      rightBoundary) / 2;
+                }
+                if(topBoundary < bottomBoundary)
+                {
+                        // screen width is larger than world's boundary width
+                        //set both in the middle of the world
+                        topBoundary = bottomBoundary = (topBoundary + 
+      bottomBoundary) / 2;
+                }
+
+                if( (topBoundary == bottomBoundary) && (leftBoundary == 
+      rightBoundary) )
+                        boundaryFullyCovered = TRUE;
+        }
+
+        return self;
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_follow_a2e8c9c693c6996f161a091b1dd6bf144}{\index{C\-C\-Follow@{C\-C\-Follow}!boundary\-Set@{boundary\-Set}}
+\index{boundary\-Set@{boundary\-Set}!CCFollow@{C\-C\-Follow}}
+\subsubsection[{boundary\-Set}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) {\bf boundary\-Set}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_follow_a2e8c9c693c6996f161a091b1dd6bf144}
+alter behavior -\/ turn on/off boundary 
+
+Referenced by init\-With\-Target\-:, and init\-With\-Target\-:world\-Boundary\-:.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action.\-m\end{DoxyCompactItemize}

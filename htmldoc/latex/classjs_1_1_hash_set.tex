@@ -1,0 +1,190 @@
+\hypertarget{classjs_1_1_hash_set}{\section{js\-:\-:Hash\-Set$<$ T, Hash\-Policy, Alloc\-Policy $>$ Class Template Reference}
+\label{classjs_1_1_hash_set}\index{js\-::\-Hash\-Set$<$ T, Hash\-Policy, Alloc\-Policy $>$@{js\-::\-Hash\-Set$<$ T, Hash\-Policy, Alloc\-Policy $>$}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bfseries Set\-Ops}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classjs_1_1_hash_set_ad8af6afdd83de534dc6f065ef1701e79}{typedef Impl\-::\-Ptr {\bfseries Ptr}}\label{classjs_1_1_hash_set_ad8af6afdd83de534dc6f065ef1701e79}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a50ae9f6f13efb08cfe14a0504f0e5854}{typedef Impl\-::\-Add\-Ptr {\bfseries Add\-Ptr}}\label{classjs_1_1_hash_set_a50ae9f6f13efb08cfe14a0504f0e5854}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_abc96e4d661e39f63b92fd2a3f80bdf8b}{typedef Impl\-::\-Range {\bfseries Range}}\label{classjs_1_1_hash_set_abc96e4d661e39f63b92fd2a3f80bdf8b}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a14cdbf409caa0e654e9b59d14ba7c0d4}{typedef Impl\-::\-Enum {\bfseries Enum}}\label{classjs_1_1_hash_set_a14cdbf409caa0e654e9b59d14ba7c0d4}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_ad8af6afdd83de534dc6f065ef1701e79}{typedef Impl\-::\-Ptr {\bfseries Ptr}}\label{classjs_1_1_hash_set_ad8af6afdd83de534dc6f065ef1701e79}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a50ae9f6f13efb08cfe14a0504f0e5854}{typedef Impl\-::\-Add\-Ptr {\bfseries Add\-Ptr}}\label{classjs_1_1_hash_set_a50ae9f6f13efb08cfe14a0504f0e5854}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_abc96e4d661e39f63b92fd2a3f80bdf8b}{typedef Impl\-::\-Range {\bfseries Range}}\label{classjs_1_1_hash_set_abc96e4d661e39f63b92fd2a3f80bdf8b}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a14cdbf409caa0e654e9b59d14ba7c0d4}{typedef Impl\-::\-Enum {\bfseries Enum}}\label{classjs_1_1_hash_set_a14cdbf409caa0e654e9b59d14ba7c0d4}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classjs_1_1_hash_set_ab7de2c02a232efe1251293890d701b1e}{{\bfseries Hash\-Set} (\hyperlink{class_alloc_policy}{Alloc\-Policy} a=\hyperlink{class_alloc_policy}{Alloc\-Policy}())}\label{classjs_1_1_hash_set_ab7de2c02a232efe1251293890d701b1e}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_aba80e6d44bc36f976720c90cf1be14f5}{bool {\bfseries init} (uint32\-\_\-t len=s\-Default\-Init\-Size)}\label{classjs_1_1_hash_set_aba80e6d44bc36f976720c90cf1be14f5}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a04e8b0ba843cd722987a83916d1d8773}{bool {\bfseries initialized} () const }\label{classjs_1_1_hash_set_a04e8b0ba843cd722987a83916d1d8773}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_add2d2158166963f0a1fdee54bac62beb}{Ptr {\bfseries lookup} (const Lookup \&l) const }\label{classjs_1_1_hash_set_add2d2158166963f0a1fdee54bac62beb}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_af1dd16e7f11f656e095da05481f2df86}{void {\bfseries remove} (Ptr p)}\label{classjs_1_1_hash_set_af1dd16e7f11f656e095da05481f2df86}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a22e1d1fad858bb5c03a0df4316a4d682}{Add\-Ptr {\bfseries lookup\-For\-Add} (const Lookup \&l) const }\label{classjs_1_1_hash_set_a22e1d1fad858bb5c03a0df4316a4d682}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a9cdd5913290af74fd2f2180c4b8fd7fd}{bool {\bfseries add} (Add\-Ptr \&p, const T \&t)}\label{classjs_1_1_hash_set_a9cdd5913290af74fd2f2180c4b8fd7fd}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a7ec3a0114dd982991a5dc92be39808d5}{bool {\bfseries relookup\-Or\-Add} (Add\-Ptr \&p, const Lookup \&l, const T \&t)}\label{classjs_1_1_hash_set_a7ec3a0114dd982991a5dc92be39808d5}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a92d53ab25ad2caa29319f2a236381b1e}{Range {\bfseries all} () const }\label{classjs_1_1_hash_set_a92d53ab25ad2caa29319f2a236381b1e}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a46ab8791b3eeb07bbe7d850dc5f731d6}{uint32\-\_\-t {\bfseries count} () const }\label{classjs_1_1_hash_set_a46ab8791b3eeb07bbe7d850dc5f731d6}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a9f98aaee411c849fb7372a0b795e6502}{size\-\_\-t {\bfseries capacity} () const }\label{classjs_1_1_hash_set_a9f98aaee411c849fb7372a0b795e6502}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a06891e464c85cec94d825fc06715e40c}{size\-\_\-t {\bfseries size\-Of\-Excluding\-This} (J\-S\-Malloc\-Size\-Of\-Fun malloc\-Size\-Of) const }\label{classjs_1_1_hash_set_a06891e464c85cec94d825fc06715e40c}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_abb3f8f4399707daeaa8ad85c0d422811}{size\-\_\-t {\bfseries size\-Of\-Including\-This} (J\-S\-Malloc\-Size\-Of\-Fun malloc\-Size\-Of) const }\label{classjs_1_1_hash_set_abb3f8f4399707daeaa8ad85c0d422811}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a96567177092ffb8d80898c03194e7f64}{void {\bfseries clear} ()}\label{classjs_1_1_hash_set_a96567177092ffb8d80898c03194e7f64}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_ac18de70d1014b703894569aaab8432b4}{void {\bfseries finish} ()}\label{classjs_1_1_hash_set_ac18de70d1014b703894569aaab8432b4}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_ae5870c6683ef2161166a092ad737f135}{bool {\bfseries empty} () const }\label{classjs_1_1_hash_set_ae5870c6683ef2161166a092ad737f135}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a0e8958f35d9753bcfcb2e1ca151c82b3}{unsigned {\bfseries generation} () const }\label{classjs_1_1_hash_set_a0e8958f35d9753bcfcb2e1ca151c82b3}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_ace5f9b823d7fcdec8abb024af29c477f}{bool {\bfseries has} (const Lookup \&l) const }\label{classjs_1_1_hash_set_ace5f9b823d7fcdec8abb024af29c477f}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a761772ec1dce8e9f01ea16004e11eb42}{bool {\bfseries put} (const T \&t)}\label{classjs_1_1_hash_set_a761772ec1dce8e9f01ea16004e11eb42}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_acce2fc6e44676bda01ba9ba814f551c0}{bool {\bfseries put\-New} (const T \&t)}\label{classjs_1_1_hash_set_acce2fc6e44676bda01ba9ba814f551c0}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a4259a9b022ac4021facdee28ba6cdcd1}{bool {\bfseries put\-New} (const Lookup \&l, const T \&t)}\label{classjs_1_1_hash_set_a4259a9b022ac4021facdee28ba6cdcd1}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a29d585fbd24b5623c88c0c74d2413f29}{void {\bfseries remove} (const Lookup \&l)}\label{classjs_1_1_hash_set_a29d585fbd24b5623c88c0c74d2413f29}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_ab7de2c02a232efe1251293890d701b1e}{{\bfseries Hash\-Set} (\hyperlink{class_alloc_policy}{Alloc\-Policy} a=\hyperlink{class_alloc_policy}{Alloc\-Policy}())}\label{classjs_1_1_hash_set_ab7de2c02a232efe1251293890d701b1e}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_aba80e6d44bc36f976720c90cf1be14f5}{bool {\bfseries init} (uint32\-\_\-t len=s\-Default\-Init\-Size)}\label{classjs_1_1_hash_set_aba80e6d44bc36f976720c90cf1be14f5}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a04e8b0ba843cd722987a83916d1d8773}{bool {\bfseries initialized} () const }\label{classjs_1_1_hash_set_a04e8b0ba843cd722987a83916d1d8773}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_add2d2158166963f0a1fdee54bac62beb}{Ptr {\bfseries lookup} (const Lookup \&l) const }\label{classjs_1_1_hash_set_add2d2158166963f0a1fdee54bac62beb}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_af1dd16e7f11f656e095da05481f2df86}{void {\bfseries remove} (Ptr p)}\label{classjs_1_1_hash_set_af1dd16e7f11f656e095da05481f2df86}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a22e1d1fad858bb5c03a0df4316a4d682}{Add\-Ptr {\bfseries lookup\-For\-Add} (const Lookup \&l) const }\label{classjs_1_1_hash_set_a22e1d1fad858bb5c03a0df4316a4d682}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a9cdd5913290af74fd2f2180c4b8fd7fd}{bool {\bfseries add} (Add\-Ptr \&p, const T \&t)}\label{classjs_1_1_hash_set_a9cdd5913290af74fd2f2180c4b8fd7fd}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a7ec3a0114dd982991a5dc92be39808d5}{bool {\bfseries relookup\-Or\-Add} (Add\-Ptr \&p, const Lookup \&l, const T \&t)}\label{classjs_1_1_hash_set_a7ec3a0114dd982991a5dc92be39808d5}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a92d53ab25ad2caa29319f2a236381b1e}{Range {\bfseries all} () const }\label{classjs_1_1_hash_set_a92d53ab25ad2caa29319f2a236381b1e}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a46ab8791b3eeb07bbe7d850dc5f731d6}{uint32\-\_\-t {\bfseries count} () const }\label{classjs_1_1_hash_set_a46ab8791b3eeb07bbe7d850dc5f731d6}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a9f98aaee411c849fb7372a0b795e6502}{size\-\_\-t {\bfseries capacity} () const }\label{classjs_1_1_hash_set_a9f98aaee411c849fb7372a0b795e6502}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a06891e464c85cec94d825fc06715e40c}{size\-\_\-t {\bfseries size\-Of\-Excluding\-This} (J\-S\-Malloc\-Size\-Of\-Fun malloc\-Size\-Of) const }\label{classjs_1_1_hash_set_a06891e464c85cec94d825fc06715e40c}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_abb3f8f4399707daeaa8ad85c0d422811}{size\-\_\-t {\bfseries size\-Of\-Including\-This} (J\-S\-Malloc\-Size\-Of\-Fun malloc\-Size\-Of) const }\label{classjs_1_1_hash_set_abb3f8f4399707daeaa8ad85c0d422811}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a96567177092ffb8d80898c03194e7f64}{void {\bfseries clear} ()}\label{classjs_1_1_hash_set_a96567177092ffb8d80898c03194e7f64}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_ac18de70d1014b703894569aaab8432b4}{void {\bfseries finish} ()}\label{classjs_1_1_hash_set_ac18de70d1014b703894569aaab8432b4}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_ae5870c6683ef2161166a092ad737f135}{bool {\bfseries empty} () const }\label{classjs_1_1_hash_set_ae5870c6683ef2161166a092ad737f135}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a0e8958f35d9753bcfcb2e1ca151c82b3}{unsigned {\bfseries generation} () const }\label{classjs_1_1_hash_set_a0e8958f35d9753bcfcb2e1ca151c82b3}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_ace5f9b823d7fcdec8abb024af29c477f}{bool {\bfseries has} (const Lookup \&l) const }\label{classjs_1_1_hash_set_ace5f9b823d7fcdec8abb024af29c477f}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a761772ec1dce8e9f01ea16004e11eb42}{bool {\bfseries put} (const T \&t)}\label{classjs_1_1_hash_set_a761772ec1dce8e9f01ea16004e11eb42}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_acce2fc6e44676bda01ba9ba814f551c0}{bool {\bfseries put\-New} (const T \&t)}\label{classjs_1_1_hash_set_acce2fc6e44676bda01ba9ba814f551c0}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a4259a9b022ac4021facdee28ba6cdcd1}{bool {\bfseries put\-New} (const Lookup \&l, const T \&t)}\label{classjs_1_1_hash_set_a4259a9b022ac4021facdee28ba6cdcd1}
+
+\item 
+\hypertarget{classjs_1_1_hash_set_a29d585fbd24b5623c88c0c74d2413f29}{void {\bfseries remove} (const Lookup \&l)}\label{classjs_1_1_hash_set_a29d585fbd24b5623c88c0c74d2413f29}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classjs_1_1_hash_set_a86a97844456379192e43d1116de9b073}{static const unsigned {\bfseries s\-Default\-Init\-Size} = Impl\-::s\-Default\-Init\-Size}\label{classjs_1_1_hash_set_a86a97844456379192e43d1116de9b073}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classjs_1_1_hash_set_ac2ba4b9aa066ee5fb781cf50b128569c}{class {\bfseries Impl\-::\-Enum}}\label{classjs_1_1_hash_set_ac2ba4b9aa066ee5fb781cf50b128569c}
+
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$class T, class Hash\-Policy = Default\-Hasher$<$\-T$>$, class Alloc\-Policy = Temp\-Alloc\-Policy$>$ class js\-::\-Hash\-Set$<$ T, Hash\-Policy, Alloc\-Policy $>$}
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Spider\-Monkey/ios/include/js/Hash\-Table.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Spider\-Monkey/osx/include/js/Hash\-Table.\-h\end{DoxyCompactItemize}

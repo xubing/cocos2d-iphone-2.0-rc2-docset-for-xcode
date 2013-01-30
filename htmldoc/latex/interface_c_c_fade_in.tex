@@ -1,0 +1,53 @@
+\hypertarget{interface_c_c_fade_in}{\section{C\-C\-Fade\-In Class Reference}
+\label{interface_c_c_fade_in}\index{C\-C\-Fade\-In@{C\-C\-Fade\-In}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Interval.\-h$>$}
+
+Inheritance diagram for C\-C\-Fade\-In\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_c_c_fade_in}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_c_c_fade_in_a0804c9113f29c407ea182b58a477653e}{update\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fades In an object that implements the \hyperlink{protocol_c_c_r_g_b_a_protocol-p}{C\-C\-R\-G\-B\-A\-Protocol} protocol. It modifies the opacity from 0 to 255. The \char`\"{}reverse\char`\"{} of this action is Fade\-Out 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_fade_in_a0804c9113f29c407ea182b58a477653e}{\index{C\-C\-Fade\-In@{C\-C\-Fade\-In}!update\-:@{update\-:}}
+\index{update\-:@{update\-:}!CCFadeIn@{C\-C\-Fade\-In}}
+\subsubsection[{update\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf update\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{time}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_fade_in_a0804c9113f29c407ea182b58a477653e}
+called once per frame. time a value between 0 and 1 For example\-:
+\begin{DoxyItemize}
+\item 0 means that the action just started
+\item 0.\-5 means that the action is in the middle
+\item 1 means that the action is over 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{interface_c_c_action_a41207f5e0f31713136c8b690fcf166ef}{C\-C\-Action}.
+
+
+\begin{DoxyCode}
+              : (ccTime) t
+{
+        [(id<CCRGBAProtocol>) target_ setOpacity: 255 *t];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-m\end{DoxyCompactItemize}

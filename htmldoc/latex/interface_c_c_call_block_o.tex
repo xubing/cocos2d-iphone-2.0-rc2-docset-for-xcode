@@ -1,0 +1,112 @@
+\hypertarget{interface_c_c_call_block_o}{\section{C\-C\-Call\-Block\-O Class Reference}
+\label{interface_c_c_call_block_o}\index{C\-C\-Call\-Block\-O@{C\-C\-Call\-Block\-O}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Instant.\-h$>$}
+
+Inheritance diagram for C\-C\-Call\-Block\-O\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_c_c_call_block_o}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_call_block_o_aa4871e247f66a7040f94efc39954869f}{init\-With\-Block\-:object\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_call_block_o_ac6147e80c0bfeeeb9f46b19d7cb773ea}{execute}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_call_block_o_a9fe2815b2ef40e663dc026185f990ff0}{action\-With\-Block\-:object\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_call_block_o_a27f67c38fc9cc618b32ec7ad6085baa1}{void($^\wedge$ {\bfseries block\-\_\-} )(id \hyperlink{interface_c_c_call_block_o_a4c593d3153aec9610ec97d388371ce07}{object})}\label{interface_c_c_call_block_o_a27f67c38fc9cc618b32ec7ad6085baa1}
+
+\item 
+\hypertarget{interface_c_c_call_block_o_ae20586a462a83eeadd16e7eba04494e2}{id {\bfseries object\-\_\-}}\label{interface_c_c_call_block_o_ae20586a462a83eeadd16e7eba04494e2}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id \hyperlink{interface_c_c_call_block_o_a4c593d3153aec9610ec97d388371ce07}{object}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Executes a callback using a block with a single \hyperlink{class_n_s_object}{N\-S\-Object} parameter. \begin{DoxySince}{Since}
+v2.\-0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_call_block_o_a9fe2815b2ef40e663dc026185f990ff0}{\index{C\-C\-Call\-Block\-O@{C\-C\-Call\-Block\-O}!action\-With\-Block\-:object\-:@{action\-With\-Block\-:object\-:}}
+\index{action\-With\-Block\-:object\-:@{action\-With\-Block\-:object\-:}!CCCallBlockO@{C\-C\-Call\-Block\-O}}
+\subsubsection[{action\-With\-Block\-:object\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) action\-With\-Block\-: 
+\begin{DoxyParamCaption}
+\item[{(id {\bf object})}]{block}
+\item[{object:(id)}]{object}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_call_block_o_a9fe2815b2ef40e663dc026185f990ff0}
+creates the action with the specified block, to be used as a callback. The block will be \char`\"{}copied\char`\"{}. 
+\begin{DoxyCode}
+                     :(void(^)(id object))block object:(id)object
+{
+        return [[[self alloc] initWithBlock:block object:object] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_call_block_o_ac6147e80c0bfeeeb9f46b19d7cb773ea}{\index{C\-C\-Call\-Block\-O@{C\-C\-Call\-Block\-O}!execute@{execute}}
+\index{execute@{execute}!CCCallBlockO@{C\-C\-Call\-Block\-O}}
+\subsubsection[{execute}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf execute} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_call_block_o_ac6147e80c0bfeeeb9f46b19d7cb773ea}
+executes the callback 
+\begin{DoxyCode}
+{
+        block_(object_);
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_call_block_o_aa4871e247f66a7040f94efc39954869f}{\index{C\-C\-Call\-Block\-O@{C\-C\-Call\-Block\-O}!init\-With\-Block\-:object\-:@{init\-With\-Block\-:object\-:}}
+\index{init\-With\-Block\-:object\-:@{init\-With\-Block\-:object\-:}!CCCallBlockO@{C\-C\-Call\-Block\-O}}
+\subsubsection[{init\-With\-Block\-:object\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Block\-: 
+\begin{DoxyParamCaption}
+\item[{(id {\bf object})}]{block}
+\item[{object:(id)}]{object}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_call_block_o_aa4871e247f66a7040f94efc39954869f}
+initialized the action with the specified block, to be used as a callback. The block will be \char`\"{}copied\char`\"{}. 
+\begin{DoxyCode}
+                   :(void(^)(id object))block object:(id)object
+{
+        if ((self = [super init])) {
+                block_ = [block copy];
+                object_ = [object retain];
+        }
+
+        return self;
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_call_block_o_a4c593d3153aec9610ec97d388371ce07}{\index{C\-C\-Call\-Block\-O@{C\-C\-Call\-Block\-O}!object@{object}}
+\index{object@{object}!CCCallBlockO@{C\-C\-Call\-Block\-O}}
+\subsubsection[{object}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf object}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}\label{interface_c_c_call_block_o_a4c593d3153aec9610ec97d388371ce07}
+object to be passed to the block 
+
+Referenced by init\-With\-Block\-:object\-:.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Instant.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Instant.\-m\end{DoxyCompactItemize}

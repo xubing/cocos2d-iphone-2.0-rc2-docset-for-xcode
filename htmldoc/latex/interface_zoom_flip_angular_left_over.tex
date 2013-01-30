@@ -1,0 +1,41 @@
+\hypertarget{interface_zoom_flip_angular_left_over}{\section{Zoom\-Flip\-Angular\-Left\-Over Class Reference}
+\label{interface_zoom_flip_angular_left_over}\index{Zoom\-Flip\-Angular\-Left\-Over@{Zoom\-Flip\-Angular\-Left\-Over}}
+}
+Inheritance diagram for Zoom\-Flip\-Angular\-Left\-Over\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{interface_zoom_flip_angular_left_over}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_zoom_flip_angular_left_over_a4513047f0623b124c5aaa6aefcb9eac3}{transition\-With\-Duration\-:scene\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_zoom_flip_angular_left_over_a4513047f0623b124c5aaa6aefcb9eac3}{\index{Zoom\-Flip\-Angular\-Left\-Over@{Zoom\-Flip\-Angular\-Left\-Over}!transition\-With\-Duration\-:scene\-:@{transition\-With\-Duration\-:scene\-:}}
+\index{transition\-With\-Duration\-:scene\-:@{transition\-With\-Duration\-:scene\-:}!ZoomFlipAngularLeftOver@{Zoom\-Flip\-Angular\-Left\-Over}}
+\subsubsection[{transition\-With\-Duration\-:scene\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) transition\-With\-Duration\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{t}
+\item[{scene:({\bf C\-C\-Scene}$\ast$)}]{s}
+\end{DoxyParamCaption}
+}}\label{interface_zoom_flip_angular_left_over_a4513047f0623b124c5aaa6aefcb9eac3}
+creates a base transition with duration and incoming scene 
+
+Reimplemented from \hyperlink{interface_c_c_transition_scene_af49d7862a7560b4b4954dda1363cfa28}{C\-C\-Transition\-Scene}.
+
+
+\begin{DoxyCode}
+                            :(ccTime) t scene:(CCScene*)s {
+        return [self transitionWithDuration:t scene:s orientation:
+      kCCTransitionOrientationLeftOver];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/tests/Transitions\-Test.\-m\end{DoxyCompactItemize}

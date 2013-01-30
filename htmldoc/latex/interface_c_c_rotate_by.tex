@@ -1,0 +1,105 @@
+\hypertarget{interface_c_c_rotate_by}{\section{C\-C\-Rotate\-By Class Reference}
+\label{interface_c_c_rotate_by}\index{C\-C\-Rotate\-By@{C\-C\-Rotate\-By}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Interval.\-h$>$}
+
+Inheritance diagram for C\-C\-Rotate\-By\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_c_c_rotate_by}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_rotate_by_a17b26d5a37d69ec65637dd1f9e3ce4ee}{init\-With\-Duration\-:angle\-:}
+\item 
+\hypertarget{interface_c_c_rotate_by_ae6c82984fbed85ce48b7630f90b5dfdd}{(id) -\/ {\bfseries init\-With\-Duration\-:angle\-X\-:angle\-Y\-:}}\label{interface_c_c_rotate_by_ae6c82984fbed85ce48b7630f90b5dfdd}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_rotate_by_ab4920ed13e27b365e713174ff10a258a}{action\-With\-Duration\-:angle\-:}
+\item 
+(id) + \hyperlink{interface_c_c_rotate_by_aaa57d6a30ed8b2ab1609fd9a66d5985a}{action\-With\-Duration\-:angle\-X\-:angle\-Y\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_rotate_by_a050c7b043dca7e058146dfa7e44c20c7}{float {\bfseries angle\-X\-\_\-}}\label{interface_c_c_rotate_by_a050c7b043dca7e058146dfa7e44c20c7}
+
+\item 
+\hypertarget{interface_c_c_rotate_by_a4437fde1e693a5aba681a14943f4fe70}{float {\bfseries start\-Angle\-X\-\_\-}}\label{interface_c_c_rotate_by_a4437fde1e693a5aba681a14943f4fe70}
+
+\item 
+\hypertarget{interface_c_c_rotate_by_a57473460115c906c548ccec8f6ab4c02}{float {\bfseries angle\-Y\-\_\-}}\label{interface_c_c_rotate_by_a57473460115c906c548ccec8f6ab4c02}
+
+\item 
+\hypertarget{interface_c_c_rotate_by_af48b8d9c986b51c9b9eb87941fde1a0f}{float {\bfseries start\-Angle\-Y\-\_\-}}\label{interface_c_c_rotate_by_af48b8d9c986b51c9b9eb87941fde1a0f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Rotates a \hyperlink{class_c_c_node}{C\-C\-Node} object clockwise a number of degrees by modifying its rotation attribute. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_rotate_by_ab4920ed13e27b365e713174ff10a258a}{\index{C\-C\-Rotate\-By@{C\-C\-Rotate\-By}!action\-With\-Duration\-:angle\-:@{action\-With\-Duration\-:angle\-:}}
+\index{action\-With\-Duration\-:angle\-:@{action\-With\-Duration\-:angle\-:}!CCRotateBy@{C\-C\-Rotate\-By}}
+\subsubsection[{action\-With\-Duration\-:angle\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{duration}
+\item[{angle:(float)}]{delta\-Angle}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_rotate_by_ab4920ed13e27b365e713174ff10a258a}
+creates the action 
+\begin{DoxyCode}
+                        : (ccTime) t angle:(float) a
+{
+        return [[[self alloc] initWithDuration:t angle:a ] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_rotate_by_aaa57d6a30ed8b2ab1609fd9a66d5985a}{\index{C\-C\-Rotate\-By@{C\-C\-Rotate\-By}!action\-With\-Duration\-:angle\-X\-:angle\-Y\-:@{action\-With\-Duration\-:angle\-X\-:angle\-Y\-:}}
+\index{action\-With\-Duration\-:angle\-X\-:angle\-Y\-:@{action\-With\-Duration\-:angle\-X\-:angle\-Y\-:}!CCRotateBy@{C\-C\-Rotate\-By}}
+\subsubsection[{action\-With\-Duration\-:angle\-X\-:angle\-Y\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{t}
+\item[{angleX:(float)}]{a\-X}
+\item[{angleY:(float)}]{a\-Y}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_rotate_by_aaa57d6a30ed8b2ab1609fd9a66d5985a}
+creates the action with separate rotation angles 
+\begin{DoxyCode}
+                        : (ccTime) t angleX:(float) aX angleY:(float) aY
+{
+        return [[[self alloc] initWithDuration:t angleX:aX angleY:aY ] 
+      autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_rotate_by_a17b26d5a37d69ec65637dd1f9e3ce4ee}{\index{C\-C\-Rotate\-By@{C\-C\-Rotate\-By}!init\-With\-Duration\-:angle\-:@{init\-With\-Duration\-:angle\-:}}
+\index{init\-With\-Duration\-:angle\-:@{init\-With\-Duration\-:angle\-:}!CCRotateBy@{C\-C\-Rotate\-By}}
+\subsubsection[{init\-With\-Duration\-:angle\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{duration}
+\item[{angle:(float)}]{delta\-Angle}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_rotate_by_a17b26d5a37d69ec65637dd1f9e3ce4ee}
+initializes the action 
+\begin{DoxyCode}
+                      : (ccTime) t angle:(float) a
+{
+        if( (self=[super initWithDuration: t]) )
+                angleX_ = angleY_ = a;
+
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-m\end{DoxyCompactItemize}

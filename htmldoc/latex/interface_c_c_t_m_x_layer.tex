@@ -1,0 +1,622 @@
+\hypertarget{interface_c_c_t_m_x_layer}{\section{C\-C\-T\-M\-X\-Layer Class Reference}
+\label{interface_c_c_t_m_x_layer}\index{C\-C\-T\-M\-X\-Layer@{C\-C\-T\-M\-X\-Layer}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-T\-M\-X\-Layer.\-h$>$}
+
+Inheritance diagram for C\-C\-T\-M\-X\-Layer\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{interface_c_c_t_m_x_layer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_t_m_x_layer_a33a9fb3afbeaff1c7c944871cc36dc8e}{init\-With\-Tileset\-Info\-:layer\-Info\-:map\-Info\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_t_m_x_layer_a6da51144eb6bc5fbdb10cecb1dd9dd95}{release\-Map}
+\item 
+(\hyperlink{class_c_c_sprite}{C\-C\-Sprite} $\ast$) -\/ \hyperlink{interface_c_c_t_m_x_layer_acf0ee39e7670ebf4cd0dcd806c0b0897}{tile\-At\-:}
+\item 
+(uint32\-\_\-t) -\/ \hyperlink{interface_c_c_t_m_x_layer_a22f4a950562db2473c188df39e5fc89c}{tile\-G\-I\-D\-At\-:}
+\item 
+(uint32\-\_\-t) -\/ \hyperlink{interface_c_c_t_m_x_layer_afe712473b73e0d12d132cf8fc0c49436}{tile\-G\-I\-D\-At\-:with\-Flags\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_t_m_x_layer_a040599b66314082e02b3a7fbb923eca9}{set\-Tile\-G\-I\-D\-:at\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_t_m_x_layer_af5a1be12e5457e4d3e54894953a0e041}{set\-Tile\-G\-I\-D\-:at\-:with\-Flags\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_t_m_x_layer_a776ac1404ff793782b5dcf55a3025909}{remove\-Tile\-At\-:}
+\item 
+(C\-G\-Point) -\/ \hyperlink{interface_c_c_t_m_x_layer_ac8b24455f15f4ec4ad9f7c46dcfa2ba3}{position\-At\-:}
+\item 
+(id) -\/ \hyperlink{interface_c_c_t_m_x_layer_a93cde7e27d79b8471ae7022ca8f3477d}{property\-Named\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_t_m_x_layer_a2907ea3d49257923efeccd65803f8862}{setup\-Tiles}
+\item 
+(void) -\/ \hyperlink{interface_c_c_t_m_x_layer_a898f8a54b02cc7cdfc9236177d93a2c0}{add\-Child\-:z\-:tag\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_t_m_x_layer_a77aae0dac98b55e7dd6bfc80e9338e52}{layer\-With\-Tileset\-Info\-:layer\-Info\-:map\-Info\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_t_m_x_layer_a84b0fb090e8d531b216c230f2334b2d7}{\hyperlink{interface_c_c_t_m_x_tileset_info}{C\-C\-T\-M\-X\-Tileset\-Info} $\ast$ {\bfseries tileset\-\_\-}}\label{interface_c_c_t_m_x_layer_a84b0fb090e8d531b216c230f2334b2d7}
+
+\item 
+\hypertarget{interface_c_c_t_m_x_layer_aba00371b851c2fbf3c78bc037251ed09}{N\-S\-String $\ast$ {\bfseries layer\-Name\-\_\-}}\label{interface_c_c_t_m_x_layer_aba00371b851c2fbf3c78bc037251ed09}
+
+\item 
+\hypertarget{interface_c_c_t_m_x_layer_a4320ee359aac0539e3663550c6f9dd83}{C\-G\-Size {\bfseries layer\-Size\-\_\-}}\label{interface_c_c_t_m_x_layer_a4320ee359aac0539e3663550c6f9dd83}
+
+\item 
+\hypertarget{interface_c_c_t_m_x_layer_ac0f56263b1d585707b00d4c7a1fe3bbb}{C\-G\-Size {\bfseries map\-Tile\-Size\-\_\-}}\label{interface_c_c_t_m_x_layer_ac0f56263b1d585707b00d4c7a1fe3bbb}
+
+\item 
+\hypertarget{interface_c_c_t_m_x_layer_a49aba95c0f53a51a3b2dda6052d2e175}{uint32\-\_\-t $\ast$ {\bfseries tiles\-\_\-}}\label{interface_c_c_t_m_x_layer_a49aba95c0f53a51a3b2dda6052d2e175}
+
+\item 
+\hypertarget{interface_c_c_t_m_x_layer_ab193a163da7b8af9fecbba8c3fd81e0d}{N\-S\-U\-Integer {\bfseries layer\-Orientation\-\_\-}}\label{interface_c_c_t_m_x_layer_ab193a163da7b8af9fecbba8c3fd81e0d}
+
+\item 
+\hypertarget{interface_c_c_t_m_x_layer_ab4ca5a686a9bc3e522a0881c47818e1f}{N\-S\-Mutable\-Array $\ast$ {\bfseries properties\-\_\-}}\label{interface_c_c_t_m_x_layer_ab4ca5a686a9bc3e522a0881c47818e1f}
+
+\item 
+\hypertarget{interface_c_c_t_m_x_layer_a627f84c30da154053c5b394648034263}{unsigned char {\bfseries opacity\-\_\-}}\label{interface_c_c_t_m_x_layer_a627f84c30da154053c5b394648034263}
+
+\item 
+\hypertarget{interface_c_c_t_m_x_layer_a1c9b17097327be81e29f38a4359f300a}{N\-S\-U\-Integer {\bfseries min\-G\-I\-D\-\_\-}}\label{interface_c_c_t_m_x_layer_a1c9b17097327be81e29f38a4359f300a}
+
+\item 
+\hypertarget{interface_c_c_t_m_x_layer_a5f90541c70209a7f5c9a6e4921f67fb9}{N\-S\-U\-Integer {\bfseries max\-G\-I\-D\-\_\-}}\label{interface_c_c_t_m_x_layer_a5f90541c70209a7f5c9a6e4921f67fb9}
+
+\item 
+\hypertarget{interface_c_c_t_m_x_layer_a407c28600f59813804de9dafe6a5c511}{N\-S\-Integer {\bfseries vertex\-Zvalue\-\_\-}}\label{interface_c_c_t_m_x_layer_a407c28600f59813804de9dafe6a5c511}
+
+\item 
+\hypertarget{interface_c_c_t_m_x_layer_a09779adfe3d1623075c54bd077077659}{B\-O\-O\-L {\bfseries use\-Automatic\-Vertex\-Z\-\_\-}}\label{interface_c_c_t_m_x_layer_a09779adfe3d1623075c54bd077077659}
+
+\item 
+\hypertarget{interface_c_c_t_m_x_layer_adb619b53d05e04a937ec7e9ce650fbb4}{\hyperlink{class_c_c_sprite}{C\-C\-Sprite} $\ast$ {\bfseries reused\-Tile\-\_\-}}\label{interface_c_c_t_m_x_layer_adb619b53d05e04a937ec7e9ce650fbb4}
+
+\item 
+\hypertarget{interface_c_c_t_m_x_layer_a1e928e1923db5c5eb598dd7309da71d3}{\hyperlink{structcc_array}{cc\-C\-Array} $\ast$ {\bfseries atlas\-Index\-Array\-\_\-}}\label{interface_c_c_t_m_x_layer_a1e928e1923db5c5eb598dd7309da71d3}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\-S\-String $\ast$ \hyperlink{interface_c_c_t_m_x_layer_ae62640f00d84efb58df4eb90e3913700}{layer\-Name}
+\item 
+C\-G\-Size \hyperlink{interface_c_c_t_m_x_layer_a4d680b868f0e476d8a51e52d3c4ff64e}{layer\-Size}
+\item 
+C\-G\-Size \hyperlink{interface_c_c_t_m_x_layer_a13536a56d5a74341e766d8918a2c9013}{map\-Tile\-Size}
+\item 
+uint32\-\_\-t $\ast$ \hyperlink{interface_c_c_t_m_x_layer_a37c6ea184edaec1b0ba8f82cf2c386c8}{tiles}
+\item 
+\hyperlink{interface_c_c_t_m_x_tileset_info}{C\-C\-T\-M\-X\-Tileset\-Info} $\ast$ \hyperlink{interface_c_c_t_m_x_layer_afb0c60d744928f1ebbe66010448cdcce}{tileset}
+\item 
+N\-S\-U\-Integer \hyperlink{interface_c_c_t_m_x_layer_ab1be7f739da6da05fbc11da0e2c647f9}{layer\-Orientation}
+\item 
+N\-S\-Mutable\-Array $\ast$ \hyperlink{interface_c_c_t_m_x_layer_a3fcc631e6c87920daa231095c62b3344}{properties}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_t_m_x_layer}{C\-C\-T\-M\-X\-Layer} represents the T\-M\-X layer.
+
+It is a subclass of \hyperlink{interface_c_c_sprite_batch_node}{C\-C\-Sprite\-Batch\-Node}. By default the tiles are rendered using a \hyperlink{interface_c_c_texture_atlas}{C\-C\-Texture\-Atlas}. If you mofify a tile on runtime, then, that tile will become a \hyperlink{class_c_c_sprite}{C\-C\-Sprite}, otherwise no \hyperlink{class_c_c_sprite}{C\-C\-Sprite} objects are created. The benefits of using \hyperlink{class_c_c_sprite}{C\-C\-Sprite} objects as tiles are\-:
+\begin{DoxyItemize}
+\item tiles (\hyperlink{class_c_c_sprite}{C\-C\-Sprite}) can be rotated/scaled/moved with a nice A\-P\-I
+\end{DoxyItemize}
+
+cocos2d v2.\-0 doesn't support the cc\-\_\-vertexz value. Whenever a the cc\-\_\-vertexz property is found, it will raise an exception.
+
+\char`\"{}value\char`\"{} by default is 0, but you can change it from Tiled by adding the \char`\"{}cc\-\_\-alpha\-\_\-func\char`\"{} property to the layer. The value 0 should work for most cases, but if you have tiles that are semi-\/transparent, then you might want to use a differnt value, like 0.\-5.
+
+For further information, please see the programming guide\-: \begin{DoxyVerb}   http://www.cocos2d-iphone.org/wiki/doku.php/prog_guide:tiled_maps\end{DoxyVerb}
+ \begin{DoxySince}{Since}
+v0.\-8.\-1
+\end{DoxySince}
+\hyperlink{class_tiles}{Tiles} can have tile flags for additional properties. At the moment only flip horizontal and flip vertical are used. These bit flags are defined in \hyperlink{_c_c_t_m_x_x_m_l_parser_8h_source}{C\-C\-T\-M\-X\-X\-M\-L\-Parser.\-h}.
+
+\begin{DoxySince}{Since}
+1.\-1 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_t_m_x_layer_a898f8a54b02cc7cdfc9236177d93a2c0}{\index{C\-C\-T\-M\-X\-Layer@{C\-C\-T\-M\-X\-Layer}!add\-Child\-:z\-:tag\-:@{add\-Child\-:z\-:tag\-:}}
+\index{add\-Child\-:z\-:tag\-:@{add\-Child\-:z\-:tag\-:}!CCTMXLayer@{C\-C\-T\-M\-X\-Layer}}
+\subsubsection[{add\-Child\-:z\-:tag\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf add\-Child\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Node}$\ast$)}]{node}
+\item[{z:(N\-S\-Integer)}]{z}
+\item[{tag:(N\-S\-Integer)}]{tag}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_t_m_x_layer_a898f8a54b02cc7cdfc9236177d93a2c0}
+\hyperlink{interface_c_c_t_m_x_layer}{C\-C\-T\-M\-X\-Layer} doesn't support adding a \hyperlink{class_c_c_sprite}{C\-C\-Sprite} manually. \begin{DoxyWarning}{Warning}
+addchild\-:z\-:tag\-: is not supported on \hyperlink{interface_c_c_t_m_x_layer}{C\-C\-T\-M\-X\-Layer}. Instead of set\-Tile\-G\-I\-D\-:at\-:/tile\-At\-: 
+\end{DoxyWarning}
+
+
+Reimplemented from \hyperlink{class_c_c_node_ab3e142f4e18581046f811ae1489dd0c9}{C\-C\-Node}.
+
+
+\begin{DoxyCode}
+                : (CCNode*)node z:(NSInteger)z tag:(NSInteger)tag
+{
+        NSAssert(NO, @"addChild: is not supported on CCTMXLayer. Instead use
+       setTileGID:at:/tileAt:");
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_t_m_x_layer_a33a9fb3afbeaff1c7c944871cc36dc8e}{\index{C\-C\-T\-M\-X\-Layer@{C\-C\-T\-M\-X\-Layer}!init\-With\-Tileset\-Info\-:layer\-Info\-:map\-Info\-:@{init\-With\-Tileset\-Info\-:layer\-Info\-:map\-Info\-:}}
+\index{init\-With\-Tileset\-Info\-:layer\-Info\-:map\-Info\-:@{init\-With\-Tileset\-Info\-:layer\-Info\-:map\-Info\-:}!CCTMXLayer@{C\-C\-T\-M\-X\-Layer}}
+\subsubsection[{init\-With\-Tileset\-Info\-:layer\-Info\-:map\-Info\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Tileset\-Info\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-T\-M\-X\-Tileset\-Info}$\ast$)}]{tileset\-Info}
+\item[{layerInfo:({\bf C\-C\-T\-M\-X\-Layer\-Info}$\ast$)}]{layer\-Info}
+\item[{mapInfo:({\bf C\-C\-T\-M\-X\-Map\-Info}$\ast$)}]{map\-Info}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_t_m_x_layer_a33a9fb3afbeaff1c7c944871cc36dc8e}
+initializes a \hyperlink{interface_c_c_t_m_x_layer}{C\-C\-T\-M\-X\-Layer} with a tileset info, a layer info and a map info 
+\begin{DoxyCode}
+                         :(CCTMXTilesetInfo*)tilesetInfo layerInfo:(
+      CCTMXLayerInfo*)layerInfo mapInfo:(CCTMXMapInfo*)mapInfo
+{
+        // XXX: is 35% a good estimate ?
+        CGSize size = layerInfo.layerSize;
+        float totalNumberOfTiles = size.width * size.height;
+        float capacity = totalNumberOfTiles * 0.35f + 1; // 35 percent is
+       occupied ?
+
+        CCTexture2D *tex = nil;
+        if( tilesetInfo )
+                tex = [[CCTextureCache sharedTextureCache] addImage:tilesetInfo
+      .sourceImage];
+
+        if((self = [super initWithTexture:tex capacity:capacity])) {
+
+                // layerInfo
+                self.layerName = layerInfo.name;
+                layerSize_ = size;
+                tiles_ = layerInfo.tiles;
+                minGID_ = layerInfo.minGID;
+                maxGID_ = layerInfo.maxGID;
+                opacity_ = layerInfo.opacity;
+                self.properties = [NSMutableDictionary dictionaryWithDictionary
+      :layerInfo.properties];
+
+                // tilesetInfo
+                self.tileset = tilesetInfo;
+
+                // mapInfo
+                mapTileSize_ = mapInfo.tileSize;
+                layerOrientation_ = mapInfo.orientation;
+
+                // offset (after layer orientation is set);
+                CGPoint offset = [self calculateLayerOffset:layerInfo.offset];
+                [self setPosition:CC_POINT_PIXELS_TO_POINTS(offset)];
+
+                atlasIndexArray_ = ccCArrayNew(totalNumberOfTiles);
+
+                [self setContentSize:CC_SIZE_PIXELS_TO_POINTS(CGSizeMake( 
+      layerSize_.width * mapTileSize_.width, layerSize_.height * mapTileSize_.height ))];
+
+                useAutomaticVertexZ_= NO;
+                vertexZvalue_ = 0;
+        }
+
+        return self;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_t_m_x_layer_a77aae0dac98b55e7dd6bfc80e9338e52}{\index{C\-C\-T\-M\-X\-Layer@{C\-C\-T\-M\-X\-Layer}!layer\-With\-Tileset\-Info\-:layer\-Info\-:map\-Info\-:@{layer\-With\-Tileset\-Info\-:layer\-Info\-:map\-Info\-:}}
+\index{layer\-With\-Tileset\-Info\-:layer\-Info\-:map\-Info\-:@{layer\-With\-Tileset\-Info\-:layer\-Info\-:map\-Info\-:}!CCTMXLayer@{C\-C\-T\-M\-X\-Layer}}
+\subsubsection[{layer\-With\-Tileset\-Info\-:layer\-Info\-:map\-Info\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) layer\-With\-Tileset\-Info\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-T\-M\-X\-Tileset\-Info}$\ast$)}]{tileset\-Info}
+\item[{layerInfo:({\bf C\-C\-T\-M\-X\-Layer\-Info}$\ast$)}]{layer\-Info}
+\item[{mapInfo:({\bf C\-C\-T\-M\-X\-Map\-Info}$\ast$)}]{map\-Info}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_t_m_x_layer_a77aae0dac98b55e7dd6bfc80e9338e52}
+creates a \hyperlink{interface_c_c_t_m_x_layer}{C\-C\-T\-M\-X\-Layer} with an tileset info, a layer info and a map info 
+\begin{DoxyCode}
+                          :(CCTMXTilesetInfo*)tilesetInfo layerInfo:(
+      CCTMXLayerInfo*)layerInfo mapInfo:(CCTMXMapInfo*)mapInfo
+{
+        return [[[self alloc] initWithTilesetInfo:tilesetInfo layerInfo:
+      layerInfo mapInfo:mapInfo] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_t_m_x_layer_ac8b24455f15f4ec4ad9f7c46dcfa2ba3}{\index{C\-C\-T\-M\-X\-Layer@{C\-C\-T\-M\-X\-Layer}!position\-At\-:@{position\-At\-:}}
+\index{position\-At\-:@{position\-At\-:}!CCTMXLayer@{C\-C\-T\-M\-X\-Layer}}
+\subsubsection[{position\-At\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Point) {\bf position\-At\-:} 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{tile\-Coordinate}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_t_m_x_layer_ac8b24455f15f4ec4ad9f7c46dcfa2ba3}
+returns the position in points of a given tile coordinate 
+
+Referenced by tile\-At\-:.
+
+
+\begin{DoxyCode}
+                     :(CGPoint)pos
+{
+        CGPoint ret = CGPointZero;
+        switch( layerOrientation_ ) {
+                case CCTMXOrientationOrtho:
+                        ret = [self positionForOrthoAt:pos];
+                        break;
+                case CCTMXOrientationIso:
+                        ret = [self positionForIsoAt:pos];
+                        break;
+                case CCTMXOrientationHex:
+                        ret = [self positionForHexAt:pos];
+                        break;
+        }
+
+        ret = CC_POINT_PIXELS_TO_POINTS( ret );
+        return ret;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_t_m_x_layer_a93cde7e27d79b8471ae7022ca8f3477d}{\index{C\-C\-T\-M\-X\-Layer@{C\-C\-T\-M\-X\-Layer}!property\-Named\-:@{property\-Named\-:}}
+\index{property\-Named\-:@{property\-Named\-:}!CCTMXLayer@{C\-C\-T\-M\-X\-Layer}}
+\subsubsection[{property\-Named\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf property\-Named\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{property\-Name}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_t_m_x_layer_a93cde7e27d79b8471ae7022ca8f3477d}
+return the value for the specific property name 
+\begin{DoxyCode}
+                   :(NSString *)propertyName
+{
+        return [properties_ valueForKey:propertyName];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_t_m_x_layer_a6da51144eb6bc5fbdb10cecb1dd9dd95}{\index{C\-C\-T\-M\-X\-Layer@{C\-C\-T\-M\-X\-Layer}!release\-Map@{release\-Map}}
+\index{release\-Map@{release\-Map}!CCTMXLayer@{C\-C\-T\-M\-X\-Layer}}
+\subsubsection[{release\-Map}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf release\-Map} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_t_m_x_layer_a6da51144eb6bc5fbdb10cecb1dd9dd95}
+dealloc the map that contains the tile position from memory. Unless you want to know at runtime the tiles positions, you can safely call this method. If you are going to call \mbox{[}layer tile\-G\-I\-D\-At\-:\mbox{]} then, don't release the map 
+\begin{DoxyCode}
+{
+        if( tiles_) {
+                free( tiles_);
+                tiles_ = NULL;
+        }
+
+        if( atlasIndexArray_ ) {
+                ccCArrayFree(atlasIndexArray_);
+                atlasIndexArray_ = NULL;
+        }
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_t_m_x_layer_a776ac1404ff793782b5dcf55a3025909}{\index{C\-C\-T\-M\-X\-Layer@{C\-C\-T\-M\-X\-Layer}!remove\-Tile\-At\-:@{remove\-Tile\-At\-:}}
+\index{remove\-Tile\-At\-:@{remove\-Tile\-At\-:}!CCTMXLayer@{C\-C\-T\-M\-X\-Layer}}
+\subsubsection[{remove\-Tile\-At\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\-Tile\-At\-:} 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{tile\-Coordinate}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_t_m_x_layer_a776ac1404ff793782b5dcf55a3025909}
+removes a tile at given tile coordinate 
+
+Referenced by set\-Tile\-G\-I\-D\-:at\-:with\-Flags\-:.
+
+
+\begin{DoxyCode}
+                    :(CGPoint)pos
+{
+        NSAssert( pos.x < layerSize_.width && pos.y < layerSize_.height && pos.
+      x >=0 && pos.y >=0, @"TMXLayer: invalid position");
+        NSAssert( tiles_ && atlasIndexArray_, @"TMXLayer: the tiles map has
+       been released");
+
+        uint32_t gid = [self tileGIDAt:pos];
+
+        if( gid ) {
+
+                NSUInteger z = pos.x + pos.y * layerSize_.width;
+                NSUInteger atlasIndex = [self atlasIndexForExistantZ:z];
+
+                // remove tile from GID map
+                tiles_[z] = 0;
+
+                // remove tile from atlas position array
+                ccCArrayRemoveValueAtIndex(atlasIndexArray_, atlasIndex);
+
+                // remove it from sprites and/or texture atlas
+                id sprite = [self getChildByTag:z];
+                if( sprite )
+                        [super removeChild:sprite cleanup:YES];
+                else {
+                        [textureAtlas_ removeQuadAtIndex:atlasIndex];
+
+                        // update possible children
+                        CCARRAY_FOREACH(children_, sprite) {
+                                NSUInteger ai = [sprite atlasIndex];
+                                if( ai >= atlasIndex) {
+                                        [sprite setAtlasIndex: ai-1];
+                                }
+                        }
+                }
+        }
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_t_m_x_layer_a040599b66314082e02b3a7fbb923eca9}{\index{C\-C\-T\-M\-X\-Layer@{C\-C\-T\-M\-X\-Layer}!set\-Tile\-G\-I\-D\-:at\-:@{set\-Tile\-G\-I\-D\-:at\-:}}
+\index{set\-Tile\-G\-I\-D\-:at\-:@{set\-Tile\-G\-I\-D\-:at\-:}!CCTMXLayer@{C\-C\-T\-M\-X\-Layer}}
+\subsubsection[{set\-Tile\-G\-I\-D\-:at\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-Tile\-G\-I\-D\-: 
+\begin{DoxyParamCaption}
+\item[{(uint32\-\_\-t)}]{gid}
+\item[{at:(C\-G\-Point)}]{tile\-Coordinate}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_t_m_x_layer_a040599b66314082e02b3a7fbb923eca9}
+sets the tile gid (gid = tile global id) at a given tile coordinate. The \hyperlink{struct_tile}{Tile} G\-I\-D can be obtained by using the method \char`\"{}tile\-G\-I\-D\-At\char`\"{} or by using the T\-M\-X editor -\/$>$ Tileset Mgr +1. If a tile is already placed at that position, then it will be removed. 
+\begin{DoxyCode}
+                  :(uint32_t)gid at:(CGPoint)pos
+{
+        [self setTileGID:gid at:pos withFlags:NO];      
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_t_m_x_layer_af5a1be12e5457e4d3e54894953a0e041}{\index{C\-C\-T\-M\-X\-Layer@{C\-C\-T\-M\-X\-Layer}!set\-Tile\-G\-I\-D\-:at\-:with\-Flags\-:@{set\-Tile\-G\-I\-D\-:at\-:with\-Flags\-:}}
+\index{set\-Tile\-G\-I\-D\-:at\-:with\-Flags\-:@{set\-Tile\-G\-I\-D\-:at\-:with\-Flags\-:}!CCTMXLayer@{C\-C\-T\-M\-X\-Layer}}
+\subsubsection[{set\-Tile\-G\-I\-D\-:at\-:with\-Flags\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-Tile\-G\-I\-D\-: 
+\begin{DoxyParamCaption}
+\item[{(uint32\-\_\-t)}]{gid}
+\item[{at:(C\-G\-Point)}]{pos}
+\item[{withFlags:(cc\-T\-M\-X\-Tile\-Flags)}]{flags}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_t_m_x_layer_af5a1be12e5457e4d3e54894953a0e041}
+sets the tile gid (gid = tile global id) at a given tile coordinate. The \hyperlink{struct_tile}{Tile} G\-I\-D can be obtained by using the method \char`\"{}tile\-G\-I\-D\-At\char`\"{} or by using the T\-M\-X editor -\/$>$ Tileset Mgr +1. If a tile is already placed at that position, then it will be removed.
+
+Use with\-Flags if the tile flags need to be changed as well 
+
+Referenced by set\-Tile\-G\-I\-D\-:at\-:.
+
+
+\begin{DoxyCode}
+                  :(uint32_t)gid at:(CGPoint)pos withFlags:(ccTMXTileFlags)
+      flags
+{
+        NSAssert( pos.x < layerSize_.width && pos.y < layerSize_.height && pos.
+      x >=0 && pos.y >=0, @"TMXLayer: invalid position");
+        NSAssert( tiles_ && atlasIndexArray_, @"TMXLayer: the tiles map has
+       been released");
+        NSAssert( gid == 0 || gid >= tileset_.firstGid, @"TMXLayer: invalid gid
+      " );
+
+        ccTMXTileFlags currentFlags;
+        uint32_t currentGID = [self tileGIDAt:pos withFlags:&currentFlags];
+        
+        if (currentGID != gid || currentFlags != flags )
+        {
+                uint32_t gidAndFlags = gid | flags;
+
+                // setting gid=0 is equal to remove the tile
+                if( gid == 0 )
+                        [self removeTileAt:pos];
+
+                // empty tile. create a new one
+                else if( currentGID == 0 )
+                        [self insertTileForGID:gidAndFlags at:pos];
+
+                // modifying an existing tile with a non-empty tile
+                else {
+
+                        NSUInteger z = pos.x + pos.y * layerSize_.width;
+                        CCSprite *sprite = (CCSprite*)[self getChildByTag:z];
+                        if( sprite ) {
+                                CGRect rect = [tileset_ rectForGID:gid];
+                                rect = CC_RECT_PIXELS_TO_POINTS(rect);
+
+                                [sprite setTextureRect:rect rotated:NO 
+      untrimmedSize:rect.size];
+
+                                if (flags) 
+                                        [self setupTileSprite:sprite position:[
+      sprite position] withGID:gidAndFlags];
+
+                                tiles_[z] = gidAndFlags;
+                        } else
+                                [self updateTileForGID:gidAndFlags at:pos];
+                }
+        }
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_t_m_x_layer_a2907ea3d49257923efeccd65803f8862}{\index{C\-C\-T\-M\-X\-Layer@{C\-C\-T\-M\-X\-Layer}!setup\-Tiles@{setup\-Tiles}}
+\index{setup\-Tiles@{setup\-Tiles}!CCTMXLayer@{C\-C\-T\-M\-X\-Layer}}
+\subsubsection[{setup\-Tiles}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf setup\-Tiles} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_t_m_x_layer_a2907ea3d49257923efeccd65803f8862}
+Creates the tiles 
+\begin{DoxyCode}
+{
+        // Optimization: quick hack that sets the image size on the tileset
+        tileset_.imageSize = [textureAtlas_.texture contentSizeInPixels];
+
+        // By default all the tiles are aliased
+        // pros:
+        //  - easier to render
+        // cons:
+        //  - difficult to scale / rotate / etc.
+        [textureAtlas_.texture setAliasTexParameters];
+
+        // Parse cocos2d properties
+        [self parseInternalProperties];
+
+        for( NSUInteger y = 0; y < layerSize_.height; y++ ) {
+                for( NSUInteger x = 0; x < layerSize_.width; x++ ) {
+
+                        NSUInteger pos = x + layerSize_.width * y;
+                        uint32_t gid = tiles_[ pos ];
+
+                        // gid are stored in little endian.
+                        // if host is big endian, then swap
+                        gid = CFSwapInt32LittleToHost( gid );
+
+                        // XXX: gid == 0 --> empty tile
+                        if( gid != 0 ) {
+                                [self appendTileForGID:gid at:ccp(x,y)];
+
+                                // Optimization: update min and max GID
+       rendered by the layer
+                                minGID_ = MIN(gid, minGID_);
+                                maxGID_ = MAX(gid, maxGID_);
+//                              minGID_ = MIN((gid & kFlippedMask), minGID_);
+//                              maxGID_ = MAX((gid & kFlippedMask), maxGID_);
+                        }
+                }
+        }
+
+        NSAssert( maxGID_ >= tileset_.firstGid &&
+                         minGID_ >= tileset_.firstGid, @"TMX: Only 1 tilset per
+       layer is supported");
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_t_m_x_layer_acf0ee39e7670ebf4cd0dcd806c0b0897}{\index{C\-C\-T\-M\-X\-Layer@{C\-C\-T\-M\-X\-Layer}!tile\-At\-:@{tile\-At\-:}}
+\index{tile\-At\-:@{tile\-At\-:}!CCTMXLayer@{C\-C\-T\-M\-X\-Layer}}
+\subsubsection[{tile\-At\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Sprite} $\ast$) {\bf tile\-At\-:} 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{tile\-Coordinate}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_t_m_x_layer_acf0ee39e7670ebf4cd0dcd806c0b0897}
+returns the tile (\hyperlink{class_c_c_sprite}{C\-C\-Sprite}) at a given a tile coordinate. The returned \hyperlink{class_c_c_sprite}{C\-C\-Sprite} will be already added to the \hyperlink{interface_c_c_t_m_x_layer}{C\-C\-T\-M\-X\-Layer}. Don't add it again. The \hyperlink{class_c_c_sprite}{C\-C\-Sprite} can be treated like any other \hyperlink{class_c_c_sprite}{C\-C\-Sprite}\-: rotated, scaled, translated, opacity, color, etc. You can remove either by calling\-:
+\begin{DoxyItemize}
+\item \mbox{[}layer remove\-Child\-:sprite cleanup\-:cleanup\mbox{]};
+\item or \mbox{[}layer remove\-Tile\-At\-:ccp(x,y)\mbox{]}; 
+\end{DoxyItemize}
+\begin{DoxyCode}
+                   :(CGPoint)pos
+{
+        NSAssert( pos.x < layerSize_.width && pos.y < layerSize_.height && pos.
+      x >=0 && pos.y >=0, @"TMXLayer: invalid position");
+        NSAssert( tiles_ && atlasIndexArray_, @"TMXLayer: the tiles map has
+       been released");
+
+        CCSprite *tile = nil;
+        uint32_t gid = [self tileGIDAt:pos];
+
+        // if GID == 0, then no tile is present
+        if( gid ) {
+                int z = pos.x + pos.y * layerSize_.width;
+                tile = (CCSprite*) [self getChildByTag:z];
+
+                // tile not created yet. create it
+                if( ! tile ) {
+                        CGRect rect = [tileset_ rectForGID:gid];
+                        rect = CC_RECT_PIXELS_TO_POINTS(rect);
+                        tile = [[CCSprite alloc] initWithTexture:self.texture 
+      rect:rect];
+                        [tile setBatchNode:self];
+
+            CGPoint p = [self positionAt:pos];
+            [tile setPosition:p];
+                        [tile setVertexZ: [self vertexZForPos:pos]];
+                        tile.anchorPoint = CGPointZero;
+                        [tile setOpacity:opacity_];
+
+                        NSUInteger indexForZ = [self atlasIndexForExistantZ:z];
+                        [self addSpriteWithoutQuad:tile z:indexForZ tag:z];
+                        [tile release];
+                }
+        }
+        return tile;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_t_m_x_layer_a22f4a950562db2473c188df39e5fc89c}{\index{C\-C\-T\-M\-X\-Layer@{C\-C\-T\-M\-X\-Layer}!tile\-G\-I\-D\-At\-:@{tile\-G\-I\-D\-At\-:}}
+\index{tile\-G\-I\-D\-At\-:@{tile\-G\-I\-D\-At\-:}!CCTMXLayer@{C\-C\-T\-M\-X\-Layer}}
+\subsubsection[{tile\-G\-I\-D\-At\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (uint32\-\_\-t) {\bf tile\-G\-I\-D\-At\-:} 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{tile\-Coordinate}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_t_m_x_layer_a22f4a950562db2473c188df39e5fc89c}
+returns the tile gid at a given tile coordinate. if it returns 0, it means that the tile is empty. This method requires the the tile map has not been previously released (eg. don't call \mbox{[}layer release\-Map\mbox{]}) 
+
+Referenced by remove\-Tile\-At\-:, and tile\-At\-:.
+
+
+\begin{DoxyCode}
+                     :(CGPoint)pos
+{
+        return [self tileGIDAt:pos withFlags:NULL];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_t_m_x_layer_afe712473b73e0d12d132cf8fc0c49436}{\index{C\-C\-T\-M\-X\-Layer@{C\-C\-T\-M\-X\-Layer}!tile\-G\-I\-D\-At\-:with\-Flags\-:@{tile\-G\-I\-D\-At\-:with\-Flags\-:}}
+\index{tile\-G\-I\-D\-At\-:with\-Flags\-:@{tile\-G\-I\-D\-At\-:with\-Flags\-:}!CCTMXLayer@{C\-C\-T\-M\-X\-Layer}}
+\subsubsection[{tile\-G\-I\-D\-At\-:with\-Flags\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (uint32\-\_\-t) {\bf tile\-G\-I\-D\-At\-:} 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{pos}
+\item[{withFlags:(cc\-T\-M\-X\-Tile\-Flags$\ast$)}]{flags}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_t_m_x_layer_afe712473b73e0d12d132cf8fc0c49436}
+returns the tile gid at a given tile coordinate. It also returns the tile flags. This method requires the the tile map has not been previously released (eg. don't call \mbox{[}layer release\-Map\mbox{]}) 
+
+Referenced by set\-Tile\-G\-I\-D\-:at\-:with\-Flags\-:, and tile\-G\-I\-D\-At\-:.
+
+
+\begin{DoxyCode}
+                     :(CGPoint)pos withFlags:(ccTMXTileFlags*)flags
+{
+        NSAssert( pos.x < layerSize_.width && pos.y < layerSize_.height && pos.
+      x >=0 && pos.y >=0, @"TMXLayer: invalid position");
+        NSAssert( tiles_ && atlasIndexArray_, @"TMXLayer: the tiles map has
+       been released");
+
+        NSInteger idx = pos.x + pos.y * layerSize_.width;
+
+        // Bits on the far end of the 32-bit global tile ID are used for tile
+       flags
+
+        uint32_t tile = tiles_[idx];
+        
+        // issue1264, flipped tiles can be changed dynamically
+        if (flags)
+                *flags = tile & kCCFlipedAll;
+
+        return ( tile & kCCFlippedMask);
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_t_m_x_layer_ae62640f00d84efb58df4eb90e3913700}{\index{C\-C\-T\-M\-X\-Layer@{C\-C\-T\-M\-X\-Layer}!layer\-Name@{layer\-Name}}
+\index{layer\-Name@{layer\-Name}!CCTMXLayer@{C\-C\-T\-M\-X\-Layer}}
+\subsubsection[{layer\-Name}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String$\ast$) {\bf layer\-Name}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}\label{interface_c_c_t_m_x_layer_ae62640f00d84efb58df4eb90e3913700}
+name of the layer 
+
+Referenced by C\-C\-T\-M\-X\-Tiled\-Map\-::layer\-Named\-:.
+
+\hypertarget{interface_c_c_t_m_x_layer_ab1be7f739da6da05fbc11da0e2c647f9}{\index{C\-C\-T\-M\-X\-Layer@{C\-C\-T\-M\-X\-Layer}!layer\-Orientation@{layer\-Orientation}}
+\index{layer\-Orientation@{layer\-Orientation}!CCTMXLayer@{C\-C\-T\-M\-X\-Layer}}
+\subsubsection[{layer\-Orientation}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-U\-Integer) {\bf layer\-Orientation}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_t_m_x_layer_ab1be7f739da6da05fbc11da0e2c647f9}
+Layer orientation, which is the same as the map orientation \hypertarget{interface_c_c_t_m_x_layer_a4d680b868f0e476d8a51e52d3c4ff64e}{\index{C\-C\-T\-M\-X\-Layer@{C\-C\-T\-M\-X\-Layer}!layer\-Size@{layer\-Size}}
+\index{layer\-Size@{layer\-Size}!CCTMXLayer@{C\-C\-T\-M\-X\-Layer}}
+\subsubsection[{layer\-Size}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Size) {\bf layer\-Size}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_t_m_x_layer_a4d680b868f0e476d8a51e52d3c4ff64e}
+size of the layer in tiles \hypertarget{interface_c_c_t_m_x_layer_a13536a56d5a74341e766d8918a2c9013}{\index{C\-C\-T\-M\-X\-Layer@{C\-C\-T\-M\-X\-Layer}!map\-Tile\-Size@{map\-Tile\-Size}}
+\index{map\-Tile\-Size@{map\-Tile\-Size}!CCTMXLayer@{C\-C\-T\-M\-X\-Layer}}
+\subsubsection[{map\-Tile\-Size}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Size) {\bf map\-Tile\-Size}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_t_m_x_layer_a13536a56d5a74341e766d8918a2c9013}
+size of the map's tile (could be different from the tile's size) \hypertarget{interface_c_c_t_m_x_layer_a3fcc631e6c87920daa231095c62b3344}{\index{C\-C\-T\-M\-X\-Layer@{C\-C\-T\-M\-X\-Layer}!properties@{properties}}
+\index{properties@{properties}!CCTMXLayer@{C\-C\-T\-M\-X\-Layer}}
+\subsubsection[{properties}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Array$\ast$) {\bf properties}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}\label{interface_c_c_t_m_x_layer_a3fcc631e6c87920daa231095c62b3344}
+properties from the layer. They can be added using Tiled \hypertarget{interface_c_c_t_m_x_layer_a37c6ea184edaec1b0ba8f82cf2c386c8}{\index{C\-C\-T\-M\-X\-Layer@{C\-C\-T\-M\-X\-Layer}!tiles@{tiles}}
+\index{tiles@{tiles}!CCTMXLayer@{C\-C\-T\-M\-X\-Layer}}
+\subsubsection[{tiles}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (uint32\-\_\-t$\ast$) {\bf tiles}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_t_m_x_layer_a37c6ea184edaec1b0ba8f82cf2c386c8}
+pointer to the map of tiles \hypertarget{interface_c_c_t_m_x_layer_afb0c60d744928f1ebbe66010448cdcce}{\index{C\-C\-T\-M\-X\-Layer@{C\-C\-T\-M\-X\-Layer}!tileset@{tileset}}
+\index{tileset@{tileset}!CCTMXLayer@{C\-C\-T\-M\-X\-Layer}}
+\subsubsection[{tileset}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-T\-M\-X\-Tileset\-Info}$\ast$) {\bf tileset}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}\label{interface_c_c_t_m_x_layer_afb0c60d744928f1ebbe66010448cdcce}
+Tileset information for the layer 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-T\-M\-X\-Layer.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-T\-M\-X\-Layer.\-m\end{DoxyCompactItemize}

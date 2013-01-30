@@ -1,0 +1,97 @@
+\hypertarget{interface_c_c_speed}{\section{C\-C\-Speed Class Reference}
+\label{interface_c_c_speed}\index{C\-C\-Speed@{C\-C\-Speed}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action.\-h$>$}
+
+Inheritance diagram for C\-C\-Speed\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_c_c_speed}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_speed_a4f017a2b690f6b9f0a04b5f921cedc68}{init\-With\-Action\-:speed\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_speed_a8bb0025307babbcd0110d77959a099ab}{action\-With\-Action\-:speed\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_speed_adf1f77009ed6df2998e10838c9a143ba}{\hyperlink{class_c_c_action_interval}{C\-C\-Action\-Interval} $\ast$ {\bfseries inner\-Action\-\_\-}}\label{interface_c_c_speed_adf1f77009ed6df2998e10838c9a143ba}
+
+\item 
+\hypertarget{interface_c_c_speed_a5d5cb99bd209b02e7f318033944cfcfc}{float {\bfseries speed\-\_\-}}\label{interface_c_c_speed_a5d5cb99bd209b02e7f318033944cfcfc}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{interface_c_c_speed_a346e8637e932398e07aba868ef7b11d6}{speed}
+\item 
+\hyperlink{class_c_c_action_interval}{C\-C\-Action\-Interval} $\ast$ \hyperlink{interface_c_c_speed_a79868e5ba88157593769820e5a3a610d}{inner\-Action}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Changes the speed of an action, making it take longer (speed$<$1) or less (speed$>$1) time. Useful to simulate 'slow motion' or 'fast forward' effect. \begin{DoxyWarning}{Warning}
+This action can't be Sequence-\/able because it is not an C\-C\-Interval\-Action 
+\end{DoxyWarning}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_speed_a8bb0025307babbcd0110d77959a099ab}{\index{C\-C\-Speed@{C\-C\-Speed}!action\-With\-Action\-:speed\-:@{action\-With\-Action\-:speed\-:}}
+\index{action\-With\-Action\-:speed\-:@{action\-With\-Action\-:speed\-:}!CCSpeed@{C\-C\-Speed}}
+\subsubsection[{action\-With\-Action\-:speed\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) action\-With\-Action\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Action\-Interval}$\ast$)}]{action}
+\item[{speed:(float)}]{value}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_speed_a8bb0025307babbcd0110d77959a099ab}
+creates the action 
+\begin{DoxyCode}
+                      : (CCActionInterval*) action speed:(float)value
+{
+        return [[[self alloc] initWithAction: action speed:value] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_speed_a4f017a2b690f6b9f0a04b5f921cedc68}{\index{C\-C\-Speed@{C\-C\-Speed}!init\-With\-Action\-:speed\-:@{init\-With\-Action\-:speed\-:}}
+\index{init\-With\-Action\-:speed\-:@{init\-With\-Action\-:speed\-:}!CCSpeed@{C\-C\-Speed}}
+\subsubsection[{init\-With\-Action\-:speed\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Action\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Action\-Interval}$\ast$)}]{action}
+\item[{speed:(float)}]{value}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_speed_a4f017a2b690f6b9f0a04b5f921cedc68}
+initializes the action 
+\begin{DoxyCode}
+                    : (CCActionInterval*) action speed:(float)value
+{
+        if( (self=[super init]) ) {
+                self.innerAction = action;
+                speed_ = value;
+        }
+        return self;
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_speed_a79868e5ba88157593769820e5a3a610d}{\index{C\-C\-Speed@{C\-C\-Speed}!inner\-Action@{inner\-Action}}
+\index{inner\-Action@{inner\-Action}!CCSpeed@{C\-C\-Speed}}
+\subsubsection[{inner\-Action}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Action\-Interval}$\ast$) {\bf inner\-Action}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}\label{interface_c_c_speed_a79868e5ba88157593769820e5a3a610d}
+Inner action of \hyperlink{interface_c_c_speed}{C\-C\-Speed} \hypertarget{interface_c_c_speed_a346e8637e932398e07aba868ef7b11d6}{\index{C\-C\-Speed@{C\-C\-Speed}!speed@{speed}}
+\index{speed@{speed}!CCSpeed@{C\-C\-Speed}}
+\subsubsection[{speed}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf speed}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_speed_a346e8637e932398e07aba868ef7b11d6}
+alter the speed of the inner function in runtime 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action.\-m\end{DoxyCompactItemize}

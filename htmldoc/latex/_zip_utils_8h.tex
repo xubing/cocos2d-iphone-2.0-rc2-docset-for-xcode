@@ -1,0 +1,291 @@
+\hypertarget{_zip_utils_8h}{\section{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.1-\/beta4/cocos2d/\-Support/\-Zip\-Utils.h File Reference}
+\label{_zip_utils_8h}\index{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/\-Support/\-Zip\-Utils.\-h@{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/\-Support/\-Zip\-Utils.\-h}}
+}
+{\ttfamily \#import $<$stdint.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_c_c_z_header}{C\-C\-Z\-Header}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries C\-C\-Z\-\_\-\-C\-O\-M\-P\-R\-E\-S\-S\-I\-O\-N\-\_\-\-Z\-L\-I\-B}, 
+{\bfseries C\-C\-Z\-\_\-\-C\-O\-M\-P\-R\-E\-S\-S\-I\-O\-N\-\_\-\-B\-Z\-I\-P2}, 
+{\bfseries C\-C\-Z\-\_\-\-C\-O\-M\-P\-R\-E\-S\-S\-I\-O\-N\-\_\-\-G\-Z\-I\-P}, 
+{\bfseries C\-C\-Z\-\_\-\-C\-O\-M\-P\-R\-E\-S\-S\-I\-O\-N\-\_\-\-N\-O\-N\-E}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_zip_utils_8h_a8d7eacb2094f88f30fbcd33fce237fbc}{cc\-Inflate\-Memory} (unsigned char $\ast$in, unsigned int in\-Length, unsigned char $\ast$$\ast$out)
+\item 
+int \hyperlink{_zip_utils_8h_a6208cd3be8a36dcfb3d1ad33231ca803}{cc\-Inflate\-Memory\-With\-Hint} (unsigned char $\ast$in, unsigned int in\-Length, unsigned char $\ast$$\ast$out, unsigned int out\-Lenght\-Hint)
+\item 
+int \hyperlink{_zip_utils_8h_abe1a906aa6add3f50d96caf5b9dc2a00}{cc\-Inflate\-G\-Zip\-File} (const char $\ast$filename, unsigned char $\ast$$\ast$out)
+\item 
+int \hyperlink{_zip_utils_8h_aa5d95ee1abe70cfccdbc4f9d9008bef0}{cc\-Inflate\-C\-C\-Z\-File} (const char $\ast$filename, unsigned char $\ast$$\ast$out)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Zip helper functions 
+
+\subsection{Function Documentation}
+\hypertarget{_zip_utils_8h_aa5d95ee1abe70cfccdbc4f9d9008bef0}{\index{Zip\-Utils.\-h@{Zip\-Utils.\-h}!cc\-Inflate\-C\-C\-Z\-File@{cc\-Inflate\-C\-C\-Z\-File}}
+\index{cc\-Inflate\-C\-C\-Z\-File@{cc\-Inflate\-C\-C\-Z\-File}!ZipUtils.h@{Zip\-Utils.\-h}}
+\subsubsection[{cc\-Inflate\-C\-C\-Z\-File}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf cc\-Inflate\-C\-C\-Z\-File} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename, }
+\item[{unsigned char $\ast$$\ast$}]{out}
+\end{DoxyParamCaption}
+)}}\label{_zip_utils_8h_aa5d95ee1abe70cfccdbc4f9d9008bef0}
+inflates a C\-C\-Z file into memory
+
+\begin{DoxyReturn}{Returns}
+the length of the deflated buffer
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+v0.\-99.\-5 
+\end{DoxySince}
+
+
+Referenced by cc\-Inflate\-C\-C\-Z\-File(), and C\-C\-Texture\-P\-V\-R\-::init\-With\-Contents\-Of\-File\-:.
+
+
+\begin{DoxyCode}
+{
+        NSCAssert( out, @"ccInflateCCZFile: invalid 'out' parameter");
+        NSCAssert( &*out, @"ccInflateCCZFile: invalid 'out' parameter");
+
+        // load file into memory
+        unsigned char *compressed = NULL;
+        NSInteger fileLen  = ccLoadFileIntoMemory( path, &compressed );
+        if( fileLen < 0 ) {
+                CCLOG(@"cocos2d: Error loading CCZ compressed file");
+                return -1;
+        }
+
+        struct CCZHeader *header = (struct CCZHeader*) compressed;
+
+        // verify header
+        if( header->sig[0] != 'C' || header->sig[1] != 'C' || header->sig[2] !=
+       'Z' || header->sig[3] != '!' ) {
+                CCLOG(@"cocos2d: Invalid CCZ file");
+                free(compressed);
+                return -1;
+        }
+
+        // verify header version
+        uint16_t version = CFSwapInt16BigToHost( header->version );
+        if( version > 2 ) {
+                CCLOG(@"cocos2d: Unsupported CCZ header format");
+                free(compressed);
+                return -1;
+        }
+
+        // verify compression format
+        if( CFSwapInt16BigToHost(header->compression_type) != 
+      CCZ_COMPRESSION_ZLIB ) {
+                CCLOG(@"cocos2d: CCZ Unsupported compression method");
+                free(compressed);
+                return -1;
+        }
+
+        uint32_t len = CFSwapInt32BigToHost( header->len );
+
+        *out = malloc( len );
+        if(! *out )
+        {
+                CCLOG(@"cocos2d: CCZ: Failed to allocate memory for texture");
+                free(compressed);
+                return -1;
+        }
+
+
+        uLongf destlen = len;
+        uLongf source = (uLongf) compressed + sizeof(*header);
+        int ret = uncompress(*out, &destlen, (Bytef*)source, fileLen - sizeof(*
+      header) );
+
+        free( compressed );
+
+        if( ret != Z_OK )
+        {
+                CCLOG(@"cocos2d: CCZ: Failed to uncompress data");
+                free( *out );
+                *out = NULL;
+                return -1;
+        }
+
+
+        return len;
+}
+\end{DoxyCode}
+\hypertarget{_zip_utils_8h_abe1a906aa6add3f50d96caf5b9dc2a00}{\index{Zip\-Utils.\-h@{Zip\-Utils.\-h}!cc\-Inflate\-G\-Zip\-File@{cc\-Inflate\-G\-Zip\-File}}
+\index{cc\-Inflate\-G\-Zip\-File@{cc\-Inflate\-G\-Zip\-File}!ZipUtils.h@{Zip\-Utils.\-h}}
+\subsubsection[{cc\-Inflate\-G\-Zip\-File}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf cc\-Inflate\-G\-Zip\-File} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename, }
+\item[{unsigned char $\ast$$\ast$}]{out}
+\end{DoxyParamCaption}
+)}}\label{_zip_utils_8h_abe1a906aa6add3f50d96caf5b9dc2a00}
+inflates a G\-Zip file into memory
+
+\begin{DoxyReturn}{Returns}
+the length of the deflated buffer
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+v0.\-99.\-5 
+\end{DoxySince}
+
+
+Referenced by cc\-Inflate\-G\-Zip\-File(), and C\-C\-Texture\-P\-V\-R\-::init\-With\-Contents\-Of\-File\-:.
+
+
+\begin{DoxyCode}
+{
+        int len;
+        unsigned int offset = 0;
+
+        NSCAssert( out, @"ccInflateGZipFile: invalid 'out' parameter");
+        NSCAssert( &*out, @"ccInflateGZipFile: invalid 'out' parameter");
+
+        gzFile inFile = gzopen(path, "rb");
+        if( inFile == NULL ) {
+                CCLOG(@"cocos2d: ZipUtils: error open gzip file: %s", path);
+                return -1;
+        }
+
+        /* 512k initial decompress buffer */
+        int bufferSize = 512 * 1024;
+        unsigned int totalBufferSize = bufferSize;
+
+        *out = malloc( bufferSize );
+        if( ! out ) {
+                CCLOG(@"cocos2d: ZipUtils: out of memory");
+                return -1;
+        }
+
+        for (;;) {
+                len = gzread(inFile, *out + offset, bufferSize);
+                if (len < 0) {
+                        CCLOG(@"cocos2d: ZipUtils: error in gzread");
+                        free( *out );
+                        *out = NULL;
+                        return -1;
+                }
+                if (len == 0)
+                        break;
+
+                offset += len;
+
+                // finish reading the file
+                if( len < bufferSize )
+                        break;
+
+                bufferSize *= BUFFER_INC_FACTOR;
+                totalBufferSize += bufferSize;
+                unsigned char *tmp = realloc(*out, totalBufferSize );
+
+                if( ! tmp ) {
+                        CCLOG(@"cocos2d: ZipUtils: out of memory");
+                        free( *out );
+                        *out = NULL;
+                        return -1;
+                }
+
+                *out = tmp;
+        }
+
+        if (gzclose(inFile) != Z_OK)
+                CCLOG(@"cocos2d: ZipUtils: gzclose failed");
+
+        return offset;
+}
+\end{DoxyCode}
+\hypertarget{_zip_utils_8h_a8d7eacb2094f88f30fbcd33fce237fbc}{\index{Zip\-Utils.\-h@{Zip\-Utils.\-h}!cc\-Inflate\-Memory@{cc\-Inflate\-Memory}}
+\index{cc\-Inflate\-Memory@{cc\-Inflate\-Memory}!ZipUtils.h@{Zip\-Utils.\-h}}
+\subsubsection[{cc\-Inflate\-Memory}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf cc\-Inflate\-Memory} (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{in, }
+\item[{unsigned int}]{in\-Length, }
+\item[{unsigned char $\ast$$\ast$}]{out}
+\end{DoxyParamCaption}
+)}}\label{_zip_utils_8h_a8d7eacb2094f88f30fbcd33fce237fbc}
+Inflates either zlib or gzip deflated memory. The inflated memory is expected to be freed by the caller.
+
+It will allocate 256k for the destination buffer. If it is not enough it will multiply the previous buffer size per 2, until there is enough memory. \begin{DoxyReturn}{Returns}
+the length of the deflated buffer
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+v0.\-8.\-1 
+\end{DoxySince}
+
+
+Referenced by cc\-Inflate\-Memory(), and C\-C\-Particle\-System\-::init\-With\-Dictionary\-:path\-:.
+
+
+\begin{DoxyCode}
+{
+        // 256k for hint
+        return ccInflateMemoryWithHint(in, inLength, out, 256 * 1024 );
+}
+\end{DoxyCode}
+\hypertarget{_zip_utils_8h_a6208cd3be8a36dcfb3d1ad33231ca803}{\index{Zip\-Utils.\-h@{Zip\-Utils.\-h}!cc\-Inflate\-Memory\-With\-Hint@{cc\-Inflate\-Memory\-With\-Hint}}
+\index{cc\-Inflate\-Memory\-With\-Hint@{cc\-Inflate\-Memory\-With\-Hint}!ZipUtils.h@{Zip\-Utils.\-h}}
+\subsubsection[{cc\-Inflate\-Memory\-With\-Hint}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf cc\-Inflate\-Memory\-With\-Hint} (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{in, }
+\item[{unsigned int}]{in\-Length, }
+\item[{unsigned char $\ast$$\ast$}]{out, }
+\item[{unsigned int}]{out\-Lenght\-Hint}
+\end{DoxyParamCaption}
+)}}\label{_zip_utils_8h_a6208cd3be8a36dcfb3d1ad33231ca803}
+Inflates either zlib or gzip deflated memory. The inflated memory is expected to be freed by the caller.
+
+out\-Lenght\-Hint is assumed to be the needed room to allocate the inflated buffer.
+
+\begin{DoxyReturn}{Returns}
+the length of the deflated buffer
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+v1.\-0.\-0 
+\end{DoxySince}
+
+
+Referenced by cc\-Inflate\-Memory(), and cc\-Inflate\-Memory\-With\-Hint().
+
+
+\begin{DoxyCode}
+{
+        unsigned int outLength = 0;
+        int err = inflateMemoryWithHint(in, inLength, out, &outLength, 
+      outLengthHint );
+
+        if (err != Z_OK || *out == NULL) {
+                if (err == Z_MEM_ERROR)
+                        CCLOG(@"cocos2d: ZipUtils: Out of memory while
+       decompressing map data!");
+
+                else if (err == Z_VERSION_ERROR)
+                        CCLOG(@"cocos2d: ZipUtils: Incompatible zlib version!")
+      ;
+
+                else if (err == Z_DATA_ERROR)
+                        CCLOG(@"cocos2d: ZipUtils: Incorrect zlib compressed
+       data!");
+
+                else
+                        CCLOG(@"cocos2d: ZipUtils: Unknown error while
+       decompressing map data!");
+
+                free(*out);
+                *out = NULL;
+                outLength = 0;
+        }
+
+        return outLength;
+}
+\end{DoxyCode}

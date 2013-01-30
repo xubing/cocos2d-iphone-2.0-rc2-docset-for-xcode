@@ -1,0 +1,68 @@
+\hypertarget{interface_c_c_ease_elastic_in}{\section{C\-C\-Ease\-Elastic\-In Class Reference}
+\label{interface_c_c_ease_elastic_in}\index{C\-C\-Ease\-Elastic\-In@{C\-C\-Ease\-Elastic\-In}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Ease.\-h$>$}
+
+Inheritance diagram for C\-C\-Ease\-Elastic\-In\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{interface_c_c_ease_elastic_in}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_c_c_ease_elastic_in_abea6af2a0240a45f15a81a09b9e454c1}{update\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Ease Elastic In action. \begin{DoxyWarning}{Warning}
+This action doesn't use a bijective function. Actions like Sequence might have an unexpected result when used with this action. 
+\end{DoxyWarning}
+\begin{DoxySince}{Since}
+v0.\-8.\-2 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_ease_elastic_in_abea6af2a0240a45f15a81a09b9e454c1}{\index{C\-C\-Ease\-Elastic\-In@{C\-C\-Ease\-Elastic\-In}!update\-:@{update\-:}}
+\index{update\-:@{update\-:}!CCEaseElasticIn@{C\-C\-Ease\-Elastic\-In}}
+\subsubsection[{update\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf update\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{time}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_ease_elastic_in_abea6af2a0240a45f15a81a09b9e454c1}
+called once per frame. time a value between 0 and 1 For example\-:
+\begin{DoxyItemize}
+\item 0 means that the action just started
+\item 0.\-5 means that the action is in the middle
+\item 1 means that the action is over 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{interface_c_c_action_a41207f5e0f31713136c8b690fcf166ef}{C\-C\-Action}.
+
+
+\begin{DoxyCode}
+              : (ccTime) t
+{
+        ccTime newT = 0;
+        if (t == 0 || t == 1)
+                newT = t;
+
+        else {
+                float s = period_ / 4;
+                t = t - 1;
+                newT = -powf(2, 10 * t) * sinf( (t-s) *M_PI_X_2 / period_);
+        }
+        [other update:newT];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Ease.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Ease.\-m\end{DoxyCompactItemize}

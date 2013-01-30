@@ -1,0 +1,106 @@
+\hypertarget{interface_c_c_skew_to}{\section{C\-C\-Skew\-To Class Reference}
+\label{interface_c_c_skew_to}\index{C\-C\-Skew\-To@{C\-C\-Skew\-To}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Interval.\-h$>$}
+
+Inheritance diagram for C\-C\-Skew\-To\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{interface_c_c_skew_to}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_skew_to_aed9ba699432171afbf92b6bdd7ad6267}{init\-With\-Duration\-:skew\-X\-:skew\-Y\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_skew_to_aa98c5717f1ec1ec3f623ae510890a615}{action\-With\-Duration\-:skew\-X\-:skew\-Y\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_skew_to_a2b0cbddce3c75f3ddc4ab30f3230317a}{float {\bfseries skew\-X\-\_\-}}\label{interface_c_c_skew_to_a2b0cbddce3c75f3ddc4ab30f3230317a}
+
+\item 
+\hypertarget{interface_c_c_skew_to_a022df4d66d39d440c33ad666ce946cc9}{float {\bfseries skew\-Y\-\_\-}}\label{interface_c_c_skew_to_a022df4d66d39d440c33ad666ce946cc9}
+
+\item 
+\hypertarget{interface_c_c_skew_to_a0d4e3dda8a3b766c147f273842287672}{float {\bfseries start\-Skew\-X\-\_\-}}\label{interface_c_c_skew_to_a0d4e3dda8a3b766c147f273842287672}
+
+\item 
+\hypertarget{interface_c_c_skew_to_a574554a79a4e335eb50a31c706c03866}{float {\bfseries start\-Skew\-Y\-\_\-}}\label{interface_c_c_skew_to_a574554a79a4e335eb50a31c706c03866}
+
+\item 
+\hypertarget{interface_c_c_skew_to_aad60393fc7482a1b20935690f89c2d59}{float {\bfseries end\-Skew\-X\-\_\-}}\label{interface_c_c_skew_to_aad60393fc7482a1b20935690f89c2d59}
+
+\item 
+\hypertarget{interface_c_c_skew_to_a26a41011403d4563a5cf94170102d1e1}{float {\bfseries end\-Skew\-Y\-\_\-}}\label{interface_c_c_skew_to_a26a41011403d4563a5cf94170102d1e1}
+
+\item 
+\hypertarget{interface_c_c_skew_to_a8f922f125aa33a52fe3e0b6e923f48a4}{float {\bfseries delta\-X\-\_\-}}\label{interface_c_c_skew_to_a8f922f125aa33a52fe3e0b6e923f48a4}
+
+\item 
+\hypertarget{interface_c_c_skew_to_a3223d16f79e51de065fa07af64f6f520}{float {\bfseries delta\-Y\-\_\-}}\label{interface_c_c_skew_to_a3223d16f79e51de065fa07af64f6f520}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Skews a \hyperlink{class_c_c_node}{C\-C\-Node} object to given angles by modifying its skew\-X and skew\-Y attributes \begin{DoxySince}{Since}
+v1.\-0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_skew_to_aa98c5717f1ec1ec3f623ae510890a615}{\index{C\-C\-Skew\-To@{C\-C\-Skew\-To}!action\-With\-Duration\-:skew\-X\-:skew\-Y\-:@{action\-With\-Duration\-:skew\-X\-:skew\-Y\-:}}
+\index{action\-With\-Duration\-:skew\-X\-:skew\-Y\-:@{action\-With\-Duration\-:skew\-X\-:skew\-Y\-:}!CCSkewTo@{C\-C\-Skew\-To}}
+\subsubsection[{action\-With\-Duration\-:skew\-X\-:skew\-Y\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{t}
+\item[{skewX:(float)}]{sx}
+\item[{skewY:(float)}]{sy}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_skew_to_aa98c5717f1ec1ec3f623ae510890a615}
+creates the action 
+\begin{DoxyCode}
+                        :(ccTime)t skewX:(float)sx skewY:(float)sy
+{
+        return [[[self alloc] initWithDuration: t skewX:sx skewY:sy] 
+      autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_skew_to_aed9ba699432171afbf92b6bdd7ad6267}{\index{C\-C\-Skew\-To@{C\-C\-Skew\-To}!init\-With\-Duration\-:skew\-X\-:skew\-Y\-:@{init\-With\-Duration\-:skew\-X\-:skew\-Y\-:}}
+\index{init\-With\-Duration\-:skew\-X\-:skew\-Y\-:@{init\-With\-Duration\-:skew\-X\-:skew\-Y\-:}!CCSkewTo@{C\-C\-Skew\-To}}
+\subsubsection[{init\-With\-Duration\-:skew\-X\-:skew\-Y\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{t}
+\item[{skewX:(float)}]{sx}
+\item[{skewY:(float)}]{sy}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_skew_to_aed9ba699432171afbf92b6bdd7ad6267}
+initializes the action with duration, skew X and skew Y 
+
+Reimplemented in \hyperlink{interface_c_c_skew_by_ad325540195e7da22ea15abd163c7c7fb}{C\-C\-Skew\-By}.
+
+
+\begin{DoxyCode}
+                      :(ccTime)t skewX:(float)sx skewY:(float)sy
+{
+        if( (self=[super initWithDuration:t]) ) {
+                endSkewX_ = sx;
+                endSkewY_ = sy;
+        }
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-m\end{DoxyCompactItemize}

@@ -1,0 +1,77 @@
+\hypertarget{structb2_wheel_joint_def}{\section{b2\-Wheel\-Joint\-Def Struct Reference}
+\label{structb2_wheel_joint_def}\index{b2\-Wheel\-Joint\-Def@{b2\-Wheel\-Joint\-Def}}
+}
+
+
+{\ttfamily \#include $<$b2\-Wheel\-Joint.\-h$>$}
+
+Inheritance diagram for b2\-Wheel\-Joint\-Def\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structb2_wheel_joint_def}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structb2_wheel_joint_def_af26887092d36c3cd03898401a38783e2}{Initialize} (\hyperlink{classb2_body}{b2\-Body} $\ast$\hyperlink{structb2_joint_def_a8cd54c93da396be75a9788f2c6897f05}{body\-A}, \hyperlink{classb2_body}{b2\-Body} $\ast$\hyperlink{structb2_joint_def_aa4f4dee2fbcd12187b19506b60e68e3d}{body\-B}, const \hyperlink{structb2_vec2}{b2\-Vec2} \&anchor, const \hyperlink{structb2_vec2}{b2\-Vec2} \&axis)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structb2_wheel_joint_def_a9429d2273bfdd8bdc0db416e73b89ae4}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{structb2_wheel_joint_def_a9429d2273bfdd8bdc0db416e73b89ae4}{local\-Anchor\-A}}\label{structb2_wheel_joint_def_a9429d2273bfdd8bdc0db416e73b89ae4}
+
+\begin{DoxyCompactList}\small\item\em The local anchor point relative to body\-A's origin. \end{DoxyCompactList}\item 
+\hypertarget{structb2_wheel_joint_def_a88ba0f7108076b9d7ced68425be95c27}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{structb2_wheel_joint_def_a88ba0f7108076b9d7ced68425be95c27}{local\-Anchor\-B}}\label{structb2_wheel_joint_def_a88ba0f7108076b9d7ced68425be95c27}
+
+\begin{DoxyCompactList}\small\item\em The local anchor point relative to body\-B's origin. \end{DoxyCompactList}\item 
+\hypertarget{structb2_wheel_joint_def_ad635ee7b77b50037dc0e021a0f5c93a6}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{structb2_wheel_joint_def_ad635ee7b77b50037dc0e021a0f5c93a6}{local\-Axis\-A}}\label{structb2_wheel_joint_def_ad635ee7b77b50037dc0e021a0f5c93a6}
+
+\begin{DoxyCompactList}\small\item\em The local translation axis in body\-A. \end{DoxyCompactList}\item 
+\hypertarget{structb2_wheel_joint_def_a8e7193d6c34c784ffd71e79d3a70acc6}{bool \hyperlink{structb2_wheel_joint_def_a8e7193d6c34c784ffd71e79d3a70acc6}{enable\-Motor}}\label{structb2_wheel_joint_def_a8e7193d6c34c784ffd71e79d3a70acc6}
+
+\begin{DoxyCompactList}\small\item\em Enable/disable the joint motor. \end{DoxyCompactList}\item 
+\hypertarget{structb2_wheel_joint_def_ab658ce0fae40c6de09133659f7ffb829}{float32 \hyperlink{structb2_wheel_joint_def_ab658ce0fae40c6de09133659f7ffb829}{max\-Motor\-Torque}}\label{structb2_wheel_joint_def_ab658ce0fae40c6de09133659f7ffb829}
+
+\begin{DoxyCompactList}\small\item\em The maximum motor torque, usually in N-\/m. \end{DoxyCompactList}\item 
+\hypertarget{structb2_wheel_joint_def_a7248e25f2ca6b6c2a5f7079ce16e7748}{float32 \hyperlink{structb2_wheel_joint_def_a7248e25f2ca6b6c2a5f7079ce16e7748}{motor\-Speed}}\label{structb2_wheel_joint_def_a7248e25f2ca6b6c2a5f7079ce16e7748}
+
+\begin{DoxyCompactList}\small\item\em The desired motor speed in radians per second. \end{DoxyCompactList}\item 
+\hypertarget{structb2_wheel_joint_def_acf3540f46eaf3bc91426386939bd37b1}{float32 \hyperlink{structb2_wheel_joint_def_acf3540f46eaf3bc91426386939bd37b1}{frequency\-Hz}}\label{structb2_wheel_joint_def_acf3540f46eaf3bc91426386939bd37b1}
+
+\begin{DoxyCompactList}\small\item\em Suspension frequency, zero indicates no suspension. \end{DoxyCompactList}\item 
+\hypertarget{structb2_wheel_joint_def_a9976584bfee18b46dec355764797ce54}{float32 \hyperlink{structb2_wheel_joint_def_a9976584bfee18b46dec355764797ce54}{damping\-Ratio}}\label{structb2_wheel_joint_def_a9976584bfee18b46dec355764797ce54}
+
+\begin{DoxyCompactList}\small\item\em Suspension damping ratio, one indicates critical damping. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Wheel joint definition. This requires defining a line of motion using an axis and an anchor point. The definition uses local anchor points and a local axis so that the initial configuration can violate the constraint slightly. The joint translation is zero when the local anchor points coincide in world space. Using local anchors and a local axis helps when saving and loading a game. 
+
+\subsection{Member Function Documentation}
+\hypertarget{structb2_wheel_joint_def_af26887092d36c3cd03898401a38783e2}{\index{b2\-Wheel\-Joint\-Def@{b2\-Wheel\-Joint\-Def}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!b2WheelJointDef@{b2\-Wheel\-Joint\-Def}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf b2\-Wheel\-Joint\-Def\-::\-Initialize} (
+\begin{DoxyParamCaption}
+\item[{{\bf b2\-Body} $\ast$}]{body\-A, }
+\item[{{\bf b2\-Body} $\ast$}]{body\-B, }
+\item[{const {\bf b2\-Vec2} \&}]{anchor, }
+\item[{const {\bf b2\-Vec2} \&}]{axis}
+\end{DoxyParamCaption}
+)}}\label{structb2_wheel_joint_def_af26887092d36c3cd03898401a38783e2}
+Initialize the bodies, anchors, axis, and reference angle using the world anchor and world axis. 
+\begin{DoxyCode}
+{
+        bodyA = bA;
+        bodyB = bB;
+        localAnchorA = bodyA->GetLocalPoint(anchor);
+        localAnchorB = bodyB->GetLocalPoint(anchor);
+        localAxisA = bodyA->GetLocalVector(axis);
+}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Dynamics/\-Joints/b2\-Wheel\-Joint.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Dynamics/\-Joints/b2\-Wheel\-Joint.\-cpp\end{DoxyCompactItemize}

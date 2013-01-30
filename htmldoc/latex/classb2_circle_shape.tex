@@ -1,0 +1,138 @@
+\hypertarget{classb2_circle_shape}{\section{b2\-Circle\-Shape Class Reference}
+\label{classb2_circle_shape}\index{b2\-Circle\-Shape@{b2\-Circle\-Shape}}
+}
+
+
+A circle shape.  
+
+
+
+
+{\ttfamily \#include $<$b2\-Circle\-Shape.\-h$>$}
+
+Inheritance diagram for b2\-Circle\-Shape\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classb2_circle_shape}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_circle_shape_a895ba8656a146d26a0c531e9dbea2e14}{\hyperlink{classb2_shape}{b2\-Shape} $\ast$ \hyperlink{classb2_circle_shape_a895ba8656a146d26a0c531e9dbea2e14}{Clone} (\hyperlink{classb2_block_allocator}{b2\-Block\-Allocator} $\ast$allocator) const }\label{classb2_circle_shape_a895ba8656a146d26a0c531e9dbea2e14}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{classb2_shape}{b2\-Shape}. \end{DoxyCompactList}\item 
+int32 \hyperlink{classb2_circle_shape_a64b58799675edc9a6debc09c0d6ddce4}{Get\-Child\-Count} () const 
+\item 
+\hypertarget{classb2_circle_shape_a77171941cd1633c337fed1efb366bebb}{bool \hyperlink{classb2_circle_shape_a77171941cd1633c337fed1efb366bebb}{Test\-Point} (const \hyperlink{structb2_transform}{b2\-Transform} \&transform, const \hyperlink{structb2_vec2}{b2\-Vec2} \&p) const }\label{classb2_circle_shape_a77171941cd1633c337fed1efb366bebb}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{classb2_shape}{b2\-Shape}. \end{DoxyCompactList}\item 
+\hypertarget{classb2_circle_shape_a76175079381193917026fdf3702190fa}{bool \hyperlink{classb2_circle_shape_a76175079381193917026fdf3702190fa}{Ray\-Cast} (\hyperlink{structb2_ray_cast_output}{b2\-Ray\-Cast\-Output} $\ast$output, const \hyperlink{structb2_ray_cast_input}{b2\-Ray\-Cast\-Input} \&input, const \hyperlink{structb2_transform}{b2\-Transform} \&transform, int32 child\-Index) const }\label{classb2_circle_shape_a76175079381193917026fdf3702190fa}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{classb2_shape}{b2\-Shape}. \end{DoxyCompactList}\item 
+void \hyperlink{classb2_circle_shape_aa6889a5af85aa1e272547fd0008eb64a}{Compute\-A\-A\-B\-B} (\hyperlink{structb2_a_a_b_b}{b2\-A\-A\-B\-B} $\ast$aabb, const \hyperlink{structb2_transform}{b2\-Transform} \&transform, int32 child\-Index) const 
+\item 
+void \hyperlink{classb2_circle_shape_a335edea2ef84789e102dde41ca889828}{Compute\-Mass} (\hyperlink{structb2_mass_data}{b2\-Mass\-Data} $\ast$mass\-Data, float32 density) const 
+\item 
+\hypertarget{classb2_circle_shape_a8644ce19547e5efaf43bd8ec543e284e}{int32 \hyperlink{classb2_circle_shape_a8644ce19547e5efaf43bd8ec543e284e}{Get\-Support} (const \hyperlink{structb2_vec2}{b2\-Vec2} \&d) const }\label{classb2_circle_shape_a8644ce19547e5efaf43bd8ec543e284e}
+
+\begin{DoxyCompactList}\small\item\em Get the supporting vertex index in the given direction. \end{DoxyCompactList}\item 
+\hypertarget{classb2_circle_shape_aa23975b480495bf8bc70073d4f135fd2}{const \hyperlink{structb2_vec2}{b2\-Vec2} \& \hyperlink{classb2_circle_shape_aa23975b480495bf8bc70073d4f135fd2}{Get\-Support\-Vertex} (const \hyperlink{structb2_vec2}{b2\-Vec2} \&d) const }\label{classb2_circle_shape_aa23975b480495bf8bc70073d4f135fd2}
+
+\begin{DoxyCompactList}\small\item\em Get the supporting vertex in the given direction. \end{DoxyCompactList}\item 
+\hypertarget{classb2_circle_shape_a477a087b143147223e4b9fbb6581acf1}{int32 \hyperlink{classb2_circle_shape_a477a087b143147223e4b9fbb6581acf1}{Get\-Vertex\-Count} () const }\label{classb2_circle_shape_a477a087b143147223e4b9fbb6581acf1}
+
+\begin{DoxyCompactList}\small\item\em Get the vertex count. \end{DoxyCompactList}\item 
+\hypertarget{classb2_circle_shape_a029e555a3ea76b00479b051f1b813c3a}{const \hyperlink{structb2_vec2}{b2\-Vec2} \& \hyperlink{classb2_circle_shape_a029e555a3ea76b00479b051f1b813c3a}{Get\-Vertex} (int32 index) const }\label{classb2_circle_shape_a029e555a3ea76b00479b051f1b813c3a}
+
+\begin{DoxyCompactList}\small\item\em Get a vertex by index. Used by b2\-Distance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_circle_shape_a190705618b2e65f636f1dc03c63640ff}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{classb2_circle_shape_a190705618b2e65f636f1dc03c63640ff}{m\-\_\-p}}\label{classb2_circle_shape_a190705618b2e65f636f1dc03c63640ff}
+
+\begin{DoxyCompactList}\small\item\em Position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A circle shape. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classb2_circle_shape_aa6889a5af85aa1e272547fd0008eb64a}{\index{b2\-Circle\-Shape@{b2\-Circle\-Shape}!Compute\-A\-A\-B\-B@{Compute\-A\-A\-B\-B}}
+\index{Compute\-A\-A\-B\-B@{Compute\-A\-A\-B\-B}!b2CircleShape@{b2\-Circle\-Shape}}
+\subsubsection[{Compute\-A\-A\-B\-B}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf b2\-Circle\-Shape\-::\-Compute\-A\-A\-B\-B} (
+\begin{DoxyParamCaption}
+\item[{{\bf b2\-A\-A\-B\-B} $\ast$}]{aabb, }
+\item[{const {\bf b2\-Transform} \&}]{transform, }
+\item[{int32}]{child\-Index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classb2_circle_shape_aa6889a5af85aa1e272547fd0008eb64a}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classb2_shape_a88e9807fab0c8ca9a98d8926e50a1411}{b2\-Shape\-::\-Compute\-A\-A\-B\-B} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classb2_shape_a88e9807fab0c8ca9a98d8926e50a1411}{b2\-Shape}.
+
+
+\begin{DoxyCode}
+{
+        B2_NOT_USED(childIndex);
+
+        b2Vec2 p = transform.p + b2Mul(transform.q, m_p);
+        aabb->lowerBound.Set(p.x - m_radius, p.y - m_radius);
+        aabb->upperBound.Set(p.x + m_radius, p.y + m_radius);
+}
+\end{DoxyCode}
+\hypertarget{classb2_circle_shape_a335edea2ef84789e102dde41ca889828}{\index{b2\-Circle\-Shape@{b2\-Circle\-Shape}!Compute\-Mass@{Compute\-Mass}}
+\index{Compute\-Mass@{Compute\-Mass}!b2CircleShape@{b2\-Circle\-Shape}}
+\subsubsection[{Compute\-Mass}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf b2\-Circle\-Shape\-::\-Compute\-Mass} (
+\begin{DoxyParamCaption}
+\item[{{\bf b2\-Mass\-Data} $\ast$}]{mass\-Data, }
+\item[{float32}]{density}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classb2_circle_shape_a335edea2ef84789e102dde41ca889828}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classb2_shape_a61b365526241b47f124789b0309cac69}{b2\-Shape\-::\-Compute\-Mass} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classb2_shape_a61b365526241b47f124789b0309cac69}{b2\-Shape}.
+
+
+\begin{DoxyCode}
+{
+        massData->mass = density * b2_pi * m_radius * m_radius;
+        massData->center = m_p;
+
+        // inertia about the local origin
+        massData->I = massData->mass * (0.5f * m_radius * m_radius + b2Dot(m_p,
+       m_p));
+}
+\end{DoxyCode}
+\hypertarget{classb2_circle_shape_a64b58799675edc9a6debc09c0d6ddce4}{\index{b2\-Circle\-Shape@{b2\-Circle\-Shape}!Get\-Child\-Count@{Get\-Child\-Count}}
+\index{Get\-Child\-Count@{Get\-Child\-Count}!b2CircleShape@{b2\-Circle\-Shape}}
+\subsubsection[{Get\-Child\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int32 {\bf b2\-Circle\-Shape\-::\-Get\-Child\-Count} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classb2_circle_shape_a64b58799675edc9a6debc09c0d6ddce4}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classb2_shape_a05a3c445017d96df9238ceefe6ce37ab}{b2\-Shape\-::\-Get\-Child\-Count} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classb2_shape_a05a3c445017d96df9238ceefe6ce37ab}{b2\-Shape}.
+
+
+\begin{DoxyCode}
+{
+        return 1;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Collision/\-Shapes/b2\-Circle\-Shape.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Collision/\-Shapes/b2\-Circle\-Shape.\-cpp\end{DoxyCompactItemize}

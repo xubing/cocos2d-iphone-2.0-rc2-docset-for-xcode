@@ -1,0 +1,69 @@
+\hypertarget{interface_c_c_catmull_rom_to}{\section{C\-C\-Catmull\-Rom\-To Class Reference}
+\label{interface_c_c_catmull_rom_to}\index{C\-C\-Catmull\-Rom\-To@{C\-C\-Catmull\-Rom\-To}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Catmull\-Rom.\-h$>$}
+
+Inheritance diagram for C\-C\-Catmull\-Rom\-To\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{interface_c_c_catmull_rom_to}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_catmull_rom_to_a4fe8a81d1d1d96f45001ffc59827a71c}{init\-With\-Duration\-:points\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_catmull_rom_to_ab107d7117fa2131a0574f97efa617949}{action\-With\-Duration\-:points\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An action that moves the target with a Catmull\-Rom curve to a destination point. A Catmull Rom is a Cardinal Spline with a tension of 0.\-5. \href{http://en.wikipedia.org/wiki/Cubic_Hermite_spline#Catmull.E2.80.93Rom_spline}{\tt http\-://en.\-wikipedia.\-org/wiki/\-Cubic\-\_\-\-Hermite\-\_\-spline\#\-Catmull.\-E2.\-80.\-93\-Rom\-\_\-spline} 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_catmull_rom_to_ab107d7117fa2131a0574f97efa617949}{\index{C\-C\-Catmull\-Rom\-To@{C\-C\-Catmull\-Rom\-To}!action\-With\-Duration\-:points\-:@{action\-With\-Duration\-:points\-:}}
+\index{action\-With\-Duration\-:points\-:@{action\-With\-Duration\-:points\-:}!CCCatmullRomTo@{C\-C\-Catmull\-Rom\-To}}
+\subsubsection[{action\-With\-Duration\-:points\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{dt}
+\item[{points:({\bf C\-C\-Point\-Array}$\ast$)}]{points}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_catmull_rom_to_ab107d7117fa2131a0574f97efa617949}
+creates an action with a Cardinal Spline array of points and tension 
+\begin{DoxyCode}
+                        :(ccTime)dt points:(CCPointArray *)points
+{
+        return [[[self alloc] initWithDuration:dt points:points] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_catmull_rom_to_a4fe8a81d1d1d96f45001ffc59827a71c}{\index{C\-C\-Catmull\-Rom\-To@{C\-C\-Catmull\-Rom\-To}!init\-With\-Duration\-:points\-:@{init\-With\-Duration\-:points\-:}}
+\index{init\-With\-Duration\-:points\-:@{init\-With\-Duration\-:points\-:}!CCCatmullRomTo@{C\-C\-Catmull\-Rom\-To}}
+\subsubsection[{init\-With\-Duration\-:points\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{dt}
+\item[{points:({\bf C\-C\-Point\-Array}$\ast$)}]{points}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_catmull_rom_to_a4fe8a81d1d1d96f45001ffc59827a71c}
+initializes the action with a duration and an array of points 
+\begin{DoxyCode}
+                      :(ccTime)dt points:(CCPointArray *)points
+{
+        if( (self=[super initWithDuration:dt points:points tension:0.5f]) ) {
+                
+        }
+        
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Catmull\-Rom.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Catmull\-Rom.\-m\end{DoxyCompactItemize}

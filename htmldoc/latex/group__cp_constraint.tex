@@ -1,0 +1,117 @@
+\hypertarget{group__cp_constraint}{\section{cp\-Constraint}
+\label{group__cp_constraint}\index{cp\-Constraint@{cp\-Constraint}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bfseries cp\-Constraint\-Class}
+\item 
+struct \hyperlink{structcp_constraint}{cp\-Constraint}
+\begin{DoxyCompactList}\small\item\em Opaque \hyperlink{structcp_constraint}{cp\-Constraint} struct. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__cp_constraint_ga313a8c10c92b0df4b4080b7d02278c7d}{\#define {\bfseries C\-P\-\_\-\-Define\-Constraint\-Struct\-Getter}(type, member, name)~static inline type \hyperlink{structcp_constraint}{cp\-Constraint}\#\#Get\#\#name(const \hyperlink{structcp_constraint}{cp\-Constraint} $\ast$constraint)\{return constraint-\/$>$member;\}}\label{group__cp_constraint_ga313a8c10c92b0df4b4080b7d02278c7d}
+
+\item 
+\#define {\bfseries C\-P\-\_\-\-Define\-Constraint\-Struct\-Setter}(type, member, name)
+\item 
+\#define {\bfseries C\-P\-\_\-\-Define\-Constraint\-Struct\-Property}(type, member, name)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__cp_constraint_gacd079b4408f3205d9baa3e78b6b8e1b6}{typedef struct cp\-Constraint\-Class {\bfseries cp\-Constraint\-Class}}\label{group__cp_constraint_gacd079b4408f3205d9baa3e78b6b8e1b6}
+
+\item 
+\hypertarget{group__cp_constraint_gab9fdf23a539a013086b26833691ca0b3}{typedef void($\ast$ {\bfseries cp\-Constraint\-Pre\-Step\-Impl} )(\hyperlink{structcp_constraint}{cp\-Constraint} $\ast$constraint, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} dt)}\label{group__cp_constraint_gab9fdf23a539a013086b26833691ca0b3}
+
+\item 
+\hypertarget{group__cp_constraint_ga9dd4679120c0727934965a28ee052221}{typedef void($\ast$ {\bfseries cp\-Constraint\-Apply\-Cached\-Impulse\-Impl} )(\hyperlink{structcp_constraint}{cp\-Constraint} $\ast$constraint, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} dt\-\_\-coef)}\label{group__cp_constraint_ga9dd4679120c0727934965a28ee052221}
+
+\item 
+\hypertarget{group__cp_constraint_ga1f49b584324c77fcebef925918793d65}{typedef void($\ast$ {\bfseries cp\-Constraint\-Apply\-Impulse\-Impl} )(\hyperlink{structcp_constraint}{cp\-Constraint} $\ast$constraint, \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} dt)}\label{group__cp_constraint_ga1f49b584324c77fcebef925918793d65}
+
+\item 
+\hypertarget{group__cp_constraint_ga4f3d31551af8127f7629c71d9bd147e2}{typedef \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float}($\ast$ {\bfseries cp\-Constraint\-Get\-Impulse\-Impl} )(\hyperlink{structcp_constraint}{cp\-Constraint} $\ast$constraint)}\label{group__cp_constraint_ga4f3d31551af8127f7629c71d9bd147e2}
+
+\item 
+\hypertarget{group__cp_constraint_ga31a2ad1ca9b9ecd4124a81b1292714e0}{typedef void($\ast$ \hyperlink{group__cp_constraint_ga31a2ad1ca9b9ecd4124a81b1292714e0}{cp\-Constraint\-Pre\-Solve\-Func} )(\hyperlink{structcp_constraint}{cp\-Constraint} $\ast$constraint, \hyperlink{structcp_space}{cp\-Space} $\ast$space)}\label{group__cp_constraint_ga31a2ad1ca9b9ecd4124a81b1292714e0}
+
+\begin{DoxyCompactList}\small\item\em Callback function type that gets called before solving a joint. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_constraint_ga1adf3ccceb908229069aa2f10f21c1b1}{typedef void($\ast$ \hyperlink{group__cp_constraint_ga1adf3ccceb908229069aa2f10f21c1b1}{cp\-Constraint\-Post\-Solve\-Func} )(\hyperlink{structcp_constraint}{cp\-Constraint} $\ast$constraint, \hyperlink{structcp_space}{cp\-Space} $\ast$space)}\label{group__cp_constraint_ga1adf3ccceb908229069aa2f10f21c1b1}
+
+\begin{DoxyCompactList}\small\item\em Callback function type that gets called after solving a joint. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__cp_constraint_ga2c5c4d73886727485cb4d8c3e3ba1c15}{void \hyperlink{group__cp_constraint_ga2c5c4d73886727485cb4d8c3e3ba1c15}{cp\-Constraint\-Destroy} (\hyperlink{structcp_constraint}{cp\-Constraint} $\ast$constraint)}\label{group__cp_constraint_ga2c5c4d73886727485cb4d8c3e3ba1c15}
+
+\begin{DoxyCompactList}\small\item\em Destroy a constraint. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_constraint_ga396e66d86ca72615ed681dfed3673a6c}{void \hyperlink{group__cp_constraint_ga396e66d86ca72615ed681dfed3673a6c}{cp\-Constraint\-Free} (\hyperlink{structcp_constraint}{cp\-Constraint} $\ast$constraint)}\label{group__cp_constraint_ga396e66d86ca72615ed681dfed3673a6c}
+
+\begin{DoxyCompactList}\small\item\em Destroy and free a constraint. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_constraint_ga9ba51e99107179447411f7c7a9ab5184}{{\bfseries C\-P\-\_\-\-Define\-Constraint\-Struct\-Getter} (\hyperlink{structcp_space}{cp\-Space} $\ast$, C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E(space), Space) C\-P\-\_\-\-Define\-Constraint\-Struct\-Getter(\hyperlink{structcp_body}{cp\-Body} $\ast$}\label{group__cp_constraint_ga9ba51e99107179447411f7c7a9ab5184}
+
+\item 
+\hypertarget{group__cp_constraint_ga0c2aa9494ba1f25e4813904a00078748}{A {\bfseries C\-P\-\_\-\-Define\-Constraint\-Struct\-Getter} (\hyperlink{structcp_body}{cp\-Body} $\ast$, b, B) C\-P\-\_\-\-Define\-Constraint\-Struct\-Property(\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float}}\label{group__cp_constraint_ga0c2aa9494ba1f25e4813904a00078748}
+
+\item 
+\hypertarget{group__cp_constraint_ga9d7983cdfbaf75b959c70359cc51b92a}{A Max\-Force {\bfseries C\-P\-\_\-\-Define\-Constraint\-Struct\-Property} (\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float}, error\-Bias, Error\-Bias) C\-P\-\_\-\-Define\-Constraint\-Struct\-Property(\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float}}\label{group__cp_constraint_ga9d7983cdfbaf75b959c70359cc51b92a}
+
+\item 
+\hypertarget{group__cp_constraint_ga8b7f106925117454bdd245ac832f5916}{A Max\-Force Max\-Bias {\bfseries C\-P\-\_\-\-Define\-Constraint\-Struct\-Property} (\hyperlink{group__cp_constraint_ga31a2ad1ca9b9ecd4124a81b1292714e0}{cp\-Constraint\-Pre\-Solve\-Func}, pre\-Solve, Pre\-Solve\-Func) C\-P\-\_\-\-Define\-Constraint\-Struct\-Property(\hyperlink{group__cp_constraint_ga1adf3ccceb908229069aa2f10f21c1b1}{cp\-Constraint\-Post\-Solve\-Func}}\label{group__cp_constraint_ga8b7f106925117454bdd245ac832f5916}
+
+\item 
+\hypertarget{group__cp_constraint_ga91481e468e7a57c080ad49276e84641c}{A Max\-Force Max\-Bias Post\-Solve\-Func {\bfseries C\-P\-\_\-\-Define\-Constraint\-Struct\-Property} (\hyperlink{group__basic_types_ga2ac2c3c31e21893941f9e4f8ee279447}{cp\-Data\-Pointer}, data, User\-Data) static inline \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} cp\-Constraint\-Get\-Impulse(\hyperlink{structcp_constraint}{cp\-Constraint} $\ast$constraint)}\label{group__cp_constraint_ga91481e468e7a57c080ad49276e84641c}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__cp_constraint_ga4124bc0a9335c27f086f24ba207a4912}{{\bfseries a}}\label{group__cp_constraint_ga4124bc0a9335c27f086f24ba207a4912}
+
+\item 
+\hypertarget{group__cp_constraint_ga4cc761ae8cb7444a20057c323b9c77d1}{A {\bfseries max\-Force}}\label{group__cp_constraint_ga4cc761ae8cb7444a20057c323b9c77d1}
+
+\item 
+\hypertarget{group__cp_constraint_ga0b6cc86c51fce3adfe1997930c4f17f3}{A Max\-Force {\bfseries max\-Bias}}\label{group__cp_constraint_ga0b6cc86c51fce3adfe1997930c4f17f3}
+
+\item 
+\hypertarget{group__cp_constraint_gad4e5c23945cdc36db49b3cd99a053ff7}{A Max\-Force Max\-Bias {\bfseries post\-Solve}}\label{group__cp_constraint_gad4e5c23945cdc36db49b3cd99a053ff7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{group__cp_constraint_ga11786f1e66966c01ac1132ef3a73d746}{\index{cp\-Constraint@{cp\-Constraint}!C\-P\-\_\-\-Define\-Constraint\-Struct\-Property@{C\-P\-\_\-\-Define\-Constraint\-Struct\-Property}}
+\index{C\-P\-\_\-\-Define\-Constraint\-Struct\-Property@{C\-P\-\_\-\-Define\-Constraint\-Struct\-Property}!cpConstraint@{cp\-Constraint}}
+\subsubsection[{C\-P\-\_\-\-Define\-Constraint\-Struct\-Property}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-\_\-\-Define\-Constraint\-Struct\-Property(
+\begin{DoxyParamCaption}
+\item[{}]{type, }
+\item[{}]{member, }
+\item[{}]{name}
+\end{DoxyParamCaption}
+)}}\label{group__cp_constraint_ga11786f1e66966c01ac1132ef3a73d746}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+CP_DefineConstraintStructGetter(type, member, name) \
+CP_DefineConstraintStructSetter(type, member, name)
+\end{DoxyCode}
+\hypertarget{group__cp_constraint_gacbdb04c3e6b6ff8c3ec698c4c81a3336}{\index{cp\-Constraint@{cp\-Constraint}!C\-P\-\_\-\-Define\-Constraint\-Struct\-Setter@{C\-P\-\_\-\-Define\-Constraint\-Struct\-Setter}}
+\index{C\-P\-\_\-\-Define\-Constraint\-Struct\-Setter@{C\-P\-\_\-\-Define\-Constraint\-Struct\-Setter}!cpConstraint@{cp\-Constraint}}
+\subsubsection[{C\-P\-\_\-\-Define\-Constraint\-Struct\-Setter}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-\_\-\-Define\-Constraint\-Struct\-Setter(
+\begin{DoxyParamCaption}
+\item[{}]{type, }
+\item[{}]{member, }
+\item[{}]{name}
+\end{DoxyParamCaption}
+)}}\label{group__cp_constraint_gacbdb04c3e6b6ff8c3ec698c4c81a3336}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+static inline void cpConstraint##Set##name(cpConstraint *constraint, type value
+      ){ \
+        cpConstraintActivateBodies(constraint); \
+        constraint->member = value; \
+}
+\end{DoxyCode}

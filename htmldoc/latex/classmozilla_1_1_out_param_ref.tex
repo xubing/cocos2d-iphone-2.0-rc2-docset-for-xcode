@@ -1,0 +1,53 @@
+\hypertarget{classmozilla_1_1_out_param_ref}{\section{mozilla\-:\-:Out\-Param\-Ref$<$ T $>$ Class Template Reference}
+\label{classmozilla_1_1_out_param_ref}\index{mozilla\-::\-Out\-Param\-Ref$<$ T $>$@{mozilla\-::\-Out\-Param\-Ref$<$ T $>$}}
+}
+
+
+{\ttfamily \#include $<$Ref\-Ptr.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmozilla_1_1_out_param_ref_a3ce02b91bd4fa9f613077721243af0ad}{{\bfseries operator T $\ast$$\ast$} ()}\label{classmozilla_1_1_out_param_ref_a3ce02b91bd4fa9f613077721243af0ad}
+
+\item 
+\hypertarget{classmozilla_1_1_out_param_ref_a3ce02b91bd4fa9f613077721243af0ad}{{\bfseries operator T $\ast$$\ast$} ()}\label{classmozilla_1_1_out_param_ref_a3ce02b91bd4fa9f613077721243af0ad}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmozilla_1_1_out_param_ref}{Out\-Param\-Ref} \hyperlink{classmozilla_1_1_out_param_ref_ae836a7d0433fbd103b03a8e5773f3217}{by\-Ref} (\hyperlink{classmozilla_1_1_ref_ptr}{Ref\-Ptr}$<$ T $>$ \&)
+\item 
+\hyperlink{classmozilla_1_1_out_param_ref}{Out\-Param\-Ref} \hyperlink{classmozilla_1_1_out_param_ref_ae836a7d0433fbd103b03a8e5773f3217}{by\-Ref} (\hyperlink{classmozilla_1_1_ref_ptr}{Ref\-Ptr}$<$ T $>$ \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$class mozilla\-::\-Out\-Param\-Ref$<$ T $>$}
+
+\hyperlink{classmozilla_1_1_out_param_ref}{Out\-Param\-Ref} is a wrapper that tracks a refcounted pointer passed as an outparam argument to a function. \hyperlink{classmozilla_1_1_out_param_ref}{Out\-Param\-Ref} implements C\-O\-M T$\ast$$\ast$ outparam semantics\-: this requires the callee to Add\-Ref() the T$\ast$ returned through the T$\ast$$\ast$ outparam on behalf of the caller. This means the caller (through \hyperlink{classmozilla_1_1_out_param_ref}{Out\-Param\-Ref}) must Release() the old object contained in the tracked \hyperlink{classmozilla_1_1_ref_ptr}{Ref\-Ptr}. It's O\-K if the callee returns the same T$\ast$ passed to it through the T$\ast$$\ast$ outparam, as long as the callee obeys the C\-O\-M discipline.
+
+Prefer returning Temporary\-Ref$<$\-T$>$ from functions over creating T$\ast$$\ast$ outparams and passing Out\-Param\-Ref$<$\-T$>$ to T$\ast$$\ast$. Prefer Ref\-Ptr$<$\-T$>$$\ast$ outparams over T$\ast$$\ast$ outparams. 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classmozilla_1_1_out_param_ref_ae836a7d0433fbd103b03a8e5773f3217}{\index{mozilla\-::\-Out\-Param\-Ref@{mozilla\-::\-Out\-Param\-Ref}!by\-Ref@{by\-Ref}}
+\index{by\-Ref@{by\-Ref}!mozilla::OutParamRef@{mozilla\-::\-Out\-Param\-Ref}}
+\subsubsection[{by\-Ref}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Out\-Param\-Ref} {\bf by\-Ref} (
+\begin{DoxyParamCaption}
+\item[{{\bf Ref\-Ptr}$<$ T $>$ \&}]{ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}\label{classmozilla_1_1_out_param_ref_ae836a7d0433fbd103b03a8e5773f3217}
+by\-Ref cooperates with \hyperlink{classmozilla_1_1_out_param_ref}{Out\-Param\-Ref} to implement C\-O\-M outparam semantics. \hypertarget{classmozilla_1_1_out_param_ref_ae836a7d0433fbd103b03a8e5773f3217}{\index{mozilla\-::\-Out\-Param\-Ref@{mozilla\-::\-Out\-Param\-Ref}!by\-Ref@{by\-Ref}}
+\index{by\-Ref@{by\-Ref}!mozilla::OutParamRef@{mozilla\-::\-Out\-Param\-Ref}}
+\subsubsection[{by\-Ref}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Out\-Param\-Ref} {\bf by\-Ref} (
+\begin{DoxyParamCaption}
+\item[{{\bf Ref\-Ptr}$<$ T $>$ \&}]{ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}\label{classmozilla_1_1_out_param_ref_ae836a7d0433fbd103b03a8e5773f3217}
+by\-Ref cooperates with \hyperlink{classmozilla_1_1_out_param_ref}{Out\-Param\-Ref} to implement C\-O\-M outparam semantics. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Spider\-Monkey/ios/include/mozilla/Ref\-Ptr.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Spider\-Monkey/osx/include/mozilla/Ref\-Ptr.\-h\end{DoxyCompactItemize}

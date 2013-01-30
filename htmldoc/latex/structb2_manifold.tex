@@ -1,0 +1,45 @@
+\hypertarget{structb2_manifold}{\section{b2\-Manifold Struct Reference}
+\label{structb2_manifold}\index{b2\-Manifold@{b2\-Manifold}}
+}
+
+
+{\ttfamily \#include $<$b2\-Collision.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Type} \{ {\bfseries e\-\_\-circles}, 
+{\bfseries e\-\_\-face\-A}, 
+{\bfseries e\-\_\-face\-B}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structb2_manifold_ab8021128e9792cc7391a8804ea02173d}{\hyperlink{structb2_manifold_point}{b2\-Manifold\-Point} \hyperlink{structb2_manifold_ab8021128e9792cc7391a8804ea02173d}{points} \mbox{[}\hyperlink{b2_settings_8h_aa5f44cc9edf711433dea2b2ec94f3c42}{b2\-\_\-max\-Manifold\-Points}\mbox{]}}\label{structb2_manifold_ab8021128e9792cc7391a8804ea02173d}
+
+\begin{DoxyCompactList}\small\item\em the points of contact \end{DoxyCompactList}\item 
+\hypertarget{structb2_manifold_a3604e9fef2a03347c5649c71a9fd4c79}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{structb2_manifold_a3604e9fef2a03347c5649c71a9fd4c79}{local\-Normal}}\label{structb2_manifold_a3604e9fef2a03347c5649c71a9fd4c79}
+
+\begin{DoxyCompactList}\small\item\em not use for Type\-::e\-\_\-points \end{DoxyCompactList}\item 
+\hypertarget{structb2_manifold_a8825cea31b27dbbaf22c13c3070870d5}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{structb2_manifold_a8825cea31b27dbbaf22c13c3070870d5}{local\-Point}}\label{structb2_manifold_a8825cea31b27dbbaf22c13c3070870d5}
+
+\begin{DoxyCompactList}\small\item\em usage depends on manifold type \end{DoxyCompactList}\item 
+\hypertarget{structb2_manifold_a4cb6ceba7105513b1e5bd6dbf0cce168}{Type {\bfseries type}}\label{structb2_manifold_a4cb6ceba7105513b1e5bd6dbf0cce168}
+
+\item 
+\hypertarget{structb2_manifold_abf59ff6fa36bed34b0242ad54951a696}{int32 \hyperlink{structb2_manifold_abf59ff6fa36bed34b0242ad54951a696}{point\-Count}}\label{structb2_manifold_abf59ff6fa36bed34b0242ad54951a696}
+
+\begin{DoxyCompactList}\small\item\em the number of manifold points \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A manifold for two touching convex shapes. Box2\-D supports multiple types of contact\-:
+\begin{DoxyItemize}
+\item clip point versus plane with radius
+\item point versus point with radius (circles) The local point usage depends on the manifold type\-: -\/e\-\_\-circles\-: the local center of circle\-A -\/e\-\_\-face\-A\-: the center of face\-A -\/e\-\_\-face\-B\-: the center of face\-B Similarly the local normal usage\-: -\/e\-\_\-circles\-: not used -\/e\-\_\-face\-A\-: the normal on polygon\-A -\/e\-\_\-face\-B\-: the normal on polygon\-B We store contacts in this way so that position correction can account for movement, which is critical for continuous physics. All contact scenarios must be expressed in one of these types. This structure is stored across time steps, so we keep it small. 
+\end{DoxyItemize}
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Collision/\hyperlink{b2_collision_8h}{b2\-Collision.\-h}\end{DoxyCompactItemize}

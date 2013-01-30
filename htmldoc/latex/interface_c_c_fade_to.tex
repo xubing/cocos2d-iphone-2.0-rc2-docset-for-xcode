@@ -1,0 +1,80 @@
+\hypertarget{interface_c_c_fade_to}{\section{C\-C\-Fade\-To Class Reference}
+\label{interface_c_c_fade_to}\index{C\-C\-Fade\-To@{C\-C\-Fade\-To}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Interval.\-h$>$}
+
+Inheritance diagram for C\-C\-Fade\-To\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_c_c_fade_to}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_fade_to_a06730c12f4b1c74658ca081d74516bdb}{init\-With\-Duration\-:opacity\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_fade_to_a4b6e13aafb27f48a54fd74f4c0b342a2}{action\-With\-Duration\-:opacity\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_fade_to_add096aa4593893637f8f599d83b3b27e}{G\-Lubyte {\bfseries to\-Opacity\-\_\-}}\label{interface_c_c_fade_to_add096aa4593893637f8f599d83b3b27e}
+
+\item 
+\hypertarget{interface_c_c_fade_to_a18dc63d61fac7a30d7c513af9d6935cd}{G\-Lubyte {\bfseries from\-Opacity\-\_\-}}\label{interface_c_c_fade_to_a18dc63d61fac7a30d7c513af9d6935cd}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fades an object that implements the \hyperlink{protocol_c_c_r_g_b_a_protocol-p}{C\-C\-R\-G\-B\-A\-Protocol} protocol. It modifies the opacity from the current value to a custom one. \begin{DoxyWarning}{Warning}
+This action doesn't support \char`\"{}reverse\char`\"{} 
+\end{DoxyWarning}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_fade_to_a4b6e13aafb27f48a54fd74f4c0b342a2}{\index{C\-C\-Fade\-To@{C\-C\-Fade\-To}!action\-With\-Duration\-:opacity\-:@{action\-With\-Duration\-:opacity\-:}}
+\index{action\-With\-Duration\-:opacity\-:@{action\-With\-Duration\-:opacity\-:}!CCFadeTo@{C\-C\-Fade\-To}}
+\subsubsection[{action\-With\-Duration\-:opacity\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{duration}
+\item[{opacity:(G\-Lubyte)}]{opactiy}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_fade_to_a4b6e13aafb27f48a54fd74f4c0b342a2}
+creates an action with duration and opacity 
+\begin{DoxyCode}
+                        : (ccTime) t opacity: (GLubyte) o
+{
+        return [[[ self alloc] initWithDuration: t opacity: o] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_fade_to_a06730c12f4b1c74658ca081d74516bdb}{\index{C\-C\-Fade\-To@{C\-C\-Fade\-To}!init\-With\-Duration\-:opacity\-:@{init\-With\-Duration\-:opacity\-:}}
+\index{init\-With\-Duration\-:opacity\-:@{init\-With\-Duration\-:opacity\-:}!CCFadeTo@{C\-C\-Fade\-To}}
+\subsubsection[{init\-With\-Duration\-:opacity\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{duration}
+\item[{opacity:(G\-Lubyte)}]{opacity}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_fade_to_a06730c12f4b1c74658ca081d74516bdb}
+initializes the action with duration and opacity 
+\begin{DoxyCode}
+                      : (ccTime) t opacity: (GLubyte) o
+{
+        if( (self=[super initWithDuration: t] ) )
+                toOpacity_ = o;
+
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-m\end{DoxyCompactItemize}

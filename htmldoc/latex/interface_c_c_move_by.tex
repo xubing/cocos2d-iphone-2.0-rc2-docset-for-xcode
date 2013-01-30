@@ -1,0 +1,80 @@
+\hypertarget{interface_c_c_move_by}{\section{C\-C\-Move\-By Class Reference}
+\label{interface_c_c_move_by}\index{C\-C\-Move\-By@{C\-C\-Move\-By}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Interval.\-h$>$}
+
+Inheritance diagram for C\-C\-Move\-By\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{interface_c_c_move_by}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_move_by_a3599d5ef2b434522b459b69c6cb8fce0}{init\-With\-Duration\-:position\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_move_by_a7c60ceda09f1cb73515b8400a0392f51}{action\-With\-Duration\-:position\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Moves a \hyperlink{class_c_c_node}{C\-C\-Node} object x,y pixels by modifying its position attribute. x and y are relative to the position of the object. Duration is is seconds. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_move_by_a7c60ceda09f1cb73515b8400a0392f51}{\index{C\-C\-Move\-By@{C\-C\-Move\-By}!action\-With\-Duration\-:position\-:@{action\-With\-Duration\-:position\-:}}
+\index{action\-With\-Duration\-:position\-:@{action\-With\-Duration\-:position\-:}!CCMoveBy@{C\-C\-Move\-By}}
+\subsubsection[{action\-With\-Duration\-:position\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{duration}
+\item[{position:(C\-G\-Point)}]{delta\-Position}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_move_by_a7c60ceda09f1cb73515b8400a0392f51}
+creates the action 
+
+Reimplemented from \hyperlink{interface_c_c_move_to_ac3317aacb1b5c544b9dc8875afa9f3e7}{C\-C\-Move\-To}.
+
+
+
+Referenced by C\-C\-Transition\-Slide\-In\-L\-::action.
+
+
+\begin{DoxyCode}
+                        : (ccTime) t position: (CGPoint) p
+{
+        return [[[self alloc] initWithDuration:t position:p ] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_move_by_a3599d5ef2b434522b459b69c6cb8fce0}{\index{C\-C\-Move\-By@{C\-C\-Move\-By}!init\-With\-Duration\-:position\-:@{init\-With\-Duration\-:position\-:}}
+\index{init\-With\-Duration\-:position\-:@{init\-With\-Duration\-:position\-:}!CCMoveBy@{C\-C\-Move\-By}}
+\subsubsection[{init\-With\-Duration\-:position\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{duration}
+\item[{position:(C\-G\-Point)}]{delta\-Position}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_move_by_a3599d5ef2b434522b459b69c6cb8fce0}
+initializes the action 
+
+Reimplemented from \hyperlink{interface_c_c_move_to_a4f3d21350e8ef39c4ba8b9cff21e240b}{C\-C\-Move\-To}.
+
+
+\begin{DoxyCode}
+                      : (ccTime) t position: (CGPoint) p
+{
+        if( (self=[super initWithDuration: t]) )
+                delta_ = p;
+
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-m\end{DoxyCompactItemize}

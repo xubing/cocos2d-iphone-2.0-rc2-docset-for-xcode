@@ -1,0 +1,159 @@
+\hypertarget{interface_c_c_clipping_node}{\section{C\-C\-Clipping\-Node Class Reference}
+\label{interface_c_c_clipping_node}\index{C\-C\-Clipping\-Node@{C\-C\-Clipping\-Node}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Clipping\-Node.\-h$>$}
+
+Inheritance diagram for C\-C\-Clipping\-Node\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_c_c_clipping_node}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_clipping_node_a20a68e2646b7659063e58aa4d4b6de1f}{init}
+\item 
+(id) -\/ \hyperlink{interface_c_c_clipping_node_a8201cd017497224668128061904ebc7a}{init\-With\-Stencil\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_clipping_node_a0c83cee4408ddf27098aa482e61f4938}{clipping\-Node}
+\item 
+(id) + \hyperlink{interface_c_c_clipping_node_a4788712b40f1e4624ec9942feb143873}{clipping\-Node\-With\-Stencil\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_clipping_node_a83cc323b170d5e25acc93d9eb490c338}{\hyperlink{class_c_c_node}{C\-C\-Node} $\ast$ {\bfseries stencil\-\_\-}}\label{interface_c_c_clipping_node_a83cc323b170d5e25acc93d9eb490c338}
+
+\item 
+\hypertarget{interface_c_c_clipping_node_a8fd19332962fa63959cc86ef2b54c556}{G\-Lfloat {\bfseries alpha\-Threshold\-\_\-}}\label{interface_c_c_clipping_node_a8fd19332962fa63959cc86ef2b54c556}
+
+\item 
+\hypertarget{interface_c_c_clipping_node_ab9badc0b7fb4aa246a1040e409bfd9d0}{B\-O\-O\-L {\bfseries inverted\-\_\-}}\label{interface_c_c_clipping_node_ab9badc0b7fb4aa246a1040e409bfd9d0}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_c_node}{C\-C\-Node} $\ast$ \hyperlink{interface_c_c_clipping_node_a59636e24024ad61ad41df1c2cc643452}{stencil}
+\item 
+G\-Lfloat \hyperlink{interface_c_c_clipping_node_a94ce5211cf91e156a8c294291a81cf48}{alpha\-Threshold}
+\item 
+B\-O\-O\-L \hyperlink{interface_c_c_clipping_node_a78d5892a56ab1d689412495ba1a3d0e9}{inverted}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_clipping_node}{C\-C\-Clipping\-Node} is a subclass of \hyperlink{class_c_c_node}{C\-C\-Node}. It draws its content (childs) clipped using a stencil. The stencil is an other \hyperlink{class_c_c_node}{C\-C\-Node} that will not be drawn. The clipping is done using the alpha part of the stencil (adjusted with an alpha\-Threshold). 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_clipping_node_a0c83cee4408ddf27098aa482e61f4938}{\index{C\-C\-Clipping\-Node@{C\-C\-Clipping\-Node}!clipping\-Node@{clipping\-Node}}
+\index{clipping\-Node@{clipping\-Node}!CCClippingNode@{C\-C\-Clipping\-Node}}
+\subsubsection[{clipping\-Node}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf clipping\-Node} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_clipping_node_a0c83cee4408ddf27098aa482e61f4938}
+Creates and initializes a clipping node without a stencil. 
+\begin{DoxyCode}
+{
+    return [self node];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_clipping_node_a4788712b40f1e4624ec9942feb143873}{\index{C\-C\-Clipping\-Node@{C\-C\-Clipping\-Node}!clipping\-Node\-With\-Stencil\-:@{clipping\-Node\-With\-Stencil\-:}}
+\index{clipping\-Node\-With\-Stencil\-:@{clipping\-Node\-With\-Stencil\-:}!CCClippingNode@{C\-C\-Clipping\-Node}}
+\subsubsection[{clipping\-Node\-With\-Stencil\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf clipping\-Node\-With\-Stencil\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Node} $\ast$)}]{stencil}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_clipping_node_a4788712b40f1e4624ec9942feb143873}
+Creates and initializes a clipping node with an other node as its stencil. The stencil node will be retained. 
+\begin{DoxyCode}
+                             :(CCNode *)stencil
+{
+    return [[[self alloc] initWithStencil:stencil] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_clipping_node_a20a68e2646b7659063e58aa4d4b6de1f}{\index{C\-C\-Clipping\-Node@{C\-C\-Clipping\-Node}!init@{init}}
+\index{init@{init}!CCClippingNode@{C\-C\-Clipping\-Node}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_clipping_node_a20a68e2646b7659063e58aa4d4b6de1f}
+Initializes a clipping node without a stencil. 
+
+Reimplemented from \hyperlink{class_c_c_node_ad789cad83aca65c130abd4452d1bc081}{C\-C\-Node}.
+
+
+\begin{DoxyCode}
+{
+    return [self initWithStencil:nil];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_clipping_node_a8201cd017497224668128061904ebc7a}{\index{C\-C\-Clipping\-Node@{C\-C\-Clipping\-Node}!init\-With\-Stencil\-:@{init\-With\-Stencil\-:}}
+\index{init\-With\-Stencil\-:@{init\-With\-Stencil\-:}!CCClippingNode@{C\-C\-Clipping\-Node}}
+\subsubsection[{init\-With\-Stencil\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Stencil\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Node} $\ast$)}]{stencil}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_clipping_node_a8201cd017497224668128061904ebc7a}
+Initializes a clipping node with an other node as its stencil. The stencil node will be retained, and its parent will be set to this clipping node. 
+
+Referenced by init.
+
+
+\begin{DoxyCode}
+                     :(CCNode *)stencil
+{
+    if (self = [super init]) {
+        self.stencil = stencil;
+        self.alphaThreshold = 1;
+        self.inverted = NO;
+        // get (only once) the number of bits of the stencil buffer
+        static dispatch_once_t once;
+        dispatch_once(&once, ^{
+            glGetIntegerv(GL_STENCIL_BITS, &_stencilBits);
+            // warn if the stencil buffer is not enabled
+            if (_stencilBits <= 0) {
+#if defined(__CC_PLATFORM_IOS)
+                CCLOGWARN(@"Stencil buffer is not enabled; enable it by passing
+       GL_DEPTH24_STENCIL8_OES into the depthFormat parrameter when initializing
+       CCGLView. Until then, everything will be drawn without stencil.");
+#elif defined(__CC_PLATFORM_MAC)
+                CCLOGWARN(@"Stencil buffer is not enabled; enable it by setting
+       the Stencil attribue to 8 bit in the Attributes inspector of the CCGLView view
+       object in MainMenu.xib, or programmatically by adding NSOpenGLPFAStencilSize and
+       8 in the NSOpenGLPixelFormatAttribute array of the NSOpenGLPixelFormat used
+       when initializing CCGLView. Until then, everything will be drawn without stencil.")
+      ;
+#endif
+            }
+        });
+    }
+    return self;
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_clipping_node_a94ce5211cf91e156a8c294291a81cf48}{\index{C\-C\-Clipping\-Node@{C\-C\-Clipping\-Node}!alpha\-Threshold@{alpha\-Threshold}}
+\index{alpha\-Threshold@{alpha\-Threshold}!CCClippingNode@{C\-C\-Clipping\-Node}}
+\subsubsection[{alpha\-Threshold}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (G\-Lfloat) {\bf alpha\-Threshold}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_clipping_node_a94ce5211cf91e156a8c294291a81cf48}
+The alpha threshold. The content is drawn only where the stencil have pixel with alpha greater than the alpha\-Threshold. Should be a float between 0 and 1. This default to 1 (so alpha test is disabled). \hypertarget{interface_c_c_clipping_node_a78d5892a56ab1d689412495ba1a3d0e9}{\index{C\-C\-Clipping\-Node@{C\-C\-Clipping\-Node}!inverted@{inverted}}
+\index{inverted@{inverted}!CCClippingNode@{C\-C\-Clipping\-Node}}
+\subsubsection[{inverted}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) {\bf inverted}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_clipping_node_a78d5892a56ab1d689412495ba1a3d0e9}
+Inverted. If this is set to Y\-E\-S, the stencil is inverted, so the content is drawn where the stencil is N\-O\-T drawn. This default to N\-O. \hypertarget{interface_c_c_clipping_node_a59636e24024ad61ad41df1c2cc643452}{\index{C\-C\-Clipping\-Node@{C\-C\-Clipping\-Node}!stencil@{stencil}}
+\index{stencil@{stencil}!CCClippingNode@{C\-C\-Clipping\-Node}}
+\subsubsection[{stencil}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Node}$\ast$) {\bf stencil}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}\label{interface_c_c_clipping_node_a59636e24024ad61ad41df1c2cc643452}
+The \hyperlink{class_c_c_node}{C\-C\-Node} to use as a stencil to do the clipping. The stencil node will be retained. This default to nil. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Clipping\-Node.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Clipping\-Node.\-m\end{DoxyCompactItemize}

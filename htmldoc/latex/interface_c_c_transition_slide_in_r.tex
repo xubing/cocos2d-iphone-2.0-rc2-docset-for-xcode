@@ -1,0 +1,48 @@
+\hypertarget{interface_c_c_transition_slide_in_r}{\section{C\-C\-Transition\-Slide\-In\-R Class Reference}
+\label{interface_c_c_transition_slide_in_r}\index{C\-C\-Transition\-Slide\-In\-R@{C\-C\-Transition\-Slide\-In\-R}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Transition.\-h$>$}
+
+Inheritance diagram for C\-C\-Transition\-Slide\-In\-R\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{interface_c_c_transition_slide_in_r}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_c_c_transition_slide_in_r_a9d7bd925a8a50d1aac1fa51c3c65fc01}{init\-Scenes}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_transition_slide_in_r}{C\-C\-Transition\-Slide\-In\-R}\-: Slide in the incoming scene from the right border. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_transition_slide_in_r_a9d7bd925a8a50d1aac1fa51c3c65fc01}{\index{C\-C\-Transition\-Slide\-In\-R@{C\-C\-Transition\-Slide\-In\-R}!init\-Scenes@{init\-Scenes}}
+\index{init\-Scenes@{init\-Scenes}!CCTransitionSlideInR@{C\-C\-Transition\-Slide\-In\-R}}
+\subsubsection[{init\-Scenes}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf init\-Scenes} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_transition_slide_in_r_a9d7bd925a8a50d1aac1fa51c3c65fc01}
+initializes the scenes 
+
+Reimplemented from \hyperlink{interface_c_c_transition_slide_in_l_a1040ca9a5abc535c40d8a1a5fd23f03c}{C\-C\-Transition\-Slide\-In\-L}.
+
+
+\begin{DoxyCode}
+{
+        CGSize s = [[CCDirector sharedDirector] winSize];
+        [inScene_ setPosition: ccp( s.width-ADJUST_FACTOR,0) ];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Transition.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Transition.\-m\end{DoxyCompactItemize}

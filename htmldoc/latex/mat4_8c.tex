@@ -1,0 +1,879 @@
+\hypertarget{mat4_8c}{\section{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.1-\/beta4/external/kazmath/src/mat4.c File Reference}
+\label{mat4_8c}\index{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/kazmath/src/mat4.\-c@{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/kazmath/src/mat4.\-c}}
+}
+{\ttfamily \#include $<$memory.\-h$>$}\\*
+{\ttfamily \#include $<$assert.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}kazmath/utility.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}kazmath/vec3.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}kazmath/mat4.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}kazmath/mat3.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}kazmath/quaternion.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}kazmath/plane.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}kazmath/neon\-\_\-matrix\-\_\-impl.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structkm_mat4}{km\-Mat4} $\ast$const \hyperlink{mat4_8c_acf5bc72eb851232f5724785a641920b6}{km\-Mat4\-Fill} (\hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-Out, const km\-Scalar $\ast$p\-Mat)
+\item 
+\hyperlink{structkm_mat4}{km\-Mat4} $\ast$const \hyperlink{mat4_8c_a0e76ef97bf0e1031ecf9500e92e662b2}{km\-Mat4\-Identity} (\hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-Out)
+\item 
+\hypertarget{mat4_8c_a2efb7ccb99b165a08e732d5d4ec26e8b}{float {\bfseries get} (const \hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-In, int row, int col)}\label{mat4_8c_a2efb7ccb99b165a08e732d5d4ec26e8b}
+
+\item 
+\hypertarget{mat4_8c_ac3c3e2c81086a49fc1761e1bb49f9108}{void {\bfseries set} (\hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-In, int row, int col, float value)}\label{mat4_8c_ac3c3e2c81086a49fc1761e1bb49f9108}
+
+\item 
+\hypertarget{mat4_8c_a6cf4381fefba3ce2836721fe25a9d46c}{void {\bfseries swap} (\hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-In, int r1, int c1, int r2, int c2)}\label{mat4_8c_a6cf4381fefba3ce2836721fe25a9d46c}
+
+\item 
+\hypertarget{mat4_8c_aa9f9d23e6983694f0b966d302faaac33}{int {\bfseries gaussj} (\hyperlink{structkm_mat4}{km\-Mat4} $\ast$a, \hyperlink{structkm_mat4}{km\-Mat4} $\ast$b)}\label{mat4_8c_aa9f9d23e6983694f0b966d302faaac33}
+
+\item 
+\hyperlink{structkm_mat4}{km\-Mat4} $\ast$const \hyperlink{mat4_8c_a96d70576df637642afe3b2f2457e89c1}{km\-Mat4\-Inverse} (\hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-Out, const \hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-M)
+\item 
+const int \hyperlink{mat4_8c_aa15d9f21be8f4eedb5a380745972725a}{km\-Mat4\-Is\-Identity} (const \hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-In)
+\item 
+\hyperlink{structkm_mat4}{km\-Mat4} $\ast$const \hyperlink{mat4_8c_afdf56cf919c7f29026b0b4b230a562aa}{km\-Mat4\-Transpose} (\hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-Out, const \hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-In)
+\item 
+\hyperlink{structkm_mat4}{km\-Mat4} $\ast$const \hyperlink{mat4_8c_abd78015f0ff854f779365169603d6d9e}{km\-Mat4\-Multiply} (\hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-Out, const \hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-M1, const \hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-M2)
+\item 
+\hyperlink{structkm_mat4}{km\-Mat4} $\ast$const \hyperlink{mat4_8c_a69fb993dbdb643f3cca0752bf84f61b1}{km\-Mat4\-Assign} (\hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-Out, const \hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-In)
+\item 
+const int \hyperlink{mat4_8c_a771e2f9758f3430217629a2596738f80}{km\-Mat4\-Are\-Equal} (const \hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-Mat1, const \hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-Mat2)
+\item 
+\hyperlink{structkm_mat4}{km\-Mat4} $\ast$const \hyperlink{mat4_8c_a58e5c05a74ea1be6705003d1783bbce1}{km\-Mat4\-Rotation\-Axis\-Angle} (\hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-Out, const \hyperlink{structkm_vec3}{km\-Vec3} $\ast$axis, km\-Scalar radians)
+\item 
+\hyperlink{structkm_mat4}{km\-Mat4} $\ast$const \hyperlink{mat4_8c_a079fea1711d12d768695580841fcd754}{km\-Mat4\-Rotation\-X} (\hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-Out, const float radians)
+\item 
+\hyperlink{structkm_mat4}{km\-Mat4} $\ast$const \hyperlink{mat4_8c_a95f6890c78326bf1be98625043bde4c2}{km\-Mat4\-Rotation\-Y} (\hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-Out, const float radians)
+\item 
+\hyperlink{structkm_mat4}{km\-Mat4} $\ast$const \hyperlink{mat4_8c_aaf40805be4ad26c428da614fffadd7eb}{km\-Mat4\-Rotation\-Z} (\hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-Out, const float radians)
+\item 
+\hyperlink{structkm_mat4}{km\-Mat4} $\ast$const \hyperlink{mat4_8c_a655f143ea55d51d784f76d99a4981c82}{km\-Mat4\-Rotation\-Pitch\-Yaw\-Roll} (\hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-Out, const km\-Scalar pitch, const km\-Scalar yaw, const km\-Scalar roll)
+\item 
+\hyperlink{structkm_mat4}{km\-Mat4} $\ast$const \hyperlink{mat4_8c_a16292102ccead0389890fee71e23a39d}{km\-Mat4\-Rotation\-Quaternion} (\hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-Out, const \hyperlink{structkm_quaternion}{km\-Quaternion} $\ast$p\-Q)
+\item 
+\hyperlink{structkm_mat4}{km\-Mat4} $\ast$const \hyperlink{mat4_8c_af160066197caa4261f28b6f7592b0aff}{km\-Mat4\-Scaling} (\hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-Out, const km\-Scalar x, const km\-Scalar y, const km\-Scalar z)
+\item 
+\hyperlink{structkm_mat4}{km\-Mat4} $\ast$const \hyperlink{mat4_8c_a9969ccf0c9b8334a742d402b37ac2543}{km\-Mat4\-Translation} (\hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-Out, const km\-Scalar x, const km\-Scalar y, const km\-Scalar z)
+\item 
+\hyperlink{structkm_vec3}{km\-Vec3} $\ast$const \hyperlink{mat4_8c_a3be78432d92edf7575d2527bb59e9399}{km\-Mat4\-Get\-Up\-Vec3} (\hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-Out, const \hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-In)
+\item 
+\hyperlink{structkm_vec3}{km\-Vec3} $\ast$const \hyperlink{mat4_8c_a086b3de73b5ecb54a111d5467f3ea45b}{km\-Mat4\-Get\-Right\-Vec3} (\hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-Out, const \hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-In)
+\item 
+\hyperlink{structkm_vec3}{km\-Vec3} $\ast$const \hyperlink{mat4_8c_a6e6ccd0c43ecea1991c21106ee45261f}{km\-Mat4\-Get\-Forward\-Vec3} (\hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-Out, const \hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-In)
+\item 
+\hyperlink{structkm_mat4}{km\-Mat4} $\ast$const \hyperlink{mat4_8c_a4a07a4d7d568f65565f05514b47a36a1}{km\-Mat4\-Perspective\-Projection} (\hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-Out, km\-Scalar fov\-Y, km\-Scalar aspect, km\-Scalar z\-Near, km\-Scalar z\-Far)
+\item 
+\hyperlink{structkm_mat4}{km\-Mat4} $\ast$const \hyperlink{mat4_8c_a2689d5382f991e4d5bd6d2fc94716501}{km\-Mat4\-Orthographic\-Projection} (\hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-Out, km\-Scalar left, km\-Scalar right, km\-Scalar bottom, km\-Scalar top, km\-Scalar near\-Val, km\-Scalar far\-Val)
+\item 
+\hyperlink{structkm_mat4}{km\-Mat4} $\ast$const \hyperlink{mat4_8c_a9915ac05aee3679fb6af83ef97dd491c}{km\-Mat4\-Look\-At} (\hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-Out, const \hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-Eye, const \hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-Center, const \hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-Up)
+\item 
+\hyperlink{structkm_mat3}{km\-Mat3} $\ast$const \hyperlink{mat4_8c_ab8ad116b5e3a523b904d66ae6b0a604e}{km\-Mat4\-Extract\-Rotation} (\hyperlink{structkm_mat3}{km\-Mat3} $\ast$p\-Out, const \hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-In)
+\item 
+\hyperlink{structkm_vec3}{km\-Vec3} $\ast$const \hyperlink{mat4_8c_ab063c79d908dc714d6bc660949b8076f}{km\-Mat4\-Rotation\-To\-Axis\-Angle} (\hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-Axis, km\-Scalar $\ast$radians, const \hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-In)
+\item 
+\hyperlink{structkm_mat4}{km\-Mat4} $\ast$const \hyperlink{mat4_8c_a91ba6ae92a0bb5cf7f2b40c7906c564c}{km\-Mat4\-Rotation\-Translation} (\hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-Out, const \hyperlink{structkm_mat3}{km\-Mat3} $\ast$rotation, const \hyperlink{structkm_vec3}{km\-Vec3} $\ast$translation)
+\item 
+\hypertarget{mat4_8c_ab0f8dad3ee44ef77ebdd31074227e4f6}{\hyperlink{structkm_plane}{km\-Plane} $\ast$const {\bfseries km\-Mat4\-Extract\-Plane} (\hyperlink{structkm_plane}{km\-Plane} $\ast$p\-Out, const \hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-In, const km\-Enum plane)}\label{mat4_8c_ab0f8dad3ee44ef77ebdd31074227e4f6}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\hypertarget{mat4_8c_a771e2f9758f3430217629a2596738f80}{\index{mat4.\-c@{mat4.\-c}!km\-Mat4\-Are\-Equal@{km\-Mat4\-Are\-Equal}}
+\index{km\-Mat4\-Are\-Equal@{km\-Mat4\-Are\-Equal}!mat4.c@{mat4.\-c}}
+\subsubsection[{km\-Mat4\-Are\-Equal}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf km\-Mat4\-Are\-Equal} (
+\begin{DoxyParamCaption}
+\item[{const {\bf km\-Mat4} $\ast$}]{p\-Mat1, }
+\item[{const {\bf km\-Mat4} $\ast$}]{p\-Mat2}
+\end{DoxyParamCaption}
+)}}\label{mat4_8c_a771e2f9758f3430217629a2596738f80}
+Returns K\-M\-\_\-\-T\-R\-U\-E if the 2 matrices are equal (approximately) 
+\begin{DoxyCode}
+{
+    int i = 0;
+
+        assert(pMat1 != pMat2 && "You are comparing the same thing!");
+
+        for (i = 0; i < 16; ++i)
+        {
+                if (!(pMat1->mat[i] + kmEpsilon > pMat2->mat[i] &&
+            pMat1->mat[i] - kmEpsilon < pMat2->mat[i])) {
+                        return KM_FALSE;
+        }
+        }
+
+        return KM_TRUE;
+}
+\end{DoxyCode}
+\hypertarget{mat4_8c_a69fb993dbdb643f3cca0752bf84f61b1}{\index{mat4.\-c@{mat4.\-c}!km\-Mat4\-Assign@{km\-Mat4\-Assign}}
+\index{km\-Mat4\-Assign@{km\-Mat4\-Assign}!mat4.c@{mat4.\-c}}
+\subsubsection[{km\-Mat4\-Assign}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Mat4}$\ast$ const {\bf km\-Mat4\-Assign} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Mat4} $\ast$}]{p\-Out, }
+\item[{const {\bf km\-Mat4} $\ast$}]{p\-In}
+\end{DoxyParamCaption}
+)}}\label{mat4_8c_a69fb993dbdb643f3cca0752bf84f61b1}
+Assigns the value of p\-In to p\-Out 
+
+Referenced by km\-Mat4\-Inverse().
+
+
+\begin{DoxyCode}
+{
+        assert(pOut != pIn && "You have tried to self-assign!!");
+
+        memcpy(pOut->mat, pIn->mat, sizeof(float)*16);
+
+        return pOut;
+}
+\end{DoxyCode}
+\hypertarget{mat4_8c_ab8ad116b5e3a523b904d66ae6b0a604e}{\index{mat4.\-c@{mat4.\-c}!km\-Mat4\-Extract\-Rotation@{km\-Mat4\-Extract\-Rotation}}
+\index{km\-Mat4\-Extract\-Rotation@{km\-Mat4\-Extract\-Rotation}!mat4.c@{mat4.\-c}}
+\subsubsection[{km\-Mat4\-Extract\-Rotation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Mat3}$\ast$ const {\bf km\-Mat4\-Extract\-Rotation} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Mat3} $\ast$}]{p\-Out, }
+\item[{const {\bf km\-Mat4} $\ast$}]{p\-In}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}read\mbox{]}}}}\label{mat4_8c_ab8ad116b5e3a523b904d66ae6b0a604e}
+Extract a 3x3 rotation matrix from the input 4x4 transformation. Stores the result in p\-Out, returns p\-Out 
+
+Referenced by km\-Mat4\-Rotation\-To\-Axis\-Angle().
+
+
+\begin{DoxyCode}
+{
+    pOut->mat[0] = pIn->mat[0];
+    pOut->mat[1] = pIn->mat[1];
+    pOut->mat[2] = pIn->mat[2];
+
+    pOut->mat[3] = pIn->mat[4];
+    pOut->mat[4] = pIn->mat[5];
+    pOut->mat[5] = pIn->mat[6];
+
+    pOut->mat[6] = pIn->mat[8];
+    pOut->mat[7] = pIn->mat[9];
+    pOut->mat[8] = pIn->mat[10];
+
+    return pOut;
+}
+\end{DoxyCode}
+\hypertarget{mat4_8c_acf5bc72eb851232f5724785a641920b6}{\index{mat4.\-c@{mat4.\-c}!km\-Mat4\-Fill@{km\-Mat4\-Fill}}
+\index{km\-Mat4\-Fill@{km\-Mat4\-Fill}!mat4.c@{mat4.\-c}}
+\subsubsection[{km\-Mat4\-Fill}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Mat4}$\ast$ const {\bf km\-Mat4\-Fill} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Mat4} $\ast$}]{p\-Out, }
+\item[{const km\-Scalar $\ast$}]{p\-Mat}
+\end{DoxyParamCaption}
+)}}\label{mat4_8c_acf5bc72eb851232f5724785a641920b6}
+Fills a \hyperlink{structkm_mat4}{km\-Mat4} structure with the values from a 16 element array of floats  p\-Out -\/ A pointer to the destination matrix p\-Mat -\/ A 16 element array of floats  Returns p\-Out so that the call can be nested 
+\begin{DoxyCode}
+{
+    memcpy(pOut->mat, pMat, sizeof(kmScalar) * 16);
+    return pOut;
+}
+\end{DoxyCode}
+\hypertarget{mat4_8c_a6e6ccd0c43ecea1991c21106ee45261f}{\index{mat4.\-c@{mat4.\-c}!km\-Mat4\-Get\-Forward\-Vec3@{km\-Mat4\-Get\-Forward\-Vec3}}
+\index{km\-Mat4\-Get\-Forward\-Vec3@{km\-Mat4\-Get\-Forward\-Vec3}!mat4.c@{mat4.\-c}}
+\subsubsection[{km\-Mat4\-Get\-Forward\-Vec3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Vec3}$\ast$ const {\bf km\-Mat4\-Get\-Forward\-Vec3} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Vec3} $\ast$}]{p\-Out, }
+\item[{const {\bf km\-Mat4} $\ast$}]{p\-In}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}read\mbox{]}}}}\label{mat4_8c_a6e6ccd0c43ecea1991c21106ee45261f}
+Extract the forward vector from a 4x4 matrix. The result is stored in p\-Out. Returns p\-Out. 
+\begin{DoxyCode}
+{
+        pOut->x = pIn->mat[8];
+        pOut->y = pIn->mat[9];
+        pOut->z = pIn->mat[10];
+
+        kmVec3Normalize(pOut, pOut);
+
+        return pOut;
+}
+\end{DoxyCode}
+\hypertarget{mat4_8c_a086b3de73b5ecb54a111d5467f3ea45b}{\index{mat4.\-c@{mat4.\-c}!km\-Mat4\-Get\-Right\-Vec3@{km\-Mat4\-Get\-Right\-Vec3}}
+\index{km\-Mat4\-Get\-Right\-Vec3@{km\-Mat4\-Get\-Right\-Vec3}!mat4.c@{mat4.\-c}}
+\subsubsection[{km\-Mat4\-Get\-Right\-Vec3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Vec3}$\ast$ const {\bf km\-Mat4\-Get\-Right\-Vec3} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Vec3} $\ast$}]{p\-Out, }
+\item[{const {\bf km\-Mat4} $\ast$}]{p\-In}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}read\mbox{]}}}}\label{mat4_8c_a086b3de73b5ecb54a111d5467f3ea45b}
+Extract the right vector from a 4x4 matrix. The result is stored in p\-Out. Returns p\-Out. 
+\begin{DoxyCode}
+{
+        pOut->x = pIn->mat[0];
+        pOut->y = pIn->mat[1];
+        pOut->z = pIn->mat[2];
+
+        kmVec3Normalize(pOut, pOut);
+
+        return pOut;
+}
+\end{DoxyCode}
+\hypertarget{mat4_8c_a3be78432d92edf7575d2527bb59e9399}{\index{mat4.\-c@{mat4.\-c}!km\-Mat4\-Get\-Up\-Vec3@{km\-Mat4\-Get\-Up\-Vec3}}
+\index{km\-Mat4\-Get\-Up\-Vec3@{km\-Mat4\-Get\-Up\-Vec3}!mat4.c@{mat4.\-c}}
+\subsubsection[{km\-Mat4\-Get\-Up\-Vec3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Vec3}$\ast$ const {\bf km\-Mat4\-Get\-Up\-Vec3} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Vec3} $\ast$}]{p\-Out, }
+\item[{const {\bf km\-Mat4} $\ast$}]{p\-In}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}read\mbox{]}}}}\label{mat4_8c_a3be78432d92edf7575d2527bb59e9399}
+Get the up vector from a matrix. p\-In is the matrix you wish to extract the vector from. p\-Out is a pointer to the \hyperlink{structkm_vec3}{km\-Vec3} structure that should hold the resulting vector 
+\begin{DoxyCode}
+{
+        pOut->x = pIn->mat[4];
+        pOut->y = pIn->mat[5];
+        pOut->z = pIn->mat[6];
+
+        kmVec3Normalize(pOut, pOut);
+
+        return pOut;
+}
+\end{DoxyCode}
+\hypertarget{mat4_8c_a0e76ef97bf0e1031ecf9500e92e662b2}{\index{mat4.\-c@{mat4.\-c}!km\-Mat4\-Identity@{km\-Mat4\-Identity}}
+\index{km\-Mat4\-Identity@{km\-Mat4\-Identity}!mat4.c@{mat4.\-c}}
+\subsubsection[{km\-Mat4\-Identity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Mat4}$\ast$ const {\bf km\-Mat4\-Identity} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Mat4} $\ast$}]{p\-Out}
+\end{DoxyParamCaption}
+)}}\label{mat4_8c_a0e76ef97bf0e1031ecf9500e92e662b2}
+Sets p\-Out to an identity matrix returns p\-Out  p\-Out -\/ A pointer to the matrix to set to identity  Returns p\-Out so that the call can be nested 
+
+Referenced by km\-Mat4\-Inverse(), km\-Mat4\-Look\-At(), km\-Mat4\-Orthographic\-Projection(), km\-Mat4\-Perspective\-Projection(), and C\-C\-Camera\-::restore.
+
+
+\begin{DoxyCode}
+{
+        memset(pOut->mat, 0, sizeof(float) * 16);
+        pOut->mat[0] = pOut->mat[5] = pOut->mat[10] = pOut->mat[15] = 1.0f;
+        return pOut;
+}
+\end{DoxyCode}
+\hypertarget{mat4_8c_a96d70576df637642afe3b2f2457e89c1}{\index{mat4.\-c@{mat4.\-c}!km\-Mat4\-Inverse@{km\-Mat4\-Inverse}}
+\index{km\-Mat4\-Inverse@{km\-Mat4\-Inverse}!mat4.c@{mat4.\-c}}
+\subsubsection[{km\-Mat4\-Inverse}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Mat4}$\ast$ const {\bf km\-Mat4\-Inverse} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Mat4} $\ast$}]{p\-Out, }
+\item[{const {\bf km\-Mat4} $\ast$}]{p\-M}
+\end{DoxyParamCaption}
+)}}\label{mat4_8c_a96d70576df637642afe3b2f2457e89c1}
+Calculates the inverse of p\-M and stores the result in p\-Out.  Returns N\-U\-L\-L if there is no inverse, else p\-Out 
+\begin{DoxyCode}
+{
+    kmMat4 inv;
+    kmMat4Assign(&inv, pM);
+
+    kmMat4 tmp;
+    kmMat4Identity(&tmp);
+
+    if(gaussj(&inv, &tmp) == KM_FALSE) {
+        return NULL;
+    }
+
+    kmMat4Assign(pOut, &inv);
+    return pOut;
+}
+\end{DoxyCode}
+\hypertarget{mat4_8c_aa15d9f21be8f4eedb5a380745972725a}{\index{mat4.\-c@{mat4.\-c}!km\-Mat4\-Is\-Identity@{km\-Mat4\-Is\-Identity}}
+\index{km\-Mat4\-Is\-Identity@{km\-Mat4\-Is\-Identity}!mat4.c@{mat4.\-c}}
+\subsubsection[{km\-Mat4\-Is\-Identity}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf km\-Mat4\-Is\-Identity} (
+\begin{DoxyParamCaption}
+\item[{const {\bf km\-Mat4} $\ast$}]{p\-In}
+\end{DoxyParamCaption}
+)}}\label{mat4_8c_aa15d9f21be8f4eedb5a380745972725a}
+Returns K\-M\-\_\-\-T\-R\-U\-E if p\-In is an identity matrix K\-M\-\_\-\-F\-A\-L\-S\-E otherwise 
+\begin{DoxyCode}
+{
+        static const float identity [] = {      1.0f, 0.0f, 0.0f, 0.0f,
+                                            0.0f, 1.0f, 0.0f, 0.0f,
+                                            0.0f, 0.0f, 1.0f, 0.0f,
+                                            0.0f, 0.0f, 0.0f, 1.0f
+                                         };
+
+        return (memcmp(identity, pIn->mat, sizeof(float) * 16) == 0);
+}
+\end{DoxyCode}
+\hypertarget{mat4_8c_a9915ac05aee3679fb6af83ef97dd491c}{\index{mat4.\-c@{mat4.\-c}!km\-Mat4\-Look\-At@{km\-Mat4\-Look\-At}}
+\index{km\-Mat4\-Look\-At@{km\-Mat4\-Look\-At}!mat4.c@{mat4.\-c}}
+\subsubsection[{km\-Mat4\-Look\-At}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Mat4}$\ast$ const {\bf km\-Mat4\-Look\-At} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Mat4} $\ast$}]{p\-Out, }
+\item[{const {\bf km\-Vec3} $\ast$}]{p\-Eye, }
+\item[{const {\bf km\-Vec3} $\ast$}]{p\-Center, }
+\item[{const {\bf km\-Vec3} $\ast$}]{p\-Up}
+\end{DoxyParamCaption}
+)}}\label{mat4_8c_a9915ac05aee3679fb6af83ef97dd491c}
+Builds a translation matrix in the same way as glu\-Look\-At() the resulting matrix is stored in p\-Out. p\-Out is returned. 
+
+Referenced by C\-C\-Camera\-::locate.
+
+
+\begin{DoxyCode}
+{
+    kmVec3 f, up, s, u;
+    kmMat4 translate;
+
+    kmVec3Subtract(&f, pCenter, pEye);
+    kmVec3Normalize(&f, &f);
+
+    kmVec3Assign(&up, pUp);
+    kmVec3Normalize(&up, &up);
+
+    kmVec3Cross(&s, &f, &up);
+    kmVec3Normalize(&s, &s);
+
+    kmVec3Cross(&u, &s, &f);
+    kmVec3Normalize(&s, &s);
+
+    kmMat4Identity(pOut);
+
+    pOut->mat[0] = s.x;
+    pOut->mat[4] = s.y;
+    pOut->mat[8] = s.z;
+
+    pOut->mat[1] = u.x;
+    pOut->mat[5] = u.y;
+    pOut->mat[9] = u.z;
+
+    pOut->mat[2] = -f.x;
+    pOut->mat[6] = -f.y;
+    pOut->mat[10] = -f.z;
+
+    kmMat4Translation(&translate, -pEye->x, -pEye->y, -pEye->z);
+    kmMat4Multiply(pOut, pOut, &translate);
+
+    return pOut;
+}
+\end{DoxyCode}
+\hypertarget{mat4_8c_abd78015f0ff854f779365169603d6d9e}{\index{mat4.\-c@{mat4.\-c}!km\-Mat4\-Multiply@{km\-Mat4\-Multiply}}
+\index{km\-Mat4\-Multiply@{km\-Mat4\-Multiply}!mat4.c@{mat4.\-c}}
+\subsubsection[{km\-Mat4\-Multiply}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Mat4}$\ast$ const {\bf km\-Mat4\-Multiply} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Mat4} $\ast$}]{p\-Out, }
+\item[{const {\bf km\-Mat4} $\ast$}]{p\-M1, }
+\item[{const {\bf km\-Mat4} $\ast$}]{p\-M2}
+\end{DoxyParamCaption}
+)}}\label{mat4_8c_abd78015f0ff854f779365169603d6d9e}
+Multiplies p\-M1 with p\-M2, stores the result in p\-Out, returns p\-Out 
+
+Referenced by km\-Mat4\-Look\-At(), and C\-C\-G\-L\-Program\-::set\-Uniforms\-For\-Builtins.
+
+
+\begin{DoxyCode}
+{
+#if defined(__ARM_NEON__)
+
+        float mat[16];
+
+        // Invert column-order with row-order
+        NEON_Matrix4Mul( &pM2->mat[0], &pM1->mat[0], &mat[0] );
+
+#else
+        float mat[16];
+
+        const float *m1 = pM1->mat, *m2 = pM2->mat;
+
+        mat[0] = m1[0] * m2[0] + m1[4] * m2[1] + m1[8] * m2[2] + m1[12] * m2[3]
+      ;
+        mat[1] = m1[1] * m2[0] + m1[5] * m2[1] + m1[9] * m2[2] + m1[13] * m2[3]
+      ;
+        mat[2] = m1[2] * m2[0] + m1[6] * m2[1] + m1[10] * m2[2] + m1[14] * m2[3
+      ];
+        mat[3] = m1[3] * m2[0] + m1[7] * m2[1] + m1[11] * m2[2] + m1[15] * m2[3
+      ];
+
+        mat[4] = m1[0] * m2[4] + m1[4] * m2[5] + m1[8] * m2[6] + m1[12] * m2[7]
+      ;
+        mat[5] = m1[1] * m2[4] + m1[5] * m2[5] + m1[9] * m2[6] + m1[13] * m2[7]
+      ;
+        mat[6] = m1[2] * m2[4] + m1[6] * m2[5] + m1[10] * m2[6] + m1[14] * m2[7
+      ];
+        mat[7] = m1[3] * m2[4] + m1[7] * m2[5] + m1[11] * m2[6] + m1[15] * m2[7
+      ];
+
+        mat[8] = m1[0] * m2[8] + m1[4] * m2[9] + m1[8] * m2[10] + m1[12] * m2[
+      11];
+        mat[9] = m1[1] * m2[8] + m1[5] * m2[9] + m1[9] * m2[10] + m1[13] * m2[
+      11];
+        mat[10] = m1[2] * m2[8] + m1[6] * m2[9] + m1[10] * m2[10] + m1[14] * m2
+      [11];
+        mat[11] = m1[3] * m2[8] + m1[7] * m2[9] + m1[11] * m2[10] + m1[15] * m2
+      [11];
+
+        mat[12] = m1[0] * m2[12] + m1[4] * m2[13] + m1[8] * m2[14] + m1[12] * 
+      m2[15];
+        mat[13] = m1[1] * m2[12] + m1[5] * m2[13] + m1[9] * m2[14] + m1[13] * 
+      m2[15];
+        mat[14] = m1[2] * m2[12] + m1[6] * m2[13] + m1[10] * m2[14] + m1[14] * 
+      m2[15];
+        mat[15] = m1[3] * m2[12] + m1[7] * m2[13] + m1[11] * m2[14] + m1[15] * 
+      m2[15];
+
+#endif
+
+        memcpy(pOut->mat, mat, sizeof(float)*16);
+
+        return pOut;
+}
+\end{DoxyCode}
+\hypertarget{mat4_8c_a2689d5382f991e4d5bd6d2fc94716501}{\index{mat4.\-c@{mat4.\-c}!km\-Mat4\-Orthographic\-Projection@{km\-Mat4\-Orthographic\-Projection}}
+\index{km\-Mat4\-Orthographic\-Projection@{km\-Mat4\-Orthographic\-Projection}!mat4.c@{mat4.\-c}}
+\subsubsection[{km\-Mat4\-Orthographic\-Projection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Mat4}$\ast$ const {\bf km\-Mat4\-Orthographic\-Projection} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Mat4} $\ast$}]{p\-Out, }
+\item[{km\-Scalar}]{left, }
+\item[{km\-Scalar}]{right, }
+\item[{km\-Scalar}]{bottom, }
+\item[{km\-Scalar}]{top, }
+\item[{km\-Scalar}]{near\-Val, }
+\item[{km\-Scalar}]{far\-Val}
+\end{DoxyParamCaption}
+)}}\label{mat4_8c_a2689d5382f991e4d5bd6d2fc94716501}
+Creates an orthographic projection matrix like gl\-Ortho 
+
+Referenced by C\-C\-Render\-Texture\-::begin.
+
+
+\begin{DoxyCode}
+{
+        kmScalar tx = -((right + left) / (right - left));
+        kmScalar ty = -((top + bottom) / (top - bottom));
+        kmScalar tz = -((farVal + nearVal) / (farVal - nearVal));
+
+        kmMat4Identity(pOut);
+        pOut->mat[0] = 2 / (right - left);
+        pOut->mat[5] = 2 / (top - bottom);
+        pOut->mat[10] = -2 / (farVal - nearVal);
+        pOut->mat[12] = tx;
+        pOut->mat[13] = ty;
+        pOut->mat[14] = tz;
+
+        return pOut;
+}
+\end{DoxyCode}
+\hypertarget{mat4_8c_a4a07a4d7d568f65565f05514b47a36a1}{\index{mat4.\-c@{mat4.\-c}!km\-Mat4\-Perspective\-Projection@{km\-Mat4\-Perspective\-Projection}}
+\index{km\-Mat4\-Perspective\-Projection@{km\-Mat4\-Perspective\-Projection}!mat4.c@{mat4.\-c}}
+\subsubsection[{km\-Mat4\-Perspective\-Projection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Mat4}$\ast$ const {\bf km\-Mat4\-Perspective\-Projection} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Mat4} $\ast$}]{p\-Out, }
+\item[{km\-Scalar}]{fov\-Y, }
+\item[{km\-Scalar}]{aspect, }
+\item[{km\-Scalar}]{z\-Near, }
+\item[{km\-Scalar}]{z\-Far}
+\end{DoxyParamCaption}
+)}}\label{mat4_8c_a4a07a4d7d568f65565f05514b47a36a1}
+Creates a perspective projection matrix in the same way as glu\-Perspective 
+\begin{DoxyCode}
+{
+        kmScalar r = kmDegreesToRadians(fovY / 2);
+        kmScalar deltaZ = zFar - zNear;
+        kmScalar s = sin(r);
+    kmScalar cotangent = 0;
+
+        if (deltaZ == 0 || s == 0 || aspect == 0) {
+                return NULL;
+        }
+
+    //cos(r) / sin(r) = cot(r)
+        cotangent = cos(r) / s;
+
+        kmMat4Identity(pOut);
+        pOut->mat[0] = cotangent / aspect;
+        pOut->mat[5] = cotangent;
+        pOut->mat[10] = -(zFar + zNear) / deltaZ;
+        pOut->mat[11] = -1;
+        pOut->mat[14] = -2 * zNear * zFar / deltaZ;
+        pOut->mat[15] = 0;
+
+        return pOut;
+}
+\end{DoxyCode}
+\hypertarget{mat4_8c_a58e5c05a74ea1be6705003d1783bbce1}{\index{mat4.\-c@{mat4.\-c}!km\-Mat4\-Rotation\-Axis\-Angle@{km\-Mat4\-Rotation\-Axis\-Angle}}
+\index{km\-Mat4\-Rotation\-Axis\-Angle@{km\-Mat4\-Rotation\-Axis\-Angle}!mat4.c@{mat4.\-c}}
+\subsubsection[{km\-Mat4\-Rotation\-Axis\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Mat4}$\ast$ const {\bf km\-Mat4\-Rotation\-Axis\-Angle} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Mat4} $\ast$}]{p\-Out, }
+\item[{const {\bf km\-Vec3} $\ast$}]{axis, }
+\item[{km\-Scalar}]{radians}
+\end{DoxyParamCaption}
+)}}\label{mat4_8c_a58e5c05a74ea1be6705003d1783bbce1}
+Build a rotation matrix from an axis and an angle. Result is stored in p\-Out. p\-Out is returned. 
+\begin{DoxyCode}
+{
+        float rcos = cosf(radians);
+        float rsin = sinf(radians);
+
+        kmVec3 normalizedAxis;
+        kmVec3Normalize(&normalizedAxis, axis);
+
+        pOut->mat[0] = rcos + normalizedAxis.x * normalizedAxis.x * (1 - rcos);
+        pOut->mat[1] = normalizedAxis.z * rsin + normalizedAxis.y * 
+      normalizedAxis.x * (1 - rcos);
+        pOut->mat[2] = -normalizedAxis.y * rsin + normalizedAxis.z * 
+      normalizedAxis.x * (1 - rcos);
+        pOut->mat[3] = 0.0f;
+
+        pOut->mat[4] = -normalizedAxis.z * rsin + normalizedAxis.x * 
+      normalizedAxis.y * (1 - rcos);
+        pOut->mat[5] = rcos + normalizedAxis.y * normalizedAxis.y * (1 - rcos);
+        pOut->mat[6] = normalizedAxis.x * rsin + normalizedAxis.z * 
+      normalizedAxis.y * (1 - rcos);
+        pOut->mat[7] = 0.0f;
+
+        pOut->mat[8] = normalizedAxis.y * rsin + normalizedAxis.x * 
+      normalizedAxis.z * (1 - rcos);
+        pOut->mat[9] = -normalizedAxis.x * rsin + normalizedAxis.y * 
+      normalizedAxis.z * (1 - rcos);
+        pOut->mat[10] = rcos + normalizedAxis.z * normalizedAxis.z * (1 - rcos)
+      ;
+        pOut->mat[11] = 0.0f;
+
+        pOut->mat[12] = 0.0f;
+        pOut->mat[13] = 0.0f;
+        pOut->mat[14] = 0.0f;
+        pOut->mat[15] = 1.0f;
+
+        return pOut;
+}
+\end{DoxyCode}
+\hypertarget{mat4_8c_a655f143ea55d51d784f76d99a4981c82}{\index{mat4.\-c@{mat4.\-c}!km\-Mat4\-Rotation\-Pitch\-Yaw\-Roll@{km\-Mat4\-Rotation\-Pitch\-Yaw\-Roll}}
+\index{km\-Mat4\-Rotation\-Pitch\-Yaw\-Roll@{km\-Mat4\-Rotation\-Pitch\-Yaw\-Roll}!mat4.c@{mat4.\-c}}
+\subsubsection[{km\-Mat4\-Rotation\-Pitch\-Yaw\-Roll}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Mat4}$\ast$ const {\bf km\-Mat4\-Rotation\-Pitch\-Yaw\-Roll} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Mat4} $\ast$}]{p\-Out, }
+\item[{const km\-Scalar}]{pitch, }
+\item[{const km\-Scalar}]{yaw, }
+\item[{const km\-Scalar}]{roll}
+\end{DoxyParamCaption}
+)}}\label{mat4_8c_a655f143ea55d51d784f76d99a4981c82}
+Builds a rotation matrix from pitch, yaw and roll. The resulting matrix is stored in p\-Out and p\-Out is returned 
+\begin{DoxyCode}
+{
+        double cr = cos(pitch);
+        double sr = sin(pitch);
+        double cp = cos(yaw);
+        double sp = sin(yaw);
+        double cy = cos(roll);
+        double sy = sin(roll);
+        double srsp = sr * sp;
+        double crsp = cr * sp;
+
+        pOut->mat[0] = (kmScalar) cp * cy;
+        pOut->mat[4] = (kmScalar) cp * sy;
+        pOut->mat[8] = (kmScalar) - sp;
+
+        pOut->mat[1] = (kmScalar) srsp * cy - cr * sy;
+        pOut->mat[5] = (kmScalar) srsp * sy + cr * cy;
+        pOut->mat[9] = (kmScalar) sr * cp;
+
+        pOut->mat[2] = (kmScalar) crsp * cy + sr * sy;
+        pOut->mat[6] = (kmScalar) crsp * sy - sr * cy;
+        pOut->mat[10] = (kmScalar) cr * cp;
+
+        pOut->mat[3] = pOut->mat[7] = pOut->mat[11] = 0.0;
+        pOut->mat[15] = 1.0;
+
+        return pOut;
+}
+\end{DoxyCode}
+\hypertarget{mat4_8c_a16292102ccead0389890fee71e23a39d}{\index{mat4.\-c@{mat4.\-c}!km\-Mat4\-Rotation\-Quaternion@{km\-Mat4\-Rotation\-Quaternion}}
+\index{km\-Mat4\-Rotation\-Quaternion@{km\-Mat4\-Rotation\-Quaternion}!mat4.c@{mat4.\-c}}
+\subsubsection[{km\-Mat4\-Rotation\-Quaternion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Mat4}$\ast$ const {\bf km\-Mat4\-Rotation\-Quaternion} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Mat4} $\ast$}]{p\-Out, }
+\item[{const {\bf km\-Quaternion} $\ast$}]{p\-Q}
+\end{DoxyParamCaption}
+)}}\label{mat4_8c_a16292102ccead0389890fee71e23a39d}
+Converts a quaternion to a rotation matrix, the result is stored in p\-Out, returns p\-Out 
+\begin{DoxyCode}
+{
+        pOut->mat[0] = 1.0f - 2.0f * (pQ->y * pQ->y + pQ->z * pQ->z );
+        pOut->mat[1] = 2.0f * (pQ->x * pQ->y + pQ->z * pQ->w);
+        pOut->mat[2] = 2.0f * (pQ->x * pQ->z - pQ->y * pQ->w);
+        pOut->mat[3] = 0.0f;
+
+        // Second row
+        pOut->mat[4] = 2.0f * ( pQ->x * pQ->y - pQ->z * pQ->w );
+        pOut->mat[5] = 1.0f - 2.0f * ( pQ->x * pQ->x + pQ->z * pQ->z );
+        pOut->mat[6] = 2.0f * (pQ->z * pQ->y + pQ->x * pQ->w );
+        pOut->mat[7] = 0.0f;
+
+        // Third row
+        pOut->mat[8] = 2.0f * ( pQ->x * pQ->z + pQ->y * pQ->w );
+        pOut->mat[9] = 2.0f * ( pQ->y * pQ->z - pQ->x * pQ->w );
+        pOut->mat[10] = 1.0f - 2.0f * ( pQ->x * pQ->x + pQ->y * pQ->y );
+        pOut->mat[11] = 0.0f;
+
+        // Fourth row
+        pOut->mat[12] = 0;
+        pOut->mat[13] = 0;
+        pOut->mat[14] = 0;
+        pOut->mat[15] = 1.0f;
+
+        return pOut;
+}
+\end{DoxyCode}
+\hypertarget{mat4_8c_ab063c79d908dc714d6bc660949b8076f}{\index{mat4.\-c@{mat4.\-c}!km\-Mat4\-Rotation\-To\-Axis\-Angle@{km\-Mat4\-Rotation\-To\-Axis\-Angle}}
+\index{km\-Mat4\-Rotation\-To\-Axis\-Angle@{km\-Mat4\-Rotation\-To\-Axis\-Angle}!mat4.c@{mat4.\-c}}
+\subsubsection[{km\-Mat4\-Rotation\-To\-Axis\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Vec3}$\ast$ const {\bf km\-Mat4\-Rotation\-To\-Axis\-Angle} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Vec3} $\ast$}]{p\-Axis, }
+\item[{km\-Scalar $\ast$}]{radians, }
+\item[{const {\bf km\-Mat4} $\ast$}]{p\-In}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}read\mbox{]}}}}\label{mat4_8c_ab063c79d908dc714d6bc660949b8076f}
+Take the rotation from a 4x4 transformation matrix, and return it as an axis and an angle (in radians) returns the output axis. 
+\begin{DoxyCode}
+{
+    /*Surely not this easy?*/
+    kmQuaternion temp;
+    kmMat3 rotation;
+    kmMat4ExtractRotation(&rotation, pIn);
+    kmQuaternionRotationMatrix(&temp, &rotation);
+    kmQuaternionToAxisAngle(&temp, pAxis, radians);
+    return pAxis;
+}
+\end{DoxyCode}
+\hypertarget{mat4_8c_a91ba6ae92a0bb5cf7f2b40c7906c564c}{\index{mat4.\-c@{mat4.\-c}!km\-Mat4\-Rotation\-Translation@{km\-Mat4\-Rotation\-Translation}}
+\index{km\-Mat4\-Rotation\-Translation@{km\-Mat4\-Rotation\-Translation}!mat4.c@{mat4.\-c}}
+\subsubsection[{km\-Mat4\-Rotation\-Translation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Mat4}$\ast$ const {\bf km\-Mat4\-Rotation\-Translation} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Mat4} $\ast$}]{p\-Out, }
+\item[{const {\bf km\-Mat3} $\ast$}]{rotation, }
+\item[{const {\bf km\-Vec3} $\ast$}]{translation}
+\end{DoxyParamCaption}
+)}}\label{mat4_8c_a91ba6ae92a0bb5cf7f2b40c7906c564c}
+Build a 4x4 Open\-G\-L transformation matrix using a 3x3 rotation matrix, and a 3d vector representing a translation. Assign the result to p\-Out, p\-Out is also returned. 
+\begin{DoxyCode}
+{
+    pOut->mat[0] = rotation->mat[0];
+    pOut->mat[1] = rotation->mat[1];
+    pOut->mat[2] = rotation->mat[2];
+    pOut->mat[3] = 0.0f;
+
+    pOut->mat[4] = rotation->mat[3];
+    pOut->mat[5] = rotation->mat[4];
+    pOut->mat[6] = rotation->mat[5];
+    pOut->mat[7] = 0.0f;
+
+    pOut->mat[8] = rotation->mat[6];
+    pOut->mat[9] = rotation->mat[7];
+    pOut->mat[10] = rotation->mat[8];
+    pOut->mat[11] = 0.0f;
+
+    pOut->mat[12] = translation->x;
+    pOut->mat[13] = translation->y;
+    pOut->mat[14] = translation->z;
+    pOut->mat[15] = 1.0f;
+
+    return pOut;
+}
+\end{DoxyCode}
+\hypertarget{mat4_8c_a079fea1711d12d768695580841fcd754}{\index{mat4.\-c@{mat4.\-c}!km\-Mat4\-Rotation\-X@{km\-Mat4\-Rotation\-X}}
+\index{km\-Mat4\-Rotation\-X@{km\-Mat4\-Rotation\-X}!mat4.c@{mat4.\-c}}
+\subsubsection[{km\-Mat4\-Rotation\-X}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Mat4}$\ast$ const {\bf km\-Mat4\-Rotation\-X} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Mat4} $\ast$}]{p\-Out, }
+\item[{const float}]{radians}
+\end{DoxyParamCaption}
+)}}\label{mat4_8c_a079fea1711d12d768695580841fcd754}
+Builds an X-\/axis rotation matrix and stores it in p\-Out, returns p\-Out 
+\begin{DoxyCode}
+{
+        /*
+                 |  1  0       0       0 |
+         M = |  0  cos(A) -sin(A)  0 |
+             |  0  sin(A)  cos(A)  0 |
+             |  0  0       0       1 |
+
+        */
+
+        pOut->mat[0] = 1.0f;
+        pOut->mat[1] = 0.0f;
+        pOut->mat[2] = 0.0f;
+        pOut->mat[3] = 0.0f;
+
+        pOut->mat[4] = 0.0f;
+        pOut->mat[5] = cosf(radians);
+        pOut->mat[6] = sinf(radians);
+        pOut->mat[7] = 0.0f;
+
+        pOut->mat[8] = 0.0f;
+        pOut->mat[9] = -sinf(radians);
+        pOut->mat[10] = cosf(radians);
+        pOut->mat[11] = 0.0f;
+
+        pOut->mat[12] = 0.0f;
+        pOut->mat[13] = 0.0f;
+        pOut->mat[14] = 0.0f;
+        pOut->mat[15] = 1.0f;
+
+        return pOut;
+}
+\end{DoxyCode}
+\hypertarget{mat4_8c_a95f6890c78326bf1be98625043bde4c2}{\index{mat4.\-c@{mat4.\-c}!km\-Mat4\-Rotation\-Y@{km\-Mat4\-Rotation\-Y}}
+\index{km\-Mat4\-Rotation\-Y@{km\-Mat4\-Rotation\-Y}!mat4.c@{mat4.\-c}}
+\subsubsection[{km\-Mat4\-Rotation\-Y}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Mat4}$\ast$ const {\bf km\-Mat4\-Rotation\-Y} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Mat4} $\ast$}]{p\-Out, }
+\item[{const float}]{radians}
+\end{DoxyParamCaption}
+)}}\label{mat4_8c_a95f6890c78326bf1be98625043bde4c2}
+Builds a rotation matrix using the rotation around the Y-\/axis The result is stored in p\-Out, p\-Out is returned. 
+\begin{DoxyCode}
+{
+        /*
+             |  cos(A)  0   sin(A)  0 |
+         M = |  0       1   0       0 |
+             | -sin(A)  0   cos(A)  0 |
+             |  0       0   0       1 |
+        */
+
+        pOut->mat[0] = cosf(radians);
+        pOut->mat[1] = 0.0f;
+        pOut->mat[2] = -sinf(radians);
+        pOut->mat[3] = 0.0f;
+
+        pOut->mat[4] = 0.0f;
+        pOut->mat[5] = 1.0f;
+        pOut->mat[6] = 0.0f;
+        pOut->mat[7] = 0.0f;
+
+        pOut->mat[8] = sinf(radians);
+        pOut->mat[9] = 0.0f;
+        pOut->mat[10] = cosf(radians);
+        pOut->mat[11] = 0.0f;
+
+        pOut->mat[12] = 0.0f;
+        pOut->mat[13] = 0.0f;
+        pOut->mat[14] = 0.0f;
+        pOut->mat[15] = 1.0f;
+
+        return pOut;
+}
+\end{DoxyCode}
+\hypertarget{mat4_8c_aaf40805be4ad26c428da614fffadd7eb}{\index{mat4.\-c@{mat4.\-c}!km\-Mat4\-Rotation\-Z@{km\-Mat4\-Rotation\-Z}}
+\index{km\-Mat4\-Rotation\-Z@{km\-Mat4\-Rotation\-Z}!mat4.c@{mat4.\-c}}
+\subsubsection[{km\-Mat4\-Rotation\-Z}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Mat4}$\ast$ const {\bf km\-Mat4\-Rotation\-Z} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Mat4} $\ast$}]{p\-Out, }
+\item[{const float}]{radians}
+\end{DoxyParamCaption}
+)}}\label{mat4_8c_aaf40805be4ad26c428da614fffadd7eb}
+Builds a rotation matrix around the Z-\/axis. The resulting matrix is stored in p\-Out. p\-Out is returned. 
+\begin{DoxyCode}
+{
+        /*
+             |  cos(A)  -sin(A)   0   0 |
+         M = |  sin(A)   cos(A)   0   0 |
+             |  0        0        1   0 |
+             |  0        0        0   1 |
+        */
+
+        pOut->mat[0] = cosf(radians);
+        pOut->mat[1] = sinf(radians);
+        pOut->mat[2] = 0.0f;
+        pOut->mat[3] = 0.0f;
+
+        pOut->mat[4] = -sinf(radians);;
+        pOut->mat[5] = cosf(radians);
+        pOut->mat[6] = 0.0f;
+        pOut->mat[7] = 0.0f;
+
+        pOut->mat[8] = 0.0f;
+        pOut->mat[9] = 0.0f;
+        pOut->mat[10] = 1.0f;
+        pOut->mat[11] = 0.0f;
+
+        pOut->mat[12] = 0.0f;
+        pOut->mat[13] = 0.0f;
+        pOut->mat[14] = 0.0f;
+        pOut->mat[15] = 1.0f;
+
+        return pOut;
+}
+\end{DoxyCode}
+\hypertarget{mat4_8c_af160066197caa4261f28b6f7592b0aff}{\index{mat4.\-c@{mat4.\-c}!km\-Mat4\-Scaling@{km\-Mat4\-Scaling}}
+\index{km\-Mat4\-Scaling@{km\-Mat4\-Scaling}!mat4.c@{mat4.\-c}}
+\subsubsection[{km\-Mat4\-Scaling}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Mat4}$\ast$ const {\bf km\-Mat4\-Scaling} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Mat4} $\ast$}]{p\-Out, }
+\item[{const km\-Scalar}]{x, }
+\item[{const km\-Scalar}]{y, }
+\item[{const km\-Scalar}]{z}
+\end{DoxyParamCaption}
+)}}\label{mat4_8c_af160066197caa4261f28b6f7592b0aff}
+Builds a scaling matrix 
+\begin{DoxyCode}
+{
+        memset(pOut->mat, 0, sizeof(float) * 16);
+        pOut->mat[0] = x;
+        pOut->mat[5] = y;
+        pOut->mat[10] = z;
+        pOut->mat[15] = 1.0f;
+
+        return pOut;
+}
+\end{DoxyCode}
+\hypertarget{mat4_8c_a9969ccf0c9b8334a742d402b37ac2543}{\index{mat4.\-c@{mat4.\-c}!km\-Mat4\-Translation@{km\-Mat4\-Translation}}
+\index{km\-Mat4\-Translation@{km\-Mat4\-Translation}!mat4.c@{mat4.\-c}}
+\subsubsection[{km\-Mat4\-Translation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Mat4}$\ast$ const {\bf km\-Mat4\-Translation} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Mat4} $\ast$}]{p\-Out, }
+\item[{const km\-Scalar}]{x, }
+\item[{const km\-Scalar}]{y, }
+\item[{const km\-Scalar}]{z}
+\end{DoxyParamCaption}
+)}}\label{mat4_8c_a9969ccf0c9b8334a742d402b37ac2543}
+Builds a translation matrix. All other elements in the matrix will be set to zero except for the diagonal which is set to 1.\-0 
+
+Referenced by km\-Mat4\-Look\-At().
+
+
+\begin{DoxyCode}
+{
+    //FIXME: Write a test for this
+    memset(pOut->mat, 0, sizeof(float) * 16);
+
+    pOut->mat[0] = 1.0f;
+    pOut->mat[5] = 1.0f;
+    pOut->mat[10] = 1.0f;
+
+    pOut->mat[12] = x;
+    pOut->mat[13] = y;
+    pOut->mat[14] = z;
+    pOut->mat[15] = 1.0f;
+
+    return pOut;
+}
+\end{DoxyCode}
+\hypertarget{mat4_8c_afdf56cf919c7f29026b0b4b230a562aa}{\index{mat4.\-c@{mat4.\-c}!km\-Mat4\-Transpose@{km\-Mat4\-Transpose}}
+\index{km\-Mat4\-Transpose@{km\-Mat4\-Transpose}!mat4.c@{mat4.\-c}}
+\subsubsection[{km\-Mat4\-Transpose}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Mat4}$\ast$ const {\bf km\-Mat4\-Transpose} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Mat4} $\ast$}]{p\-Out, }
+\item[{const {\bf km\-Mat4} $\ast$}]{p\-In}
+\end{DoxyParamCaption}
+)}}\label{mat4_8c_afdf56cf919c7f29026b0b4b230a562aa}
+Sets p\-Out to the transpose of p\-In, returns p\-Out 
+\begin{DoxyCode}
+{
+    int x, z;
+
+    for (z = 0; z < 4; ++z) {
+        for (x = 0; x < 4; ++x) {
+            pOut->mat[(z * 4) + x] = pIn->mat[(x * 4) + z];
+        }
+    }
+
+    return pOut;
+}
+\end{DoxyCode}

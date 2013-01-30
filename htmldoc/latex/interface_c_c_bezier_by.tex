@@ -1,0 +1,77 @@
+\hypertarget{interface_c_c_bezier_by}{\section{C\-C\-Bezier\-By Class Reference}
+\label{interface_c_c_bezier_by}\index{C\-C\-Bezier\-By@{C\-C\-Bezier\-By}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Interval.\-h$>$}
+
+Inheritance diagram for C\-C\-Bezier\-By\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{interface_c_c_bezier_by}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_bezier_by_adf84b5aa6bdb241348853a6f8cb3af67}{init\-With\-Duration\-:bezier\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_bezier_by_af1ee9e334ba30cc773c2d4ff96f4e565}{action\-With\-Duration\-:bezier\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_bezier_by_a163dcb0b2de57470f9dac8d6a50f71a4}{\hyperlink{struct__cc_bezier_config}{cc\-Bezier\-Config} {\bfseries config\-\_\-}}\label{interface_c_c_bezier_by_a163dcb0b2de57470f9dac8d6a50f71a4}
+
+\item 
+\hypertarget{interface_c_c_bezier_by_a93c275a07f74cca1367f75fb2c1d428b}{C\-G\-Point {\bfseries start\-Position\-\_\-}}\label{interface_c_c_bezier_by_a93c275a07f74cca1367f75fb2c1d428b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An action that moves the target with a cubic Bezier curve by a certain distance. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_bezier_by_af1ee9e334ba30cc773c2d4ff96f4e565}{\index{C\-C\-Bezier\-By@{C\-C\-Bezier\-By}!action\-With\-Duration\-:bezier\-:@{action\-With\-Duration\-:bezier\-:}}
+\index{action\-With\-Duration\-:bezier\-:@{action\-With\-Duration\-:bezier\-:}!CCBezierBy@{C\-C\-Bezier\-By}}
+\subsubsection[{action\-With\-Duration\-:bezier\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{t}
+\item[{bezier:({\bf cc\-Bezier\-Config})}]{c}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_bezier_by_af1ee9e334ba30cc773c2d4ff96f4e565}
+creates the action with a duration and a bezier configuration 
+\begin{DoxyCode}
+                        : (ccTime) t bezier:(ccBezierConfig) c
+{
+        return [[[self alloc] initWithDuration:t bezier:c ] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_bezier_by_adf84b5aa6bdb241348853a6f8cb3af67}{\index{C\-C\-Bezier\-By@{C\-C\-Bezier\-By}!init\-With\-Duration\-:bezier\-:@{init\-With\-Duration\-:bezier\-:}}
+\index{init\-With\-Duration\-:bezier\-:@{init\-With\-Duration\-:bezier\-:}!CCBezierBy@{C\-C\-Bezier\-By}}
+\subsubsection[{init\-With\-Duration\-:bezier\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{t}
+\item[{bezier:({\bf cc\-Bezier\-Config})}]{c}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_bezier_by_adf84b5aa6bdb241348853a6f8cb3af67}
+initializes the action with a duration and a bezier configuration 
+\begin{DoxyCode}
+                      : (ccTime) t bezier:(ccBezierConfig) c
+{
+        if( (self=[super initWithDuration: t]) ) {
+                config_ = c;
+        }
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-m\end{DoxyCompactItemize}

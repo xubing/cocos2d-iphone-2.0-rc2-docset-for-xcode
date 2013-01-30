@@ -1,0 +1,52 @@
+\hypertarget{base64_8h}{\section{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.1-\/beta4/cocos2d/\-Support/base64.h File Reference}
+\label{base64_8h}\index{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/\-Support/base64.\-h@{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/\-Support/base64.\-h}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{base64_8h_a0cdba854f2cfc2fea6e2073167d208b5}{base64\-Decode} (unsigned char $\ast$in, unsigned int in\-Length, unsigned char $\ast$$\ast$out)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+base64 helper functions 
+
+\subsection{Function Documentation}
+\hypertarget{base64_8h_a0cdba854f2cfc2fea6e2073167d208b5}{\index{base64.\-h@{base64.\-h}!base64\-Decode@{base64\-Decode}}
+\index{base64\-Decode@{base64\-Decode}!base64.h@{base64.\-h}}
+\subsubsection[{base64\-Decode}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf base64\-Decode} (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{in, }
+\item[{unsigned int}]{in\-Length, }
+\item[{unsigned char $\ast$$\ast$}]{out}
+\end{DoxyParamCaption}
+)}}\label{base64_8h_a0cdba854f2cfc2fea6e2073167d208b5}
+Decodes a 64base encoded memory. The decoded memory is expected to be freed by the caller.
+
+\begin{DoxyReturn}{Returns}
+the length of the out buffer
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+v0.\-8.\-1 
+\end{DoxySince}
+
+\begin{DoxyCode}
+{
+        unsigned int outLength = 0;
+
+        //should be enough to store 6-bit buffers in 8-bit buffers
+        *out = malloc( inLength * 3.0f / 4.0f + 1 );
+        if( *out ) {
+                int ret = _base64Decode(in, inLength, *out, &outLength);
+
+                if (ret > 0 )
+                {
+                        printf("Base64Utils: error decoding");
+                        free(*out);
+                        *out = NULL;
+                        outLength = 0;
+                }
+        }
+    return outLength;
+}
+\end{DoxyCode}

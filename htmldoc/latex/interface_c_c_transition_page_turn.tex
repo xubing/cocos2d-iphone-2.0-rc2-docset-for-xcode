@@ -1,0 +1,98 @@
+\hypertarget{interface_c_c_transition_page_turn}{\section{C\-C\-Transition\-Page\-Turn Class Reference}
+\label{interface_c_c_transition_page_turn}\index{C\-C\-Transition\-Page\-Turn@{C\-C\-Transition\-Page\-Turn}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Transition\-Page\-Turn.\-h$>$}
+
+Inheritance diagram for C\-C\-Transition\-Page\-Turn\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{interface_c_c_transition_page_turn}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_transition_page_turn_a617c5e20d13ca2117373cdabde162b15}{init\-With\-Duration\-:scene\-:backwards\-:}
+\item 
+\hypertarget{interface_c_c_transition_page_turn_aae9a5e13a1fe692fb7cc717308847578}{(\hyperlink{class_c_c_action_interval}{C\-C\-Action\-Interval} $\ast$) -\/ {\bfseries action\-With\-Size\-:}}\label{interface_c_c_transition_page_turn_aae9a5e13a1fe692fb7cc717308847578}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_transition_page_turn_a9f81d4c154edb0a9d82368c0f6c03ea2}{transition\-With\-Duration\-:scene\-:backwards\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_transition_page_turn_a6c387859e29acda44d35c5f952389cb4}{B\-O\-O\-L {\bfseries back\-\_\-}}\label{interface_c_c_transition_page_turn_a6c387859e29acda44d35c5f952389cb4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_transition_page_turn}{C\-C\-Transition\-Page\-Turn} transition. A transition which peels back the bottom right hand corner of a scene to transition to the scene beneath it simulating a page turn
+
+This uses a 3\-D\-Action so it is strongly recommended that depth buffering is turned on in \hyperlink{class_c_c_director}{C\-C\-Director} using\-: \begin{DoxyVerb}   [[CCDirector sharedDirector] setDepthBufferFormat:kCCDepthBuffer16];\end{DoxyVerb}
+ \begin{DoxySince}{Since}
+v0.\-8.\-2 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_transition_page_turn_a617c5e20d13ca2117373cdabde162b15}{\index{C\-C\-Transition\-Page\-Turn@{C\-C\-Transition\-Page\-Turn}!init\-With\-Duration\-:scene\-:backwards\-:@{init\-With\-Duration\-:scene\-:backwards\-:}}
+\index{init\-With\-Duration\-:scene\-:backwards\-:@{init\-With\-Duration\-:scene\-:backwards\-:}!CCTransitionPageTurn@{C\-C\-Transition\-Page\-Turn}}
+\subsubsection[{init\-With\-Duration\-:scene\-:backwards\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Duration\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{t}
+\item[{scene:({\bf C\-C\-Scene}$\ast$)}]{s}
+\item[{backwards:(B\-O\-O\-L)}]{back}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_transition_page_turn_a617c5e20d13ca2117373cdabde162b15}
+creates a base transition with duration and incoming scene if back is T\-R\-U\-E then the effect is reversed to appear as if the incoming scene is being turned from left over the outgoing scene
+
+initializes a transition with duration and incoming scene 
+\begin{DoxyCode}
+                      :(ccTime) t scene:(CCScene*)s backwards:(BOOL) back
+{
+        // XXX: needed before [super init]
+        back_ = back;
+
+        if( ( self = [super initWithDuration:t scene:s] ) )
+        {
+                // do something
+        }
+        return self;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_transition_page_turn_a9f81d4c154edb0a9d82368c0f6c03ea2}{\index{C\-C\-Transition\-Page\-Turn@{C\-C\-Transition\-Page\-Turn}!transition\-With\-Duration\-:scene\-:backwards\-:@{transition\-With\-Duration\-:scene\-:backwards\-:}}
+\index{transition\-With\-Duration\-:scene\-:backwards\-:@{transition\-With\-Duration\-:scene\-:backwards\-:}!CCTransitionPageTurn@{C\-C\-Transition\-Page\-Turn}}
+\subsubsection[{transition\-With\-Duration\-:scene\-:backwards\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) transition\-With\-Duration\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{t}
+\item[{scene:({\bf C\-C\-Scene}$\ast$)}]{s}
+\item[{backwards:(B\-O\-O\-L)}]{back}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_transition_page_turn_a9f81d4c154edb0a9d82368c0f6c03ea2}
+creates a base transition with duration and incoming scene if back is T\-R\-U\-E then the effect is reversed to appear as if the incoming scene is being turned from left over the outgoing scene
+
+creates a base transition with duration and incoming scene 
+
+Referenced by Transition\-Page\-Forward\-::transition\-With\-Duration\-:scene\-:, and Transition\-Page\-Backward\-::transition\-With\-Duration\-:scene\-:.
+
+
+\begin{DoxyCode}
+                            :(ccTime) t scene:(CCScene*)s backwards:(BOOL) back
+{
+        return [[[self alloc] initWithDuration:t scene:s backwards:back] 
+      autorelease];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Transition\-Page\-Turn.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Transition\-Page\-Turn.\-m\end{DoxyCompactItemize}

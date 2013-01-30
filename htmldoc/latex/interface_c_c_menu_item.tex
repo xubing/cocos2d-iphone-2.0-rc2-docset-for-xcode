@@ -1,0 +1,307 @@
+\hypertarget{interface_c_c_menu_item}{\section{C\-C\-Menu\-Item Class Reference}
+\label{interface_c_c_menu_item}\index{C\-C\-Menu\-Item@{C\-C\-Menu\-Item}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Menu\-Item.\-h$>$}
+
+Inheritance diagram for C\-C\-Menu\-Item\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.827586cm]{interface_c_c_menu_item}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_menu_item_a4afdae0135fad8af1af3ccaab32d2a20}{init\-With\-Target\-:selector\-:}
+\item 
+(id) -\/ \hyperlink{interface_c_c_menu_item_a99fcd316228f6ab25357dace5e4f7e13}{init\-With\-Block\-:}
+\item 
+(C\-G\-Rect) -\/ \hyperlink{interface_c_c_menu_item_aa26efb098a0faaeb065b2c9c10e0bc5b}{rect}
+\item 
+(void) -\/ \hyperlink{interface_c_c_menu_item_a9fb8a6c00cb5099da753fa7a61b41d48}{activate}
+\item 
+(void) -\/ \hyperlink{interface_c_c_menu_item_a7bf84326015fc21927f5ab3b3d7487ab}{selected}
+\item 
+(void) -\/ \hyperlink{interface_c_c_menu_item_a804466c2db6ba37483e374118bde4e1c}{unselected}
+\item 
+(void) -\/ \hyperlink{interface_c_c_menu_item_a53be17d01c203759053fe58b4cfb7bc6}{set\-Is\-Enabled\-:}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_c_c_menu_item_a823d5ad50e81e2f41cc99580a7fc8776}{is\-Enabled}
+\item 
+(void) -\/ \hyperlink{interface_c_c_menu_item_ae3a3282d2ac326af5e02773409b628a5}{set\-Block\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_menu_item_a58d8f2c72697ea34cf1e10b82cac81ff}{set\-Target\-:selector\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_menu_item_a9dacc63a07fd86adb30bd6c4ee28d47b}{cleanup}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_menu_item_a1f57776fb6cfdee876463c2a2f78d5d3}{item\-With\-Target\-:selector\-:}
+\item 
+(id) + \hyperlink{interface_c_c_menu_item_ae698450ec8bb3de154c730cb34404edb}{item\-With\-Block\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_menu_item_ac8e62ecdfef24a10cf44fa4801100559}{void($^\wedge$ {\bfseries \-\_\-block} )(id sender)}\label{interface_c_c_menu_item_ac8e62ecdfef24a10cf44fa4801100559}
+
+\item 
+\hypertarget{interface_c_c_menu_item_a604209ca04799bbb6d83387ad507f413}{B\-O\-O\-L {\bfseries \-\_\-is\-Enabled}}\label{interface_c_c_menu_item_a604209ca04799bbb6d83387ad507f413}
+
+\item 
+\hypertarget{interface_c_c_menu_item_a9e04b2d866a4847cd412f852fddf25a5}{B\-O\-O\-L {\bfseries \-\_\-is\-Selected}}\label{interface_c_c_menu_item_a9e04b2d866a4847cd412f852fddf25a5}
+
+\item 
+\hypertarget{interface_c_c_menu_item_a10b44cb2801f54aed33b61abcc7defeb}{B\-O\-O\-L {\bfseries \-\_\-release\-Block\-At\-Cleanup}}\label{interface_c_c_menu_item_a10b44cb2801f54aed33b61abcc7defeb}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+B\-O\-O\-L \hyperlink{interface_c_c_menu_item_afb5f2156c708a728c74b0a47c489d1a0}{is\-Selected}
+\item 
+B\-O\-O\-L \hyperlink{interface_c_c_menu_item_a988b42590257fa3d9c878be9aeb5e527}{release\-Block\-At\-Cleanup}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_menu_item}{C\-C\-Menu\-Item} base class
+
+Subclass \hyperlink{interface_c_c_menu_item}{C\-C\-Menu\-Item} (or any subclass) to create your custom \hyperlink{interface_c_c_menu_item}{C\-C\-Menu\-Item} objects. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_menu_item_a9fb8a6c00cb5099da753fa7a61b41d48}{\index{C\-C\-Menu\-Item@{C\-C\-Menu\-Item}!activate@{activate}}
+\index{activate@{activate}!CCMenuItem@{C\-C\-Menu\-Item}}
+\subsubsection[{activate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf activate} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_menu_item_a9fb8a6c00cb5099da753fa7a61b41d48}
+Activate the item 
+\begin{DoxyCode}
+{
+        if(_isEnabled && _block )
+                _block(self);
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_menu_item_a9dacc63a07fd86adb30bd6c4ee28d47b}{\index{C\-C\-Menu\-Item@{C\-C\-Menu\-Item}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!CCMenuItem@{C\-C\-Menu\-Item}}
+\subsubsection[{cleanup}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf cleanup} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_menu_item_a9dacc63a07fd86adb30bd6c4ee28d47b}
+cleanup event. It will release the block and call \mbox{[}super cleanup\mbox{]} 
+
+Reimplemented from \hyperlink{class_c_c_node_ad7d1aee7e97990e049bb380a1a63ad26}{C\-C\-Node}.
+
+
+\begin{DoxyCode}
+{
+        if( _releaseBlockAtCleanup ) {
+                [_block release];
+                _block = nil;
+        }
+
+        [super cleanup];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_menu_item_a99fcd316228f6ab25357dace5e4f7e13}{\index{C\-C\-Menu\-Item@{C\-C\-Menu\-Item}!init\-With\-Block\-:@{init\-With\-Block\-:}}
+\index{init\-With\-Block\-:@{init\-With\-Block\-:}!CCMenuItem@{C\-C\-Menu\-Item}}
+\subsubsection[{init\-With\-Block\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Block\-:} 
+\begin{DoxyParamCaption}
+\item[{(id sender)}]{block}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_menu_item_a99fcd316228f6ab25357dace5e4f7e13}
+Initializes a \hyperlink{interface_c_c_menu_item}{C\-C\-Menu\-Item} with the specified block. The block will be \char`\"{}copied\char`\"{}. 
+
+Referenced by init\-With\-Target\-:selector\-:.
+
+\hypertarget{interface_c_c_menu_item_a4afdae0135fad8af1af3ccaab32d2a20}{\index{C\-C\-Menu\-Item@{C\-C\-Menu\-Item}!init\-With\-Target\-:selector\-:@{init\-With\-Target\-:selector\-:}}
+\index{init\-With\-Target\-:selector\-:@{init\-With\-Target\-:selector\-:}!CCMenuItem@{C\-C\-Menu\-Item}}
+\subsubsection[{init\-With\-Target\-:selector\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Target\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{target}
+\item[{selector:(S\-E\-L)}]{selector}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_menu_item_a4afdae0135fad8af1af3ccaab32d2a20}
+Initializes a \hyperlink{interface_c_c_menu_item}{C\-C\-Menu\-Item} with a target/selector 
+\begin{DoxyCode}
+                    :(id)target selector:(SEL)selector
+{
+        // avoid retain cycle
+        __block id t = target;
+        return [self initWithBlock:^(id sender) {
+
+                [t performSelector:selector withObject:sender];
+        }];
+
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_menu_item_a823d5ad50e81e2f41cc99580a7fc8776}{\index{C\-C\-Menu\-Item@{C\-C\-Menu\-Item}!is\-Enabled@{is\-Enabled}}
+\index{is\-Enabled@{is\-Enabled}!CCMenuItem@{C\-C\-Menu\-Item}}
+\subsubsection[{is\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) {\bf is\-Enabled} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_menu_item_a823d5ad50e81e2f41cc99580a7fc8776}
+Returns whether or not the \hyperlink{interface_c_c_menu_item}{C\-C\-Menu\-Item} is enabled 
+\begin{DoxyCode}
+{
+    return _isEnabled;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_menu_item_ae698450ec8bb3de154c730cb34404edb}{\index{C\-C\-Menu\-Item@{C\-C\-Menu\-Item}!item\-With\-Block\-:@{item\-With\-Block\-:}}
+\index{item\-With\-Block\-:@{item\-With\-Block\-:}!CCMenuItem@{C\-C\-Menu\-Item}}
+\subsubsection[{item\-With\-Block\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf item\-With\-Block\-:} 
+\begin{DoxyParamCaption}
+\item[{(id sender)}]{block}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_menu_item_ae698450ec8bb3de154c730cb34404edb}
+Creates a \hyperlink{interface_c_c_menu_item}{C\-C\-Menu\-Item} with the specified block. The block will be \char`\"{}copied\char`\"{}. 
+\begin{DoxyCode}
+                   :(void(^)(id sender))block {
+        return [[[self alloc] initWithBlock:block] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_menu_item_a1f57776fb6cfdee876463c2a2f78d5d3}{\index{C\-C\-Menu\-Item@{C\-C\-Menu\-Item}!item\-With\-Target\-:selector\-:@{item\-With\-Target\-:selector\-:}}
+\index{item\-With\-Target\-:selector\-:@{item\-With\-Target\-:selector\-:}!CCMenuItem@{C\-C\-Menu\-Item}}
+\subsubsection[{item\-With\-Target\-:selector\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) item\-With\-Target\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{target}
+\item[{selector:(S\-E\-L)}]{selector}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_menu_item_a1f57776fb6cfdee876463c2a2f78d5d3}
+Creates a \hyperlink{interface_c_c_menu_item}{C\-C\-Menu\-Item} with a target/selector. target/selector will be implemented using blocks. \char`\"{}target\char`\"{} won't be retained. 
+\begin{DoxyCode}
+                    :(id) r selector:(SEL) s
+{
+        return [[[self alloc] initWithTarget:r selector:s] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_menu_item_aa26efb098a0faaeb065b2c9c10e0bc5b}{\index{C\-C\-Menu\-Item@{C\-C\-Menu\-Item}!rect@{rect}}
+\index{rect@{rect}!CCMenuItem@{C\-C\-Menu\-Item}}
+\subsubsection[{rect}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Rect) {\bf rect} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_menu_item_aa26efb098a0faaeb065b2c9c10e0bc5b}
+Returns the outside box in points 
+\begin{DoxyCode}
+{
+        return CGRectMake( position_.x - contentSize_.width*anchorPoint_.x,
+                                          position_.y - contentSize_.height*
+      anchorPoint_.y,
+                                          contentSize_.width, contentSize_.
+      height);
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_menu_item_a7bf84326015fc21927f5ab3b3d7487ab}{\index{C\-C\-Menu\-Item@{C\-C\-Menu\-Item}!selected@{selected}}
+\index{selected@{selected}!CCMenuItem@{C\-C\-Menu\-Item}}
+\subsubsection[{selected}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf selected} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_menu_item_a7bf84326015fc21927f5ab3b3d7487ab}
+The item was selected (not activated), similar to \char`\"{}mouse-\/over\char`\"{} 
+\begin{DoxyCode}
+{
+        _isSelected = YES;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_menu_item_ae3a3282d2ac326af5e02773409b628a5}{\index{C\-C\-Menu\-Item@{C\-C\-Menu\-Item}!set\-Block\-:@{set\-Block\-:}}
+\index{set\-Block\-:@{set\-Block\-:}!CCMenuItem@{C\-C\-Menu\-Item}}
+\subsubsection[{set\-Block\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf set\-Block\-:} 
+\begin{DoxyParamCaption}
+\item[{(id sender)}]{block}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_menu_item_ae3a3282d2ac326af5e02773409b628a5}
+Sets the block that is called when the item is tapped. The block will be \char`\"{}copied\char`\"{}. 
+
+Referenced by set\-Target\-:selector\-:.
+
+
+\begin{DoxyCode}
+                :(void(^)(id sender))block
+{
+    [_block release];
+    _block = [block copy];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_menu_item_a53be17d01c203759053fe58b4cfb7bc6}{\index{C\-C\-Menu\-Item@{C\-C\-Menu\-Item}!set\-Is\-Enabled\-:@{set\-Is\-Enabled\-:}}
+\index{set\-Is\-Enabled\-:@{set\-Is\-Enabled\-:}!CCMenuItem@{C\-C\-Menu\-Item}}
+\subsubsection[{set\-Is\-Enabled\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf set\-Is\-Enabled\-:} 
+\begin{DoxyParamCaption}
+\item[{(B\-O\-O\-L)}]{enabled}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_menu_item_a53be17d01c203759053fe58b4cfb7bc6}
+Enable or disabled the \hyperlink{interface_c_c_menu_item}{C\-C\-Menu\-Item} 
+
+Reimplemented in \hyperlink{interface_c_c_menu_item_label_a5dc90465215ad4496be102a6717564e3}{C\-C\-Menu\-Item\-Label}.
+
+
+
+Referenced by C\-C\-Menu\-Item\-Label\-::set\-Is\-Enabled\-:.
+
+
+\begin{DoxyCode}
+                    : (BOOL)enabled
+{
+    _isEnabled = enabled;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_menu_item_a58d8f2c72697ea34cf1e10b82cac81ff}{\index{C\-C\-Menu\-Item@{C\-C\-Menu\-Item}!set\-Target\-:selector\-:@{set\-Target\-:selector\-:}}
+\index{set\-Target\-:selector\-:@{set\-Target\-:selector\-:}!CCMenuItem@{C\-C\-Menu\-Item}}
+\subsubsection[{set\-Target\-:selector\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-Target\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{target}
+\item[{selector:(S\-E\-L)}]{selector}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_menu_item_a58d8f2c72697ea34cf1e10b82cac81ff}
+Sets the target and selector that is called when the item is tapped. target/selector will be implemented using blocks. \char`\"{}target\char`\"{} won't be retained. 
+\begin{DoxyCode}
+                 :(id)target selector:(SEL)selector
+{
+    [self setBlock:^(id sender) {
+        
+                [target performSelector:selector withObject:sender];
+        }];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_menu_item_a804466c2db6ba37483e374118bde4e1c}{\index{C\-C\-Menu\-Item@{C\-C\-Menu\-Item}!unselected@{unselected}}
+\index{unselected@{unselected}!CCMenuItem@{C\-C\-Menu\-Item}}
+\subsubsection[{unselected}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf unselected} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_menu_item_a804466c2db6ba37483e374118bde4e1c}
+The item was unselected 
+\begin{DoxyCode}
+{
+        _isSelected = NO;
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_menu_item_afb5f2156c708a728c74b0a47c489d1a0}{\index{C\-C\-Menu\-Item@{C\-C\-Menu\-Item}!is\-Selected@{is\-Selected}}
+\index{is\-Selected@{is\-Selected}!CCMenuItem@{C\-C\-Menu\-Item}}
+\subsubsection[{is\-Selected}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) {\bf is\-Selected}\hspace{0.3cm}{\ttfamily  \mbox{[}read, assign\mbox{]}}}}\label{interface_c_c_menu_item_afb5f2156c708a728c74b0a47c489d1a0}
+returns whether or not the item is selected \begin{DoxySince}{Since}
+v0.\-8.\-2 
+\end{DoxySince}
+\hypertarget{interface_c_c_menu_item_a988b42590257fa3d9c878be9aeb5e527}{\index{C\-C\-Menu\-Item@{C\-C\-Menu\-Item}!release\-Block\-At\-Cleanup@{release\-Block\-At\-Cleanup}}
+\index{release\-Block\-At\-Cleanup@{release\-Block\-At\-Cleanup}!CCMenuItem@{C\-C\-Menu\-Item}}
+\subsubsection[{release\-Block\-At\-Cleanup}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) {\bf release\-Block\-At\-Cleanup}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_menu_item_a988b42590257fa3d9c878be9aeb5e527}
+If enabled, it releases the block at cleanup time. \begin{DoxySince}{Since}
+v2.\-1 
+\end{DoxySince}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Menu\-Item.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Menu\-Item.\-m\end{DoxyCompactItemize}

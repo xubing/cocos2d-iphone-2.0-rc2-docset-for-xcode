@@ -1,0 +1,90 @@
+\hypertarget{class_poly_shapes_callback}{\section{Poly\-Shapes\-Callback Class Reference}
+\label{class_poly_shapes_callback}\index{Poly\-Shapes\-Callback@{Poly\-Shapes\-Callback}}
+}
+
+
+{\ttfamily \#include $<$Poly\-Shapes.\-h$>$}
+
+Inheritance diagram for Poly\-Shapes\-Callback\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_poly_shapes_callback}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries e\-\_\-max\-Count} =  4
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_poly_shapes_callback_ab9c43775294251bc109f0c8ccf57350c}{void {\bfseries Draw\-Fixture} (\hyperlink{classb2_fixture}{b2\-Fixture} $\ast$fixture)}\label{class_poly_shapes_callback_ab9c43775294251bc109f0c8ccf57350c}
+
+\item 
+bool \hyperlink{class_poly_shapes_callback_a35de1a0c75426d04a4a6f110e2ef03c8}{Report\-Fixture} (\hyperlink{classb2_fixture}{b2\-Fixture} $\ast$fixture)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_poly_shapes_callback_afb0a8870202844cc78bca6d2dab8ee42}{\hyperlink{classb2_circle_shape}{b2\-Circle\-Shape} {\bfseries m\-\_\-circle}}\label{class_poly_shapes_callback_afb0a8870202844cc78bca6d2dab8ee42}
+
+\item 
+\hypertarget{class_poly_shapes_callback_a889d46770b23be95591d195e8b2aac87}{\hyperlink{structb2_transform}{b2\-Transform} {\bfseries m\-\_\-transform}}\label{class_poly_shapes_callback_a889d46770b23be95591d195e8b2aac87}
+
+\item 
+\hypertarget{class_poly_shapes_callback_a962360c6b1bfd99b89939e37c9fa4634}{\hyperlink{classb2_draw}{b2\-Draw} $\ast$ {\bfseries m\-\_\-debug\-Draw}}\label{class_poly_shapes_callback_a962360c6b1bfd99b89939e37c9fa4634}
+
+\item 
+\hypertarget{class_poly_shapes_callback_af7451de2608c7dc246779570e0162531}{int32 {\bfseries m\-\_\-count}}\label{class_poly_shapes_callback_af7451de2608c7dc246779570e0162531}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This callback is called by \hyperlink{classb2_world_a711e55d2c6e68400f93472f807c3775b}{b2\-World\-::\-Query\-A\-A\-B\-B}. We find all the fixtures that overlap an A\-A\-B\-B. Of those, we use b2\-Test\-Overlap to determine which fixtures overlap a circle. Up to 4 overlapped fixtures will be highlighted with a yellow border. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_poly_shapes_callback_a35de1a0c75426d04a4a6f110e2ef03c8}{\index{Poly\-Shapes\-Callback@{Poly\-Shapes\-Callback}!Report\-Fixture@{Report\-Fixture}}
+\index{Report\-Fixture@{Report\-Fixture}!PolyShapesCallback@{Poly\-Shapes\-Callback}}
+\subsubsection[{Report\-Fixture}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf Poly\-Shapes\-Callback\-::\-Report\-Fixture} (
+\begin{DoxyParamCaption}
+\item[{{\bf b2\-Fixture} $\ast$}]{fixture}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_poly_shapes_callback_a35de1a0c75426d04a4a6f110e2ef03c8}
+Called for each fixture found in the query A\-A\-B\-B. \begin{DoxyReturn}{Returns}
+false to terminate the query. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classb2_query_callback_a187dd04dd0f5164fb05c2ce2cbfd9ee5}{b2\-Query\-Callback}.
+
+
+\begin{DoxyCode}
+        {
+                if (m_count == e_maxCount)
+                {
+                        return false;
+                }
+
+                b2Body* body = fixture->GetBody();
+                b2Shape* shape = fixture->GetShape();
+
+                bool overlap = b2TestOverlap(shape, 0, &m_circle, 0, body->
+      GetTransform(), m_transform);
+
+                if (overlap)
+                {
+                        DrawFixture(fixture);
+                        ++m_count;
+                }
+
+                return true;
+        }
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Testbed/\-Tests/Poly\-Shapes.\-h\end{DoxyCompactItemize}

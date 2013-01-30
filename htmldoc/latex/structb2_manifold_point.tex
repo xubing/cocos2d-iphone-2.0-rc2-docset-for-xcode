@@ -1,0 +1,30 @@
+\hypertarget{structb2_manifold_point}{\section{b2\-Manifold\-Point Struct Reference}
+\label{structb2_manifold_point}\index{b2\-Manifold\-Point@{b2\-Manifold\-Point}}
+}
+
+
+{\ttfamily \#include $<$b2\-Collision.\-h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structb2_manifold_point_ab3616990e7d1644deeeb691246094bfa}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{structb2_manifold_point_ab3616990e7d1644deeeb691246094bfa}{local\-Point}}\label{structb2_manifold_point_ab3616990e7d1644deeeb691246094bfa}
+
+\begin{DoxyCompactList}\small\item\em usage depends on manifold type \end{DoxyCompactList}\item 
+\hypertarget{structb2_manifold_point_af4218c2359cb7762cd4e9d8ecefab173}{float32 \hyperlink{structb2_manifold_point_af4218c2359cb7762cd4e9d8ecefab173}{normal\-Impulse}}\label{structb2_manifold_point_af4218c2359cb7762cd4e9d8ecefab173}
+
+\begin{DoxyCompactList}\small\item\em the non-\/penetration impulse \end{DoxyCompactList}\item 
+\hypertarget{structb2_manifold_point_a0ac5375b1fc4675a0073129f56aa62c9}{float32 \hyperlink{structb2_manifold_point_a0ac5375b1fc4675a0073129f56aa62c9}{tangent\-Impulse}}\label{structb2_manifold_point_a0ac5375b1fc4675a0073129f56aa62c9}
+
+\begin{DoxyCompactList}\small\item\em the friction impulse \end{DoxyCompactList}\item 
+\hypertarget{structb2_manifold_point_afa7ec272b2b27abe129540f8fbe57fc5}{\hyperlink{unionb2_contact_i_d}{b2\-Contact\-I\-D} \hyperlink{structb2_manifold_point_afa7ec272b2b27abe129540f8fbe57fc5}{id}}\label{structb2_manifold_point_afa7ec272b2b27abe129540f8fbe57fc5}
+
+\begin{DoxyCompactList}\small\item\em uniquely identifies a contact point between two shapes \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A manifold point is a contact point belonging to a contact manifold. It holds details related to the geometry and dynamics of the contact points. The local point usage depends on the manifold type\-: -\/e\-\_\-circles\-: the local center of circle\-B -\/e\-\_\-face\-A\-: the local center of cirlce\-B or the clip point of polygon\-B -\/e\-\_\-face\-B\-: the clip point of polygon\-A This structure is stored across time steps, so we keep it small. Note\-: the impulses are used for internal caching and may not provide reliable contact forces, especially for high speed collisions. 
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Collision/\hyperlink{b2_collision_8h}{b2\-Collision.\-h}\end{DoxyCompactItemize}

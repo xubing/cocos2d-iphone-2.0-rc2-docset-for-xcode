@@ -1,0 +1,74 @@
+\hypertarget{interface_c_c_action_ease}{\section{C\-C\-Action\-Ease Class Reference}
+\label{interface_c_c_action_ease}\index{C\-C\-Action\-Ease@{C\-C\-Action\-Ease}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Ease.\-h$>$}
+
+Inheritance diagram for C\-C\-Action\-Ease\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interface_c_c_action_ease}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_action_ease_acb5b5444204e3d7a4ee70fd3a4e3e123}{init\-With\-Action\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_action_ease_a1ac3b52143a61e2bd65b292817a4f14b}{action\-With\-Action\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_action_ease_adc0d571d74ae0be310d6831cf94e6e79}{\hyperlink{class_c_c_action_interval}{C\-C\-Action\-Interval} $\ast$ {\bfseries other}}\label{interface_c_c_action_ease_adc0d571d74ae0be310d6831cf94e6e79}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for Easing actions 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_action_ease_a1ac3b52143a61e2bd65b292817a4f14b}{\index{C\-C\-Action\-Ease@{C\-C\-Action\-Ease}!action\-With\-Action\-:@{action\-With\-Action\-:}}
+\index{action\-With\-Action\-:@{action\-With\-Action\-:}!CCActionEase@{C\-C\-Action\-Ease}}
+\subsubsection[{action\-With\-Action\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Action\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Action\-Interval}$\ast$)}]{action}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_action_ease_a1ac3b52143a61e2bd65b292817a4f14b}
+creates the action 
+\begin{DoxyCode}
+                      : (CCActionInterval*) action
+{
+        return [[[self alloc] initWithAction: action] autorelease ];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_action_ease_acb5b5444204e3d7a4ee70fd3a4e3e123}{\index{C\-C\-Action\-Ease@{C\-C\-Action\-Ease}!init\-With\-Action\-:@{init\-With\-Action\-:}}
+\index{init\-With\-Action\-:@{init\-With\-Action\-:}!CCActionEase@{C\-C\-Action\-Ease}}
+\subsubsection[{init\-With\-Action\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Action\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Action\-Interval}$\ast$)}]{action}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_action_ease_acb5b5444204e3d7a4ee70fd3a4e3e123}
+initializes the action 
+\begin{DoxyCode}
+                    : (CCActionInterval*) action
+{
+        NSAssert( action!=nil, @"Ease: arguments must be non-nil");
+
+        if( (self=[super initWithDuration: action.duration]) )
+                other = [action retain];
+
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Ease.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Ease.\-m\end{DoxyCompactItemize}

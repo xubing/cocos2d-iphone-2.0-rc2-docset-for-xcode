@@ -1,0 +1,45 @@
+\hypertarget{interface_shuffle_tiles_demo}{\section{Shuffle\-Tiles\-Demo Class Reference}
+\label{interface_shuffle_tiles_demo}\index{Shuffle\-Tiles\-Demo@{Shuffle\-Tiles\-Demo}}
+}
+Inheritance diagram for Shuffle\-Tiles\-Demo\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.000000cm]{interface_shuffle_tiles_demo}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_shuffle_tiles_demo_ad54afeb4935f93e79aa8bc7d2e2ce439}{action\-With\-Duration\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_shuffle_tiles_demo_ad54afeb4935f93e79aa8bc7d2e2ce439}{\index{Shuffle\-Tiles\-Demo@{Shuffle\-Tiles\-Demo}!action\-With\-Duration\-:@{action\-With\-Duration\-:}}
+\index{action\-With\-Duration\-:@{action\-With\-Duration\-:}!ShuffleTilesDemo@{Shuffle\-Tiles\-Demo}}
+\subsubsection[{action\-With\-Duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_shuffle_tiles_demo_ad54afeb4935f93e79aa8bc7d2e2ce439}
+creates the action 
+
+Reimplemented from \hyperlink{class_c_c_action_interval_a08fbc347478cca16ab1fe936a1770dc0}{C\-C\-Action\-Interval}.
+
+
+\begin{DoxyCode}
+                        :(ccTime)t
+{
+        id shuffle = [CCShuffleTiles actionWithSeed:25 grid:ccg(16,12) duration
+      :t];
+        id shuffle_back = [shuffle reverse];
+        id delay = [CCDelayTime actionWithDuration:2];
+
+        return [CCSequence actions: shuffle, delay, shuffle_back, nil];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/tests/Effects\-Test.\-m\end{DoxyCompactItemize}

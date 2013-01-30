@@ -1,0 +1,269 @@
+\hypertarget{classb2_contact}{\section{b2\-Contact Class Reference}
+\label{classb2_contact}\index{b2\-Contact@{b2\-Contact}}
+}
+
+
+{\ttfamily \#include $<$b2\-Contact.\-h$>$}
+
+Inheritance diagram for b2\-Contact\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.888889cm]{classb2_contact}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structb2_manifold}{b2\-Manifold} $\ast$ \hyperlink{classb2_contact_ab0597077b23615476327f9b32d9c4979}{Get\-Manifold} ()
+\item 
+\hypertarget{classb2_contact_a2a1fb2fa1e0956faf61047c4aba3da5a}{const \hyperlink{structb2_manifold}{b2\-Manifold} $\ast$ {\bfseries Get\-Manifold} () const }\label{classb2_contact_a2a1fb2fa1e0956faf61047c4aba3da5a}
+
+\item 
+\hypertarget{classb2_contact_a6a30a44a28b44754cb61bba65cb5b728}{void \hyperlink{classb2_contact_a6a30a44a28b44754cb61bba65cb5b728}{Get\-World\-Manifold} (\hyperlink{structb2_world_manifold}{b2\-World\-Manifold} $\ast$world\-Manifold) const }\label{classb2_contact_a6a30a44a28b44754cb61bba65cb5b728}
+
+\begin{DoxyCompactList}\small\item\em Get the world manifold. \end{DoxyCompactList}\item 
+\hypertarget{classb2_contact_a367dc9a563ad7db5547f4247777a33c9}{bool \hyperlink{classb2_contact_a367dc9a563ad7db5547f4247777a33c9}{Is\-Touching} () const }\label{classb2_contact_a367dc9a563ad7db5547f4247777a33c9}
+
+\begin{DoxyCompactList}\small\item\em Is this contact touching? \end{DoxyCompactList}\item 
+void \hyperlink{classb2_contact_a6edf582f8c161d6632854cddefe55a0c}{Set\-Enabled} (bool flag)
+\item 
+\hypertarget{classb2_contact_ae7bd71ee1b0bb352bec6eeaab4f91c6a}{bool \hyperlink{classb2_contact_ae7bd71ee1b0bb352bec6eeaab4f91c6a}{Is\-Enabled} () const }\label{classb2_contact_ae7bd71ee1b0bb352bec6eeaab4f91c6a}
+
+\begin{DoxyCompactList}\small\item\em Has this contact been disabled? \end{DoxyCompactList}\item 
+\hypertarget{classb2_contact_aebfebb1e4b27dc0bd7aa120093e3d650}{\hyperlink{classb2_contact}{b2\-Contact} $\ast$ \hyperlink{classb2_contact_aebfebb1e4b27dc0bd7aa120093e3d650}{Get\-Next} ()}\label{classb2_contact_aebfebb1e4b27dc0bd7aa120093e3d650}
+
+\begin{DoxyCompactList}\small\item\em Get the next contact in the world's contact list. \end{DoxyCompactList}\item 
+\hypertarget{classb2_contact_a55e20c9e32071f492952dad256552141}{const \hyperlink{classb2_contact}{b2\-Contact} $\ast$ {\bfseries Get\-Next} () const }\label{classb2_contact_a55e20c9e32071f492952dad256552141}
+
+\item 
+\hypertarget{classb2_contact_a707a3a5a14c2cdd4c6eb7fc648d76037}{\hyperlink{classb2_fixture}{b2\-Fixture} $\ast$ \hyperlink{classb2_contact_a707a3a5a14c2cdd4c6eb7fc648d76037}{Get\-Fixture\-A} ()}\label{classb2_contact_a707a3a5a14c2cdd4c6eb7fc648d76037}
+
+\begin{DoxyCompactList}\small\item\em Get fixture A in this contact. \end{DoxyCompactList}\item 
+\hypertarget{classb2_contact_af5820afc8ebb6d785a47a979b373b004}{const \hyperlink{classb2_fixture}{b2\-Fixture} $\ast$ {\bfseries Get\-Fixture\-A} () const }\label{classb2_contact_af5820afc8ebb6d785a47a979b373b004}
+
+\item 
+\hypertarget{classb2_contact_ab0c9c059c776f315ae62abb5c978afcc}{int32 \hyperlink{classb2_contact_ab0c9c059c776f315ae62abb5c978afcc}{Get\-Child\-Index\-A} () const }\label{classb2_contact_ab0c9c059c776f315ae62abb5c978afcc}
+
+\begin{DoxyCompactList}\small\item\em Get the child primitive index for fixture A. \end{DoxyCompactList}\item 
+\hypertarget{classb2_contact_a68464fe587d7e6a1f52763e965bb7361}{\hyperlink{classb2_fixture}{b2\-Fixture} $\ast$ \hyperlink{classb2_contact_a68464fe587d7e6a1f52763e965bb7361}{Get\-Fixture\-B} ()}\label{classb2_contact_a68464fe587d7e6a1f52763e965bb7361}
+
+\begin{DoxyCompactList}\small\item\em Get fixture B in this contact. \end{DoxyCompactList}\item 
+\hypertarget{classb2_contact_a06db543279afbb51071bf57475bfcc1e}{const \hyperlink{classb2_fixture}{b2\-Fixture} $\ast$ {\bfseries Get\-Fixture\-B} () const }\label{classb2_contact_a06db543279afbb51071bf57475bfcc1e}
+
+\item 
+\hypertarget{classb2_contact_a9edc26022c3d1a9cf1dab9d79d639b3f}{int32 \hyperlink{classb2_contact_a9edc26022c3d1a9cf1dab9d79d639b3f}{Get\-Child\-Index\-B} () const }\label{classb2_contact_a9edc26022c3d1a9cf1dab9d79d639b3f}
+
+\begin{DoxyCompactList}\small\item\em Get the child primitive index for fixture B. \end{DoxyCompactList}\item 
+void \hyperlink{classb2_contact_a5e8fbb6bb2966ac84272bb0ea9d2e4c7}{Set\-Friction} (float32 friction)
+\item 
+\hypertarget{classb2_contact_a0b6daf4137fd1719961f5d780b8dda15}{float32 \hyperlink{classb2_contact_a0b6daf4137fd1719961f5d780b8dda15}{Get\-Friction} () const }\label{classb2_contact_a0b6daf4137fd1719961f5d780b8dda15}
+
+\begin{DoxyCompactList}\small\item\em Get the friction. \end{DoxyCompactList}\item 
+\hypertarget{classb2_contact_ad66d9290da187cef4c9f48c5766d4460}{void \hyperlink{classb2_contact_ad66d9290da187cef4c9f48c5766d4460}{Reset\-Friction} ()}\label{classb2_contact_ad66d9290da187cef4c9f48c5766d4460}
+
+\begin{DoxyCompactList}\small\item\em Reset the friction mixture to the default value. \end{DoxyCompactList}\item 
+void \hyperlink{classb2_contact_a24ca342c2bb766c53ef5ad04f5268fc1}{Set\-Restitution} (float32 restitution)
+\item 
+\hypertarget{classb2_contact_aed12746a2855277479802144b699326b}{float32 \hyperlink{classb2_contact_aed12746a2855277479802144b699326b}{Get\-Restitution} () const }\label{classb2_contact_aed12746a2855277479802144b699326b}
+
+\begin{DoxyCompactList}\small\item\em Get the restitution. \end{DoxyCompactList}\item 
+\hypertarget{classb2_contact_a243501bc5c146e9eb1296162d328aef1}{void \hyperlink{classb2_contact_a243501bc5c146e9eb1296162d328aef1}{Reset\-Restitution} ()}\label{classb2_contact_a243501bc5c146e9eb1296162d328aef1}
+
+\begin{DoxyCompactList}\small\item\em Reset the restitution to the default value. \end{DoxyCompactList}\item 
+\hypertarget{classb2_contact_ae3c2842e5325b2d4500f8ed1d4de2f72}{virtual void \hyperlink{classb2_contact_ae3c2842e5325b2d4500f8ed1d4de2f72}{Evaluate} (\hyperlink{structb2_manifold}{b2\-Manifold} $\ast$manifold, const \hyperlink{structb2_transform}{b2\-Transform} \&xf\-A, const \hyperlink{structb2_transform}{b2\-Transform} \&xf\-B)=0}\label{classb2_contact_ae3c2842e5325b2d4500f8ed1d4de2f72}
+
+\begin{DoxyCompactList}\small\item\em Evaluate this contact with your own manifold and transforms. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \\*
+{\bfseries e\-\_\-island\-Flag} =  0x0001, 
+{\bfseries e\-\_\-touching\-Flag} =  0x0002, 
+{\bfseries e\-\_\-enabled\-Flag} =  0x0004, 
+{\bfseries e\-\_\-filter\-Flag} =  0x0008, 
+\\*
+{\bfseries e\-\_\-bullet\-Hit\-Flag} =  0x0010, 
+{\bfseries e\-\_\-toi\-Flag} =  0x0020
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_contact_a44a3d32149021269eb9dfd4015c98e0d}{void \hyperlink{classb2_contact_a44a3d32149021269eb9dfd4015c98e0d}{Flag\-For\-Filtering} ()}\label{classb2_contact_a44a3d32149021269eb9dfd4015c98e0d}
+
+\begin{DoxyCompactList}\small\item\em Flag this contact for filtering. Filtering will occur the next time step. \end{DoxyCompactList}\item 
+\hypertarget{classb2_contact_a2d1c98399cef1eb95c6ee8aad8257f60}{{\bfseries b2\-Contact} (\hyperlink{classb2_fixture}{b2\-Fixture} $\ast$fixture\-A, int32 index\-A, \hyperlink{classb2_fixture}{b2\-Fixture} $\ast$fixture\-B, int32 index\-B)}\label{classb2_contact_a2d1c98399cef1eb95c6ee8aad8257f60}
+
+\item 
+\hypertarget{classb2_contact_a218a66a6c34e3de1c428aa73a0680dfe}{void {\bfseries Update} (\hyperlink{classb2_contact_listener}{b2\-Contact\-Listener} $\ast$listener)}\label{classb2_contact_a218a66a6c34e3de1c428aa73a0680dfe}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_contact_ad905650aab96ead0434c2bb449e4129c}{static void {\bfseries Add\-Type} (b2\-Contact\-Create\-Fcn $\ast$create\-Fcn, b2\-Contact\-Destroy\-Fcn $\ast$destroy\-Fcn, b2\-Shape\-::\-Type type\-A, b2\-Shape\-::\-Type type\-B)}\label{classb2_contact_ad905650aab96ead0434c2bb449e4129c}
+
+\item 
+\hypertarget{classb2_contact_ac77031d85c2e06d5cdc1f5c774f8f3fd}{static void {\bfseries Initialize\-Registers} ()}\label{classb2_contact_ac77031d85c2e06d5cdc1f5c774f8f3fd}
+
+\item 
+\hypertarget{classb2_contact_a2de75f3569a0f962cf1e6e1b6384c0a1}{static \hyperlink{classb2_contact}{b2\-Contact} $\ast$ {\bfseries Create} (\hyperlink{classb2_fixture}{b2\-Fixture} $\ast$fixture\-A, int32 index\-A, \hyperlink{classb2_fixture}{b2\-Fixture} $\ast$fixture\-B, int32 index\-B, \hyperlink{classb2_block_allocator}{b2\-Block\-Allocator} $\ast$allocator)}\label{classb2_contact_a2de75f3569a0f962cf1e6e1b6384c0a1}
+
+\item 
+\hypertarget{classb2_contact_a36c1f6767f212f2e4ddb4c4b2c7cdb75}{static void {\bfseries Destroy} (\hyperlink{classb2_contact}{b2\-Contact} $\ast$contact, b2\-Shape\-::\-Type type\-A, b2\-Shape\-::\-Type type\-B, \hyperlink{classb2_block_allocator}{b2\-Block\-Allocator} $\ast$allocator)}\label{classb2_contact_a36c1f6767f212f2e4ddb4c4b2c7cdb75}
+
+\item 
+\hypertarget{classb2_contact_ab57797a25c2206edf1ad7c4dcd1cbca5}{static void {\bfseries Destroy} (\hyperlink{classb2_contact}{b2\-Contact} $\ast$contact, \hyperlink{classb2_block_allocator}{b2\-Block\-Allocator} $\ast$allocator)}\label{classb2_contact_ab57797a25c2206edf1ad7c4dcd1cbca5}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_contact_a85d5408adcbf466bcb8f291aeb35bc3b}{uint32 {\bfseries m\-\_\-flags}}\label{classb2_contact_a85d5408adcbf466bcb8f291aeb35bc3b}
+
+\item 
+\hypertarget{classb2_contact_adf3a3450e0fa9cf6d11ca22467c2370b}{\hyperlink{classb2_contact}{b2\-Contact} $\ast$ {\bfseries m\-\_\-prev}}\label{classb2_contact_adf3a3450e0fa9cf6d11ca22467c2370b}
+
+\item 
+\hypertarget{classb2_contact_a241fea000d26da8761b5520a9adcd87a}{\hyperlink{classb2_contact}{b2\-Contact} $\ast$ {\bfseries m\-\_\-next}}\label{classb2_contact_a241fea000d26da8761b5520a9adcd87a}
+
+\item 
+\hypertarget{classb2_contact_a5f5ce747bb04f48843eb07304d47faab}{\hyperlink{structb2_contact_edge}{b2\-Contact\-Edge} {\bfseries m\-\_\-node\-A}}\label{classb2_contact_a5f5ce747bb04f48843eb07304d47faab}
+
+\item 
+\hypertarget{classb2_contact_a4887c3acb8cb857e2bec659027539c7a}{\hyperlink{structb2_contact_edge}{b2\-Contact\-Edge} {\bfseries m\-\_\-node\-B}}\label{classb2_contact_a4887c3acb8cb857e2bec659027539c7a}
+
+\item 
+\hypertarget{classb2_contact_aec94bbbb8862f09365a5af99650b5be4}{\hyperlink{classb2_fixture}{b2\-Fixture} $\ast$ {\bfseries m\-\_\-fixture\-A}}\label{classb2_contact_aec94bbbb8862f09365a5af99650b5be4}
+
+\item 
+\hypertarget{classb2_contact_a83b18f0da1cfeb2c9dccc6aabed881d3}{\hyperlink{classb2_fixture}{b2\-Fixture} $\ast$ {\bfseries m\-\_\-fixture\-B}}\label{classb2_contact_a83b18f0da1cfeb2c9dccc6aabed881d3}
+
+\item 
+\hypertarget{classb2_contact_ac69d3c8f18ac653cbff658a718ab9067}{int32 {\bfseries m\-\_\-index\-A}}\label{classb2_contact_ac69d3c8f18ac653cbff658a718ab9067}
+
+\item 
+\hypertarget{classb2_contact_aaaae6d149986c7267f3e28f0c58da8a0}{int32 {\bfseries m\-\_\-index\-B}}\label{classb2_contact_aaaae6d149986c7267f3e28f0c58da8a0}
+
+\item 
+\hypertarget{classb2_contact_aebdc2c073d05ac8e544a591d2043b251}{\hyperlink{structb2_manifold}{b2\-Manifold} {\bfseries m\-\_\-manifold}}\label{classb2_contact_aebdc2c073d05ac8e544a591d2043b251}
+
+\item 
+\hypertarget{classb2_contact_afaa231f3e9a908154f9a32af456601b6}{int32 {\bfseries m\-\_\-toi\-Count}}\label{classb2_contact_afaa231f3e9a908154f9a32af456601b6}
+
+\item 
+\hypertarget{classb2_contact_aa9e75253eaac6efdb6485a8646ac553f}{float32 {\bfseries m\-\_\-toi}}\label{classb2_contact_aa9e75253eaac6efdb6485a8646ac553f}
+
+\item 
+\hypertarget{classb2_contact_ac7915ef6f92d609ee0a43d518b4f9e75}{float32 {\bfseries m\-\_\-friction}}\label{classb2_contact_ac7915ef6f92d609ee0a43d518b4f9e75}
+
+\item 
+\hypertarget{classb2_contact_a6bc56522b4c04e28bee3542a7fc2f796}{float32 {\bfseries m\-\_\-restitution}}\label{classb2_contact_a6bc56522b4c04e28bee3542a7fc2f796}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_contact_a5e2beb4e435e1545ae043a7a2b77d1da}{static \hyperlink{structb2_contact_register}{b2\-Contact\-Register} {\bfseries s\-\_\-registers} \mbox{[}b2\-Shape\-::e\-\_\-type\-Count\mbox{]}\mbox{[}b2\-Shape\-::e\-\_\-type\-Count\mbox{]}}\label{classb2_contact_a5e2beb4e435e1545ae043a7a2b77d1da}
+
+\item 
+\hypertarget{classb2_contact_a672598c350694d7b9a89c45f8ad0dd90}{static bool {\bfseries s\-\_\-initialized} = false}\label{classb2_contact_a672598c350694d7b9a89c45f8ad0dd90}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_contact_aece264d42f69aed410f5eb3beba6ddf2}{class {\bfseries b2\-Contact\-Manager}}\label{classb2_contact_aece264d42f69aed410f5eb3beba6ddf2}
+
+\item 
+\hypertarget{classb2_contact_a4bd536c5a7c0587913765bbc2693ceea}{class {\bfseries b2\-World}}\label{classb2_contact_a4bd536c5a7c0587913765bbc2693ceea}
+
+\item 
+\hypertarget{classb2_contact_afb788a7ba90344f3ddbafff3de0465c4}{class {\bfseries b2\-Contact\-Solver}}\label{classb2_contact_afb788a7ba90344f3ddbafff3de0465c4}
+
+\item 
+\hypertarget{classb2_contact_a010ab52de250e5fe30a45d642f46405b}{class {\bfseries b2\-Body}}\label{classb2_contact_a010ab52de250e5fe30a45d642f46405b}
+
+\item 
+\hypertarget{classb2_contact_afb35b0e61f6ee3cc516c40ea251f3236}{class {\bfseries b2\-Fixture}}\label{classb2_contact_afb35b0e61f6ee3cc516c40ea251f3236}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The class manages contact between two shapes. A contact exists for each overlapping A\-A\-B\-B in the broad-\/phase (except if filtered). Therefore a contact object may exist that has no contact points. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classb2_contact_ab0597077b23615476327f9b32d9c4979}{\index{b2\-Contact@{b2\-Contact}!Get\-Manifold@{Get\-Manifold}}
+\index{Get\-Manifold@{Get\-Manifold}!b2Contact@{b2\-Contact}}
+\subsubsection[{Get\-Manifold}]{\setlength{\rightskip}{0pt plus 5cm}{\bf b2\-Manifold} $\ast$ {\bf b2\-Contact\-::\-Get\-Manifold} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classb2_contact_ab0597077b23615476327f9b32d9c4979}
+Get the contact manifold. Do not modify the manifold unless you understand the internals of Box2\-D. 
+
+Referenced by Breakable\-::\-Post\-Solve(), and Test\-::\-Pre\-Solve().
+
+
+\begin{DoxyCode}
+{
+        return &m_manifold;
+}
+\end{DoxyCode}
+\hypertarget{classb2_contact_a6edf582f8c161d6632854cddefe55a0c}{\index{b2\-Contact@{b2\-Contact}!Set\-Enabled@{Set\-Enabled}}
+\index{Set\-Enabled@{Set\-Enabled}!b2Contact@{b2\-Contact}}
+\subsubsection[{Set\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf b2\-Contact\-::\-Set\-Enabled} (
+\begin{DoxyParamCaption}
+\item[{bool}]{flag}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classb2_contact_a6edf582f8c161d6632854cddefe55a0c}
+Enable/disable this contact. This can be used inside the pre-\/solve contact listener. The contact is only disabled for the current time step (or sub-\/step in continuous collisions). 
+
+Referenced by One\-Sided\-Platform\-::\-Pre\-Solve().
+
+
+\begin{DoxyCode}
+{
+        if (flag)
+        {
+                m_flags |= e_enabledFlag;
+        }
+        else
+        {
+                m_flags &= ~e_enabledFlag;
+        }
+}
+\end{DoxyCode}
+\hypertarget{classb2_contact_a5e8fbb6bb2966ac84272bb0ea9d2e4c7}{\index{b2\-Contact@{b2\-Contact}!Set\-Friction@{Set\-Friction}}
+\index{Set\-Friction@{Set\-Friction}!b2Contact@{b2\-Contact}}
+\subsubsection[{Set\-Friction}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf b2\-Contact\-::\-Set\-Friction} (
+\begin{DoxyParamCaption}
+\item[{float32}]{friction}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classb2_contact_a5e8fbb6bb2966ac84272bb0ea9d2e4c7}
+Override the default friction mixture. You can call this in \hyperlink{classb2_contact_listener_a416f85eb45a1099053402b15a19a7de0}{b2\-Contact\-Listener\-::\-Pre\-Solve}. This value persists until set or reset. 
+\begin{DoxyCode}
+{
+        m_friction = friction;
+}
+\end{DoxyCode}
+\hypertarget{classb2_contact_a24ca342c2bb766c53ef5ad04f5268fc1}{\index{b2\-Contact@{b2\-Contact}!Set\-Restitution@{Set\-Restitution}}
+\index{Set\-Restitution@{Set\-Restitution}!b2Contact@{b2\-Contact}}
+\subsubsection[{Set\-Restitution}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf b2\-Contact\-::\-Set\-Restitution} (
+\begin{DoxyParamCaption}
+\item[{float32}]{restitution}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classb2_contact_a24ca342c2bb766c53ef5ad04f5268fc1}
+Override the default restitution mixture. You can call this in \hyperlink{classb2_contact_listener_a416f85eb45a1099053402b15a19a7de0}{b2\-Contact\-Listener\-::\-Pre\-Solve}. The value persists until you set or reset. 
+\begin{DoxyCode}
+{
+        m_restitution = restitution;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Dynamics/\-Contacts/b2\-Contact.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Dynamics/\-Contacts/b2\-Contact.\-cpp\end{DoxyCompactItemize}

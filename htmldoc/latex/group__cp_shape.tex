@@ -1,0 +1,206 @@
+\hypertarget{group__cp_shape}{\section{cp\-Shape}
+\label{group__cp_shape}\index{cp\-Shape@{cp\-Shape}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcp_nearest_point_query_info}{cp\-Nearest\-Point\-Query\-Info}
+\begin{DoxyCompactList}\small\item\em Nearest point query info struct. \end{DoxyCompactList}\item 
+struct \hyperlink{structcp_segment_query_info}{cp\-Segment\-Query\-Info}
+\begin{DoxyCompactList}\small\item\em Segment query info struct. \end{DoxyCompactList}\item 
+struct {\bfseries cp\-Shape\-Class}
+\item 
+struct \hyperlink{structcp_shape}{cp\-Shape}
+\begin{DoxyCompactList}\small\item\em Opaque collision shape struct. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__cp_shape_ga547d234d61a90a7128ab1f3d00e31939}{\#define {\bfseries C\-P\-\_\-\-Define\-Shape\-Struct\-Getter}(type, member, name)~static inline type cp\-Shape\-Get\#\#name(const \hyperlink{structcp_shape}{cp\-Shape} $\ast$shape)\{return shape-\/$>$member;\}}\label{group__cp_shape_ga547d234d61a90a7128ab1f3d00e31939}
+
+\item 
+\#define {\bfseries C\-P\-\_\-\-Define\-Shape\-Struct\-Setter}(type, member, name, activates)
+\item 
+\#define {\bfseries C\-P\-\_\-\-Define\-Shape\-Struct\-Property}(type, member, name, activates)
+\item 
+\hypertarget{group__cp_shape_gac3014abac96cf5fcdff8415043bd5545}{\#define {\bfseries C\-P\-\_\-\-Declare\-Shape\-Getter}(struct, type, name)~type struct\#\#Get\#\#name(const \hyperlink{structcp_shape}{cp\-Shape} $\ast$shape)}\label{group__cp_shape_gac3014abac96cf5fcdff8415043bd5545}
+
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__cp_shape_ga1038324983fb53972888bdbcc4220a81}{typedef struct cp\-Shape\-Class {\bfseries cp\-Shape\-Class}}\label{group__cp_shape_ga1038324983fb53972888bdbcc4220a81}
+
+\item 
+\hypertarget{group__cp_shape_ga41529ef31034f2fa03d93203211d1ec3}{typedef struct \\*
+\hyperlink{structcp_nearest_point_query_info}{cp\-Nearest\-Point\-Query\-Info} \hyperlink{group__cp_shape_ga41529ef31034f2fa03d93203211d1ec3}{cp\-Nearest\-Point\-Query\-Info}}\label{group__cp_shape_ga41529ef31034f2fa03d93203211d1ec3}
+
+\begin{DoxyCompactList}\small\item\em Nearest point query info struct. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_shape_gadebeb6b5e42d369df368fd220aacd7e8}{typedef struct \hyperlink{structcp_segment_query_info}{cp\-Segment\-Query\-Info} \hyperlink{group__cp_shape_gadebeb6b5e42d369df368fd220aacd7e8}{cp\-Segment\-Query\-Info}}\label{group__cp_shape_gadebeb6b5e42d369df368fd220aacd7e8}
+
+\begin{DoxyCompactList}\small\item\em Segment query info struct. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_shape_gaf3b57024d5274acf6e777e44843d1c79}{typedef enum cp\-Shape\-Type {\bfseries cp\-Shape\-Type}}\label{group__cp_shape_gaf3b57024d5274acf6e777e44843d1c79}
+
+\item 
+\hypertarget{group__cp_shape_gab8535aa43d884033c0e070b10a2eea09}{typedef \hyperlink{structcp_b_b}{cp\-B\-B}($\ast$ {\bfseries cp\-Shape\-Cache\-Data\-Impl} )(\hyperlink{structcp_shape}{cp\-Shape} $\ast$shape, \hyperlink{structcp_vect}{cp\-Vect} p, \hyperlink{structcp_vect}{cp\-Vect} rot)}\label{group__cp_shape_gab8535aa43d884033c0e070b10a2eea09}
+
+\item 
+\hypertarget{group__cp_shape_gae59221f927147fd1703d5bfb3c55dc68}{typedef void($\ast$ {\bfseries cp\-Shape\-Destroy\-Impl} )(\hyperlink{structcp_shape}{cp\-Shape} $\ast$shape)}\label{group__cp_shape_gae59221f927147fd1703d5bfb3c55dc68}
+
+\item 
+\hypertarget{group__cp_shape_ga204b2f5406a370fb3fccb143d8fa5464}{typedef void($\ast$ {\bfseries cp\-Shape\-Nearest\-Point\-Query\-Impl} )(\hyperlink{structcp_shape}{cp\-Shape} $\ast$shape, \hyperlink{structcp_vect}{cp\-Vect} p, \hyperlink{structcp_nearest_point_query_info}{cp\-Nearest\-Point\-Query\-Info} $\ast$info)}\label{group__cp_shape_ga204b2f5406a370fb3fccb143d8fa5464}
+
+\item 
+\hypertarget{group__cp_shape_gabb2d4615c2ba473a3485b2a07b88895d}{typedef void($\ast$ {\bfseries cp\-Shape\-Segment\-Query\-Impl} )(\hyperlink{structcp_shape}{cp\-Shape} $\ast$shape, \hyperlink{structcp_vect}{cp\-Vect} a, \hyperlink{structcp_vect}{cp\-Vect} b, \hyperlink{structcp_segment_query_info}{cp\-Segment\-Query\-Info} $\ast$info)}\label{group__cp_shape_gabb2d4615c2ba473a3485b2a07b88895d}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__cp_shape_gad4eff5be931cd7c3c5eaf9f431b73c9e}{void \hyperlink{group__cp_shape_gad4eff5be931cd7c3c5eaf9f431b73c9e}{cp\-Shape\-Destroy} (\hyperlink{structcp_shape}{cp\-Shape} $\ast$shape)}\label{group__cp_shape_gad4eff5be931cd7c3c5eaf9f431b73c9e}
+
+\begin{DoxyCompactList}\small\item\em Destroy a shape. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_shape_ga5c1eff1ffaf87dda1890fa46ccba38b3}{void \hyperlink{group__cp_shape_ga5c1eff1ffaf87dda1890fa46ccba38b3}{cp\-Shape\-Free} (\hyperlink{structcp_shape}{cp\-Shape} $\ast$shape)}\label{group__cp_shape_ga5c1eff1ffaf87dda1890fa46ccba38b3}
+
+\begin{DoxyCompactList}\small\item\em Destroy and Free a shape. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_shape_ga8cff320455af31adba99b4ff70e085a9}{\hyperlink{structcp_b_b}{cp\-B\-B} \hyperlink{group__cp_shape_ga8cff320455af31adba99b4ff70e085a9}{cp\-Shape\-Cache\-B\-B} (\hyperlink{structcp_shape}{cp\-Shape} $\ast$shape)}\label{group__cp_shape_ga8cff320455af31adba99b4ff70e085a9}
+
+\begin{DoxyCompactList}\small\item\em Update, cache and return the bounding box of a shape based on the body it's attached to. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_shape_ga0b45787bf047be4d90b5d6e17d289151}{\hyperlink{structcp_b_b}{cp\-B\-B} \hyperlink{group__cp_shape_ga0b45787bf047be4d90b5d6e17d289151}{cp\-Shape\-Update} (\hyperlink{structcp_shape}{cp\-Shape} $\ast$shape, \hyperlink{structcp_vect}{cp\-Vect} pos, \hyperlink{structcp_vect}{cp\-Vect} rot)}\label{group__cp_shape_ga0b45787bf047be4d90b5d6e17d289151}
+
+\begin{DoxyCompactList}\small\item\em Update, cache and return the bounding box of a shape with an explicit transformation. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_shape_ga2fedaf2576eadfdce6f717d8e7133e5f}{\hyperlink{group__basic_types_gab6e5d8afee598a57cd323abae5310244}{cp\-Bool} \hyperlink{group__cp_shape_ga2fedaf2576eadfdce6f717d8e7133e5f}{cp\-Shape\-Point\-Query} (\hyperlink{structcp_shape}{cp\-Shape} $\ast$shape, \hyperlink{structcp_vect}{cp\-Vect} p)}\label{group__cp_shape_ga2fedaf2576eadfdce6f717d8e7133e5f}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_test}{Test} if a point lies within a shape. \end{DoxyCompactList}\item 
+\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} \hyperlink{group__cp_shape_ga101abec1320b0876138aece5d5a4a4e9}{cp\-Shape\-Nearest\-Point\-Query} (\hyperlink{structcp_shape}{cp\-Shape} $\ast$shape, \hyperlink{structcp_vect}{cp\-Vect} p, \hyperlink{structcp_nearest_point_query_info}{cp\-Nearest\-Point\-Query\-Info} $\ast$out)
+\item 
+\hypertarget{group__cp_shape_ga0e2bfcdf0cb2e44846806b0787b13a3a}{\hyperlink{group__basic_types_gab6e5d8afee598a57cd323abae5310244}{cp\-Bool} \hyperlink{group__cp_shape_ga0e2bfcdf0cb2e44846806b0787b13a3a}{cp\-Shape\-Segment\-Query} (\hyperlink{structcp_shape}{cp\-Shape} $\ast$shape, \hyperlink{structcp_vect}{cp\-Vect} a, \hyperlink{structcp_vect}{cp\-Vect} b, \hyperlink{structcp_segment_query_info}{cp\-Segment\-Query\-Info} $\ast$info)}\label{group__cp_shape_ga0e2bfcdf0cb2e44846806b0787b13a3a}
+
+\begin{DoxyCompactList}\small\item\em Perform a segment query against a shape. {\ttfamily info} must be a pointer to a valid \hyperlink{structcp_segment_query_info}{cp\-Segment\-Query\-Info} structure. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_shape_ga565a41ed47d55eabfbd0affbb4ad2eca}{{\bfseries C\-P\-\_\-\-Define\-Shape\-Struct\-Getter} (\hyperlink{structcp_space}{cp\-Space} $\ast$, C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E(space), Space) C\-P\-\_\-\-Define\-Shape\-Struct\-Getter(\hyperlink{structcp_body}{cp\-Body} $\ast$}\label{group__cp_shape_ga565a41ed47d55eabfbd0affbb4ad2eca}
+
+\item 
+\hypertarget{group__cp_shape_gaa5b23915eed04b9100ff446e4413953b}{Body void {\bfseries cp\-Shape\-Set\-Body} (\hyperlink{structcp_shape}{cp\-Shape} $\ast$shape, \hyperlink{structcp_body}{cp\-Body} $\ast$body)}\label{group__cp_shape_gaa5b23915eed04b9100ff446e4413953b}
+
+\item 
+\hypertarget{group__cp_shape_ga63ba75243e5e54975bf92d4e7a35115c}{{\bfseries C\-P\-\_\-\-Define\-Shape\-Struct\-Getter} (\hyperlink{structcp_b_b}{cp\-B\-B}, bb, B\-B) \hyperlink{group__cp_shape_ga600318ddce0160e54fd92b6e57662102}{C\-P\-\_\-\-Define\-Shape\-Struct\-Property}(\hyperlink{group__basic_types_gab6e5d8afee598a57cd323abae5310244}{cp\-Bool}}\label{group__cp_shape_ga63ba75243e5e54975bf92d4e7a35115c}
+
+\item 
+\hypertarget{group__cp_shape_ga4b31f15ad4fef38f65dc8fe46a6a1e95}{\hyperlink{group__basic_types_gae30fc24a6e711797b9d39efa0e999987}{cp\-True} {\bfseries C\-P\-\_\-\-Define\-Shape\-Struct\-Property} (\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float}, e, Elasticity, \hyperlink{group__basic_types_ga4b0cfe38ff97abec3400f9bb7e18f21e}{cp\-False}) \hyperlink{group__cp_shape_ga600318ddce0160e54fd92b6e57662102}{C\-P\-\_\-\-Define\-Shape\-Struct\-Property}(\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float}}\label{group__cp_shape_ga4b31f15ad4fef38f65dc8fe46a6a1e95}
+
+\item 
+\hypertarget{group__cp_shape_ga813adea9ac0816f425f25f9894b9ae4a}{\hyperlink{group__basic_types_gae30fc24a6e711797b9d39efa0e999987}{cp\-True} \hyperlink{group__basic_types_gae30fc24a6e711797b9d39efa0e999987}{cp\-True} {\bfseries C\-P\-\_\-\-Define\-Shape\-Struct\-Property} (\hyperlink{structcp_vect}{cp\-Vect}, surface\-\_\-v, Surface\-Velocity, \hyperlink{group__basic_types_gae30fc24a6e711797b9d39efa0e999987}{cp\-True}) \hyperlink{group__cp_shape_ga600318ddce0160e54fd92b6e57662102}{C\-P\-\_\-\-Define\-Shape\-Struct\-Property}(\hyperlink{group__basic_types_ga2ac2c3c31e21893941f9e4f8ee279447}{cp\-Data\-Pointer}}\label{group__cp_shape_ga813adea9ac0816f425f25f9894b9ae4a}
+
+\item 
+\hypertarget{group__cp_shape_ga1b1dbab28690b6b786d7782fff4f6d15}{\hyperlink{group__basic_types_gae30fc24a6e711797b9d39efa0e999987}{cp\-True} \hyperlink{group__basic_types_gae30fc24a6e711797b9d39efa0e999987}{cp\-True} \hyperlink{group__basic_types_ga4b0cfe38ff97abec3400f9bb7e18f21e}{cp\-False} {\bfseries C\-P\-\_\-\-Define\-Shape\-Struct\-Property} (\hyperlink{group__basic_types_gae83e2f50965eb441e36ffff1e32e6d02}{cp\-Collision\-Type}, collision\-\_\-type, Collision\-Type, \hyperlink{group__basic_types_gae30fc24a6e711797b9d39efa0e999987}{cp\-True}) \hyperlink{group__cp_shape_ga600318ddce0160e54fd92b6e57662102}{C\-P\-\_\-\-Define\-Shape\-Struct\-Property}(\hyperlink{group__basic_types_gacd811b1135a8f4a3e5cc019552b18b1a}{cp\-Group}}\label{group__cp_shape_ga1b1dbab28690b6b786d7782fff4f6d15}
+
+\item 
+\hyperlink{group__basic_types_gae30fc24a6e711797b9d39efa0e999987}{cp\-True} \hyperlink{group__basic_types_gae30fc24a6e711797b9d39efa0e999987}{cp\-True} \hyperlink{group__basic_types_ga4b0cfe38ff97abec3400f9bb7e18f21e}{cp\-False} \hyperlink{group__basic_types_gae30fc24a6e711797b9d39efa0e999987}{cp\-True} \hyperlink{group__cp_shape_ga600318ddce0160e54fd92b6e57662102}{C\-P\-\_\-\-Define\-Shape\-Struct\-Property} (\hyperlink{group__basic_types_ga5ec31e87ed3973cab80f9bfbbbcb43bb}{cp\-Layers}, layers, Layers, \hyperlink{group__basic_types_gae30fc24a6e711797b9d39efa0e999987}{cp\-True}) void cp\-Reset\-Shape\-Id\-Counter(void)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__cp_shape_ga14d48c2e9f05d0b03044eb45f308fcb0}{{\bfseries body}}\label{group__cp_shape_ga14d48c2e9f05d0b03044eb45f308fcb0}
+
+\item 
+\hypertarget{group__cp_shape_gad2c79e7569cbb6bbd9a5632a509151f0}{{\bfseries sensor}}\label{group__cp_shape_gad2c79e7569cbb6bbd9a5632a509151f0}
+
+\item 
+\hypertarget{group__cp_shape_ga9628766e5f200cc84b296b071b09ff4a}{{\bfseries Sensor}}\label{group__cp_shape_ga9628766e5f200cc84b296b071b09ff4a}
+
+\item 
+\hypertarget{group__cp_shape_ga4f65572646f91ed244eaa10586c6118d}{\hyperlink{group__basic_types_gae30fc24a6e711797b9d39efa0e999987}{cp\-True} {\bfseries u}}\label{group__cp_shape_ga4f65572646f91ed244eaa10586c6118d}
+
+\item 
+\hypertarget{group__cp_shape_ga223de1e26b61fce1b3cb87bd71bbf2ab}{\hyperlink{group__basic_types_gae30fc24a6e711797b9d39efa0e999987}{cp\-True} {\bfseries Friction}}\label{group__cp_shape_ga223de1e26b61fce1b3cb87bd71bbf2ab}
+
+\item 
+\hypertarget{group__cp_shape_ga1f25323303ee9de668b30ea5ecea4724}{\hyperlink{group__basic_types_gae30fc24a6e711797b9d39efa0e999987}{cp\-True} \hyperlink{group__basic_types_gae30fc24a6e711797b9d39efa0e999987}{cp\-True} {\bfseries data}}\label{group__cp_shape_ga1f25323303ee9de668b30ea5ecea4724}
+
+\item 
+\hypertarget{group__cp_shape_gaab3adbb13acece1ab643405de5a17d5f}{\hyperlink{group__basic_types_gae30fc24a6e711797b9d39efa0e999987}{cp\-True} \hyperlink{group__basic_types_gae30fc24a6e711797b9d39efa0e999987}{cp\-True} {\bfseries User\-Data}}\label{group__cp_shape_gaab3adbb13acece1ab643405de5a17d5f}
+
+\item 
+\hypertarget{group__cp_shape_ga5d29db4ff1908b2a84c5bb48f883a8ed}{\hyperlink{group__basic_types_gae30fc24a6e711797b9d39efa0e999987}{cp\-True} \hyperlink{group__basic_types_gae30fc24a6e711797b9d39efa0e999987}{cp\-True} \hyperlink{group__basic_types_ga4b0cfe38ff97abec3400f9bb7e18f21e}{cp\-False} {\bfseries group}}\label{group__cp_shape_ga5d29db4ff1908b2a84c5bb48f883a8ed}
+
+\item 
+\hypertarget{group__cp_shape_gafc3c1b2c67014cb2c64ec9219095edca}{\hyperlink{group__basic_types_gae30fc24a6e711797b9d39efa0e999987}{cp\-True} \hyperlink{group__basic_types_gae30fc24a6e711797b9d39efa0e999987}{cp\-True} \hyperlink{group__basic_types_ga4b0cfe38ff97abec3400f9bb7e18f21e}{cp\-False} {\bfseries Group}}\label{group__cp_shape_gafc3c1b2c67014cb2c64ec9219095edca}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{structcp_shape}{cp\-Shape} struct defines the shape of a rigid body. 
+
+\subsection{Define Documentation}
+\hypertarget{group__cp_shape_ga43af86383b8a6bf8dd80a6943e6de274}{\index{cp\-Shape@{cp\-Shape}!C\-P\-\_\-\-Define\-Shape\-Struct\-Property@{C\-P\-\_\-\-Define\-Shape\-Struct\-Property}}
+\index{C\-P\-\_\-\-Define\-Shape\-Struct\-Property@{C\-P\-\_\-\-Define\-Shape\-Struct\-Property}!cpShape@{cp\-Shape}}
+\subsubsection[{C\-P\-\_\-\-Define\-Shape\-Struct\-Property}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf C\-P\-\_\-\-Define\-Shape\-Struct\-Property}(
+\begin{DoxyParamCaption}
+\item[{}]{type, }
+\item[{}]{member, }
+\item[{}]{name, }
+\item[{}]{activates}
+\end{DoxyParamCaption}
+)}}\label{group__cp_shape_ga43af86383b8a6bf8dd80a6943e6de274}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+CP_DefineShapeStructGetter(type, member, name) \
+CP_DefineShapeStructSetter(type, member, name, activates)
+\end{DoxyCode}
+\hypertarget{group__cp_shape_ga50b46e99728173c218c2787804d6a17e}{\index{cp\-Shape@{cp\-Shape}!C\-P\-\_\-\-Define\-Shape\-Struct\-Setter@{C\-P\-\_\-\-Define\-Shape\-Struct\-Setter}}
+\index{C\-P\-\_\-\-Define\-Shape\-Struct\-Setter@{C\-P\-\_\-\-Define\-Shape\-Struct\-Setter}!cpShape@{cp\-Shape}}
+\subsubsection[{C\-P\-\_\-\-Define\-Shape\-Struct\-Setter}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-P\-\_\-\-Define\-Shape\-Struct\-Setter(
+\begin{DoxyParamCaption}
+\item[{}]{type, }
+\item[{}]{member, }
+\item[{}]{name, }
+\item[{}]{activates}
+\end{DoxyParamCaption}
+)}}\label{group__cp_shape_ga50b46e99728173c218c2787804d6a17e}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+static inline void cpShapeSet##name(cpShape *shape, type value){ \
+        if(activates && shape->body) cpBodyActivate(shape->body); \
+        shape->member = value; \
+}
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\hypertarget{group__cp_shape_ga600318ddce0160e54fd92b6e57662102}{\index{cp\-Shape@{cp\-Shape}!C\-P\-\_\-\-Define\-Shape\-Struct\-Property@{C\-P\-\_\-\-Define\-Shape\-Struct\-Property}}
+\index{C\-P\-\_\-\-Define\-Shape\-Struct\-Property@{C\-P\-\_\-\-Define\-Shape\-Struct\-Property}!cpShape@{cp\-Shape}}
+\subsubsection[{C\-P\-\_\-\-Define\-Shape\-Struct\-Property}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cp\-True} {\bf cp\-True} {\bf cp\-False} {\bf cp\-True} {\bf C\-P\-\_\-\-Define\-Shape\-Struct\-Property} (
+\begin{DoxyParamCaption}
+\item[{{\bf cp\-Layers}}]{, }
+\item[{layers}]{, }
+\item[{Layers}]{, }
+\item[{{\bf cp\-True}}]{}
+\end{DoxyParamCaption}
+)}}\label{group__cp_shape_ga600318ddce0160e54fd92b6e57662102}
+When initializing a shape, it's hash value comes from a counter. Because the hash value may affect iteration order, you can reset the shape I\-D counter when recreating a space. This will make the simulation be deterministic. \hypertarget{group__cp_shape_ga101abec1320b0876138aece5d5a4a4e9}{\index{cp\-Shape@{cp\-Shape}!cp\-Shape\-Nearest\-Point\-Query@{cp\-Shape\-Nearest\-Point\-Query}}
+\index{cp\-Shape\-Nearest\-Point\-Query@{cp\-Shape\-Nearest\-Point\-Query}!cpShape@{cp\-Shape}}
+\subsubsection[{cp\-Shape\-Nearest\-Point\-Query}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cp\-Float} {\bf cp\-Shape\-Nearest\-Point\-Query} (
+\begin{DoxyParamCaption}
+\item[{{\bf cp\-Shape} $\ast$}]{shape, }
+\item[{{\bf cp\-Vect}}]{p, }
+\item[{{\bf cp\-Nearest\-Point\-Query\-Info} $\ast$}]{out}
+\end{DoxyParamCaption}
+)}}\label{group__cp_shape_ga101abec1320b0876138aece5d5a4a4e9}
+Perform a nearest point query. It finds the closest point on the surface of shape to a specific point. The value returned is the distance between the points. A negative distance means the point is inside the shape. 
+
+Referenced by cp\-Shape\-Point\-Query().
+
+
+\begin{DoxyCode}
+{
+        cpNearestPointQueryInfo blank = {NULL, cpvzero, INFINITY};
+        if(info){
+                (*info) = blank;
+        } else {
+                info = &blank;
+        }
+        
+        shape->klass->nearestPointQuery(shape, p, info);
+        return info->d;
+}
+\end{DoxyCode}

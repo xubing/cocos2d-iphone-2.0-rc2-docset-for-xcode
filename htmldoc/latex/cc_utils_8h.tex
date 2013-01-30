@@ -1,0 +1,45 @@
+\hypertarget{cc_utils_8h}{\section{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.1-\/beta4/cocos2d/\-Support/cc\-Utils.h File Reference}
+\label{cc_utils_8h}\index{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/\-Support/cc\-Utils.\-h@{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/\-Support/cc\-Utils.\-h}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long \hyperlink{cc_utils_8h_a95364cc80ae93d2f47bd142fd30430e5}{cc\-Next\-P\-O\-T} (unsigned long value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Misc free functions 
+
+\subsection{Function Documentation}
+\hypertarget{cc_utils_8h_a95364cc80ae93d2f47bd142fd30430e5}{\index{cc\-Utils.\-h@{cc\-Utils.\-h}!cc\-Next\-P\-O\-T@{cc\-Next\-P\-O\-T}}
+\index{cc\-Next\-P\-O\-T@{cc\-Next\-P\-O\-T}!ccUtils.h@{cc\-Utils.\-h}}
+\subsubsection[{cc\-Next\-P\-O\-T}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long {\bf cc\-Next\-P\-O\-T} (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{value}
+\end{DoxyParamCaption}
+)}}\label{cc_utils_8h_a95364cc80ae93d2f47bd142fd30430e5}
+returns the Next Power of Two value.
+
+Examples\-:
+\begin{DoxyItemize}
+\item If \char`\"{}value\char`\"{} is 15, it will return 16.
+\item If \char`\"{}value\char`\"{} is 16, it will return 16.
+\item If \char`\"{}value\char`\"{} is 17, it will return 32.
+\end{DoxyItemize}
+
+\begin{DoxySince}{Since}
+v0.\-99.\-5 
+\end{DoxySince}
+
+\begin{DoxyCode}
+{
+    x = x - 1;
+    x = x | (x >> 1);
+    x = x | (x >> 2);
+    x = x | (x >> 4);
+    x = x | (x >> 8);
+    x = x | (x >>16);
+    return x + 1;
+}
+\end{DoxyCode}

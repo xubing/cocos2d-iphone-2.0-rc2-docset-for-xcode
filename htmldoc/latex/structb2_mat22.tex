@@ -1,0 +1,80 @@
+\hypertarget{structb2_mat22}{\section{b2\-Mat22 Struct Reference}
+\label{structb2_mat22}\index{b2\-Mat22@{b2\-Mat22}}
+}
+
+
+A 2-\/by-\/2 matrix. Stored in column-\/major order.  
+
+
+
+
+{\ttfamily \#include $<$b2\-Math.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structb2_mat22_ac3e10f6d457c8dab9062ba378f66bc4d}{\hyperlink{structb2_mat22_ac3e10f6d457c8dab9062ba378f66bc4d}{b2\-Mat22} ()}\label{structb2_mat22_ac3e10f6d457c8dab9062ba378f66bc4d}
+
+\begin{DoxyCompactList}\small\item\em The default constructor does nothing (for performance). \end{DoxyCompactList}\item 
+\hypertarget{structb2_mat22_abd674c6d92e26962977f34bcd92ff24d}{\hyperlink{structb2_mat22_abd674c6d92e26962977f34bcd92ff24d}{b2\-Mat22} (const \hyperlink{structb2_vec2}{b2\-Vec2} \&c1, const \hyperlink{structb2_vec2}{b2\-Vec2} \&c2)}\label{structb2_mat22_abd674c6d92e26962977f34bcd92ff24d}
+
+\begin{DoxyCompactList}\small\item\em Construct this matrix using columns. \end{DoxyCompactList}\item 
+\hypertarget{structb2_mat22_a41d5d8743bda32cb8c6e212528934810}{\hyperlink{structb2_mat22_a41d5d8743bda32cb8c6e212528934810}{b2\-Mat22} (float32 a11, float32 a12, float32 a21, float32 a22)}\label{structb2_mat22_a41d5d8743bda32cb8c6e212528934810}
+
+\begin{DoxyCompactList}\small\item\em Construct this matrix using scalars. \end{DoxyCompactList}\item 
+\hypertarget{structb2_mat22_aed3bee1de38a0b3f36e21c90faa24112}{void \hyperlink{structb2_mat22_aed3bee1de38a0b3f36e21c90faa24112}{Set} (const \hyperlink{structb2_vec2}{b2\-Vec2} \&c1, const \hyperlink{structb2_vec2}{b2\-Vec2} \&c2)}\label{structb2_mat22_aed3bee1de38a0b3f36e21c90faa24112}
+
+\begin{DoxyCompactList}\small\item\em Initialize this matrix using columns. \end{DoxyCompactList}\item 
+\hypertarget{structb2_mat22_a7192f063b771ac9ded060e41df890509}{void \hyperlink{structb2_mat22_a7192f063b771ac9ded060e41df890509}{Set\-Identity} ()}\label{structb2_mat22_a7192f063b771ac9ded060e41df890509}
+
+\begin{DoxyCompactList}\small\item\em Set this to the identity matrix. \end{DoxyCompactList}\item 
+\hypertarget{structb2_mat22_aaeae95f61cf3171ffb94703980e3594b}{void \hyperlink{structb2_mat22_aaeae95f61cf3171ffb94703980e3594b}{Set\-Zero} ()}\label{structb2_mat22_aaeae95f61cf3171ffb94703980e3594b}
+
+\begin{DoxyCompactList}\small\item\em Set this matrix to all zeros. \end{DoxyCompactList}\item 
+\hypertarget{structb2_mat22_af8d14ac8f48feb282cdd669f36ac8070}{\hyperlink{structb2_mat22}{b2\-Mat22} {\bfseries Get\-Inverse} () const }\label{structb2_mat22_af8d14ac8f48feb282cdd669f36ac8070}
+
+\item 
+\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{structb2_mat22_ab511ad33f5abf87351581842628a9dc3}{Solve} (const \hyperlink{structb2_vec2}{b2\-Vec2} \&b) const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structb2_mat22_abaffa5fc1d401ea36415acffa6205689}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries ex}}\label{structb2_mat22_abaffa5fc1d401ea36415acffa6205689}
+
+\item 
+\hypertarget{structb2_mat22_af19db58941d2cd146325ef3191b776fd}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries ey}}\label{structb2_mat22_af19db58941d2cd146325ef3191b776fd}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A 2-\/by-\/2 matrix. Stored in column-\/major order. 
+
+\subsection{Member Function Documentation}
+\hypertarget{structb2_mat22_ab511ad33f5abf87351581842628a9dc3}{\index{b2\-Mat22@{b2\-Mat22}!Solve@{Solve}}
+\index{Solve@{Solve}!b2Mat22@{b2\-Mat22}}
+\subsubsection[{Solve}]{\setlength{\rightskip}{0pt plus 5cm}{\bf b2\-Vec2} {\bf b2\-Mat22\-::\-Solve} (
+\begin{DoxyParamCaption}
+\item[{const {\bf b2\-Vec2} \&}]{b}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structb2_mat22_ab511ad33f5abf87351581842628a9dc3}
+Solve A $\ast$ x = b, where b is a column vector. This is more efficient than computing the inverse in one-\/shot cases. 
+\begin{DoxyCode}
+        {
+                float32 a11 = ex.x, a12 = ey.x, a21 = ex.y, a22 = ey.y;
+                float32 det = a11 * a22 - a12 * a21;
+                if (det != 0.0f)
+                {
+                        det = 1.0f / det;
+                }
+                b2Vec2 x;
+                x.x = det * (a22 * b.x - a12 * b.y);
+                x.y = det * (a11 * b.y - a21 * b.x);
+                return x;
+        }
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Common/b2\-Math.\-h\end{DoxyCompactItemize}

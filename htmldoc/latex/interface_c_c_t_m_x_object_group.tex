@@ -1,0 +1,110 @@
+\hypertarget{interface_c_c_t_m_x_object_group}{\section{C\-C\-T\-M\-X\-Object\-Group Class Reference}
+\label{interface_c_c_t_m_x_object_group}\index{C\-C\-T\-M\-X\-Object\-Group@{C\-C\-T\-M\-X\-Object\-Group}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-T\-M\-X\-Object\-Group.\-h$>$}
+
+Inheritance diagram for C\-C\-T\-M\-X\-Object\-Group\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_c_c_t_m_x_object_group}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_t_m_x_object_group_a53169aab66912c9fa7e077fa3af0a5d5}{property\-Named\-:}
+\item 
+(N\-S\-Mutable\-Dictionary $\ast$) -\/ \hyperlink{interface_c_c_t_m_x_object_group_a83762883e29d2227b03e1133537dad09}{object\-Named\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_t_m_x_object_group_a7d2696dfb1ff2c595f64635725402a5c}{N\-S\-String $\ast$ {\bfseries group\-Name\-\_\-}}\label{interface_c_c_t_m_x_object_group_a7d2696dfb1ff2c595f64635725402a5c}
+
+\item 
+\hypertarget{interface_c_c_t_m_x_object_group_a13c9c631ca6d7f2da2867ba6e5ed9b3d}{C\-G\-Point {\bfseries position\-Offset\-\_\-}}\label{interface_c_c_t_m_x_object_group_a13c9c631ca6d7f2da2867ba6e5ed9b3d}
+
+\item 
+\hypertarget{interface_c_c_t_m_x_object_group_af95f55341b789b52c72d0abaa44041d5}{N\-S\-Mutable\-Array $\ast$ {\bfseries objects\-\_\-}}\label{interface_c_c_t_m_x_object_group_af95f55341b789b52c72d0abaa44041d5}
+
+\item 
+\hypertarget{interface_c_c_t_m_x_object_group_a6fcd93a8a7cbef404fb1a41de8830c60}{N\-S\-Mutable\-Dictionary $\ast$ {\bfseries properties\-\_\-}}\label{interface_c_c_t_m_x_object_group_a6fcd93a8a7cbef404fb1a41de8830c60}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\-S\-String $\ast$ \hyperlink{interface_c_c_t_m_x_object_group_a5d0f01f95c03ceeb4691a103974b6144}{group\-Name}
+\item 
+C\-G\-Point \hyperlink{interface_c_c_t_m_x_object_group_ae945ec4408f80933f0a0ab956fb28a6b}{position\-Offset}
+\item 
+N\-S\-Mutable\-Array $\ast$ \hyperlink{interface_c_c_t_m_x_object_group_aac3da52ce56ed92d32b44500f5bd8f61}{objects}
+\item 
+N\-S\-Mutable\-Dictionary $\ast$ \hyperlink{interface_c_c_t_m_x_object_group_a04a65b75f65112e6bcbd298d875a8ad1}{properties}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_t_m_x_object_group}{C\-C\-T\-M\-X\-Object\-Group} represents the T\-M\-X object group. \begin{DoxySince}{Since}
+v0.\-99.\-0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_t_m_x_object_group_a83762883e29d2227b03e1133537dad09}{\index{C\-C\-T\-M\-X\-Object\-Group@{C\-C\-T\-M\-X\-Object\-Group}!object\-Named\-:@{object\-Named\-:}}
+\index{object\-Named\-:@{object\-Named\-:}!CCTMXObjectGroup@{C\-C\-T\-M\-X\-Object\-Group}}
+\subsubsection[{object\-Named\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Dictionary $\ast$) {\bf object\-Named\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{object\-Name}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_t_m_x_object_group_a83762883e29d2227b03e1133537dad09}
+return the dictionary for the specific object name. It will return the 1st object found on the array for the given name. 
+\begin{DoxyCode}
+                                   :(NSString *)objectName
+{
+        for( id object in objects_ ) {
+                if( [[object valueForKey:@"name"] isEqual:objectName] )
+                        return object;
+                }
+
+        // object not found
+        return nil;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_t_m_x_object_group_a53169aab66912c9fa7e077fa3af0a5d5}{\index{C\-C\-T\-M\-X\-Object\-Group@{C\-C\-T\-M\-X\-Object\-Group}!property\-Named\-:@{property\-Named\-:}}
+\index{property\-Named\-:@{property\-Named\-:}!CCTMXObjectGroup@{C\-C\-T\-M\-X\-Object\-Group}}
+\subsubsection[{property\-Named\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf property\-Named\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{property\-Name}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_t_m_x_object_group_a53169aab66912c9fa7e077fa3af0a5d5}
+return the value for the specific property name 
+\begin{DoxyCode}
+                   :(NSString *)propertyName
+{
+        return [properties_ valueForKey:propertyName];
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_t_m_x_object_group_a5d0f01f95c03ceeb4691a103974b6144}{\index{C\-C\-T\-M\-X\-Object\-Group@{C\-C\-T\-M\-X\-Object\-Group}!group\-Name@{group\-Name}}
+\index{group\-Name@{group\-Name}!CCTMXObjectGroup@{C\-C\-T\-M\-X\-Object\-Group}}
+\subsubsection[{group\-Name}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String$\ast$) {\bf group\-Name}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}\label{interface_c_c_t_m_x_object_group_a5d0f01f95c03ceeb4691a103974b6144}
+name of the group \hypertarget{interface_c_c_t_m_x_object_group_aac3da52ce56ed92d32b44500f5bd8f61}{\index{C\-C\-T\-M\-X\-Object\-Group@{C\-C\-T\-M\-X\-Object\-Group}!objects@{objects}}
+\index{objects@{objects}!CCTMXObjectGroup@{C\-C\-T\-M\-X\-Object\-Group}}
+\subsubsection[{objects}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Array$\ast$) {\bf objects}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}\label{interface_c_c_t_m_x_object_group_aac3da52ce56ed92d32b44500f5bd8f61}
+array of the objects \hypertarget{interface_c_c_t_m_x_object_group_ae945ec4408f80933f0a0ab956fb28a6b}{\index{C\-C\-T\-M\-X\-Object\-Group@{C\-C\-T\-M\-X\-Object\-Group}!position\-Offset@{position\-Offset}}
+\index{position\-Offset@{position\-Offset}!CCTMXObjectGroup@{C\-C\-T\-M\-X\-Object\-Group}}
+\subsubsection[{position\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Point) {\bf position\-Offset}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_t_m_x_object_group_ae945ec4408f80933f0a0ab956fb28a6b}
+offset position of child objects \hypertarget{interface_c_c_t_m_x_object_group_a04a65b75f65112e6bcbd298d875a8ad1}{\index{C\-C\-T\-M\-X\-Object\-Group@{C\-C\-T\-M\-X\-Object\-Group}!properties@{properties}}
+\index{properties@{properties}!CCTMXObjectGroup@{C\-C\-T\-M\-X\-Object\-Group}}
+\subsubsection[{properties}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Dictionary$\ast$) {\bf properties}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}\label{interface_c_c_t_m_x_object_group_a04a65b75f65112e6bcbd298d875a8ad1}
+list of properties stored in a dictionary 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-T\-M\-X\-Object\-Group.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-T\-M\-X\-Object\-Group.\-m\end{DoxyCompactItemize}

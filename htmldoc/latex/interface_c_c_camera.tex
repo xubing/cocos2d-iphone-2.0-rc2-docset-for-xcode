@@ -1,0 +1,318 @@
+\hypertarget{interface_c_c_camera}{\section{C\-C\-Camera Class Reference}
+\label{interface_c_c_camera}\index{C\-C\-Camera@{C\-C\-Camera}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Camera.\-h$>$}
+
+Inheritance diagram for C\-C\-Camera\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_c_c_camera}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_c_c_camera_abd65553333481d2463d5d6be2f550445}{restore}
+\item 
+(void) -\/ \hyperlink{interface_c_c_camera_a5b42131251688d0a990821019ed2a339}{locate}
+\item 
+(void) -\/ \hyperlink{interface_c_c_camera_ad2cdf939a611a3831d0e9e5bc5f23ec7}{set\-Eye\-X\-:eye\-Y\-:eye\-Z\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_camera_a382432599e907c5c3e8f5c5f91169387}{set\-Center\-X\-:center\-Y\-:center\-Z\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_camera_acb6c6175765ba500f7d596bfc7382357}{set\-Up\-X\-:up\-Y\-:up\-Z\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_camera_afd57f0641e3f4224c0e5ec68ae0d664a}{eye\-X\-:eye\-Y\-:eye\-Z\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_camera_a46f9478718fb45c68aeedcb170055291}{center\-X\-:center\-Y\-:center\-Z\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_camera_a8c5a3413b304f241dad48c224b74190d}{up\-X\-:up\-Y\-:up\-Z\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(float) + \hyperlink{interface_c_c_camera_a74f0f52f055e36fee0708dbb25c38835}{get\-Z\-Eye}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_camera_a506067ad31f5e42051bcbd5aa41677bd}{float {\bfseries eye\-X\-\_\-}}\label{interface_c_c_camera_a506067ad31f5e42051bcbd5aa41677bd}
+
+\item 
+\hypertarget{interface_c_c_camera_a92fc96343efc2f9d1472672e1961d5e6}{float {\bfseries eye\-Y\-\_\-}}\label{interface_c_c_camera_a92fc96343efc2f9d1472672e1961d5e6}
+
+\item 
+\hypertarget{interface_c_c_camera_ae9479a1d2bbfa002ad0cc23cbd555f62}{float {\bfseries eye\-Z\-\_\-}}\label{interface_c_c_camera_ae9479a1d2bbfa002ad0cc23cbd555f62}
+
+\item 
+\hypertarget{interface_c_c_camera_a1c7ebb287bf6ff04af12bf1779530394}{float {\bfseries center\-X\-\_\-}}\label{interface_c_c_camera_a1c7ebb287bf6ff04af12bf1779530394}
+
+\item 
+\hypertarget{interface_c_c_camera_a0055d264b3ba6b8d5eb145686af8dbe7}{float {\bfseries center\-Y\-\_\-}}\label{interface_c_c_camera_a0055d264b3ba6b8d5eb145686af8dbe7}
+
+\item 
+\hypertarget{interface_c_c_camera_acf7255c4b9f82298dbc5a4df807a1363}{float {\bfseries center\-Z\-\_\-}}\label{interface_c_c_camera_acf7255c4b9f82298dbc5a4df807a1363}
+
+\item 
+\hypertarget{interface_c_c_camera_a7fa497ccbe417febbff9158564c977af}{float {\bfseries up\-X\-\_\-}}\label{interface_c_c_camera_a7fa497ccbe417febbff9158564c977af}
+
+\item 
+\hypertarget{interface_c_c_camera_a011e603c9f1b6eddcbf68957a6b08334}{float {\bfseries up\-Y\-\_\-}}\label{interface_c_c_camera_a011e603c9f1b6eddcbf68957a6b08334}
+
+\item 
+\hypertarget{interface_c_c_camera_a705369eff4e2aa6f5cc94ff39d122df9}{float {\bfseries up\-Z\-\_\-}}\label{interface_c_c_camera_a705369eff4e2aa6f5cc94ff39d122df9}
+
+\item 
+\hypertarget{interface_c_c_camera_af68279c64517937133c23bdb744d9ae0}{B\-O\-O\-L {\bfseries dirty\-\_\-}}\label{interface_c_c_camera_af68279c64517937133c23bdb744d9ae0}
+
+\item 
+\hypertarget{interface_c_c_camera_afeccb845e121d300e0e3822223025c7e}{\hyperlink{structkm_mat4}{km\-Mat4} {\bfseries lookup\-Matrix\-\_\-}}\label{interface_c_c_camera_afeccb845e121d300e0e3822223025c7e}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+B\-O\-O\-L \hyperlink{interface_c_c_camera_a692d41f24ecf5c3091d6ed248b800ee8}{dirty}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{interface_c_c_camera}{C\-C\-Camera} is used in every \hyperlink{class_c_c_node}{C\-C\-Node}. Useful to look at the object from different views. The Open\-G\-L glu\-Look\-At() function is used to locate the camera.
+
+If the object is transformed by any of the scale, rotation or position attributes, then they will override the camera. \begin{DoxyVerb}IMPORTANT: Either your use the camera or the rotation/scale/position properties. You can't use both.
+\end{DoxyVerb}
+ World coordinates won't work if you use the camera.
+
+Limitations\-:
+
+
+\begin{DoxyItemize}
+\item Some nodes, like \hyperlink{interface_c_c_parallax_node}{C\-C\-Parallax\-Node}, C\-C\-Particle uses world node coordinates, and they won't work properly if you move them (or any of their ancestors) using the camera.
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item It doesn't work on batched nodes like \hyperlink{class_c_c_sprite}{C\-C\-Sprite} objects when they are parented to a \hyperlink{interface_c_c_sprite_batch_node}{C\-C\-Sprite\-Batch\-Node} object.
+
+
+\begin{DoxyItemize}
+\item It is recommended to use it O\-N\-L\-Y if you are going to create 3\-D effects. For 2\-D effects, use the action \hyperlink{interface_c_c_follow}{C\-C\-Follow} or position/scale/rotate. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_camera_a46f9478718fb45c68aeedcb170055291}{\index{C\-C\-Camera@{C\-C\-Camera}!center\-X\-:center\-Y\-:center\-Z\-:@{center\-X\-:center\-Y\-:center\-Z\-:}}
+\index{center\-X\-:center\-Y\-:center\-Z\-:@{center\-X\-:center\-Y\-:center\-Z\-:}!CCCamera@{C\-C\-Camera}}
+\subsubsection[{center\-X\-:center\-Y\-:center\-Z\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) center\-X\-: 
+\begin{DoxyParamCaption}
+\item[{(float$\ast$)}]{x}
+\item[{centerY:(float$\ast$)}]{y}
+\item[{centerZ:(float$\ast$)}]{z}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_camera_a46f9478718fb45c68aeedcb170055291}
+get the center vector values in points 
+
+Referenced by C\-C\-Orbit\-Camera\-::spherical\-Radius\-:zenith\-:azimuth\-:, and C\-C\-Action\-Camera\-::start\-With\-Target\-:.
+
+
+\begin{DoxyCode}
+               : (float*)x centerY:(float*)y centerZ:(float*)z
+{
+        *x = centerX_;
+        *y = centerY_;
+        *z = centerZ_;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_camera_afd57f0641e3f4224c0e5ec68ae0d664a}{\index{C\-C\-Camera@{C\-C\-Camera}!eye\-X\-:eye\-Y\-:eye\-Z\-:@{eye\-X\-:eye\-Y\-:eye\-Z\-:}}
+\index{eye\-X\-:eye\-Y\-:eye\-Z\-:@{eye\-X\-:eye\-Y\-:eye\-Z\-:}!CCCamera@{C\-C\-Camera}}
+\subsubsection[{eye\-X\-:eye\-Y\-:eye\-Z\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) eye\-X\-: 
+\begin{DoxyParamCaption}
+\item[{(float$\ast$)}]{x}
+\item[{eyeY:(float$\ast$)}]{y}
+\item[{eyeZ:(float$\ast$)}]{z}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_camera_afd57f0641e3f4224c0e5ec68ae0d664a}
+get the eye vector values in points 
+
+Referenced by C\-C\-Orbit\-Camera\-::spherical\-Radius\-:zenith\-:azimuth\-:, and C\-C\-Action\-Camera\-::start\-With\-Target\-:.
+
+
+\begin{DoxyCode}
+            : (float*)x eyeY:(float*)y eyeZ:(float*)z
+{
+        *x = eyeX_;
+        *y = eyeY_;
+        *z = eyeZ_;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_camera_a74f0f52f055e36fee0708dbb25c38835}{\index{C\-C\-Camera@{C\-C\-Camera}!get\-Z\-Eye@{get\-Z\-Eye}}
+\index{get\-Z\-Eye@{get\-Z\-Eye}!CCCamera@{C\-C\-Camera}}
+\subsubsection[{get\-Z\-Eye}]{\setlength{\rightskip}{0pt plus 5cm}+ (float) {\bf get\-Z\-Eye} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_camera_a74f0f52f055e36fee0708dbb25c38835}
+returns the Z eye 
+
+Referenced by restore, and C\-C\-Orbit\-Camera\-::spherical\-Radius\-:zenith\-:azimuth\-:.
+
+
+\begin{DoxyCode}
+{
+        return FLT_EPSILON;
+        //      CGSize s = [[CCDirector sharedDirector] displaySize];
+        //      return ( s.height / 1.1566f );
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_camera_a5b42131251688d0a990821019ed2a339}{\index{C\-C\-Camera@{C\-C\-Camera}!locate@{locate}}
+\index{locate@{locate}!CCCamera@{C\-C\-Camera}}
+\subsubsection[{locate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf locate} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_camera_a5b42131251688d0a990821019ed2a339}
+Sets the camera using glu\-Look\-At using its eye, center and up\-\_\-vector 
+
+Referenced by C\-C\-Node\-::transform.
+
+
+\begin{DoxyCode}
+{
+        if( dirty_ ) {
+
+                kmVec3 eye, center, up;
+
+                kmVec3Fill( &eye, eyeX_, eyeY_ , eyeZ_ );
+                kmVec3Fill( &center, centerX_, centerY_, centerZ_ );
+
+                kmVec3Fill( &up, upX_, upY_, upZ_);
+                kmMat4LookAt( &lookupMatrix_, &eye, &center, &up);
+
+                dirty_ = NO;
+
+        }
+
+        kmGLMultMatrix( &lookupMatrix_ );
+
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_camera_abd65553333481d2463d5d6be2f550445}{\index{C\-C\-Camera@{C\-C\-Camera}!restore@{restore}}
+\index{restore@{restore}!CCCamera@{C\-C\-Camera}}
+\subsubsection[{restore}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf restore} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_camera_abd65553333481d2463d5d6be2f550445}
+sets the camera in the defaul position 
+\begin{DoxyCode}
+{
+        eyeX_ = eyeY_ = 0;
+        eyeZ_ = [CCCamera getZEye];
+
+        centerX_ = centerY_ = centerZ_ = 0;
+
+        upX_ = 0.0f;
+        upY_ = 1.0f;
+        upZ_ = 0.0f;
+
+        kmMat4Identity( &lookupMatrix_ );
+
+        dirty_ = NO;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_camera_a382432599e907c5c3e8f5c5f91169387}{\index{C\-C\-Camera@{C\-C\-Camera}!set\-Center\-X\-:center\-Y\-:center\-Z\-:@{set\-Center\-X\-:center\-Y\-:center\-Z\-:}}
+\index{set\-Center\-X\-:center\-Y\-:center\-Z\-:@{set\-Center\-X\-:center\-Y\-:center\-Z\-:}!CCCamera@{C\-C\-Camera}}
+\subsubsection[{set\-Center\-X\-:center\-Y\-:center\-Z\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-Center\-X\-: 
+\begin{DoxyParamCaption}
+\item[{(float)}]{x}
+\item[{centerY:(float)}]{y}
+\item[{centerZ:(float)}]{z}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_camera_a382432599e907c5c3e8f5c5f91169387}
+sets the center values in points 
+\begin{DoxyCode}
+                  : (float)x centerY:(float)y centerZ:(float)z
+{
+        centerX_ = x;
+        centerY_ = y;
+        centerZ_ = z;
+
+        dirty_ = YES;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_camera_ad2cdf939a611a3831d0e9e5bc5f23ec7}{\index{C\-C\-Camera@{C\-C\-Camera}!set\-Eye\-X\-:eye\-Y\-:eye\-Z\-:@{set\-Eye\-X\-:eye\-Y\-:eye\-Z\-:}}
+\index{set\-Eye\-X\-:eye\-Y\-:eye\-Z\-:@{set\-Eye\-X\-:eye\-Y\-:eye\-Z\-:}!CCCamera@{C\-C\-Camera}}
+\subsubsection[{set\-Eye\-X\-:eye\-Y\-:eye\-Z\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-Eye\-X\-: 
+\begin{DoxyParamCaption}
+\item[{(float)}]{x}
+\item[{eyeY:(float)}]{y}
+\item[{eyeZ:(float)}]{z}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_camera_ad2cdf939a611a3831d0e9e5bc5f23ec7}
+sets the eye values in points 
+\begin{DoxyCode}
+               : (float)x eyeY:(float)y eyeZ:(float)z
+{
+        eyeX_ = x;
+        eyeY_ = y;
+        eyeZ_ = z;
+
+        dirty_ = YES;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_camera_acb6c6175765ba500f7d596bfc7382357}{\index{C\-C\-Camera@{C\-C\-Camera}!set\-Up\-X\-:up\-Y\-:up\-Z\-:@{set\-Up\-X\-:up\-Y\-:up\-Z\-:}}
+\index{set\-Up\-X\-:up\-Y\-:up\-Z\-:@{set\-Up\-X\-:up\-Y\-:up\-Z\-:}!CCCamera@{C\-C\-Camera}}
+\subsubsection[{set\-Up\-X\-:up\-Y\-:up\-Z\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-Up\-X\-: 
+\begin{DoxyParamCaption}
+\item[{(float)}]{x}
+\item[{upY:(float)}]{y}
+\item[{upZ:(float)}]{z}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_camera_acb6c6175765ba500f7d596bfc7382357}
+sets the up values 
+\begin{DoxyCode}
+              : (float)x upY:(float)y upZ:(float)z
+{
+        upX_ = x;
+        upY_ = y;
+        upZ_ = z;
+
+        dirty_ = YES;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_camera_a8c5a3413b304f241dad48c224b74190d}{\index{C\-C\-Camera@{C\-C\-Camera}!up\-X\-:up\-Y\-:up\-Z\-:@{up\-X\-:up\-Y\-:up\-Z\-:}}
+\index{up\-X\-:up\-Y\-:up\-Z\-:@{up\-X\-:up\-Y\-:up\-Z\-:}!CCCamera@{C\-C\-Camera}}
+\subsubsection[{up\-X\-:up\-Y\-:up\-Z\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) up\-X\-: 
+\begin{DoxyParamCaption}
+\item[{(float$\ast$)}]{x}
+\item[{upY:(float$\ast$)}]{y}
+\item[{upZ:(float$\ast$)}]{z}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_camera_a8c5a3413b304f241dad48c224b74190d}
+get the up vector values 
+
+Referenced by C\-C\-Action\-Camera\-::start\-With\-Target\-:.
+
+
+\begin{DoxyCode}
+           : (float*)x upY:(float*)y upZ:(float*)z
+{
+        *x = upX_;
+        *y = upY_;
+        *z = upZ_;
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_camera_a692d41f24ecf5c3091d6ed248b800ee8}{\index{C\-C\-Camera@{C\-C\-Camera}!dirty@{dirty}}
+\index{dirty@{dirty}!CCCamera@{C\-C\-Camera}}
+\subsubsection[{dirty}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) {\bf dirty}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_camera_a692d41f24ecf5c3091d6ed248b800ee8}
+whether of not the camera is dirty 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Camera.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Camera.\-m\end{DoxyCompactItemize}

@@ -1,0 +1,90 @@
+\hypertarget{interface_c_c_tint_to}{\section{C\-C\-Tint\-To Class Reference}
+\label{interface_c_c_tint_to}\index{C\-C\-Tint\-To@{C\-C\-Tint\-To}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Interval.\-h$>$}
+
+Inheritance diagram for C\-C\-Tint\-To\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_c_c_tint_to}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_tint_to_a045ab7235c483ed4403442be9892819c}{init\-With\-Duration\-:red\-:green\-:blue\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_tint_to_a4f474aafb5cbd8456f8a9480738325fb}{action\-With\-Duration\-:red\-:green\-:blue\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_tint_to_ab394a5088a2bdda56673a117337d6422}{\hyperlink{cc_types_8h_a829b00c53e72f0115e3880cb508fec1e}{cc\-Color3\-B} {\bfseries to\-\_\-}}\label{interface_c_c_tint_to_ab394a5088a2bdda56673a117337d6422}
+
+\item 
+\hypertarget{interface_c_c_tint_to_a65f8f00467d4399a4433d70b60da4019}{\hyperlink{cc_types_8h_a829b00c53e72f0115e3880cb508fec1e}{cc\-Color3\-B} {\bfseries from\-\_\-}}\label{interface_c_c_tint_to_a65f8f00467d4399a4433d70b60da4019}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Tints a \hyperlink{class_c_c_node}{C\-C\-Node} that implements the C\-C\-Node\-R\-G\-B protocol from current tint to a custom one. \begin{DoxyWarning}{Warning}
+This action doesn't support \char`\"{}reverse\char`\"{} 
+\end{DoxyWarning}
+\begin{DoxySince}{Since}
+v0.\-7.\-2 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_tint_to_a4f474aafb5cbd8456f8a9480738325fb}{\index{C\-C\-Tint\-To@{C\-C\-Tint\-To}!action\-With\-Duration\-:red\-:green\-:blue\-:@{action\-With\-Duration\-:red\-:green\-:blue\-:}}
+\index{action\-With\-Duration\-:red\-:green\-:blue\-:@{action\-With\-Duration\-:red\-:green\-:blue\-:}!CCTintTo@{C\-C\-Tint\-To}}
+\subsubsection[{action\-With\-Duration\-:red\-:green\-:blue\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{duration}
+\item[{red:(G\-Lubyte)}]{red}
+\item[{green:(G\-Lubyte)}]{green}
+\item[{blue:(G\-Lubyte)}]{blue}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_tint_to_a4f474aafb5cbd8456f8a9480738325fb}
+creates an action with duration and color 
+\begin{DoxyCode}
+                        :(ccTime)t red:(GLubyte)r green:(GLubyte)g blue:(
+      GLubyte)b
+{
+        return [[(CCTintTo*)[ self alloc] initWithDuration:t red:r green:g blue
+      :b] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_tint_to_a045ab7235c483ed4403442be9892819c}{\index{C\-C\-Tint\-To@{C\-C\-Tint\-To}!init\-With\-Duration\-:red\-:green\-:blue\-:@{init\-With\-Duration\-:red\-:green\-:blue\-:}}
+\index{init\-With\-Duration\-:red\-:green\-:blue\-:@{init\-With\-Duration\-:red\-:green\-:blue\-:}!CCTintTo@{C\-C\-Tint\-To}}
+\subsubsection[{init\-With\-Duration\-:red\-:green\-:blue\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{duration}
+\item[{red:(G\-Lubyte)}]{red}
+\item[{green:(G\-Lubyte)}]{green}
+\item[{blue:(G\-Lubyte)}]{blue}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_tint_to_a045ab7235c483ed4403442be9892819c}
+initializes the action with duration and color 
+\begin{DoxyCode}
+                      : (ccTime) t red:(GLubyte)r green:(GLubyte)g blue:(
+      GLubyte)b
+{
+        if( (self=[super initWithDuration:t] ) )
+                to_ = ccc3(r,g,b);
+
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-m\end{DoxyCompactItemize}

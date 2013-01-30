@@ -1,0 +1,67 @@
+\hypertarget{classmozilla_1_1_ref_counted}{\section{mozilla\-:\-:Ref\-Counted$<$ T $>$ Class Template Reference}
+\label{classmozilla_1_1_ref_counted}\index{mozilla\-::\-Ref\-Counted$<$ T $>$@{mozilla\-::\-Ref\-Counted$<$ T $>$}}
+}
+
+
+{\ttfamily \#include $<$Ref\-Ptr.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmozilla_1_1_ref_counted_a444e9df3b99af750fab076d1df5b47a1}{void {\bfseries Add\-Ref} ()}\label{classmozilla_1_1_ref_counted_a444e9df3b99af750fab076d1df5b47a1}
+
+\item 
+\hypertarget{classmozilla_1_1_ref_counted_a72161179fb2466d80a8d927937a657be}{void {\bfseries Release} ()}\label{classmozilla_1_1_ref_counted_a72161179fb2466d80a8d927937a657be}
+
+\item 
+\hypertarget{classmozilla_1_1_ref_counted_a623ce25a4229da8434f7bd0e174fae8a}{void {\bfseries ref} ()}\label{classmozilla_1_1_ref_counted_a623ce25a4229da8434f7bd0e174fae8a}
+
+\item 
+\hypertarget{classmozilla_1_1_ref_counted_a57886d761389c3bda9285152e5c4954f}{void {\bfseries deref} ()}\label{classmozilla_1_1_ref_counted_a57886d761389c3bda9285152e5c4954f}
+
+\item 
+\hypertarget{classmozilla_1_1_ref_counted_a13c4f80e6b52b258a881f80e0f1c00a8}{int {\bfseries ref\-Count} () const }\label{classmozilla_1_1_ref_counted_a13c4f80e6b52b258a881f80e0f1c00a8}
+
+\item 
+\hypertarget{classmozilla_1_1_ref_counted_a799f1672c12deca68abb32b75c7f7793}{bool {\bfseries has\-One\-Ref} () const }\label{classmozilla_1_1_ref_counted_a799f1672c12deca68abb32b75c7f7793}
+
+\item 
+\hypertarget{classmozilla_1_1_ref_counted_a444e9df3b99af750fab076d1df5b47a1}{void {\bfseries Add\-Ref} ()}\label{classmozilla_1_1_ref_counted_a444e9df3b99af750fab076d1df5b47a1}
+
+\item 
+\hypertarget{classmozilla_1_1_ref_counted_a72161179fb2466d80a8d927937a657be}{void {\bfseries Release} ()}\label{classmozilla_1_1_ref_counted_a72161179fb2466d80a8d927937a657be}
+
+\item 
+\hypertarget{classmozilla_1_1_ref_counted_a623ce25a4229da8434f7bd0e174fae8a}{void {\bfseries ref} ()}\label{classmozilla_1_1_ref_counted_a623ce25a4229da8434f7bd0e174fae8a}
+
+\item 
+\hypertarget{classmozilla_1_1_ref_counted_a57886d761389c3bda9285152e5c4954f}{void {\bfseries deref} ()}\label{classmozilla_1_1_ref_counted_a57886d761389c3bda9285152e5c4954f}
+
+\item 
+\hypertarget{classmozilla_1_1_ref_counted_a13c4f80e6b52b258a881f80e0f1c00a8}{int {\bfseries ref\-Count} () const }\label{classmozilla_1_1_ref_counted_a13c4f80e6b52b258a881f80e0f1c00a8}
+
+\item 
+\hypertarget{classmozilla_1_1_ref_counted_a799f1672c12deca68abb32b75c7f7793}{bool {\bfseries has\-One\-Ref} () const }\label{classmozilla_1_1_ref_counted_a799f1672c12deca68abb32b75c7f7793}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmozilla_1_1_ref_counted_a8e460ca80d19e4ea35d5957bf064c592}{class {\bfseries Ref\-Ptr$<$ T $>$}}\label{classmozilla_1_1_ref_counted_a8e460ca80d19e4ea35d5957bf064c592}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$class mozilla\-::\-Ref\-Counted$<$ T $>$}
+
+Ref\-Counted$<$\-T$>$ is a sort of a \char`\"{}mixin\char`\"{} for a class T. \hyperlink{classmozilla_1_1_ref_counted}{Ref\-Counted} manages, well, refcounting for T, and because \hyperlink{classmozilla_1_1_ref_counted}{Ref\-Counted} is parameterized on T, Ref\-Counted$<$\-T$>$ can call T's destructor directly. This means T doesn't need to have a virtual dtor and so doesn't need a vtable.
+
+Ref\-Counted$<$\-T$>$ is created with refcount == 0. Newly-\/allocated Ref\-Counted$<$\-T$>$ must immediately be assigned to a \hyperlink{classmozilla_1_1_ref_ptr}{Ref\-Ptr} to make the refcount $>$ 0. It's an error to allocate and free a bare Ref\-Counted$<$\-T$>$, i.\-e. outside of the \hyperlink{classmozilla_1_1_ref_ptr}{Ref\-Ptr} machinery. Attempts to do so will abort D\-E\-B\-U\-G builds.
+
+Live Ref\-Counted$<$\-T$>$ have refcount $>$ 0. The lifetime (refcounts) of live Ref\-Counted$<$\-T$>$ are controlled by Ref\-Ptr$<$\-T$>$ and \hyperlink{classmozilla_1_1_ref_ptr}{Ref\-Ptr}$<$super/subclass of T$>$. Upon a transition from refcounted==1 to 0, the Ref\-Counted$<$\-T$>$ \char`\"{}dies\char`\"{} and is destroyed. The \char`\"{}destroyed\char`\"{} state is represented in D\-E\-B\-U\-G builds by refcount==-\/0xdead. This state distinguishes use-\/before-\/ref (refcount==0) from use-\/after-\/destroy (refcount==-\/0xdead). 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Spider\-Monkey/ios/include/mozilla/Ref\-Ptr.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Spider\-Monkey/osx/include/mozilla/Ref\-Ptr.\-h\end{DoxyCompactItemize}

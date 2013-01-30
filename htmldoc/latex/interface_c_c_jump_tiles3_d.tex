@@ -1,0 +1,113 @@
+\hypertarget{interface_c_c_jump_tiles3_d}{\section{C\-C\-Jump\-Tiles3\-D Class Reference}
+\label{interface_c_c_jump_tiles3_d}\index{C\-C\-Jump\-Tiles3\-D@{C\-C\-Jump\-Tiles3\-D}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Tiled\-Grid.\-h$>$}
+
+Inheritance diagram for C\-C\-Jump\-Tiles3\-D\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.000000cm]{interface_c_c_jump_tiles3_d}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_jump_tiles3_d_a046d43c6588416057d9b14f8a7c92520}{init\-With\-Jumps\-:amplitude\-:grid\-:duration\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_jump_tiles3_d_a562d9b96f80c87e6f7b283734077d9b6}{action\-With\-Jumps\-:amplitude\-:grid\-:duration\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_jump_tiles3_d_a292f3fabd658ee3af6cb779e7c81e3dc}{int {\bfseries jumps}}\label{interface_c_c_jump_tiles3_d_a292f3fabd658ee3af6cb779e7c81e3dc}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{interface_c_c_jump_tiles3_d_a39c2e40e343b918ccb674d9a1bdeee91}{amplitude}
+\item 
+float \hyperlink{interface_c_c_jump_tiles3_d_a7e4096e7bb7ac5f3d9aba8861c9adf72}{amplitude\-Rate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_jump_tiles3_d}{C\-C\-Jump\-Tiles3\-D} action. A sin function is executed to move the tiles across the Z axis 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_jump_tiles3_d_a562d9b96f80c87e6f7b283734077d9b6}{\index{C\-C\-Jump\-Tiles3\-D@{C\-C\-Jump\-Tiles3\-D}!action\-With\-Jumps\-:amplitude\-:grid\-:duration\-:@{action\-With\-Jumps\-:amplitude\-:grid\-:duration\-:}}
+\index{action\-With\-Jumps\-:amplitude\-:grid\-:duration\-:@{action\-With\-Jumps\-:amplitude\-:grid\-:duration\-:}!CCJumpTiles3D@{C\-C\-Jump\-Tiles3\-D}}
+\subsubsection[{action\-With\-Jumps\-:amplitude\-:grid\-:duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) action\-With\-Jumps\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{j}
+\item[{amplitude:(float)}]{amp}
+\item[{grid:({\bf cc\-Grid\-Size})}]{grid\-Size}
+\item[{duration:({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_jump_tiles3_d_a562d9b96f80c87e6f7b283734077d9b6}
+creates the action with the number of jumps, the sin amplitude, the grid size and the duration 
+
+Referenced by Jump\-Tiles3\-D\-Demo\-::action\-With\-Duration\-:.
+
+
+\begin{DoxyCode}
+                    :(int)j amplitude:(float)amp grid:(ccGridSize)gridSize 
+      duration:(ccTime)d
+{
+        return [[[self alloc] initWithJumps:j amplitude:amp grid:gridSize 
+      duration:d] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_jump_tiles3_d_a046d43c6588416057d9b14f8a7c92520}{\index{C\-C\-Jump\-Tiles3\-D@{C\-C\-Jump\-Tiles3\-D}!init\-With\-Jumps\-:amplitude\-:grid\-:duration\-:@{init\-With\-Jumps\-:amplitude\-:grid\-:duration\-:}}
+\index{init\-With\-Jumps\-:amplitude\-:grid\-:duration\-:@{init\-With\-Jumps\-:amplitude\-:grid\-:duration\-:}!CCJumpTiles3D@{C\-C\-Jump\-Tiles3\-D}}
+\subsubsection[{init\-With\-Jumps\-:amplitude\-:grid\-:duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Jumps\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{j}
+\item[{amplitude:(float)}]{amp}
+\item[{grid:({\bf cc\-Grid\-Size})}]{grid\-Size}
+\item[{duration:({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_jump_tiles3_d_a046d43c6588416057d9b14f8a7c92520}
+initializes the action with the number of jumps, the sin amplitude, the grid size and the duration 
+\begin{DoxyCode}
+                  :(int)j amplitude:(float)amp grid:(ccGridSize)gSize duration:
+      (ccTime)d
+{
+        if ( (self = [super initWithSize:gSize duration:d]) )
+        {
+                jumps = j;
+                amplitude = amp;
+                amplitudeRate = 1.0f;
+        }
+
+        return self;
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_jump_tiles3_d_a39c2e40e343b918ccb674d9a1bdeee91}{\index{C\-C\-Jump\-Tiles3\-D@{C\-C\-Jump\-Tiles3\-D}!amplitude@{amplitude}}
+\index{amplitude@{amplitude}!CCJumpTiles3D@{C\-C\-Jump\-Tiles3\-D}}
+\subsubsection[{amplitude}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf amplitude}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_jump_tiles3_d_a39c2e40e343b918ccb674d9a1bdeee91}
+amplitude of the sin 
+
+Referenced by init\-With\-Jumps\-:amplitude\-:grid\-:duration\-:.
+
+\hypertarget{interface_c_c_jump_tiles3_d_a7e4096e7bb7ac5f3d9aba8861c9adf72}{\index{C\-C\-Jump\-Tiles3\-D@{C\-C\-Jump\-Tiles3\-D}!amplitude\-Rate@{amplitude\-Rate}}
+\index{amplitude\-Rate@{amplitude\-Rate}!CCJumpTiles3D@{C\-C\-Jump\-Tiles3\-D}}
+\subsubsection[{amplitude\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf amplitude\-Rate}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_jump_tiles3_d_a7e4096e7bb7ac5f3d9aba8861c9adf72}
+amplitude rate 
+
+Referenced by init\-With\-Jumps\-:amplitude\-:grid\-:duration\-:.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Tiled\-Grid.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Tiled\-Grid.\-m\end{DoxyCompactItemize}

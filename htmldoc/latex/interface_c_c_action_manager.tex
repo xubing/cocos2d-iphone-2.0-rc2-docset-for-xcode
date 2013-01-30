@@ -1,0 +1,394 @@
+\hypertarget{interface_c_c_action_manager}{\section{C\-C\-Action\-Manager Class Reference}
+\label{interface_c_c_action_manager}\index{C\-C\-Action\-Manager@{C\-C\-Action\-Manager}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Manager.\-h$>$}
+
+Inheritance diagram for C\-C\-Action\-Manager\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_c_c_action_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_c_c_action_manager_acaa9759ef06e75a48d82e01b673f2eb4}{add\-Action\-:target\-:paused\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_action_manager_a221135cfd89d31e862e2a2b8cbd3b0ff}{remove\-All\-Actions}
+\item 
+(void) -\/ \hyperlink{interface_c_c_action_manager_af32c4dcefa469ecece2541d0f405b517}{remove\-All\-Actions\-From\-Target\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_action_manager_a6f10c668c171f7858b9202c1be97db40}{remove\-Action\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_action_manager_a98c01e9ff6ad3db964d13c0daec8eb8c}{remove\-Action\-By\-Tag\-:target\-:}
+\item 
+(\hyperlink{interface_c_c_action}{C\-C\-Action} $\ast$) -\/ \hyperlink{interface_c_c_action_manager_afb80f2cb77931d02b00f1c53a23b717a}{get\-Action\-By\-Tag\-:target\-:}
+\item 
+(N\-S\-U\-Integer) -\/ \hyperlink{interface_c_c_action_manager_a4961d5047b2a1a31d8d314d75382afae}{number\-Of\-Running\-Actions\-In\-Target\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_action_manager_aa98d2613d9f225a6d65cb4318022aeff}{pause\-Target\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_action_manager_aa08024e5bd9c8d606dce13acb03ede6b}{resume\-Target\-:}
+\item 
+(N\-S\-Set $\ast$) -\/ \hyperlink{interface_c_c_action_manager_ad4c0025b0fcd31689ab77c011d842296}{pause\-All\-Running\-Actions}
+\item 
+(void) -\/ \hyperlink{interface_c_c_action_manager_a7e0caab635e5824f8772c72728cb9d1e}{resume\-Targets\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_action_manager_aa59391b28d619b1cc9c8c8013839f776}{(\hyperlink{interface_c_c_action_manager}{C\-C\-Action\-Manager} $\ast$) + {\bfseries D\-E\-P\-R\-E\-C\-A\-T\-E\-D\-\_\-\-A\-T\-T\-R\-I\-B\-U\-T\-E}}\label{interface_c_c_action_manager_aa59391b28d619b1cc9c8c8013839f776}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_action_manager_a24bbe7c5c87bf4cfee6b8f48b5078d6b}{\hyperlink{struct__hash_element}{t\-Hash\-Element} $\ast$ {\bfseries targets}}\label{interface_c_c_action_manager_a24bbe7c5c87bf4cfee6b8f48b5078d6b}
+
+\item 
+\hypertarget{interface_c_c_action_manager_a863f13a4c8bae7d26a0524dd18a1cfd3}{\hyperlink{struct__hash_element}{t\-Hash\-Element} $\ast$ {\bfseries current\-Target}}\label{interface_c_c_action_manager_a863f13a4c8bae7d26a0524dd18a1cfd3}
+
+\item 
+\hypertarget{interface_c_c_action_manager_add665102da7e76098785b6078f3bade7}{B\-O\-O\-L {\bfseries current\-Target\-Salvaged}}\label{interface_c_c_action_manager_add665102da7e76098785b6078f3bade7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_action_manager}{C\-C\-Action\-Manager} the object that manages all the actions. Normally you won't need to use this A\-P\-I directly. 99\% of the cases you will use the \hyperlink{class_c_c_node}{C\-C\-Node} interface, which uses this object. But there are some cases where you might need to use this A\-P\-I directly\-: Examples\-:
+\begin{DoxyItemize}
+\item When you want to run an action where the target is different from a \hyperlink{class_c_c_node}{C\-C\-Node}.
+\item When you want to pause / resume the actions
+\end{DoxyItemize}
+
+\begin{DoxySince}{Since}
+v0.\-8 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_action_manager_acaa9759ef06e75a48d82e01b673f2eb4}{\index{C\-C\-Action\-Manager@{C\-C\-Action\-Manager}!add\-Action\-:target\-:paused\-:@{add\-Action\-:target\-:paused\-:}}
+\index{add\-Action\-:target\-:paused\-:@{add\-Action\-:target\-:paused\-:}!CCActionManager@{C\-C\-Action\-Manager}}
+\subsubsection[{add\-Action\-:target\-:paused\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\-Action\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Action}$\ast$)}]{action}
+\item[{target:(id)}]{target}
+\item[{paused:(B\-O\-O\-L)}]{paused}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_action_manager_acaa9759ef06e75a48d82e01b673f2eb4}
+Adds an action with a target. If the target is already present, then the action will be added to the existing target. If the target is not present, a new instance of this target will be created either paused or paused, and the action will be added to the newly created target. When the target is paused, the queued actions won't be 'ticked'. 
+
+Referenced by C\-C\-Node\-::run\-Action\-:, The\-Audio\-Code\-::test\-Eight\-:, and The\-Audio\-Code\-::test\-One\-:.
+
+
+\begin{DoxyCode}
+                 :(CCAction*)action target:(id)target paused:(BOOL)paused
+{
+        NSAssert( action != nil, @"Argument action must be non-nil");
+        NSAssert( target != nil, @"Argument target must be non-nil");
+
+        tHashElement *element = NULL;
+        HASH_FIND_INT(targets, &target, element);
+        if( ! element ) {
+                element = calloc( sizeof( *element ), 1 );
+                element->paused = paused;
+                element->target = [target retain];
+                HASH_ADD_INT(targets, target, element);
+//              CCLOG(@"cocos2d: ---- buckets: %d/%d - %@", targets->entries,
+       targets->size, element->target);
+
+        }
+
+        [self actionAllocWithHashElement:element];
+
+        NSAssert( !ccArrayContainsObject(element->actions, action), @"
+      runAction: Action already running");
+        ccArrayAppendObject(element->actions, action);
+
+        [action startWithTarget:target];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_action_manager_afb80f2cb77931d02b00f1c53a23b717a}{\index{C\-C\-Action\-Manager@{C\-C\-Action\-Manager}!get\-Action\-By\-Tag\-:target\-:@{get\-Action\-By\-Tag\-:target\-:}}
+\index{get\-Action\-By\-Tag\-:target\-:@{get\-Action\-By\-Tag\-:target\-:}!CCActionManager@{C\-C\-Action\-Manager}}
+\subsubsection[{get\-Action\-By\-Tag\-:target\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Action} $\ast$) get\-Action\-By\-Tag\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Integer)}]{tag}
+\item[{target:(id)}]{target}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_action_manager_afb80f2cb77931d02b00f1c53a23b717a}
+Gets an action given its tag an a target \begin{DoxyReturn}{Returns}
+the Action the with the given tag 
+\end{DoxyReturn}
+
+
+Referenced by C\-C\-Node\-::get\-Action\-By\-Tag\-:.
+
+
+\begin{DoxyCode}
+                           :(NSInteger)aTag target:(id)target
+{
+        NSAssert( aTag != kCCActionTagInvalid, @"Invalid tag");
+
+        tHashElement *element = NULL;
+        HASH_FIND_INT(targets, &target, element);
+
+        if( element ) {
+                if( element->actions != nil ) {
+                        NSUInteger limit = element->actions->num;
+                        for( NSUInteger i = 0; i < limit; i++) {
+                                CCAction *a = element->actions->arr[i];
+
+                                if( a.tag == aTag )
+                                        return a;
+                        }
+                }
+//              CCLOG(@"cocos2d: getActionByTag: Action not found");
+        }
+//      else {
+//              CCLOG(@"cocos2d: getActionByTag: Target not found");
+//      }
+        return nil;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_action_manager_a4961d5047b2a1a31d8d314d75382afae}{\index{C\-C\-Action\-Manager@{C\-C\-Action\-Manager}!number\-Of\-Running\-Actions\-In\-Target\-:@{number\-Of\-Running\-Actions\-In\-Target\-:}}
+\index{number\-Of\-Running\-Actions\-In\-Target\-:@{number\-Of\-Running\-Actions\-In\-Target\-:}!CCActionManager@{C\-C\-Action\-Manager}}
+\subsubsection[{number\-Of\-Running\-Actions\-In\-Target\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-U\-Integer) {\bf number\-Of\-Running\-Actions\-In\-Target\-:} 
+\begin{DoxyParamCaption}
+\item[{(id)}]{target}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_action_manager_a4961d5047b2a1a31d8d314d75382afae}
+Returns the numbers of actions that are running in a certain target Composable actions are counted as 1 action. Example\-: If you are running 1 Sequence of 7 actions, it will return 1. If you are running 7 Sequences of 2 actions, it will return 7. 
+
+Referenced by C\-C\-Node\-::number\-Of\-Running\-Actions.
+
+
+\begin{DoxyCode}
+                                            :(id) target
+{
+        tHashElement *element = NULL;
+        HASH_FIND_INT(targets, &target, element);
+        if( element )
+                return element->actions ? element->actions->num : 0;
+
+//      CCLOG(@"cocos2d: numberOfRunningActionsInTarget: Target not found");
+        return 0;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_action_manager_ad4c0025b0fcd31689ab77c011d842296}{\index{C\-C\-Action\-Manager@{C\-C\-Action\-Manager}!pause\-All\-Running\-Actions@{pause\-All\-Running\-Actions}}
+\index{pause\-All\-Running\-Actions@{pause\-All\-Running\-Actions}!CCActionManager@{C\-C\-Action\-Manager}}
+\subsubsection[{pause\-All\-Running\-Actions}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Set $\ast$) {\bf pause\-All\-Running\-Actions} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_action_manager_ad4c0025b0fcd31689ab77c011d842296}
+Pauses all running actions, returning a list of targets whose actions were paused. 
+\begin{DoxyCode}
+{
+    NSMutableSet* idsWithActions = [NSMutableSet setWithCapacity:50];
+    
+    for(tHashElement *element=targets; element != NULL; element=element->hh.
+      next) {
+        if( !element->paused ) {
+            element->paused = YES;
+            [idsWithActions addObject:element->target];
+        }
+    }
+    return idsWithActions;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_action_manager_aa98d2613d9f225a6d65cb4318022aeff}{\index{C\-C\-Action\-Manager@{C\-C\-Action\-Manager}!pause\-Target\-:@{pause\-Target\-:}}
+\index{pause\-Target\-:@{pause\-Target\-:}!CCActionManager@{C\-C\-Action\-Manager}}
+\subsubsection[{pause\-Target\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf pause\-Target\-:} 
+\begin{DoxyParamCaption}
+\item[{(id)}]{target}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_action_manager_aa98d2613d9f225a6d65cb4318022aeff}
+Pauses the target\-: all running actions and newly added actions will be paused. 
+
+Referenced by C\-C\-Node\-::pause\-Scheduler\-And\-Actions.
+
+
+\begin{DoxyCode}
+                   :(id)target
+{
+        tHashElement *element = NULL;
+        HASH_FIND_INT(targets, &target, element);
+        if( element )
+                element->paused = YES;
+//      else
+//              CCLOG(@"cocos2d: pauseAllActions: Target not found");
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_action_manager_a6f10c668c171f7858b9202c1be97db40}{\index{C\-C\-Action\-Manager@{C\-C\-Action\-Manager}!remove\-Action\-:@{remove\-Action\-:}}
+\index{remove\-Action\-:@{remove\-Action\-:}!CCActionManager@{C\-C\-Action\-Manager}}
+\subsubsection[{remove\-Action\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\-Action\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Action}$\ast$)}]{action}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_action_manager_a6f10c668c171f7858b9202c1be97db40}
+Removes an action given an action reference. 
+
+Referenced by C\-C\-Node\-::stop\-Action\-:.
+
+
+\begin{DoxyCode}
+                    : (CCAction*) action
+{
+        // explicit nil handling
+        if (action == nil)
+                return;
+
+        tHashElement *element = NULL;
+        id target = [action originalTarget];
+        HASH_FIND_INT(targets, &target, element );
+        if( element ) {
+                NSUInteger i = ccArrayGetIndexOfObject(element->actions, action
+      );
+                if( i != NSNotFound )
+                        [self removeActionAtIndex:i hashElement:element];
+        }
+//      else {
+//              CCLOG(@"cocos2d: removeAction: Target not found");
+//      }
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_action_manager_a98c01e9ff6ad3db964d13c0daec8eb8c}{\index{C\-C\-Action\-Manager@{C\-C\-Action\-Manager}!remove\-Action\-By\-Tag\-:target\-:@{remove\-Action\-By\-Tag\-:target\-:}}
+\index{remove\-Action\-By\-Tag\-:target\-:@{remove\-Action\-By\-Tag\-:target\-:}!CCActionManager@{C\-C\-Action\-Manager}}
+\subsubsection[{remove\-Action\-By\-Tag\-:target\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\-Action\-By\-Tag\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Integer)}]{tag}
+\item[{target:(id)}]{target}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_action_manager_a98c01e9ff6ad3db964d13c0daec8eb8c}
+Removes an action given its tag and the target 
+
+Referenced by C\-C\-Node\-::stop\-Action\-By\-Tag\-:.
+
+
+\begin{DoxyCode}
+                         :(NSInteger)aTag target:(id)target
+{
+        NSAssert( aTag != kCCActionTagInvalid, @"Invalid tag");
+        NSAssert( target != nil, @"Target should be ! nil");
+
+        tHashElement *element = NULL;
+        HASH_FIND_INT(targets, &target, element);
+
+        if( element ) {
+                NSUInteger limit = element->actions->num;
+                for( NSUInteger i = 0; i < limit; i++) {
+                        CCAction *a = element->actions->arr[i];
+
+                        if( a.tag == aTag && [a originalTarget]==target) {
+                                [self removeActionAtIndex:i hashElement:element
+      ];
+                                break;
+                        }
+                }
+
+        }
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_action_manager_a221135cfd89d31e862e2a2b8cbd3b0ff}{\index{C\-C\-Action\-Manager@{C\-C\-Action\-Manager}!remove\-All\-Actions@{remove\-All\-Actions}}
+\index{remove\-All\-Actions@{remove\-All\-Actions}!CCActionManager@{C\-C\-Action\-Manager}}
+\subsubsection[{remove\-All\-Actions}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\-All\-Actions} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_action_manager_a221135cfd89d31e862e2a2b8cbd3b0ff}
+Removes all actions from all the targets. 
+\begin{DoxyCode}
+{
+        for(tHashElement *element=targets; element != NULL; ) {
+                id target = element->target;
+                element = element->hh.next;
+                [self removeAllActionsFromTarget:target];
+        }
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_action_manager_af32c4dcefa469ecece2541d0f405b517}{\index{C\-C\-Action\-Manager@{C\-C\-Action\-Manager}!remove\-All\-Actions\-From\-Target\-:@{remove\-All\-Actions\-From\-Target\-:}}
+\index{remove\-All\-Actions\-From\-Target\-:@{remove\-All\-Actions\-From\-Target\-:}!CCActionManager@{C\-C\-Action\-Manager}}
+\subsubsection[{remove\-All\-Actions\-From\-Target\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\-All\-Actions\-From\-Target\-:} 
+\begin{DoxyParamCaption}
+\item[{(id)}]{target}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_action_manager_af32c4dcefa469ecece2541d0f405b517}
+Removes all actions from a certain target. All the actions that belongs to the target will be removed. 
+
+Referenced by remove\-All\-Actions, C\-C\-Node\-::stop\-All\-Actions, The\-Audio\-Code\-::test\-One\-:, and The\-Audio\-Code\-::test\-Three\-:.
+
+
+\begin{DoxyCode}
+                                  :(id)target
+{
+        // explicit nil handling
+        if( target == nil )
+                return;
+
+        tHashElement *element = NULL;
+        HASH_FIND_INT(targets, &target, element);
+        if( element ) {
+                if( ccArrayContainsObject(element->actions, element->
+      currentAction) && !element->currentActionSalvaged ) {
+                        [element->currentAction retain];
+                        element->currentActionSalvaged = YES;
+                }
+                ccArrayRemoveAllObjects(element->actions);
+                if( currentTarget == element )
+                        currentTargetSalvaged = YES;
+                else
+                        [self deleteHashElement:element];
+        }
+//      else {
+//              CCLOG(@"cocos2d: removeAllActionsFromTarget: Target not
+       found");
+//      }
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_action_manager_aa08024e5bd9c8d606dce13acb03ede6b}{\index{C\-C\-Action\-Manager@{C\-C\-Action\-Manager}!resume\-Target\-:@{resume\-Target\-:}}
+\index{resume\-Target\-:@{resume\-Target\-:}!CCActionManager@{C\-C\-Action\-Manager}}
+\subsubsection[{resume\-Target\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf resume\-Target\-:} 
+\begin{DoxyParamCaption}
+\item[{(id)}]{target}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_action_manager_aa08024e5bd9c8d606dce13acb03ede6b}
+Resumes the target. All queued actions will be resumed. 
+
+Referenced by C\-C\-Node\-::resume\-Scheduler\-And\-Actions, and resume\-Targets\-:.
+
+
+\begin{DoxyCode}
+                    :(id)target
+{
+        tHashElement *element = NULL;
+        HASH_FIND_INT(targets, &target, element);
+        if( element )
+                element->paused = NO;
+//      else
+//              CCLOG(@"cocos2d: resumeAllActions: Target not found");
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_action_manager_a7e0caab635e5824f8772c72728cb9d1e}{\index{C\-C\-Action\-Manager@{C\-C\-Action\-Manager}!resume\-Targets\-:@{resume\-Targets\-:}}
+\index{resume\-Targets\-:@{resume\-Targets\-:}!CCActionManager@{C\-C\-Action\-Manager}}
+\subsubsection[{resume\-Targets\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf resume\-Targets\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Set $\ast$)}]{targets\-To\-Resume}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_action_manager_a7e0caab635e5824f8772c72728cb9d1e}
+Resume a set of targets (convenience function to reverse a pause\-All\-Running\-Actions call) 
+\begin{DoxyCode}
+                     :(NSSet *)targetsToResume
+{
+    for(id target in targetsToResume) {
+        [self resumeTarget:target];
+    }
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Manager.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Manager.\-m\end{DoxyCompactItemize}

@@ -1,0 +1,197 @@
+\hypertarget{classb2_distance_joint}{\section{b2\-Distance\-Joint Class Reference}
+\label{classb2_distance_joint}\index{b2\-Distance\-Joint@{b2\-Distance\-Joint}}
+}
+
+
+{\ttfamily \#include $<$b2\-Distance\-Joint.\-h$>$}
+
+Inheritance diagram for b2\-Distance\-Joint\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classb2_distance_joint}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_distance_joint_a66c1cb4deff1166c1dab67df6047a89c}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{classb2_distance_joint_a66c1cb4deff1166c1dab67df6047a89c}{Get\-Anchor\-A} () const }\label{classb2_distance_joint_a66c1cb4deff1166c1dab67df6047a89c}
+
+\begin{DoxyCompactList}\small\item\em Get the anchor point on body\-A in world coordinates. \end{DoxyCompactList}\item 
+\hypertarget{classb2_distance_joint_afc58d85cf7cc5e23082cf469e1a1a067}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{classb2_distance_joint_afc58d85cf7cc5e23082cf469e1a1a067}{Get\-Anchor\-B} () const }\label{classb2_distance_joint_afc58d85cf7cc5e23082cf469e1a1a067}
+
+\begin{DoxyCompactList}\small\item\em Get the anchor point on body\-B in world coordinates. \end{DoxyCompactList}\item 
+\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{classb2_distance_joint_a99413cc114b2f4dc4ce7693c062ce226}{Get\-Reaction\-Force} (float32 inv\-\_\-dt) const 
+\item 
+float32 \hyperlink{classb2_distance_joint_a8d65840abe0b398399020524852788fd}{Get\-Reaction\-Torque} (float32 inv\-\_\-dt) const 
+\item 
+\hypertarget{classb2_distance_joint_a75a41c40f21e48a6f9e947dd1dc46db4}{const \hyperlink{structb2_vec2}{b2\-Vec2} \& \hyperlink{classb2_distance_joint_a75a41c40f21e48a6f9e947dd1dc46db4}{Get\-Local\-Anchor\-A} () const }\label{classb2_distance_joint_a75a41c40f21e48a6f9e947dd1dc46db4}
+
+\begin{DoxyCompactList}\small\item\em The local anchor point relative to body\-A's origin. \end{DoxyCompactList}\item 
+\hypertarget{classb2_distance_joint_a22e9572c8b3d1f0619b340738811c082}{const \hyperlink{structb2_vec2}{b2\-Vec2} \& \hyperlink{classb2_distance_joint_a22e9572c8b3d1f0619b340738811c082}{Get\-Local\-Anchor\-B} () const }\label{classb2_distance_joint_a22e9572c8b3d1f0619b340738811c082}
+
+\begin{DoxyCompactList}\small\item\em The local anchor point relative to body\-B's origin. \end{DoxyCompactList}\item 
+void \hyperlink{classb2_distance_joint_a950a0f187ef691208e50de40ed9223fe}{Set\-Length} (float32 length)
+\item 
+\hypertarget{classb2_distance_joint_abd3c4bef772c179e4e1d39056335ddf8}{float32 {\bfseries Get\-Length} () const }\label{classb2_distance_joint_abd3c4bef772c179e4e1d39056335ddf8}
+
+\item 
+\hypertarget{classb2_distance_joint_a1a12446f8926a1324edd481d9cd28c8a}{void \hyperlink{classb2_distance_joint_a1a12446f8926a1324edd481d9cd28c8a}{Set\-Frequency} (float32 hz)}\label{classb2_distance_joint_a1a12446f8926a1324edd481d9cd28c8a}
+
+\begin{DoxyCompactList}\small\item\em Set/get frequency in Hz. \end{DoxyCompactList}\item 
+\hypertarget{classb2_distance_joint_a7b50b34335055ac815d9a1a38ac318f0}{float32 {\bfseries Get\-Frequency} () const }\label{classb2_distance_joint_a7b50b34335055ac815d9a1a38ac318f0}
+
+\item 
+\hypertarget{classb2_distance_joint_a58da61301a1f1398a715107b76649923}{void \hyperlink{classb2_distance_joint_a58da61301a1f1398a715107b76649923}{Set\-Damping\-Ratio} (float32 ratio)}\label{classb2_distance_joint_a58da61301a1f1398a715107b76649923}
+
+\begin{DoxyCompactList}\small\item\em Set/get damping ratio. \end{DoxyCompactList}\item 
+\hypertarget{classb2_distance_joint_adb86c244721abd89abdd825bf17eb334}{float32 {\bfseries Get\-Damping\-Ratio} () const }\label{classb2_distance_joint_adb86c244721abd89abdd825bf17eb334}
+
+\item 
+\hypertarget{classb2_distance_joint_a3cebcc6ccce6f3c24432cd130fd53517}{void \hyperlink{classb2_distance_joint_a3cebcc6ccce6f3c24432cd130fd53517}{Dump} ()}\label{classb2_distance_joint_a3cebcc6ccce6f3c24432cd130fd53517}
+
+\begin{DoxyCompactList}\small\item\em Dump joint to dm\-Log. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_distance_joint_ad2bb6de92a47868629a7397e23256454}{{\bfseries b2\-Distance\-Joint} (const \hyperlink{structb2_distance_joint_def}{b2\-Distance\-Joint\-Def} $\ast$data)}\label{classb2_distance_joint_ad2bb6de92a47868629a7397e23256454}
+
+\item 
+\hypertarget{classb2_distance_joint_a2062ea8f1c89f8ccc3f053bbc7211b12}{void {\bfseries Init\-Velocity\-Constraints} (const \hyperlink{structb2_solver_data}{b2\-Solver\-Data} \&data)}\label{classb2_distance_joint_a2062ea8f1c89f8ccc3f053bbc7211b12}
+
+\item 
+\hypertarget{classb2_distance_joint_acbed5cd22ea4ccb44e4defe5f5aabe77}{void {\bfseries Solve\-Velocity\-Constraints} (const \hyperlink{structb2_solver_data}{b2\-Solver\-Data} \&data)}\label{classb2_distance_joint_acbed5cd22ea4ccb44e4defe5f5aabe77}
+
+\item 
+\hypertarget{classb2_distance_joint_a1e8b3a477067cf9273fb78fbec1a1556}{bool {\bfseries Solve\-Position\-Constraints} (const \hyperlink{structb2_solver_data}{b2\-Solver\-Data} \&data)}\label{classb2_distance_joint_a1e8b3a477067cf9273fb78fbec1a1556}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_distance_joint_a90327211c322fa19ea7b8c58d0c27ea8}{float32 {\bfseries m\-\_\-frequency\-Hz}}\label{classb2_distance_joint_a90327211c322fa19ea7b8c58d0c27ea8}
+
+\item 
+\hypertarget{classb2_distance_joint_a1339d37474c5e66cd4f66d42e9440307}{float32 {\bfseries m\-\_\-damping\-Ratio}}\label{classb2_distance_joint_a1339d37474c5e66cd4f66d42e9440307}
+
+\item 
+\hypertarget{classb2_distance_joint_a91f829c0a95e0d5f204a512a506e29f0}{float32 {\bfseries m\-\_\-bias}}\label{classb2_distance_joint_a91f829c0a95e0d5f204a512a506e29f0}
+
+\item 
+\hypertarget{classb2_distance_joint_a297938125dd60175ab07921d5ecc43a8}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Anchor\-A}}\label{classb2_distance_joint_a297938125dd60175ab07921d5ecc43a8}
+
+\item 
+\hypertarget{classb2_distance_joint_ad4c94a5b939ca4c3244bbab8544b880e}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Anchor\-B}}\label{classb2_distance_joint_ad4c94a5b939ca4c3244bbab8544b880e}
+
+\item 
+\hypertarget{classb2_distance_joint_a0ca755fb59c838c59d0ad162af8ab484}{float32 {\bfseries m\-\_\-gamma}}\label{classb2_distance_joint_a0ca755fb59c838c59d0ad162af8ab484}
+
+\item 
+\hypertarget{classb2_distance_joint_a75713391126d712f728d1a4f33b32a9f}{float32 {\bfseries m\-\_\-impulse}}\label{classb2_distance_joint_a75713391126d712f728d1a4f33b32a9f}
+
+\item 
+\hypertarget{classb2_distance_joint_a11b4805df34c380f53c3c346dd33da6c}{float32 {\bfseries m\-\_\-length}}\label{classb2_distance_joint_a11b4805df34c380f53c3c346dd33da6c}
+
+\item 
+\hypertarget{classb2_distance_joint_abcae00902974ed826f70aa119c2fd9de}{int32 {\bfseries m\-\_\-index\-A}}\label{classb2_distance_joint_abcae00902974ed826f70aa119c2fd9de}
+
+\item 
+\hypertarget{classb2_distance_joint_a465f7f1b609bcb37be732cde71b6d8c8}{int32 {\bfseries m\-\_\-index\-B}}\label{classb2_distance_joint_a465f7f1b609bcb37be732cde71b6d8c8}
+
+\item 
+\hypertarget{classb2_distance_joint_a78f45f86d3cf68701a0871e9de71fcd0}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-u}}\label{classb2_distance_joint_a78f45f86d3cf68701a0871e9de71fcd0}
+
+\item 
+\hypertarget{classb2_distance_joint_af046e84218d249f9234a16ecab95bac0}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-r\-A}}\label{classb2_distance_joint_af046e84218d249f9234a16ecab95bac0}
+
+\item 
+\hypertarget{classb2_distance_joint_a70eab22cb7abeb825744f5dc3befa63a}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-r\-B}}\label{classb2_distance_joint_a70eab22cb7abeb825744f5dc3befa63a}
+
+\item 
+\hypertarget{classb2_distance_joint_a5793083e9ef396cf7a89d84481fe1308}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Center\-A}}\label{classb2_distance_joint_a5793083e9ef396cf7a89d84481fe1308}
+
+\item 
+\hypertarget{classb2_distance_joint_a4fa600dec301992ad1f23aaf25d592a5}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Center\-B}}\label{classb2_distance_joint_a4fa600dec301992ad1f23aaf25d592a5}
+
+\item 
+\hypertarget{classb2_distance_joint_a2564d44d59b589591a4214390617cc4e}{float32 {\bfseries m\-\_\-inv\-Mass\-A}}\label{classb2_distance_joint_a2564d44d59b589591a4214390617cc4e}
+
+\item 
+\hypertarget{classb2_distance_joint_aeaea63222b01f95c71da5719feca4cbc}{float32 {\bfseries m\-\_\-inv\-Mass\-B}}\label{classb2_distance_joint_aeaea63222b01f95c71da5719feca4cbc}
+
+\item 
+\hypertarget{classb2_distance_joint_a9e9edc41d2bf14189a3eaeb19995b93a}{float32 {\bfseries m\-\_\-inv\-I\-A}}\label{classb2_distance_joint_a9e9edc41d2bf14189a3eaeb19995b93a}
+
+\item 
+\hypertarget{classb2_distance_joint_a250b46aa3fc17a363a6af9af5749ce1c}{float32 {\bfseries m\-\_\-inv\-I\-B}}\label{classb2_distance_joint_a250b46aa3fc17a363a6af9af5749ce1c}
+
+\item 
+\hypertarget{classb2_distance_joint_aee25a31b1096e91b55a29731cf67d99d}{float32 {\bfseries m\-\_\-mass}}\label{classb2_distance_joint_aee25a31b1096e91b55a29731cf67d99d}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_distance_joint_a54ade8ed3d794298108d7f4c4e4793fa}{class {\bfseries b2\-Joint}}\label{classb2_distance_joint_a54ade8ed3d794298108d7f4c4e4793fa}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A distance joint constrains two points on two bodies to remain at a fixed distance from each other. You can view this as a massless, rigid rod. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classb2_distance_joint_a99413cc114b2f4dc4ce7693c062ce226}{\index{b2\-Distance\-Joint@{b2\-Distance\-Joint}!Get\-Reaction\-Force@{Get\-Reaction\-Force}}
+\index{Get\-Reaction\-Force@{Get\-Reaction\-Force}!b2DistanceJoint@{b2\-Distance\-Joint}}
+\subsubsection[{Get\-Reaction\-Force}]{\setlength{\rightskip}{0pt plus 5cm}{\bf b2\-Vec2} {\bf b2\-Distance\-Joint\-::\-Get\-Reaction\-Force} (
+\begin{DoxyParamCaption}
+\item[{float32}]{inv\-\_\-dt}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classb2_distance_joint_a99413cc114b2f4dc4ce7693c062ce226}
+Get the reaction force given the inverse time step. Unit is N. 
+
+Implements \hyperlink{classb2_joint_a7e0eddefb9b69ad050b8ef6425838a74}{b2\-Joint}.
+
+
+\begin{DoxyCode}
+{
+        b2Vec2 F = (inv_dt * m_impulse) * m_u;
+        return F;
+}
+\end{DoxyCode}
+\hypertarget{classb2_distance_joint_a8d65840abe0b398399020524852788fd}{\index{b2\-Distance\-Joint@{b2\-Distance\-Joint}!Get\-Reaction\-Torque@{Get\-Reaction\-Torque}}
+\index{Get\-Reaction\-Torque@{Get\-Reaction\-Torque}!b2DistanceJoint@{b2\-Distance\-Joint}}
+\subsubsection[{Get\-Reaction\-Torque}]{\setlength{\rightskip}{0pt plus 5cm}float32 {\bf b2\-Distance\-Joint\-::\-Get\-Reaction\-Torque} (
+\begin{DoxyParamCaption}
+\item[{float32}]{inv\-\_\-dt}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classb2_distance_joint_a8d65840abe0b398399020524852788fd}
+Get the reaction torque given the inverse time step. Unit is N$\ast$m. This is always zero for a distance joint. 
+
+Implements \hyperlink{classb2_joint_ae355e441c2aa842777dc04e24f15ced0}{b2\-Joint}.
+
+
+\begin{DoxyCode}
+{
+        B2_NOT_USED(inv_dt);
+        return 0.0f;
+}
+\end{DoxyCode}
+\hypertarget{classb2_distance_joint_a950a0f187ef691208e50de40ed9223fe}{\index{b2\-Distance\-Joint@{b2\-Distance\-Joint}!Set\-Length@{Set\-Length}}
+\index{Set\-Length@{Set\-Length}!b2DistanceJoint@{b2\-Distance\-Joint}}
+\subsubsection[{Set\-Length}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf b2\-Distance\-Joint\-::\-Set\-Length} (
+\begin{DoxyParamCaption}
+\item[{float32}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classb2_distance_joint_a950a0f187ef691208e50de40ed9223fe}
+Set/get the natural length. Manipulating the length can lead to non-\/physical behavior when the frequency is zero. 
+\begin{DoxyCode}
+{
+        m_length = length;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Dynamics/\-Joints/b2\-Distance\-Joint.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Dynamics/\-Joints/b2\-Distance\-Joint.\-cpp\end{DoxyCompactItemize}

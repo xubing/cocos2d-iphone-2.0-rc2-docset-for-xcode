@@ -1,0 +1,133 @@
+\hypertarget{classb2_rope_joint}{\section{b2\-Rope\-Joint Class Reference}
+\label{classb2_rope_joint}\index{b2\-Rope\-Joint@{b2\-Rope\-Joint}}
+}
+
+
+{\ttfamily \#include $<$b2\-Rope\-Joint.\-h$>$}
+
+Inheritance diagram for b2\-Rope\-Joint\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classb2_rope_joint}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_rope_joint_a046c6f0bc73800716c669a2b955b3c05}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{classb2_rope_joint_a046c6f0bc73800716c669a2b955b3c05}{Get\-Anchor\-A} () const }\label{classb2_rope_joint_a046c6f0bc73800716c669a2b955b3c05}
+
+\begin{DoxyCompactList}\small\item\em Get the anchor point on body\-A in world coordinates. \end{DoxyCompactList}\item 
+\hypertarget{classb2_rope_joint_a14a8ef7c16e0d6d874cdfb986d0eb8f0}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{classb2_rope_joint_a14a8ef7c16e0d6d874cdfb986d0eb8f0}{Get\-Anchor\-B} () const }\label{classb2_rope_joint_a14a8ef7c16e0d6d874cdfb986d0eb8f0}
+
+\begin{DoxyCompactList}\small\item\em Get the anchor point on body\-B in world coordinates. \end{DoxyCompactList}\item 
+\hypertarget{classb2_rope_joint_afe0acc77e40b62133547897a6d01b7e6}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{classb2_rope_joint_afe0acc77e40b62133547897a6d01b7e6}{Get\-Reaction\-Force} (float32 inv\-\_\-dt) const }\label{classb2_rope_joint_afe0acc77e40b62133547897a6d01b7e6}
+
+\begin{DoxyCompactList}\small\item\em Get the reaction force on body\-B at the joint anchor in Newtons. \end{DoxyCompactList}\item 
+\hypertarget{classb2_rope_joint_abb7baf596f13ff5a76ff657ad6d3232c}{float32 \hyperlink{classb2_rope_joint_abb7baf596f13ff5a76ff657ad6d3232c}{Get\-Reaction\-Torque} (float32 inv\-\_\-dt) const }\label{classb2_rope_joint_abb7baf596f13ff5a76ff657ad6d3232c}
+
+\begin{DoxyCompactList}\small\item\em Get the reaction torque on body\-B in N$\ast$m. \end{DoxyCompactList}\item 
+\hypertarget{classb2_rope_joint_aa423bbe186d46bff0b50ede8338851d4}{const \hyperlink{structb2_vec2}{b2\-Vec2} \& \hyperlink{classb2_rope_joint_aa423bbe186d46bff0b50ede8338851d4}{Get\-Local\-Anchor\-A} () const }\label{classb2_rope_joint_aa423bbe186d46bff0b50ede8338851d4}
+
+\begin{DoxyCompactList}\small\item\em The local anchor point relative to body\-A's origin. \end{DoxyCompactList}\item 
+\hypertarget{classb2_rope_joint_a511b297fbebfbecdcdce68e1cffa272c}{const \hyperlink{structb2_vec2}{b2\-Vec2} \& \hyperlink{classb2_rope_joint_a511b297fbebfbecdcdce68e1cffa272c}{Get\-Local\-Anchor\-B} () const }\label{classb2_rope_joint_a511b297fbebfbecdcdce68e1cffa272c}
+
+\begin{DoxyCompactList}\small\item\em The local anchor point relative to body\-B's origin. \end{DoxyCompactList}\item 
+\hypertarget{classb2_rope_joint_a92cea201d21acd2f2a7cc9b00e165848}{void \hyperlink{classb2_rope_joint_a92cea201d21acd2f2a7cc9b00e165848}{Set\-Max\-Length} (float32 length)}\label{classb2_rope_joint_a92cea201d21acd2f2a7cc9b00e165848}
+
+\begin{DoxyCompactList}\small\item\em Set/\-Get the maximum length of the rope. \end{DoxyCompactList}\item 
+\hypertarget{classb2_rope_joint_a2bee2d2f47a27ab900438ec58d86f9ac}{float32 {\bfseries Get\-Max\-Length} () const }\label{classb2_rope_joint_a2bee2d2f47a27ab900438ec58d86f9ac}
+
+\item 
+\hypertarget{classb2_rope_joint_af3653f62379529a43a99e6a8e84f5d43}{b2\-Limit\-State {\bfseries Get\-Limit\-State} () const }\label{classb2_rope_joint_af3653f62379529a43a99e6a8e84f5d43}
+
+\item 
+\hypertarget{classb2_rope_joint_a4612dca9851a66701893a48d896dbd14}{void \hyperlink{classb2_rope_joint_a4612dca9851a66701893a48d896dbd14}{Dump} ()}\label{classb2_rope_joint_a4612dca9851a66701893a48d896dbd14}
+
+\begin{DoxyCompactList}\small\item\em Dump joint to dm\-Log. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_rope_joint_a3f69f238616d8dc622d9448f81e14e53}{{\bfseries b2\-Rope\-Joint} (const \hyperlink{structb2_rope_joint_def}{b2\-Rope\-Joint\-Def} $\ast$data)}\label{classb2_rope_joint_a3f69f238616d8dc622d9448f81e14e53}
+
+\item 
+\hypertarget{classb2_rope_joint_a8146dad7f839f1285ab596661c3a84fa}{void {\bfseries Init\-Velocity\-Constraints} (const \hyperlink{structb2_solver_data}{b2\-Solver\-Data} \&data)}\label{classb2_rope_joint_a8146dad7f839f1285ab596661c3a84fa}
+
+\item 
+\hypertarget{classb2_rope_joint_ab3e9a866833f5ad079473ece272d3c88}{void {\bfseries Solve\-Velocity\-Constraints} (const \hyperlink{structb2_solver_data}{b2\-Solver\-Data} \&data)}\label{classb2_rope_joint_ab3e9a866833f5ad079473ece272d3c88}
+
+\item 
+\hypertarget{classb2_rope_joint_a50794029b91cd469b0598fe25a77948f}{bool {\bfseries Solve\-Position\-Constraints} (const \hyperlink{structb2_solver_data}{b2\-Solver\-Data} \&data)}\label{classb2_rope_joint_a50794029b91cd469b0598fe25a77948f}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_rope_joint_a43640240dc39c912ea1cc6e1ae9fa614}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Anchor\-A}}\label{classb2_rope_joint_a43640240dc39c912ea1cc6e1ae9fa614}
+
+\item 
+\hypertarget{classb2_rope_joint_a57dfab74bae88c2c3284ed640825c959}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Anchor\-B}}\label{classb2_rope_joint_a57dfab74bae88c2c3284ed640825c959}
+
+\item 
+\hypertarget{classb2_rope_joint_ace7528ca1183f34cfc79e47f46b29130}{float32 {\bfseries m\-\_\-max\-Length}}\label{classb2_rope_joint_ace7528ca1183f34cfc79e47f46b29130}
+
+\item 
+\hypertarget{classb2_rope_joint_a2cee8c35d881b0ae66d28d13c6d8d66a}{float32 {\bfseries m\-\_\-length}}\label{classb2_rope_joint_a2cee8c35d881b0ae66d28d13c6d8d66a}
+
+\item 
+\hypertarget{classb2_rope_joint_ac19ae74b5f3c104bc763e99b3986afd6}{float32 {\bfseries m\-\_\-impulse}}\label{classb2_rope_joint_ac19ae74b5f3c104bc763e99b3986afd6}
+
+\item 
+\hypertarget{classb2_rope_joint_a34875f5852d011dab695613a23adca08}{int32 {\bfseries m\-\_\-index\-A}}\label{classb2_rope_joint_a34875f5852d011dab695613a23adca08}
+
+\item 
+\hypertarget{classb2_rope_joint_aa67100c069a1a273314dfa55c9063fc7}{int32 {\bfseries m\-\_\-index\-B}}\label{classb2_rope_joint_aa67100c069a1a273314dfa55c9063fc7}
+
+\item 
+\hypertarget{classb2_rope_joint_ae95185c5ad4c119a9893294491ba1609}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-u}}\label{classb2_rope_joint_ae95185c5ad4c119a9893294491ba1609}
+
+\item 
+\hypertarget{classb2_rope_joint_af8ae48af2656b1e605a099b8f4aa82b0}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-r\-A}}\label{classb2_rope_joint_af8ae48af2656b1e605a099b8f4aa82b0}
+
+\item 
+\hypertarget{classb2_rope_joint_ae577e49beef03d266ff4c54e852b4f41}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-r\-B}}\label{classb2_rope_joint_ae577e49beef03d266ff4c54e852b4f41}
+
+\item 
+\hypertarget{classb2_rope_joint_a15ff1472deb6405c9886a40ee99efcef}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Center\-A}}\label{classb2_rope_joint_a15ff1472deb6405c9886a40ee99efcef}
+
+\item 
+\hypertarget{classb2_rope_joint_a2b3b1ac9ae9e3e68b2550809ec178877}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Center\-B}}\label{classb2_rope_joint_a2b3b1ac9ae9e3e68b2550809ec178877}
+
+\item 
+\hypertarget{classb2_rope_joint_a690e4fe5ab7a279accac3b137d5f5c76}{float32 {\bfseries m\-\_\-inv\-Mass\-A}}\label{classb2_rope_joint_a690e4fe5ab7a279accac3b137d5f5c76}
+
+\item 
+\hypertarget{classb2_rope_joint_a9709179725abed80d4957df82bc24512}{float32 {\bfseries m\-\_\-inv\-Mass\-B}}\label{classb2_rope_joint_a9709179725abed80d4957df82bc24512}
+
+\item 
+\hypertarget{classb2_rope_joint_a1917a65b89668c433d06071970a6875a}{float32 {\bfseries m\-\_\-inv\-I\-A}}\label{classb2_rope_joint_a1917a65b89668c433d06071970a6875a}
+
+\item 
+\hypertarget{classb2_rope_joint_a1ce440194cec6e275193d7224ce1e448}{float32 {\bfseries m\-\_\-inv\-I\-B}}\label{classb2_rope_joint_a1ce440194cec6e275193d7224ce1e448}
+
+\item 
+\hypertarget{classb2_rope_joint_a1f355a976b177b75a8fd47190194d5c1}{float32 {\bfseries m\-\_\-mass}}\label{classb2_rope_joint_a1f355a976b177b75a8fd47190194d5c1}
+
+\item 
+\hypertarget{classb2_rope_joint_ac73c9451360c80c8a98376b922f4bed4}{b2\-Limit\-State {\bfseries m\-\_\-state}}\label{classb2_rope_joint_ac73c9451360c80c8a98376b922f4bed4}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_rope_joint_a54ade8ed3d794298108d7f4c4e4793fa}{class {\bfseries b2\-Joint}}\label{classb2_rope_joint_a54ade8ed3d794298108d7f4c4e4793fa}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A rope joint enforces a maximum distance between two points on two bodies. It has no other effect. Warning\-: if you attempt to change the maximum length during the simulation you will get some non-\/physical behavior. A model that would allow you to dynamically modify the length would have some sponginess, so I chose not to implement it that way. See \hyperlink{classb2_distance_joint}{b2\-Distance\-Joint} if you want to dynamically control length. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Dynamics/\-Joints/b2\-Rope\-Joint.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Dynamics/\-Joints/b2\-Rope\-Joint.\-cpp\end{DoxyCompactItemize}

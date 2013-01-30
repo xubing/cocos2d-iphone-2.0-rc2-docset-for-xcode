@@ -1,0 +1,40 @@
+\hypertarget{group__cp_vect}{\section{cp\-Vect}
+\label{group__cp_vect}\index{cp\-Vect@{cp\-Vect}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__cp_vect_gad894c8a975c4afb57f1ca45907417754}{\hyperlink{structcp_vect}{cp\-Vect} \hyperlink{group__cp_vect_gad894c8a975c4afb57f1ca45907417754}{cpvslerp} (const \hyperlink{structcp_vect}{cp\-Vect} v1, const \hyperlink{structcp_vect}{cp\-Vect} v2, const \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} t)}\label{group__cp_vect_gad894c8a975c4afb57f1ca45907417754}
+
+\begin{DoxyCompactList}\small\item\em Spherical linearly interpolate between v1 and v2. \end{DoxyCompactList}\item 
+\hypertarget{group__cp_vect_ga03d3b2cc67829761ed03a33d203000d9}{\hyperlink{structcp_vect}{cp\-Vect} \hyperlink{group__cp_vect_ga03d3b2cc67829761ed03a33d203000d9}{cpvslerpconst} (const \hyperlink{structcp_vect}{cp\-Vect} v1, const \hyperlink{structcp_vect}{cp\-Vect} v2, const \hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} a)}\label{group__cp_vect_ga03d3b2cc67829761ed03a33d203000d9}
+
+\begin{DoxyCompactList}\small\item\em Spherical linearly interpolate between v1 towards v2 by no more than angle a radians. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{group__cp_vect_ga37480a0e70b8ae9e1ea74e6483555305}{cpvstr} (const \hyperlink{structcp_vect}{cp\-Vect} v)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Chipmunk's 2\-D vector type along with a handy 2\-D vector math lib.
+
+Chipmunk's 2\-D vector type. 
+
+\subsection{Function Documentation}
+\hypertarget{group__cp_vect_ga37480a0e70b8ae9e1ea74e6483555305}{\index{cp\-Vect@{cp\-Vect}!cpvstr@{cpvstr}}
+\index{cpvstr@{cpvstr}!cpVect@{cp\-Vect}}
+\subsubsection[{cpvstr}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf cpvstr} (
+\begin{DoxyParamCaption}
+\item[{const {\bf cp\-Vect}}]{v}
+\end{DoxyParamCaption}
+)}}\label{group__cp_vect_ga37480a0e70b8ae9e1ea74e6483555305}
+Returns a string representation of v. Intended mostly for debugging purposes and not production use. \begin{DoxyAttention}{Attention}
+The string points to a static local and is reset every time the function is called. If you want to print more than one vector you will have to split up your printing onto separate lines. 
+\end{DoxyAttention}
+
+\begin{DoxyCode}
+{
+        static char str[256];
+        sprintf(str, "(% .3f, % .3f)", v.x, v.y);
+        return str;
+}
+\end{DoxyCode}

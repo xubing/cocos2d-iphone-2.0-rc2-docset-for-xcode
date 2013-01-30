@@ -1,0 +1,98 @@
+\hypertarget{interface_c_c_call_func_n_d}{\section{C\-C\-Call\-Func\-N\-D Class Reference}
+\label{interface_c_c_call_func_n_d}\index{C\-C\-Call\-Func\-N\-D@{C\-C\-Call\-Func\-N\-D}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Instant.\-h$>$}
+
+Inheritance diagram for C\-C\-Call\-Func\-N\-D\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{interface_c_c_call_func_n_d}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_call_func_n_d_a5168ae06674520c5769d24ee8618e793}{init\-With\-Target\-:selector\-:data\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_call_func_n_d_a7a11c02c792394d63b4a5c42c1cf6cdb}{action\-With\-Target\-:selector\-:data\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_call_func_n_d_a86828a279502fd98c7aacdbd72c1863f}{void $\ast$ {\bfseries data\-\_\-}}\label{interface_c_c_call_func_n_d_a86828a279502fd98c7aacdbd72c1863f}
+
+\item 
+\hypertarget{interface_c_c_call_func_n_d_aa41ee99280e2cbaa9540b4aa823634bd}{C\-C\-\_\-\-C\-A\-L\-L\-B\-A\-C\-K\-\_\-\-N\-D {\bfseries callback\-Method\-\_\-}}\label{interface_c_c_call_func_n_d_aa41ee99280e2cbaa9540b4aa823634bd}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+C\-C\-\_\-\-C\-A\-L\-L\-B\-A\-C\-K\-\_\-\-N\-D \hyperlink{interface_c_c_call_func_n_d_aac7c0913e85a9a4046d36e960bee2ec2}{callback\-Method}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Calls a 'callback' with the node as the first argument and the 2nd argument is data. N\-D means\-: \hyperlink{struct_node}{Node} and Data. Data is void $\ast$, so it could be anything. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_call_func_n_d_a7a11c02c792394d63b4a5c42c1cf6cdb}{\index{C\-C\-Call\-Func\-N\-D@{C\-C\-Call\-Func\-N\-D}!action\-With\-Target\-:selector\-:data\-:@{action\-With\-Target\-:selector\-:data\-:}}
+\index{action\-With\-Target\-:selector\-:data\-:@{action\-With\-Target\-:selector\-:data\-:}!CCCallFuncND@{C\-C\-Call\-Func\-N\-D}}
+\subsubsection[{action\-With\-Target\-:selector\-:data\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) action\-With\-Target\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{t}
+\item[{selector:(S\-E\-L)}]{s}
+\item[{data:(void$\ast$)}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_call_func_n_d_a7a11c02c792394d63b4a5c42c1cf6cdb}
+creates the action with the callback and the data to pass as an argument 
+\begin{DoxyCode}
+                      :(id)t selector:(SEL)s data:(void*)d
+{
+        return [[[self alloc] initWithTarget:t selector:s data:d] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_call_func_n_d_a5168ae06674520c5769d24ee8618e793}{\index{C\-C\-Call\-Func\-N\-D@{C\-C\-Call\-Func\-N\-D}!init\-With\-Target\-:selector\-:data\-:@{init\-With\-Target\-:selector\-:data\-:}}
+\index{init\-With\-Target\-:selector\-:data\-:@{init\-With\-Target\-:selector\-:data\-:}!CCCallFuncND@{C\-C\-Call\-Func\-N\-D}}
+\subsubsection[{init\-With\-Target\-:selector\-:data\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Target\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{t}
+\item[{selector:(S\-E\-L)}]{s}
+\item[{data:(void$\ast$)}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_call_func_n_d_a5168ae06674520c5769d24ee8618e793}
+initializes the action with the callback and the data to pass as an argument 
+\begin{DoxyCode}
+                    :(id)t selector:(SEL)s data:(void*)d
+{
+        if( (self=[super initWithTarget:t selector:s]) ) {
+                data_ = d;
+
+#if COCOS2D_DEBUG
+                NSMethodSignature * sig = [t methodSignatureForSelector:s]; //
+       added
+                NSAssert(sig !=0 , @"Signature not found for selector - does it
+       have the following form? -(void)name:(id)sender data:(void*)data");
+#endif
+                callbackMethod_ = (CC_CALLBACK_ND) [t methodForSelector:s];
+        }
+        return self;
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_call_func_n_d_aac7c0913e85a9a4046d36e960bee2ec2}{\index{C\-C\-Call\-Func\-N\-D@{C\-C\-Call\-Func\-N\-D}!callback\-Method@{callback\-Method}}
+\index{callback\-Method@{callback\-Method}!CCCallFuncND@{C\-C\-Call\-Func\-N\-D}}
+\subsubsection[{callback\-Method}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-C\-\_\-\-C\-A\-L\-L\-B\-A\-C\-K\-\_\-\-N\-D) {\bf callback\-Method}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_call_func_n_d_aac7c0913e85a9a4046d36e960bee2ec2}
+Invocation object that has the target\-::selector and the parameters 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Instant.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Instant.\-m\end{DoxyCompactItemize}

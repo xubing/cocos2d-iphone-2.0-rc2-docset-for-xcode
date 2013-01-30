@@ -1,0 +1,41 @@
+\hypertarget{interface_zoom_flip_x_right_over}{\section{Zoom\-Flip\-X\-Right\-Over Class Reference}
+\label{interface_zoom_flip_x_right_over}\index{Zoom\-Flip\-X\-Right\-Over@{Zoom\-Flip\-X\-Right\-Over}}
+}
+Inheritance diagram for Zoom\-Flip\-X\-Right\-Over\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{interface_zoom_flip_x_right_over}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_zoom_flip_x_right_over_af72b4cd03f570b0c9dfeb292a3b48ba3}{transition\-With\-Duration\-:scene\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_zoom_flip_x_right_over_af72b4cd03f570b0c9dfeb292a3b48ba3}{\index{Zoom\-Flip\-X\-Right\-Over@{Zoom\-Flip\-X\-Right\-Over}!transition\-With\-Duration\-:scene\-:@{transition\-With\-Duration\-:scene\-:}}
+\index{transition\-With\-Duration\-:scene\-:@{transition\-With\-Duration\-:scene\-:}!ZoomFlipXRightOver@{Zoom\-Flip\-X\-Right\-Over}}
+\subsubsection[{transition\-With\-Duration\-:scene\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) transition\-With\-Duration\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{t}
+\item[{scene:({\bf C\-C\-Scene}$\ast$)}]{s}
+\end{DoxyParamCaption}
+}}\label{interface_zoom_flip_x_right_over_af72b4cd03f570b0c9dfeb292a3b48ba3}
+creates a base transition with duration and incoming scene 
+
+Reimplemented from \hyperlink{interface_c_c_transition_scene_af49d7862a7560b4b4954dda1363cfa28}{C\-C\-Transition\-Scene}.
+
+
+\begin{DoxyCode}
+                            :(ccTime) t scene:(CCScene*)s {
+        return [self transitionWithDuration:t scene:s orientation:
+      kCCTransitionOrientationRightOver];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/tests/Transitions\-Test.\-m\end{DoxyCompactItemize}

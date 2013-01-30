@@ -1,0 +1,808 @@
+\hypertarget{interface_c_c_texture_atlas}{\section{C\-C\-Texture\-Atlas Class Reference}
+\label{interface_c_c_texture_atlas}\index{C\-C\-Texture\-Atlas@{C\-C\-Texture\-Atlas}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Texture\-Atlas.\-h$>$}
+
+Inheritance diagram for C\-C\-Texture\-Atlas\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_c_c_texture_atlas}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_texture_atlas_a79eb5e092a5fd60b4ae14443f0e0accd}{init\-With\-File\-:capacity\-:}
+\item 
+(id) -\/ \hyperlink{interface_c_c_texture_atlas_a116112403fa866d6f835a24548c4aeb3}{init\-With\-Texture\-:capacity\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_texture_atlas_a61958a6c7e41aea2343bb15b0a496e62}{update\-Quad\-:at\-Index\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_texture_atlas_a8839e1d637bba0bf16aee4610f2eb875}{insert\-Quad\-:at\-Index\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_texture_atlas_a307868eb479a76dea8d07c8b3fb61ef4}{insert\-Quads\-:at\-Index\-:amount\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_texture_atlas_abe58cba5d570d9b1d9d96fe018d986c8}{insert\-Quad\-From\-Index\-:at\-Index\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_texture_atlas_adc1f3102fa3195facfc0ce79c56526ee}{remove\-Quad\-At\-Index\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_texture_atlas_a9a44172cc26bd01f0d89cec31fd4125a}{remove\-Quads\-At\-Index\-:amount\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_texture_atlas_ab070b61f1f06b67fbc544d8eefcea9c3}{remove\-All\-Quads}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_c_c_texture_atlas_a24ebdf2f5b5f1e6f0e69e7042209d7e1}{resize\-Capacity\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_texture_atlas_a356fd456edd24e6b6f7fc1111e1e8ed8}{increase\-Total\-Quads\-With\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_texture_atlas_a1a8c0bde07e4185b2333dc8b253d9a6a}{move\-Quads\-From\-Index\-:amount\-:at\-Index\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_texture_atlas_a673bcc26369870c2739da0d359ef96aa}{move\-Quads\-From\-Index\-:to\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_texture_atlas_aed3b44b698beb1497602163694712a67}{fill\-With\-Empty\-Quads\-From\-Index\-:amount\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_texture_atlas_a0430a5419364da046889f5ee27a27776}{draw\-Number\-Of\-Quads\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_texture_atlas_acfd516770d517d8f674fe01b66423ec2}{draw\-Number\-Of\-Quads\-:from\-Index\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_texture_atlas_ae593ef56a628f6148223aa56fe94cdc7}{draw\-Quads}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_texture_atlas_a7f32e0fe47d137f967b8a2998427f865}{texture\-Atlas\-With\-File\-:capacity\-:}
+\item 
+(id) + \hyperlink{interface_c_c_texture_atlas_a6759f15bef0c97282c8ce561c13aa800}{texture\-Atlas\-With\-Texture\-:capacity\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_texture_atlas_aed094c04018f9b1cced889affc4d1478}{N\-S\-U\-Integer {\bfseries total\-Quads\-\_\-}}\label{interface_c_c_texture_atlas_aed094c04018f9b1cced889affc4d1478}
+
+\item 
+\hypertarget{interface_c_c_texture_atlas_a4610c1f17f8398d3b76c8889cf230dee}{N\-S\-U\-Integer {\bfseries capacity\-\_\-}}\label{interface_c_c_texture_atlas_a4610c1f17f8398d3b76c8889cf230dee}
+
+\item 
+\hypertarget{interface_c_c_texture_atlas_a731c69a75c44f0884a6b7e4acc881cd7}{\hyperlink{cc_types_8h_ab2642984bbb3d2fa1fe4fedb5657a065}{cc\-V3\-F\-\_\-\-C4\-B\-\_\-\-T2\-F\-\_\-\-Quad} $\ast$ {\bfseries quads\-\_\-}}\label{interface_c_c_texture_atlas_a731c69a75c44f0884a6b7e4acc881cd7}
+
+\item 
+\hypertarget{interface_c_c_texture_atlas_a43693ed3be60763256293d152a880d5f}{G\-Lushort $\ast$ {\bfseries indices\-\_\-}}\label{interface_c_c_texture_atlas_a43693ed3be60763256293d152a880d5f}
+
+\item 
+\hypertarget{interface_c_c_texture_atlas_a29f4d6fa8d0cabce6c2703f4e978fe28}{\hyperlink{class_c_c_texture2_d}{C\-C\-Texture2\-D} $\ast$ {\bfseries texture\-\_\-}}\label{interface_c_c_texture_atlas_a29f4d6fa8d0cabce6c2703f4e978fe28}
+
+\item 
+\hypertarget{interface_c_c_texture_atlas_aef52262a24b08df85b84dcbdcf267eb2}{G\-Luint {\bfseries buffers\-V\-B\-O\-\_\-} \mbox{[}2\mbox{]}}\label{interface_c_c_texture_atlas_aef52262a24b08df85b84dcbdcf267eb2}
+
+\item 
+\hypertarget{interface_c_c_texture_atlas_a3f7d06787f400072f38f7bad476c9111}{B\-O\-O\-L {\bfseries dirty\-\_\-}}\label{interface_c_c_texture_atlas_a3f7d06787f400072f38f7bad476c9111}
+
+\item 
+\hypertarget{interface_c_c_texture_atlas_acc9d81be8422e1a3eb7d05c709b87aa5}{G\-Luint {\bfseries V\-A\-Oname\-\_\-}}\label{interface_c_c_texture_atlas_acc9d81be8422e1a3eb7d05c709b87aa5}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\-S\-U\-Integer \hyperlink{interface_c_c_texture_atlas_a1fcff61e63514529e3d1c02b43503d9f}{total\-Quads}
+\item 
+N\-S\-U\-Integer \hyperlink{interface_c_c_texture_atlas_a1dcb01c13da3675d0526a4c40ee9b950}{capacity}
+\item 
+\hyperlink{class_c_c_texture2_d}{C\-C\-Texture2\-D} $\ast$ \hyperlink{interface_c_c_texture_atlas_a2d6d32bd902b92d0d490bf334b44a043}{texture}
+\item 
+\hyperlink{cc_types_8h_ab2642984bbb3d2fa1fe4fedb5657a065}{cc\-V3\-F\-\_\-\-C4\-B\-\_\-\-T2\-F\-\_\-\-Quad} $\ast$ \hyperlink{interface_c_c_texture_atlas_a7709f63e3948650e00aa884aaa445536}{quads}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class that implements a Texture Atlas. Supported features\-: The atlas file can be a P\-V\-R\-T\-C, P\-N\-G or any other format supported by Texture2\-D Quads can be updated in runtime Quads can be added in runtime Quads can be removed in runtime Quads can be re-\/ordered in runtime The Texture\-Atlas capacity can be increased or decreased in runtime Open\-G\-L component\-: V3\-F, C4\-B, T2\-F. The quads are rendered using an Open\-G\-L E\-S V\-B\-O. To render the quads using an interleaved vertex array list, you should modify the \hyperlink{cc_config_8h}{cc\-Config.\-h} file 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_texture_atlas_a0430a5419364da046889f5ee27a27776}{\index{C\-C\-Texture\-Atlas@{C\-C\-Texture\-Atlas}!draw\-Number\-Of\-Quads\-:@{draw\-Number\-Of\-Quads\-:}}
+\index{draw\-Number\-Of\-Quads\-:@{draw\-Number\-Of\-Quads\-:}!CCTextureAtlas@{C\-C\-Texture\-Atlas}}
+\subsubsection[{draw\-Number\-Of\-Quads\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf draw\-Number\-Of\-Quads\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-U\-Integer)}]{n}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_atlas_a0430a5419364da046889f5ee27a27776}
+draws n quads n can't be greater than the capacity of the Atlas 
+\begin{DoxyCode}
+                         : (NSUInteger) n
+{
+        [self drawNumberOfQuads:n fromIndex:0];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_texture_atlas_acfd516770d517d8f674fe01b66423ec2}{\index{C\-C\-Texture\-Atlas@{C\-C\-Texture\-Atlas}!draw\-Number\-Of\-Quads\-:from\-Index\-:@{draw\-Number\-Of\-Quads\-:from\-Index\-:}}
+\index{draw\-Number\-Of\-Quads\-:from\-Index\-:@{draw\-Number\-Of\-Quads\-:from\-Index\-:}!CCTextureAtlas@{C\-C\-Texture\-Atlas}}
+\subsubsection[{draw\-Number\-Of\-Quads\-:from\-Index\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf draw\-Number\-Of\-Quads\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-U\-Integer)}]{n}
+\item[{fromIndex:(N\-S\-U\-Integer)}]{start}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_atlas_acfd516770d517d8f674fe01b66423ec2}
+draws n quads from an index (offset). n + start can't be greater than the capacity of the atlas
+
+\begin{DoxySince}{Since}
+v1.\-0 
+\end{DoxySince}
+
+
+Referenced by draw\-Number\-Of\-Quads\-:, and draw\-Quads.
+
+
+\begin{DoxyCode}
+                         : (NSUInteger) n fromIndex: (NSUInteger) start
+{
+        ccGLBindTexture2D( [texture_ name] );
+
+#if CC_TEXTURE_ATLAS_USE_VAO
+
+        //
+        // Using VBO and VAO
+        //
+        // XXX: update is done in draw... perhaps it should be done in a timer
+        if (dirty_) {
+                glBindBuffer(GL_ARRAY_BUFFER, buffersVBO_[0]);
+                // option 1: subdata
+//              glBufferSubData(GL_ARRAY_BUFFER, sizeof(quads_[0])*start,
+       sizeof(quads_[0]) * n , &quads_[start] );
+                
+                // option 2: data
+//              glBufferData(GL_ARRAY_BUFFER, sizeof(quads_[0]) * (n-start),
+       &quads_[start], GL_DYNAMIC_DRAW);
+                
+                // option 3: orphaning + glMapBuffer
+                glBufferData(GL_ARRAY_BUFFER, sizeof(quads_[0]) * (n-start), 
+      nil, GL_DYNAMIC_DRAW);
+                void *buf = glMapBuffer(GL_ARRAY_BUFFER, GL_WRITE_ONLY);
+                memcpy(buf, quads_, sizeof(quads_[0])* (n-start));
+                glUnmapBuffer(GL_ARRAY_BUFFER);         
+                
+                glBindBuffer(GL_ARRAY_BUFFER, 0);
+
+                dirty_ = NO;
+        }
+
+        ccGLBindVAO( VAOname_ );
+
+#if CC_TEXTURE_ATLAS_USE_TRIANGLE_STRIP
+        glDrawElements(GL_TRIANGLE_STRIP, (GLsizei) n*6, GL_UNSIGNED_SHORT, (
+      GLvoid*) (start*6*sizeof(indices_[0])) );
+#else
+        glDrawElements(GL_TRIANGLES, (GLsizei) n*6, GL_UNSIGNED_SHORT, (GLvoid*
+      ) (start*6*sizeof(indices_[0])) );
+#endif // CC_TEXTURE_ATLAS_USE_TRIANGLE_STRIP
+        
+//      glBindVertexArray(0);
+        
+
+#else // ! CC_TEXTURE_ATLAS_USE_VAO
+        
+        //
+        // Using VBO without VAO
+        //
+
+#define kQuadSize sizeof(quads_[0].bl)
+        glBindBuffer(GL_ARRAY_BUFFER, buffersVBO_[0]);
+    
+        // XXX: update is done in draw... perhaps it should be done in a timer
+        if (dirty_) {
+//              glBufferSubData(GL_ARRAY_BUFFER, sizeof(quads_[0])*start,
+       sizeof(quads_[0]) * n , &quads_[start] );
+
+                // Apparently this is faster... need to do performance tests
+                glBufferData(GL_ARRAY_BUFFER, sizeof(quads_[0]) * n, quads_, 
+      GL_DYNAMIC_DRAW);
+                dirty_ = NO;
+        }
+
+        ccGLEnableVertexAttribs( kCCVertexAttribFlag_PosColorTex );
+
+        // vertices
+        glVertexAttribPointer(kCCVertexAttrib_Position, 3, GL_FLOAT, GL_FALSE, 
+      kQuadSize, (GLvoid*) offsetof( ccV3F_C4B_T2F, vertices));
+        
+        // colors
+        glVertexAttribPointer(kCCVertexAttrib_Color, 4, GL_UNSIGNED_BYTE, 
+      GL_TRUE, kQuadSize, (GLvoid*) offsetof( ccV3F_C4B_T2F, colors));
+        
+        // tex coords
+        glVertexAttribPointer(kCCVertexAttrib_TexCoords, 2, GL_FLOAT, GL_FALSE,
+       kQuadSize, (GLvoid*) offsetof( ccV3F_C4B_T2F, texCoords));
+
+        glBindBuffer(GL_ARRAY_BUFFER, 0);
+
+        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, buffersVBO_[1]);
+
+#if CC_TEXTURE_ATLAS_USE_TRIANGLE_STRIP
+        glDrawElements(GL_TRIANGLE_STRIP, (GLsizei) n*6, GL_UNSIGNED_SHORT, (
+      GLvoid*) (start*6*sizeof(indices_[0])) );
+#else
+        glDrawElements(GL_TRIANGLES, (GLsizei) n*6, GL_UNSIGNED_SHORT, (GLvoid*
+      ) (start*6*sizeof(indices_[0])) );
+#endif // CC_TEXTURE_ATLAS_USE_TRIANGLE_STRIP
+
+        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
+
+#endif // CC_TEXTURE_ATLAS_USE_VAO
+
+        CC_INCREMENT_GL_DRAWS(1);
+
+        CHECK_GL_ERROR_DEBUG();
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_texture_atlas_ae593ef56a628f6148223aa56fe94cdc7}{\index{C\-C\-Texture\-Atlas@{C\-C\-Texture\-Atlas}!draw\-Quads@{draw\-Quads}}
+\index{draw\-Quads@{draw\-Quads}!CCTextureAtlas@{C\-C\-Texture\-Atlas}}
+\subsubsection[{draw\-Quads}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf draw\-Quads} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_atlas_ae593ef56a628f6148223aa56fe94cdc7}
+draws all the Atlas's Quads 
+\begin{DoxyCode}
+{
+        [self drawNumberOfQuads: totalQuads_ fromIndex:0];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_texture_atlas_aed3b44b698beb1497602163694712a67}{\index{C\-C\-Texture\-Atlas@{C\-C\-Texture\-Atlas}!fill\-With\-Empty\-Quads\-From\-Index\-:amount\-:@{fill\-With\-Empty\-Quads\-From\-Index\-:amount\-:}}
+\index{fill\-With\-Empty\-Quads\-From\-Index\-:amount\-:@{fill\-With\-Empty\-Quads\-From\-Index\-:amount\-:}!CCTextureAtlas@{C\-C\-Texture\-Atlas}}
+\subsubsection[{fill\-With\-Empty\-Quads\-From\-Index\-:amount\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) fill\-With\-Empty\-Quads\-From\-Index\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-U\-Integer)}]{index}
+\item[{amount:(N\-S\-U\-Integer)}]{amount}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_atlas_aed3b44b698beb1497602163694712a67}
+Ensures that after a realloc quads are still empty Used internally by \hyperlink{interface_c_c_particle_batch_node}{C\-C\-Particle\-Batch\-Node} \begin{DoxySince}{Since}
+1.\-1 
+\end{DoxySince}
+
+
+Referenced by C\-C\-Particle\-Batch\-Node\-::insert\-Child\-:in\-Atlas\-At\-Index\-:, and C\-C\-Particle\-Batch\-Node\-::remove\-Child\-:cleanup\-:.
+
+
+\begin{DoxyCode}
+                                   :(NSUInteger) index amount:(NSUInteger) 
+      amount
+{
+        ccV3F_C4B_T2F_Quad quad;
+        bzero( &quad, sizeof(quad) );
+
+        NSUInteger to = index + amount;
+        for (NSInteger i = index ; i < to ; i++)
+        {
+                quads_[i] = quad;
+        }
+
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_texture_atlas_a356fd456edd24e6b6f7fc1111e1e8ed8}{\index{C\-C\-Texture\-Atlas@{C\-C\-Texture\-Atlas}!increase\-Total\-Quads\-With\-:@{increase\-Total\-Quads\-With\-:}}
+\index{increase\-Total\-Quads\-With\-:@{increase\-Total\-Quads\-With\-:}!CCTextureAtlas@{C\-C\-Texture\-Atlas}}
+\subsubsection[{increase\-Total\-Quads\-With\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf increase\-Total\-Quads\-With\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-U\-Integer)}]{amount}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_atlas_a356fd456edd24e6b6f7fc1111e1e8ed8}
+Used internally by \hyperlink{interface_c_c_particle_batch_node}{C\-C\-Particle\-Batch\-Node} don't use this unless you know what you're doing \begin{DoxySince}{Since}
+1.\-1 
+\end{DoxySince}
+
+
+Referenced by C\-C\-Particle\-Batch\-Node\-::insert\-Child\-:in\-Atlas\-At\-Index\-:.
+
+
+\begin{DoxyCode}
+                              :(NSUInteger) amount
+{
+        totalQuads_ += amount;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_texture_atlas_a79eb5e092a5fd60b4ae14443f0e0accd}{\index{C\-C\-Texture\-Atlas@{C\-C\-Texture\-Atlas}!init\-With\-File\-:capacity\-:@{init\-With\-File\-:capacity\-:}}
+\index{init\-With\-File\-:capacity\-:@{init\-With\-File\-:capacity\-:}!CCTextureAtlas@{C\-C\-Texture\-Atlas}}
+\subsubsection[{init\-With\-File\-:capacity\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-File\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{file}
+\item[{capacity:(N\-S\-U\-Integer)}]{capacity}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_atlas_a79eb5e092a5fd60b4ae14443f0e0accd}
+initializes a Texture\-Atlas with a filename and with a certain capacity for Quads. The Texture\-Atlas capacity can be increased in runtime.
+
+W\-A\-R\-N\-I\-N\-G\-: Do not reinitialize the Texture\-Atlas because it will leak memory (issue \#706) 
+\begin{DoxyCode}
+                  :(NSString*)file capacity:(NSUInteger)n
+{
+        // retained in property
+        CCTexture2D *tex = [[CCTextureCache sharedTextureCache] addImage:file];
+        if( tex )
+                return [self initWithTexture:tex capacity:n];
+
+        // else
+        {
+                CCLOG(@"cocos2d: Could not open file: %@", file);
+                [self release];
+                return nil;
+        }
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_texture_atlas_a116112403fa866d6f835a24548c4aeb3}{\index{C\-C\-Texture\-Atlas@{C\-C\-Texture\-Atlas}!init\-With\-Texture\-:capacity\-:@{init\-With\-Texture\-:capacity\-:}}
+\index{init\-With\-Texture\-:capacity\-:@{init\-With\-Texture\-:capacity\-:}!CCTextureAtlas@{C\-C\-Texture\-Atlas}}
+\subsubsection[{init\-With\-Texture\-:capacity\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Texture\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Texture2\-D} $\ast$)}]{tex}
+\item[{capacity:(N\-S\-U\-Integer)}]{capacity}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_atlas_a116112403fa866d6f835a24548c4aeb3}
+initializes a Texture\-Atlas with a previously initialized Texture2\-D object, and with an initial capacity for Quads. The Texture\-Atlas capacity can be increased in runtime.
+
+W\-A\-R\-N\-I\-N\-G\-: Do not reinitialize the Texture\-Atlas because it will leak memory (issue \#706) 
+
+Referenced by init\-With\-File\-:capacity\-:.
+
+
+\begin{DoxyCode}
+                     :(CCTexture2D*)tex capacity:(NSUInteger)n
+{
+        if( (self=[super init]) ) {
+
+                capacity_ = n;
+                totalQuads_ = 0;
+
+                // retained in property
+                self.texture = tex;
+
+                // Re-initialization is not allowed
+                NSAssert(quads_==nil && indices_==nil, @"CCTextureAtlas
+       re-initialization is not allowed");
+
+                quads_ = calloc( sizeof(quads_[0]) * capacity_, 1 );
+                indices_ = calloc( sizeof(indices_[0]) * capacity_ * 6, 1 );
+
+                if( ! ( quads_ && indices_) ) {
+                        CCLOG(@"cocos2d: CCTextureAtlas: not enough memory");
+                        if( quads_ )
+                                free(quads_);
+                        if( indices_ )
+                                free(indices_);
+
+                        [self release];
+                        return nil;
+                }
+
+                [self setupIndices];
+
+#if CC_TEXTURE_ATLAS_USE_VAO
+                [self setupVBOandVAO];  
+#else   
+                [self setupVBO];
+#endif
+
+                dirty_ = YES;
+        }
+
+        return self;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_texture_atlas_a8839e1d637bba0bf16aee4610f2eb875}{\index{C\-C\-Texture\-Atlas@{C\-C\-Texture\-Atlas}!insert\-Quad\-:at\-Index\-:@{insert\-Quad\-:at\-Index\-:}}
+\index{insert\-Quad\-:at\-Index\-:@{insert\-Quad\-:at\-Index\-:}!CCTextureAtlas@{C\-C\-Texture\-Atlas}}
+\subsubsection[{insert\-Quad\-:at\-Index\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) insert\-Quad\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-V3\-F\-\_\-\-C4\-B\-\_\-\-T2\-F\-\_\-\-Quad}$\ast$)}]{quad}
+\item[{atIndex:(N\-S\-U\-Integer)}]{index}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_atlas_a8839e1d637bba0bf16aee4610f2eb875}
+Inserts a Quad (texture, vertex and color) at a certain index index must be between 0 and the atlas capacity -\/ 1 \begin{DoxySince}{Since}
+v0.\-8 
+\end{DoxySince}
+
+\begin{DoxyCode}
+                  :(ccV3F_C4B_T2F_Quad*)quad atIndex:(NSUInteger)index
+{
+        NSAssert(index < capacity_, @"insertQuadWithTexture: Invalid index");
+
+        totalQuads_++;
+        NSAssert( totalQuads_ <= capacity_, @"invalid totalQuads");
+
+        // issue #575. index can be > totalQuads
+        NSInteger remaining = (totalQuads_-1) - index;
+
+        // last object doesn't need to be moved
+        if( remaining > 0)
+                // tex coordinates
+                memmove( &quads_[index+1],&quads_[index], sizeof(quads_[0]) * 
+      remaining );
+
+        quads_[index] = *quad;
+
+        dirty_ = YES;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_texture_atlas_abe58cba5d570d9b1d9d96fe018d986c8}{\index{C\-C\-Texture\-Atlas@{C\-C\-Texture\-Atlas}!insert\-Quad\-From\-Index\-:at\-Index\-:@{insert\-Quad\-From\-Index\-:at\-Index\-:}}
+\index{insert\-Quad\-From\-Index\-:at\-Index\-:@{insert\-Quad\-From\-Index\-:at\-Index\-:}!CCTextureAtlas@{C\-C\-Texture\-Atlas}}
+\subsubsection[{insert\-Quad\-From\-Index\-:at\-Index\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) insert\-Quad\-From\-Index\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-U\-Integer)}]{from\-Index}
+\item[{atIndex:(N\-S\-U\-Integer)}]{new\-Index}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_atlas_abe58cba5d570d9b1d9d96fe018d986c8}
+Removes the quad that is located at a certain index and inserts it at a new index This operation is faster than removing and inserting in a quad in 2 different steps \begin{DoxySince}{Since}
+v0.\-7.\-2 
+\end{DoxySince}
+
+\begin{DoxyCode}
+                           :(NSUInteger)oldIndex atIndex:(NSUInteger)newIndex
+{
+        NSAssert(newIndex < totalQuads_, @"insertQuadFromIndex:atIndex: Invalid
+       index");
+        NSAssert(oldIndex < totalQuads_, @"insertQuadFromIndex:atIndex: Invalid
+       index");
+
+        if( oldIndex == newIndex )
+                return;
+
+        NSUInteger howMany = labs( oldIndex - newIndex);
+        NSUInteger dst = oldIndex;
+        NSUInteger src = oldIndex + 1;
+        if( oldIndex > newIndex) {
+                dst = newIndex+1;
+                src = newIndex;
+        }
+
+        // tex coordinates
+        ccV3F_C4B_T2F_Quad quadsBackup = quads_[oldIndex];
+        memmove( &quads_[dst],&quads_[src], sizeof(quads_[0]) * howMany );
+        quads_[newIndex] = quadsBackup;
+
+        dirty_ = YES;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_texture_atlas_a307868eb479a76dea8d07c8b3fb61ef4}{\index{C\-C\-Texture\-Atlas@{C\-C\-Texture\-Atlas}!insert\-Quads\-:at\-Index\-:amount\-:@{insert\-Quads\-:at\-Index\-:amount\-:}}
+\index{insert\-Quads\-:at\-Index\-:amount\-:@{insert\-Quads\-:at\-Index\-:amount\-:}!CCTextureAtlas@{C\-C\-Texture\-Atlas}}
+\subsubsection[{insert\-Quads\-:at\-Index\-:amount\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) insert\-Quads\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-V3\-F\-\_\-\-C4\-B\-\_\-\-T2\-F\-\_\-\-Quad}$\ast$)}]{quads}
+\item[{atIndex:(N\-S\-U\-Integer)}]{index}
+\item[{amount:(N\-S\-U\-Integer)}]{amount}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_atlas_a307868eb479a76dea8d07c8b3fb61ef4}
+Inserts a c array of quads at a given index index must be between 0 and the atlas capacity -\/ 1 this method doesn't enlarge the array when amount + index $>$ total\-Quads \begin{DoxySince}{Since}
+v1.\-1 
+\end{DoxySince}
+
+\begin{DoxyCode}
+                   :(ccV3F_C4B_T2F_Quad*)quads atIndex:(NSUInteger)index amount
+      :(NSUInteger) amount
+{
+        NSAssert(index + amount <= capacity_, @"insertQuadWithTexture: Invalid
+       index + amount");
+
+        totalQuads_+= amount;
+
+        NSAssert( totalQuads_ <= capacity_, @"invalid totalQuads");
+
+        // issue #575. index can be > totalQuads
+        NSInteger remaining = (totalQuads_-1) - index - amount;
+
+        // last object doesn't need to be moved
+        if( remaining > 0)
+                // tex coordinates
+                memmove( &quads_[index+amount],&quads_[index], sizeof(quads_[0]
+      ) * remaining );
+
+
+
+        NSUInteger max = index + amount;
+        NSUInteger j = 0;
+        for (NSUInteger i = index; i < max ; i++)
+        {
+                quads_[index] = quads[j];
+                index++;
+                j++;
+        }
+
+        dirty_ = YES;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_texture_atlas_a1a8c0bde07e4185b2333dc8b253d9a6a}{\index{C\-C\-Texture\-Atlas@{C\-C\-Texture\-Atlas}!move\-Quads\-From\-Index\-:amount\-:at\-Index\-:@{move\-Quads\-From\-Index\-:amount\-:at\-Index\-:}}
+\index{move\-Quads\-From\-Index\-:amount\-:at\-Index\-:@{move\-Quads\-From\-Index\-:amount\-:at\-Index\-:}!CCTextureAtlas@{C\-C\-Texture\-Atlas}}
+\subsubsection[{move\-Quads\-From\-Index\-:amount\-:at\-Index\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) move\-Quads\-From\-Index\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-U\-Integer)}]{old\-Index}
+\item[{amount:(N\-S\-U\-Integer)}]{amount}
+\item[{atIndex:(N\-S\-U\-Integer)}]{new\-Index}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_atlas_a1a8c0bde07e4185b2333dc8b253d9a6a}
+Moves an amount of quads from old\-Index at new\-Index \begin{DoxySince}{Since}
+v1.\-1 
+\end{DoxySince}
+
+\begin{DoxyCode}
+                          :(NSUInteger)oldIndex amount:(NSUInteger) amount 
+      atIndex:(NSUInteger)newIndex
+{
+        NSAssert(newIndex + amount <= totalQuads_, @"
+      insertQuadFromIndex:atIndex: Invalid index");
+        NSAssert(oldIndex < totalQuads_, @"insertQuadFromIndex:atIndex: Invalid
+       index");
+
+        if( oldIndex == newIndex )
+                return;
+
+        //create buffer
+        size_t quadSize = sizeof(ccV3F_C4B_T2F_Quad);
+        ccV3F_C4B_T2F_Quad *tempQuads = malloc( quadSize * amount);
+        memcpy( tempQuads, &quads_[oldIndex], quadSize * amount );
+
+        if (newIndex < oldIndex)
+        {
+                // move quads from newIndex to newIndex + amount to make room
+       for buffer
+                memmove( &quads_[newIndex], &quads_[newIndex+amount], (oldIndex
+      -newIndex)*quadSize);
+        }
+        else
+        {
+                // move quads above back
+                memmove( &quads_[oldIndex], &quads_[oldIndex+amount], (newIndex
+      -oldIndex)*quadSize);
+        }
+        memcpy( &quads_[newIndex], tempQuads, amount*quadSize);
+
+        free(tempQuads);
+
+        dirty_ = YES;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_texture_atlas_a673bcc26369870c2739da0d359ef96aa}{\index{C\-C\-Texture\-Atlas@{C\-C\-Texture\-Atlas}!move\-Quads\-From\-Index\-:to\-:@{move\-Quads\-From\-Index\-:to\-:}}
+\index{move\-Quads\-From\-Index\-:to\-:@{move\-Quads\-From\-Index\-:to\-:}!CCTextureAtlas@{C\-C\-Texture\-Atlas}}
+\subsubsection[{move\-Quads\-From\-Index\-:to\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) move\-Quads\-From\-Index\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-U\-Integer)}]{index}
+\item[{to:(N\-S\-U\-Integer)}]{new\-Index}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_atlas_a673bcc26369870c2739da0d359ef96aa}
+Moves quads from index till total\-Quads to the new\-Index Used internally by \hyperlink{interface_c_c_particle_batch_node}{C\-C\-Particle\-Batch\-Node} This method doesn't enlarge the array if new\-Index + quads to be moved $>$ capacity \begin{DoxySince}{Since}
+1.\-1 
+\end{DoxySince}
+
+
+Referenced by C\-C\-Particle\-Batch\-Node\-::insert\-Child\-:in\-Atlas\-At\-Index\-:.
+
+
+\begin{DoxyCode}
+                          :(NSUInteger) index to:(NSUInteger) newIndex
+{
+        NSAssert(newIndex + (totalQuads_ - index) <= capacity_, @"
+      moveQuadsFromIndex move is out of bounds");
+
+        memmove(quads_ + newIndex,quads_ + index, (totalQuads_ - index) * 
+      sizeof(quads_[0]));
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_texture_atlas_ab070b61f1f06b67fbc544d8eefcea9c3}{\index{C\-C\-Texture\-Atlas@{C\-C\-Texture\-Atlas}!remove\-All\-Quads@{remove\-All\-Quads}}
+\index{remove\-All\-Quads@{remove\-All\-Quads}!CCTextureAtlas@{C\-C\-Texture\-Atlas}}
+\subsubsection[{remove\-All\-Quads}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\-All\-Quads} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_atlas_ab070b61f1f06b67fbc544d8eefcea9c3}
+removes all Quads. The Texture\-Atlas capacity remains untouched. No memory is freed. The total number of quads to be drawn will be 0 \begin{DoxySince}{Since}
+v0.\-7.\-2 
+\end{DoxySince}
+
+\begin{DoxyCode}
+{
+        totalQuads_ = 0;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_texture_atlas_adc1f3102fa3195facfc0ce79c56526ee}{\index{C\-C\-Texture\-Atlas@{C\-C\-Texture\-Atlas}!remove\-Quad\-At\-Index\-:@{remove\-Quad\-At\-Index\-:}}
+\index{remove\-Quad\-At\-Index\-:@{remove\-Quad\-At\-Index\-:}!CCTextureAtlas@{C\-C\-Texture\-Atlas}}
+\subsubsection[{remove\-Quad\-At\-Index\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\-Quad\-At\-Index\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-U\-Integer)}]{index}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_atlas_adc1f3102fa3195facfc0ce79c56526ee}
+removes a quad at a given index number. The capacity remains the same, but the total number of quads to be drawn is reduced in 1 \begin{DoxySince}{Since}
+v0.\-7.\-2 
+\end{DoxySince}
+
+
+Referenced by C\-C\-T\-M\-X\-Layer\-::remove\-Tile\-At\-:.
+
+
+\begin{DoxyCode}
+                         :(NSUInteger) index
+{
+        NSAssert(index < totalQuads_, @"removeQuadAtIndex: Invalid index");
+
+        NSUInteger remaining = (totalQuads_-1) - index;
+
+        // last object doesn't need to be moved
+        if( remaining )
+                memmove( &quads_[index],&quads_[index+1], sizeof(quads_[0]) * 
+      remaining );
+
+        totalQuads_--;
+
+        dirty_ = YES;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_texture_atlas_a9a44172cc26bd01f0d89cec31fd4125a}{\index{C\-C\-Texture\-Atlas@{C\-C\-Texture\-Atlas}!remove\-Quads\-At\-Index\-:amount\-:@{remove\-Quads\-At\-Index\-:amount\-:}}
+\index{remove\-Quads\-At\-Index\-:amount\-:@{remove\-Quads\-At\-Index\-:amount\-:}!CCTextureAtlas@{C\-C\-Texture\-Atlas}}
+\subsubsection[{remove\-Quads\-At\-Index\-:amount\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\-Quads\-At\-Index\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-U\-Integer)}]{index}
+\item[{amount:(N\-S\-U\-Integer)}]{amount}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_atlas_a9a44172cc26bd01f0d89cec31fd4125a}
+removes a amount of quads starting from index \begin{DoxySince}{Since}
+1.\-1 
+\end{DoxySince}
+
+
+Referenced by C\-C\-Particle\-Batch\-Node\-::remove\-Child\-:cleanup\-:.
+
+
+\begin{DoxyCode}
+                          :(NSUInteger) index amount:(NSUInteger) amount
+{
+        NSAssert(index + amount <= totalQuads_, @"removeQuadAtIndex: index +
+       amount out of bounds");
+
+        NSUInteger remaining = (totalQuads_) - (index + amount);
+
+        totalQuads_ -= amount;
+
+        if ( remaining )
+                memmove( &quads_[index], &quads_[index+amount], sizeof(quads_[0
+      ]) * remaining );
+
+        dirty_ = YES;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_texture_atlas_a24ebdf2f5b5f1e6f0e69e7042209d7e1}{\index{C\-C\-Texture\-Atlas@{C\-C\-Texture\-Atlas}!resize\-Capacity\-:@{resize\-Capacity\-:}}
+\index{resize\-Capacity\-:@{resize\-Capacity\-:}!CCTextureAtlas@{C\-C\-Texture\-Atlas}}
+\subsubsection[{resize\-Capacity\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) {\bf resize\-Capacity\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-U\-Integer)}]{n}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_atlas_a24ebdf2f5b5f1e6f0e69e7042209d7e1}
+resize the capacity of the \hyperlink{interface_c_c_texture_atlas}{C\-C\-Texture\-Atlas}. The new capacity can be lower or higher than the current one It returns Y\-E\-S if the resize was successful. If it fails to resize the capacity it will return N\-O with a new capacity of 0. 
+\begin{DoxyCode}
+                      : (NSUInteger) newCapacity
+{
+        if( newCapacity == capacity_ )
+                return YES;
+
+        // update capacity and totolQuads
+        totalQuads_ = MIN(totalQuads_,newCapacity);
+        capacity_ = newCapacity;
+
+        void * tmpQuads = realloc( quads_, sizeof(quads_[0]) * capacity_ );
+        void * tmpIndices = realloc( indices_, sizeof(indices_[0]) * capacity_ 
+      * 6 );
+
+        if( ! ( tmpQuads && tmpIndices) ) {
+                CCLOG(@"cocos2d: CCTextureAtlas: not enough memory");
+                if( tmpQuads )
+                        free(tmpQuads);
+                else
+                        free(quads_);
+
+                if( tmpIndices )
+                        free(tmpIndices);
+                else
+                        free(indices_);
+
+                indices_ = nil;
+                quads_ = nil;
+                capacity_ = totalQuads_ = 0;
+                return NO;
+        }
+
+        quads_ = tmpQuads;
+        indices_ = tmpIndices;
+
+        // Update Indices
+        [self setupIndices];
+        [self mapBuffers];
+
+        dirty_ = YES;
+
+        return YES;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_texture_atlas_a7f32e0fe47d137f967b8a2998427f865}{\index{C\-C\-Texture\-Atlas@{C\-C\-Texture\-Atlas}!texture\-Atlas\-With\-File\-:capacity\-:@{texture\-Atlas\-With\-File\-:capacity\-:}}
+\index{texture\-Atlas\-With\-File\-:capacity\-:@{texture\-Atlas\-With\-File\-:capacity\-:}!CCTextureAtlas@{C\-C\-Texture\-Atlas}}
+\subsubsection[{texture\-Atlas\-With\-File\-:capacity\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) texture\-Atlas\-With\-File\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{file}
+\item[{capacity:(N\-S\-U\-Integer)}]{capacity}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_atlas_a7f32e0fe47d137f967b8a2998427f865}
+creates a Texture\-Atlas with an filename and with an initial capacity for Quads. The Texture\-Atlas capacity can be increased in runtime. 
+\begin{DoxyCode}
+                          :(NSString*) file capacity: (NSUInteger) n
+{
+        return [[[self alloc] initWithFile:file capacity:n] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_texture_atlas_a6759f15bef0c97282c8ce561c13aa800}{\index{C\-C\-Texture\-Atlas@{C\-C\-Texture\-Atlas}!texture\-Atlas\-With\-Texture\-:capacity\-:@{texture\-Atlas\-With\-Texture\-:capacity\-:}}
+\index{texture\-Atlas\-With\-Texture\-:capacity\-:@{texture\-Atlas\-With\-Texture\-:capacity\-:}!CCTextureAtlas@{C\-C\-Texture\-Atlas}}
+\subsubsection[{texture\-Atlas\-With\-Texture\-:capacity\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) texture\-Atlas\-With\-Texture\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Texture2\-D} $\ast$)}]{tex}
+\item[{capacity:(N\-S\-U\-Integer)}]{capacity}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_atlas_a6759f15bef0c97282c8ce561c13aa800}
+creates a Texture\-Atlas with a previously initialized Texture2\-D object, and with an initial capacity for n Quads. The Texture\-Atlas capacity can be increased in runtime. 
+\begin{DoxyCode}
+                             :(CCTexture2D *)tex capacity:(NSUInteger)n
+{
+        return [[[self alloc] initWithTexture:tex capacity:n] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_texture_atlas_a61958a6c7e41aea2343bb15b0a496e62}{\index{C\-C\-Texture\-Atlas@{C\-C\-Texture\-Atlas}!update\-Quad\-:at\-Index\-:@{update\-Quad\-:at\-Index\-:}}
+\index{update\-Quad\-:at\-Index\-:@{update\-Quad\-:at\-Index\-:}!CCTextureAtlas@{C\-C\-Texture\-Atlas}}
+\subsubsection[{update\-Quad\-:at\-Index\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) update\-Quad\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-V3\-F\-\_\-\-C4\-B\-\_\-\-T2\-F\-\_\-\-Quad}$\ast$)}]{quad}
+\item[{atIndex:(N\-S\-U\-Integer)}]{index}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_texture_atlas_a61958a6c7e41aea2343bb15b0a496e62}
+updates a Quad (texture, vertex and color) at a certain index index must be between 0 and the atlas capacity -\/ 1 \begin{DoxySince}{Since}
+v0.\-8 
+\end{DoxySince}
+
+
+Referenced by C\-C\-Sprite\-::update\-Transform.
+
+
+\begin{DoxyCode}
+                  :(ccV3F_C4B_T2F_Quad*)quad atIndex:(NSUInteger) n
+{
+        NSAssert(n < capacity_, @"updateQuadWithTexture: Invalid index");
+
+        totalQuads_ =  MAX( n+1, totalQuads_);
+
+        quads_[n] = *quad;
+
+        dirty_ = YES;
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_texture_atlas_a1dcb01c13da3675d0526a4c40ee9b950}{\index{C\-C\-Texture\-Atlas@{C\-C\-Texture\-Atlas}!capacity@{capacity}}
+\index{capacity@{capacity}!CCTextureAtlas@{C\-C\-Texture\-Atlas}}
+\subsubsection[{capacity}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-U\-Integer) {\bf capacity}\hspace{0.3cm}{\ttfamily  \mbox{[}read, assign\mbox{]}}}}\label{interface_c_c_texture_atlas_a1dcb01c13da3675d0526a4c40ee9b950}
+quantity of quads that can be stored with the current texture atlas size 
+
+Referenced by C\-C\-Particle\-Batch\-Node\-::insert\-Child\-:in\-Atlas\-At\-Index\-:.
+
+\hypertarget{interface_c_c_texture_atlas_a7709f63e3948650e00aa884aaa445536}{\index{C\-C\-Texture\-Atlas@{C\-C\-Texture\-Atlas}!quads@{quads}}
+\index{quads@{quads}!CCTextureAtlas@{C\-C\-Texture\-Atlas}}
+\subsubsection[{quads}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf cc\-V3\-F\-\_\-\-C4\-B\-\_\-\-T2\-F\-\_\-\-Quad} $\ast$) {\bf quads}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_texture_atlas_a7709f63e3948650e00aa884aaa445536}
+Quads that are going to be rendered 
+
+Referenced by C\-C\-Particle\-Batch\-Node\-::disable\-Particle\-:, and C\-C\-Particle\-System\-Quad\-::init\-Tex\-Coords\-With\-Rect\-:.
+
+\hypertarget{interface_c_c_texture_atlas_a2d6d32bd902b92d0d490bf334b44a043}{\index{C\-C\-Texture\-Atlas@{C\-C\-Texture\-Atlas}!texture@{texture}}
+\index{texture@{texture}!CCTextureAtlas@{C\-C\-Texture\-Atlas}}
+\subsubsection[{texture}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Texture2\-D}$\ast$) {\bf texture}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}\label{interface_c_c_texture_atlas_a2d6d32bd902b92d0d490bf334b44a043}
+Texture of the texture atlas 
+
+Referenced by C\-C\-Particle\-Batch\-Node\-::add\-Child\-:z\-:tag\-:.
+
+\hypertarget{interface_c_c_texture_atlas_a1fcff61e63514529e3d1c02b43503d9f}{\index{C\-C\-Texture\-Atlas@{C\-C\-Texture\-Atlas}!total\-Quads@{total\-Quads}}
+\index{total\-Quads@{total\-Quads}!CCTextureAtlas@{C\-C\-Texture\-Atlas}}
+\subsubsection[{total\-Quads}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-U\-Integer) {\bf total\-Quads}\hspace{0.3cm}{\ttfamily  \mbox{[}read, assign\mbox{]}}}}\label{interface_c_c_texture_atlas_a1fcff61e63514529e3d1c02b43503d9f}
+quantity of quads that are going to be drawn 
+
+Referenced by C\-C\-Particle\-Batch\-Node\-::insert\-Child\-:in\-Atlas\-At\-Index\-:.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Texture\-Atlas.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Texture\-Atlas.\-m\end{DoxyCompactItemize}

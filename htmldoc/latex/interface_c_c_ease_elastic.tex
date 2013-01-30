@@ -1,0 +1,93 @@
+\hypertarget{interface_c_c_ease_elastic}{\section{C\-C\-Ease\-Elastic Class Reference}
+\label{interface_c_c_ease_elastic}\index{C\-C\-Ease\-Elastic@{C\-C\-Ease\-Elastic}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Ease.\-h$>$}
+
+Inheritance diagram for C\-C\-Ease\-Elastic\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{interface_c_c_ease_elastic}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_ease_elastic_a37b84329236ee9a3d3f74b0eaf528ab8}{init\-With\-Action\-:period\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_ease_elastic_acf1e145fd87d7bb5bf77440be72f09d5}{action\-With\-Action\-:period\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_ease_elastic_aa7359be6be34aca082b75f31c90644b6}{float {\bfseries period\-\_\-}}\label{interface_c_c_ease_elastic_aa7359be6be34aca082b75f31c90644b6}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{interface_c_c_ease_elastic_a11ec74f9a6af505355448f67bfa1cdb4}{period}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Ease Elastic abstract class \begin{DoxySince}{Since}
+v0.\-8.\-2 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_ease_elastic_acf1e145fd87d7bb5bf77440be72f09d5}{\index{C\-C\-Ease\-Elastic@{C\-C\-Ease\-Elastic}!action\-With\-Action\-:period\-:@{action\-With\-Action\-:period\-:}}
+\index{action\-With\-Action\-:period\-:@{action\-With\-Action\-:period\-:}!CCEaseElastic@{C\-C\-Ease\-Elastic}}
+\subsubsection[{action\-With\-Action\-:period\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Action\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Action\-Interval}$\ast$)}]{action}
+\item[{period:(float)}]{period}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_ease_elastic_acf1e145fd87d7bb5bf77440be72f09d5}
+Creates the action with the inner action and the period in radians (default is 0.\-3) 
+\begin{DoxyCode}
+                      : (CCActionInterval*) action period:(float)period
+{
+        return [[[self alloc] initWithAction:action period:period] autorelease]
+      ;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_ease_elastic_a37b84329236ee9a3d3f74b0eaf528ab8}{\index{C\-C\-Ease\-Elastic@{C\-C\-Ease\-Elastic}!init\-With\-Action\-:period\-:@{init\-With\-Action\-:period\-:}}
+\index{init\-With\-Action\-:period\-:@{init\-With\-Action\-:period\-:}!CCEaseElastic@{C\-C\-Ease\-Elastic}}
+\subsubsection[{init\-With\-Action\-:period\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Action\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Action\-Interval}$\ast$)}]{action}
+\item[{period:(float)}]{period}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_ease_elastic_a37b84329236ee9a3d3f74b0eaf528ab8}
+Initializes the action with the inner action and the period in radians (default is 0.\-3) 
+\begin{DoxyCode}
+                    : (CCActionInterval*) action period:(float)period
+{
+        if( (self=[super initWithAction:action]) )
+                period_ = period;
+
+        return self;
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_ease_elastic_a11ec74f9a6af505355448f67bfa1cdb4}{\index{C\-C\-Ease\-Elastic@{C\-C\-Ease\-Elastic}!period@{period}}
+\index{period@{period}!CCEaseElastic@{C\-C\-Ease\-Elastic}}
+\subsubsection[{period}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf period}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_ease_elastic_a11ec74f9a6af505355448f67bfa1cdb4}
+period of the wave in radians. default is 0.\-3 
+
+Referenced by init\-With\-Action\-:period\-:.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Ease.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Ease.\-m\end{DoxyCompactItemize}

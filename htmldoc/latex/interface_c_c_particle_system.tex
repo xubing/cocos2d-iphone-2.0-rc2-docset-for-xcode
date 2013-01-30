@@ -1,0 +1,783 @@
+\hypertarget{interface_c_c_particle_system}{\section{C\-C\-Particle\-System Class Reference}
+\label{interface_c_c_particle_system}\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Particle\-System.\-h$>$}
+
+Inheritance diagram for C\-C\-Particle\-System\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interface_c_c_particle_system}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_particle_system_ad17d6bbf0e24418a924467d001b22077}{init\-With\-File\-:}
+\item 
+(id) -\/ \hyperlink{interface_c_c_particle_system_a66665353974e9230d34c0afe85dc4f6b}{init\-With\-Dictionary\-:}
+\item 
+(id) -\/ \hyperlink{interface_c_c_particle_system_a0658d053b3e1750aa23353836f97e0fe}{init\-With\-Dictionary\-:path\-:}
+\item 
+\hypertarget{interface_c_c_particle_system_a8683219d9b792b7700621304683ed682}{(id) -\/ \hyperlink{interface_c_c_particle_system_a8683219d9b792b7700621304683ed682}{init\-With\-Total\-Particles\-:}}\label{interface_c_c_particle_system_a8683219d9b792b7700621304683ed682}
+
+\begin{DoxyCompactList}\small\item\em Initializes a system with a fixed number of particles. \end{DoxyCompactList}\item 
+\hypertarget{interface_c_c_particle_system_aeafd729835e850817731cee0bd210c87}{(void) -\/ \hyperlink{interface_c_c_particle_system_aeafd729835e850817731cee0bd210c87}{stop\-System}}\label{interface_c_c_particle_system_aeafd729835e850817731cee0bd210c87}
+
+\begin{DoxyCompactList}\small\item\em stop emitting particles. Running particles will continue to run until they die \end{DoxyCompactList}\item 
+\hypertarget{interface_c_c_particle_system_a31dff0928f67557b12d66ec09d773394}{(void) -\/ \hyperlink{interface_c_c_particle_system_a31dff0928f67557b12d66ec09d773394}{reset\-System}}\label{interface_c_c_particle_system_a31dff0928f67557b12d66ec09d773394}
+
+\begin{DoxyCompactList}\small\item\em Kill all living particles. \end{DoxyCompactList}\item 
+\hypertarget{interface_c_c_particle_system_adb1505c126810f39c2d7d3c506dbfd1c}{(B\-O\-O\-L) -\/ \hyperlink{interface_c_c_particle_system_adb1505c126810f39c2d7d3c506dbfd1c}{is\-Full}}\label{interface_c_c_particle_system_adb1505c126810f39c2d7d3c506dbfd1c}
+
+\begin{DoxyCompactList}\small\item\em whether or not the system is full \end{DoxyCompactList}\item 
+\hypertarget{interface_c_c_particle_system_ab2d38029ba020a66c29cc9fa8cf1d590}{(void) -\/ \hyperlink{interface_c_c_particle_system_ab2d38029ba020a66c29cc9fa8cf1d590}{update\-Quad\-With\-Particle\-:new\-Position\-:}}\label{interface_c_c_particle_system_ab2d38029ba020a66c29cc9fa8cf1d590}
+
+\begin{DoxyCompactList}\small\item\em should be overriden by subclasses \end{DoxyCompactList}\item 
+\hypertarget{interface_c_c_particle_system_a2fc5c1d696ee6a84f56670a053836322}{(void) -\/ \hyperlink{interface_c_c_particle_system_a2fc5c1d696ee6a84f56670a053836322}{post\-Step}}\label{interface_c_c_particle_system_a2fc5c1d696ee6a84f56670a053836322}
+
+\begin{DoxyCompactList}\small\item\em should be overriden by subclasses \end{DoxyCompactList}\item 
+\hypertarget{interface_c_c_particle_system_aaf683c943f80865328ed7bec8906c978}{(void) -\/ \hyperlink{interface_c_c_particle_system_aaf683c943f80865328ed7bec8906c978}{update\-:}}\label{interface_c_c_particle_system_aaf683c943f80865328ed7bec8906c978}
+
+\begin{DoxyCompactList}\small\item\em called in every loop. \end{DoxyCompactList}\item 
+\hypertarget{interface_c_c_particle_system_a908d0912a837832fd7a27e0ab6fb8545}{(void) -\/ {\bfseries update\-With\-No\-Time}}\label{interface_c_c_particle_system_a908d0912a837832fd7a27e0ab6fb8545}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_particle_system_a9a7fca032b670ea0ab77dfce0f67ec96}{particle\-With\-File\-:}
+\item 
+\hypertarget{interface_c_c_particle_system_a1c1d53119f02bc5222ffe9930d7e3522}{(id) + {\bfseries particle\-With\-Total\-Particles\-:}}\label{interface_c_c_particle_system_a1c1d53119f02bc5222ffe9930d7e3522}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_particle_system_aac3db7a866e1ea8e152baf6424c4722c}{float {\bfseries elapsed}}\label{interface_c_c_particle_system_aac3db7a866e1ea8e152baf6424c4722c}
+
+\item 
+\hypertarget{interface_c_c_particle_system_a885219971a29894086ce602d754050f7}{N\-S\-Integer {\bfseries emitter\-Mode\-\_\-}}\label{interface_c_c_particle_system_a885219971a29894086ce602d754050f7}
+
+\item 
+\hypertarget{interface_c_c_particle_system_a5bcbebd6afccef19f7576043e2d460bb}{\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>CGPoint {\bfseries gravity}\\
+\>\>float {\bfseries speed}\\
+\>\>float {\bfseries speedVar}\\
+\>\>float {\bfseries tangentialAccel}\\
+\>\>float {\bfseries tangentialAccelVar}\\
+\>\>float {\bfseries radialAccel}\\
+\>\>float {\bfseries radialAccelVar}\\
+\>\} {\bfseries A}\\
+\>struct \{\\
+\>\>float {\bfseries startRadius}\\
+\>\>float {\bfseries startRadiusVar}\\
+\>\>float {\bfseries endRadius}\\
+\>\>float {\bfseries endRadiusVar}\\
+\>\>float {\bfseries rotatePerSecond}\\
+\>\>float {\bfseries rotatePerSecondVar}\\
+\>\} {\bfseries B}\\
+\} {\bfseries mode}}\label{interface_c_c_particle_system_a5bcbebd6afccef19f7576043e2d460bb}
+\\
+
+\end{tabbing}\item 
+\hypertarget{interface_c_c_particle_system_a565eebf6bddbce2bc10c60e3c9e92c9b}{\hyperlink{structt_c_c_particle}{t\-C\-C\-Particle} $\ast$ {\bfseries particles}}\label{interface_c_c_particle_system_a565eebf6bddbce2bc10c60e3c9e92c9b}
+
+\item 
+\hypertarget{interface_c_c_particle_system_a894451580cc527d1d121b3fedd2d3e8c}{N\-S\-U\-Integer {\bfseries allocated\-Particles}}\label{interface_c_c_particle_system_a894451580cc527d1d121b3fedd2d3e8c}
+
+\item 
+\hypertarget{interface_c_c_particle_system_a008b004ee07979aae53430734228dd48}{float {\bfseries emit\-Counter}}\label{interface_c_c_particle_system_a008b004ee07979aae53430734228dd48}
+
+\item 
+\hypertarget{interface_c_c_particle_system_aee907c84c68d2f29b75e876d9094d1f2}{\hyperlink{class_c_c_texture2_d}{C\-C\-Texture2\-D} $\ast$ {\bfseries texture\-\_\-}}\label{interface_c_c_particle_system_aee907c84c68d2f29b75e876d9094d1f2}
+
+\item 
+\hypertarget{interface_c_c_particle_system_a5656f695bfe98f339fe019283f884941}{\hyperlink{cc_types_8h_a8c19c6f67219ecc0a6e4740cc046008d}{cc\-Blend\-Func} {\bfseries blend\-Func\-\_\-}}\label{interface_c_c_particle_system_a5656f695bfe98f339fe019283f884941}
+
+\item 
+\hypertarget{interface_c_c_particle_system_a964e6c5072bd007e72574123d613aa3d}{B\-O\-O\-L {\bfseries opacity\-Modify\-R\-G\-B\-\_\-}}\label{interface_c_c_particle_system_a964e6c5072bd007e72574123d613aa3d}
+
+\item 
+\hypertarget{interface_c_c_particle_system_ae911959fdef7ac335e9870188cc5203c}{t\-C\-C\-Position\-Type {\bfseries position\-Type\-\_\-}}\label{interface_c_c_particle_system_ae911959fdef7ac335e9870188cc5203c}
+
+\item 
+\hypertarget{interface_c_c_particle_system_a7f7dfb082d8320167e408f669ed1afb0}{B\-O\-O\-L {\bfseries auto\-Remove\-On\-Finish\-\_\-}}\label{interface_c_c_particle_system_a7f7dfb082d8320167e408f669ed1afb0}
+
+\item 
+\hypertarget{interface_c_c_particle_system_a77b479fe5657a118abe0d09aaefb8b85}{N\-S\-U\-Integer {\bfseries particle\-Idx}}\label{interface_c_c_particle_system_a77b479fe5657a118abe0d09aaefb8b85}
+
+\item 
+\hypertarget{interface_c_c_particle_system_a82d3be08437b59036d60670d12057c17}{C\-C\-\_\-\-U\-P\-D\-A\-T\-E\-\_\-\-P\-A\-R\-T\-I\-C\-L\-E\-\_\-\-I\-M\-P {\bfseries update\-Particle\-Imp}}\label{interface_c_c_particle_system_a82d3be08437b59036d60670d12057c17}
+
+\item 
+\hypertarget{interface_c_c_particle_system_ae93670457422b3d47d121d2c4fc66e35}{S\-E\-L {\bfseries update\-Particle\-Sel}}\label{interface_c_c_particle_system_ae93670457422b3d47d121d2c4fc66e35}
+
+\item 
+\hypertarget{interface_c_c_particle_system_a3f77ce212959dd5efb27fabcc85f687e}{\hyperlink{interface_c_c_particle_batch_node}{C\-C\-Particle\-Batch\-Node} $\ast$ {\bfseries batch\-Node\-\_\-}}\label{interface_c_c_particle_system_a3f77ce212959dd5efb27fabcc85f687e}
+
+\item 
+\hypertarget{interface_c_c_particle_system_a57eecc0899f82b9c981291bb131f2023}{N\-S\-U\-Integer {\bfseries atlas\-Index\-\_\-}}\label{interface_c_c_particle_system_a57eecc0899f82b9c981291bb131f2023}
+
+\item 
+\hypertarget{interface_c_c_particle_system_a3aef27bbe49f4eb16cd661beb938c2fb}{B\-O\-O\-L {\bfseries transform\-System\-Dirty\-\_\-}}\label{interface_c_c_particle_system_a3aef27bbe49f4eb16cd661beb938c2fb}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+B\-O\-O\-L \hyperlink{interface_c_c_particle_system_a60a75227e9a8c6b834ac8b60c4fe42a8}{active}
+\item 
+N\-S\-U\-Integer \hyperlink{interface_c_c_particle_system_a129f846f7ff4207cf6dd9e95f97a780f}{particle\-Count}
+\item 
+float \hyperlink{interface_c_c_particle_system_ac76aed37427e5700bfe0f6c8956cd2c7}{duration}
+\item 
+C\-G\-Point \hyperlink{interface_c_c_particle_system_a68e4c7c8937306ce0290d16ff138ba5a}{source\-Position}
+\item 
+C\-G\-Point \hyperlink{interface_c_c_particle_system_a83bd3365f1a7e6e793e526e3f1619027}{pos\-Var}
+\item 
+float \hyperlink{interface_c_c_particle_system_a504a0c0a85d96ec6bdce4c5951d4daaf}{life}
+\item 
+float \hyperlink{interface_c_c_particle_system_aca3d4efd11d4aec59dcbf44f0f255bbb}{life\-Var}
+\item 
+float \hyperlink{interface_c_c_particle_system_a980fb9469018469875f032ad6b42f0b7}{angle}
+\item 
+float \hyperlink{interface_c_c_particle_system_a64d7a73dde3c88b4a151eb1e2fcc330b}{angle\-Var}
+\item 
+float \hyperlink{interface_c_c_particle_system_afd9a53491a4b38a200585419f17e7095}{start\-Size}
+\item 
+float \hyperlink{interface_c_c_particle_system_a465fb02238f5879495fee1f5be1de27f}{start\-Size\-Var}
+\item 
+float \hyperlink{interface_c_c_particle_system_aaf20369f6b7c2c715a55f3d33fcc91d8}{end\-Size}
+\item 
+float \hyperlink{interface_c_c_particle_system_ac8abe45d12a4686d1e5cd1b3b67a6dc1}{end\-Size\-Var}
+\item 
+\hyperlink{cc_types_8h_aecc18290defe020343f1d7bb2ee73145}{cc\-Color4\-F} \hyperlink{interface_c_c_particle_system_aeb2e14c2f0c26b93d1cfb55f97b94266}{start\-Color}
+\item 
+\hyperlink{cc_types_8h_aecc18290defe020343f1d7bb2ee73145}{cc\-Color4\-F} \hyperlink{interface_c_c_particle_system_a8f0c91008053b7334dafd2c449aa85c7}{start\-Color\-Var}
+\item 
+\hyperlink{cc_types_8h_aecc18290defe020343f1d7bb2ee73145}{cc\-Color4\-F} \hyperlink{interface_c_c_particle_system_a0d290daeb3cbb33136ff584af20b3aa1}{end\-Color}
+\item 
+\hyperlink{cc_types_8h_aecc18290defe020343f1d7bb2ee73145}{cc\-Color4\-F} \hyperlink{interface_c_c_particle_system_ab1b7d80b864563801b6d979892188ae6}{end\-Color\-Var}
+\item 
+\hypertarget{interface_c_c_particle_system_a83ba63193c88df115c6528c2106679d1}{float {\bfseries start\-Spin}}\label{interface_c_c_particle_system_a83ba63193c88df115c6528c2106679d1}
+
+\item 
+\hypertarget{interface_c_c_particle_system_af69eea924b332aa0796dfdbab62dca67}{float {\bfseries start\-Spin\-Var}}\label{interface_c_c_particle_system_af69eea924b332aa0796dfdbab62dca67}
+
+\item 
+\hypertarget{interface_c_c_particle_system_ad32c08649695e3f6797ad4e07e7bf37e}{float {\bfseries end\-Spin}}\label{interface_c_c_particle_system_ad32c08649695e3f6797ad4e07e7bf37e}
+
+\item 
+\hypertarget{interface_c_c_particle_system_a7876311b6e129159d7399ef243a5669b}{float {\bfseries end\-Spin\-Var}}\label{interface_c_c_particle_system_a7876311b6e129159d7399ef243a5669b}
+
+\item 
+float \hyperlink{interface_c_c_particle_system_a35e7bf6e8ed7764949dff7268c809bb1}{emission\-Rate}
+\item 
+N\-S\-U\-Integer \hyperlink{interface_c_c_particle_system_a2f888085862e36db54c9e85a43375748}{total\-Particles}
+\item 
+\hyperlink{class_c_c_texture2_d}{C\-C\-Texture2\-D} $\ast$ \hyperlink{interface_c_c_particle_system_a36f3e14e4bef6d369e9a70808027a4f4}{texture}
+\item 
+\hyperlink{cc_types_8h_a8c19c6f67219ecc0a6e4740cc046008d}{cc\-Blend\-Func} \hyperlink{interface_c_c_particle_system_a8393dacf0b2edf14e0e0561f34250d9d}{blend\-Func}
+\item 
+B\-O\-O\-L \hyperlink{interface_c_c_particle_system_adbacc119b077190034693f4cadf270b6}{opacity\-Modify\-R\-G\-B}
+\item 
+B\-O\-O\-L \hyperlink{interface_c_c_particle_system_a70ae08e234d8bd069f2d1d37723fde25}{blend\-Additive}
+\item 
+t\-C\-C\-Position\-Type \hyperlink{interface_c_c_particle_system_afe4cea3adf77adad04de3a511da2e996}{position\-Type}
+\item 
+B\-O\-O\-L \hyperlink{interface_c_c_particle_system_a279831316b8454baf2922397eb6315c6}{auto\-Remove\-On\-Finish}
+\item 
+N\-S\-Integer \hyperlink{interface_c_c_particle_system_a9fc3e2fcc5581ee70203a1e0a3b38177}{emitter\-Mode}
+\item 
+\hyperlink{interface_c_c_particle_batch_node}{C\-C\-Particle\-Batch\-Node} $\ast$ \hyperlink{interface_c_c_particle_system_a01368df2d1792835d3c174dd3aba36be}{batch\-Node}
+\item 
+\hypertarget{interface_c_c_particle_system_a2638667740309e1a3dcbfb1203c23238}{N\-S\-U\-Integer {\bfseries atlas\-Index}}\label{interface_c_c_particle_system_a2638667740309e1a3dcbfb1203c23238}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Particle System base class Attributes of a Particle System\-:
+\begin{DoxyItemize}
+\item emmision rate of the particles
+\item Gravity Mode (Mode A)\-:
+\begin{DoxyItemize}
+\item gravity
+\item direction
+\item speed +-\/ variance
+\item tangential acceleration +-\/ variance
+\item radial acceleration +-\/ variance
+\end{DoxyItemize}
+\item Radius Mode (Mode B)\-:
+\begin{DoxyItemize}
+\item start\-Radius +-\/ variance
+\item end\-Radius +-\/ variance
+\item rotate +-\/ variance
+\end{DoxyItemize}
+\item Properties common to all modes\-:
+\begin{DoxyItemize}
+\item life +-\/ life variance
+\item start spin +-\/ variance
+\item end spin +-\/ variance
+\item start size +-\/ variance
+\item end size +-\/ variance
+\item start color +-\/ variance
+\item end color +-\/ variance
+\item life +-\/ variance
+\item blending function
+\end{DoxyItemize}
+\item texture
+\end{DoxyItemize}
+
+cocos2d also supports particles generated by Particle Designer (\href{http://particledesigner.71squared.com/}{\tt http\-://particledesigner.\-71squared.\-com/}). 'Radius Mode' in Particle Designer uses a fixed emit rate of 30 hz. Since that can't be guarateed in cocos2d, cocos2d uses a another approach, but the results are almost identical.
+
+cocos2d supports all the variables used by Particle Designer plus a bit more\-:
+\begin{DoxyItemize}
+\item spinning particles (supported when using \hyperlink{interface_c_c_particle_system_quad}{C\-C\-Particle\-System\-Quad})
+\item tangential acceleration (Gravity mode)
+\item radial acceleration (Gravity mode)
+\item radius direction (Radius mode) (Particle Designer supports outwards to inwards direction only)
+\end{DoxyItemize}
+
+It is possible to customize any of the above mentioned properties in runtime. Example\-:
+
+
+\begin{DoxyCode}
+        emitter.radialAccel = 15;
+        emitter.startSpin = 0;
+\end{DoxyCode}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_particle_system_a66665353974e9230d34c0afe85dc4f6b}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!init\-With\-Dictionary\-:@{init\-With\-Dictionary\-:}}
+\index{init\-With\-Dictionary\-:@{init\-With\-Dictionary\-:}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{init\-With\-Dictionary\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Dictionary\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Dictionary$\ast$)}]{dictionary}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_particle_system_a66665353974e9230d34c0afe85dc4f6b}
+initializes a particle system from a N\-S\-Dictionary. \begin{DoxySince}{Since}
+v0.\-99.\-3 
+\end{DoxySince}
+
+\begin{DoxyCode}
+                        :(NSDictionary *)dictionary
+{
+        return [self initWithDictionary:dictionary path:@""];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_particle_system_a0658d053b3e1750aa23353836f97e0fe}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!init\-With\-Dictionary\-:path\-:@{init\-With\-Dictionary\-:path\-:}}
+\index{init\-With\-Dictionary\-:path\-:@{init\-With\-Dictionary\-:path\-:}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{init\-With\-Dictionary\-:path\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Dictionary\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Dictionary $\ast$)}]{dictionary}
+\item[{path:(N\-S\-String$\ast$)}]{dirname}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_particle_system_a0658d053b3e1750aa23353836f97e0fe}
+initializes a particle system from a N\-S\-Dictionary and the path from where to load the png \begin{DoxySince}{Since}
+v2.\-1 
+\end{DoxySince}
+
+
+Referenced by init\-With\-Dictionary\-:, and init\-With\-File\-:.
+
+
+\begin{DoxyCode}
+                        :(NSDictionary *)dictionary path:(NSString*)dirname
+{
+        NSUInteger maxParticles = [[dictionary valueForKey:@"maxParticles"] 
+      integerValue];
+        // self, not super
+
+        if ((self=[self initWithTotalParticles:maxParticles] ) )
+        {
+                // angle
+                angle = [[dictionary valueForKey:@"angle"] floatValue];
+                angleVar = [[dictionary valueForKey:@"angleVariance"] 
+      floatValue];
+
+                // duration
+                duration = [[dictionary valueForKey:@"duration"] floatValue];
+
+                // blend function
+                blendFunc_.src = [[dictionary valueForKey:@"blendFuncSource"] 
+      intValue];
+                blendFunc_.dst = [[dictionary valueForKey:@"blendFuncDestinatio
+      n"] intValue];
+
+                // color
+                float r,g,b,a;
+
+                r = [[dictionary valueForKey:@"startColorRed"] floatValue];
+                g = [[dictionary valueForKey:@"startColorGreen"] floatValue];
+                b = [[dictionary valueForKey:@"startColorBlue"] floatValue];
+                a = [[dictionary valueForKey:@"startColorAlpha"] floatValue];
+                startColor = (ccColor4F) {r,g,b,a};
+
+                r = [[dictionary valueForKey:@"startColorVarianceRed"] 
+      floatValue];
+                g = [[dictionary valueForKey:@"startColorVarianceGreen"] 
+      floatValue];
+                b = [[dictionary valueForKey:@"startColorVarianceBlue"] 
+      floatValue];
+                a = [[dictionary valueForKey:@"startColorVarianceAlpha"] 
+      floatValue];
+                startColorVar = (ccColor4F) {r,g,b,a};
+
+                r = [[dictionary valueForKey:@"finishColorRed"] floatValue];
+                g = [[dictionary valueForKey:@"finishColorGreen"] floatValue];
+                b = [[dictionary valueForKey:@"finishColorBlue"] floatValue];
+                a = [[dictionary valueForKey:@"finishColorAlpha"] floatValue];
+                endColor = (ccColor4F) {r,g,b,a};
+
+                r = [[dictionary valueForKey:@"finishColorVarianceRed"] 
+      floatValue];
+                g = [[dictionary valueForKey:@"finishColorVarianceGreen"] 
+      floatValue];
+                b = [[dictionary valueForKey:@"finishColorVarianceBlue"] 
+      floatValue];
+                a = [[dictionary valueForKey:@"finishColorVarianceAlpha"] 
+      floatValue];
+                endColorVar = (ccColor4F) {r,g,b,a};
+
+                // particle size
+                startSize = [[dictionary valueForKey:@"startParticleSize"] 
+      floatValue];
+                startSizeVar = [[dictionary valueForKey:@"startParticleSizeVari
+      ance"] floatValue];
+                endSize = [[dictionary valueForKey:@"finishParticleSize"] 
+      floatValue];
+                endSizeVar = [[dictionary valueForKey:@"finishParticleSizeVaria
+      nce"] floatValue];
+
+                // position
+                float x = [[dictionary valueForKey:@"sourcePositionx"] 
+      floatValue];
+                float y = [[dictionary valueForKey:@"sourcePositiony"] 
+      floatValue];
+                self.position = ccp(x,y);
+                posVar.x = [[dictionary valueForKey:@"sourcePositionVariancex"]
+       floatValue];
+                posVar.y = [[dictionary valueForKey:@"sourcePositionVariancey"]
+       floatValue];
+
+                // Spinning
+                startSpin = [[dictionary valueForKey:@"rotationStart"] 
+      floatValue];
+                startSpinVar = [[dictionary valueForKey:@"rotationStartVariance
+      "] floatValue];
+                endSpin = [[dictionary valueForKey:@"rotationEnd"] floatValue];
+                endSpinVar = [[dictionary valueForKey:@"rotationEndVariance"] 
+      floatValue];
+
+                emitterMode_ = [[dictionary valueForKey:@"emitterType"] 
+      intValue];
+
+                // Mode A: Gravity + tangential accel + radial accel
+                if( emitterMode_ == kCCParticleModeGravity ) {
+                        // gravity
+                        mode.A.gravity.x = [[dictionary valueForKey:@"gravityx"
+      ] floatValue];
+                        mode.A.gravity.y = [[dictionary valueForKey:@"gravityy"
+      ] floatValue];
+
+                        //
+                        // speed
+                        mode.A.speed = [[dictionary valueForKey:@"speed"] 
+      floatValue];
+                        mode.A.speedVar = [[dictionary valueForKey:@"speedVaria
+      nce"] floatValue];
+
+                        // radial acceleration
+                        NSString *tmp = [dictionary valueForKey:@"radialAcceler
+      ation"];
+                        mode.A.radialAccel = tmp ? [tmp floatValue] : 0;
+
+                        tmp = [dictionary valueForKey:@"radialAccelVariance"];
+                        mode.A.radialAccelVar = tmp ? [tmp floatValue] : 0;
+
+                        // tangential acceleration
+                        tmp = [dictionary valueForKey:@"tangentialAcceleration"
+      ];
+                        mode.A.tangentialAccel = tmp ? [tmp floatValue] : 0;
+
+                        tmp = [dictionary valueForKey:@"tangentialAccelVariance
+      "];
+                        mode.A.tangentialAccelVar = tmp ? [tmp floatValue] : 0;
+                }
+
+                // or Mode B: radius movement
+                else if( emitterMode_ == kCCParticleModeRadius ) {
+                        float maxRadius = [[dictionary valueForKey:@"maxRadius"
+      ] floatValue];
+                        float maxRadiusVar = [[dictionary valueForKey:@"maxRadi
+      usVariance"] floatValue];
+                        float minRadius = [[dictionary valueForKey:@"minRadius"
+      ] floatValue];
+
+                        mode.B.startRadius = maxRadius;
+                        mode.B.startRadiusVar = maxRadiusVar;
+                        mode.B.endRadius = minRadius;
+                        mode.B.endRadiusVar = 0;
+                        mode.B.rotatePerSecond = [[dictionary valueForKey:@"rot
+      atePerSecond"] floatValue];
+                        mode.B.rotatePerSecondVar = [[dictionary valueForKey:@"
+      rotatePerSecondVariance"] floatValue];
+
+                } else {
+                        NSAssert( NO, @"Invalid emitterType in config file");
+                }
+
+                // life span
+                life = [[dictionary valueForKey:@"particleLifespan"] floatValue
+      ];
+                lifeVar = [[dictionary valueForKey:@"particleLifespanVariance"]
+       floatValue];
+
+                // emission Rate
+                emissionRate = totalParticles/life;
+
+                //don't get the internal texture if a batchNode is used
+                if (!batchNode_)
+                {
+                        // Set a compatible default for the alpha transfer
+                        opacityModifyRGB_ = NO;
+
+                        // texture
+                        // Try to get the texture from the cache
+
+                        NSString *textureName = [dictionary valueForKey:@"textu
+      reFileName"];
+                        NSString *textureDir = [textureName 
+      stringByDeletingLastPathComponent];
+                        
+                        // For backward compatibility, only append the dirname
+       if both dirnames are the same
+                        if( ! [textureDir isEqualToString:dirname] )
+                                textureName = [dirname 
+      stringByAppendingPathComponent:textureName];
+
+                        CCTexture2D *tex = [[CCTextureCache sharedTextureCache]
+       addImage:textureName];
+
+                        if( tex )
+                                [self setTexture:tex];
+                        else {
+
+                                NSString *textureData = [dictionary valueForKey
+      :@"textureImageData"];
+                                NSAssert( textureData, @"CCParticleSystem:
+       Couldn't load texture");
+
+                                // if it fails, try to get it from the
+       base64-gzipped data
+                                unsigned char *buffer = NULL;
+                                int len = base64Decode((unsigned char*)[
+      textureData UTF8String], (unsigned int)[textureData length], &buffer);
+                                NSAssert( buffer != NULL, @"CCParticleSystem:
+       error decoding textureImageData");
+
+                                unsigned char *deflated = NULL;
+                                NSUInteger deflatedLen = ccInflateMemory(buffer
+      , len, &deflated);
+                                free( buffer );
+
+                                NSAssert( deflated != NULL, @"CCParticleSystem:
+       error ungzipping textureImageData");
+                                NSData *data = [[NSData alloc] initWithBytes:
+      deflated length:deflatedLen];
+
+#ifdef __CC_PLATFORM_IOS
+                                UIImage *image = [[UIImage alloc] initWithData:
+      data];
+#elif defined(__CC_PLATFORM_MAC)
+                                NSBitmapImageRep *image = [[NSBitmapImageRep 
+      alloc] initWithData:data];
+#endif
+
+                                free(deflated); deflated = NULL;
+
+                                [self setTexture:  [ [CCTextureCache 
+      sharedTextureCache] addCGImage:[image CGImage] forKey:textureName]];
+                                [data release];
+                                [image release];
+                        }
+
+                        NSAssert( [self texture] != NULL, @"CCParticleSystem:
+       error loading the texture");
+                }
+        }
+
+        return self;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_particle_system_ad17d6bbf0e24418a924467d001b22077}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!init\-With\-File\-:@{init\-With\-File\-:}}
+\index{init\-With\-File\-:@{init\-With\-File\-:}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{init\-With\-File\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-File\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{plist\-File}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_particle_system_ad17d6bbf0e24418a924467d001b22077}
+initializes a \hyperlink{interface_c_c_particle_system}{C\-C\-Particle\-System} from a plist file. This plist files can be creted manually or with Particle Designer\-: \href{http://particledesigner.71squared.com/}{\tt http\-://particledesigner.\-71squared.\-com/} \begin{DoxySince}{Since}
+v0.\-99.\-3 
+\end{DoxySince}
+
+\begin{DoxyCode}
+                  :(NSString *)plistFile
+{
+        NSString *path = [[CCFileUtils sharedFileUtils] fullPathFromRelativePath
+      :plistFile];
+        NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
+
+        NSAssert( dict != nil, @"Particles: file not found");
+        
+        return [self initWithDictionary:dict path:[plistFile 
+      stringByDeletingLastPathComponent]];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_particle_system_a9a7fca032b670ea0ab77dfce0f67ec96}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!particle\-With\-File\-:@{particle\-With\-File\-:}}
+\index{particle\-With\-File\-:@{particle\-With\-File\-:}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{particle\-With\-File\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf particle\-With\-File\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{plist\-File}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_particle_system_a9a7fca032b670ea0ab77dfce0f67ec96}
+creates an initializes a \hyperlink{interface_c_c_particle_system}{C\-C\-Particle\-System} from a plist file. This plist files can be creted manually or with Particle Designer\-: \href{http://particledesigner.71squared.com/}{\tt http\-://particledesigner.\-71squared.\-com/} \begin{DoxySince}{Since}
+v0.\-99.\-3 
+\end{DoxySince}
+
+\begin{DoxyCode}
+                      :(NSString*) plistFile
+{
+        return [[[self alloc] initWithFile:plistFile] autorelease];
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_particle_system_a60a75227e9a8c6b834ac8b60c4fe42a8}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!active@{active}}
+\index{active@{active}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{active}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) {\bf active}\hspace{0.3cm}{\ttfamily  \mbox{[}read, assign\mbox{]}}}}\label{interface_c_c_particle_system_a60a75227e9a8c6b834ac8b60c4fe42a8}
+Is the emitter active 
+
+Referenced by init\-With\-Total\-Particles\-:, reset\-System, stop\-System, and update\-:.
+
+\hypertarget{interface_c_c_particle_system_a980fb9469018469875f032ad6b42f0b7}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!angle@{angle}}
+\index{angle@{angle}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{angle}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf angle}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_a980fb9469018469875f032ad6b42f0b7}
+angle and angle variation of each particle 
+
+Referenced by init\-With\-Dictionary\-:path\-:.
+
+\hypertarget{interface_c_c_particle_system_a64d7a73dde3c88b4a151eb1e2fcc330b}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!angle\-Var@{angle\-Var}}
+\index{angle\-Var@{angle\-Var}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{angle\-Var}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf angle\-Var}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_a64d7a73dde3c88b4a151eb1e2fcc330b}
+angle variance of each particle 
+
+Referenced by init\-With\-Dictionary\-:path\-:.
+
+\hypertarget{interface_c_c_particle_system_a279831316b8454baf2922397eb6315c6}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!auto\-Remove\-On\-Finish@{auto\-Remove\-On\-Finish}}
+\index{auto\-Remove\-On\-Finish@{auto\-Remove\-On\-Finish}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{auto\-Remove\-On\-Finish}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) {\bf auto\-Remove\-On\-Finish}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_a279831316b8454baf2922397eb6315c6}
+whether or not the node will be auto-\/removed when it has no particles left. By default it is N\-O. \begin{DoxySince}{Since}
+v0.\-8 
+\end{DoxySince}
+\hypertarget{interface_c_c_particle_system_a01368df2d1792835d3c174dd3aba36be}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!batch\-Node@{batch\-Node}}
+\index{batch\-Node@{batch\-Node}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{batch\-Node}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Particle\-Batch\-Node} $\ast$) {\bf batch\-Node}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_a01368df2d1792835d3c174dd3aba36be}
+weak reference to the \hyperlink{interface_c_c_sprite_batch_node}{C\-C\-Sprite\-Batch\-Node} that renders the \hyperlink{class_c_c_sprite}{C\-C\-Sprite} \hypertarget{interface_c_c_particle_system_a70ae08e234d8bd069f2d1d37723fde25}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!blend\-Additive@{blend\-Additive}}
+\index{blend\-Additive@{blend\-Additive}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{blend\-Additive}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) {\bf blend\-Additive}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_a70ae08e234d8bd069f2d1d37723fde25}
+whether or not the particles are using blend additive. If enabled, the following blending function will be used. 
+\begin{DoxyCode}
+        source blend function = GL_SRC_ALPHA;
+        dest blend function = GL_ONE;
+\end{DoxyCode}
+ \hypertarget{interface_c_c_particle_system_a8393dacf0b2edf14e0e0561f34250d9d}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!blend\-Func@{blend\-Func}}
+\index{blend\-Func@{blend\-Func}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{blend\-Func}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf cc\-Blend\-Func}) {\bf blend\-Func}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_a8393dacf0b2edf14e0e0561f34250d9d}
+conforms to Cocos\-Node\-Texture protocol 
+
+Referenced by C\-C\-Particle\-Batch\-Node\-::add\-Child\-:z\-:tag\-:.
+
+\hypertarget{interface_c_c_particle_system_ac76aed37427e5700bfe0f6c8956cd2c7}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!duration@{duration}}
+\index{duration@{duration}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{duration}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf duration}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_ac76aed37427e5700bfe0f6c8956cd2c7}
+How many seconds the emitter wil run. -\/1 means 'forever' 
+
+Referenced by init\-With\-Dictionary\-:path\-:, stop\-System, and update\-:.
+
+\hypertarget{interface_c_c_particle_system_a35e7bf6e8ed7764949dff7268c809bb1}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!emission\-Rate@{emission\-Rate}}
+\index{emission\-Rate@{emission\-Rate}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{emission\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf emission\-Rate}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_a35e7bf6e8ed7764949dff7268c809bb1}
+emission rate of the particles 
+
+Referenced by init\-With\-Dictionary\-:path\-:, and update\-:.
+
+\hypertarget{interface_c_c_particle_system_a9fc3e2fcc5581ee70203a1e0a3b38177}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!emitter\-Mode@{emitter\-Mode}}
+\index{emitter\-Mode@{emitter\-Mode}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{emitter\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Integer) {\bf emitter\-Mode}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_a9fc3e2fcc5581ee70203a1e0a3b38177}
+Switch between different kind of emitter modes\-:
+\begin{DoxyItemize}
+\item k\-C\-C\-Particle\-Mode\-Gravity\-: uses gravity, speed, radial and tangential acceleration
+\item k\-C\-C\-Particle\-Mode\-Radius\-: uses radius movement + rotation 
+\end{DoxyItemize}\hypertarget{interface_c_c_particle_system_a0d290daeb3cbb33136ff584af20b3aa1}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!end\-Color@{end\-Color}}
+\index{end\-Color@{end\-Color}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{end\-Color}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf cc\-Color4\-F}) {\bf end\-Color}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_a0d290daeb3cbb33136ff584af20b3aa1}
+end color and end color variation of each particle 
+
+Referenced by init\-With\-Dictionary\-:path\-:.
+
+\hypertarget{interface_c_c_particle_system_ab1b7d80b864563801b6d979892188ae6}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!end\-Color\-Var@{end\-Color\-Var}}
+\index{end\-Color\-Var@{end\-Color\-Var}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{end\-Color\-Var}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf cc\-Color4\-F}) {\bf end\-Color\-Var}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_ab1b7d80b864563801b6d979892188ae6}
+end color variance of each particle 
+
+Referenced by init\-With\-Dictionary\-:path\-:.
+
+\hypertarget{interface_c_c_particle_system_a66a281e16741b580235d0dbc0e0b140e}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!end\-Radius@{end\-Radius}}
+\index{end\-Radius@{end\-Radius}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{end\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf end\-Radius}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_a66a281e16741b580235d0dbc0e0b140e}
+The ending radius of the particles. Only available in 'Radius' mode. \hypertarget{interface_c_c_particle_system_a53cce2870ee64bdbcdc612215128aff3}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!end\-Radius\-Var@{end\-Radius\-Var}}
+\index{end\-Radius\-Var@{end\-Radius\-Var}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{end\-Radius\-Var}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf end\-Radius\-Var}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_a53cce2870ee64bdbcdc612215128aff3}
+The ending radius variance of the particles. Only available in 'Radius' mode. \hypertarget{interface_c_c_particle_system_aaf20369f6b7c2c715a55f3d33fcc91d8}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!end\-Size@{end\-Size}}
+\index{end\-Size@{end\-Size}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{end\-Size}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf end\-Size}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_aaf20369f6b7c2c715a55f3d33fcc91d8}
+end size in pixels of each particle 
+
+Referenced by init\-With\-Dictionary\-:path\-:.
+
+\hypertarget{interface_c_c_particle_system_ac8abe45d12a4686d1e5cd1b3b67a6dc1}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!end\-Size\-Var@{end\-Size\-Var}}
+\index{end\-Size\-Var@{end\-Size\-Var}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{end\-Size\-Var}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf end\-Size\-Var}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_ac8abe45d12a4686d1e5cd1b3b67a6dc1}
+end size variance in pixels of each particle 
+
+Referenced by init\-With\-Dictionary\-:path\-:.
+
+\hypertarget{interface_c_c_particle_system_a0d9493d711aae8997874c9119fb67ac2}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!gravity@{gravity}}
+\index{gravity@{gravity}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{gravity}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Point) {\bf gravity}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_a0d9493d711aae8997874c9119fb67ac2}
+Gravity value. Only available in 'Gravity' mode. \hypertarget{interface_c_c_particle_system_a504a0c0a85d96ec6bdce4c5951d4daaf}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!life@{life}}
+\index{life@{life}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{life}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf life}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_a504a0c0a85d96ec6bdce4c5951d4daaf}
+life, and life variation of each particle 
+
+Referenced by init\-With\-Dictionary\-:path\-:.
+
+\hypertarget{interface_c_c_particle_system_aca3d4efd11d4aec59dcbf44f0f255bbb}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!life\-Var@{life\-Var}}
+\index{life\-Var@{life\-Var}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{life\-Var}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf life\-Var}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_aca3d4efd11d4aec59dcbf44f0f255bbb}
+life variance of each particle 
+
+Referenced by init\-With\-Dictionary\-:path\-:.
+
+\hypertarget{interface_c_c_particle_system_adbacc119b077190034693f4cadf270b6}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!opacity\-Modify\-R\-G\-B@{opacity\-Modify\-R\-G\-B}}
+\index{opacity\-Modify\-R\-G\-B@{opacity\-Modify\-R\-G\-B}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{opacity\-Modify\-R\-G\-B}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) {\bf opacity\-Modify\-R\-G\-B}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_adbacc119b077190034693f4cadf270b6}
+does the alpha value modify color \hypertarget{interface_c_c_particle_system_a129f846f7ff4207cf6dd9e95f97a780f}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!particle\-Count@{particle\-Count}}
+\index{particle\-Count@{particle\-Count}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{particle\-Count}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-U\-Integer) {\bf particle\-Count}\hspace{0.3cm}{\ttfamily  \mbox{[}read, assign\mbox{]}}}}\label{interface_c_c_particle_system_a129f846f7ff4207cf6dd9e95f97a780f}
+Quantity of particles that are being simulated at the moment 
+
+Referenced by is\-Full, reset\-System, and update\-:.
+
+\hypertarget{interface_c_c_particle_system_afe4cea3adf77adad04de3a511da2e996}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!position\-Type@{position\-Type}}
+\index{position\-Type@{position\-Type}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{position\-Type}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (t\-C\-C\-Position\-Type) {\bf position\-Type}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_afe4cea3adf77adad04de3a511da2e996}
+particles movement type\-: Free or Grouped \begin{DoxySince}{Since}
+v0.\-8 
+\end{DoxySince}
+\hypertarget{interface_c_c_particle_system_a83bd3365f1a7e6e793e526e3f1619027}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!pos\-Var@{pos\-Var}}
+\index{pos\-Var@{pos\-Var}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{pos\-Var}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Point) {\bf pos\-Var}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_a83bd3365f1a7e6e793e526e3f1619027}
+Position variance of the emitter 
+
+Referenced by init\-With\-Dictionary\-:path\-:.
+
+\hypertarget{interface_c_c_particle_system_a7783624c120b134876370ea938bc0bda}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!radial\-Accel@{radial\-Accel}}
+\index{radial\-Accel@{radial\-Accel}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{radial\-Accel}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf radial\-Accel}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_a7783624c120b134876370ea938bc0bda}
+radial acceleration of each particle. Only available in 'Gravity' mode. \hypertarget{interface_c_c_particle_system_a6131e43941470fe74649ed573ff65235}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!radial\-Accel\-Var@{radial\-Accel\-Var}}
+\index{radial\-Accel\-Var@{radial\-Accel\-Var}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{radial\-Accel\-Var}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf radial\-Accel\-Var}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_a6131e43941470fe74649ed573ff65235}
+radial acceleration variance of each particle. Only available in 'Gravity' mode. \hypertarget{interface_c_c_particle_system_ab80b9909c7e9b81d37c81f1db8c2a9ae}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!rotate\-Per\-Second@{rotate\-Per\-Second}}
+\index{rotate\-Per\-Second@{rotate\-Per\-Second}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{rotate\-Per\-Second}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf rotate\-Per\-Second}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_ab80b9909c7e9b81d37c81f1db8c2a9ae}
+Number of degress to rotate a particle around the source pos per second. Only available in 'Radius' mode. \hypertarget{interface_c_c_particle_system_a13444d6216268c4e75e68f35800a2fa4}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!rotate\-Per\-Second\-Var@{rotate\-Per\-Second\-Var}}
+\index{rotate\-Per\-Second\-Var@{rotate\-Per\-Second\-Var}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{rotate\-Per\-Second\-Var}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf rotate\-Per\-Second\-Var}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_a13444d6216268c4e75e68f35800a2fa4}
+Variance in degrees for rotate\-Per\-Second. Only available in 'Radius' mode. \hypertarget{interface_c_c_particle_system_a68e4c7c8937306ce0290d16ff138ba5a}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!source\-Position@{source\-Position}}
+\index{source\-Position@{source\-Position}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{source\-Position}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Point) {\bf source\-Position}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_a68e4c7c8937306ce0290d16ff138ba5a}
+source\-Position of the emitter \hypertarget{interface_c_c_particle_system_a3ca34d808d087673edfddffa81bb0b94}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!speed@{speed}}
+\index{speed@{speed}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{speed}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf speed}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_a3ca34d808d087673edfddffa81bb0b94}
+speed of each particle. Only available in 'Gravity' mode. \hypertarget{interface_c_c_particle_system_a8425df9477c9448d70c26b85c671ded3}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!speed\-Var@{speed\-Var}}
+\index{speed\-Var@{speed\-Var}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{speed\-Var}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf speed\-Var}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_a8425df9477c9448d70c26b85c671ded3}
+speed variance of each particle. Only available in 'Gravity' mode. \hypertarget{interface_c_c_particle_system_aeb2e14c2f0c26b93d1cfb55f97b94266}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!start\-Color@{start\-Color}}
+\index{start\-Color@{start\-Color}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{start\-Color}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf cc\-Color4\-F}) {\bf start\-Color}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_aeb2e14c2f0c26b93d1cfb55f97b94266}
+start color of each particle 
+
+Referenced by init\-With\-Dictionary\-:path\-:.
+
+\hypertarget{interface_c_c_particle_system_a8f0c91008053b7334dafd2c449aa85c7}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!start\-Color\-Var@{start\-Color\-Var}}
+\index{start\-Color\-Var@{start\-Color\-Var}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{start\-Color\-Var}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf cc\-Color4\-F}) {\bf start\-Color\-Var}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_a8f0c91008053b7334dafd2c449aa85c7}
+start color variance of each particle 
+
+Referenced by init\-With\-Dictionary\-:path\-:.
+
+\hypertarget{interface_c_c_particle_system_a0b1600c0e154b7e7c9d7daec73afa50c}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!start\-Radius@{start\-Radius}}
+\index{start\-Radius@{start\-Radius}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{start\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf start\-Radius}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_a0b1600c0e154b7e7c9d7daec73afa50c}
+The starting radius of the particles. Only available in 'Radius' mode. \hypertarget{interface_c_c_particle_system_a2793e0e4ffa084511c56fba3364e7c97}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!start\-Radius\-Var@{start\-Radius\-Var}}
+\index{start\-Radius\-Var@{start\-Radius\-Var}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{start\-Radius\-Var}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf start\-Radius\-Var}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_a2793e0e4ffa084511c56fba3364e7c97}
+The starting radius variance of the particles. Only available in 'Radius' mode. \hypertarget{interface_c_c_particle_system_afd9a53491a4b38a200585419f17e7095}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!start\-Size@{start\-Size}}
+\index{start\-Size@{start\-Size}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{start\-Size}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf start\-Size}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_afd9a53491a4b38a200585419f17e7095}
+start size in pixels of each particle 
+
+Referenced by init\-With\-Dictionary\-:path\-:.
+
+\hypertarget{interface_c_c_particle_system_a465fb02238f5879495fee1f5be1de27f}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!start\-Size\-Var@{start\-Size\-Var}}
+\index{start\-Size\-Var@{start\-Size\-Var}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{start\-Size\-Var}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf start\-Size\-Var}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_a465fb02238f5879495fee1f5be1de27f}
+size variance in pixels of each particle 
+
+Referenced by init\-With\-Dictionary\-:path\-:.
+
+\hypertarget{interface_c_c_particle_system_a3bd406cacdb59df7e672ee3ef8fe1a60}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!tangential\-Accel@{tangential\-Accel}}
+\index{tangential\-Accel@{tangential\-Accel}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{tangential\-Accel}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf tangential\-Accel}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_a3bd406cacdb59df7e672ee3ef8fe1a60}
+tangential acceleration of each particle. Only available in 'Gravity' mode. \hypertarget{interface_c_c_particle_system_ab73717872b1cbbe4d546e38c86c5f116}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!tangential\-Accel\-Var@{tangential\-Accel\-Var}}
+\index{tangential\-Accel\-Var@{tangential\-Accel\-Var}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{tangential\-Accel\-Var}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf tangential\-Accel\-Var}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_ab73717872b1cbbe4d546e38c86c5f116}
+tangential acceleration variance of each particle. Only available in 'Gravity' mode. \hypertarget{interface_c_c_particle_system_a36f3e14e4bef6d369e9a70808027a4f4}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!texture@{texture}}
+\index{texture@{texture}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{texture}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Texture2\-D} $\ast$) {\bf texture}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}\label{interface_c_c_particle_system_a36f3e14e4bef6d369e9a70808027a4f4}
+conforms to Cocos\-Node\-Texture protocol 
+
+Referenced by C\-C\-Particle\-Batch\-Node\-::add\-Child\-:z\-:tag\-:.
+
+\hypertarget{interface_c_c_particle_system_a2f888085862e36db54c9e85a43375748}{\index{C\-C\-Particle\-System@{C\-C\-Particle\-System}!total\-Particles@{total\-Particles}}
+\index{total\-Particles@{total\-Particles}!CCParticleSystem@{C\-C\-Particle\-System}}
+\subsubsection[{total\-Particles}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-U\-Integer) {\bf total\-Particles}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_particle_system_a2f888085862e36db54c9e85a43375748}
+maximum particles of the system 
+
+Referenced by C\-C\-Particle\-Batch\-Node\-::add\-Child\-:z\-:tag\-:, C\-C\-Particle\-System\-Quad\-::init\-Indices, C\-C\-Particle\-System\-Quad\-::init\-Tex\-Coords\-With\-Rect\-:, init\-With\-Dictionary\-:path\-:, init\-With\-Total\-Particles\-:, C\-C\-Particle\-Batch\-Node\-::insert\-Child\-:in\-Atlas\-At\-Index\-:, is\-Full, and update\-:.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Particle\-System.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Particle\-System.\-m\end{DoxyCompactItemize}

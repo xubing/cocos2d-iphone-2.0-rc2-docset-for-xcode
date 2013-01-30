@@ -1,0 +1,90 @@
+\hypertarget{interface_c_c_reverse_time}{\section{C\-C\-Reverse\-Time Class Reference}
+\label{interface_c_c_reverse_time}\index{C\-C\-Reverse\-Time@{C\-C\-Reverse\-Time}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Interval.\-h$>$}
+
+Inheritance diagram for C\-C\-Reverse\-Time\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_c_c_reverse_time}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_reverse_time_a9608cb958a6bcfdef40e0c786b67f929}{init\-With\-Action\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_reverse_time_a4752c7d6c6f3395677e3147846c27e5e}{action\-With\-Action\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_reverse_time_a13b6d47094f4e60d08c02641553d76ad}{\hyperlink{interface_c_c_finite_time_action}{C\-C\-Finite\-Time\-Action} $\ast$ {\bfseries other\-\_\-}}\label{interface_c_c_reverse_time_a13b6d47094f4e60d08c02641553d76ad}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Executes an action in reverse order, from time=duration to time=0
+
+\begin{DoxyWarning}{Warning}
+Use this action carefully. This action is not sequence-\/able. Use it as the default \char`\"{}reversed\char`\"{} method of your own actions, but using it outside the \char`\"{}reversed\char`\"{} scope is not recommended. 
+\end{DoxyWarning}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_reverse_time_a4752c7d6c6f3395677e3147846c27e5e}{\index{C\-C\-Reverse\-Time@{C\-C\-Reverse\-Time}!action\-With\-Action\-:@{action\-With\-Action\-:}}
+\index{action\-With\-Action\-:@{action\-With\-Action\-:}!CCReverseTime@{C\-C\-Reverse\-Time}}
+\subsubsection[{action\-With\-Action\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Action\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Finite\-Time\-Action}$\ast$)}]{action}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_reverse_time_a4752c7d6c6f3395677e3147846c27e5e}
+creates the action 
+\begin{DoxyCode}
+                      : (CCFiniteTimeAction*) action
+{
+        // casting to prevent warnings
+        CCReverseTime *a = [self alloc];
+        return [[a initWithAction:action] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_reverse_time_a9608cb958a6bcfdef40e0c786b67f929}{\index{C\-C\-Reverse\-Time@{C\-C\-Reverse\-Time}!init\-With\-Action\-:@{init\-With\-Action\-:}}
+\index{init\-With\-Action\-:@{init\-With\-Action\-:}!CCReverseTime@{C\-C\-Reverse\-Time}}
+\subsubsection[{init\-With\-Action\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Action\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Finite\-Time\-Action}$\ast$)}]{action}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_reverse_time_a9608cb958a6bcfdef40e0c786b67f929}
+initializes the action 
+
+Referenced by action\-With\-Action\-:.
+
+
+\begin{DoxyCode}
+                    : (CCFiniteTimeAction*) action
+{
+        NSAssert(action != nil, @"CCReverseTime: action should not be nil");
+        NSAssert(action != other_, @"CCReverseTime: re-init doesn't support
+       using the same arguments");
+
+        if( (self=[super initWithDuration: [action duration]]) ) {
+                // Don't leak if action is reused
+                [other_ release];
+                other_ = [action retain];
+        }
+
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-m\end{DoxyCompactItemize}

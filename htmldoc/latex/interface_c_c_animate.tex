@@ -1,0 +1,131 @@
+\hypertarget{interface_c_c_animate}{\section{C\-C\-Animate Class Reference}
+\label{interface_c_c_animate}\index{C\-C\-Animate@{C\-C\-Animate}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Interval.\-h$>$}
+
+Inheritance diagram for C\-C\-Animate\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_c_c_animate}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_animate_aac954dac6923a10d4467363842a50e6b}{init\-With\-Animation\-:}
+\item 
+\hypertarget{interface_c_c_animate_aabe0620adbaca30d9121f0581f7b2adb}{(id) -\/ {\bfseries init\-With\-Animation\-:restore\-Original\-Frame\-:}}\label{interface_c_c_animate_aabe0620adbaca30d9121f0581f7b2adb}
+
+\item 
+\hypertarget{interface_c_c_animate_a3dfdda3854665633c552ec36b9214cd7}{(id) -\/ {\bfseries init\-With\-Duration\-:animation\-:restore\-Original\-Frame\-:}}\label{interface_c_c_animate_a3dfdda3854665633c552ec36b9214cd7}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_animate_a509b8a655b24ee34615bbe2eb65f8db0}{action\-With\-Animation\-:}
+\item 
+\hypertarget{interface_c_c_animate_aad0e7d923d64f361cfb9e7789ce5d247}{(id) + {\bfseries action\-With\-Animation\-:restore\-Original\-Frame\-:}}\label{interface_c_c_animate_aad0e7d923d64f361cfb9e7789ce5d247}
+
+\item 
+\hypertarget{interface_c_c_animate_a558bf0ba5d04a167e7678c4e992cb9e6}{(id) + {\bfseries action\-With\-Duration\-:animation\-:restore\-Original\-Frame\-:}}\label{interface_c_c_animate_a558bf0ba5d04a167e7678c4e992cb9e6}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_animate_a3e9776b0c46dfe112a5685f46568a7ba}{N\-S\-Mutable\-Array $\ast$ {\bfseries split\-Times\-\_\-}}\label{interface_c_c_animate_a3e9776b0c46dfe112a5685f46568a7ba}
+
+\item 
+\hypertarget{interface_c_c_animate_a78c3c9a779b381be83417c3e249829ba}{N\-S\-Integer {\bfseries next\-Frame\-\_\-}}\label{interface_c_c_animate_a78c3c9a779b381be83417c3e249829ba}
+
+\item 
+\hypertarget{interface_c_c_animate_a69f62bb2f660f09fa9bc82e1917252f4}{\hyperlink{interface_c_c_animation}{C\-C\-Animation} $\ast$ {\bfseries animation\-\_\-}}\label{interface_c_c_animate_a69f62bb2f660f09fa9bc82e1917252f4}
+
+\item 
+\hypertarget{interface_c_c_animate_aa1c3752a4414fb3db1e4b1cc75609c4a}{id {\bfseries orig\-Frame\-\_\-}}\label{interface_c_c_animate_aa1c3752a4414fb3db1e4b1cc75609c4a}
+
+\item 
+\hypertarget{interface_c_c_animate_a3af44f2473639fbc9213aa349bba9155}{N\-S\-U\-Integer {\bfseries executed\-Loops\-\_\-}}\label{interface_c_c_animate_a3af44f2473639fbc9213aa349bba9155}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_c_c_animation}{C\-C\-Animation} $\ast$ \hyperlink{interface_c_c_animate_ae4a9ffbb8c0b5496a5c20c250ef4ac83}{animation}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Animates a sprite given the name of an Animation 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_animate_a509b8a655b24ee34615bbe2eb65f8db0}{\index{C\-C\-Animate@{C\-C\-Animate}!action\-With\-Animation\-:@{action\-With\-Animation\-:}}
+\index{action\-With\-Animation\-:@{action\-With\-Animation\-:}!CCAnimate@{C\-C\-Animate}}
+\subsubsection[{action\-With\-Animation\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Animation\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Animation}$\ast$)}]{animation}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_animate_a509b8a655b24ee34615bbe2eb65f8db0}
+creates the action with an Animation and will restore the original frame when the animation is over 
+\begin{DoxyCode}
+                         : (CCAnimation*)anim
+{
+        return [[[self alloc] initWithAnimation:anim] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_animate_aac954dac6923a10d4467363842a50e6b}{\index{C\-C\-Animate@{C\-C\-Animate}!init\-With\-Animation\-:@{init\-With\-Animation\-:}}
+\index{init\-With\-Animation\-:@{init\-With\-Animation\-:}!CCAnimate@{C\-C\-Animate}}
+\subsubsection[{init\-With\-Animation\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Animation\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Animation}$\ast$)}]{animation}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_animate_aac954dac6923a10d4467363842a50e6b}
+initializes the action with an Animation and will restore the original frame when the animation is over 
+\begin{DoxyCode}
+                       :(CCAnimation*)anim
+{
+        NSAssert( anim!=nil, @"Animate: argument Animation must be non-nil");
+        
+        float singleDuration = anim.duration;
+
+        if( (self=[super initWithDuration:singleDuration * anim.loops] ) ) {
+
+                nextFrame_ = 0;
+                self.animation = anim;
+                origFrame_ = nil;
+                executedLoops_ = 0;
+                
+                splitTimes_ = [[NSMutableArray alloc] initWithCapacity:anim.
+      frames.count];
+                
+                float accumUnitsOfTime = 0;
+                float newUnitOfTimeValue = singleDuration / anim.
+      totalDelayUnits;
+                
+                for( CCAnimationFrame *frame in anim.frames ) {
+
+                        NSNumber *value = [NSNumber numberWithFloat: (
+      accumUnitsOfTime * newUnitOfTimeValue) / singleDuration];
+                        accumUnitsOfTime += frame.delayUnits;
+
+                        [splitTimes_ addObject:value];
+                }               
+        }
+        return self;
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_animate_ae4a9ffbb8c0b5496a5c20c250ef4ac83}{\index{C\-C\-Animate@{C\-C\-Animate}!animation@{animation}}
+\index{animation@{animation}!CCAnimate@{C\-C\-Animate}}
+\subsubsection[{animation}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Animation}$\ast$) {\bf animation}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}\label{interface_c_c_animate_ae4a9ffbb8c0b5496a5c20c250ef4ac83}
+animation used for the image 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-m\end{DoxyCompactItemize}

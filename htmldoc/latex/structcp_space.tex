@@ -1,0 +1,176 @@
+\hypertarget{structcp_space}{\section{cp\-Space Struct Reference}
+\label{structcp_space}\index{cp\-Space@{cp\-Space}}
+}
+
+
+Basic Unit of Simulation in Chipmunk.  
+
+
+
+
+{\ttfamily \#include $<$cp\-Space.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structcp_space_adfa4ce28c4357ef54a9e61b605e45457}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{group__basic_types_gaa24652c104082d0725066ea5ac7dc83f}{cp\-Timestamp} stamp)}\label{structcp_space_adfa4ce28c4357ef54a9e61b605e45457}
+
+\item 
+\hypertarget{structcp_space_a8531345195a8715baeb3f64ab8c3b689}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} curr\-\_\-dt)}\label{structcp_space_a8531345195a8715baeb3f64ab8c3b689}
+
+\item 
+\hypertarget{structcp_space_a806c2fcdef835e5c95d17f0348c56b22}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{structcp_array}{cp\-Array} $\ast$bodies)}\label{structcp_space_a806c2fcdef835e5c95d17f0348c56b22}
+
+\item 
+\hypertarget{structcp_space_a45efefe0c3b166ea0e3f3640d48b9117}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{structcp_array}{cp\-Array} $\ast$roused\-Bodies)}\label{structcp_space_a45efefe0c3b166ea0e3f3640d48b9117}
+
+\item 
+\hypertarget{structcp_space_a9a02917a023511cb2918f94010757d6b}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{structcp_array}{cp\-Array} $\ast$sleeping\-Components)}\label{structcp_space_a9a02917a023511cb2918f94010757d6b}
+
+\item 
+\hypertarget{structcp_space_accb3105ff3a2abd0d6dcb21d4b757846}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (cp\-Spatial\-Index $\ast$static\-Shapes)}\label{structcp_space_accb3105ff3a2abd0d6dcb21d4b757846}
+
+\item 
+\hypertarget{structcp_space_aeb5b3254155839a0577a95cfc47150f6}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (cp\-Spatial\-Index $\ast$active\-Shapes)}\label{structcp_space_aeb5b3254155839a0577a95cfc47150f6}
+
+\item 
+\hypertarget{structcp_space_a1f82e9b793400fd3cd711fd8b6157fdf}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{structcp_array}{cp\-Array} $\ast$arbiters)}\label{structcp_space_a1f82e9b793400fd3cd711fd8b6157fdf}
+
+\item 
+\hypertarget{structcp_space_a5b64d0a3e66448037ae97094939bbbde}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{structcp_contact_buffer_header}{cp\-Contact\-Buffer\-Header} $\ast$contact\-Buffers\-Head)}\label{structcp_space_a5b64d0a3e66448037ae97094939bbbde}
+
+\item 
+\hypertarget{structcp_space_a99ad085e2dee9420cbb015841a6aa180}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{structcp_hash_set}{cp\-Hash\-Set} $\ast$cached\-Arbiters)}\label{structcp_space_a99ad085e2dee9420cbb015841a6aa180}
+
+\item 
+\hypertarget{structcp_space_a88069cd1a65978e2121349247451ad3e}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{structcp_array}{cp\-Array} $\ast$pooled\-Arbiters)}\label{structcp_space_a88069cd1a65978e2121349247451ad3e}
+
+\item 
+\hypertarget{structcp_space_a0ee26e44dd103669b73052675cbf1e23}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{structcp_array}{cp\-Array} $\ast$constraints)}\label{structcp_space_a0ee26e44dd103669b73052675cbf1e23}
+
+\item 
+\hypertarget{structcp_space_a845d16ad7d74a1d003b4a3a7c22c167e}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{structcp_array}{cp\-Array} $\ast$allocated\-Buffers)}\label{structcp_space_a845d16ad7d74a1d003b4a3a7c22c167e}
+
+\item 
+\hypertarget{structcp_space_a55611cae882c3e92add352cf39f12c76}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (int locked)}\label{structcp_space_a55611cae882c3e92add352cf39f12c76}
+
+\item 
+\hypertarget{structcp_space_a0a4279c91adbb813a74923a7c371a482}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{structcp_hash_set}{cp\-Hash\-Set} $\ast$collision\-Handlers)}\label{structcp_space_a0a4279c91adbb813a74923a7c371a482}
+
+\item 
+\hypertarget{structcp_space_af21775dd1d2a9fb3d78b1ac9738f0162}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (cp\-Collision\-Handler default\-Handler)}\label{structcp_space_af21775dd1d2a9fb3d78b1ac9738f0162}
+
+\item 
+\hypertarget{structcp_space_aa6fad1fb7c894240d089a2438812811d}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{group__basic_types_gab6e5d8afee598a57cd323abae5310244}{cp\-Bool} skip\-Post\-Step)}\label{structcp_space_aa6fad1fb7c894240d089a2438812811d}
+
+\item 
+\hypertarget{structcp_space_a36ac82e4c6fd9419b7f46cacff58b87c}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{structcp_array}{cp\-Array} $\ast$post\-Step\-Callbacks)}\label{structcp_space_a36ac82e4c6fd9419b7f46cacff58b87c}
+
+\item 
+\hypertarget{structcp_space_a107f878bba39a62ff2d42b733a51a533}{{\bfseries C\-P\-\_\-\-P\-R\-I\-V\-A\-T\-E} (\hyperlink{structcp_body}{cp\-Body} \-\_\-static\-Body)}\label{structcp_space_a107f878bba39a62ff2d42b733a51a533}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structcp_space_af278fb3ab6ec903acd2fe49ee821fcf8}{int \hyperlink{structcp_space_af278fb3ab6ec903acd2fe49ee821fcf8}{iterations}}\label{structcp_space_af278fb3ab6ec903acd2fe49ee821fcf8}
+
+\begin{DoxyCompactList}\small\item\em Number of iterations to use in the impulse solver to solve contacts. \end{DoxyCompactList}\item 
+\hypertarget{structcp_space_a93479d52c441a2e3b36716d9a9d55852}{\hyperlink{structcp_vect}{cp\-Vect} \hyperlink{structcp_space_a93479d52c441a2e3b36716d9a9d55852}{gravity}}\label{structcp_space_a93479d52c441a2e3b36716d9a9d55852}
+
+\begin{DoxyCompactList}\small\item\em Gravity to pass to rigid bodies when integrating velocity. \end{DoxyCompactList}\item 
+\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} \hyperlink{structcp_space_a421f86b111318e2eced602c6930fffaa}{damping}
+\item 
+\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} \hyperlink{structcp_space_a88ffce371610f2b94997160de703f1cd}{idle\-Speed\-Threshold}
+\item 
+\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} \hyperlink{structcp_space_a928d74741904aae266a9efff5b5f68f7}{sleep\-Time\-Threshold}
+\item 
+\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} \hyperlink{structcp_space_af1bec644a24e12bfc642a942a88520f7}{collision\-Slop}
+\item 
+\hyperlink{group__basic_types_gac1ed65573e035bf892505768c852d8d3}{cp\-Float} \hyperlink{structcp_space_a8f5a7d2a5cf25b1f18d05e9b31a87ad9}{collision\-Bias}
+\item 
+\hyperlink{group__basic_types_gaa24652c104082d0725066ea5ac7dc83f}{cp\-Timestamp} \hyperlink{structcp_space_a3bd0012d98c276bd903b1635b9756396}{collision\-Persistence}
+\item 
+\hyperlink{group__basic_types_gab6e5d8afee598a57cd323abae5310244}{cp\-Bool} \hyperlink{structcp_space_ac4f67b1946aad96a50299ac769d781bb}{enable\-Contact\-Graph}
+\item 
+\hyperlink{group__basic_types_ga2ac2c3c31e21893941f9e4f8ee279447}{cp\-Data\-Pointer} \hyperlink{structcp_space_a9c4c3792e422dd353a49b8657f102f33}{data}
+\item 
+\hyperlink{structcp_body}{cp\-Body} $\ast$ \hyperlink{structcp_space_aa7cb4add8933036493bf7f4ee98ad13e}{static\-Body}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Basic Unit of Simulation in Chipmunk. 
+
+\subsection{Member Data Documentation}
+\hypertarget{structcp_space_a8f5a7d2a5cf25b1f18d05e9b31a87ad9}{\index{cp\-Space@{cp\-Space}!collision\-Bias@{collision\-Bias}}
+\index{collision\-Bias@{collision\-Bias}!cpSpace@{cp\-Space}}
+\subsubsection[{collision\-Bias}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cp\-Float} {\bf cp\-Space\-::collision\-Bias}}}\label{structcp_space_a8f5a7d2a5cf25b1f18d05e9b31a87ad9}
+Determines how fast overlapping shapes are pushed apart. Expressed as a fraction of the error remaining after each second. Defaults to pow(1.\-0 -\/ 0.\-1, 60.\-0) meaning that Chipmunk fixes 10\% of overlap each frame at 60\-Hz. 
+
+Referenced by cp\-Space\-Init(), and cp\-Space\-Step().
+
+\hypertarget{structcp_space_a3bd0012d98c276bd903b1635b9756396}{\index{cp\-Space@{cp\-Space}!collision\-Persistence@{collision\-Persistence}}
+\index{collision\-Persistence@{collision\-Persistence}!cpSpace@{cp\-Space}}
+\subsubsection[{collision\-Persistence}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cp\-Timestamp} {\bf cp\-Space\-::collision\-Persistence}}}\label{structcp_space_a3bd0012d98c276bd903b1635b9756396}
+Number of frames that contact information should persist. Defaults to 3. There is probably never a reason to change this value. 
+
+Referenced by cp\-Space\-Init().
+
+\hypertarget{structcp_space_af1bec644a24e12bfc642a942a88520f7}{\index{cp\-Space@{cp\-Space}!collision\-Slop@{collision\-Slop}}
+\index{collision\-Slop@{collision\-Slop}!cpSpace@{cp\-Space}}
+\subsubsection[{collision\-Slop}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cp\-Float} {\bf cp\-Space\-::collision\-Slop}}}\label{structcp_space_af1bec644a24e12bfc642a942a88520f7}
+Amount of encouraged penetration between colliding shapes. Used to reduce oscillating contacts and keep the collision cache warm. Defaults to 0.\-1. If you have poor simulation quality, increase this number as much as possible without allowing visible amounts of overlap. 
+
+Referenced by cp\-Space\-Init(), and cp\-Space\-Step().
+
+\hypertarget{structcp_space_a421f86b111318e2eced602c6930fffaa}{\index{cp\-Space@{cp\-Space}!damping@{damping}}
+\index{damping@{damping}!cpSpace@{cp\-Space}}
+\subsubsection[{damping}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cp\-Float} {\bf cp\-Space\-::damping}}}\label{structcp_space_a421f86b111318e2eced602c6930fffaa}
+Damping rate expressed as the fraction of velocity bodies retain each second. A value of 0.\-9 would mean that each body's velocity will drop 10\% per second. The default value is 1.\-0, meaning no damping is applied. \begin{DoxyNote}{Note}
+This damping value is different than those of cp\-Damped\-Spring and cp\-Damped\-Rotary\-Spring. 
+\end{DoxyNote}
+
+
+Referenced by cp\-Space\-Init(), and cp\-Space\-Step().
+
+\hypertarget{structcp_space_a9c4c3792e422dd353a49b8657f102f33}{\index{cp\-Space@{cp\-Space}!data@{data}}
+\index{data@{data}!cpSpace@{cp\-Space}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cp\-Data\-Pointer} {\bf cp\-Space\-::data}}}\label{structcp_space_a9c4c3792e422dd353a49b8657f102f33}
+User definable data pointer. Generally this points to your game's controller or game state class so you can access it when given a \hyperlink{structcp_space}{cp\-Space} reference in a callback. 
+
+Referenced by cp\-Space\-Step().
+
+\hypertarget{structcp_space_ac4f67b1946aad96a50299ac769d781bb}{\index{cp\-Space@{cp\-Space}!enable\-Contact\-Graph@{enable\-Contact\-Graph}}
+\index{enable\-Contact\-Graph@{enable\-Contact\-Graph}!cpSpace@{cp\-Space}}
+\subsubsection[{enable\-Contact\-Graph}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cp\-Bool} {\bf cp\-Space\-::enable\-Contact\-Graph}}}\label{structcp_space_ac4f67b1946aad96a50299ac769d781bb}
+Rebuild the contact graph during each step. Must be enabled to use the \hyperlink{group__cp_body_gacc958b3adad795e718682bea830d4135}{cp\-Body\-Each\-Arbiter()} function. Disabled by default for a small performance boost. Enabled implicitly when the sleeping feature is enabled. 
+
+Referenced by cp\-Space\-Init().
+
+\hypertarget{structcp_space_a88ffce371610f2b94997160de703f1cd}{\index{cp\-Space@{cp\-Space}!idle\-Speed\-Threshold@{idle\-Speed\-Threshold}}
+\index{idle\-Speed\-Threshold@{idle\-Speed\-Threshold}!cpSpace@{cp\-Space}}
+\subsubsection[{idle\-Speed\-Threshold}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cp\-Float} {\bf cp\-Space\-::idle\-Speed\-Threshold}}}\label{structcp_space_a88ffce371610f2b94997160de703f1cd}
+Speed threshold for a body to be considered idle. The default value of 0 means to let the space guess a good threshold based on gravity. 
+
+Referenced by cp\-Space\-Init().
+
+\hypertarget{structcp_space_a928d74741904aae266a9efff5b5f68f7}{\index{cp\-Space@{cp\-Space}!sleep\-Time\-Threshold@{sleep\-Time\-Threshold}}
+\index{sleep\-Time\-Threshold@{sleep\-Time\-Threshold}!cpSpace@{cp\-Space}}
+\subsubsection[{sleep\-Time\-Threshold}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cp\-Float} {\bf cp\-Space\-::sleep\-Time\-Threshold}}}\label{structcp_space_a928d74741904aae266a9efff5b5f68f7}
+Time a group of bodies must remain idle in order to fall asleep. Enabling sleeping also implicitly enables the the contact graph. The default value of I\-N\-F\-I\-N\-I\-T\-Y disables the sleeping algorithm. 
+
+Referenced by cp\-Space\-Activate\-Shapes\-Touching\-Shape(), and cp\-Space\-Init().
+
+\hypertarget{structcp_space_aa7cb4add8933036493bf7f4ee98ad13e}{\index{cp\-Space@{cp\-Space}!static\-Body@{static\-Body}}
+\index{static\-Body@{static\-Body}!cpSpace@{cp\-Space}}
+\subsubsection[{static\-Body}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cp\-Body}$\ast$ {\bf cp\-Space\-::static\-Body}}}\label{structcp_space_aa7cb4add8933036493bf7f4ee98ad13e}
+The designated static body for this space. You can modify this body, or replace it with your own static body. By default it points to a statically allocated \hyperlink{structcp_body}{cp\-Body} in the \hyperlink{structcp_space}{cp\-Space} struct. 
+
+Referenced by cp\-Space\-Init().
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Chipmunk/include/chipmunk/cp\-Space.\-h\end{DoxyCompactItemize}

@@ -1,0 +1,53 @@
+\hypertarget{interface_c_c_ease_exponential_in}{\section{C\-C\-Ease\-Exponential\-In Class Reference}
+\label{interface_c_c_ease_exponential_in}\index{C\-C\-Ease\-Exponential\-In@{C\-C\-Ease\-Exponential\-In}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Ease.\-h$>$}
+
+Inheritance diagram for C\-C\-Ease\-Exponential\-In\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{interface_c_c_ease_exponential_in}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_c_c_ease_exponential_in_af3bc4d09bcd537868b53a33ee1bfc342}{update\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C\-C\-Ease Exponential In 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_ease_exponential_in_af3bc4d09bcd537868b53a33ee1bfc342}{\index{C\-C\-Ease\-Exponential\-In@{C\-C\-Ease\-Exponential\-In}!update\-:@{update\-:}}
+\index{update\-:@{update\-:}!CCEaseExponentialIn@{C\-C\-Ease\-Exponential\-In}}
+\subsubsection[{update\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf update\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{time}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_ease_exponential_in_af3bc4d09bcd537868b53a33ee1bfc342}
+called once per frame. time a value between 0 and 1 For example\-:
+\begin{DoxyItemize}
+\item 0 means that the action just started
+\item 0.\-5 means that the action is in the middle
+\item 1 means that the action is over 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{interface_c_c_action_a41207f5e0f31713136c8b690fcf166ef}{C\-C\-Action}.
+
+
+\begin{DoxyCode}
+              : (ccTime) t
+{
+        [other update: (t==0) ? 0 : powf(2, 10 * (t/1 - 1)) - 1 * 0.001f];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Ease.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Ease.\-m\end{DoxyCompactItemize}

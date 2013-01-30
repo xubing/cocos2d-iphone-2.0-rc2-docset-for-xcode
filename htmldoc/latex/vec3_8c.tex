@@ -1,0 +1,354 @@
+\hypertarget{vec3_8c}{\section{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.1-\/beta4/external/kazmath/src/vec3.c File Reference}
+\label{vec3_8c}\index{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/kazmath/src/vec3.\-c@{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/kazmath/src/vec3.\-c}}
+}
+{\ttfamily \#include $<$assert.\-h$>$}\\*
+{\ttfamily \#include $<$memory.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}kazmath/utility.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}kazmath/vec4.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}kazmath/mat4.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}kazmath/vec3.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structkm_vec3}{km\-Vec3} $\ast$ \hyperlink{vec3_8c_a327a16c25be8c921f5c8710e14c4fdcd}{km\-Vec3\-Fill} (\hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-Out, km\-Scalar x, km\-Scalar y, km\-Scalar z)
+\item 
+km\-Scalar \hyperlink{vec3_8c_a8e019f2b3549e0dc7b9847868ba548fa}{km\-Vec3\-Length} (const \hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-In)
+\item 
+km\-Scalar \hyperlink{vec3_8c_aaabb0b5f2fc888052679d401852e63a9}{km\-Vec3\-Length\-Sq} (const \hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-In)
+\item 
+\hyperlink{structkm_vec3}{km\-Vec3} $\ast$ \hyperlink{vec3_8c_a61a55fc5e4ce21322cb8141653a1d0ff}{km\-Vec3\-Normalize} (\hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-Out, const \hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-In)
+\item 
+\hyperlink{structkm_vec3}{km\-Vec3} $\ast$ \hyperlink{vec3_8c_a2b3ed559520bc2071b05f40b29f343e6}{km\-Vec3\-Cross} (\hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-Out, const \hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-V1, const \hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-V2)
+\item 
+km\-Scalar \hyperlink{vec3_8c_a7ed6bea8c65144ef31156825aea0b3e5}{km\-Vec3\-Dot} (const \hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-V1, const \hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-V2)
+\item 
+\hyperlink{structkm_vec3}{km\-Vec3} $\ast$ \hyperlink{vec3_8c_aeec93a828519b0ecdd20942463598c5e}{km\-Vec3\-Add} (\hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-Out, const \hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-V1, const \hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-V2)
+\item 
+\hyperlink{structkm_vec3}{km\-Vec3} $\ast$ \hyperlink{vec3_8c_a07cb9ab6d64f4a458191f80eb3405324}{km\-Vec3\-Subtract} (\hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-Out, const \hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-V1, const \hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-V2)
+\item 
+\hyperlink{structkm_vec3}{km\-Vec3} $\ast$ \hyperlink{vec3_8c_ae0bf920655ecb4211d501af13acaa55b}{km\-Vec3\-Transform} (\hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-Out, const \hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-V, const \hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-M)
+\item 
+\hypertarget{vec3_8c_a7be4f0a32d26fc4e7f293febd6322c78}{\hyperlink{structkm_vec3}{km\-Vec3} $\ast$ {\bfseries km\-Vec3\-Inverse\-Transform} (\hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-Out, const \hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-Vect, const \hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-M)}\label{vec3_8c_a7be4f0a32d26fc4e7f293febd6322c78}
+
+\item 
+\hypertarget{vec3_8c_a8d949199cbd41558bac73f8f2f43ab5b}{\hyperlink{structkm_vec3}{km\-Vec3} $\ast$ {\bfseries km\-Vec3\-Inverse\-Transform\-Normal} (\hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-Out, const \hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-Vect, const \hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-M)}\label{vec3_8c_a8d949199cbd41558bac73f8f2f43ab5b}
+
+\item 
+\hypertarget{vec3_8c_a43d9ed3e0b77815f8e21a62d70310d43}{\hyperlink{structkm_vec3}{km\-Vec3} $\ast$ {\bfseries km\-Vec3\-Transform\-Coord} (\hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-Out, const \hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-V, const \hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-M)}\label{vec3_8c_a43d9ed3e0b77815f8e21a62d70310d43}
+
+\item 
+\hypertarget{vec3_8c_a7bcd2c7c5d14ca2dcea701e52450b9d9}{\hyperlink{structkm_vec3}{km\-Vec3} $\ast$ {\bfseries km\-Vec3\-Transform\-Normal} (\hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-Out, const \hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-V, const \hyperlink{structkm_mat4}{km\-Mat4} $\ast$p\-M)}\label{vec3_8c_a7bcd2c7c5d14ca2dcea701e52450b9d9}
+
+\item 
+\hyperlink{structkm_vec3}{km\-Vec3} $\ast$ \hyperlink{vec3_8c_a340a910a28c1b7bec6c55fb7072e331f}{km\-Vec3\-Scale} (\hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-Out, const \hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-In, const km\-Scalar s)
+\item 
+int \hyperlink{vec3_8c_a050b057e12c51103781d5dec80153114}{km\-Vec3\-Are\-Equal} (const \hyperlink{structkm_vec3}{km\-Vec3} $\ast$p1, const \hyperlink{structkm_vec3}{km\-Vec3} $\ast$p2)
+\item 
+\hyperlink{structkm_vec3}{km\-Vec3} $\ast$ \hyperlink{vec3_8c_ab37e84980fd909eeb65ff21268a9e5ac}{km\-Vec3\-Assign} (\hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-Out, const \hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-In)
+\item 
+\hyperlink{structkm_vec3}{km\-Vec3} $\ast$ \hyperlink{vec3_8c_ab1384be1801802bdd4390481ff018400}{km\-Vec3\-Zero} (\hyperlink{structkm_vec3}{km\-Vec3} $\ast$p\-Out)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\hypertarget{vec3_8c_aeec93a828519b0ecdd20942463598c5e}{\index{vec3.\-c@{vec3.\-c}!km\-Vec3\-Add@{km\-Vec3\-Add}}
+\index{km\-Vec3\-Add@{km\-Vec3\-Add}!vec3.c@{vec3.\-c}}
+\subsubsection[{km\-Vec3\-Add}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Vec3}$\ast$ {\bf km\-Vec3\-Add} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Vec3} $\ast$}]{p\-Out, }
+\item[{const {\bf km\-Vec3} $\ast$}]{p\-V1, }
+\item[{const {\bf km\-Vec3} $\ast$}]{p\-V2}
+\end{DoxyParamCaption}
+)}}\label{vec3_8c_aeec93a828519b0ecdd20942463598c5e}
+Adds 2 vectors and returns the result. The resulting vector is stored in p\-Out. 
+\begin{DoxyCode}
+{
+        kmVec3 v;
+
+        v.x = pV1->x + pV2->x;
+        v.y = pV1->y + pV2->y;
+        v.z = pV1->z + pV2->z;
+
+        pOut->x = v.x;
+        pOut->y = v.y;
+        pOut->z = v.z;
+
+        return pOut;
+}
+\end{DoxyCode}
+\hypertarget{vec3_8c_a050b057e12c51103781d5dec80153114}{\index{vec3.\-c@{vec3.\-c}!km\-Vec3\-Are\-Equal@{km\-Vec3\-Are\-Equal}}
+\index{km\-Vec3\-Are\-Equal@{km\-Vec3\-Are\-Equal}!vec3.c@{vec3.\-c}}
+\subsubsection[{km\-Vec3\-Are\-Equal}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf km\-Vec3\-Are\-Equal} (
+\begin{DoxyParamCaption}
+\item[{const {\bf km\-Vec3} $\ast$}]{p1, }
+\item[{const {\bf km\-Vec3} $\ast$}]{p2}
+\end{DoxyParamCaption}
+)}}\label{vec3_8c_a050b057e12c51103781d5dec80153114}
+Returns K\-M\-\_\-\-T\-R\-U\-E if the 2 vectors are approximately equal 
+\begin{DoxyCode}
+{
+        if ((p1->x < (p2->x + kmEpsilon) && p1->x > (p2->x - kmEpsilon)) &&
+                (p1->y < (p2->y + kmEpsilon) && p1->y > (p2->y - kmEpsilon)) &&
+                (p1->z < (p2->z + kmEpsilon) && p1->z > (p2->z - kmEpsilon))) {
+                return 1;
+        }
+
+        return 0;
+}
+\end{DoxyCode}
+\hypertarget{vec3_8c_ab37e84980fd909eeb65ff21268a9e5ac}{\index{vec3.\-c@{vec3.\-c}!km\-Vec3\-Assign@{km\-Vec3\-Assign}}
+\index{km\-Vec3\-Assign@{km\-Vec3\-Assign}!vec3.c@{vec3.\-c}}
+\subsubsection[{km\-Vec3\-Assign}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Vec3}$\ast$ {\bf km\-Vec3\-Assign} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Vec3} $\ast$}]{p\-Out, }
+\item[{const {\bf km\-Vec3} $\ast$}]{p\-In}
+\end{DoxyParamCaption}
+)}}\label{vec3_8c_ab37e84980fd909eeb65ff21268a9e5ac}
+Assigns p\-In to p\-Out. Returns p\-Out. If p\-In and p\-Out are the same then nothing happens but p\-Out is still returned 
+
+Referenced by km\-Mat4\-Look\-At().
+
+
+\begin{DoxyCode}
+                                                      {
+        if (pOut == pIn) {
+                return pOut;
+        }
+
+        pOut->x = pIn->x;
+        pOut->y = pIn->y;
+        pOut->z = pIn->z;
+
+        return pOut;
+}
+\end{DoxyCode}
+\hypertarget{vec3_8c_a2b3ed559520bc2071b05f40b29f343e6}{\index{vec3.\-c@{vec3.\-c}!km\-Vec3\-Cross@{km\-Vec3\-Cross}}
+\index{km\-Vec3\-Cross@{km\-Vec3\-Cross}!vec3.c@{vec3.\-c}}
+\subsubsection[{km\-Vec3\-Cross}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Vec3}$\ast$ {\bf km\-Vec3\-Cross} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Vec3} $\ast$}]{p\-Out, }
+\item[{const {\bf km\-Vec3} $\ast$}]{p\-V1, }
+\item[{const {\bf km\-Vec3} $\ast$}]{p\-V2}
+\end{DoxyParamCaption}
+)}}\label{vec3_8c_a2b3ed559520bc2071b05f40b29f343e6}
+Returns a vector perpendicular to 2 other vectors. The result is stored in p\-Out. 
+
+Referenced by km\-Mat4\-Look\-At().
+
+
+\begin{DoxyCode}
+{
+
+        kmVec3 v;
+
+        v.x = (pV1->y * pV2->z) - (pV1->z * pV2->y);
+        v.y = (pV1->z * pV2->x) - (pV1->x * pV2->z);
+        v.z = (pV1->x * pV2->y) - (pV1->y * pV2->x);
+
+        pOut->x = v.x;
+        pOut->y = v.y;
+        pOut->z = v.z;
+
+        return pOut;
+}
+\end{DoxyCode}
+\hypertarget{vec3_8c_a7ed6bea8c65144ef31156825aea0b3e5}{\index{vec3.\-c@{vec3.\-c}!km\-Vec3\-Dot@{km\-Vec3\-Dot}}
+\index{km\-Vec3\-Dot@{km\-Vec3\-Dot}!vec3.c@{vec3.\-c}}
+\subsubsection[{km\-Vec3\-Dot}]{\setlength{\rightskip}{0pt plus 5cm}km\-Scalar {\bf km\-Vec3\-Dot} (
+\begin{DoxyParamCaption}
+\item[{const {\bf km\-Vec3} $\ast$}]{p\-V1, }
+\item[{const {\bf km\-Vec3} $\ast$}]{p\-V2}
+\end{DoxyParamCaption}
+)}}\label{vec3_8c_a7ed6bea8c65144ef31156825aea0b3e5}
+Returns the cosine of the angle between 2 vectors 
+\begin{DoxyCode}
+{
+        return (  pV1->x * pV2->x
+                        + pV1->y * pV2->y
+                        + pV1->z * pV2->z );
+}
+\end{DoxyCode}
+\hypertarget{vec3_8c_a327a16c25be8c921f5c8710e14c4fdcd}{\index{vec3.\-c@{vec3.\-c}!km\-Vec3\-Fill@{km\-Vec3\-Fill}}
+\index{km\-Vec3\-Fill@{km\-Vec3\-Fill}!vec3.c@{vec3.\-c}}
+\subsubsection[{km\-Vec3\-Fill}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Vec3}$\ast$ {\bf km\-Vec3\-Fill} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Vec3} $\ast$}]{p\-Out, }
+\item[{km\-Scalar}]{x, }
+\item[{km\-Scalar}]{y, }
+\item[{km\-Scalar}]{z}
+\end{DoxyParamCaption}
+)}}\label{vec3_8c_a327a16c25be8c921f5c8710e14c4fdcd}
+Fill a \hyperlink{structkm_vec3}{km\-Vec3} structure using 3 floating point values The result is store in p\-Out, returns p\-Out 
+
+Referenced by C\-C\-Camera\-::locate.
+
+
+\begin{DoxyCode}
+{
+    pOut->x = x;
+    pOut->y = y;
+    pOut->z = z;
+    return pOut;
+}
+\end{DoxyCode}
+\hypertarget{vec3_8c_a8e019f2b3549e0dc7b9847868ba548fa}{\index{vec3.\-c@{vec3.\-c}!km\-Vec3\-Length@{km\-Vec3\-Length}}
+\index{km\-Vec3\-Length@{km\-Vec3\-Length}!vec3.c@{vec3.\-c}}
+\subsubsection[{km\-Vec3\-Length}]{\setlength{\rightskip}{0pt plus 5cm}km\-Scalar {\bf km\-Vec3\-Length} (
+\begin{DoxyParamCaption}
+\item[{const {\bf km\-Vec3} $\ast$}]{p\-In}
+\end{DoxyParamCaption}
+)}}\label{vec3_8c_a8e019f2b3549e0dc7b9847868ba548fa}
+Returns the length of the vector 
+
+Referenced by km\-Vec3\-Normalize().
+
+
+\begin{DoxyCode}
+{
+        return sqrtf(kmSQR(pIn->x) + kmSQR(pIn->y) + kmSQR(pIn->z));
+}
+\end{DoxyCode}
+\hypertarget{vec3_8c_aaabb0b5f2fc888052679d401852e63a9}{\index{vec3.\-c@{vec3.\-c}!km\-Vec3\-Length\-Sq@{km\-Vec3\-Length\-Sq}}
+\index{km\-Vec3\-Length\-Sq@{km\-Vec3\-Length\-Sq}!vec3.c@{vec3.\-c}}
+\subsubsection[{km\-Vec3\-Length\-Sq}]{\setlength{\rightskip}{0pt plus 5cm}km\-Scalar {\bf km\-Vec3\-Length\-Sq} (
+\begin{DoxyParamCaption}
+\item[{const {\bf km\-Vec3} $\ast$}]{p\-In}
+\end{DoxyParamCaption}
+)}}\label{vec3_8c_aaabb0b5f2fc888052679d401852e63a9}
+Returns the square of the length of the vector 
+\begin{DoxyCode}
+{
+        return kmSQR(pIn->x) + kmSQR(pIn->y) + kmSQR(pIn->z);
+}
+\end{DoxyCode}
+\hypertarget{vec3_8c_a61a55fc5e4ce21322cb8141653a1d0ff}{\index{vec3.\-c@{vec3.\-c}!km\-Vec3\-Normalize@{km\-Vec3\-Normalize}}
+\index{km\-Vec3\-Normalize@{km\-Vec3\-Normalize}!vec3.c@{vec3.\-c}}
+\subsubsection[{km\-Vec3\-Normalize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Vec3}$\ast$ {\bf km\-Vec3\-Normalize} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Vec3} $\ast$}]{p\-Out, }
+\item[{const {\bf km\-Vec3} $\ast$}]{p\-In}
+\end{DoxyParamCaption}
+)}}\label{vec3_8c_a61a55fc5e4ce21322cb8141653a1d0ff}
+Returns the vector passed in set to unit length the result is stored in p\-Out. 
+
+Referenced by km\-Mat4\-Get\-Forward\-Vec3(), km\-Mat4\-Get\-Right\-Vec3(), km\-Mat4\-Get\-Up\-Vec3(), km\-Mat4\-Look\-At(), and km\-Mat4\-Rotation\-Axis\-Angle().
+
+
+\begin{DoxyCode}
+{
+        kmScalar l = 1.0f / kmVec3Length(pIn);
+
+        kmVec3 v;
+        v.x = pIn->x * l;
+        v.y = pIn->y * l;
+        v.z = pIn->z * l;
+
+        pOut->x = v.x;
+        pOut->y = v.y;
+        pOut->z = v.z;
+
+        return pOut;
+}
+\end{DoxyCode}
+\hypertarget{vec3_8c_a340a910a28c1b7bec6c55fb7072e331f}{\index{vec3.\-c@{vec3.\-c}!km\-Vec3\-Scale@{km\-Vec3\-Scale}}
+\index{km\-Vec3\-Scale@{km\-Vec3\-Scale}!vec3.c@{vec3.\-c}}
+\subsubsection[{km\-Vec3\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Vec3}$\ast$ {\bf km\-Vec3\-Scale} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Vec3} $\ast$}]{p\-Out, }
+\item[{const {\bf km\-Vec3} $\ast$}]{p\-In, }
+\item[{const km\-Scalar}]{s}
+\end{DoxyParamCaption}
+)}}\label{vec3_8c_a340a910a28c1b7bec6c55fb7072e331f}
+Scales a vector to length s. Does not normalize first, you should do that! 
+\begin{DoxyCode}
+{
+        pOut->x = pIn->x * s;
+        pOut->y = pIn->y * s;
+        pOut->z = pIn->z * s;
+
+        return pOut;
+}
+\end{DoxyCode}
+\hypertarget{vec3_8c_a07cb9ab6d64f4a458191f80eb3405324}{\index{vec3.\-c@{vec3.\-c}!km\-Vec3\-Subtract@{km\-Vec3\-Subtract}}
+\index{km\-Vec3\-Subtract@{km\-Vec3\-Subtract}!vec3.c@{vec3.\-c}}
+\subsubsection[{km\-Vec3\-Subtract}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Vec3}$\ast$ {\bf km\-Vec3\-Subtract} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Vec3} $\ast$}]{p\-Out, }
+\item[{const {\bf km\-Vec3} $\ast$}]{p\-V1, }
+\item[{const {\bf km\-Vec3} $\ast$}]{p\-V2}
+\end{DoxyParamCaption}
+)}}\label{vec3_8c_a07cb9ab6d64f4a458191f80eb3405324}
+Subtracts 2 vectors and returns the result. The result is stored in p\-Out. 
+
+Referenced by km\-Mat4\-Look\-At().
+
+
+\begin{DoxyCode}
+{
+        kmVec3 v;
+
+        v.x = pV1->x - pV2->x;
+        v.y = pV1->y - pV2->y;
+        v.z = pV1->z - pV2->z;
+
+        pOut->x = v.x;
+        pOut->y = v.y;
+        pOut->z = v.z;
+
+        return pOut;
+}
+\end{DoxyCode}
+\hypertarget{vec3_8c_ae0bf920655ecb4211d501af13acaa55b}{\index{vec3.\-c@{vec3.\-c}!km\-Vec3\-Transform@{km\-Vec3\-Transform}}
+\index{km\-Vec3\-Transform@{km\-Vec3\-Transform}!vec3.c@{vec3.\-c}}
+\subsubsection[{km\-Vec3\-Transform}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Vec3}$\ast$ {\bf km\-Vec3\-Transform} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Vec3} $\ast$}]{p\-Out, }
+\item[{const {\bf km\-Vec3} $\ast$}]{p\-V, }
+\item[{const {\bf km\-Mat4} $\ast$}]{p\-M}
+\end{DoxyParamCaption}
+)}}\label{vec3_8c_ae0bf920655ecb4211d501af13acaa55b}
+Transforms vector (x, y, z, 1) by a given matrix. The result is stored in p\-Out. p\-Out is returned. 
+\begin{DoxyCode}
+{
+        /*
+                a = (Vx, Vy, Vz, 1)
+                b = (a×M)T
+                Out = (bx, by, bz)
+        */
+
+        kmVec3 v;
+
+        v.x = pV->x * pM->mat[0] + pV->y * pM->mat[4] + pV->z * pM->mat[8] + pM
+      ->mat[12];
+        v.y = pV->x * pM->mat[1] + pV->y * pM->mat[5] + pV->z * pM->mat[9] + pM
+      ->mat[13];
+        v.z = pV->x * pM->mat[2] + pV->y * pM->mat[6] + pV->z * pM->mat[10] + 
+      pM->mat[14];
+
+        pOut->x = v.x;
+        pOut->y = v.y;
+        pOut->z = v.z;
+
+        return pOut;
+}
+\end{DoxyCode}
+\hypertarget{vec3_8c_ab1384be1801802bdd4390481ff018400}{\index{vec3.\-c@{vec3.\-c}!km\-Vec3\-Zero@{km\-Vec3\-Zero}}
+\index{km\-Vec3\-Zero@{km\-Vec3\-Zero}!vec3.c@{vec3.\-c}}
+\subsubsection[{km\-Vec3\-Zero}]{\setlength{\rightskip}{0pt plus 5cm}{\bf km\-Vec3}$\ast$ {\bf km\-Vec3\-Zero} (
+\begin{DoxyParamCaption}
+\item[{{\bf km\-Vec3} $\ast$}]{p\-Out}
+\end{DoxyParamCaption}
+)}}\label{vec3_8c_ab1384be1801802bdd4390481ff018400}
+Sets all the elements of p\-Out to zero. Returns p\-Out. 
+\begin{DoxyCode}
+                                 {
+        pOut->x = 0.0f;
+        pOut->y = 0.0f;
+        pOut->z = 0.0f;
+
+        return pOut;
+}
+\end{DoxyCode}

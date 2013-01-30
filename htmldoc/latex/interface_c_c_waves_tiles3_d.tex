@@ -1,0 +1,113 @@
+\hypertarget{interface_c_c_waves_tiles3_d}{\section{C\-C\-Waves\-Tiles3\-D Class Reference}
+\label{interface_c_c_waves_tiles3_d}\index{C\-C\-Waves\-Tiles3\-D@{C\-C\-Waves\-Tiles3\-D}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Tiled\-Grid.\-h$>$}
+
+Inheritance diagram for C\-C\-Waves\-Tiles3\-D\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.000000cm]{interface_c_c_waves_tiles3_d}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_waves_tiles3_d_aaef57be65c288f7818446c5bc7f9e97e}{init\-With\-Waves\-:amplitude\-:grid\-:duration\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_waves_tiles3_d_aedfe7db0740d92ae4259252cd0b79b53}{action\-With\-Waves\-:amplitude\-:grid\-:duration\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_waves_tiles3_d_aefb50c6021610101811eb4e15a2450c0}{int {\bfseries waves}}\label{interface_c_c_waves_tiles3_d_aefb50c6021610101811eb4e15a2450c0}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{interface_c_c_waves_tiles3_d_a039d7a38b533236a44955d831c10a171}{amplitude}
+\item 
+float \hyperlink{interface_c_c_waves_tiles3_d_abea72fd3b311cfbccb35bd7e8dcb0555}{amplitude\-Rate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_waves_tiles3_d}{C\-C\-Waves\-Tiles3\-D} action. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_waves_tiles3_d_aedfe7db0740d92ae4259252cd0b79b53}{\index{C\-C\-Waves\-Tiles3\-D@{C\-C\-Waves\-Tiles3\-D}!action\-With\-Waves\-:amplitude\-:grid\-:duration\-:@{action\-With\-Waves\-:amplitude\-:grid\-:duration\-:}}
+\index{action\-With\-Waves\-:amplitude\-:grid\-:duration\-:@{action\-With\-Waves\-:amplitude\-:grid\-:duration\-:}!CCWavesTiles3D@{C\-C\-Waves\-Tiles3\-D}}
+\subsubsection[{action\-With\-Waves\-:amplitude\-:grid\-:duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) action\-With\-Waves\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{wav}
+\item[{amplitude:(float)}]{amp}
+\item[{grid:({\bf cc\-Grid\-Size})}]{grid\-Size}
+\item[{duration:({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_waves_tiles3_d_aedfe7db0740d92ae4259252cd0b79b53}
+creates the action with a number of waves, the waves amplitude, the grid size and the duration 
+
+Referenced by Waves\-Tiles3\-D\-Demo\-::action\-With\-Duration\-:.
+
+
+\begin{DoxyCode}
+                    :(int)wav amplitude:(float)amp grid:(ccGridSize)gridSize 
+      duration:(ccTime)d
+{
+        return [[[self alloc] initWithWaves:wav amplitude:amp grid:gridSize 
+      duration:d] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_waves_tiles3_d_aaef57be65c288f7818446c5bc7f9e97e}{\index{C\-C\-Waves\-Tiles3\-D@{C\-C\-Waves\-Tiles3\-D}!init\-With\-Waves\-:amplitude\-:grid\-:duration\-:@{init\-With\-Waves\-:amplitude\-:grid\-:duration\-:}}
+\index{init\-With\-Waves\-:amplitude\-:grid\-:duration\-:@{init\-With\-Waves\-:amplitude\-:grid\-:duration\-:}!CCWavesTiles3D@{C\-C\-Waves\-Tiles3\-D}}
+\subsubsection[{init\-With\-Waves\-:amplitude\-:grid\-:duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Waves\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{wav}
+\item[{amplitude:(float)}]{amp}
+\item[{grid:({\bf cc\-Grid\-Size})}]{grid\-Size}
+\item[{duration:({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_waves_tiles3_d_aaef57be65c288f7818446c5bc7f9e97e}
+initializes the action with a number of waves, the waves amplitude, the grid size and the duration 
+\begin{DoxyCode}
+                  :(int)wav amplitude:(float)amp grid:(ccGridSize)gSize duration
+      :(ccTime)d
+{
+        if ( (self = [super initWithSize:gSize duration:d]) )
+        {
+                waves = wav;
+                amplitude = amp;
+                amplitudeRate = 1.0f;
+        }
+
+        return self;
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_waves_tiles3_d_a039d7a38b533236a44955d831c10a171}{\index{C\-C\-Waves\-Tiles3\-D@{C\-C\-Waves\-Tiles3\-D}!amplitude@{amplitude}}
+\index{amplitude@{amplitude}!CCWavesTiles3D@{C\-C\-Waves\-Tiles3\-D}}
+\subsubsection[{amplitude}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf amplitude}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_waves_tiles3_d_a039d7a38b533236a44955d831c10a171}
+waves amplitude 
+
+Referenced by init\-With\-Waves\-:amplitude\-:grid\-:duration\-:.
+
+\hypertarget{interface_c_c_waves_tiles3_d_abea72fd3b311cfbccb35bd7e8dcb0555}{\index{C\-C\-Waves\-Tiles3\-D@{C\-C\-Waves\-Tiles3\-D}!amplitude\-Rate@{amplitude\-Rate}}
+\index{amplitude\-Rate@{amplitude\-Rate}!CCWavesTiles3D@{C\-C\-Waves\-Tiles3\-D}}
+\subsubsection[{amplitude\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) {\bf amplitude\-Rate}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_waves_tiles3_d_abea72fd3b311cfbccb35bd7e8dcb0555}
+waves amplitude rate 
+
+Referenced by init\-With\-Waves\-:amplitude\-:grid\-:duration\-:.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Tiled\-Grid.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Tiled\-Grid.\-m\end{DoxyCompactItemize}

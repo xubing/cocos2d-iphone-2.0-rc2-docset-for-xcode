@@ -1,0 +1,270 @@
+\hypertarget{interface_c_c_point_array}{\section{C\-C\-Point\-Array Class Reference}
+\label{interface_c_c_point_array}\index{C\-C\-Point\-Array@{C\-C\-Point\-Array}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Catmull\-Rom.\-h$>$}
+
+Inheritance diagram for C\-C\-Point\-Array\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_c_c_point_array}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_point_array_a8a6617ead247c1d873748cc3f8aacb24}{init\-With\-Capacity\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_point_array_a9d48d1fab42f48e15e5395fc1333f0f9}{add\-Control\-Point\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_point_array_ac8e14573a97135ef9d98e9cc3aa08239}{insert\-Control\-Point\-:at\-Index\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_point_array_af96d6e851d9564b418200a33e4e85a2c}{replace\-Control\-Point\-:at\-Index\-:}
+\item 
+(C\-G\-Point) -\/ \hyperlink{interface_c_c_point_array_ae12f98d5081124b694bca3ea62ba648a}{get\-Control\-Point\-At\-Index\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_point_array_ab048541956b630110ee068d6d0aa2b48}{remove\-Control\-Point\-At\-Index\-:}
+\item 
+(N\-S\-U\-Integer) -\/ \hyperlink{interface_c_c_point_array_a1111f5e5f274ef1295c44c1bdec7bf65}{count}
+\item 
+(\hyperlink{interface_c_c_point_array}{C\-C\-Point\-Array} $\ast$) -\/ \hyperlink{interface_c_c_point_array_af4b6c9cb598d08690aafc7054b2b04f3}{reverse}
+\item 
+(void) -\/ \hyperlink{interface_c_c_point_array_a86abfa5bdcf828688b1bf4c4a8c089dc}{reverse\-Inline}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_point_array_a628506617fe219d638a9be6a06992ff2}{array\-With\-Capacity\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_point_array_a1168a70f6969c8b31c23c862678b1c2d}{N\-S\-Mutable\-Array $\ast$ {\bfseries control\-Points\-\_\-}}\label{interface_c_c_point_array_a1168a70f6969c8b31c23c862678b1c2d}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\-S\-Mutable\-Array $\ast$ \hyperlink{interface_c_c_point_array_afdf0e4f9008cd5a8347fa8368e9a0c45}{control\-Points}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An Array that contain control points. Used by \hyperlink{interface_c_c_cardinal_spline_to}{C\-C\-Cardinal\-Spline\-To} and (By) and \hyperlink{interface_c_c_catmull_rom_to}{C\-C\-Catmull\-Rom\-To} (and By) actions. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_point_array_a9d48d1fab42f48e15e5395fc1333f0f9}{\index{C\-C\-Point\-Array@{C\-C\-Point\-Array}!add\-Control\-Point\-:@{add\-Control\-Point\-:}}
+\index{add\-Control\-Point\-:@{add\-Control\-Point\-:}!CCPointArray@{C\-C\-Point\-Array}}
+\subsubsection[{add\-Control\-Point\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf add\-Control\-Point\-:} 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{control\-Point}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_point_array_a9d48d1fab42f48e15e5395fc1333f0f9}
+appends a control point 
+\begin{DoxyCode}
+                       :(CGPoint)controlPoint
+{
+#ifdef __CC_PLATFORM_MAC
+        NSValue *value = [NSValue valueWithPoint:NSPointFromCGPoint(
+      controlPoint)];
+#elif defined(__CC_PLATFORM_IOS)
+        NSValue *value = [NSValue valueWithCGPoint:controlPoint];
+#endif
+        
+        [controlPoints_ addObject:value];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_point_array_a628506617fe219d638a9be6a06992ff2}{\index{C\-C\-Point\-Array@{C\-C\-Point\-Array}!array\-With\-Capacity\-:@{array\-With\-Capacity\-:}}
+\index{array\-With\-Capacity\-:@{array\-With\-Capacity\-:}!CCPointArray@{C\-C\-Point\-Array}}
+\subsubsection[{array\-With\-Capacity\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf array\-With\-Capacity\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-U\-Integer)}]{capacity}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_point_array_a628506617fe219d638a9be6a06992ff2}
+creates and initializes a Points array with capacity 
+\begin{DoxyCode}
+                       :(NSUInteger)capacity
+{
+        return [[[self alloc] initWithCapacity:capacity] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_point_array_a1111f5e5f274ef1295c44c1bdec7bf65}{\index{C\-C\-Point\-Array@{C\-C\-Point\-Array}!count@{count}}
+\index{count@{count}!CCPointArray@{C\-C\-Point\-Array}}
+\subsubsection[{count}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-U\-Integer) {\bf count} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_point_array_a1111f5e5f274ef1295c44c1bdec7bf65}
+returns the number of objects of the control point array 
+
+Referenced by cc\-Draw\-Cardinal\-Spline(), and get\-Control\-Point\-At\-Index\-:.
+
+
+\begin{DoxyCode}
+{
+        return [controlPoints_ count];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_point_array_ae12f98d5081124b694bca3ea62ba648a}{\index{C\-C\-Point\-Array@{C\-C\-Point\-Array}!get\-Control\-Point\-At\-Index\-:@{get\-Control\-Point\-At\-Index\-:}}
+\index{get\-Control\-Point\-At\-Index\-:@{get\-Control\-Point\-At\-Index\-:}!CCPointArray@{C\-C\-Point\-Array}}
+\subsubsection[{get\-Control\-Point\-At\-Index\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-G\-Point) {\bf get\-Control\-Point\-At\-Index\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Integer)}]{index}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_point_array_ae12f98d5081124b694bca3ea62ba648a}
+get the value of a control\-Point at a given index 
+
+Referenced by cc\-Draw\-Cardinal\-Spline().
+
+
+\begin{DoxyCode}
+                                 :(NSInteger)index
+{
+        index = MIN([controlPoints_ count]-1, MAX(index, 0));
+
+        NSValue *value = [controlPoints_ objectAtIndex:index];
+
+#ifdef __CC_PLATFORM_MAC
+        CGPoint point = NSPointToCGPoint([value pointValue]);
+#elif defined(__CC_PLATFORM_IOS)
+        CGPoint point = [value CGPointValue];
+#endif
+
+        return point;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_point_array_a8a6617ead247c1d873748cc3f8aacb24}{\index{C\-C\-Point\-Array@{C\-C\-Point\-Array}!init\-With\-Capacity\-:@{init\-With\-Capacity\-:}}
+\index{init\-With\-Capacity\-:@{init\-With\-Capacity\-:}!CCPointArray@{C\-C\-Point\-Array}}
+\subsubsection[{init\-With\-Capacity\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Capacity\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-U\-Integer)}]{capacity}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_point_array_a8a6617ead247c1d873748cc3f8aacb24}
+initializes a Catmull Rom config with a capacity hint 
+\begin{DoxyCode}
+                      :(NSUInteger)capacity
+{
+        if( (self=[super init])) {
+                controlPoints_ = [[NSMutableArray alloc] initWithCapacity:
+      capacity];
+        }
+        
+        return self;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_point_array_ac8e14573a97135ef9d98e9cc3aa08239}{\index{C\-C\-Point\-Array@{C\-C\-Point\-Array}!insert\-Control\-Point\-:at\-Index\-:@{insert\-Control\-Point\-:at\-Index\-:}}
+\index{insert\-Control\-Point\-:at\-Index\-:@{insert\-Control\-Point\-:at\-Index\-:}!CCPointArray@{C\-C\-Point\-Array}}
+\subsubsection[{insert\-Control\-Point\-:at\-Index\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) insert\-Control\-Point\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{control\-Point}
+\item[{atIndex:(N\-S\-U\-Integer)}]{index}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_point_array_ac8e14573a97135ef9d98e9cc3aa08239}
+inserts a control\-Point at index 
+\begin{DoxyCode}
+                          :(CGPoint)controlPoint atIndex:(NSUInteger)index
+{
+#ifdef __CC_PLATFORM_MAC
+        NSValue *value = [NSValue valueWithPoint:NSPointFromCGPoint(
+      controlPoint)];
+#elif defined(__CC_PLATFORM_IOS)
+        NSValue *value = [NSValue valueWithCGPoint:controlPoint];
+#endif
+        
+        [controlPoints_ insertObject:value atIndex:index];
+        
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_point_array_ab048541956b630110ee068d6d0aa2b48}{\index{C\-C\-Point\-Array@{C\-C\-Point\-Array}!remove\-Control\-Point\-At\-Index\-:@{remove\-Control\-Point\-At\-Index\-:}}
+\index{remove\-Control\-Point\-At\-Index\-:@{remove\-Control\-Point\-At\-Index\-:}!CCPointArray@{C\-C\-Point\-Array}}
+\subsubsection[{remove\-Control\-Point\-At\-Index\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\-Control\-Point\-At\-Index\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-U\-Integer)}]{index}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_point_array_ab048541956b630110ee068d6d0aa2b48}
+deletes a control point at a given index 
+\begin{DoxyCode}
+                                 :(NSUInteger)index
+{
+        [controlPoints_ removeObjectAtIndex:index];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_point_array_af96d6e851d9564b418200a33e4e85a2c}{\index{C\-C\-Point\-Array@{C\-C\-Point\-Array}!replace\-Control\-Point\-:at\-Index\-:@{replace\-Control\-Point\-:at\-Index\-:}}
+\index{replace\-Control\-Point\-:at\-Index\-:@{replace\-Control\-Point\-:at\-Index\-:}!CCPointArray@{C\-C\-Point\-Array}}
+\subsubsection[{replace\-Control\-Point\-:at\-Index\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) replace\-Control\-Point\-: 
+\begin{DoxyParamCaption}
+\item[{(C\-G\-Point)}]{control\-Point}
+\item[{atIndex:(N\-S\-U\-Integer)}]{index}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_point_array_af96d6e851d9564b418200a33e4e85a2c}
+replaces an existing control\-Point at index 
+\begin{DoxyCode}
+                           :(CGPoint)controlPoint atIndex:(NSUInteger)index
+{
+#ifdef __CC_PLATFORM_MAC
+        NSValue *value = [NSValue valueWithPoint:NSPointFromCGPoint(
+      controlPoint)];
+#elif defined(__CC_PLATFORM_IOS)
+        NSValue *value = [NSValue valueWithCGPoint:controlPoint];
+#endif
+
+        [controlPoints_ replaceObjectAtIndex:index withObject:value];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_point_array_af4b6c9cb598d08690aafc7054b2b04f3}{\index{C\-C\-Point\-Array@{C\-C\-Point\-Array}!reverse@{reverse}}
+\index{reverse@{reverse}!CCPointArray@{C\-C\-Point\-Array}}
+\subsubsection[{reverse}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Point\-Array} $\ast$) {\bf reverse} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_point_array_af4b6c9cb598d08690aafc7054b2b04f3}
+returns a new copy of the array reversed. User is responsible for releasing this copy 
+\begin{DoxyCode}
+{
+        NSMutableArray *newArray = [[NSMutableArray alloc] initWithCapacity:[
+      controlPoints_ count]];
+        NSEnumerator *enumerator = [controlPoints_ reverseObjectEnumerator];
+        for (id element in enumerator)
+                [newArray addObject:element];
+
+        CCPointArray *config = [[[self class] alloc] initWithCapacity:0];
+        config.controlPoints = newArray;
+
+        [newArray release];
+        
+        return [config autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_point_array_a86abfa5bdcf828688b1bf4c4a8c089dc}{\index{C\-C\-Point\-Array@{C\-C\-Point\-Array}!reverse\-Inline@{reverse\-Inline}}
+\index{reverse\-Inline@{reverse\-Inline}!CCPointArray@{C\-C\-Point\-Array}}
+\subsubsection[{reverse\-Inline}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf reverse\-Inline} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_point_array_a86abfa5bdcf828688b1bf4c4a8c089dc}
+reverse the current control point array inline, without generating a new one 
+\begin{DoxyCode}
+{
+        NSUInteger l = [controlPoints_ count];
+        for( NSUInteger i=0; i<l/2;i++)
+                [controlPoints_ exchangeObjectAtIndex:i withObjectAtIndex:l-i-1
+      ];
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_point_array_afdf0e4f9008cd5a8347fa8368e9a0c45}{\index{C\-C\-Point\-Array@{C\-C\-Point\-Array}!control\-Points@{control\-Points}}
+\index{control\-Points@{control\-Points}!CCPointArray@{C\-C\-Point\-Array}}
+\subsubsection[{control\-Points}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Array$\ast$) {\bf control\-Points}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}\label{interface_c_c_point_array_afdf0e4f9008cd5a8347fa8368e9a0c45}
+Array that contains the control points 
+
+Referenced by reverse.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Catmull\-Rom.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Catmull\-Rom.\-m\end{DoxyCompactItemize}

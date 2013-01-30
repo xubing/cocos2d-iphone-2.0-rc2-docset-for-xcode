@@ -1,0 +1,376 @@
+\hypertarget{class_c_c_sprite_frame_cache}{\section{C\-C\-Sprite\-Frame\-Cache Class Reference}
+\label{class_c_c_sprite_frame_cache}\index{C\-C\-Sprite\-Frame\-Cache@{C\-C\-Sprite\-Frame\-Cache}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Sprite\-Frame\-Cache.\-h$>$}
+
+Inheritance diagram for C\-C\-Sprite\-Frame\-Cache\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_c_sprite_frame_cache}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{class_c_c_sprite_frame_cache_a98ba94307a913f9eafad3ba44b0cb751}{add\-Sprite\-Frames\-With\-File\-:}
+\item 
+(void) -\/ \hyperlink{class_c_c_sprite_frame_cache_af99ecfe844cf9bb42ab498a5b3894ad3}{add\-Sprite\-Frames\-With\-File\-:texture\-Filename\-:}
+\item 
+(void) -\/ \hyperlink{class_c_c_sprite_frame_cache_ac628abacc843faa02d8ea6e03f5c365a}{add\-Sprite\-Frames\-With\-File\-:texture\-:}
+\item 
+(void) -\/ \hyperlink{class_c_c_sprite_frame_cache_a9badf2589956d9659c640946b3cdd547}{add\-Sprite\-Frame\-:name\-:}
+\item 
+(void) -\/ \hyperlink{class_c_c_sprite_frame_cache_a9b9719273023e0d73078d7ed779ea35a}{remove\-Sprite\-Frames}
+\item 
+(void) -\/ \hyperlink{class_c_c_sprite_frame_cache_a849066146f123d21dce0ce5378d03516}{remove\-Unused\-Sprite\-Frames}
+\item 
+(void) -\/ \hyperlink{class_c_c_sprite_frame_cache_a0d38ec48a0084cc32ca90edd5475ae15}{remove\-Sprite\-Frame\-By\-Name\-:}
+\item 
+(void) -\/ \hyperlink{class_c_c_sprite_frame_cache_aa3a61d8b6e9936f9e5a3bf8f4d264e10}{remove\-Sprite\-Frames\-From\-File\-:}
+\item 
+(void) -\/ \hyperlink{class_c_c_sprite_frame_cache_ad2bb95d9e83bbf732c9eba2514bc24cd}{remove\-Sprite\-Frames\-From\-Texture\-:}
+\item 
+(\hyperlink{interface_c_c_sprite_frame}{C\-C\-Sprite\-Frame} $\ast$) -\/ \hyperlink{class_c_c_sprite_frame_cache_af9d4b9ed99c9193a9a7e3a3516ffc796}{sprite\-Frame\-By\-Name\-:}
+\item 
+\hypertarget{class_c_c_sprite_frame_cache_a8b131a12f1f05ae62d24a7cad0d35e4f}{(void) -\/ {\bfseries add\-Sprite\-Frames\-With\-Dictionary\-:texture\-File\-:}}\label{class_c_c_sprite_frame_cache_a8b131a12f1f05ae62d24a7cad0d35e4f}
+
+\item 
+\hypertarget{class_c_c_sprite_frame_cache_a6ab886afb1dc60e6aaf483bc258c9ae6}{(void) -\/ {\bfseries add\-Sprite\-Frames\-With\-File\-:texture\-File\-:}}\label{class_c_c_sprite_frame_cache_a6ab886afb1dc60e6aaf483bc258c9ae6}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{class_c_c_sprite_frame_cache}{C\-C\-Sprite\-Frame\-Cache} $\ast$) + \hyperlink{class_c_c_sprite_frame_cache_a2212ce69087afeea57ff2d677e67fdc6}{shared\-Sprite\-Frame\-Cache}
+\item 
+(void) + \hyperlink{class_c_c_sprite_frame_cache_ae31b11409c7483fa7f3e7e80f2ae8d03}{purge\-Shared\-Sprite\-Frame\-Cache}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_c_sprite_frame_cache_a63895824fd418189b8fcc0edad5226a7}{N\-S\-Mutable\-Dictionary $\ast$ {\bfseries sprite\-Frames\-\_\-}}\label{class_c_c_sprite_frame_cache_a63895824fd418189b8fcc0edad5226a7}
+
+\item 
+\hypertarget{class_c_c_sprite_frame_cache_a8612ebfd3afe3db670c1926ab42357ed}{N\-S\-Mutable\-Dictionary $\ast$ {\bfseries sprite\-Frames\-Aliases\-\_\-}}\label{class_c_c_sprite_frame_cache_a8612ebfd3afe3db670c1926ab42357ed}
+
+\item 
+\hypertarget{class_c_c_sprite_frame_cache_a185a13190afd34d1e2db08fa579cb2d4}{N\-S\-Mutable\-Set $\ast$ {\bfseries loaded\-Filenames\-\_\-}}\label{class_c_c_sprite_frame_cache_a185a13190afd34d1e2db08fa579cb2d4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Singleton that handles the loading of the sprite frames. It saves in a cache the sprite frames. \begin{DoxySince}{Since}
+v0.\-9 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_c_sprite_frame_cache_a9badf2589956d9659c640946b3cdd547}{\index{C\-C\-Sprite\-Frame\-Cache@{C\-C\-Sprite\-Frame\-Cache}!add\-Sprite\-Frame\-:name\-:@{add\-Sprite\-Frame\-:name\-:}}
+\index{add\-Sprite\-Frame\-:name\-:@{add\-Sprite\-Frame\-:name\-:}!CCSpriteFrameCache@{C\-C\-Sprite\-Frame\-Cache}}
+\subsubsection[{add\-Sprite\-Frame\-:name\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\-Sprite\-Frame\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Sprite\-Frame}$\ast$)}]{frame}
+\item[{name:(N\-S\-String$\ast$)}]{frame\-Name}
+\end{DoxyParamCaption}
+}}\label{class_c_c_sprite_frame_cache_a9badf2589956d9659c640946b3cdd547}
+Adds an sprite frame with a given name. If the name already exists, then the contents of the old name will be replaced with the new one. 
+\begin{DoxyCode}
+                      :(CCSpriteFrame*)frame name:(NSString*)frameName
+{
+        [spriteFrames_ setObject:frame forKey:frameName];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_sprite_frame_cache_a98ba94307a913f9eafad3ba44b0cb751}{\index{C\-C\-Sprite\-Frame\-Cache@{C\-C\-Sprite\-Frame\-Cache}!add\-Sprite\-Frames\-With\-File\-:@{add\-Sprite\-Frames\-With\-File\-:}}
+\index{add\-Sprite\-Frames\-With\-File\-:@{add\-Sprite\-Frames\-With\-File\-:}!CCSpriteFrameCache@{C\-C\-Sprite\-Frame\-Cache}}
+\subsubsection[{add\-Sprite\-Frames\-With\-File\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf add\-Sprite\-Frames\-With\-File\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{plist}
+\end{DoxyParamCaption}
+}}\label{class_c_c_sprite_frame_cache_a98ba94307a913f9eafad3ba44b0cb751}
+Adds multiple Sprite Frames from a plist file. A texture will be loaded automatically. The texture name will composed by replacing the .plist suffix with .png . If you want to use another texture, you should use the add\-Sprite\-Frames\-With\-File\-:texture method. 
+
+Referenced by C\-C\-Animation\-Cache\-::add\-Animations\-With\-Dictionary\-:.
+
+
+\begin{DoxyCode}
+                               :(NSString*)plist
+{
+        NSAssert(plist, @"plist filename should not be nil");
+        
+        if( ! [loadedFilenames_ member:plist] ) {
+
+                NSString *path = [[CCFileUtils sharedFileUtils] 
+      fullPathFromRelativePath:plist];
+                NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile
+      :path];
+
+                NSString *texturePath = nil;
+                NSDictionary *metadataDict = [dict objectForKey:@"metadata"];
+                if( metadataDict )
+                        // try to read  texture file name from meta data
+                        texturePath = [metadataDict objectForKey:@"textureFileN
+      ame"];
+
+
+                if( texturePath )
+                {
+                        // build texture path relative to plist file
+                        NSString *textureBase = [plist 
+      stringByDeletingLastPathComponent];
+                        texturePath = [textureBase 
+      stringByAppendingPathComponent:texturePath];
+                } else {
+                        // build texture path by replacing file extension
+                        texturePath = [plist stringByDeletingPathExtension];
+                        texturePath = [texturePath 
+      stringByAppendingPathExtension:@"png"];
+
+                        CCLOG(@"cocos2d: CCSpriteFrameCache: Trying to use file
+       '%@' as texture", texturePath);
+                }
+
+                [self addSpriteFramesWithDictionary:dict textureFilename:
+      texturePath];
+                
+                [loadedFilenames_ addObject:plist];
+        }
+        else 
+                CCLOGINFO(@"cocos2d: CCSpriteFrameCache: file already loaded:
+       %@", plist);
+
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_sprite_frame_cache_ac628abacc843faa02d8ea6e03f5c365a}{\index{C\-C\-Sprite\-Frame\-Cache@{C\-C\-Sprite\-Frame\-Cache}!add\-Sprite\-Frames\-With\-File\-:texture\-:@{add\-Sprite\-Frames\-With\-File\-:texture\-:}}
+\index{add\-Sprite\-Frames\-With\-File\-:texture\-:@{add\-Sprite\-Frames\-With\-File\-:texture\-:}!CCSpriteFrameCache@{C\-C\-Sprite\-Frame\-Cache}}
+\subsubsection[{add\-Sprite\-Frames\-With\-File\-:texture\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf add\-Sprite\-Frames\-With\-File\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{plist}
+\item[{texture:({\bf C\-C\-Texture2\-D}$\ast$)}]{texture}
+\end{DoxyParamCaption}
+}}\label{class_c_c_sprite_frame_cache_ac628abacc843faa02d8ea6e03f5c365a}
+Adds multiple Sprite Frames from a plist file. The texture will be associated with the created sprite frames. 
+\begin{DoxyCode}
+                               :(NSString*)plist texture:(CCTexture2D*)texture
+{
+        return [self addSpriteFramesWithFile:plist textureReference:texture];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_sprite_frame_cache_af99ecfe844cf9bb42ab498a5b3894ad3}{\index{C\-C\-Sprite\-Frame\-Cache@{C\-C\-Sprite\-Frame\-Cache}!add\-Sprite\-Frames\-With\-File\-:texture\-Filename\-:@{add\-Sprite\-Frames\-With\-File\-:texture\-Filename\-:}}
+\index{add\-Sprite\-Frames\-With\-File\-:texture\-Filename\-:@{add\-Sprite\-Frames\-With\-File\-:texture\-Filename\-:}!CCSpriteFrameCache@{C\-C\-Sprite\-Frame\-Cache}}
+\subsubsection[{add\-Sprite\-Frames\-With\-File\-:texture\-Filename\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf add\-Sprite\-Frames\-With\-File\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{plist}
+\item[{textureFilename:(N\-S\-String$\ast$)}]{filename}
+\end{DoxyParamCaption}
+}}\label{class_c_c_sprite_frame_cache_af99ecfe844cf9bb42ab498a5b3894ad3}
+Adds multiple Sprite Frames from a plist file. The texture filename will be associated with the created sprite frames. 
+\begin{DoxyCode}
+                               :(NSString*)plist textureFilename:(NSString*)
+      textureFilename
+{
+        return [self addSpriteFramesWithFile:plist textureReference:
+      textureFilename];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_sprite_frame_cache_ae31b11409c7483fa7f3e7e80f2ae8d03}{\index{C\-C\-Sprite\-Frame\-Cache@{C\-C\-Sprite\-Frame\-Cache}!purge\-Shared\-Sprite\-Frame\-Cache@{purge\-Shared\-Sprite\-Frame\-Cache}}
+\index{purge\-Shared\-Sprite\-Frame\-Cache@{purge\-Shared\-Sprite\-Frame\-Cache}!CCSpriteFrameCache@{C\-C\-Sprite\-Frame\-Cache}}
+\subsubsection[{purge\-Shared\-Sprite\-Frame\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf purge\-Shared\-Sprite\-Frame\-Cache} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_sprite_frame_cache_ae31b11409c7483fa7f3e7e80f2ae8d03}
+Purges the cache. It releases all the Sprite Frames and the retained instance. 
+
+Referenced by C\-C\-Director\-::end.
+
+
+\begin{DoxyCode}
+{
+        [sharedSpriteFrameCache_ release];
+        sharedSpriteFrameCache_ = nil;
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_sprite_frame_cache_a0d38ec48a0084cc32ca90edd5475ae15}{\index{C\-C\-Sprite\-Frame\-Cache@{C\-C\-Sprite\-Frame\-Cache}!remove\-Sprite\-Frame\-By\-Name\-:@{remove\-Sprite\-Frame\-By\-Name\-:}}
+\index{remove\-Sprite\-Frame\-By\-Name\-:@{remove\-Sprite\-Frame\-By\-Name\-:}!CCSpriteFrameCache@{C\-C\-Sprite\-Frame\-Cache}}
+\subsubsection[{remove\-Sprite\-Frame\-By\-Name\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\-Sprite\-Frame\-By\-Name\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{name}
+\end{DoxyParamCaption}
+}}\label{class_c_c_sprite_frame_cache_a0d38ec48a0084cc32ca90edd5475ae15}
+Deletes an sprite frame from the sprite frame cache. 
+\begin{DoxyCode}
+                               :(NSString*)name
+{
+        // explicit nil handling
+        if( ! name )
+                return;
+
+        // Is this an alias ?
+        NSString *key = [spriteFramesAliases_ objectForKey:name];
+
+        if( key ) {
+                [spriteFrames_ removeObjectForKey:key];
+                [spriteFramesAliases_ removeObjectForKey:name];
+
+        } else
+                [spriteFrames_ removeObjectForKey:name];
+        
+        // XXX. Since we don't know the .plist file that originated the frame,
+       we must remove all .plist from the cache
+        [loadedFilenames_ removeAllObjects];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_sprite_frame_cache_a9b9719273023e0d73078d7ed779ea35a}{\index{C\-C\-Sprite\-Frame\-Cache@{C\-C\-Sprite\-Frame\-Cache}!remove\-Sprite\-Frames@{remove\-Sprite\-Frames}}
+\index{remove\-Sprite\-Frames@{remove\-Sprite\-Frames}!CCSpriteFrameCache@{C\-C\-Sprite\-Frame\-Cache}}
+\subsubsection[{remove\-Sprite\-Frames}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\-Sprite\-Frames} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_sprite_frame_cache_a9b9719273023e0d73078d7ed779ea35a}
+Purges the dictionary of loaded sprite frames. Call this method if you receive the \char`\"{}\-Memory Warning\char`\"{}. In the short term\-: it will free some resources preventing your app from being killed. In the medium term\-: it will allocate more resources. In the long term\-: it will be the same. 
+\begin{DoxyCode}
+{
+        [spriteFrames_ removeAllObjects];
+        [spriteFramesAliases_ removeAllObjects];
+        [loadedFilenames_ removeAllObjects];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_sprite_frame_cache_aa3a61d8b6e9936f9e5a3bf8f4d264e10}{\index{C\-C\-Sprite\-Frame\-Cache@{C\-C\-Sprite\-Frame\-Cache}!remove\-Sprite\-Frames\-From\-File\-:@{remove\-Sprite\-Frames\-From\-File\-:}}
+\index{remove\-Sprite\-Frames\-From\-File\-:@{remove\-Sprite\-Frames\-From\-File\-:}!CCSpriteFrameCache@{C\-C\-Sprite\-Frame\-Cache}}
+\subsubsection[{remove\-Sprite\-Frames\-From\-File\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\-Sprite\-Frames\-From\-File\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{plist}
+\end{DoxyParamCaption}
+}}\label{class_c_c_sprite_frame_cache_aa3a61d8b6e9936f9e5a3bf8f4d264e10}
+Removes multiple Sprite Frames from a plist file. Sprite Frames stored in this file will be removed. It is convenient to call this method when a specific texture needs to be removed. \begin{DoxySince}{Since}
+v0.\-99.\-5 
+\end{DoxySince}
+
+\begin{DoxyCode}
+                                   :(NSString*) plist
+{
+        NSString *path = [[CCFileUtils sharedFileUtils] fullPathFromRelativePath
+      :plist];
+        NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
+
+        [self removeSpriteFramesFromDictionary:dict];
+        
+        // remove it from the cache
+        id ret = [loadedFilenames_ member:plist];
+        if( ret )
+                [loadedFilenames_ removeObject:ret];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_sprite_frame_cache_ad2bb95d9e83bbf732c9eba2514bc24cd}{\index{C\-C\-Sprite\-Frame\-Cache@{C\-C\-Sprite\-Frame\-Cache}!remove\-Sprite\-Frames\-From\-Texture\-:@{remove\-Sprite\-Frames\-From\-Texture\-:}}
+\index{remove\-Sprite\-Frames\-From\-Texture\-:@{remove\-Sprite\-Frames\-From\-Texture\-:}!CCSpriteFrameCache@{C\-C\-Sprite\-Frame\-Cache}}
+\subsubsection[{remove\-Sprite\-Frames\-From\-Texture\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\-Sprite\-Frames\-From\-Texture\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Texture2\-D}$\ast$)}]{texture}
+\end{DoxyParamCaption}
+}}\label{class_c_c_sprite_frame_cache_ad2bb95d9e83bbf732c9eba2514bc24cd}
+Removes all Sprite Frames associated with the specified textures. It is convenient to call this method when a specific texture needs to be removed. \begin{DoxySince}{Since}
+v0.\-995. 
+\end{DoxySince}
+
+\begin{DoxyCode}
+                                      :(CCTexture2D*) texture
+{
+        NSMutableArray *keysToRemove=[NSMutableArray array];
+
+        for (NSString *spriteFrameKey in spriteFrames_)
+        {
+                if ([[spriteFrames_ valueForKey:spriteFrameKey] texture] == 
+      texture)
+                        [keysToRemove addObject:spriteFrameKey];
+
+        }
+        [spriteFrames_ removeObjectsForKeys:keysToRemove];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_sprite_frame_cache_a849066146f123d21dce0ce5378d03516}{\index{C\-C\-Sprite\-Frame\-Cache@{C\-C\-Sprite\-Frame\-Cache}!remove\-Unused\-Sprite\-Frames@{remove\-Unused\-Sprite\-Frames}}
+\index{remove\-Unused\-Sprite\-Frames@{remove\-Unused\-Sprite\-Frames}!CCSpriteFrameCache@{C\-C\-Sprite\-Frame\-Cache}}
+\subsubsection[{remove\-Unused\-Sprite\-Frames}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\-Unused\-Sprite\-Frames} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_sprite_frame_cache_a849066146f123d21dce0ce5378d03516}
+Removes unused sprite frames. Sprite Frames that have a retain count of 1 will be deleted. It is convenient to call this method after when starting a new Scene. 
+\begin{DoxyCode}
+{
+        BOOL removed_ = NO;
+        NSArray *keys = [spriteFrames_ allKeys];
+        for( id key in keys ) {
+                id value = [spriteFrames_ objectForKey:key];
+                if( [value retainCount] == 1 ) {
+                        CCLOG(@"cocos2d: CCSpriteFrameCache: removing unused
+       frame: %@", key);
+                        [spriteFrames_ removeObjectForKey:key];
+                        removed_ = YES;
+                }
+        }
+        
+        // XXX. Since we don't know the .plist file that originated the frame,
+       we must remove all .plist from the cache
+        if( removed_ )
+                [loadedFilenames_ removeAllObjects];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_sprite_frame_cache_a2212ce69087afeea57ff2d677e67fdc6}{\index{C\-C\-Sprite\-Frame\-Cache@{C\-C\-Sprite\-Frame\-Cache}!shared\-Sprite\-Frame\-Cache@{shared\-Sprite\-Frame\-Cache}}
+\index{shared\-Sprite\-Frame\-Cache@{shared\-Sprite\-Frame\-Cache}!CCSpriteFrameCache@{C\-C\-Sprite\-Frame\-Cache}}
+\subsubsection[{shared\-Sprite\-Frame\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf C\-C\-Sprite\-Frame\-Cache} $\ast$) {\bf shared\-Sprite\-Frame\-Cache} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_sprite_frame_cache_a2212ce69087afeea57ff2d677e67fdc6}
+Retruns ths shared instance of the Sprite Frame cache 
+
+Referenced by C\-C\-Animation\-Cache\-::add\-Animations\-With\-Dictionary\-:, C\-C\-Sprite\-::init\-With\-Sprite\-Frame\-Name\-:, and C\-C\-Sprite\-::sprite\-With\-Sprite\-Frame\-Name\-:.
+
+
+\begin{DoxyCode}
+{
+        if (!sharedSpriteFrameCache_)
+                sharedSpriteFrameCache_ = [[CCSpriteFrameCache alloc] init];
+
+        return sharedSpriteFrameCache_;
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_sprite_frame_cache_af9d4b9ed99c9193a9a7e3a3516ffc796}{\index{C\-C\-Sprite\-Frame\-Cache@{C\-C\-Sprite\-Frame\-Cache}!sprite\-Frame\-By\-Name\-:@{sprite\-Frame\-By\-Name\-:}}
+\index{sprite\-Frame\-By\-Name\-:@{sprite\-Frame\-By\-Name\-:}!CCSpriteFrameCache@{C\-C\-Sprite\-Frame\-Cache}}
+\subsubsection[{sprite\-Frame\-By\-Name\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Sprite\-Frame} $\ast$) {\bf sprite\-Frame\-By\-Name\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{name}
+\end{DoxyParamCaption}
+}}\label{class_c_c_sprite_frame_cache_af9d4b9ed99c9193a9a7e3a3516ffc796}
+Returns an Sprite Frame that was previously added. If the name is not found it will return nil. You should retain the returned copy if you are going to use it. 
+
+Referenced by C\-C\-Sprite\-::init\-With\-Sprite\-Frame\-Name\-:, and C\-C\-Sprite\-::sprite\-With\-Sprite\-Frame\-Name\-:.
+
+
+\begin{DoxyCode}
+                                   :(NSString*)name
+{
+        CCSpriteFrame *frame = [spriteFrames_ objectForKey:name];
+        if( ! frame ) {
+                // try alias dictionary
+                NSString *key = [spriteFramesAliases_ objectForKey:name];
+                frame = [spriteFrames_ objectForKey:key];
+
+                if( ! frame )
+                        CCLOG(@"cocos2d: CCSpriteFrameCache: Frame '%@' not
+       found", name);
+        }
+
+        return frame;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/cc\-Deprecated.\-m\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Sprite\-Frame\-Cache.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Sprite\-Frame\-Cache.\-m\end{DoxyCompactItemize}

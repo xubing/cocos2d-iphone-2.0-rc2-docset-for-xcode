@@ -1,0 +1,70 @@
+\hypertarget{class_edge_shapes_callback}{\section{Edge\-Shapes\-Callback Class Reference}
+\label{class_edge_shapes_callback}\index{Edge\-Shapes\-Callback@{Edge\-Shapes\-Callback}}
+}
+Inheritance diagram for Edge\-Shapes\-Callback\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_edge_shapes_callback}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float32 \hyperlink{class_edge_shapes_callback_ad2a2a976f5bfe944ed38cb357a68faad}{Report\-Fixture} (\hyperlink{classb2_fixture}{b2\-Fixture} $\ast$fixture, const \hyperlink{structb2_vec2}{b2\-Vec2} \&point, const \hyperlink{structb2_vec2}{b2\-Vec2} \&normal, float32 fraction)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_edge_shapes_callback_ade2ba6a296bdb0f74444d07da25e4ebc}{\hyperlink{classb2_fixture}{b2\-Fixture} $\ast$ {\bfseries m\-\_\-fixture}}\label{class_edge_shapes_callback_ade2ba6a296bdb0f74444d07da25e4ebc}
+
+\item 
+\hypertarget{class_edge_shapes_callback_a62ba065a5d66af3b197a0cabbdfc72aa}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-point}}\label{class_edge_shapes_callback_a62ba065a5d66af3b197a0cabbdfc72aa}
+
+\item 
+\hypertarget{class_edge_shapes_callback_a38a405b43935b5d67e734387eda85b08}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-normal}}\label{class_edge_shapes_callback_a38a405b43935b5d67e734387eda85b08}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_edge_shapes_callback_ad2a2a976f5bfe944ed38cb357a68faad}{\index{Edge\-Shapes\-Callback@{Edge\-Shapes\-Callback}!Report\-Fixture@{Report\-Fixture}}
+\index{Report\-Fixture@{Report\-Fixture}!EdgeShapesCallback@{Edge\-Shapes\-Callback}}
+\subsubsection[{Report\-Fixture}]{\setlength{\rightskip}{0pt plus 5cm}float32 {\bf Edge\-Shapes\-Callback\-::\-Report\-Fixture} (
+\begin{DoxyParamCaption}
+\item[{{\bf b2\-Fixture} $\ast$}]{fixture, }
+\item[{const {\bf b2\-Vec2} \&}]{point, }
+\item[{const {\bf b2\-Vec2} \&}]{normal, }
+\item[{float32}]{fraction}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_edge_shapes_callback_ad2a2a976f5bfe944ed38cb357a68faad}
+Called for each fixture found in the query. You control how the ray cast proceeds by returning a float\-: return -\/1\-: ignore this fixture and continue return 0\-: terminate the ray cast return fraction\-: clip the ray to this point return 1\-: don't clip the ray and continue 
+\begin{DoxyParams}{Parameters}
+{\em fixture} & the fixture hit by the ray \\
+\hline
+{\em point} & the point of initial intersection \\
+\hline
+{\em normal} & the normal vector at the point of intersection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 to filter, 0 to terminate, fraction to clip the ray for closest hit, 1 to continue 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classb2_ray_cast_callback_a658d5c8e89e0c73230cc8bddade4f3a4}{b2\-Ray\-Cast\-Callback}.
+
+
+\begin{DoxyCode}
+        {
+                m_fixture = fixture;
+                m_point = point;
+                m_normal = normal;
+
+                return fraction;
+        }
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Testbed/\-Tests/Edge\-Shapes.\-h\end{DoxyCompactItemize}

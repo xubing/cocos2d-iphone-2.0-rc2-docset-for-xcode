@@ -1,0 +1,159 @@
+\hypertarget{class_c_c_action_interval}{\section{C\-C\-Action\-Interval Class Reference}
+\label{class_c_c_action_interval}\index{C\-C\-Action\-Interval@{C\-C\-Action\-Interval}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Interval.\-h$>$}
+
+Inheritance diagram for C\-C\-Action\-Interval\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_c_c_action_interval}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{class_c_c_action_interval_a720052392c29747218924b70af412d6c}{init\-With\-Duration\-:}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{class_c_c_action_interval_a56967edca918cf8d3dfd3b5c4f2f4e85}{is\-Done}
+\item 
+(\hyperlink{class_c_c_action_interval}{C\-C\-Action\-Interval} $\ast$) -\/ \hyperlink{class_c_c_action_interval_a9a31f528b229f08d3aada08423f20094}{reverse}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{class_c_c_action_interval_a08fbc347478cca16ab1fe936a1770dc0}{action\-With\-Duration\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_c_action_interval_a98405542977136ef4f4d031556bccf7a}{\hyperlink{cc_types_8h_ae6c674aac4bfb46a4e6cb1e89bb66b4f}{cc\-Time} {\bfseries elapsed\-\_\-}}\label{class_c_c_action_interval_a98405542977136ef4f4d031556bccf7a}
+
+\item 
+\hypertarget{class_c_c_action_interval_ad6bf36cabba9c63becb517fc394fe858}{B\-O\-O\-L {\bfseries first\-Tick\-\_\-}}\label{class_c_c_action_interval_ad6bf36cabba9c63becb517fc394fe858}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{cc_types_8h_ae6c674aac4bfb46a4e6cb1e89bb66b4f}{cc\-Time} \hyperlink{class_c_c_action_interval_a45c12de7cb8ef074d8c0a1915ae65bea}{elapsed}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An interval action is an action that takes place within a certain period of time. It has an start time, and a finish time. The finish time is the parameter duration plus the start time.
+
+These \hyperlink{class_c_c_action_interval}{C\-C\-Action\-Interval} actions have some interesting properties, like\-:
+\begin{DoxyItemize}
+\item They can run normally (default)
+\item They can run reversed with the reverse method
+\item They can run with the time altered with the Accelerate, Accel\-Deccel and Speed actions.
+\end{DoxyItemize}
+
+For example, you can simulate a Ping Pong effect running the action normally and then running it again in Reverse mode.
+
+Example\-: \begin{DoxyVerb}    CCAction * pingPongAction = [CCSequence actions: action, [action reverse], nil];\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_c_action_interval_a08fbc347478cca16ab1fe936a1770dc0}{\index{C\-C\-Action\-Interval@{C\-C\-Action\-Interval}!action\-With\-Duration\-:@{action\-With\-Duration\-:}}
+\index{action\-With\-Duration\-:@{action\-With\-Duration\-:}!CCActionInterval@{C\-C\-Action\-Interval}}
+\subsubsection[{action\-With\-Duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{class_c_c_action_interval_a08fbc347478cca16ab1fe936a1770dc0}
+creates the action 
+
+Reimplemented in \hyperlink{interface_page_turn3_d_demo_ad9da603f0df888efeb47e924d797a733}{Page\-Turn3\-D\-Demo}, \hyperlink{interface_split_cols_demo_aa4c77d636404af8a73281a953c10b3ad}{Split\-Cols\-Demo}, \hyperlink{interface_split_rows_demo_aee59b03abf9d9f78c059a55fd8259bd0}{Split\-Rows\-Demo}, \hyperlink{interface_jump_tiles3_d_demo_a825706a9e5d4c89578af8c04d483e001}{Jump\-Tiles3\-D\-Demo}, \hyperlink{interface_waves_tiles3_d_demo_a8831a929f08852b77475c64909598106}{Waves\-Tiles3\-D\-Demo}, \hyperlink{interface_turn_off_tiles_demo_aa72fdb390e5921f9d43bbf1c4cce48ad}{Turn\-Off\-Tiles\-Demo}, \hyperlink{interface_fade_out_down_tiles_demo_a3415e3131863060190a02aa6cebd6298}{Fade\-Out\-Down\-Tiles\-Demo}, \hyperlink{interface_fade_out_up_tiles_demo_a7cc0944d5911af45f01b99c3c51e3f75}{Fade\-Out\-Up\-Tiles\-Demo}, \hyperlink{interface_fade_out_b_l_tiles_demo_ad13752a704cedf99bc49df9a03b3cc92}{Fade\-Out\-B\-L\-Tiles\-Demo}, \hyperlink{interface_fade_out_t_r_tiles_demo_ad82e52f8570462f67365b6d936274b99}{Fade\-Out\-T\-R\-Tiles\-Demo}, \hyperlink{interface_shuffle_tiles_demo_ad54afeb4935f93e79aa8bc7d2e2ce439}{Shuffle\-Tiles\-Demo}, \hyperlink{interface_c_c_flip_x3_d_a61912e0504905ba58097d732977c416f}{C\-C\-Flip\-X3\-D}, \hyperlink{interface_shattered_tiles3_d_demo_a329676c361fb524b09f5f29b1d35ba6e}{Shattered\-Tiles3\-D\-Demo}, \hyperlink{interface_shaky_tiles3_d_demo_a871e8a6d3dfc3cc231bac3d4046a251f}{Shaky\-Tiles3\-D\-Demo}, \hyperlink{interface_twirl_demo_a1992b8eecd0f5130043748641c6f38ce}{Twirl\-Demo}, \hyperlink{interface_waves_demo_abca58c64fe1f2c9b785030fa4b29fe04}{Waves\-Demo}, \hyperlink{interface_liquid_demo_a4a50d2693efec8041c34b53b017491a1}{Liquid\-Demo}, \hyperlink{interface_ripple3_d_demo_afd8307d97228b9186866f300797108c7}{Ripple3\-D\-Demo}, \hyperlink{interface_lens3_d_demo_ae3fc3ba830dbe263c0d294c0d1a1e3d1}{Lens3\-D\-Demo}, \hyperlink{interface_flip_y3_d_demo_abe7a83e351b66a957b13624a3aa4c140}{Flip\-Y3\-D\-Demo}, \hyperlink{interface_flip_x3_d_demo_ad3338f96edfbf5b140c591829e933b5d}{Flip\-X3\-D\-Demo}, \hyperlink{interface_waves3_d_demo_a14107bfe1037386bf1f3094cc8488949}{Waves3\-D\-Demo}, and \hyperlink{interface_shaky3_d_demo_a8ec26c40412e97d89b87f973228ae67d}{Shaky3\-D\-Demo}.
+
+
+
+Referenced by Flip\-X3\-D\-Demo\-::action\-With\-Duration\-:, Flip\-Y3\-D\-Demo\-::action\-With\-Duration\-:, Shuffle\-Tiles\-Demo\-::action\-With\-Duration\-:, Fade\-Out\-T\-R\-Tiles\-Demo\-::action\-With\-Duration\-:, Fade\-Out\-B\-L\-Tiles\-Demo\-::action\-With\-Duration\-:, Fade\-Out\-Up\-Tiles\-Demo\-::action\-With\-Duration\-:, Fade\-Out\-Down\-Tiles\-Demo\-::action\-With\-Duration\-:, Turn\-Off\-Tiles\-Demo\-::action\-With\-Duration\-:, and C\-C\-Spawn\-::init\-One\-:two\-:.
+
+
+\begin{DoxyCode}
+                        : (ccTime) d
+{
+        return [[[self alloc] initWithDuration:d ] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_action_interval_a720052392c29747218924b70af412d6c}{\index{C\-C\-Action\-Interval@{C\-C\-Action\-Interval}!init\-With\-Duration\-:@{init\-With\-Duration\-:}}
+\index{init\-With\-Duration\-:@{init\-With\-Duration\-:}!CCActionInterval@{C\-C\-Action\-Interval}}
+\subsubsection[{init\-With\-Duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{class_c_c_action_interval_a720052392c29747218924b70af412d6c}
+initializes the action 
+
+Reimplemented in \hyperlink{interface_c_c_flip_x3_d_a95b1926ed0a5624adcddab23394ad443}{C\-C\-Flip\-X3\-D}.
+
+
+\begin{DoxyCode}
+                      : (ccTime) d
+{
+        if( (self=[super init]) ) {
+                duration_ = d;
+
+                // prevent division by 0
+                // This comparison could be in step:, but it might decrease the
+       performance
+                // by 3% in heavy based action games.
+                if( duration_ == 0 )
+                        duration_ = FLT_EPSILON;
+                elapsed_ = 0;
+                firstTick_ = YES;
+        }
+        return self;
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_action_interval_a56967edca918cf8d3dfd3b5c4f2f4e85}{\index{C\-C\-Action\-Interval@{C\-C\-Action\-Interval}!is\-Done@{is\-Done}}
+\index{is\-Done@{is\-Done}!CCActionInterval@{C\-C\-Action\-Interval}}
+\subsubsection[{is\-Done}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) {\bf is\-Done} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_action_interval_a56967edca918cf8d3dfd3b5c4f2f4e85}
+returns Y\-E\-S if the action has finished 
+
+Reimplemented from \hyperlink{interface_c_c_action_a22021b72225f153c351e442c9202965a}{C\-C\-Action}.
+
+
+\begin{DoxyCode}
+{
+        return (elapsed_ >= duration_);
+}
+\end{DoxyCode}
+\hypertarget{class_c_c_action_interval_a9a31f528b229f08d3aada08423f20094}{\index{C\-C\-Action\-Interval@{C\-C\-Action\-Interval}!reverse@{reverse}}
+\index{reverse@{reverse}!CCActionInterval@{C\-C\-Action\-Interval}}
+\subsubsection[{reverse}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Action\-Interval} $\ast$) {\bf reverse} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{class_c_c_action_interval_a9a31f528b229f08d3aada08423f20094}
+returns a reversed action 
+
+Reimplemented from \hyperlink{interface_c_c_finite_time_action_a16c1b5753dbf16a0267a069c45b3b550}{C\-C\-Finite\-Time\-Action}.
+
+
+\begin{DoxyCode}
+{
+        NSAssert(NO, @"CCIntervalAction: reverse not implemented.");
+        return nil;
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{class_c_c_action_interval_a45c12de7cb8ef074d8c0a1915ae65bea}{\index{C\-C\-Action\-Interval@{C\-C\-Action\-Interval}!elapsed@{elapsed}}
+\index{elapsed@{elapsed}!CCActionInterval@{C\-C\-Action\-Interval}}
+\subsubsection[{elapsed}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf cc\-Time}) {\bf elapsed}\hspace{0.3cm}{\ttfamily  \mbox{[}read, assign\mbox{]}}}}\label{class_c_c_action_interval_a45c12de7cb8ef074d8c0a1915ae65bea}
+how many seconds had elapsed since the actions started to run. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Grid.\-m\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-m\end{DoxyCompactItemize}

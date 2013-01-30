@@ -1,0 +1,165 @@
+\hypertarget{structjs_1_1gc_1_1_arena_lists}{\section{js\-:\-:gc\-:\-:Arena\-Lists Struct Reference}
+\label{structjs_1_1gc_1_1_arena_lists}\index{js\-::gc\-::\-Arena\-Lists@{js\-::gc\-::\-Arena\-Lists}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_af31ff3949a871a0a7fcc1d6235a1476f}{const \hyperlink{structjs_1_1gc_1_1_free_span}{Free\-Span} $\ast$ {\bfseries get\-Free\-List} (Alloc\-Kind thing\-Kind) const }\label{structjs_1_1gc_1_1_arena_lists_af31ff3949a871a0a7fcc1d6235a1476f}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_ad5c24353cc884b96455865fe7865b2ba}{\hyperlink{structjs_1_1gc_1_1_arena_header}{Arena\-Header} $\ast$ {\bfseries get\-First\-Arena} (Alloc\-Kind thing\-Kind) const }\label{structjs_1_1gc_1_1_arena_lists_ad5c24353cc884b96455865fe7865b2ba}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_a903efcae5dd683a40b7f0e223d129e72}{\hyperlink{structjs_1_1gc_1_1_arena_header}{Arena\-Header} $\ast$ {\bfseries get\-First\-Arena\-To\-Sweep} (Alloc\-Kind thing\-Kind) const }\label{structjs_1_1gc_1_1_arena_lists_a903efcae5dd683a40b7f0e223d129e72}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_af0e33cf7f43ad28f98f8894be6424617}{bool {\bfseries arena\-Lists\-Are\-Empty} () const }\label{structjs_1_1gc_1_1_arena_lists_af0e33cf7f43ad28f98f8894be6424617}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_a2c6b18253dbecdba1d815104f09ef392}{bool {\bfseries arenas\-Are\-Full} (Alloc\-Kind thing\-Kind) const }\label{structjs_1_1gc_1_1_arena_lists_a2c6b18253dbecdba1d815104f09ef392}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_af4feafe8906fd67277b428b51919550e}{void {\bfseries unmark\-All} ()}\label{structjs_1_1gc_1_1_arena_lists_af4feafe8906fd67277b428b51919550e}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_a7be86b2cc9624c3a2b519752372aaaa9}{bool {\bfseries done\-Background\-Finalize} (Alloc\-Kind kind) const }\label{structjs_1_1gc_1_1_arena_lists_a7be86b2cc9624c3a2b519752372aaaa9}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_abe9db02a56fd383692386ac2d1626f7d}{void {\bfseries purge} ()}\label{structjs_1_1gc_1_1_arena_lists_abe9db02a56fd383692386ac2d1626f7d}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_a871ebcefdb8e7b132425dba64672403d}{void {\bfseries prepare\-For\-Incremental\-G\-C} (J\-S\-Runtime $\ast$rt)}\label{structjs_1_1gc_1_1_arena_lists_a871ebcefdb8e7b132425dba64672403d}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_a0cba850c836757320f85a8b8b61766b8}{void {\bfseries copy\-Free\-Lists\-To\-Arenas} ()}\label{structjs_1_1gc_1_1_arena_lists_a0cba850c836757320f85a8b8b61766b8}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_af4da0e80177f24ec63e773e26b3fffb5}{void {\bfseries copy\-Free\-List\-To\-Arena} (Alloc\-Kind thing\-Kind)}\label{structjs_1_1gc_1_1_arena_lists_af4da0e80177f24ec63e773e26b3fffb5}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_a89729b461c0c076aa213235a0362ce43}{void {\bfseries clear\-Free\-Lists\-In\-Arenas} ()}\label{structjs_1_1gc_1_1_arena_lists_a89729b461c0c076aa213235a0362ce43}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_a5665416dfa4fcbe193875a3d5b97104b}{void {\bfseries clear\-Free\-List\-In\-Arena} (Alloc\-Kind kind)}\label{structjs_1_1gc_1_1_arena_lists_a5665416dfa4fcbe193875a3d5b97104b}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_abfa459afb496d3a933aae30b61bf144a}{bool {\bfseries is\-Synchronized\-Free\-List} (Alloc\-Kind kind)}\label{structjs_1_1gc_1_1_arena_lists_abfa459afb496d3a933aae30b61bf144a}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_a5e5068c5bf938fa0d353357346f8f813}{J\-S\-\_\-\-A\-L\-W\-A\-Y\-S\-\_\-\-I\-N\-L\-I\-N\-E void $\ast$ {\bfseries allocate\-From\-Free\-List} (Alloc\-Kind thing\-Kind, size\-\_\-t thing\-Size)}\label{structjs_1_1gc_1_1_arena_lists_a5e5068c5bf938fa0d353357346f8f813}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_afc3cb6a486b25d600540a20f642cf647}{void {\bfseries check\-Empty\-Free\-Lists} ()}\label{structjs_1_1gc_1_1_arena_lists_afc3cb6a486b25d600540a20f642cf647}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_ab99e8daf49154a45cddc6cdb3bb127e2}{void {\bfseries check\-Empty\-Free\-List} (Alloc\-Kind kind)}\label{structjs_1_1gc_1_1_arena_lists_ab99e8daf49154a45cddc6cdb3bb127e2}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_a85795dd0d897728df9ad9f9f3b2f4166}{void {\bfseries queue\-Objects\-For\-Sweep} (Free\-Op $\ast$fop)}\label{structjs_1_1gc_1_1_arena_lists_a85795dd0d897728df9ad9f9f3b2f4166}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_a53ca5d52c4193f985f757d93f2a51192}{void {\bfseries queue\-Strings\-For\-Sweep} (Free\-Op $\ast$fop)}\label{structjs_1_1gc_1_1_arena_lists_a53ca5d52c4193f985f757d93f2a51192}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_a9153098ba815c8303a4e96e60bb72b52}{void {\bfseries queue\-Shapes\-For\-Sweep} (Free\-Op $\ast$fop)}\label{structjs_1_1gc_1_1_arena_lists_a9153098ba815c8303a4e96e60bb72b52}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_a8fedef6bd6c8388587c8c2008ce2573e}{void {\bfseries queue\-Scripts\-For\-Sweep} (Free\-Op $\ast$fop)}\label{structjs_1_1gc_1_1_arena_lists_a8fedef6bd6c8388587c8c2008ce2573e}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_aeb25ed411579c58c0c259b85bea32254}{bool {\bfseries foreground\-Finalize} (Free\-Op $\ast$fop, Alloc\-Kind thing\-Kind, \hyperlink{structjs_1_1_slice_budget}{Slice\-Budget} \&slice\-Budget)}\label{structjs_1_1gc_1_1_arena_lists_aeb25ed411579c58c0c259b85bea32254}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_af31ff3949a871a0a7fcc1d6235a1476f}{const \hyperlink{structjs_1_1gc_1_1_free_span}{Free\-Span} $\ast$ {\bfseries get\-Free\-List} (Alloc\-Kind thing\-Kind) const }\label{structjs_1_1gc_1_1_arena_lists_af31ff3949a871a0a7fcc1d6235a1476f}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_ad5c24353cc884b96455865fe7865b2ba}{\hyperlink{structjs_1_1gc_1_1_arena_header}{Arena\-Header} $\ast$ {\bfseries get\-First\-Arena} (Alloc\-Kind thing\-Kind) const }\label{structjs_1_1gc_1_1_arena_lists_ad5c24353cc884b96455865fe7865b2ba}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_a903efcae5dd683a40b7f0e223d129e72}{\hyperlink{structjs_1_1gc_1_1_arena_header}{Arena\-Header} $\ast$ {\bfseries get\-First\-Arena\-To\-Sweep} (Alloc\-Kind thing\-Kind) const }\label{structjs_1_1gc_1_1_arena_lists_a903efcae5dd683a40b7f0e223d129e72}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_af0e33cf7f43ad28f98f8894be6424617}{bool {\bfseries arena\-Lists\-Are\-Empty} () const }\label{structjs_1_1gc_1_1_arena_lists_af0e33cf7f43ad28f98f8894be6424617}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_a2c6b18253dbecdba1d815104f09ef392}{bool {\bfseries arenas\-Are\-Full} (Alloc\-Kind thing\-Kind) const }\label{structjs_1_1gc_1_1_arena_lists_a2c6b18253dbecdba1d815104f09ef392}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_af4feafe8906fd67277b428b51919550e}{void {\bfseries unmark\-All} ()}\label{structjs_1_1gc_1_1_arena_lists_af4feafe8906fd67277b428b51919550e}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_a7be86b2cc9624c3a2b519752372aaaa9}{bool {\bfseries done\-Background\-Finalize} (Alloc\-Kind kind) const }\label{structjs_1_1gc_1_1_arena_lists_a7be86b2cc9624c3a2b519752372aaaa9}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_abe9db02a56fd383692386ac2d1626f7d}{void {\bfseries purge} ()}\label{structjs_1_1gc_1_1_arena_lists_abe9db02a56fd383692386ac2d1626f7d}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_a871ebcefdb8e7b132425dba64672403d}{void {\bfseries prepare\-For\-Incremental\-G\-C} (J\-S\-Runtime $\ast$rt)}\label{structjs_1_1gc_1_1_arena_lists_a871ebcefdb8e7b132425dba64672403d}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_a0cba850c836757320f85a8b8b61766b8}{void {\bfseries copy\-Free\-Lists\-To\-Arenas} ()}\label{structjs_1_1gc_1_1_arena_lists_a0cba850c836757320f85a8b8b61766b8}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_af4da0e80177f24ec63e773e26b3fffb5}{void {\bfseries copy\-Free\-List\-To\-Arena} (Alloc\-Kind thing\-Kind)}\label{structjs_1_1gc_1_1_arena_lists_af4da0e80177f24ec63e773e26b3fffb5}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_a89729b461c0c076aa213235a0362ce43}{void {\bfseries clear\-Free\-Lists\-In\-Arenas} ()}\label{structjs_1_1gc_1_1_arena_lists_a89729b461c0c076aa213235a0362ce43}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_a5665416dfa4fcbe193875a3d5b97104b}{void {\bfseries clear\-Free\-List\-In\-Arena} (Alloc\-Kind kind)}\label{structjs_1_1gc_1_1_arena_lists_a5665416dfa4fcbe193875a3d5b97104b}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_abfa459afb496d3a933aae30b61bf144a}{bool {\bfseries is\-Synchronized\-Free\-List} (Alloc\-Kind kind)}\label{structjs_1_1gc_1_1_arena_lists_abfa459afb496d3a933aae30b61bf144a}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_a5e5068c5bf938fa0d353357346f8f813}{J\-S\-\_\-\-A\-L\-W\-A\-Y\-S\-\_\-\-I\-N\-L\-I\-N\-E void $\ast$ {\bfseries allocate\-From\-Free\-List} (Alloc\-Kind thing\-Kind, size\-\_\-t thing\-Size)}\label{structjs_1_1gc_1_1_arena_lists_a5e5068c5bf938fa0d353357346f8f813}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_afc3cb6a486b25d600540a20f642cf647}{void {\bfseries check\-Empty\-Free\-Lists} ()}\label{structjs_1_1gc_1_1_arena_lists_afc3cb6a486b25d600540a20f642cf647}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_ab99e8daf49154a45cddc6cdb3bb127e2}{void {\bfseries check\-Empty\-Free\-List} (Alloc\-Kind kind)}\label{structjs_1_1gc_1_1_arena_lists_ab99e8daf49154a45cddc6cdb3bb127e2}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_a85795dd0d897728df9ad9f9f3b2f4166}{void {\bfseries queue\-Objects\-For\-Sweep} (Free\-Op $\ast$fop)}\label{structjs_1_1gc_1_1_arena_lists_a85795dd0d897728df9ad9f9f3b2f4166}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_a53ca5d52c4193f985f757d93f2a51192}{void {\bfseries queue\-Strings\-For\-Sweep} (Free\-Op $\ast$fop)}\label{structjs_1_1gc_1_1_arena_lists_a53ca5d52c4193f985f757d93f2a51192}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_a9153098ba815c8303a4e96e60bb72b52}{void {\bfseries queue\-Shapes\-For\-Sweep} (Free\-Op $\ast$fop)}\label{structjs_1_1gc_1_1_arena_lists_a9153098ba815c8303a4e96e60bb72b52}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_a8fedef6bd6c8388587c8c2008ce2573e}{void {\bfseries queue\-Scripts\-For\-Sweep} (Free\-Op $\ast$fop)}\label{structjs_1_1gc_1_1_arena_lists_a8fedef6bd6c8388587c8c2008ce2573e}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_aeb25ed411579c58c0c259b85bea32254}{bool {\bfseries foreground\-Finalize} (Free\-Op $\ast$fop, Alloc\-Kind thing\-Kind, \hyperlink{structjs_1_1_slice_budget}{Slice\-Budget} \&slice\-Budget)}\label{structjs_1_1gc_1_1_arena_lists_aeb25ed411579c58c0c259b85bea32254}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_ac4c7f694cb8dbe81bde24deb4600e15f}{static void $\ast$ {\bfseries refill\-Free\-List} (J\-S\-Context $\ast$cx, Alloc\-Kind thing\-Kind)}\label{structjs_1_1gc_1_1_arena_lists_ac4c7f694cb8dbe81bde24deb4600e15f}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_a349b6c94d6ebea392174b28de302a27c}{static void {\bfseries background\-Finalize} (Free\-Op $\ast$fop, \hyperlink{structjs_1_1gc_1_1_arena_header}{Arena\-Header} $\ast$list\-Head, bool on\-Background\-Thread)}\label{structjs_1_1gc_1_1_arena_lists_a349b6c94d6ebea392174b28de302a27c}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_ac4c7f694cb8dbe81bde24deb4600e15f}{static void $\ast$ {\bfseries refill\-Free\-List} (J\-S\-Context $\ast$cx, Alloc\-Kind thing\-Kind)}\label{structjs_1_1gc_1_1_arena_lists_ac4c7f694cb8dbe81bde24deb4600e15f}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_a349b6c94d6ebea392174b28de302a27c}{static void {\bfseries background\-Finalize} (Free\-Op $\ast$fop, \hyperlink{structjs_1_1gc_1_1_arena_header}{Arena\-Header} $\ast$list\-Head, bool on\-Background\-Thread)}\label{structjs_1_1gc_1_1_arena_lists_a349b6c94d6ebea392174b28de302a27c}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_lists_abf41926b28539af1c6fcd54ef7657f99}{\hyperlink{structjs_1_1gc_1_1_arena_header}{Arena\-Header} $\ast$ {\bfseries arena\-Lists\-To\-Sweep} \mbox{[}F\-I\-N\-A\-L\-I\-Z\-E\-\_\-\-L\-I\-M\-I\-T\mbox{]}}\label{structjs_1_1gc_1_1_arena_lists_abf41926b28539af1c6fcd54ef7657f99}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Spider\-Monkey/ios/include/jsgc.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Spider\-Monkey/osx/include/jsgc.\-h\end{DoxyCompactItemize}

@@ -1,0 +1,1004 @@
+\hypertarget{cc_c_array_8h}{\section{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.1-\/beta4/cocos2d/\-Support/cc\-C\-Array.h File Reference}
+\label{cc_c_array_8h}\index{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/\-Support/cc\-C\-Array.\-h@{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/\-Support/cc\-C\-Array.\-h}}
+}
+{\ttfamily \#import $<$Foundation/\-Foundation.\-h$>$}\\*
+{\ttfamily \#import $<$stdlib.\-h$>$}\\*
+{\ttfamily \#import $<$string.\-h$>$}\\*
+{\ttfamily \#import \char`\"{}../cc\-Macros.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcc_array}{cc\-Array}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{cc_c_array_8h_a6a60aa540d05bc2a28632b538f48dc10}{\#define {\bfseries C\-C\-A\-R\-R\-A\-Y\-D\-A\-T\-A\-\_\-\-F\-O\-R\-E\-A\-C\-H}(\-\_\-\-\_\-array\-\_\-\-\_\-, \-\_\-\-\_\-object\-\_\-\-\_\-)~\-\_\-\-\_\-object\-\_\-\-\_\-=\-\_\-\-\_\-array\-\_\-\-\_\--\/$>$arr\mbox{[}0\mbox{]}; for(N\-S\-U\-Integer i=0, num=\-\_\-\-\_\-array\-\_\-\-\_\--\/$>$num; i$<$num; i++, \-\_\-\-\_\-object\-\_\-\-\_\-=\-\_\-\-\_\-array\-\_\-\-\_\--\/$>$arr\mbox{[}i\mbox{]})	$\backslash$}\label{cc_c_array_8h_a6a60aa540d05bc2a28632b538f48dc10}
+
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{cc_c_array_8h_a7aa00568e61557d13441efeeb160781f}{typedef id {\bfseries C\-C\-A\-R\-R\-A\-Y\-\_\-\-I\-D}}\label{cc_c_array_8h_a7aa00568e61557d13441efeeb160781f}
+
+\item 
+\hypertarget{cc_c_array_8h_ab4079e5e243eb4bb7e2e34980646c8ae}{typedef struct \hyperlink{structcc_array}{cc\-Array} {\bfseries cc\-Array}}\label{cc_c_array_8h_ab4079e5e243eb4bb7e2e34980646c8ae}
+
+\item 
+\hypertarget{cc_c_array_8h_a4b2207de1331c2c60fbf770a816c21d5}{typedef int($\ast$ {\bfseries cc\-\_\-comparator} )(const void $\ast$, const void $\ast$)}\label{cc_c_array_8h_a4b2207de1331c2c60fbf770a816c21d5}
+
+\item 
+\hypertarget{cc_c_array_8h_aa3c76e327342a7fc46c35960d351faee}{typedef \hyperlink{structcc_array}{cc\-Array} {\bfseries cc\-C\-Array}}\label{cc_c_array_8h_aa3c76e327342a7fc46c35960d351faee}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structcc_array}{cc\-Array} $\ast$ \hyperlink{cc_c_array_8h_a7a8332647d965eb5868fecc9ebb0886b}{cc\-Array\-New} (N\-S\-U\-Integer capacity)
+\item 
+void \hyperlink{cc_c_array_8h_a7ab821e9cc552cefb0a6bed30311758c}{cc\-Array\-Free} (\hyperlink{structcc_array}{cc\-Array} $\ast$arr)
+\item 
+void \hyperlink{cc_c_array_8h_aac7b2d8ef6bd60609f5328c6cf243b4c}{cc\-Array\-Double\-Capacity} (\hyperlink{structcc_array}{cc\-Array} $\ast$arr)
+\item 
+void \hyperlink{cc_c_array_8h_acb4b7224594b7227bc2f88dd11feee58}{cc\-Array\-Ensure\-Extra\-Capacity} (\hyperlink{structcc_array}{cc\-Array} $\ast$arr, N\-S\-U\-Integer extra)
+\item 
+void \hyperlink{cc_c_array_8h_a372d3776b7a37855471e4c46c6b99d35}{cc\-Array\-Shrink} (\hyperlink{structcc_array}{cc\-Array} $\ast$arr)
+\item 
+N\-S\-U\-Integer \hyperlink{cc_c_array_8h_a699ba02c0c0263c19a7583285d07ba96}{cc\-Array\-Get\-Index\-Of\-Object} (\hyperlink{structcc_array}{cc\-Array} $\ast$arr, id object)
+\item 
+B\-O\-O\-L \hyperlink{cc_c_array_8h_a313bcd13af421e21d814e14a528bd065}{cc\-Array\-Contains\-Object} (\hyperlink{structcc_array}{cc\-Array} $\ast$arr, id object)
+\item 
+void \hyperlink{cc_c_array_8h_aa711c6f45372236a9c22140dc48ef19c}{cc\-Array\-Append\-Object} (\hyperlink{structcc_array}{cc\-Array} $\ast$arr, id object)
+\item 
+void \hyperlink{cc_c_array_8h_a99474ca172c5daea993f64776014697f}{cc\-Array\-Append\-Object\-With\-Resize} (\hyperlink{structcc_array}{cc\-Array} $\ast$arr, id object)
+\item 
+void \hyperlink{cc_c_array_8h_aaa3110170712ec6c261ca6c6b9f6006c}{cc\-Array\-Append\-Array} (\hyperlink{structcc_array}{cc\-Array} $\ast$arr, \hyperlink{structcc_array}{cc\-Array} $\ast$plus\-Arr)
+\item 
+void \hyperlink{cc_c_array_8h_aef75f3f5170b587a870b0496be22118c}{cc\-Array\-Append\-Array\-With\-Resize} (\hyperlink{structcc_array}{cc\-Array} $\ast$arr, \hyperlink{structcc_array}{cc\-Array} $\ast$plus\-Arr)
+\item 
+void \hyperlink{cc_c_array_8h_a2fda782b602da5e21b2f1ffb2be0fc19}{cc\-Array\-Insert\-Object\-At\-Index} (\hyperlink{structcc_array}{cc\-Array} $\ast$arr, id object, N\-S\-U\-Integer index)
+\item 
+void \hyperlink{cc_c_array_8h_af0a7ecab6da00c7ba6b60a04eca24bad}{cc\-Array\-Swap\-Objects\-At\-Indexes} (\hyperlink{structcc_array}{cc\-Array} $\ast$arr, N\-S\-U\-Integer index1, N\-S\-U\-Integer index2)
+\item 
+void \hyperlink{cc_c_array_8h_a8d443ac64348e7fb196d46c081d01ab7}{cc\-Array\-Remove\-All\-Objects} (\hyperlink{structcc_array}{cc\-Array} $\ast$arr)
+\item 
+void \hyperlink{cc_c_array_8h_aff635b1a4f2f8da71afc6e9d7ad8668f}{cc\-Array\-Remove\-Object\-At\-Index} (\hyperlink{structcc_array}{cc\-Array} $\ast$arr, N\-S\-U\-Integer index)
+\item 
+void \hyperlink{cc_c_array_8h_ae28dc504a438a108857ab58e516b0c69}{cc\-Array\-Fast\-Remove\-Object\-At\-Index} (\hyperlink{structcc_array}{cc\-Array} $\ast$arr, N\-S\-U\-Integer index)
+\item 
+\hypertarget{cc_c_array_8h_ab4c982c6d4822ff583483b41942b1769}{void {\bfseries cc\-Array\-Fast\-Remove\-Object} (\hyperlink{structcc_array}{cc\-Array} $\ast$arr, id object)}\label{cc_c_array_8h_ab4c982c6d4822ff583483b41942b1769}
+
+\item 
+void \hyperlink{cc_c_array_8h_ae224ecfe306e68e6d52eedfc5568d638}{cc\-Array\-Remove\-Object} (\hyperlink{structcc_array}{cc\-Array} $\ast$arr, id object)
+\item 
+void \hyperlink{cc_c_array_8h_a84986aae6c503eca3f8dc5992e4fe650}{cc\-Array\-Remove\-Array} (\hyperlink{structcc_array}{cc\-Array} $\ast$arr, \hyperlink{structcc_array}{cc\-Array} $\ast$minus\-Arr)
+\item 
+void \hyperlink{cc_c_array_8h_a93ccc1772427d19b483c6ceb27404020}{cc\-Array\-Full\-Remove\-Array} (\hyperlink{structcc_array}{cc\-Array} $\ast$arr, \hyperlink{structcc_array}{cc\-Array} $\ast$minus\-Arr)
+\item 
+void \hyperlink{cc_c_array_8h_a2b3be9a84cc2423abb17bf7c033c9013}{cc\-Array\-Make\-Objects\-Perform\-Selector} (\hyperlink{structcc_array}{cc\-Array} $\ast$arr, S\-E\-L sel)
+\item 
+\hypertarget{cc_c_array_8h_ae5a85214ed8114d4658887108c0ecafe}{void {\bfseries cc\-Array\-Make\-Objects\-Perform\-Selector\-With\-Object} (\hyperlink{structcc_array}{cc\-Array} $\ast$arr, S\-E\-L sel, id object)}\label{cc_c_array_8h_ae5a85214ed8114d4658887108c0ecafe}
+
+\item 
+\hypertarget{cc_c_array_8h_a14127abae09849ae19f12a23b1b0fe68}{void {\bfseries cc\-Array\-Make\-Object\-Perform\-Selector\-With\-Array\-Objects} (\hyperlink{structcc_array}{cc\-Array} $\ast$arr, S\-E\-L sel, id object)}\label{cc_c_array_8h_a14127abae09849ae19f12a23b1b0fe68}
+
+\item 
+\hyperlink{structcc_array}{cc\-C\-Array} $\ast$ \hyperlink{cc_c_array_8h_af8209888babee1167a496d4435383b50}{cc\-C\-Array\-New} (N\-S\-U\-Integer capacity)
+\item 
+void \hyperlink{cc_c_array_8h_aede88419801cd2b42e3114b4afc6f2dc}{cc\-C\-Array\-Free} (\hyperlink{structcc_array}{cc\-C\-Array} $\ast$arr)
+\item 
+void \hyperlink{cc_c_array_8h_a829c1b0a727a3ef6d00c048d330d3b42}{cc\-C\-Array\-Double\-Capacity} (\hyperlink{structcc_array}{cc\-C\-Array} $\ast$arr)
+\item 
+void \hyperlink{cc_c_array_8h_afada9a93af8e9b6c442e9d921db0afa6}{cc\-C\-Array\-Ensure\-Extra\-Capacity} (\hyperlink{structcc_array}{cc\-C\-Array} $\ast$arr, N\-S\-U\-Integer extra)
+\item 
+N\-S\-U\-Integer \hyperlink{cc_c_array_8h_a5247f4d3a72fbc7d55487774a1b627db}{cc\-C\-Array\-Get\-Index\-Of\-Value} (\hyperlink{structcc_array}{cc\-C\-Array} $\ast$arr, C\-C\-A\-R\-R\-A\-Y\-\_\-\-I\-D value)
+\item 
+B\-O\-O\-L \hyperlink{cc_c_array_8h_ae194c9bbe66dfe18ae728807359dcb48}{cc\-C\-Array\-Contains\-Value} (\hyperlink{structcc_array}{cc\-C\-Array} $\ast$arr, C\-C\-A\-R\-R\-A\-Y\-\_\-\-I\-D value)
+\item 
+void \hyperlink{cc_c_array_8h_ad19d7b0c8673cb756f993ef8a312d729}{cc\-C\-Array\-Insert\-Value\-At\-Index} (\hyperlink{structcc_array}{cc\-C\-Array} $\ast$arr, C\-C\-A\-R\-R\-A\-Y\-\_\-\-I\-D value, N\-S\-U\-Integer index)
+\item 
+void \hyperlink{cc_c_array_8h_adf6bb9b465d48d20920c4cf7c3a4ca04}{cc\-C\-Array\-Append\-Value} (\hyperlink{structcc_array}{cc\-C\-Array} $\ast$arr, C\-C\-A\-R\-R\-A\-Y\-\_\-\-I\-D value)
+\item 
+void \hyperlink{cc_c_array_8h_aa08a2dd209e9b5cc3e6f2322b9f87860}{cc\-C\-Array\-Append\-Value\-With\-Resize} (\hyperlink{structcc_array}{cc\-C\-Array} $\ast$arr, C\-C\-A\-R\-R\-A\-Y\-\_\-\-I\-D value)
+\item 
+void \hyperlink{cc_c_array_8h_ab29e275f14be2404bb94bdd90e7cfdd0}{cc\-C\-Array\-Append\-Array} (\hyperlink{structcc_array}{cc\-C\-Array} $\ast$arr, \hyperlink{structcc_array}{cc\-C\-Array} $\ast$plus\-Arr)
+\item 
+void \hyperlink{cc_c_array_8h_a6b3450f3bce1dba84f56b3edbe9c29a2}{cc\-C\-Array\-Append\-Array\-With\-Resize} (\hyperlink{structcc_array}{cc\-C\-Array} $\ast$arr, \hyperlink{structcc_array}{cc\-C\-Array} $\ast$plus\-Arr)
+\item 
+void \hyperlink{cc_c_array_8h_a728cc1a6518435e230b4873ad2bd7b8e}{cc\-C\-Array\-Remove\-All\-Values} (\hyperlink{structcc_array}{cc\-C\-Array} $\ast$arr)
+\item 
+void \hyperlink{cc_c_array_8h_a7f743211d5bde3387d3b319aaf4d8a3b}{cc\-C\-Array\-Remove\-Value\-At\-Index} (\hyperlink{structcc_array}{cc\-C\-Array} $\ast$arr, N\-S\-U\-Integer index)
+\item 
+void \hyperlink{cc_c_array_8h_a319062b75bfebc215030277bced6b250}{cc\-C\-Array\-Fast\-Remove\-Value\-At\-Index} (\hyperlink{structcc_array}{cc\-C\-Array} $\ast$arr, N\-S\-U\-Integer index)
+\item 
+void \hyperlink{cc_c_array_8h_afbba63061ff6a1d1153353f7a1d8a522}{cc\-C\-Array\-Remove\-Value} (\hyperlink{structcc_array}{cc\-C\-Array} $\ast$arr, C\-C\-A\-R\-R\-A\-Y\-\_\-\-I\-D value)
+\item 
+void \hyperlink{cc_c_array_8h_a1f8c0fbc971c6d8c865d988f3fa5b3af}{cc\-C\-Array\-Remove\-Array} (\hyperlink{structcc_array}{cc\-C\-Array} $\ast$arr, \hyperlink{structcc_array}{cc\-C\-Array} $\ast$minus\-Arr)
+\item 
+void \hyperlink{cc_c_array_8h_ac7ad7ca4b352b225ccb3e36db4c35fad}{cc\-C\-Array\-Full\-Remove\-Array} (\hyperlink{structcc_array}{cc\-C\-Array} $\ast$arr, \hyperlink{structcc_array}{cc\-C\-Array} $\ast$minus\-Arr)
+\item 
+\hypertarget{cc_c_array_8h_a3a1015c4b49eb3d8e9c7aae5ccf33b9f}{int {\bfseries cc\-\_\-mergesort\-L} (\hyperlink{structcc_array}{cc\-C\-Array} $\ast$array, size\-\_\-t width, cc\-\_\-comparator comparator)}\label{cc_c_array_8h_a3a1015c4b49eb3d8e9c7aae5ccf33b9f}
+
+\item 
+\hypertarget{cc_c_array_8h_a8418754303810931afdc4881d7af1a37}{void {\bfseries cc\-\_\-insertion\-Sort} (\hyperlink{structcc_array}{cc\-C\-Array} $\ast$arr, cc\-\_\-comparator comparator)}\label{cc_c_array_8h_a8418754303810931afdc4881d7af1a37}
+
+\item 
+\hypertarget{cc_c_array_8h_a6e707253a3d67f8d6b4108cb9587ebc5}{void {\bfseries cc\-\_\-pointerswap} (void $\ast$a, void $\ast$b, size\-\_\-t width)}\label{cc_c_array_8h_a6e707253a3d67f8d6b4108cb9587ebc5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+based on Chipmunk \hyperlink{structcp_array}{cp\-Array}. \hyperlink{structcc_array}{cc\-Array} is a faster alternative to N\-S\-Mutable\-Array, it does pretty much the same thing (stores N\-S\-Objects and retains/releases them appropriately). It's faster because\-:
+\begin{DoxyItemize}
+\item it uses a plain C interface so it doesn't incur Objective-\/c messaging overhead
+\item it assumes you know what you're doing, so it doesn't spend time on safety checks (index out of bounds, required capacity etc.)
+\item comparisons are done using pointer equality instead of is\-Equal
+\end{DoxyItemize}
+
+There are 2 kind of functions\-:
+\begin{DoxyItemize}
+\item \hyperlink{structcc_array}{cc\-Array} functions that manipulates objective-\/c objects (retain and release are performed)
+\item cc\-C\-Array functions that manipulates values like if they were standard C structures (no retain/release is performed) 
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\hypertarget{cc_c_array_8h_aaa3110170712ec6c261ca6c6b9f6006c}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-Array\-Append\-Array@{cc\-Array\-Append\-Array}}
+\index{cc\-Array\-Append\-Array@{cc\-Array\-Append\-Array}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-Array\-Append\-Array}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Array\-Append\-Array} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-Array} $\ast$}]{arr, }
+\item[{{\bf cc\-Array} $\ast$}]{plus\-Arr}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_aaa3110170712ec6c261ca6c6b9f6006c}
+Appends objects from plus\-Arr to arr. Behavior undefined if arr doesn't have enough capacity.
+
+Appends objects from plus\-Arr to arr. Behaviour undefined if arr doesn't have enough capacity. 
+
+Referenced by cc\-Array\-Append\-Array(), and cc\-Array\-Append\-Array\-With\-Resize().
+
+
+\begin{DoxyCode}
+{
+        NSUInteger i;
+        
+        for( i = 0; i < plusArr->num; i++)
+                ccArrayAppendObject(arr, plusArr->arr[i]);
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_aef75f3f5170b587a870b0496be22118c}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-Array\-Append\-Array\-With\-Resize@{cc\-Array\-Append\-Array\-With\-Resize}}
+\index{cc\-Array\-Append\-Array\-With\-Resize@{cc\-Array\-Append\-Array\-With\-Resize}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-Array\-Append\-Array\-With\-Resize}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Array\-Append\-Array\-With\-Resize} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-Array} $\ast$}]{arr, }
+\item[{{\bf cc\-Array} $\ast$}]{plus\-Arr}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_aef75f3f5170b587a870b0496be22118c}
+Appends objects from plus\-Arr to arr. Capacity of arr is increased if needed. 
+
+Referenced by cc\-Array\-Append\-Array\-With\-Resize().
+
+
+\begin{DoxyCode}
+{
+        ccArrayEnsureExtraCapacity(arr, plusArr->num);
+        ccArrayAppendArray(arr, plusArr);
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_aa711c6f45372236a9c22140dc48ef19c}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-Array\-Append\-Object@{cc\-Array\-Append\-Object}}
+\index{cc\-Array\-Append\-Object@{cc\-Array\-Append\-Object}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-Array\-Append\-Object}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Array\-Append\-Object} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-Array} $\ast$}]{arr, }
+\item[{id}]{object}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_aa711c6f45372236a9c22140dc48ef19c}
+Appends an object. Behavior undefined if array doesn't have enough capacity.
+
+Appends an object. Bahaviour undefined if array doesn't have enough capacity. 
+
+Referenced by C\-C\-Action\-Manager\-::add\-Action\-:target\-:paused\-:, cc\-Array\-Append\-Array(), cc\-Array\-Append\-Object(), cc\-Array\-Append\-Object\-With\-Resize(), C\-C\-Scheduler\-::schedule\-Block\-For\-Key\-:target\-:interval\-:repeat\-:delay\-:paused\-:block\-:, and C\-C\-Scheduler\-::schedule\-Selector\-:for\-Target\-:interval\-:repeat\-:delay\-:paused\-:.
+
+
+\begin{DoxyCode}
+{
+        arr->arr[arr->num] = CC_ARC_RETAIN(object);
+        arr->num++;
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_a99474ca172c5daea993f64776014697f}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-Array\-Append\-Object\-With\-Resize@{cc\-Array\-Append\-Object\-With\-Resize}}
+\index{cc\-Array\-Append\-Object\-With\-Resize@{cc\-Array\-Append\-Object\-With\-Resize}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-Array\-Append\-Object\-With\-Resize}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Array\-Append\-Object\-With\-Resize} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-Array} $\ast$}]{arr, }
+\item[{id}]{object}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_a99474ca172c5daea993f64776014697f}
+Appends an object. Capacity of arr is increased if needed. 
+
+Referenced by C\-C\-Parallax\-Node\-::add\-Child\-:z\-:parallax\-Ratio\-:position\-Offset\-:, and cc\-Array\-Append\-Object\-With\-Resize().
+
+
+\begin{DoxyCode}
+{
+        ccArrayEnsureExtraCapacity(arr, 1);
+        ccArrayAppendObject(arr, object);
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_a313bcd13af421e21d814e14a528bd065}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-Array\-Contains\-Object@{cc\-Array\-Contains\-Object}}
+\index{cc\-Array\-Contains\-Object@{cc\-Array\-Contains\-Object}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-Array\-Contains\-Object}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L {\bf cc\-Array\-Contains\-Object} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-Array} $\ast$}]{arr, }
+\item[{id}]{object}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_a313bcd13af421e21d814e14a528bd065}
+Returns a Boolean value that indicates whether object is present in array. 
+
+Referenced by C\-C\-Action\-Manager\-::add\-Action\-:target\-:paused\-:, cc\-Array\-Contains\-Object(), cc\-Array\-Full\-Remove\-Array(), C\-C\-Action\-Manager\-::remove\-All\-Actions\-From\-Target\-:, and C\-C\-Scheduler\-::unschedule\-All\-For\-Target\-:.
+
+
+\begin{DoxyCode}
+{
+        return ccArrayGetIndexOfObject(arr, object) != NSNotFound;
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_aac7b2d8ef6bd60609f5328c6cf243b4c}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-Array\-Double\-Capacity@{cc\-Array\-Double\-Capacity}}
+\index{cc\-Array\-Double\-Capacity@{cc\-Array\-Double\-Capacity}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-Array\-Double\-Capacity}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Array\-Double\-Capacity} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-Array} $\ast$}]{arr}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_aac7b2d8ef6bd60609f5328c6cf243b4c}
+Doubles array capacity 
+
+Referenced by cc\-Array\-Double\-Capacity(), cc\-Array\-Ensure\-Extra\-Capacity(), and cc\-C\-Array\-Double\-Capacity().
+
+
+\begin{DoxyCode}
+{
+        arr->max *= 2;
+        CCARRAY_ID *newArr = (CCARRAY_ID *)realloc( arr->arr, arr->max * sizeof
+      (id) );
+        // will fail when there's not enough memory
+    NSCAssert(newArr != NULL, @"ccArrayDoubleCapacity failed. Not enough memory
+      ");
+        arr->arr = newArr;
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_acb4b7224594b7227bc2f88dd11feee58}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-Array\-Ensure\-Extra\-Capacity@{cc\-Array\-Ensure\-Extra\-Capacity}}
+\index{cc\-Array\-Ensure\-Extra\-Capacity@{cc\-Array\-Ensure\-Extra\-Capacity}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-Array\-Ensure\-Extra\-Capacity}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Array\-Ensure\-Extra\-Capacity} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-Array} $\ast$}]{arr, }
+\item[{N\-S\-U\-Integer}]{extra}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_acb4b7224594b7227bc2f88dd11feee58}
+Increases array capacity such that max $>$= num + extra. 
+
+Referenced by cc\-Array\-Append\-Array\-With\-Resize(), cc\-Array\-Append\-Object\-With\-Resize(), cc\-Array\-Ensure\-Extra\-Capacity(), cc\-Array\-Insert\-Object\-At\-Index(), cc\-C\-Array\-Ensure\-Extra\-Capacity(), C\-C\-Scheduler\-::schedule\-Block\-For\-Key\-:target\-:interval\-:repeat\-:delay\-:paused\-:block\-:, and C\-C\-Scheduler\-::schedule\-Selector\-:for\-Target\-:interval\-:repeat\-:delay\-:paused\-:.
+
+
+\begin{DoxyCode}
+{
+        while (arr->max < arr->num + extra)
+                ccArrayDoubleCapacity(arr);
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_ae28dc504a438a108857ab58e516b0c69}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-Array\-Fast\-Remove\-Object\-At\-Index@{cc\-Array\-Fast\-Remove\-Object\-At\-Index}}
+\index{cc\-Array\-Fast\-Remove\-Object\-At\-Index@{cc\-Array\-Fast\-Remove\-Object\-At\-Index}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-Array\-Fast\-Remove\-Object\-At\-Index}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Array\-Fast\-Remove\-Object\-At\-Index} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-Array} $\ast$}]{arr, }
+\item[{N\-S\-U\-Integer}]{index}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_ae28dc504a438a108857ab58e516b0c69}
+Removes object at specified index and fills the gap with the last object, thereby avoiding the need to push back subsequent objects. Behavior undefined if index outside \mbox{[}0, num-\/1\mbox{]}.
+
+Removes object at specified index and fills the gap with the last object, thereby avoiding the need to push back subsequent objects. Behaviour undefined if index outside \mbox{[}0, num-\/1\mbox{]}. 
+
+Referenced by cc\-Array\-Fast\-Remove\-Object\-At\-Index().
+
+
+\begin{DoxyCode}
+{
+        CC_ARC_RELEASE(arr->arr[index]);
+        NSUInteger last = --arr->num;
+        arr->arr[index] = arr->arr[last];
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_a7ab821e9cc552cefb0a6bed30311758c}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-Array\-Free@{cc\-Array\-Free}}
+\index{cc\-Array\-Free@{cc\-Array\-Free}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-Array\-Free}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Array\-Free} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-Array} $\ast$}]{arr}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_a7ab821e9cc552cefb0a6bed30311758c}
+Frees array after removing all remaining objects. Silently ignores nil arr. 
+
+Referenced by cc\-Array\-Free().
+
+
+\begin{DoxyCode}
+{
+        if( arr == nil ) return;
+        
+        ccArrayRemoveAllObjects(arr);
+        
+        free(arr->arr);
+        free(arr);
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_a93ccc1772427d19b483c6ceb27404020}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-Array\-Full\-Remove\-Array@{cc\-Array\-Full\-Remove\-Array}}
+\index{cc\-Array\-Full\-Remove\-Array@{cc\-Array\-Full\-Remove\-Array}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-Array\-Full\-Remove\-Array}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Array\-Full\-Remove\-Array} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-Array} $\ast$}]{arr, }
+\item[{{\bf cc\-Array} $\ast$}]{minus\-Arr}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_a93ccc1772427d19b483c6ceb27404020}
+Removes from arr all objects in minus\-Arr. For each object in minus\-Arr, all matching instances in arr will be removed. 
+
+Referenced by cc\-Array\-Full\-Remove\-Array().
+
+
+\begin{DoxyCode}
+{
+        NSUInteger back = 0;
+        NSUInteger i;
+        
+        for( i = 0; i < arr->num; i++) {
+                if( ccArrayContainsObject(minusArr, arr->arr[i]) ) {
+                        CC_ARC_RELEASE(arr->arr[i]);
+                        back++;
+                } else
+                        arr->arr[i - back] = arr->arr[i];
+        }
+        
+        arr->num -= back;
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_a699ba02c0c0263c19a7583285d07ba96}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-Array\-Get\-Index\-Of\-Object@{cc\-Array\-Get\-Index\-Of\-Object}}
+\index{cc\-Array\-Get\-Index\-Of\-Object@{cc\-Array\-Get\-Index\-Of\-Object}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-Array\-Get\-Index\-Of\-Object}]{\setlength{\rightskip}{0pt plus 5cm}N\-S\-U\-Integer {\bf cc\-Array\-Get\-Index\-Of\-Object} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-Array} $\ast$}]{arr, }
+\item[{id}]{object}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_a699ba02c0c0263c19a7583285d07ba96}
+Returns index of first occurrence of object, N\-S\-Not\-Found if object not found.
+
+Returns index of first occurence of object, N\-S\-Not\-Found if object not found. 
+
+Referenced by cc\-Array\-Contains\-Object(), cc\-Array\-Get\-Index\-Of\-Object(), cc\-Array\-Remove\-Object(), and C\-C\-Action\-Manager\-::remove\-Action\-:.
+
+
+\begin{DoxyCode}
+{
+        NSUInteger i;
+        
+        for( i = 0; i < arr->num; i++)
+                if( arr->arr[i] == object ) return i;
+        
+        return NSNotFound;
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_a2fda782b602da5e21b2f1ffb2be0fc19}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-Array\-Insert\-Object\-At\-Index@{cc\-Array\-Insert\-Object\-At\-Index}}
+\index{cc\-Array\-Insert\-Object\-At\-Index@{cc\-Array\-Insert\-Object\-At\-Index}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-Array\-Insert\-Object\-At\-Index}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Array\-Insert\-Object\-At\-Index} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-Array} $\ast$}]{arr, }
+\item[{id}]{object, }
+\item[{N\-S\-U\-Integer}]{index}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_a2fda782b602da5e21b2f1ffb2be0fc19}
+Inserts an object at index 
+
+Referenced by cc\-Array\-Insert\-Object\-At\-Index(), and C\-C\-Array\-::replace\-Object\-At\-Index\-:with\-Object\-:.
+
+
+\begin{DoxyCode}
+{
+        NSCAssert(index<=arr->num, @"Invalid index. Out of bounds");
+        
+        ccArrayEnsureExtraCapacity(arr, 1);
+        
+        NSUInteger remaining = arr->num - index;
+        if( remaining > 0)
+                memmove((void *)&arr->arr[index+1], (void *)&arr->arr[index], 
+      sizeof(id) * remaining );
+        
+        arr->arr[index] = CC_ARC_RETAIN(object);
+        arr->num++;
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_a2b3be9a84cc2423abb17bf7c033c9013}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-Array\-Make\-Objects\-Perform\-Selector@{cc\-Array\-Make\-Objects\-Perform\-Selector}}
+\index{cc\-Array\-Make\-Objects\-Perform\-Selector@{cc\-Array\-Make\-Objects\-Perform\-Selector}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-Array\-Make\-Objects\-Perform\-Selector}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Array\-Make\-Objects\-Perform\-Selector} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-Array} $\ast$}]{arr, }
+\item[{S\-E\-L}]{sel}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_a2b3be9a84cc2423abb17bf7c033c9013}
+Sends to each object in arr the message identified by given selector. 
+
+Referenced by cc\-Array\-Make\-Objects\-Perform\-Selector().
+
+
+\begin{DoxyCode}
+{
+        NSUInteger i;
+        
+        for( i = 0; i < arr->num; i++)
+#pragma clang diagnostic push
+#if defined(__has_feature) && __has_feature(objc_arc)                           
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+#endif          
+                [arr->arr[i] performSelector:sel];
+#pragma clang diagnostic pop
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_a7a8332647d965eb5868fecc9ebb0886b}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-Array\-New@{cc\-Array\-New}}
+\index{cc\-Array\-New@{cc\-Array\-New}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-Array\-New}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cc\-Array}$\ast$ {\bf cc\-Array\-New} (
+\begin{DoxyParamCaption}
+\item[{N\-S\-U\-Integer}]{capacity}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_a7a8332647d965eb5868fecc9ebb0886b}
+Allocates and initializes a new array with specified capacity 
+
+Referenced by cc\-Array\-New(), C\-C\-Scheduler\-::schedule\-Block\-For\-Key\-:target\-:interval\-:repeat\-:delay\-:paused\-:block\-:, and C\-C\-Scheduler\-::schedule\-Selector\-:for\-Target\-:interval\-:repeat\-:delay\-:paused\-:.
+
+
+\begin{DoxyCode}
+                                         {
+        if (capacity == 0)
+                capacity = 1;
+        
+        ccArray *arr = (ccArray*)malloc( sizeof(ccArray) );
+        arr->num = 0;
+        arr->arr =  (CCARRAY_ID *)calloc(capacity, sizeof(id));
+        arr->max = capacity;
+        
+        return arr;
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_a8d443ac64348e7fb196d46c081d01ab7}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-Array\-Remove\-All\-Objects@{cc\-Array\-Remove\-All\-Objects}}
+\index{cc\-Array\-Remove\-All\-Objects@{cc\-Array\-Remove\-All\-Objects}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-Array\-Remove\-All\-Objects}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Array\-Remove\-All\-Objects} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-Array} $\ast$}]{arr}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_a8d443ac64348e7fb196d46c081d01ab7}
+Removes all objects from arr 
+
+Referenced by cc\-Array\-Free(), cc\-Array\-Remove\-All\-Objects(), C\-C\-Action\-Manager\-::remove\-All\-Actions\-From\-Target\-:, and C\-C\-Scheduler\-::unschedule\-All\-For\-Target\-:.
+
+
+\begin{DoxyCode}
+{
+        while( arr->num > 0 )
+                CC_ARC_RELEASE(arr->arr[--arr->num]);
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_a84986aae6c503eca3f8dc5992e4fe650}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-Array\-Remove\-Array@{cc\-Array\-Remove\-Array}}
+\index{cc\-Array\-Remove\-Array@{cc\-Array\-Remove\-Array}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-Array\-Remove\-Array}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Array\-Remove\-Array} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-Array} $\ast$}]{arr, }
+\item[{{\bf cc\-Array} $\ast$}]{minus\-Arr}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_a84986aae6c503eca3f8dc5992e4fe650}
+Removes from arr all objects in minus\-Arr. For each object in minus\-Arr, the first matching instance in arr will be removed. 
+
+Referenced by cc\-Array\-Remove\-Array().
+
+
+\begin{DoxyCode}
+{
+        NSUInteger i;
+        
+        for( i = 0; i < minusArr->num; i++)
+                ccArrayRemoveObject(arr, minusArr->arr[i]);
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_ae224ecfe306e68e6d52eedfc5568d638}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-Array\-Remove\-Object@{cc\-Array\-Remove\-Object}}
+\index{cc\-Array\-Remove\-Object@{cc\-Array\-Remove\-Object}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-Array\-Remove\-Object}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Array\-Remove\-Object} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-Array} $\ast$}]{arr, }
+\item[{id}]{object}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_ae224ecfe306e68e6d52eedfc5568d638}
+Searches for the first occurrence of object and removes it. If object is not found the function has no effect.
+
+Searches for the first occurance of object and removes it. If object is not found the function has no effect. 
+
+Referenced by cc\-Array\-Remove\-Array(), and cc\-Array\-Remove\-Object().
+
+
+\begin{DoxyCode}
+{
+        NSUInteger index = ccArrayGetIndexOfObject(arr, object);
+        if (index != NSNotFound)
+                ccArrayRemoveObjectAtIndex(arr, index);
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_aff635b1a4f2f8da71afc6e9d7ad8668f}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-Array\-Remove\-Object\-At\-Index@{cc\-Array\-Remove\-Object\-At\-Index}}
+\index{cc\-Array\-Remove\-Object\-At\-Index@{cc\-Array\-Remove\-Object\-At\-Index}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-Array\-Remove\-Object\-At\-Index}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Array\-Remove\-Object\-At\-Index} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-Array} $\ast$}]{arr, }
+\item[{N\-S\-U\-Integer}]{index}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_aff635b1a4f2f8da71afc6e9d7ad8668f}
+Removes object at specified index and pushes back all subsequent objects. Behavior undefined if index outside \mbox{[}0, num-\/1\mbox{]}.
+
+Removes object at specified index and pushes back all subsequent objects. Behaviour undefined if index outside \mbox{[}0, num-\/1\mbox{]}. 
+
+Referenced by cc\-Array\-Remove\-Object(), cc\-Array\-Remove\-Object\-At\-Index(), C\-C\-Array\-::replace\-Object\-At\-Index\-:with\-Object\-:, C\-C\-Scheduler\-::unschedule\-Block\-For\-Key\-:target\-:, and C\-C\-Scheduler\-::unschedule\-Selector\-:for\-Target\-:.
+
+
+\begin{DoxyCode}
+{
+        CC_ARC_RELEASE(arr->arr[index]);
+        arr->num--;
+        
+        NSUInteger remaining = arr->num - index;
+        if(remaining>0)
+                memmove((void *)&arr->arr[index], (void *)&arr->arr[index+1], 
+      remaining * sizeof(id));
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_a372d3776b7a37855471e4c46c6b99d35}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-Array\-Shrink@{cc\-Array\-Shrink}}
+\index{cc\-Array\-Shrink@{cc\-Array\-Shrink}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-Array\-Shrink}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Array\-Shrink} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-Array} $\ast$}]{arr}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_a372d3776b7a37855471e4c46c6b99d35}
+shrinks the array so the memory footprint corresponds with the number of items 
+
+Referenced by cc\-Array\-Shrink().
+
+
+\begin{DoxyCode}
+{
+    NSUInteger newSize;
+        
+        //only resize when necessary
+        if (arr->max > arr->num && !(arr->num==0 && arr->max==1))
+        {
+                if (arr->num!=0)
+                {
+                        newSize=arr->num;
+                        arr->max=arr->num;
+                }
+                else
+                {//minimum capacity of 1, with 0 elements the array would be
+       free'd by realloc
+                        newSize=1;
+                        arr->max=1;
+                }
+                
+                arr->arr = (CCARRAY_ID *) realloc(arr->arr,newSize * sizeof(id)
+       );
+                NSCAssert(arr->arr!=NULL,@"could not reallocate the memory");
+        }
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_af0a7ecab6da00c7ba6b60a04eca24bad}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-Array\-Swap\-Objects\-At\-Indexes@{cc\-Array\-Swap\-Objects\-At\-Indexes}}
+\index{cc\-Array\-Swap\-Objects\-At\-Indexes@{cc\-Array\-Swap\-Objects\-At\-Indexes}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-Array\-Swap\-Objects\-At\-Indexes}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Array\-Swap\-Objects\-At\-Indexes} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-Array} $\ast$}]{arr, }
+\item[{N\-S\-U\-Integer}]{index1, }
+\item[{N\-S\-U\-Integer}]{index2}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_af0a7ecab6da00c7ba6b60a04eca24bad}
+Swaps two objects 
+
+Referenced by cc\-Array\-Swap\-Objects\-At\-Indexes().
+
+
+\begin{DoxyCode}
+{
+        NSCAssert(index1 < arr->num, @"(1) Invalid index. Out of bounds");
+        NSCAssert(index2 < arr->num, @"(2) Invalid index. Out of bounds");
+        
+        id object1 = arr->arr[index1];
+        
+        arr->arr[index1] = arr->arr[index2];
+        arr->arr[index2] = object1;
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_ab29e275f14be2404bb94bdd90e7cfdd0}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-C\-Array\-Append\-Array@{cc\-C\-Array\-Append\-Array}}
+\index{cc\-C\-Array\-Append\-Array@{cc\-C\-Array\-Append\-Array}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-C\-Array\-Append\-Array}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-C\-Array\-Append\-Array} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-C\-Array} $\ast$}]{arr, }
+\item[{{\bf cc\-C\-Array} $\ast$}]{plus\-Arr}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_ab29e275f14be2404bb94bdd90e7cfdd0}
+Appends values from plus\-Arr to arr. Behavior undefined if arr doesn't have enough capacity.
+
+Appends values from plus\-Arr to arr. Behaviour undefined if arr doesn't have enough capacity. 
+
+Referenced by cc\-C\-Array\-Append\-Array(), and cc\-C\-Array\-Append\-Array\-With\-Resize().
+
+
+\begin{DoxyCode}
+{
+        NSUInteger i;
+        
+        for( i = 0; i < plusArr->num; i++)
+                ccCArrayAppendValue(arr, plusArr->arr[i]);
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_a6b3450f3bce1dba84f56b3edbe9c29a2}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-C\-Array\-Append\-Array\-With\-Resize@{cc\-C\-Array\-Append\-Array\-With\-Resize}}
+\index{cc\-C\-Array\-Append\-Array\-With\-Resize@{cc\-C\-Array\-Append\-Array\-With\-Resize}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-C\-Array\-Append\-Array\-With\-Resize}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-C\-Array\-Append\-Array\-With\-Resize} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-C\-Array} $\ast$}]{arr, }
+\item[{{\bf cc\-C\-Array} $\ast$}]{plus\-Arr}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_a6b3450f3bce1dba84f56b3edbe9c29a2}
+Appends values from plus\-Arr to arr. Capacity of arr is increased if needed. 
+
+Referenced by cc\-C\-Array\-Append\-Array\-With\-Resize().
+
+
+\begin{DoxyCode}
+{
+        ccCArrayEnsureExtraCapacity(arr, plusArr->num);
+        ccCArrayAppendArray(arr, plusArr);
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_adf6bb9b465d48d20920c4cf7c3a4ca04}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-C\-Array\-Append\-Value@{cc\-C\-Array\-Append\-Value}}
+\index{cc\-C\-Array\-Append\-Value@{cc\-C\-Array\-Append\-Value}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-C\-Array\-Append\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-C\-Array\-Append\-Value} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-C\-Array} $\ast$}]{arr, }
+\item[{C\-C\-A\-R\-R\-A\-Y\-\_\-\-I\-D}]{value}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_adf6bb9b465d48d20920c4cf7c3a4ca04}
+Appends an value. Behavior undefined if array doesn't have enough capacity.
+
+Appends an value. Bahaviour undefined if array doesn't have enough capacity. 
+
+Referenced by cc\-C\-Array\-Append\-Array(), cc\-C\-Array\-Append\-Value(), and cc\-C\-Array\-Append\-Value\-With\-Resize().
+
+
+\begin{DoxyCode}
+{
+        arr->arr[arr->num] = (id) value;
+        arr->num++;
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_aa08a2dd209e9b5cc3e6f2322b9f87860}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-C\-Array\-Append\-Value\-With\-Resize@{cc\-C\-Array\-Append\-Value\-With\-Resize}}
+\index{cc\-C\-Array\-Append\-Value\-With\-Resize@{cc\-C\-Array\-Append\-Value\-With\-Resize}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-C\-Array\-Append\-Value\-With\-Resize}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-C\-Array\-Append\-Value\-With\-Resize} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-C\-Array} $\ast$}]{arr, }
+\item[{C\-C\-A\-R\-R\-A\-Y\-\_\-\-I\-D}]{value}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_aa08a2dd209e9b5cc3e6f2322b9f87860}
+Appends an value. Capacity of arr is increased if needed. 
+
+Referenced by cc\-C\-Array\-Append\-Value\-With\-Resize().
+
+
+\begin{DoxyCode}
+{
+        ccCArrayEnsureExtraCapacity(arr, 1);
+        ccCArrayAppendValue(arr, value);
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_ae194c9bbe66dfe18ae728807359dcb48}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-C\-Array\-Contains\-Value@{cc\-C\-Array\-Contains\-Value}}
+\index{cc\-C\-Array\-Contains\-Value@{cc\-C\-Array\-Contains\-Value}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-C\-Array\-Contains\-Value}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L {\bf cc\-C\-Array\-Contains\-Value} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-C\-Array} $\ast$}]{arr, }
+\item[{C\-C\-A\-R\-R\-A\-Y\-\_\-\-I\-D}]{value}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_ae194c9bbe66dfe18ae728807359dcb48}
+Returns a Boolean value that indicates whether value is present in the C array. 
+
+Referenced by cc\-C\-Array\-Contains\-Value(), and cc\-C\-Array\-Full\-Remove\-Array().
+
+
+\begin{DoxyCode}
+{
+        return ccCArrayGetIndexOfValue(arr, value) != NSNotFound;
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_a829c1b0a727a3ef6d00c048d330d3b42}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-C\-Array\-Double\-Capacity@{cc\-C\-Array\-Double\-Capacity}}
+\index{cc\-C\-Array\-Double\-Capacity@{cc\-C\-Array\-Double\-Capacity}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-C\-Array\-Double\-Capacity}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-C\-Array\-Double\-Capacity} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-C\-Array} $\ast$}]{arr}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_a829c1b0a727a3ef6d00c048d330d3b42}
+Doubles C array capacity 
+
+Referenced by cc\-C\-Array\-Double\-Capacity().
+
+
+\begin{DoxyCode}
+{
+        ccArrayDoubleCapacity(arr);
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_afada9a93af8e9b6c442e9d921db0afa6}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-C\-Array\-Ensure\-Extra\-Capacity@{cc\-C\-Array\-Ensure\-Extra\-Capacity}}
+\index{cc\-C\-Array\-Ensure\-Extra\-Capacity@{cc\-C\-Array\-Ensure\-Extra\-Capacity}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-C\-Array\-Ensure\-Extra\-Capacity}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-C\-Array\-Ensure\-Extra\-Capacity} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-C\-Array} $\ast$}]{arr, }
+\item[{N\-S\-U\-Integer}]{extra}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_afada9a93af8e9b6c442e9d921db0afa6}
+Increases array capacity such that max $>$= num + extra. 
+
+Referenced by cc\-C\-Array\-Append\-Array\-With\-Resize(), cc\-C\-Array\-Append\-Value\-With\-Resize(), and cc\-C\-Array\-Ensure\-Extra\-Capacity().
+
+
+\begin{DoxyCode}
+{
+        ccArrayEnsureExtraCapacity(arr,extra);
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_a319062b75bfebc215030277bced6b250}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-C\-Array\-Fast\-Remove\-Value\-At\-Index@{cc\-C\-Array\-Fast\-Remove\-Value\-At\-Index}}
+\index{cc\-C\-Array\-Fast\-Remove\-Value\-At\-Index@{cc\-C\-Array\-Fast\-Remove\-Value\-At\-Index}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-C\-Array\-Fast\-Remove\-Value\-At\-Index}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-C\-Array\-Fast\-Remove\-Value\-At\-Index} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-C\-Array} $\ast$}]{arr, }
+\item[{N\-S\-U\-Integer}]{index}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_a319062b75bfebc215030277bced6b250}
+Removes value at specified index and fills the gap with the last value, thereby avoiding the need to push back subsequent values. Behavior undefined if index outside \mbox{[}0, num-\/1\mbox{]}. \begin{DoxySince}{Since}
+v0.\-99.\-4
+\end{DoxySince}
+Removes value at specified index and fills the gap with the last value, thereby avoiding the need to push back subsequent values. Behaviour undefined if index outside \mbox{[}0, num-\/1\mbox{]}. \begin{DoxySince}{Since}
+v0.\-99.\-4 
+\end{DoxySince}
+
+
+Referenced by cc\-C\-Array\-Fast\-Remove\-Value\-At\-Index().
+
+
+\begin{DoxyCode}
+{
+        NSUInteger last = --arr->num;
+        arr->arr[index] = arr->arr[last];
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_aede88419801cd2b42e3114b4afc6f2dc}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-C\-Array\-Free@{cc\-C\-Array\-Free}}
+\index{cc\-C\-Array\-Free@{cc\-C\-Array\-Free}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-C\-Array\-Free}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-C\-Array\-Free} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-C\-Array} $\ast$}]{arr}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_aede88419801cd2b42e3114b4afc6f2dc}
+Frees C array after removing all remaining values. Silently ignores nil arr. 
+
+Referenced by cc\-C\-Array\-Free(), and C\-C\-T\-M\-X\-Layer\-::release\-Map.
+
+
+\begin{DoxyCode}
+{
+        if( arr == nil ) return;
+        
+        ccCArrayRemoveAllValues(arr);
+        
+        free(arr->arr);
+        free(arr);
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_ac7ad7ca4b352b225ccb3e36db4c35fad}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-C\-Array\-Full\-Remove\-Array@{cc\-C\-Array\-Full\-Remove\-Array}}
+\index{cc\-C\-Array\-Full\-Remove\-Array@{cc\-C\-Array\-Full\-Remove\-Array}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-C\-Array\-Full\-Remove\-Array}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-C\-Array\-Full\-Remove\-Array} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-C\-Array} $\ast$}]{arr, }
+\item[{{\bf cc\-C\-Array} $\ast$}]{minus\-Arr}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_ac7ad7ca4b352b225ccb3e36db4c35fad}
+Removes from arr all values in minus\-Arr. For each value in minus\-Arr, all matching instances in arr will be removed. \begin{DoxySince}{Since}
+v0.\-99.\-4 
+\end{DoxySince}
+
+
+Referenced by cc\-C\-Array\-Full\-Remove\-Array().
+
+
+\begin{DoxyCode}
+{
+        NSUInteger i;
+        NSUInteger back = 0;
+        
+        for( i = 0; i < arr->num; i++) {
+                if( ccCArrayContainsValue(minusArr, arr->arr[i]) ) {
+                        back++;
+                } else
+                        arr->arr[i - back] = arr->arr[i];
+        }
+        
+        arr->num -= back;
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_a5247f4d3a72fbc7d55487774a1b627db}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-C\-Array\-Get\-Index\-Of\-Value@{cc\-C\-Array\-Get\-Index\-Of\-Value}}
+\index{cc\-C\-Array\-Get\-Index\-Of\-Value@{cc\-C\-Array\-Get\-Index\-Of\-Value}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-C\-Array\-Get\-Index\-Of\-Value}]{\setlength{\rightskip}{0pt plus 5cm}N\-S\-U\-Integer {\bf cc\-C\-Array\-Get\-Index\-Of\-Value} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-C\-Array} $\ast$}]{arr, }
+\item[{C\-C\-A\-R\-R\-A\-Y\-\_\-\-I\-D}]{value}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_a5247f4d3a72fbc7d55487774a1b627db}
+Returns index of first occurrence of value, N\-S\-Not\-Found if value not found.
+
+Returns index of first occurence of value, N\-S\-Not\-Found if value not found. 
+
+Referenced by cc\-C\-Array\-Contains\-Value(), cc\-C\-Array\-Get\-Index\-Of\-Value(), and cc\-C\-Array\-Remove\-Value().
+
+
+\begin{DoxyCode}
+{
+        NSUInteger i;
+        
+        for( i = 0; i < arr->num; i++)
+                if( [arr->arr[i] isEqual:value] ) return i;
+        return NSNotFound;
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_ad19d7b0c8673cb756f993ef8a312d729}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-C\-Array\-Insert\-Value\-At\-Index@{cc\-C\-Array\-Insert\-Value\-At\-Index}}
+\index{cc\-C\-Array\-Insert\-Value\-At\-Index@{cc\-C\-Array\-Insert\-Value\-At\-Index}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-C\-Array\-Insert\-Value\-At\-Index}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-C\-Array\-Insert\-Value\-At\-Index} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-C\-Array} $\ast$}]{arr, }
+\item[{C\-C\-A\-R\-R\-A\-Y\-\_\-\-I\-D}]{value, }
+\item[{N\-S\-U\-Integer}]{index}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_ad19d7b0c8673cb756f993ef8a312d729}
+Inserts a value at a certain position. Behavior undefined if array doesn't have enough capacity
+
+Inserts a value at a certain position. Behaviour undefined if aray doesn't have enough capacity 
+
+Referenced by cc\-C\-Array\-Insert\-Value\-At\-Index().
+
+
+\begin{DoxyCode}
+{
+        NSCAssert( index < arr->max, @"ccCArrayInsertValueAtIndex: invalid
+       index");
+        
+        NSUInteger remaining = arr->num - index;
+        
+        // last Value doesn't need to be moved
+        if( remaining > 0) {
+                // tex coordinates
+                memmove((void *)&arr->arr[index+1], (void *)&arr->arr[index], 
+      sizeof(void*) * remaining );
+        }
+        
+        arr->num++;
+        arr->arr[index] = value;
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_af8209888babee1167a496d4435383b50}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-C\-Array\-New@{cc\-C\-Array\-New}}
+\index{cc\-C\-Array\-New@{cc\-C\-Array\-New}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-C\-Array\-New}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cc\-C\-Array}$\ast$ {\bf cc\-C\-Array\-New} (
+\begin{DoxyParamCaption}
+\item[{N\-S\-U\-Integer}]{capacity}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_af8209888babee1167a496d4435383b50}
+Allocates and initializes a new C array with specified capacity 
+
+Referenced by cc\-C\-Array\-New(), and C\-C\-T\-M\-X\-Layer\-::init\-With\-Tileset\-Info\-:layer\-Info\-:map\-Info\-:.
+
+
+\begin{DoxyCode}
+{
+        if (capacity == 0)
+                capacity = 1;
+        
+        ccCArray *arr = (ccCArray*)malloc( sizeof(ccCArray) );
+        arr->num = 0;
+        arr->arr =  (CCARRAY_ID *) malloc( capacity * sizeof(id) );
+        arr->max = capacity;
+        
+        return arr;
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_a728cc1a6518435e230b4873ad2bd7b8e}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-C\-Array\-Remove\-All\-Values@{cc\-C\-Array\-Remove\-All\-Values}}
+\index{cc\-C\-Array\-Remove\-All\-Values@{cc\-C\-Array\-Remove\-All\-Values}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-C\-Array\-Remove\-All\-Values}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-C\-Array\-Remove\-All\-Values} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-C\-Array} $\ast$}]{arr}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_a728cc1a6518435e230b4873ad2bd7b8e}
+Removes all values from arr 
+
+Referenced by cc\-C\-Array\-Free(), and cc\-C\-Array\-Remove\-All\-Values().
+
+
+\begin{DoxyCode}
+{
+        arr->num = 0;
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_a1f8c0fbc971c6d8c865d988f3fa5b3af}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-C\-Array\-Remove\-Array@{cc\-C\-Array\-Remove\-Array}}
+\index{cc\-C\-Array\-Remove\-Array@{cc\-C\-Array\-Remove\-Array}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-C\-Array\-Remove\-Array}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-C\-Array\-Remove\-Array} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-C\-Array} $\ast$}]{arr, }
+\item[{{\bf cc\-C\-Array} $\ast$}]{minus\-Arr}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_a1f8c0fbc971c6d8c865d988f3fa5b3af}
+Removes from arr all values in minus\-Arr. For each Value in minus\-Arr, the first matching instance in arr will be removed. \begin{DoxySince}{Since}
+v0.\-99.\-4 
+\end{DoxySince}
+
+
+Referenced by cc\-C\-Array\-Remove\-Array().
+
+
+\begin{DoxyCode}
+{
+        NSUInteger i;
+        
+        for( i = 0; i < minusArr->num; i++)
+                ccCArrayRemoveValue(arr, minusArr->arr[i]);
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_afbba63061ff6a1d1153353f7a1d8a522}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-C\-Array\-Remove\-Value@{cc\-C\-Array\-Remove\-Value}}
+\index{cc\-C\-Array\-Remove\-Value@{cc\-C\-Array\-Remove\-Value}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-C\-Array\-Remove\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-C\-Array\-Remove\-Value} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-C\-Array} $\ast$}]{arr, }
+\item[{C\-C\-A\-R\-R\-A\-Y\-\_\-\-I\-D}]{value}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_afbba63061ff6a1d1153353f7a1d8a522}
+Searches for the first occurrence of value and removes it. If value is not found the function has no effect. \begin{DoxySince}{Since}
+v0.\-99.\-4
+\end{DoxySince}
+Searches for the first occurance of value and removes it. If value is not found the function has no effect. \begin{DoxySince}{Since}
+v0.\-99.\-4 
+\end{DoxySince}
+
+
+Referenced by cc\-C\-Array\-Remove\-Array(), and cc\-C\-Array\-Remove\-Value().
+
+
+\begin{DoxyCode}
+{
+        NSUInteger index = ccCArrayGetIndexOfValue(arr, value);
+        if (index != NSNotFound)
+                ccCArrayRemoveValueAtIndex(arr, index);
+}
+\end{DoxyCode}
+\hypertarget{cc_c_array_8h_a7f743211d5bde3387d3b319aaf4d8a3b}{\index{cc\-C\-Array.\-h@{cc\-C\-Array.\-h}!cc\-C\-Array\-Remove\-Value\-At\-Index@{cc\-C\-Array\-Remove\-Value\-At\-Index}}
+\index{cc\-C\-Array\-Remove\-Value\-At\-Index@{cc\-C\-Array\-Remove\-Value\-At\-Index}!ccCArray.h@{cc\-C\-Array.\-h}}
+\subsubsection[{cc\-C\-Array\-Remove\-Value\-At\-Index}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-C\-Array\-Remove\-Value\-At\-Index} (
+\begin{DoxyParamCaption}
+\item[{{\bf cc\-C\-Array} $\ast$}]{arr, }
+\item[{N\-S\-U\-Integer}]{index}
+\end{DoxyParamCaption}
+)}}\label{cc_c_array_8h_a7f743211d5bde3387d3b319aaf4d8a3b}
+Removes value at specified index and pushes back all subsequent values. Behavior undefined if index outside \mbox{[}0, num-\/1\mbox{]}. \begin{DoxySince}{Since}
+v0.\-99.\-4
+\end{DoxySince}
+Removes value at specified index and pushes back all subsequent values. Behaviour undefined if index outside \mbox{[}0, num-\/1\mbox{]}. \begin{DoxySince}{Since}
+v0.\-99.\-4 
+\end{DoxySince}
+
+
+Referenced by cc\-C\-Array\-Remove\-Value(), cc\-C\-Array\-Remove\-Value\-At\-Index(), and C\-C\-T\-M\-X\-Layer\-::remove\-Tile\-At\-:.
+
+
+\begin{DoxyCode}
+{
+        NSUInteger last;
+        
+        for( last = --arr->num; index < last; index++)
+                arr->arr[index] = arr->arr[index + 1];
+}
+\end{DoxyCode}

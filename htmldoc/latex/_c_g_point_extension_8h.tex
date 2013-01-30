@@ -1,0 +1,521 @@
+\hypertarget{_c_g_point_extension_8h}{\section{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.1-\/beta4/cocos2d/\-Support/\-C\-G\-Point\-Extension.h File Reference}
+\label{_c_g_point_extension_8h}\index{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/\-Support/\-C\-G\-Point\-Extension.\-h@{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/\-Support/\-C\-G\-Point\-Extension.\-h}}
+}
+{\ttfamily \#import \char`\"{}cc\-Macros.\-h\char`\"{}}\\*
+{\ttfamily \#import $<$math.\-h$>$}\\*
+{\ttfamily \#import $<$objc/objc.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+C\-G\-Float \hyperlink{_c_g_point_extension_8h_adb805cf1e3b4d29ad6396fadccb028af}{ccp\-Length} (const C\-G\-Point v)
+\item 
+C\-G\-Float \hyperlink{_c_g_point_extension_8h_a76b1b389db811d00e0a461df630d9a8e}{ccp\-Distance} (const C\-G\-Point v1, const C\-G\-Point v2)
+\item 
+C\-G\-Point \hyperlink{_c_g_point_extension_8h_a0f481c2494911e030769268c01e55323}{ccp\-Normalize} (const C\-G\-Point v)
+\item 
+C\-G\-Point \hyperlink{_c_g_point_extension_8h_aa21e0b8cc011fd0e2b6485a3533d66f3}{ccp\-For\-Angle} (const C\-G\-Float a)
+\item 
+C\-G\-Float \hyperlink{_c_g_point_extension_8h_a46c5e225fa14286190552caf1b2456ab}{ccp\-To\-Angle} (const C\-G\-Point v)
+\item 
+float \hyperlink{_c_g_point_extension_8h_a7c45e20220e4a8aaa7a43e1797347a91}{clampf} (float value, float min\-\_\-inclusive, float max\-\_\-inclusive)
+\item 
+C\-G\-Point \hyperlink{_c_g_point_extension_8h_a9ece903bce575705f3e7fe2e81f011b0}{ccp\-Clamp} (C\-G\-Point p, C\-G\-Point from, C\-G\-Point to)
+\item 
+C\-G\-Point \hyperlink{_c_g_point_extension_8h_a88e1c7ec8ddadd2d62eb057571a633c0}{ccp\-From\-Size} (C\-G\-Size s)
+\item 
+C\-G\-Point \hyperlink{_c_g_point_extension_8h_ab481841d1a0ea2fdba40b5d888acd37f}{ccp\-Comp\-Op} (C\-G\-Point p, float($\ast$op\-Func)(float))
+\item 
+C\-G\-Point \hyperlink{_c_g_point_extension_8h_ac8a75c7576b2367277be20ea8fc196c7}{ccp\-Lerp} (C\-G\-Point a, C\-G\-Point b, float alpha)
+\item 
+B\-O\-O\-L \hyperlink{_c_g_point_extension_8h_a672a44290cce4dc0709c7db8dd6f3029}{ccp\-Fuzzy\-Equal} (C\-G\-Point a, C\-G\-Point b, float variance)
+\item 
+C\-G\-Point \hyperlink{_c_g_point_extension_8h_a9bc595d671b88bd0a53c3fd9ec88856d}{ccp\-Comp\-Mult} (C\-G\-Point a, C\-G\-Point b)
+\item 
+float \hyperlink{_c_g_point_extension_8h_a437e145206b77c35572dc423a916bce3}{ccp\-Angle\-Signed} (C\-G\-Point a, C\-G\-Point b)
+\item 
+float \hyperlink{_c_g_point_extension_8h_aaedd775cbf78ce9c11995240c21a0c72}{ccp\-Angle} (C\-G\-Point a, C\-G\-Point b)
+\item 
+C\-G\-Point \hyperlink{_c_g_point_extension_8h_ad28ca42fb64e84452cd65ccac6fb0c28}{ccp\-Rotate\-By\-Angle} (C\-G\-Point v, C\-G\-Point pivot, float angle)
+\item 
+B\-O\-O\-L \hyperlink{_c_g_point_extension_8h_aeed6108881d50edd5920c1129274f761}{ccp\-Line\-Intersect} (C\-G\-Point p1, C\-G\-Point p2, C\-G\-Point p3, C\-G\-Point p4, float $\ast$s, float $\ast$t)
+\item 
+\hypertarget{_c_g_point_extension_8h_ad5b4f818eb13b879bf10df38664116e6}{B\-O\-O\-L {\bfseries ccp\-Segment\-Intersect} (C\-G\-Point A, C\-G\-Point B, C\-G\-Point C, C\-G\-Point D)}\label{_c_g_point_extension_8h_ad5b4f818eb13b879bf10df38664116e6}
+
+\item 
+\hypertarget{_c_g_point_extension_8h_af03584f212c623147927a1e98e29ff07}{C\-G\-Point {\bfseries ccp\-Intersect\-Point} (C\-G\-Point A, C\-G\-Point B, C\-G\-Point C, C\-G\-Point D)}\label{_c_g_point_extension_8h_af03584f212c623147927a1e98e29ff07}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C\-G\-Point extensions based on Chipmunk's \hyperlink{structcp_vect}{cp\-Vect} file. These extensions work both with C\-G\-Point and \hyperlink{structcp_vect}{cp\-Vect}.
+
+The \char`\"{}ccp\char`\"{} prefix means\-: \char`\"{}\-Co\-Cos2d Point\char`\"{}
+
+Examples\-:
+\begin{DoxyItemize}
+\item ccp\-Add( ccp(1,1), ccp(2,2) ); // preferred cocos2d way
+\item ccp\-Add( C\-G\-Point\-Make(1,1), C\-G\-Point\-Make(2,2) ); // also ok but more verbose
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item cpvadd( cpv(1,1), cpv(2,2) ); // way of the chipmunk
+\begin{DoxyItemize}
+\item ccp\-Add( cpv(1,1), cpv(2,2) ); // mixing chipmunk and cocos2d (avoid)
+\item cpvadd( C\-G\-Point\-Make(1,1), C\-G\-Point\-Make(2,2) ); // mixing chipmunk and C\-G (avoid) 
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\hypertarget{_c_g_point_extension_8h_aaedd775cbf78ce9c11995240c21a0c72}{\index{C\-G\-Point\-Extension.\-h@{C\-G\-Point\-Extension.\-h}!ccp\-Angle@{ccp\-Angle}}
+\index{ccp\-Angle@{ccp\-Angle}!CGPointExtension.h@{C\-G\-Point\-Extension.\-h}}
+\subsubsection[{ccp\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf ccp\-Angle} (
+\begin{DoxyParamCaption}
+\item[{C\-G\-Point}]{a, }
+\item[{C\-G\-Point}]{b}
+\end{DoxyParamCaption}
+)}}\label{_c_g_point_extension_8h_aaedd775cbf78ce9c11995240c21a0c72}
+\begin{DoxyReturn}{Returns}
+the angle in radians between two vector directions 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+v0.\-99.\-1 
+\end{DoxySince}
+
+
+Referenced by ccp\-Angle().
+
+
+\begin{DoxyCode}
+{
+        float angle = acosf(ccpDot(ccpNormalize(a), ccpNormalize(b)));
+        if( fabs(angle) < kCGPointEpsilon ) return 0.f;
+        return angle;
+}
+\end{DoxyCode}
+\hypertarget{_c_g_point_extension_8h_a437e145206b77c35572dc423a916bce3}{\index{C\-G\-Point\-Extension.\-h@{C\-G\-Point\-Extension.\-h}!ccp\-Angle\-Signed@{ccp\-Angle\-Signed}}
+\index{ccp\-Angle\-Signed@{ccp\-Angle\-Signed}!CGPointExtension.h@{C\-G\-Point\-Extension.\-h}}
+\subsubsection[{ccp\-Angle\-Signed}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf ccp\-Angle\-Signed} (
+\begin{DoxyParamCaption}
+\item[{C\-G\-Point}]{a, }
+\item[{C\-G\-Point}]{b}
+\end{DoxyParamCaption}
+)}}\label{_c_g_point_extension_8h_a437e145206b77c35572dc423a916bce3}
+\begin{DoxyReturn}{Returns}
+the signed angle in radians between two vector directions 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+v0.\-99.\-1 
+\end{DoxySince}
+
+
+Referenced by ccp\-Angle\-Signed().
+
+
+\begin{DoxyCode}
+{
+        CGPoint a2 = ccpNormalize(a);
+        CGPoint b2 = ccpNormalize(b);
+        float angle = atan2f(a2.x * b2.y - a2.y * b2.x, ccpDot(a2, b2));
+        if( fabs(angle) < kCGPointEpsilon ) return 0.f;
+        return angle;
+}
+\end{DoxyCode}
+\hypertarget{_c_g_point_extension_8h_a9ece903bce575705f3e7fe2e81f011b0}{\index{C\-G\-Point\-Extension.\-h@{C\-G\-Point\-Extension.\-h}!ccp\-Clamp@{ccp\-Clamp}}
+\index{ccp\-Clamp@{ccp\-Clamp}!CGPointExtension.h@{C\-G\-Point\-Extension.\-h}}
+\subsubsection[{ccp\-Clamp}]{\setlength{\rightskip}{0pt plus 5cm}C\-G\-Point {\bf ccp\-Clamp} (
+\begin{DoxyParamCaption}
+\item[{C\-G\-Point}]{p, }
+\item[{C\-G\-Point}]{from, }
+\item[{C\-G\-Point}]{to}
+\end{DoxyParamCaption}
+)}}\label{_c_g_point_extension_8h_a9ece903bce575705f3e7fe2e81f011b0}
+Clamp a point between from and to. \begin{DoxySince}{Since}
+v0.\-99.\-1 
+\end{DoxySince}
+
+
+Referenced by ccp\-Clamp().
+
+
+\begin{DoxyCode}
+{
+        return ccp(clampf(p.x,min_inclusive.x,max_inclusive.x), clampf(p.y, 
+      min_inclusive.y, max_inclusive.y));
+}
+\end{DoxyCode}
+\hypertarget{_c_g_point_extension_8h_a9bc595d671b88bd0a53c3fd9ec88856d}{\index{C\-G\-Point\-Extension.\-h@{C\-G\-Point\-Extension.\-h}!ccp\-Comp\-Mult@{ccp\-Comp\-Mult}}
+\index{ccp\-Comp\-Mult@{ccp\-Comp\-Mult}!CGPointExtension.h@{C\-G\-Point\-Extension.\-h}}
+\subsubsection[{ccp\-Comp\-Mult}]{\setlength{\rightskip}{0pt plus 5cm}C\-G\-Point {\bf ccp\-Comp\-Mult} (
+\begin{DoxyParamCaption}
+\item[{C\-G\-Point}]{a, }
+\item[{C\-G\-Point}]{b}
+\end{DoxyParamCaption}
+)}}\label{_c_g_point_extension_8h_a9bc595d671b88bd0a53c3fd9ec88856d}
+Multiplies a nd b components, a.\-x$\ast$b.x, a.\-y$\ast$b.y \begin{DoxyReturn}{Returns}
+a component-\/wise multiplication 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+v0.\-99.\-1 
+\end{DoxySince}
+
+
+Referenced by ccp\-Comp\-Mult().
+
+
+\begin{DoxyCode}
+{
+        return ccp(a.x * b.x, a.y * b.y);
+}
+\end{DoxyCode}
+\hypertarget{_c_g_point_extension_8h_ab481841d1a0ea2fdba40b5d888acd37f}{\index{C\-G\-Point\-Extension.\-h@{C\-G\-Point\-Extension.\-h}!ccp\-Comp\-Op@{ccp\-Comp\-Op}}
+\index{ccp\-Comp\-Op@{ccp\-Comp\-Op}!CGPointExtension.h@{C\-G\-Point\-Extension.\-h}}
+\subsubsection[{ccp\-Comp\-Op}]{\setlength{\rightskip}{0pt plus 5cm}C\-G\-Point {\bf ccp\-Comp\-Op} (
+\begin{DoxyParamCaption}
+\item[{C\-G\-Point}]{p, }
+\item[{float($\ast$)(float)}]{op\-Func}
+\end{DoxyParamCaption}
+)}}\label{_c_g_point_extension_8h_ab481841d1a0ea2fdba40b5d888acd37f}
+Run a math operation function on each point component absf, fllorf, ceilf, roundf any function that has the signature\-: float func(float); For example\-: let's try to take the floor of x,y ccp\-Comp\-Op(p,floorf); \begin{DoxySince}{Since}
+v0.\-99.\-1 
+\end{DoxySince}
+
+
+Referenced by ccp\-Comp\-Op().
+
+
+\begin{DoxyCode}
+{
+        return ccp(opFunc(p.x), opFunc(p.y));
+}
+\end{DoxyCode}
+\hypertarget{_c_g_point_extension_8h_a76b1b389db811d00e0a461df630d9a8e}{\index{C\-G\-Point\-Extension.\-h@{C\-G\-Point\-Extension.\-h}!ccp\-Distance@{ccp\-Distance}}
+\index{ccp\-Distance@{ccp\-Distance}!CGPointExtension.h@{C\-G\-Point\-Extension.\-h}}
+\subsubsection[{ccp\-Distance}]{\setlength{\rightskip}{0pt plus 5cm}C\-G\-Float {\bf ccp\-Distance} (
+\begin{DoxyParamCaption}
+\item[{const C\-G\-Point}]{v1, }
+\item[{const C\-G\-Point}]{v2}
+\end{DoxyParamCaption}
+)}}\label{_c_g_point_extension_8h_a76b1b389db811d00e0a461df630d9a8e}
+Calculates the distance between two points \begin{DoxyReturn}{Returns}
+C\-G\-Float 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+v0.\-7.\-2 
+\end{DoxySince}
+
+
+Referenced by ccp\-Distance().
+
+
+\begin{DoxyCode}
+{
+        return ccpLength(ccpSub(v1, v2));
+}
+\end{DoxyCode}
+\hypertarget{_c_g_point_extension_8h_aa21e0b8cc011fd0e2b6485a3533d66f3}{\index{C\-G\-Point\-Extension.\-h@{C\-G\-Point\-Extension.\-h}!ccp\-For\-Angle@{ccp\-For\-Angle}}
+\index{ccp\-For\-Angle@{ccp\-For\-Angle}!CGPointExtension.h@{C\-G\-Point\-Extension.\-h}}
+\subsubsection[{ccp\-For\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}C\-G\-Point {\bf ccp\-For\-Angle} (
+\begin{DoxyParamCaption}
+\item[{const C\-G\-Float}]{a}
+\end{DoxyParamCaption}
+)}}\label{_c_g_point_extension_8h_aa21e0b8cc011fd0e2b6485a3533d66f3}
+Converts radians to a normalized vector. \begin{DoxyReturn}{Returns}
+C\-G\-Point 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+v0.\-7.\-2 
+\end{DoxySince}
+
+
+Referenced by ccp\-For\-Angle().
+
+
+\begin{DoxyCode}
+{
+        return ccp(cosf(a), sinf(a));
+}
+\end{DoxyCode}
+\hypertarget{_c_g_point_extension_8h_a88e1c7ec8ddadd2d62eb057571a633c0}{\index{C\-G\-Point\-Extension.\-h@{C\-G\-Point\-Extension.\-h}!ccp\-From\-Size@{ccp\-From\-Size}}
+\index{ccp\-From\-Size@{ccp\-From\-Size}!CGPointExtension.h@{C\-G\-Point\-Extension.\-h}}
+\subsubsection[{ccp\-From\-Size}]{\setlength{\rightskip}{0pt plus 5cm}C\-G\-Point {\bf ccp\-From\-Size} (
+\begin{DoxyParamCaption}
+\item[{C\-G\-Size}]{s}
+\end{DoxyParamCaption}
+)}}\label{_c_g_point_extension_8h_a88e1c7ec8ddadd2d62eb057571a633c0}
+Quickly convert C\-G\-Size to a C\-G\-Point \begin{DoxySince}{Since}
+v0.\-99.\-1 
+\end{DoxySince}
+
+
+Referenced by ccp\-From\-Size().
+
+
+\begin{DoxyCode}
+{
+        return ccp(s.width, s.height);
+}
+\end{DoxyCode}
+\hypertarget{_c_g_point_extension_8h_a672a44290cce4dc0709c7db8dd6f3029}{\index{C\-G\-Point\-Extension.\-h@{C\-G\-Point\-Extension.\-h}!ccp\-Fuzzy\-Equal@{ccp\-Fuzzy\-Equal}}
+\index{ccp\-Fuzzy\-Equal@{ccp\-Fuzzy\-Equal}!CGPointExtension.h@{C\-G\-Point\-Extension.\-h}}
+\subsubsection[{ccp\-Fuzzy\-Equal}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L {\bf ccp\-Fuzzy\-Equal} (
+\begin{DoxyParamCaption}
+\item[{C\-G\-Point}]{a, }
+\item[{C\-G\-Point}]{b, }
+\item[{float}]{variance}
+\end{DoxyParamCaption}
+)}}\label{_c_g_point_extension_8h_a672a44290cce4dc0709c7db8dd6f3029}
+\begin{DoxyReturn}{Returns}
+if points have fuzzy equality which means equal with some degree of variance. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+v0.\-99.\-1 
+\end{DoxySince}
+
+
+Referenced by ccp\-Fuzzy\-Equal().
+
+
+\begin{DoxyCode}
+{
+        if(a.x - var <= b.x && b.x <= a.x + var)
+                if(a.y - var <= b.y && b.y <= a.y + var)
+                        return true;
+        return false;
+}
+\end{DoxyCode}
+\hypertarget{_c_g_point_extension_8h_adb805cf1e3b4d29ad6396fadccb028af}{\index{C\-G\-Point\-Extension.\-h@{C\-G\-Point\-Extension.\-h}!ccp\-Length@{ccp\-Length}}
+\index{ccp\-Length@{ccp\-Length}!CGPointExtension.h@{C\-G\-Point\-Extension.\-h}}
+\subsubsection[{ccp\-Length}]{\setlength{\rightskip}{0pt plus 5cm}C\-G\-Float {\bf ccp\-Length} (
+\begin{DoxyParamCaption}
+\item[{const C\-G\-Point}]{v}
+\end{DoxyParamCaption}
+)}}\label{_c_g_point_extension_8h_adb805cf1e3b4d29ad6396fadccb028af}
+Calculates distance between point an origin \begin{DoxyReturn}{Returns}
+C\-G\-Float 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+v0.\-7.\-2 
+\end{DoxySince}
+
+
+Referenced by ccp\-Distance(), ccp\-Length(), and ccp\-Normalize().
+
+
+\begin{DoxyCode}
+{
+        return sqrtf(ccpLengthSQ(v));
+}
+\end{DoxyCode}
+\hypertarget{_c_g_point_extension_8h_ac8a75c7576b2367277be20ea8fc196c7}{\index{C\-G\-Point\-Extension.\-h@{C\-G\-Point\-Extension.\-h}!ccp\-Lerp@{ccp\-Lerp}}
+\index{ccp\-Lerp@{ccp\-Lerp}!CGPointExtension.h@{C\-G\-Point\-Extension.\-h}}
+\subsubsection[{ccp\-Lerp}]{\setlength{\rightskip}{0pt plus 5cm}C\-G\-Point {\bf ccp\-Lerp} (
+\begin{DoxyParamCaption}
+\item[{C\-G\-Point}]{a, }
+\item[{C\-G\-Point}]{b, }
+\item[{float}]{alpha}
+\end{DoxyParamCaption}
+)}}\label{_c_g_point_extension_8h_ac8a75c7576b2367277be20ea8fc196c7}
+Linear Interpolation between two points a and b \begin{DoxyReturn}{Returns}
+alpha == 0 ? a alpha == 1 ? b otherwise a value between a..b 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+v0.\-99.\-1 
+\end{DoxySince}
+
+
+Referenced by ccp\-Lerp().
+
+
+\begin{DoxyCode}
+{
+        return ccpAdd(ccpMult(a, 1.f - alpha), ccpMult(b, alpha));
+}
+\end{DoxyCode}
+\hypertarget{_c_g_point_extension_8h_aeed6108881d50edd5920c1129274f761}{\index{C\-G\-Point\-Extension.\-h@{C\-G\-Point\-Extension.\-h}!ccp\-Line\-Intersect@{ccp\-Line\-Intersect}}
+\index{ccp\-Line\-Intersect@{ccp\-Line\-Intersect}!CGPointExtension.h@{C\-G\-Point\-Extension.\-h}}
+\subsubsection[{ccp\-Line\-Intersect}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L {\bf ccp\-Line\-Intersect} (
+\begin{DoxyParamCaption}
+\item[{C\-G\-Point}]{p1, }
+\item[{C\-G\-Point}]{p2, }
+\item[{C\-G\-Point}]{p3, }
+\item[{C\-G\-Point}]{p4, }
+\item[{float $\ast$}]{s, }
+\item[{float $\ast$}]{t}
+\end{DoxyParamCaption}
+)}}\label{_c_g_point_extension_8h_aeed6108881d50edd5920c1129274f761}
+A general line-\/line intersection test 
+\begin{DoxyParams}{Parameters}
+{\em p1} & is the startpoint for the first line P1 = (p1 -\/ p2) \\
+\hline
+{\em p2} & is the endpoint for the first line P1 = (p1 -\/ p2) \\
+\hline
+{\em p3} & is the startpoint for the second line P2 = (p3 -\/ p4) \\
+\hline
+{\em p4} & is the endpoint for the second line P2 = (p3 -\/ p4) \\
+\hline
+{\em s} & is the range for a hitpoint in P1 (pa = p1 + s$\ast$(p2 -\/ p1)) \\
+\hline
+{\em t} & is the range for a hitpoint in P3 (pa = p2 + t$\ast$(p4 -\/ p3)) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool indicating successful intersection of a line note that to truly test intersection for segments we have to make sure that s \& t lie within \mbox{[}0..1\mbox{]} and for rays, make sure s \& t $>$ 0 the hit point is p3 + t $\ast$ (p4 -\/ p3); the hit point also is p1 + s $\ast$ (p2 -\/ p1); 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+v0.\-99.\-1 
+\end{DoxySince}
+
+
+Referenced by ccp\-Line\-Intersect().
+
+
+\begin{DoxyCode}
+{
+        // FAIL: Line undefined
+        if ( (A.x==B.x && A.y==B.y) || (C.x==D.x && C.y==D.y) ) return NO;
+
+        const float BAx = B.x - A.x;
+        const float BAy = B.y - A.y;
+        const float DCx = D.x - C.x;
+        const float DCy = D.y - C.y;
+        const float ACx = A.x - C.x;
+        const float ACy = A.y - C.y;
+
+        const float denom = DCy*BAx - DCx*BAy;
+
+        *S = DCx*ACy - DCy*ACx;
+        *T = BAx*ACy - BAy*ACx;
+
+        if (denom == 0) {
+                if (*S == 0 || *T == 0) {
+                        // Lines incident
+                        return YES;
+                }
+                // Lines parallel and not incident
+                return NO;
+        }
+
+        *S = *S / denom;
+        *T = *T / denom;
+
+        // Point of intersection
+        // CGPoint P;
+        // P.x = A.x + *S * (B.x - A.x);
+        // P.y = A.y + *S * (B.y - A.y);
+
+        return YES;
+}
+\end{DoxyCode}
+\hypertarget{_c_g_point_extension_8h_a0f481c2494911e030769268c01e55323}{\index{C\-G\-Point\-Extension.\-h@{C\-G\-Point\-Extension.\-h}!ccp\-Normalize@{ccp\-Normalize}}
+\index{ccp\-Normalize@{ccp\-Normalize}!CGPointExtension.h@{C\-G\-Point\-Extension.\-h}}
+\subsubsection[{ccp\-Normalize}]{\setlength{\rightskip}{0pt plus 5cm}C\-G\-Point {\bf ccp\-Normalize} (
+\begin{DoxyParamCaption}
+\item[{const C\-G\-Point}]{v}
+\end{DoxyParamCaption}
+)}}\label{_c_g_point_extension_8h_a0f481c2494911e030769268c01e55323}
+Returns point multiplied to a length of 1. \begin{DoxyReturn}{Returns}
+C\-G\-Point 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+v0.\-7.\-2 
+\end{DoxySince}
+
+
+Referenced by ccp\-Angle(), ccp\-Angle\-Signed(), ccp\-Normalize(), cc\-Vertex\-Line\-To\-Polygon(), and C\-C\-Particle\-System\-::update\-:.
+
+
+\begin{DoxyCode}
+{
+        return ccpMult(v, 1.0f/ccpLength(v));
+}
+\end{DoxyCode}
+\hypertarget{_c_g_point_extension_8h_ad28ca42fb64e84452cd65ccac6fb0c28}{\index{C\-G\-Point\-Extension.\-h@{C\-G\-Point\-Extension.\-h}!ccp\-Rotate\-By\-Angle@{ccp\-Rotate\-By\-Angle}}
+\index{ccp\-Rotate\-By\-Angle@{ccp\-Rotate\-By\-Angle}!CGPointExtension.h@{C\-G\-Point\-Extension.\-h}}
+\subsubsection[{ccp\-Rotate\-By\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}C\-G\-Point {\bf ccp\-Rotate\-By\-Angle} (
+\begin{DoxyParamCaption}
+\item[{C\-G\-Point}]{v, }
+\item[{C\-G\-Point}]{pivot, }
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)}}\label{_c_g_point_extension_8h_ad28ca42fb64e84452cd65ccac6fb0c28}
+Rotates a point counter clockwise by the angle around a pivot 
+\begin{DoxyParams}{Parameters}
+{\em v} & is the point to rotate \\
+\hline
+{\em pivot} & is the pivot, naturally \\
+\hline
+{\em angle} & is the angle of rotation cw in radians \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the rotated point 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+v0.\-99.\-1 
+\end{DoxySince}
+
+
+Referenced by ccp\-Rotate\-By\-Angle().
+
+
+\begin{DoxyCode}
+{
+        CGPoint r = ccpSub(v, pivot);
+        float cosa = cosf(angle), sina = sinf(angle);
+        float t = r.x;
+        r.x = t*cosa - r.y*sina + pivot.x;
+        r.y = t*sina + r.y*cosa + pivot.y;
+        return r;
+}
+\end{DoxyCode}
+\hypertarget{_c_g_point_extension_8h_a46c5e225fa14286190552caf1b2456ab}{\index{C\-G\-Point\-Extension.\-h@{C\-G\-Point\-Extension.\-h}!ccp\-To\-Angle@{ccp\-To\-Angle}}
+\index{ccp\-To\-Angle@{ccp\-To\-Angle}!CGPointExtension.h@{C\-G\-Point\-Extension.\-h}}
+\subsubsection[{ccp\-To\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}C\-G\-Float {\bf ccp\-To\-Angle} (
+\begin{DoxyParamCaption}
+\item[{const C\-G\-Point}]{v}
+\end{DoxyParamCaption}
+)}}\label{_c_g_point_extension_8h_a46c5e225fa14286190552caf1b2456ab}
+Converts a vector to radians. \begin{DoxyReturn}{Returns}
+C\-G\-Float 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+v0.\-7.\-2 
+\end{DoxySince}
+
+
+Referenced by ccp\-To\-Angle().
+
+
+\begin{DoxyCode}
+{
+        return atan2f(v.y, v.x);
+}
+\end{DoxyCode}
+\hypertarget{_c_g_point_extension_8h_a7c45e20220e4a8aaa7a43e1797347a91}{\index{C\-G\-Point\-Extension.\-h@{C\-G\-Point\-Extension.\-h}!clampf@{clampf}}
+\index{clampf@{clampf}!CGPointExtension.h@{C\-G\-Point\-Extension.\-h}}
+\subsubsection[{clampf}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf clampf} (
+\begin{DoxyParamCaption}
+\item[{float}]{value, }
+\item[{float}]{min\-\_\-inclusive, }
+\item[{float}]{max\-\_\-inclusive}
+\end{DoxyParamCaption}
+)}}\label{_c_g_point_extension_8h_a7c45e20220e4a8aaa7a43e1797347a91}
+Clamp a value between from and to. \begin{DoxySince}{Since}
+v0.\-99.\-1 
+\end{DoxySince}
+
+
+Referenced by ccp\-Clamp(), and clampf().
+
+
+\begin{DoxyCode}
+{
+        if (min_inclusive > max_inclusive) {
+                CC_SWAP(min_inclusive,max_inclusive);
+        }
+        return value < min_inclusive ? min_inclusive : value < max_inclusive? 
+      value : max_inclusive;
+}
+\end{DoxyCode}

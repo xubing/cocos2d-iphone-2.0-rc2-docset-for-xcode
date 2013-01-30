@@ -1,0 +1,40 @@
+\hypertarget{interface_shaky3_d_demo}{\section{Shaky3\-D\-Demo Class Reference}
+\label{interface_shaky3_d_demo}\index{Shaky3\-D\-Demo@{Shaky3\-D\-Demo}}
+}
+Inheritance diagram for Shaky3\-D\-Demo\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.000000cm]{interface_shaky3_d_demo}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_shaky3_d_demo_a8ec26c40412e97d89b87f973228ae67d}{action\-With\-Duration\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_shaky3_d_demo_a8ec26c40412e97d89b87f973228ae67d}{\index{Shaky3\-D\-Demo@{Shaky3\-D\-Demo}!action\-With\-Duration\-:@{action\-With\-Duration\-:}}
+\index{action\-With\-Duration\-:@{action\-With\-Duration\-:}!Shaky3DDemo@{Shaky3\-D\-Demo}}
+\subsubsection[{action\-With\-Duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_shaky3_d_demo_a8ec26c40412e97d89b87f973228ae67d}
+creates the action 
+
+Reimplemented from \hyperlink{class_c_c_action_interval_a08fbc347478cca16ab1fe936a1770dc0}{C\-C\-Action\-Interval}.
+
+
+\begin{DoxyCode}
+                        :(ccTime)t
+{
+        return [self actionWithRange:5 shakeZ:NO grid:ccg(15,10) duration:t];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/tests/Effects\-Test.\-m\end{DoxyCompactItemize}

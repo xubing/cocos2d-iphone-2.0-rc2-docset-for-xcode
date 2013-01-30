@@ -1,0 +1,671 @@
+\hypertarget{_c_c_drawing_primitives_8h}{\section{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.1-\/beta4/cocos2d/\-C\-C\-Drawing\-Primitives.h File Reference}
+\label{_c_c_drawing_primitives_8h}\index{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/\-C\-C\-Drawing\-Primitives.\-h@{/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/\-C\-C\-Drawing\-Primitives.\-h}}
+}
+{\ttfamily \#import $<$Foundation/\-Foundation.\-h$>$}\\*
+{\ttfamily \#import \char`\"{}cc\-Types.\-h\char`\"{}}\\*
+{\ttfamily \#import \char`\"{}cc\-Macros.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_c_c_drawing_primitives_8h_a049d8eec041179d6e70f2428d8ebf248}{cc\-Draw\-Point} (C\-G\-Point point)
+\item 
+void \hyperlink{_c_c_drawing_primitives_8h_ad545cd6e2e2350e278d8eeafcb8c3762}{cc\-Draw\-Points} (const C\-G\-Point $\ast$points, N\-S\-U\-Integer number\-Of\-Points)
+\item 
+void \hyperlink{_c_c_drawing_primitives_8h_a26a514883252b7cd5461fa8472309416}{cc\-Draw\-Line} (C\-G\-Point origin, C\-G\-Point destination)
+\item 
+void \hyperlink{_c_c_drawing_primitives_8h_a8b853b4c28824116795f75704e70511a}{cc\-Draw\-Rect} (C\-G\-Point origin, C\-G\-Point destination)
+\item 
+void \hyperlink{_c_c_drawing_primitives_8h_a611757cca4322b06680210360b405d90}{cc\-Draw\-Solid\-Rect} (C\-G\-Point origin, C\-G\-Point destination, \hyperlink{cc_types_8h_aecc18290defe020343f1d7bb2ee73145}{cc\-Color4\-F} color)
+\item 
+void \hyperlink{_c_c_drawing_primitives_8h_ac0b6ec146da9061bfb0c29e3dd933c1a}{cc\-Draw\-Poly} (const C\-G\-Point $\ast$vertices, N\-S\-U\-Integer num\-Of\-Vertices, B\-O\-O\-L close\-Polygon)
+\item 
+void \hyperlink{_c_c_drawing_primitives_8h_a1ee08ff6fe6d04c98bc594d769ec847c}{cc\-Draw\-Solid\-Poly} (const C\-G\-Point $\ast$poli, N\-S\-U\-Integer number\-Of\-Points, \hyperlink{cc_types_8h_aecc18290defe020343f1d7bb2ee73145}{cc\-Color4\-F} color)
+\item 
+void \hyperlink{_c_c_drawing_primitives_8h_a34d0ad7b8f0d0dbd5fb874d607d69f1d}{cc\-Draw\-Circle} (C\-G\-Point center, float radius, float angle, N\-S\-U\-Integer segments, B\-O\-O\-L draw\-Line\-To\-Center)
+\item 
+void \hyperlink{_c_c_drawing_primitives_8h_ae8eca0753e76b604d747dcb9f8c74cb4}{cc\-Draw\-Quad\-Bezier} (C\-G\-Point origin, C\-G\-Point control, C\-G\-Point destination, N\-S\-U\-Integer segments)
+\item 
+void \hyperlink{_c_c_drawing_primitives_8h_a5a391711c0aa611a06167bdd7637571f}{cc\-Draw\-Cubic\-Bezier} (C\-G\-Point origin, C\-G\-Point control1, C\-G\-Point control2, C\-G\-Point destination, N\-S\-U\-Integer segments)
+\item 
+void \hyperlink{_c_c_drawing_primitives_8h_a45f1cb5f2632a63e64faa92b311aeee2}{cc\-Draw\-Catmull\-Rom} (\hyperlink{interface_c_c_point_array}{C\-C\-Point\-Array} $\ast$array\-Of\-Control\-Points, N\-S\-U\-Integer segments)
+\item 
+void \hyperlink{_c_c_drawing_primitives_8h_a6679f5e86cdfab9b4290c2f636d9c7b3}{cc\-Draw\-Cardinal\-Spline} (\hyperlink{interface_c_c_point_array}{C\-C\-Point\-Array} $\ast$config, C\-G\-Float tension, N\-S\-U\-Integer segments)
+\item 
+void \hyperlink{_c_c_drawing_primitives_8h_a346de4244b39347bad04e1fd0f069e31}{cc\-Draw\-Color4\-B} (G\-Lubyte r, G\-Lubyte g, G\-Lubyte b, G\-Lubyte a)
+\item 
+void \hyperlink{_c_c_drawing_primitives_8h_ae8527aa3c0e656a7cae51b95575387a4}{cc\-Draw\-Color4\-F} (G\-Lfloat r, G\-Lfloat g, G\-Lfloat b, G\-Lfloat a)
+\item 
+void \hyperlink{_c_c_drawing_primitives_8h_a97ead72150af59c1bc18faa6d10f9240}{cc\-Point\-Size} (G\-Lfloat point\-Size)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Drawing Open\-G\-L E\-S primitives.
+\begin{DoxyItemize}
+\item cc\-Draw\-Point, cc\-Draw\-Points
+\item cc\-Draw\-Line
+\item cc\-Draw\-Rect, cc\-Draw\-Solid\-Rect
+\item cc\-Draw\-Poly, cc\-Draw\-Solid\-Poly
+\item cc\-Draw\-Circle
+\item cc\-Draw\-Quad\-Bezier
+\item cc\-Draw\-Cubic\-Bezier
+\item cc\-Draw\-Catmull\-Rom
+\item cc\-Draw\-Cardinal\-Spline
+\end{DoxyItemize}
+
+You can change the color, point size, width by calling\-:
+\begin{DoxyItemize}
+\item \hyperlink{_c_c_drawing_primitives_8h_a346de4244b39347bad04e1fd0f069e31}{cc\-Draw\-Color4\-B()}, \hyperlink{_c_c_drawing_primitives_8h_ae8527aa3c0e656a7cae51b95575387a4}{cc\-Draw\-Color4\-F()}
+\item \hyperlink{_c_c_drawing_primitives_8h_a97ead72150af59c1bc18faa6d10f9240}{cc\-Point\-Size()}
+\item gl\-Line\-Width()
+\end{DoxyItemize}
+
+\begin{DoxyWarning}{Warning}
+These functions draws the Line, Point, Polygon, immediately. They aren't batched. If you are going to make a game that depends on these primitives, I suggest creating a batch. Instead you should use \hyperlink{interface_c_c_draw_node}{C\-C\-Draw\-Node} 
+\end{DoxyWarning}
+
+
+\subsection{Function Documentation}
+\hypertarget{_c_c_drawing_primitives_8h_a6679f5e86cdfab9b4290c2f636d9c7b3}{\index{C\-C\-Drawing\-Primitives.\-h@{C\-C\-Drawing\-Primitives.\-h}!cc\-Draw\-Cardinal\-Spline@{cc\-Draw\-Cardinal\-Spline}}
+\index{cc\-Draw\-Cardinal\-Spline@{cc\-Draw\-Cardinal\-Spline}!CCDrawingPrimitives.h@{C\-C\-Drawing\-Primitives.\-h}}
+\subsubsection[{cc\-Draw\-Cardinal\-Spline}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Draw\-Cardinal\-Spline} (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-C\-Point\-Array} $\ast$}]{config, }
+\item[{C\-G\-Float}]{tension, }
+\item[{N\-S\-U\-Integer}]{segments}
+\end{DoxyParamCaption}
+)}}\label{_c_c_drawing_primitives_8h_a6679f5e86cdfab9b4290c2f636d9c7b3}
+draws a Cardinal Spline path. \begin{DoxyWarning}{Warning}
+This function could be pretty slow. Use it only for debugging purposes. 
+\end{DoxyWarning}
+\begin{DoxySince}{Since}
+v2.\-0 
+\end{DoxySince}
+
+
+Referenced by cc\-Draw\-Cardinal\-Spline(), and cc\-Draw\-Catmull\-Rom().
+
+
+\begin{DoxyCode}
+{
+        lazy_init();
+        
+        ccVertex2F vertices[segments + 1];
+
+        NSUInteger p;
+        CGFloat lt;
+        CGFloat deltaT = 1.0 / [config count];
+        
+        for( NSUInteger i=0; i < segments+1;i++) {
+                
+                CGFloat dt = (CGFloat)i / segments;
+        
+                // border
+                if( dt == 1 ) {
+                        p = [config count] - 1;
+                        lt = 1;
+                } else {
+                        p = dt / deltaT;
+                        lt = (dt - deltaT * (CGFloat)p) / deltaT;
+                }
+                
+                // Interpolate
+                CGPoint pp0 = [config getControlPointAtIndex:p-1];
+                CGPoint pp1 = [config getControlPointAtIndex:p+0];
+                CGPoint pp2 = [config getControlPointAtIndex:p+1];
+                CGPoint pp3 = [config getControlPointAtIndex:p+2];
+                
+                CGPoint newPos = ccCardinalSplineAt( pp0, pp1, pp2, pp3, 
+      tension, lt);
+                vertices[i].x = newPos.x;
+                vertices[i].y = newPos.y;
+        }
+        
+        [shader_ use];
+        [shader_ setUniformsForBuiltins];    
+        [shader_ setUniformLocation:colorLocation_ with4fv:(GLfloat*) &color_.r
+       count:1];
+        
+        ccGLEnableVertexAttribs( kCCVertexAttribFlag_Position );
+        
+        glVertexAttribPointer(kCCVertexAttrib_Position, 2, GL_FLOAT, GL_FALSE, 
+      0, vertices);
+        glDrawArrays(GL_LINE_STRIP, 0, (GLsizei) segments + 1);
+        
+        CC_INCREMENT_GL_DRAWS(1);
+}
+\end{DoxyCode}
+\hypertarget{_c_c_drawing_primitives_8h_a45f1cb5f2632a63e64faa92b311aeee2}{\index{C\-C\-Drawing\-Primitives.\-h@{C\-C\-Drawing\-Primitives.\-h}!cc\-Draw\-Catmull\-Rom@{cc\-Draw\-Catmull\-Rom}}
+\index{cc\-Draw\-Catmull\-Rom@{cc\-Draw\-Catmull\-Rom}!CCDrawingPrimitives.h@{C\-C\-Drawing\-Primitives.\-h}}
+\subsubsection[{cc\-Draw\-Catmull\-Rom}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Draw\-Catmull\-Rom} (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-C\-Point\-Array} $\ast$}]{array\-Of\-Control\-Points, }
+\item[{N\-S\-U\-Integer}]{segments}
+\end{DoxyParamCaption}
+)}}\label{_c_c_drawing_primitives_8h_a45f1cb5f2632a63e64faa92b311aeee2}
+draws a Catmull Rom path. \begin{DoxyWarning}{Warning}
+This function could be pretty slow. Use it only for debugging purposes. 
+\end{DoxyWarning}
+\begin{DoxySince}{Since}
+v2.\-0 
+\end{DoxySince}
+
+
+Referenced by cc\-Draw\-Catmull\-Rom().
+
+
+\begin{DoxyCode}
+{
+        ccDrawCardinalSpline( points, 0.5f, segments );
+}
+\end{DoxyCode}
+\hypertarget{_c_c_drawing_primitives_8h_a34d0ad7b8f0d0dbd5fb874d607d69f1d}{\index{C\-C\-Drawing\-Primitives.\-h@{C\-C\-Drawing\-Primitives.\-h}!cc\-Draw\-Circle@{cc\-Draw\-Circle}}
+\index{cc\-Draw\-Circle@{cc\-Draw\-Circle}!CCDrawingPrimitives.h@{C\-C\-Drawing\-Primitives.\-h}}
+\subsubsection[{cc\-Draw\-Circle}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Draw\-Circle} (
+\begin{DoxyParamCaption}
+\item[{C\-G\-Point}]{center, }
+\item[{float}]{radius, }
+\item[{float}]{angle, }
+\item[{N\-S\-U\-Integer}]{segments, }
+\item[{B\-O\-O\-L}]{draw\-Line\-To\-Center}
+\end{DoxyParamCaption}
+)}}\label{_c_c_drawing_primitives_8h_a34d0ad7b8f0d0dbd5fb874d607d69f1d}
+draws a circle given the center, radius and number of segments measured in points 
+
+Referenced by cc\-Draw\-Circle().
+
+
+\begin{DoxyCode}
+{
+        lazy_init();
+
+        int additionalSegment = 1;
+        if (drawLineToCenter)
+                additionalSegment++;
+
+        const float coef = 2.0f * (float)M_PI/segs;
+
+        GLfloat *vertices = calloc( sizeof(GLfloat)*2*(segs+2), 1);
+        if( ! vertices )
+                return;
+
+        for(NSUInteger i = 0;i <= segs; i++) {
+                float rads = i*coef;
+                GLfloat j = r * cosf(rads + a) + center.x;
+                GLfloat k = r * sinf(rads + a) + center.y;
+
+                vertices[i*2] = j;
+                vertices[i*2+1] = k;
+        }
+        vertices[(segs+1)*2] = center.x;
+        vertices[(segs+1)*2+1] = center.y;
+
+        [shader_ use];
+        [shader_ setUniformsForBuiltins];    
+        [shader_ setUniformLocation:colorLocation_ with4fv:(GLfloat*) &color_.r
+       count:1];
+
+        ccGLEnableVertexAttribs( kCCVertexAttribFlag_Position );
+
+        glVertexAttribPointer(kCCVertexAttrib_Position, 2, GL_FLOAT, GL_FALSE, 
+      0, vertices);
+        glDrawArrays(GL_LINE_STRIP, 0, (GLsizei) segs+additionalSegment);
+
+        free( vertices );
+        
+        CC_INCREMENT_GL_DRAWS(1);
+}
+\end{DoxyCode}
+\hypertarget{_c_c_drawing_primitives_8h_a346de4244b39347bad04e1fd0f069e31}{\index{C\-C\-Drawing\-Primitives.\-h@{C\-C\-Drawing\-Primitives.\-h}!cc\-Draw\-Color4\-B@{cc\-Draw\-Color4\-B}}
+\index{cc\-Draw\-Color4\-B@{cc\-Draw\-Color4\-B}!CCDrawingPrimitives.h@{C\-C\-Drawing\-Primitives.\-h}}
+\subsubsection[{cc\-Draw\-Color4\-B}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Draw\-Color4\-B} (
+\begin{DoxyParamCaption}
+\item[{G\-Lubyte}]{r, }
+\item[{G\-Lubyte}]{g, }
+\item[{G\-Lubyte}]{b, }
+\item[{G\-Lubyte}]{a}
+\end{DoxyParamCaption}
+)}}\label{_c_c_drawing_primitives_8h_a346de4244b39347bad04e1fd0f069e31}
+set the drawing color with 4 unsigned bytes \begin{DoxySince}{Since}
+v2.\-0 
+\end{DoxySince}
+
+
+Referenced by cc\-Draw\-Color4\-B().
+
+
+\begin{DoxyCode}
+{
+        color_ =  (ccColor4F) {r/255.0f, g/255.0f, b/255.0f, a/255.0f};
+}
+\end{DoxyCode}
+\hypertarget{_c_c_drawing_primitives_8h_ae8527aa3c0e656a7cae51b95575387a4}{\index{C\-C\-Drawing\-Primitives.\-h@{C\-C\-Drawing\-Primitives.\-h}!cc\-Draw\-Color4\-F@{cc\-Draw\-Color4\-F}}
+\index{cc\-Draw\-Color4\-F@{cc\-Draw\-Color4\-F}!CCDrawingPrimitives.h@{C\-C\-Drawing\-Primitives.\-h}}
+\subsubsection[{cc\-Draw\-Color4\-F}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Draw\-Color4\-F} (
+\begin{DoxyParamCaption}
+\item[{G\-Lfloat}]{r, }
+\item[{G\-Lfloat}]{g, }
+\item[{G\-Lfloat}]{b, }
+\item[{G\-Lfloat}]{a}
+\end{DoxyParamCaption}
+)}}\label{_c_c_drawing_primitives_8h_ae8527aa3c0e656a7cae51b95575387a4}
+set the drawing color with 4 floats \begin{DoxySince}{Since}
+v2.\-0 
+\end{DoxySince}
+
+
+Referenced by cc\-Draw\-Color4\-F().
+
+
+\begin{DoxyCode}
+{
+        color_ = (ccColor4F) {r, g, b, a};
+}
+\end{DoxyCode}
+\hypertarget{_c_c_drawing_primitives_8h_a5a391711c0aa611a06167bdd7637571f}{\index{C\-C\-Drawing\-Primitives.\-h@{C\-C\-Drawing\-Primitives.\-h}!cc\-Draw\-Cubic\-Bezier@{cc\-Draw\-Cubic\-Bezier}}
+\index{cc\-Draw\-Cubic\-Bezier@{cc\-Draw\-Cubic\-Bezier}!CCDrawingPrimitives.h@{C\-C\-Drawing\-Primitives.\-h}}
+\subsubsection[{cc\-Draw\-Cubic\-Bezier}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Draw\-Cubic\-Bezier} (
+\begin{DoxyParamCaption}
+\item[{C\-G\-Point}]{origin, }
+\item[{C\-G\-Point}]{control1, }
+\item[{C\-G\-Point}]{control2, }
+\item[{C\-G\-Point}]{destination, }
+\item[{N\-S\-U\-Integer}]{segments}
+\end{DoxyParamCaption}
+)}}\label{_c_c_drawing_primitives_8h_a5a391711c0aa611a06167bdd7637571f}
+draws a cubic bezier path measured in points. \begin{DoxyWarning}{Warning}
+This function could be pretty slow. Use it only for debugging purposes. 
+\end{DoxyWarning}
+\begin{DoxySince}{Since}
+v0.\-8 
+\end{DoxySince}
+
+
+Referenced by cc\-Draw\-Cubic\-Bezier().
+
+
+\begin{DoxyCode}
+{
+        lazy_init();
+
+        ccVertex2F vertices[segments + 1];
+
+        float t = 0;
+        for(NSUInteger i = 0; i < segments; i++)
+        {
+                vertices[i].x = powf(1 - t, 3) * origin.x + 3.0f * powf(1 - t, 
+      2) * t * control1.x + 3.0f * (1 - t) * t * t * control2.x + t * t * t * 
+      destination.x;
+                vertices[i].y = powf(1 - t, 3) * origin.y + 3.0f * powf(1 - t, 
+      2) * t * control1.y + 3.0f * (1 - t) * t * t * control2.y + t * t * t * 
+      destination.y;
+                t += 1.0f / segments;
+        }
+        vertices[segments] = (ccVertex2F) {destination.x, destination.y};
+
+        [shader_ use];
+        [shader_ setUniformsForBuiltins];    
+        [shader_ setUniformLocation:colorLocation_ with4fv:(GLfloat*) &color_.r
+       count:1];
+
+        ccGLEnableVertexAttribs( kCCVertexAttribFlag_Position );
+
+        glVertexAttribPointer(kCCVertexAttrib_Position, 2, GL_FLOAT, GL_FALSE, 
+      0, vertices);
+        glDrawArrays(GL_LINE_STRIP, 0, (GLsizei) segments + 1);
+        
+        CC_INCREMENT_GL_DRAWS(1);
+}
+\end{DoxyCode}
+\hypertarget{_c_c_drawing_primitives_8h_a26a514883252b7cd5461fa8472309416}{\index{C\-C\-Drawing\-Primitives.\-h@{C\-C\-Drawing\-Primitives.\-h}!cc\-Draw\-Line@{cc\-Draw\-Line}}
+\index{cc\-Draw\-Line@{cc\-Draw\-Line}!CCDrawingPrimitives.h@{C\-C\-Drawing\-Primitives.\-h}}
+\subsubsection[{cc\-Draw\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Draw\-Line} (
+\begin{DoxyParamCaption}
+\item[{C\-G\-Point}]{origin, }
+\item[{C\-G\-Point}]{destination}
+\end{DoxyParamCaption}
+)}}\label{_c_c_drawing_primitives_8h_a26a514883252b7cd5461fa8472309416}
+draws a line given the origin and destination point measured in points. 
+
+Referenced by cc\-Draw\-Line(), and cc\-Draw\-Rect().
+
+
+\begin{DoxyCode}
+{
+        lazy_init();
+
+        ccVertex2F vertices[2] = {
+                {origin.x, origin.y},
+                {destination.x, destination.y}
+        };
+
+        [shader_ use];
+        [shader_ setUniformsForBuiltins];
+        [shader_ setUniformLocation:colorLocation_ with4fv:(GLfloat*) &color_.r
+       count:1];
+
+        ccGLEnableVertexAttribs( kCCVertexAttribFlag_Position );
+        glVertexAttribPointer(kCCVertexAttrib_Position, 2, GL_FLOAT, GL_FALSE, 
+      0, vertices);
+        glDrawArrays(GL_LINES, 0, 2);
+        
+        CC_INCREMENT_GL_DRAWS(1);
+}
+\end{DoxyCode}
+\hypertarget{_c_c_drawing_primitives_8h_a049d8eec041179d6e70f2428d8ebf248}{\index{C\-C\-Drawing\-Primitives.\-h@{C\-C\-Drawing\-Primitives.\-h}!cc\-Draw\-Point@{cc\-Draw\-Point}}
+\index{cc\-Draw\-Point@{cc\-Draw\-Point}!CCDrawingPrimitives.h@{C\-C\-Drawing\-Primitives.\-h}}
+\subsubsection[{cc\-Draw\-Point}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Draw\-Point} (
+\begin{DoxyParamCaption}
+\item[{C\-G\-Point}]{point}
+\end{DoxyParamCaption}
+)}}\label{_c_c_drawing_primitives_8h_a049d8eec041179d6e70f2428d8ebf248}
+draws a point given x and y coordinate measured in points. 
+
+Referenced by cc\-Draw\-Point().
+
+
+\begin{DoxyCode}
+{
+        lazy_init();
+
+        ccVertex2F p = (ccVertex2F) {point.x, point.y};
+
+        ccGLEnableVertexAttribs( kCCVertexAttribFlag_Position );
+
+        [shader_ use];
+        [shader_ setUniformsForBuiltins];
+
+        [shader_ setUniformLocation:colorLocation_ with4fv:(GLfloat*) &color_.r
+       count:1];
+        [shader_ setUniformLocation:pointSizeLocation_ withF1:pointSize_];
+
+        glVertexAttribPointer(kCCVertexAttrib_Position, 2, GL_FLOAT, GL_FALSE, 
+      0, &p);
+
+        glDrawArrays(GL_POINTS, 0, 1);
+        
+        CC_INCREMENT_GL_DRAWS(1);
+}
+\end{DoxyCode}
+\hypertarget{_c_c_drawing_primitives_8h_ad545cd6e2e2350e278d8eeafcb8c3762}{\index{C\-C\-Drawing\-Primitives.\-h@{C\-C\-Drawing\-Primitives.\-h}!cc\-Draw\-Points@{cc\-Draw\-Points}}
+\index{cc\-Draw\-Points@{cc\-Draw\-Points}!CCDrawingPrimitives.h@{C\-C\-Drawing\-Primitives.\-h}}
+\subsubsection[{cc\-Draw\-Points}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Draw\-Points} (
+\begin{DoxyParamCaption}
+\item[{const C\-G\-Point $\ast$}]{points, }
+\item[{N\-S\-U\-Integer}]{number\-Of\-Points}
+\end{DoxyParamCaption}
+)}}\label{_c_c_drawing_primitives_8h_ad545cd6e2e2350e278d8eeafcb8c3762}
+draws an array of points. \begin{DoxySince}{Since}
+v0.\-7.\-2 
+\end{DoxySince}
+
+
+Referenced by cc\-Draw\-Points().
+
+
+\begin{DoxyCode}
+{
+        lazy_init();
+
+        ccGLEnableVertexAttribs( kCCVertexAttribFlag_Position );
+
+        [shader_ use];
+        [shader_ setUniformsForBuiltins];
+        [shader_ setUniformLocation:colorLocation_ with4fv:(GLfloat*) &color_.r
+       count:1];
+        [shader_ setUniformLocation:pointSizeLocation_ withF1:pointSize_];
+
+        // XXX: Mac OpenGL error. arrays can't go out of scope before draw is
+       executed
+        ccVertex2F newPoints[numberOfPoints];
+
+        // iPhone and 32-bit machines optimization
+        if( sizeof(CGPoint) == sizeof(ccVertex2F) )
+                glVertexAttribPointer(kCCVertexAttrib_Position, 2, GL_FLOAT, 
+      GL_FALSE, 0, points);
+
+        else
+    {
+                // Mac on 64-bit
+                for( NSUInteger i=0; i<numberOfPoints;i++)
+                        newPoints[i] = (ccVertex2F) { points[i].x, points[i].y 
+      };
+
+                glVertexAttribPointer(kCCVertexAttrib_Position, 2, GL_FLOAT, 
+      GL_FALSE, 0, newPoints);
+        }
+
+    glDrawArrays(GL_POINTS, 0, (GLsizei) numberOfPoints);
+        
+        CC_INCREMENT_GL_DRAWS(1);
+}
+\end{DoxyCode}
+\hypertarget{_c_c_drawing_primitives_8h_ac0b6ec146da9061bfb0c29e3dd933c1a}{\index{C\-C\-Drawing\-Primitives.\-h@{C\-C\-Drawing\-Primitives.\-h}!cc\-Draw\-Poly@{cc\-Draw\-Poly}}
+\index{cc\-Draw\-Poly@{cc\-Draw\-Poly}!CCDrawingPrimitives.h@{C\-C\-Drawing\-Primitives.\-h}}
+\subsubsection[{cc\-Draw\-Poly}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Draw\-Poly} (
+\begin{DoxyParamCaption}
+\item[{const C\-G\-Point $\ast$}]{vertices, }
+\item[{N\-S\-U\-Integer}]{num\-Of\-Vertices, }
+\item[{B\-O\-O\-L}]{close\-Polygon}
+\end{DoxyParamCaption}
+)}}\label{_c_c_drawing_primitives_8h_ac0b6ec146da9061bfb0c29e3dd933c1a}
+draws a polygon given a pointer to C\-G\-Point coordinates and the number of vertices measured in points. The polygon can be closed or open 
+
+Referenced by cc\-Draw\-Poly(), and C\-C\-Sprite\-::update\-Transform.
+
+
+\begin{DoxyCode}
+{
+        lazy_init();
+
+        [shader_ use];
+        [shader_ setUniformsForBuiltins];
+        [shader_ setUniformLocation:colorLocation_ with4fv:(GLfloat*) &color_.r
+       count:1];
+
+        ccGLEnableVertexAttribs( kCCVertexAttribFlag_Position );
+
+        // XXX: Mac OpenGL error. arrays can't go out of scope before draw is
+       executed
+        ccVertex2F newPoli[numberOfPoints];
+
+        // iPhone and 32-bit machines optimization
+        if( sizeof(CGPoint) == sizeof(ccVertex2F) )
+                glVertexAttribPointer(kCCVertexAttrib_Position, 2, GL_FLOAT, 
+      GL_FALSE, 0, poli);
+
+        else
+    {
+                // Mac on 64-bit
+                for( NSUInteger i=0; i<numberOfPoints;i++)
+                        newPoli[i] = (ccVertex2F) { poli[i].x, poli[i].y };
+
+                glVertexAttribPointer(kCCVertexAttrib_Position, 2, GL_FLOAT, 
+      GL_FALSE, 0, newPoli);
+        }
+
+        if( closePolygon )
+                glDrawArrays(GL_LINE_LOOP, 0, (GLsizei) numberOfPoints);
+        else
+                glDrawArrays(GL_LINE_STRIP, 0, (GLsizei) numberOfPoints);
+        
+        CC_INCREMENT_GL_DRAWS(1);
+}
+\end{DoxyCode}
+\hypertarget{_c_c_drawing_primitives_8h_ae8eca0753e76b604d747dcb9f8c74cb4}{\index{C\-C\-Drawing\-Primitives.\-h@{C\-C\-Drawing\-Primitives.\-h}!cc\-Draw\-Quad\-Bezier@{cc\-Draw\-Quad\-Bezier}}
+\index{cc\-Draw\-Quad\-Bezier@{cc\-Draw\-Quad\-Bezier}!CCDrawingPrimitives.h@{C\-C\-Drawing\-Primitives.\-h}}
+\subsubsection[{cc\-Draw\-Quad\-Bezier}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Draw\-Quad\-Bezier} (
+\begin{DoxyParamCaption}
+\item[{C\-G\-Point}]{origin, }
+\item[{C\-G\-Point}]{control, }
+\item[{C\-G\-Point}]{destination, }
+\item[{N\-S\-U\-Integer}]{segments}
+\end{DoxyParamCaption}
+)}}\label{_c_c_drawing_primitives_8h_ae8eca0753e76b604d747dcb9f8c74cb4}
+draws a quad bezier path measured in points. \begin{DoxyWarning}{Warning}
+This function could be pretty slow. Use it only for debugging purposes. 
+\end{DoxyWarning}
+\begin{DoxySince}{Since}
+v0.\-8 
+\end{DoxySince}
+
+
+Referenced by cc\-Draw\-Quad\-Bezier().
+
+
+\begin{DoxyCode}
+{
+        lazy_init();
+
+        ccVertex2F vertices[segments + 1];
+
+        float t = 0.0f;
+        for(NSUInteger i = 0; i < segments; i++)
+        {
+                vertices[i].x = powf(1 - t, 2) * origin.x + 2.0f * (1 - t) * t 
+      * control.x + t * t * destination.x;
+                vertices[i].y = powf(1 - t, 2) * origin.y + 2.0f * (1 - t) * t 
+      * control.y + t * t * destination.y;
+                t += 1.0f / segments;
+        }
+        vertices[segments] = (ccVertex2F) {destination.x, destination.y};
+
+        [shader_ use];
+        [shader_ setUniformsForBuiltins];    
+        [shader_ setUniformLocation:colorLocation_ with4fv:(GLfloat*) &color_.r
+       count:1];
+
+        ccGLEnableVertexAttribs( kCCVertexAttribFlag_Position );
+
+        glVertexAttribPointer(kCCVertexAttrib_Position, 2, GL_FLOAT, GL_FALSE, 
+      0, vertices);
+        glDrawArrays(GL_LINE_STRIP, 0, (GLsizei) segments + 1);
+        
+        CC_INCREMENT_GL_DRAWS(1);
+}
+\end{DoxyCode}
+\hypertarget{_c_c_drawing_primitives_8h_a8b853b4c28824116795f75704e70511a}{\index{C\-C\-Drawing\-Primitives.\-h@{C\-C\-Drawing\-Primitives.\-h}!cc\-Draw\-Rect@{cc\-Draw\-Rect}}
+\index{cc\-Draw\-Rect@{cc\-Draw\-Rect}!CCDrawingPrimitives.h@{C\-C\-Drawing\-Primitives.\-h}}
+\subsubsection[{cc\-Draw\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Draw\-Rect} (
+\begin{DoxyParamCaption}
+\item[{C\-G\-Point}]{origin, }
+\item[{C\-G\-Point}]{destination}
+\end{DoxyParamCaption}
+)}}\label{_c_c_drawing_primitives_8h_a8b853b4c28824116795f75704e70511a}
+draws a rectangle given the origin and destination point measured in points. 
+
+Referenced by cc\-Draw\-Rect().
+
+
+\begin{DoxyCode}
+{
+        ccDrawLine(CGPointMake(origin.x, origin.y), CGPointMake(destination.x, 
+      origin.y));
+        ccDrawLine(CGPointMake(destination.x, origin.y), CGPointMake(
+      destination.x, destination.y));
+        ccDrawLine(CGPointMake(destination.x, destination.y), CGPointMake(
+      origin.x, destination.y));
+        ccDrawLine(CGPointMake(origin.x, destination.y), CGPointMake(origin.x, 
+      origin.y));
+}
+\end{DoxyCode}
+\hypertarget{_c_c_drawing_primitives_8h_a1ee08ff6fe6d04c98bc594d769ec847c}{\index{C\-C\-Drawing\-Primitives.\-h@{C\-C\-Drawing\-Primitives.\-h}!cc\-Draw\-Solid\-Poly@{cc\-Draw\-Solid\-Poly}}
+\index{cc\-Draw\-Solid\-Poly@{cc\-Draw\-Solid\-Poly}!CCDrawingPrimitives.h@{C\-C\-Drawing\-Primitives.\-h}}
+\subsubsection[{cc\-Draw\-Solid\-Poly}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Draw\-Solid\-Poly} (
+\begin{DoxyParamCaption}
+\item[{const C\-G\-Point $\ast$}]{poli, }
+\item[{N\-S\-U\-Integer}]{number\-Of\-Points, }
+\item[{{\bf cc\-Color4\-F}}]{color}
+\end{DoxyParamCaption}
+)}}\label{_c_c_drawing_primitives_8h_a1ee08ff6fe6d04c98bc594d769ec847c}
+draws a solid polygon given a pointer to C\-G\-Point coordinates, the number of vertices measured in points, and a color. 
+
+Referenced by cc\-Draw\-Solid\-Poly(), and cc\-Draw\-Solid\-Rect().
+
+
+\begin{DoxyCode}
+{
+        lazy_init();
+    
+        [shader_ use];
+        [shader_ setUniformsForBuiltins];    
+        [shader_ setUniformLocation:colorLocation_ with4fv:(GLfloat*) &color.r 
+      count:1];
+
+        ccGLEnableVertexAttribs( kCCVertexAttribFlag_Position );
+
+        // XXX: Mac OpenGL error. arrays can't go out of scope before draw is
+       executed
+        ccVertex2F newPoli[numberOfPoints];
+
+        // iPhone and 32-bit machines optimization
+        if( sizeof(CGPoint) == sizeof(ccVertex2F) )
+                glVertexAttribPointer(kCCVertexAttrib_Position, 2, GL_FLOAT, 
+      GL_FALSE, 0, poli);
+        
+        else
+    {
+                // Mac on 64-bit
+                for( NSUInteger i=0; i<numberOfPoints;i++)
+                        newPoli[i] = (ccVertex2F) { poli[i].x, poli[i].y };
+                
+                glVertexAttribPointer(kCCVertexAttrib_Position, 2, GL_FLOAT, 
+      GL_FALSE, 0, newPoli);
+        }    
+    
+        glDrawArrays(GL_TRIANGLE_FAN, 0, (GLsizei) numberOfPoints);
+}
+\end{DoxyCode}
+\hypertarget{_c_c_drawing_primitives_8h_a611757cca4322b06680210360b405d90}{\index{C\-C\-Drawing\-Primitives.\-h@{C\-C\-Drawing\-Primitives.\-h}!cc\-Draw\-Solid\-Rect@{cc\-Draw\-Solid\-Rect}}
+\index{cc\-Draw\-Solid\-Rect@{cc\-Draw\-Solid\-Rect}!CCDrawingPrimitives.h@{C\-C\-Drawing\-Primitives.\-h}}
+\subsubsection[{cc\-Draw\-Solid\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Draw\-Solid\-Rect} (
+\begin{DoxyParamCaption}
+\item[{C\-G\-Point}]{origin, }
+\item[{C\-G\-Point}]{destination, }
+\item[{{\bf cc\-Color4\-F}}]{color}
+\end{DoxyParamCaption}
+)}}\label{_c_c_drawing_primitives_8h_a611757cca4322b06680210360b405d90}
+draws a solid rectangle given the origin and destination point measured in points. \begin{DoxySince}{Since}
+1.\-1 
+\end{DoxySince}
+
+
+Referenced by cc\-Draw\-Solid\-Rect().
+
+
+\begin{DoxyCode}
+{
+        CGPoint vertices[] = {
+                origin,
+                {destination.x, origin.y},
+                destination,
+                {origin.x, destination.y},
+        };
+        
+        ccDrawSolidPoly(vertices, 4, color );
+}
+\end{DoxyCode}
+\hypertarget{_c_c_drawing_primitives_8h_a97ead72150af59c1bc18faa6d10f9240}{\index{C\-C\-Drawing\-Primitives.\-h@{C\-C\-Drawing\-Primitives.\-h}!cc\-Point\-Size@{cc\-Point\-Size}}
+\index{cc\-Point\-Size@{cc\-Point\-Size}!CCDrawingPrimitives.h@{C\-C\-Drawing\-Primitives.\-h}}
+\subsubsection[{cc\-Point\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cc\-Point\-Size} (
+\begin{DoxyParamCaption}
+\item[{G\-Lfloat}]{point\-Size}
+\end{DoxyParamCaption}
+)}}\label{_c_c_drawing_primitives_8h_a97ead72150af59c1bc18faa6d10f9240}
+set the point size in points. Default 1. \begin{DoxySince}{Since}
+v2.\-0 
+\end{DoxySince}
+
+
+Referenced by cc\-Point\-Size().
+
+
+\begin{DoxyCode}
+{
+        pointSize_ = pointSize * CC_CONTENT_SCALE_FACTOR();
+#ifdef __CC_PLATFORM_IOS
+#elif defined(__CC_PLATFORM_MAC)
+        glPointSize( pointSize );
+#endif
+}
+\end{DoxyCode}

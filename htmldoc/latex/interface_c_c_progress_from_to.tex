@@ -1,0 +1,86 @@
+\hypertarget{interface_c_c_progress_from_to}{\section{C\-C\-Progress\-From\-To Class Reference}
+\label{interface_c_c_progress_from_to}\index{C\-C\-Progress\-From\-To@{C\-C\-Progress\-From\-To}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Progress\-Timer.\-h$>$}
+
+Inheritance diagram for C\-C\-Progress\-From\-To\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_c_c_progress_from_to}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_progress_from_to_ae3dba5d6d303a02665d0b2a3130cff54}{init\-With\-Duration\-:from\-:to\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_progress_from_to_a03e2c6358b18b886235f60bd13b718b3}{action\-With\-Duration\-:from\-:to\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_progress_from_to_a28ce1716b8f1e62ea5030bb38be10c54}{float {\bfseries to\-\_\-}}\label{interface_c_c_progress_from_to_a28ce1716b8f1e62ea5030bb38be10c54}
+
+\item 
+\hypertarget{interface_c_c_progress_from_to_a69a53ffd582d5b1c785d982f31bf7bb3}{float {\bfseries from\-\_\-}}\label{interface_c_c_progress_from_to_a69a53ffd582d5b1c785d982f31bf7bb3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Progress from a percentage to another percentage \begin{DoxySince}{Since}
+v0.\-99.\-1 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_progress_from_to_a03e2c6358b18b886235f60bd13b718b3}{\index{C\-C\-Progress\-From\-To@{C\-C\-Progress\-From\-To}!action\-With\-Duration\-:from\-:to\-:@{action\-With\-Duration\-:from\-:to\-:}}
+\index{action\-With\-Duration\-:from\-:to\-:@{action\-With\-Duration\-:from\-:to\-:}!CCProgressFromTo@{C\-C\-Progress\-From\-To}}
+\subsubsection[{action\-With\-Duration\-:from\-:to\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{duration}
+\item[{from:(float)}]{from\-Percentage}
+\item[{to:(float)}]{to\-Percentage}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_progress_from_to_a03e2c6358b18b886235f60bd13b718b3}
+Creates and initializes the action with a duration, a \char`\"{}from\char`\"{} percentage and a \char`\"{}to\char`\"{} percentage 
+\begin{DoxyCode}
+                        : (ccTime) t from:(float)fromPercentage to:(float) 
+      toPercentage
+{
+        return [[[self alloc] initWithDuration: t from: fromPercentage to: 
+      toPercentage] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_progress_from_to_ae3dba5d6d303a02665d0b2a3130cff54}{\index{C\-C\-Progress\-From\-To@{C\-C\-Progress\-From\-To}!init\-With\-Duration\-:from\-:to\-:@{init\-With\-Duration\-:from\-:to\-:}}
+\index{init\-With\-Duration\-:from\-:to\-:@{init\-With\-Duration\-:from\-:to\-:}!CCProgressFromTo@{C\-C\-Progress\-From\-To}}
+\subsubsection[{init\-With\-Duration\-:from\-:to\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{duration}
+\item[{from:(float)}]{from\-Percentage}
+\item[{to:(float)}]{to\-Percentage}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_progress_from_to_ae3dba5d6d303a02665d0b2a3130cff54}
+Initializes the action with a duration, a \char`\"{}from\char`\"{} percentage and a \char`\"{}to\char`\"{} percentage 
+\begin{DoxyCode}
+                      : (ccTime) t from:(float)fromPercentage to:(float) 
+      toPercentage
+{
+        if( (self=[super initWithDuration: t] ) ){
+                to_ = toPercentage;
+                from_ = fromPercentage;
+        }
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Progress\-Timer.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Progress\-Timer.\-m\end{DoxyCompactItemize}

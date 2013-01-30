@@ -1,0 +1,52 @@
+\hypertarget{classb2_contact_filter}{\section{b2\-Contact\-Filter Class Reference}
+\label{classb2_contact_filter}\index{b2\-Contact\-Filter@{b2\-Contact\-Filter}}
+}
+
+
+{\ttfamily \#include $<$b2\-World\-Callbacks.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classb2_contact_filter_aac8f6155d1f577d125db587f5269289b}{Should\-Collide} (\hyperlink{classb2_fixture}{b2\-Fixture} $\ast$fixture\-A, \hyperlink{classb2_fixture}{b2\-Fixture} $\ast$fixture\-B)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implement this class to provide collision filtering. In other words, you can implement this class if you want finer control over contact creation. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classb2_contact_filter_aac8f6155d1f577d125db587f5269289b}{\index{b2\-Contact\-Filter@{b2\-Contact\-Filter}!Should\-Collide@{Should\-Collide}}
+\index{Should\-Collide@{Should\-Collide}!b2ContactFilter@{b2\-Contact\-Filter}}
+\subsubsection[{Should\-Collide}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf b2\-Contact\-Filter\-::\-Should\-Collide} (
+\begin{DoxyParamCaption}
+\item[{{\bf b2\-Fixture} $\ast$}]{fixture\-A, }
+\item[{{\bf b2\-Fixture} $\ast$}]{fixture\-B}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classb2_contact_filter_aac8f6155d1f577d125db587f5269289b}
+Return true if contact calculations should be performed between these two shapes. \begin{DoxyWarning}{Warning}
+for performance reasons this is only called when the A\-A\-B\-Bs begin to overlap. 
+\end{DoxyWarning}
+
+\begin{DoxyCode}
+{
+        const b2Filter& filterA = fixtureA->GetFilterData();
+        const b2Filter& filterB = fixtureB->GetFilterData();
+
+        if (filterA.groupIndex == filterB.groupIndex && filterA.groupIndex != 0
+      )
+        {
+                return filterA.groupIndex > 0;
+        }
+
+        bool collide = (filterA.maskBits & filterB.categoryBits) != 0 && (
+      filterA.categoryBits & filterB.maskBits) != 0;
+        return collide;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Dynamics/b2\-World\-Callbacks.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Dynamics/b2\-World\-Callbacks.\-cpp\end{DoxyCompactItemize}

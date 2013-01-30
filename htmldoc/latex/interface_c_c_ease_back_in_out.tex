@@ -1,0 +1,69 @@
+\hypertarget{interface_c_c_ease_back_in_out}{\section{C\-C\-Ease\-Back\-In\-Out Class Reference}
+\label{interface_c_c_ease_back_in_out}\index{C\-C\-Ease\-Back\-In\-Out@{C\-C\-Ease\-Back\-In\-Out}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Ease.\-h$>$}
+
+Inheritance diagram for C\-C\-Ease\-Back\-In\-Out\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{interface_c_c_ease_back_in_out}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_c_c_ease_back_in_out_ab51c7ffcd14a89520fbef572796930dd}{update\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_ease_back_in_out}{C\-C\-Ease\-Back\-In\-Out} action. \begin{DoxyWarning}{Warning}
+This action doesn't use a bijective function. Actions like Sequence might have an unexpected result when used with this action. 
+\end{DoxyWarning}
+\begin{DoxySince}{Since}
+v0.\-8.\-2 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_ease_back_in_out_ab51c7ffcd14a89520fbef572796930dd}{\index{C\-C\-Ease\-Back\-In\-Out@{C\-C\-Ease\-Back\-In\-Out}!update\-:@{update\-:}}
+\index{update\-:@{update\-:}!CCEaseBackInOut@{C\-C\-Ease\-Back\-In\-Out}}
+\subsubsection[{update\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf update\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{time}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_ease_back_in_out_ab51c7ffcd14a89520fbef572796930dd}
+called once per frame. time a value between 0 and 1 For example\-:
+\begin{DoxyItemize}
+\item 0 means that the action just started
+\item 0.\-5 means that the action is in the middle
+\item 1 means that the action is over 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{interface_c_c_action_a41207f5e0f31713136c8b690fcf166ef}{C\-C\-Action}.
+
+
+\begin{DoxyCode}
+              : (ccTime) t
+{
+        ccTime overshoot = 1.70158f * 1.525f;
+
+        t = t * 2;
+        if (t < 1)
+                [other update: (t * t * ((overshoot + 1) * t - overshoot)) / 2]
+      ;
+        else {
+                t = t - 2;
+                [other update: (t * t * ((overshoot + 1) * t + overshoot)) / 2 
+      + 1];
+        }
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Ease.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Ease.\-m\end{DoxyCompactItemize}

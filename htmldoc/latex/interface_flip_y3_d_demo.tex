@@ -1,0 +1,44 @@
+\hypertarget{interface_flip_y3_d_demo}{\section{Flip\-Y3\-D\-Demo Class Reference}
+\label{interface_flip_y3_d_demo}\index{Flip\-Y3\-D\-Demo@{Flip\-Y3\-D\-Demo}}
+}
+Inheritance diagram for Flip\-Y3\-D\-Demo\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{interface_flip_y3_d_demo}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_flip_y3_d_demo_abe7a83e351b66a957b13624a3aa4c140}{action\-With\-Duration\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_flip_y3_d_demo_abe7a83e351b66a957b13624a3aa4c140}{\index{Flip\-Y3\-D\-Demo@{Flip\-Y3\-D\-Demo}!action\-With\-Duration\-:@{action\-With\-Duration\-:}}
+\index{action\-With\-Duration\-:@{action\-With\-Duration\-:}!FlipY3DDemo@{Flip\-Y3\-D\-Demo}}
+\subsubsection[{action\-With\-Duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_flip_y3_d_demo_abe7a83e351b66a957b13624a3aa4c140}
+creates the action with duration 
+
+Reimplemented from \hyperlink{interface_c_c_flip_x3_d_a61912e0504905ba58097d732977c416f}{C\-C\-Flip\-X3\-D}.
+
+
+\begin{DoxyCode}
+                        :(ccTime)t
+{
+        id flipy = [CCFlipY3D actionWithDuration:t];
+        id flipy_back = [flipy reverse];
+        id delay = [CCDelayTime actionWithDuration:2];
+
+        return [CCSequence actions: flipy, delay, flipy_back, nil];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/tests/Effects\-Test.\-m\end{DoxyCompactItemize}

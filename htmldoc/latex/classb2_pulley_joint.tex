@@ -1,0 +1,145 @@
+\hypertarget{classb2_pulley_joint}{\section{b2\-Pulley\-Joint Class Reference}
+\label{classb2_pulley_joint}\index{b2\-Pulley\-Joint@{b2\-Pulley\-Joint}}
+}
+
+
+{\ttfamily \#include $<$b2\-Pulley\-Joint.\-h$>$}
+
+Inheritance diagram for b2\-Pulley\-Joint\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classb2_pulley_joint}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_pulley_joint_a05ac0d0d927e9541f08b07cb1bf9ec56}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{classb2_pulley_joint_a05ac0d0d927e9541f08b07cb1bf9ec56}{Get\-Anchor\-A} () const }\label{classb2_pulley_joint_a05ac0d0d927e9541f08b07cb1bf9ec56}
+
+\begin{DoxyCompactList}\small\item\em Get the anchor point on body\-A in world coordinates. \end{DoxyCompactList}\item 
+\hypertarget{classb2_pulley_joint_a5cc3596f683d621b9a885c2569ecd452}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{classb2_pulley_joint_a5cc3596f683d621b9a885c2569ecd452}{Get\-Anchor\-B} () const }\label{classb2_pulley_joint_a5cc3596f683d621b9a885c2569ecd452}
+
+\begin{DoxyCompactList}\small\item\em Get the anchor point on body\-B in world coordinates. \end{DoxyCompactList}\item 
+\hypertarget{classb2_pulley_joint_a38c174bf1cf1011063ff4c16556b331e}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{classb2_pulley_joint_a38c174bf1cf1011063ff4c16556b331e}{Get\-Reaction\-Force} (float32 inv\-\_\-dt) const }\label{classb2_pulley_joint_a38c174bf1cf1011063ff4c16556b331e}
+
+\begin{DoxyCompactList}\small\item\em Get the reaction force on body\-B at the joint anchor in Newtons. \end{DoxyCompactList}\item 
+\hypertarget{classb2_pulley_joint_a418b200055623474c44742b1342dd278}{float32 \hyperlink{classb2_pulley_joint_a418b200055623474c44742b1342dd278}{Get\-Reaction\-Torque} (float32 inv\-\_\-dt) const }\label{classb2_pulley_joint_a418b200055623474c44742b1342dd278}
+
+\begin{DoxyCompactList}\small\item\em Get the reaction torque on body\-B in N$\ast$m. \end{DoxyCompactList}\item 
+\hypertarget{classb2_pulley_joint_a19eefa28d2647882406ea9bfe2850a9e}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{classb2_pulley_joint_a19eefa28d2647882406ea9bfe2850a9e}{Get\-Ground\-Anchor\-A} () const }\label{classb2_pulley_joint_a19eefa28d2647882406ea9bfe2850a9e}
+
+\begin{DoxyCompactList}\small\item\em Get the first ground anchor. \end{DoxyCompactList}\item 
+\hypertarget{classb2_pulley_joint_a1b49d0dbce802f19711a9ab6d7dadfee}{\hyperlink{structb2_vec2}{b2\-Vec2} \hyperlink{classb2_pulley_joint_a1b49d0dbce802f19711a9ab6d7dadfee}{Get\-Ground\-Anchor\-B} () const }\label{classb2_pulley_joint_a1b49d0dbce802f19711a9ab6d7dadfee}
+
+\begin{DoxyCompactList}\small\item\em Get the second ground anchor. \end{DoxyCompactList}\item 
+\hypertarget{classb2_pulley_joint_a6b4c2e5cb4f5da48fcb074c7b5988084}{float32 \hyperlink{classb2_pulley_joint_a6b4c2e5cb4f5da48fcb074c7b5988084}{Get\-Length\-A} () const }\label{classb2_pulley_joint_a6b4c2e5cb4f5da48fcb074c7b5988084}
+
+\begin{DoxyCompactList}\small\item\em Get the current length of the segment attached to body\-A. \end{DoxyCompactList}\item 
+\hypertarget{classb2_pulley_joint_abc7f31a35c6fb32647fd15d57e4ce60c}{float32 \hyperlink{classb2_pulley_joint_abc7f31a35c6fb32647fd15d57e4ce60c}{Get\-Length\-B} () const }\label{classb2_pulley_joint_abc7f31a35c6fb32647fd15d57e4ce60c}
+
+\begin{DoxyCompactList}\small\item\em Get the current length of the segment attached to body\-B. \end{DoxyCompactList}\item 
+\hypertarget{classb2_pulley_joint_a625685e60d95b7c5a725e8586d146752}{float32 \hyperlink{classb2_pulley_joint_a625685e60d95b7c5a725e8586d146752}{Get\-Ratio} () const }\label{classb2_pulley_joint_a625685e60d95b7c5a725e8586d146752}
+
+\begin{DoxyCompactList}\small\item\em Get the pulley ratio. \end{DoxyCompactList}\item 
+\hypertarget{classb2_pulley_joint_ad12d0e03b5d07b2f8af1005c95c67aa2}{void \hyperlink{classb2_pulley_joint_ad12d0e03b5d07b2f8af1005c95c67aa2}{Dump} ()}\label{classb2_pulley_joint_ad12d0e03b5d07b2f8af1005c95c67aa2}
+
+\begin{DoxyCompactList}\small\item\em Dump joint to dm\-Log. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_pulley_joint_aca1b8dc6fb05c134ccbc0423674c1867}{{\bfseries b2\-Pulley\-Joint} (const \hyperlink{structb2_pulley_joint_def}{b2\-Pulley\-Joint\-Def} $\ast$data)}\label{classb2_pulley_joint_aca1b8dc6fb05c134ccbc0423674c1867}
+
+\item 
+\hypertarget{classb2_pulley_joint_a1b339ba58e82261beeb55f9ab04cfa7e}{void {\bfseries Init\-Velocity\-Constraints} (const \hyperlink{structb2_solver_data}{b2\-Solver\-Data} \&data)}\label{classb2_pulley_joint_a1b339ba58e82261beeb55f9ab04cfa7e}
+
+\item 
+\hypertarget{classb2_pulley_joint_a517858e93e24f3daa51be4873b22c2c3}{void {\bfseries Solve\-Velocity\-Constraints} (const \hyperlink{structb2_solver_data}{b2\-Solver\-Data} \&data)}\label{classb2_pulley_joint_a517858e93e24f3daa51be4873b22c2c3}
+
+\item 
+\hypertarget{classb2_pulley_joint_a8fcdd728e02b7c89372bf11b7732d976}{bool {\bfseries Solve\-Position\-Constraints} (const \hyperlink{structb2_solver_data}{b2\-Solver\-Data} \&data)}\label{classb2_pulley_joint_a8fcdd728e02b7c89372bf11b7732d976}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_pulley_joint_a13456d1c62a4e96e8247988152be4166}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-ground\-Anchor\-A}}\label{classb2_pulley_joint_a13456d1c62a4e96e8247988152be4166}
+
+\item 
+\hypertarget{classb2_pulley_joint_a9cc8195bf4e2d53606db0b49d9fc1cbc}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-ground\-Anchor\-B}}\label{classb2_pulley_joint_a9cc8195bf4e2d53606db0b49d9fc1cbc}
+
+\item 
+\hypertarget{classb2_pulley_joint_a26f2565f804692553e6b96e58621dbc9}{float32 {\bfseries m\-\_\-length\-A}}\label{classb2_pulley_joint_a26f2565f804692553e6b96e58621dbc9}
+
+\item 
+\hypertarget{classb2_pulley_joint_aa44e84a3eed2ded26fca07281e247bbd}{float32 {\bfseries m\-\_\-length\-B}}\label{classb2_pulley_joint_aa44e84a3eed2ded26fca07281e247bbd}
+
+\item 
+\hypertarget{classb2_pulley_joint_a58cb3464ba25236e316b35d66e92366f}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Anchor\-A}}\label{classb2_pulley_joint_a58cb3464ba25236e316b35d66e92366f}
+
+\item 
+\hypertarget{classb2_pulley_joint_af643cf90fb22709fe410164d8a46ea50}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Anchor\-B}}\label{classb2_pulley_joint_af643cf90fb22709fe410164d8a46ea50}
+
+\item 
+\hypertarget{classb2_pulley_joint_a0e73d1d31126331267a1661beb146bc7}{float32 {\bfseries m\-\_\-constant}}\label{classb2_pulley_joint_a0e73d1d31126331267a1661beb146bc7}
+
+\item 
+\hypertarget{classb2_pulley_joint_aa44594b9b4826c565da387bed5f02470}{float32 {\bfseries m\-\_\-ratio}}\label{classb2_pulley_joint_aa44594b9b4826c565da387bed5f02470}
+
+\item 
+\hypertarget{classb2_pulley_joint_a1e5b5fff8b1564688b38d139c5f7c65a}{float32 {\bfseries m\-\_\-impulse}}\label{classb2_pulley_joint_a1e5b5fff8b1564688b38d139c5f7c65a}
+
+\item 
+\hypertarget{classb2_pulley_joint_a6ef68a1d29ef264d4c2ab2d363d9eb97}{int32 {\bfseries m\-\_\-index\-A}}\label{classb2_pulley_joint_a6ef68a1d29ef264d4c2ab2d363d9eb97}
+
+\item 
+\hypertarget{classb2_pulley_joint_acbeb702d3db8a9560d9d1d57ebb1e7f2}{int32 {\bfseries m\-\_\-index\-B}}\label{classb2_pulley_joint_acbeb702d3db8a9560d9d1d57ebb1e7f2}
+
+\item 
+\hypertarget{classb2_pulley_joint_a8b49167603509d296aa8d04e46b13658}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-u\-A}}\label{classb2_pulley_joint_a8b49167603509d296aa8d04e46b13658}
+
+\item 
+\hypertarget{classb2_pulley_joint_a1354dfebc4658560b9d7e4b447b1dd5e}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-u\-B}}\label{classb2_pulley_joint_a1354dfebc4658560b9d7e4b447b1dd5e}
+
+\item 
+\hypertarget{classb2_pulley_joint_a4ebd669d4856b0c6d1d6f76d7a9eae2d}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-r\-A}}\label{classb2_pulley_joint_a4ebd669d4856b0c6d1d6f76d7a9eae2d}
+
+\item 
+\hypertarget{classb2_pulley_joint_a6be5e9ad2eeaee5cf25e1df61d923a58}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-r\-B}}\label{classb2_pulley_joint_a6be5e9ad2eeaee5cf25e1df61d923a58}
+
+\item 
+\hypertarget{classb2_pulley_joint_a82741929b0aa083f520a3d7f9ef675bb}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Center\-A}}\label{classb2_pulley_joint_a82741929b0aa083f520a3d7f9ef675bb}
+
+\item 
+\hypertarget{classb2_pulley_joint_abd382cd6772fa3be1958c4845369f6c3}{\hyperlink{structb2_vec2}{b2\-Vec2} {\bfseries m\-\_\-local\-Center\-B}}\label{classb2_pulley_joint_abd382cd6772fa3be1958c4845369f6c3}
+
+\item 
+\hypertarget{classb2_pulley_joint_a7c37029c6b7117a07bb8be552b44ee3f}{float32 {\bfseries m\-\_\-inv\-Mass\-A}}\label{classb2_pulley_joint_a7c37029c6b7117a07bb8be552b44ee3f}
+
+\item 
+\hypertarget{classb2_pulley_joint_ad4e470cbc2e9f596c93e144630657534}{float32 {\bfseries m\-\_\-inv\-Mass\-B}}\label{classb2_pulley_joint_ad4e470cbc2e9f596c93e144630657534}
+
+\item 
+\hypertarget{classb2_pulley_joint_a701fbc685109f5b397b968be2407b123}{float32 {\bfseries m\-\_\-inv\-I\-A}}\label{classb2_pulley_joint_a701fbc685109f5b397b968be2407b123}
+
+\item 
+\hypertarget{classb2_pulley_joint_a19278e2f7dcec7275aff55b1d760b398}{float32 {\bfseries m\-\_\-inv\-I\-B}}\label{classb2_pulley_joint_a19278e2f7dcec7275aff55b1d760b398}
+
+\item 
+\hypertarget{classb2_pulley_joint_a60efdc42d9fd8f4c50f96eb68ff3f191}{float32 {\bfseries m\-\_\-mass}}\label{classb2_pulley_joint_a60efdc42d9fd8f4c50f96eb68ff3f191}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classb2_pulley_joint_a54ade8ed3d794298108d7f4c4e4793fa}{class {\bfseries b2\-Joint}}\label{classb2_pulley_joint_a54ade8ed3d794298108d7f4c4e4793fa}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The pulley joint is connected to two bodies and two fixed ground points. The pulley supports a ratio such that\-: length1 + ratio $\ast$ length2 $<$= constant Yes, the force transmitted is scaled by the ratio. Warning\-: the pulley joint can get a bit squirrelly by itself. They often work better when combined with prismatic joints. You should also cover the the anchor points with static shapes to prevent one side from going to zero length. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Dynamics/\-Joints/b2\-Pulley\-Joint.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Box2\-D/\-Dynamics/\-Joints/b2\-Pulley\-Joint.\-cpp\end{DoxyCompactItemize}

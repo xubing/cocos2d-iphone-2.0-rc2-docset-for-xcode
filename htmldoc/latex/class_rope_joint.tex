@@ -1,0 +1,45 @@
+\hypertarget{class_rope_joint}{\section{Rope\-Joint Class Reference}
+\label{class_rope_joint}\index{Rope\-Joint@{Rope\-Joint}}
+}
+
+
+{\ttfamily \#include $<$Rope\-Joint.\-h$>$}
+
+Inheritance diagram for Rope\-Joint\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_rope_joint}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_rope_joint_a5dc03da5f7bd34bf60d3b62ff544e6c0}{void {\bfseries Keyboard} (unsigned char key)}\label{class_rope_joint_a5dc03da5f7bd34bf60d3b62ff544e6c0}
+
+\item 
+\hypertarget{class_rope_joint_ab16e28d5730775bfaa9d6aaa84b6cf8f}{void {\bfseries Step} (\hyperlink{struct_settings}{Settings} $\ast$settings)}\label{class_rope_joint_ab16e28d5730775bfaa9d6aaa84b6cf8f}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_rope_joint_a3effe2215e93188eb503b931d155eb90}{static \hyperlink{class_test}{Test} $\ast$ {\bfseries Create} ()}\label{class_rope_joint_a3effe2215e93188eb503b931d155eb90}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_rope_joint_af7f74f6644564606df1ea0f0d0a679f6}{\hyperlink{structb2_rope_joint_def}{b2\-Rope\-Joint\-Def} {\bfseries m\-\_\-rope\-Def}}\label{class_rope_joint_af7f74f6644564606df1ea0f0d0a679f6}
+
+\item 
+\hypertarget{class_rope_joint_a0a24afb4453b5ae06e56d750316cc5ee}{\hyperlink{classb2_joint}{b2\-Joint} $\ast$ {\bfseries m\-\_\-rope}}\label{class_rope_joint_a0a24afb4453b5ae06e56d750316cc5ee}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This test shows how a rope joint can be used to stabilize a chain of bodies with a heavy payload. Notice that the rope joint just prevents excessive stretching and has no other effect. By disabling the rope joint you can see that the Box2\-D solver has trouble supporting heavy bodies with light bodies. Try playing around with the densities, time step, and iterations to see how they affect stability. This test also shows how to use contact filtering. Filtering is configured so that the payload does not collide with the chain. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Box2d/\-Testbed/\-Tests/Rope\-Joint.\-h\end{DoxyCompactItemize}

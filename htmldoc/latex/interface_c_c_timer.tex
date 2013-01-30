@@ -1,0 +1,124 @@
+\hypertarget{interface_c_c_timer}{\section{C\-C\-Timer Class Reference}
+\label{interface_c_c_timer}\index{C\-C\-Timer@{C\-C\-Timer}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Scheduler.\-h$>$}
+
+Inheritance diagram for C\-C\-Timer\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_c_c_timer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_c_c_timer_a6cf9115615571fa8e1b4d83f4f79d1de}{update\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_timer_ac03e38ac4b394f7e82b8fefed59dd6e8}{\hyperlink{cc_types_8h_ae6c674aac4bfb46a4e6cb1e89bb66b4f}{cc\-Time} {\bfseries \-\_\-interval}}\label{interface_c_c_timer_ac03e38ac4b394f7e82b8fefed59dd6e8}
+
+\item 
+\hypertarget{interface_c_c_timer_aed63fbeb36d222ea19e5c91310397f59}{\hyperlink{cc_types_8h_ae6c674aac4bfb46a4e6cb1e89bb66b4f}{cc\-Time} {\bfseries \-\_\-elapsed}}\label{interface_c_c_timer_aed63fbeb36d222ea19e5c91310397f59}
+
+\item 
+\hypertarget{interface_c_c_timer_a4f5b9d9658e3091e0826fb592b325097}{B\-O\-O\-L {\bfseries \-\_\-run\-Forever}}\label{interface_c_c_timer_a4f5b9d9658e3091e0826fb592b325097}
+
+\item 
+\hypertarget{interface_c_c_timer_a6e0c0b911b48020b85954fd02cb17c12}{B\-O\-O\-L {\bfseries \-\_\-use\-Delay}}\label{interface_c_c_timer_a6e0c0b911b48020b85954fd02cb17c12}
+
+\item 
+\hypertarget{interface_c_c_timer_abe93719f2a38e7673d019787f8f8b8a1}{uint {\bfseries \-\_\-n\-Times\-Executed}}\label{interface_c_c_timer_abe93719f2a38e7673d019787f8f8b8a1}
+
+\item 
+\hypertarget{interface_c_c_timer_a69184eea51e77659e0d909f6c26f3c89}{uint {\bfseries \-\_\-repeat}}\label{interface_c_c_timer_a69184eea51e77659e0d909f6c26f3c89}
+
+\item 
+\hypertarget{interface_c_c_timer_ac78265becba5804f92abbfd87846d37a}{\hyperlink{cc_types_8h_ae6c674aac4bfb46a4e6cb1e89bb66b4f}{cc\-Time} {\bfseries \-\_\-delay}}\label{interface_c_c_timer_ac78265becba5804f92abbfd87846d37a}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{cc_types_8h_ae6c674aac4bfb46a4e6cb1e89bb66b4f}{cc\-Time} \hyperlink{interface_c_c_timer_aeaaa2a181fc46f104e567d69b96c6a47}{interval}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Light weight timer 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_timer_a6cf9115615571fa8e1b4d83f4f79d1de}{\index{C\-C\-Timer@{C\-C\-Timer}!update\-:@{update\-:}}
+\index{update\-:@{update\-:}!CCTimer@{C\-C\-Timer}}
+\subsubsection[{update\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf update\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{dt}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_timer_a6cf9115615571fa8e1b4d83f4f79d1de}
+triggers the timer 
+\begin{DoxyCode}
+              : (ccTime) dt
+{
+        if( _elapsed == - 1)
+        {
+                _elapsed = 0;
+                _nTimesExecuted = 0;
+        }
+        else
+        {
+                if (_runForever && !_useDelay)
+                {//standard timer usage
+                        _elapsed += dt;
+                        if( _elapsed >= _interval ) {
+                                [self trigger];
+                                _elapsed = 0;
+
+                        }
+                }
+                else
+                {//advanced usage
+                        _elapsed += dt;
+                        if (_useDelay)
+                        {
+                                if( _elapsed >= _delay )
+                                {
+                                        [self trigger];
+                                        _elapsed = _elapsed - _delay;
+                                        _nTimesExecuted+=1;
+                                        _useDelay = NO;
+                                }
+                        }
+                        else
+                        {
+                                if (_elapsed >= _interval)
+                                {
+                                        [self trigger];
+                                        _elapsed = 0;
+                                        _nTimesExecuted += 1;
+
+                                }
+                        }
+
+                        if (!_runForever && _nTimesExecuted > _repeat)
+                        {       //unschedule timer
+                                [self cancel];
+                        }
+                }
+        }
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_timer_aeaaa2a181fc46f104e567d69b96c6a47}{\index{C\-C\-Timer@{C\-C\-Timer}!interval@{interval}}
+\index{interval@{interval}!CCTimer@{C\-C\-Timer}}
+\subsubsection[{interval}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf cc\-Time}) {\bf interval}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, assign\mbox{]}}}}\label{interface_c_c_timer_aeaaa2a181fc46f104e567d69b96c6a47}
+interval in seconds 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Scheduler.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Scheduler.\-m\end{DoxyCompactItemize}

@@ -1,0 +1,168 @@
+\hypertarget{structjs_1_1gc_1_1_arena_header}{\section{js\-:\-:gc\-:\-:Arena\-Header Struct Reference}
+\label{structjs_1_1gc_1_1_arena_header}\index{js\-::gc\-::\-Arena\-Header@{js\-::gc\-::\-Arena\-Header}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_aa2f3ff8445f19ee01d17b03a42a2305a}{uintptr\-\_\-t {\bfseries address} () const }\label{structjs_1_1gc_1_1_arena_header_aa2f3ff8445f19ee01d17b03a42a2305a}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_aa18aba696f6fc8a63ea9b75e77dc13fb}{\hyperlink{structjs_1_1gc_1_1_chunk}{Chunk} $\ast$ {\bfseries chunk} () const }\label{structjs_1_1gc_1_1_arena_header_aa18aba696f6fc8a63ea9b75e77dc13fb}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a6a1486aa87c78ebd2fbfcf863c9320c7}{bool {\bfseries allocated} () const }\label{structjs_1_1gc_1_1_arena_header_a6a1486aa87c78ebd2fbfcf863c9320c7}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_ab813e5b60976fe7200528ee9ecead2b7}{void {\bfseries init} (J\-S\-Compartment $\ast$comp, Alloc\-Kind kind)}\label{structjs_1_1gc_1_1_arena_header_ab813e5b60976fe7200528ee9ecead2b7}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a250546ae521fdaf268d62486979a45ad}{void {\bfseries set\-As\-Not\-Allocated} ()}\label{structjs_1_1gc_1_1_arena_header_a250546ae521fdaf268d62486979a45ad}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_ad9f63b2c56810b826c52bf334bdaa798}{uintptr\-\_\-t {\bfseries arena\-Address} () const }\label{structjs_1_1gc_1_1_arena_header_ad9f63b2c56810b826c52bf334bdaa798}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a7aac8bd26d62641114cde40c536e2650}{\hyperlink{structjs_1_1gc_1_1_arena}{Arena} $\ast$ {\bfseries get\-Arena} ()}\label{structjs_1_1gc_1_1_arena_header_a7aac8bd26d62641114cde40c536e2650}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a563d51558f202633772a17c35ab78a1b}{Alloc\-Kind {\bfseries get\-Alloc\-Kind} () const }\label{structjs_1_1gc_1_1_arena_header_a563d51558f202633772a17c35ab78a1b}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a8a9968e568461e2659b5f983f2456924}{size\-\_\-t {\bfseries get\-Thing\-Size} () const }\label{structjs_1_1gc_1_1_arena_header_a8a9968e568461e2659b5f983f2456924}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a71892acb71ddc8884db25dd8cf776d3c}{bool {\bfseries has\-Free\-Things} () const }\label{structjs_1_1gc_1_1_arena_header_a71892acb71ddc8884db25dd8cf776d3c}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a177227bab5f150b38972d7b34761776e}{bool {\bfseries is\-Empty} () const }\label{structjs_1_1gc_1_1_arena_header_a177227bab5f150b38972d7b34761776e}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a28cad9119b626a68726fed606c0aacb5}{void {\bfseries set\-As\-Fully\-Used} ()}\label{structjs_1_1gc_1_1_arena_header_a28cad9119b626a68726fed606c0aacb5}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a3a99f0172d65e06f947fe41948304045}{\hyperlink{structjs_1_1gc_1_1_free_span}{Free\-Span} {\bfseries get\-First\-Free\-Span} () const }\label{structjs_1_1gc_1_1_arena_header_a3a99f0172d65e06f947fe41948304045}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_ae4a75e03f193d16809ce485f8c4ba662}{void {\bfseries set\-First\-Free\-Span} (const \hyperlink{structjs_1_1gc_1_1_free_span}{Free\-Span} $\ast$span)}\label{structjs_1_1gc_1_1_arena_header_ae4a75e03f193d16809ce485f8c4ba662}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a520c199499400cd4fce7144fdff9a39b}{\hyperlink{structjs_1_1gc_1_1_arena_header}{Arena\-Header} $\ast$ {\bfseries get\-Next\-Delayed\-Marking} () const }\label{structjs_1_1gc_1_1_arena_header_a520c199499400cd4fce7144fdff9a39b}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_abdb262f43f1f44c4f90c8642200dd0d4}{void {\bfseries set\-Next\-Delayed\-Marking} (\hyperlink{structjs_1_1gc_1_1_arena_header}{Arena\-Header} $\ast$aheader)}\label{structjs_1_1gc_1_1_arena_header_abdb262f43f1f44c4f90c8642200dd0d4}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_ae5f53db848a89a9bb96b21b37967931d}{void {\bfseries unset\-Delayed\-Marking} ()}\label{structjs_1_1gc_1_1_arena_header_ae5f53db848a89a9bb96b21b37967931d}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a5fe0992be44b11aa14bc6fec6bf09c60}{\hyperlink{structjs_1_1gc_1_1_arena_header}{Arena\-Header} $\ast$ {\bfseries get\-Next\-Alloc\-During\-Sweep} () const }\label{structjs_1_1gc_1_1_arena_header_a5fe0992be44b11aa14bc6fec6bf09c60}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a83e1fc854c0c4f5c7609cc64e406d2b5}{void {\bfseries set\-Next\-Alloc\-During\-Sweep} (\hyperlink{structjs_1_1gc_1_1_arena_header}{Arena\-Header} $\ast$aheader)}\label{structjs_1_1gc_1_1_arena_header_a83e1fc854c0c4f5c7609cc64e406d2b5}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_abf111f8b6c61130550eb5e26ca3e45ad}{void {\bfseries unset\-Alloc\-During\-Sweep} ()}\label{structjs_1_1gc_1_1_arena_header_abf111f8b6c61130550eb5e26ca3e45ad}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_aa2f3ff8445f19ee01d17b03a42a2305a}{uintptr\-\_\-t {\bfseries address} () const }\label{structjs_1_1gc_1_1_arena_header_aa2f3ff8445f19ee01d17b03a42a2305a}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_adcdfba3a76dfe10bd82f64326a43fd3c}{\hyperlink{structjs_1_1gc_1_1_chunk}{Chunk} $\ast$ {\bfseries chunk} () const }\label{structjs_1_1gc_1_1_arena_header_adcdfba3a76dfe10bd82f64326a43fd3c}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a6a1486aa87c78ebd2fbfcf863c9320c7}{bool {\bfseries allocated} () const }\label{structjs_1_1gc_1_1_arena_header_a6a1486aa87c78ebd2fbfcf863c9320c7}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_ab813e5b60976fe7200528ee9ecead2b7}{void {\bfseries init} (J\-S\-Compartment $\ast$comp, Alloc\-Kind kind)}\label{structjs_1_1gc_1_1_arena_header_ab813e5b60976fe7200528ee9ecead2b7}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a250546ae521fdaf268d62486979a45ad}{void {\bfseries set\-As\-Not\-Allocated} ()}\label{structjs_1_1gc_1_1_arena_header_a250546ae521fdaf268d62486979a45ad}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_ad9f63b2c56810b826c52bf334bdaa798}{uintptr\-\_\-t {\bfseries arena\-Address} () const }\label{structjs_1_1gc_1_1_arena_header_ad9f63b2c56810b826c52bf334bdaa798}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a5e51227c0ecd2379a61fad447517d754}{\hyperlink{structjs_1_1gc_1_1_arena}{Arena} $\ast$ {\bfseries get\-Arena} ()}\label{structjs_1_1gc_1_1_arena_header_a5e51227c0ecd2379a61fad447517d754}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a563d51558f202633772a17c35ab78a1b}{Alloc\-Kind {\bfseries get\-Alloc\-Kind} () const }\label{structjs_1_1gc_1_1_arena_header_a563d51558f202633772a17c35ab78a1b}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a8a9968e568461e2659b5f983f2456924}{size\-\_\-t {\bfseries get\-Thing\-Size} () const }\label{structjs_1_1gc_1_1_arena_header_a8a9968e568461e2659b5f983f2456924}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a71892acb71ddc8884db25dd8cf776d3c}{bool {\bfseries has\-Free\-Things} () const }\label{structjs_1_1gc_1_1_arena_header_a71892acb71ddc8884db25dd8cf776d3c}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a177227bab5f150b38972d7b34761776e}{bool {\bfseries is\-Empty} () const }\label{structjs_1_1gc_1_1_arena_header_a177227bab5f150b38972d7b34761776e}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a28cad9119b626a68726fed606c0aacb5}{void {\bfseries set\-As\-Fully\-Used} ()}\label{structjs_1_1gc_1_1_arena_header_a28cad9119b626a68726fed606c0aacb5}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a3a99f0172d65e06f947fe41948304045}{\hyperlink{structjs_1_1gc_1_1_free_span}{Free\-Span} {\bfseries get\-First\-Free\-Span} () const }\label{structjs_1_1gc_1_1_arena_header_a3a99f0172d65e06f947fe41948304045}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_ae4a75e03f193d16809ce485f8c4ba662}{void {\bfseries set\-First\-Free\-Span} (const \hyperlink{structjs_1_1gc_1_1_free_span}{Free\-Span} $\ast$span)}\label{structjs_1_1gc_1_1_arena_header_ae4a75e03f193d16809ce485f8c4ba662}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a2509c0dea928a34e3f9d1c9121d81790}{\hyperlink{structjs_1_1gc_1_1_arena_header}{Arena\-Header} $\ast$ {\bfseries get\-Next\-Delayed\-Marking} () const }\label{structjs_1_1gc_1_1_arena_header_a2509c0dea928a34e3f9d1c9121d81790}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_abdb262f43f1f44c4f90c8642200dd0d4}{void {\bfseries set\-Next\-Delayed\-Marking} (\hyperlink{structjs_1_1gc_1_1_arena_header}{Arena\-Header} $\ast$aheader)}\label{structjs_1_1gc_1_1_arena_header_abdb262f43f1f44c4f90c8642200dd0d4}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_ae5f53db848a89a9bb96b21b37967931d}{void {\bfseries unset\-Delayed\-Marking} ()}\label{structjs_1_1gc_1_1_arena_header_ae5f53db848a89a9bb96b21b37967931d}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a6d88dccf773bdec0ce2df9b69dde8332}{\hyperlink{structjs_1_1gc_1_1_arena_header}{Arena\-Header} $\ast$ {\bfseries get\-Next\-Alloc\-During\-Sweep} () const }\label{structjs_1_1gc_1_1_arena_header_a6d88dccf773bdec0ce2df9b69dde8332}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a83e1fc854c0c4f5c7609cc64e406d2b5}{void {\bfseries set\-Next\-Alloc\-During\-Sweep} (\hyperlink{structjs_1_1gc_1_1_arena_header}{Arena\-Header} $\ast$aheader)}\label{structjs_1_1gc_1_1_arena_header_a83e1fc854c0c4f5c7609cc64e406d2b5}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_abf111f8b6c61130550eb5e26ca3e45ad}{void {\bfseries unset\-Alloc\-During\-Sweep} ()}\label{structjs_1_1gc_1_1_arena_header_abf111f8b6c61130550eb5e26ca3e45ad}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a3a4d563b760032a3921a0a9b1380fd5b}{static void {\bfseries static\-Asserts} ()}\label{structjs_1_1gc_1_1_arena_header_a3a4d563b760032a3921a0a9b1380fd5b}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a3a4d563b760032a3921a0a9b1380fd5b}{static void {\bfseries static\-Asserts} ()}\label{structjs_1_1gc_1_1_arena_header_a3a4d563b760032a3921a0a9b1380fd5b}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a0ed1b4cb65b8ec8faa47f38a04a8d67b}{J\-S\-Compartment $\ast$ {\bfseries compartment}}\label{structjs_1_1gc_1_1_arena_header_a0ed1b4cb65b8ec8faa47f38a04a8d67b}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a1c806eea07e5f3bafb16dededb302d7a}{\hyperlink{structjs_1_1gc_1_1_arena_header}{Arena\-Header} $\ast$ {\bfseries next}}\label{structjs_1_1gc_1_1_arena_header_a1c806eea07e5f3bafb16dededb302d7a}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a5f6e92065f4f10f460cb07df3d26ca74}{size\-\_\-t {\bfseries has\-Delayed\-Marking}\-: 1}\label{structjs_1_1gc_1_1_arena_header_a5f6e92065f4f10f460cb07df3d26ca74}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a15496d362e9b256734f52b14997bf4d6}{size\-\_\-t {\bfseries allocated\-During\-Incremental}\-: 1}\label{structjs_1_1gc_1_1_arena_header_a15496d362e9b256734f52b14997bf4d6}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a4044235e0654b060a0fe87caf9fbeaf7}{size\-\_\-t {\bfseries mark\-Overflow}\-: 1}\label{structjs_1_1gc_1_1_arena_header_a4044235e0654b060a0fe87caf9fbeaf7}
+
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_af6730cdaf0643d90333c8f0030b87a5c}{size\-\_\-t {\bfseries aux\-Next\-Link}\-: J\-S\-\_\-\-B\-I\-T\-S\-\_\-\-P\-E\-R\-\_\-\-W\-O\-R\-D -\/ 8 -\/ 1 -\/ 1 -\/ 1}\label{structjs_1_1gc_1_1_arena_header_af6730cdaf0643d90333c8f0030b87a5c}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structjs_1_1gc_1_1_arena_header_a8e8d583a2860feafb3075169d9d3ddd8}{struct {\bfseries Free\-Lists}}\label{structjs_1_1gc_1_1_arena_header_a8e8d583a2860feafb3075169d9d3ddd8}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Spider\-Monkey/ios/include/gc/Heap.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/external/\-Spider\-Monkey/osx/include/gc/Heap.\-h\end{DoxyCompactItemize}

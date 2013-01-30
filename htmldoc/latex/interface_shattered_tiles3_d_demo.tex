@@ -1,0 +1,40 @@
+\hypertarget{interface_shattered_tiles3_d_demo}{\section{Shattered\-Tiles3\-D\-Demo Class Reference}
+\label{interface_shattered_tiles3_d_demo}\index{Shattered\-Tiles3\-D\-Demo@{Shattered\-Tiles3\-D\-Demo}}
+}
+Inheritance diagram for Shattered\-Tiles3\-D\-Demo\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.000000cm]{interface_shattered_tiles3_d_demo}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_shattered_tiles3_d_demo_a329676c361fb524b09f5f29b1d35ba6e}{action\-With\-Duration\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_shattered_tiles3_d_demo_a329676c361fb524b09f5f29b1d35ba6e}{\index{Shattered\-Tiles3\-D\-Demo@{Shattered\-Tiles3\-D\-Demo}!action\-With\-Duration\-:@{action\-With\-Duration\-:}}
+\index{action\-With\-Duration\-:@{action\-With\-Duration\-:}!ShatteredTiles3DDemo@{Shattered\-Tiles3\-D\-Demo}}
+\subsubsection[{action\-With\-Duration\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) {\bf action\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{d}
+\end{DoxyParamCaption}
+}}\label{interface_shattered_tiles3_d_demo_a329676c361fb524b09f5f29b1d35ba6e}
+creates the action 
+
+Reimplemented from \hyperlink{class_c_c_action_interval_a08fbc347478cca16ab1fe936a1770dc0}{C\-C\-Action\-Interval}.
+
+
+\begin{DoxyCode}
+                        :(ccTime)t
+{
+        return [self actionWithRange:5 shatterZ:NO grid:ccg(16,12) duration:t];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/tests/Effects\-Test.\-m\end{DoxyCompactItemize}

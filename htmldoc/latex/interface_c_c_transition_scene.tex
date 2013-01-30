@@ -1,0 +1,147 @@
+\hypertarget{interface_c_c_transition_scene}{\section{C\-C\-Transition\-Scene Class Reference}
+\label{interface_c_c_transition_scene}\index{C\-C\-Transition\-Scene@{C\-C\-Transition\-Scene}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Transition.\-h$>$}
+
+Inheritance diagram for C\-C\-Transition\-Scene\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interface_c_c_transition_scene}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_transition_scene_aa94ef2134564a9d9634d1c3ca3ff6b54}{init\-With\-Duration\-:scene\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_transition_scene_ac67df41af43ce2cf2c97511777045168}{finish}
+\item 
+(void) -\/ \hyperlink{interface_c_c_transition_scene_a6354ea8a37b54a01b461d561f855d112}{hide\-Out\-Show\-In}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_transition_scene_af49d7862a7560b4b4954dda1363cfa28}{transition\-With\-Duration\-:scene\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_transition_scene_af2124c0fbf07e6fed902443463c327cd}{\hyperlink{interface_c_c_scene}{C\-C\-Scene} $\ast$ {\bfseries in\-Scene\-\_\-}}\label{interface_c_c_transition_scene_af2124c0fbf07e6fed902443463c327cd}
+
+\item 
+\hypertarget{interface_c_c_transition_scene_a03e89787613dbfd7373145d6c8d648e9}{\hyperlink{interface_c_c_scene}{C\-C\-Scene} $\ast$ {\bfseries out\-Scene\-\_\-}}\label{interface_c_c_transition_scene_a03e89787613dbfd7373145d6c8d648e9}
+
+\item 
+\hypertarget{interface_c_c_transition_scene_a401fabf7ea77b0292a3237e1c010a9cd}{\hyperlink{cc_types_8h_ae6c674aac4bfb46a4e6cb1e89bb66b4f}{cc\-Time} {\bfseries duration\-\_\-}}\label{interface_c_c_transition_scene_a401fabf7ea77b0292a3237e1c010a9cd}
+
+\item 
+\hypertarget{interface_c_c_transition_scene_ab59c925d05c1e41353693e5c3feea823}{B\-O\-O\-L {\bfseries in\-Scene\-On\-Top\-\_\-}}\label{interface_c_c_transition_scene_ab59c925d05c1e41353693e5c3feea823}
+
+\item 
+\hypertarget{interface_c_c_transition_scene_a3cfca8789d54419c1858d8a2e3e4fea4}{B\-O\-O\-L {\bfseries send\-Cleanup\-To\-Scene\-\_\-}}\label{interface_c_c_transition_scene_a3cfca8789d54419c1858d8a2e3e4fea4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for C\-C\-Transition scenes 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_transition_scene_ac67df41af43ce2cf2c97511777045168}{\index{C\-C\-Transition\-Scene@{C\-C\-Transition\-Scene}!finish@{finish}}
+\index{finish@{finish}!CCTransitionScene@{C\-C\-Transition\-Scene}}
+\subsubsection[{finish}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf finish} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_transition_scene_ac67df41af43ce2cf2c97511777045168}
+called after the transition finishes 
+\begin{DoxyCode}
+{
+        /* clean up */
+        [inScene_ setVisible:YES];
+        [inScene_ setPosition:ccp(0,0)];
+        [inScene_ setScale:1.0f];
+        [inScene_ setRotation:0.0f];
+        [inScene_.camera restore];
+
+        [outScene_ setVisible:NO];
+        [outScene_ setPosition:ccp(0,0)];
+        [outScene_ setScale:1.0f];
+        [outScene_ setRotation:0.0f];
+        [outScene_.camera restore];
+
+        [self schedule:@selector(setNewScene:) interval:0];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_transition_scene_a6354ea8a37b54a01b461d561f855d112}{\index{C\-C\-Transition\-Scene@{C\-C\-Transition\-Scene}!hide\-Out\-Show\-In@{hide\-Out\-Show\-In}}
+\index{hide\-Out\-Show\-In@{hide\-Out\-Show\-In}!CCTransitionScene@{C\-C\-Transition\-Scene}}
+\subsubsection[{hide\-Out\-Show\-In}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf hide\-Out\-Show\-In} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_transition_scene_a6354ea8a37b54a01b461d561f855d112}
+used by some transitions to hide the outer scene 
+\begin{DoxyCode}
+{
+        [inScene_ setVisible:YES];
+        [outScene_ setVisible:NO];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_transition_scene_aa94ef2134564a9d9634d1c3ca3ff6b54}{\index{C\-C\-Transition\-Scene@{C\-C\-Transition\-Scene}!init\-With\-Duration\-:scene\-:@{init\-With\-Duration\-:scene\-:}}
+\index{init\-With\-Duration\-:scene\-:@{init\-With\-Duration\-:scene\-:}!CCTransitionScene@{C\-C\-Transition\-Scene}}
+\subsubsection[{init\-With\-Duration\-:scene\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Duration\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{t}
+\item[{scene:({\bf C\-C\-Scene}$\ast$)}]{s}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_transition_scene_aa94ef2134564a9d9634d1c3ca3ff6b54}
+initializes a transition with duration and incoming scene 
+\begin{DoxyCode}
+                      :(ccTime) t scene:(CCScene*)s
+{
+        NSAssert( s != nil, @"Argument scene must be non-nil");
+
+        if( (self=[super init]) ) {
+
+                duration_ = t;
+
+                // retain
+                inScene_ = [s retain];
+                outScene_ = [[CCDirector sharedDirector] runningScene];
+                [outScene_ retain];
+
+                NSAssert( inScene_ != outScene_, @"Incoming scene must be
+       different from the outgoing scene" );
+
+                [self sceneOrder];
+        }
+        return self;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_transition_scene_af49d7862a7560b4b4954dda1363cfa28}{\index{C\-C\-Transition\-Scene@{C\-C\-Transition\-Scene}!transition\-With\-Duration\-:scene\-:@{transition\-With\-Duration\-:scene\-:}}
+\index{transition\-With\-Duration\-:scene\-:@{transition\-With\-Duration\-:scene\-:}!CCTransitionScene@{C\-C\-Transition\-Scene}}
+\subsubsection[{transition\-With\-Duration\-:scene\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) transition\-With\-Duration\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{t}
+\item[{scene:({\bf C\-C\-Scene}$\ast$)}]{s}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_transition_scene_af49d7862a7560b4b4954dda1363cfa28}
+creates a base transition with duration and incoming scene 
+
+Reimplemented in \hyperlink{interface_transition_page_backward_a6a7bf0fcfbe864540e59d903e767ee5f}{Transition\-Page\-Backward}, \hyperlink{interface_transition_page_forward_a68c1d8d67a754f1f08c84f6409c95ad1}{Transition\-Page\-Forward}, \hyperlink{interface_zoom_flip_angular_right_over_ad563cd362f2d7e67b1ab9a8441fac2de}{Zoom\-Flip\-Angular\-Right\-Over}, \hyperlink{interface_zoom_flip_angular_left_over_a4513047f0623b124c5aaa6aefcb9eac3}{Zoom\-Flip\-Angular\-Left\-Over}, \hyperlink{interface_zoom_flip_y_down_over_a5edfe5835fcb0452ca650c8e8740a598}{Zoom\-Flip\-Y\-Down\-Over}, \hyperlink{interface_zoom_flip_y_up_over_ae091fd516905ccbf5b0ef1c98a41a068}{Zoom\-Flip\-Y\-Up\-Over}, \hyperlink{interface_zoom_flip_x_right_over_af72b4cd03f570b0c9dfeb292a3b48ba3}{Zoom\-Flip\-X\-Right\-Over}, \hyperlink{interface_zoom_flip_x_left_over_a02ea166b544bb9aa7d3929f868453a51}{Zoom\-Flip\-X\-Left\-Over}, \hyperlink{interface_flip_angular_right_over_aae5b136f7052f7a7d6bd9144d5979cb5}{Flip\-Angular\-Right\-Over}, \hyperlink{interface_flip_angular_left_over_a79662759c592da63fcef3338d92a028d}{Flip\-Angular\-Left\-Over}, \hyperlink{interface_flip_y_down_over_a088eec965f50206e6e8aed7b1c466529}{Flip\-Y\-Down\-Over}, \hyperlink{interface_flip_y_up_over_aeed0c83e7e1f3440463177548c0afe58}{Flip\-Y\-Up\-Over}, \hyperlink{interface_flip_x_right_over_ad0cc0b1cf96645d238266b30792a8b93}{Flip\-X\-Right\-Over}, \hyperlink{interface_flip_x_left_over_ab304d13f86627bf8af81f5fa77e20e77}{Flip\-X\-Left\-Over}, and \hyperlink{interface_fade_white_transition_aba107ac0dc3d49d2e82204e24e644d26}{Fade\-White\-Transition}.
+
+
+\begin{DoxyCode}
+                            :(ccTime) t scene:(CCScene*)s
+{
+        return [[[self alloc] initWithDuration:t scene:s] autorelease];
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Transition.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Transition.\-m\end{DoxyCompactItemize}

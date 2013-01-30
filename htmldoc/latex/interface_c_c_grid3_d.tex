@@ -1,0 +1,120 @@
+\hypertarget{interface_c_c_grid3_d}{\section{C\-C\-Grid3\-D Class Reference}
+\label{interface_c_c_grid3_d}\index{C\-C\-Grid3\-D@{C\-C\-Grid3\-D}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Grid.\-h$>$}
+
+Inheritance diagram for C\-C\-Grid3\-D\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_c_c_grid3_d}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{cc_types_8h_a351ac51e9885af9a15676faf8cb49f8a}{cc\-Vertex3\-F}) -\/ \hyperlink{interface_c_c_grid3_d_a50b78b9f959183fc95ce5fe119808957}{vertex\-:}
+\item 
+(\hyperlink{cc_types_8h_a351ac51e9885af9a15676faf8cb49f8a}{cc\-Vertex3\-F}) -\/ \hyperlink{interface_c_c_grid3_d_afc3bb846e799e0e1fab988893291a63a}{original\-Vertex\-:}
+\item 
+(void) -\/ \hyperlink{interface_c_c_grid3_d_a460f7269efb45e76411d5fe18eebce3d}{set\-Vertex\-:vertex\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_grid3_d_a64da97305d155dfa2f262c4a6cb8c354}{G\-Lvoid $\ast$ {\bfseries tex\-Coordinates}}\label{interface_c_c_grid3_d_a64da97305d155dfa2f262c4a6cb8c354}
+
+\item 
+\hypertarget{interface_c_c_grid3_d_aba58fc7fc3d2d347798388f698343844}{G\-Lvoid $\ast$ {\bfseries vertices}}\label{interface_c_c_grid3_d_aba58fc7fc3d2d347798388f698343844}
+
+\item 
+\hypertarget{interface_c_c_grid3_d_ab8b193fb452e68acbbe9160589b9ec00}{G\-Lvoid $\ast$ {\bfseries original\-Vertices}}\label{interface_c_c_grid3_d_ab8b193fb452e68acbbe9160589b9ec00}
+
+\item 
+\hypertarget{interface_c_c_grid3_d_ae2bdc4aa7bc7f92eb6ba20d2a1984c34}{G\-Lushort $\ast$ {\bfseries indices}}\label{interface_c_c_grid3_d_ae2bdc4aa7bc7f92eb6ba20d2a1984c34}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_c_grid3_d}{C\-C\-Grid3\-D} is a 3\-D grid implementation. Each vertex has 3 dimensions\-: x,y,z 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_grid3_d_afc3bb846e799e0e1fab988893291a63a}{\index{C\-C\-Grid3\-D@{C\-C\-Grid3\-D}!original\-Vertex\-:@{original\-Vertex\-:}}
+\index{original\-Vertex\-:@{original\-Vertex\-:}!CCGrid3D@{C\-C\-Grid3\-D}}
+\subsubsection[{original\-Vertex\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf cc\-Vertex3\-F}) {\bf original\-Vertex\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Grid\-Size})}]{pos}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_grid3_d_afc3bb846e799e0e1fab988893291a63a}
+returns the original (non-\/transformed) vertex at a given position 
+
+Referenced by C\-C\-Grid3\-D\-Action\-::original\-Vertex\-:.
+
+
+\begin{DoxyCode}
+                           :(ccGridSize)pos
+{
+        NSInteger index = (pos.x * (gridSize_.y+1) + pos.y) * 3;
+        float *vertArray = (float *)originalVertices;
+
+        ccVertex3F      vert = { vertArray[index], vertArray[index+1], 
+      vertArray[index+2] };
+
+        return vert;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_grid3_d_a460f7269efb45e76411d5fe18eebce3d}{\index{C\-C\-Grid3\-D@{C\-C\-Grid3\-D}!set\-Vertex\-:vertex\-:@{set\-Vertex\-:vertex\-:}}
+\index{set\-Vertex\-:vertex\-:@{set\-Vertex\-:vertex\-:}!CCGrid3D@{C\-C\-Grid3\-D}}
+\subsubsection[{set\-Vertex\-:vertex\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-Vertex\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Grid\-Size})}]{pos}
+\item[{vertex:({\bf cc\-Vertex3\-F})}]{vertex}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_grid3_d_a460f7269efb45e76411d5fe18eebce3d}
+sets a new vertex at a given position 
+
+Referenced by C\-C\-Grid3\-D\-Action\-::set\-Vertex\-:vertex\-:.
+
+
+\begin{DoxyCode}
+                :(ccGridSize)pos vertex:(ccVertex3F)vertex
+{
+        NSInteger index = (pos.x * (gridSize_.y+1) + pos.y) * 3;
+        float *vertArray = (float *)vertices;
+        vertArray[index] = vertex.x;
+        vertArray[index+1] = vertex.y;
+        vertArray[index+2] = vertex.z;
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_grid3_d_a50b78b9f959183fc95ce5fe119808957}{\index{C\-C\-Grid3\-D@{C\-C\-Grid3\-D}!vertex\-:@{vertex\-:}}
+\index{vertex\-:@{vertex\-:}!CCGrid3D@{C\-C\-Grid3\-D}}
+\subsubsection[{vertex\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf cc\-Vertex3\-F}) {\bf vertex\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Grid\-Size})}]{pos}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_grid3_d_a50b78b9f959183fc95ce5fe119808957}
+returns the vertex at a given position 
+
+Referenced by C\-C\-Grid3\-D\-Action\-::vertex\-:.
+
+
+\begin{DoxyCode}
+                   :(ccGridSize)pos
+{
+        NSInteger index = (pos.x * (gridSize_.y+1) + pos.y) * 3;
+        float *vertArray = (float *)vertices;
+
+        ccVertex3F      vert = { vertArray[index], vertArray[index+1], 
+      vertArray[index+2] };
+
+        return vert;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Grid.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Grid.\-m\end{DoxyCompactItemize}

@@ -1,0 +1,107 @@
+\hypertarget{interface_c_c_repeat}{\section{C\-C\-Repeat Class Reference}
+\label{interface_c_c_repeat}\index{C\-C\-Repeat@{C\-C\-Repeat}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Interval.\-h$>$}
+
+Inheritance diagram for C\-C\-Repeat\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_c_c_repeat}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_repeat_abe760648e5a2df2ea37bd33eab92c212}{init\-With\-Action\-:times\-:}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_c_c_repeat_aa58aaa91601ba528b7d3fbcfdbbbd2f6}{action\-With\-Action\-:times\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_c_c_repeat_aca520d0605f7240697eb5ffdcc41ed63}{N\-S\-U\-Integer {\bfseries times\-\_\-}}\label{interface_c_c_repeat_aca520d0605f7240697eb5ffdcc41ed63}
+
+\item 
+\hypertarget{interface_c_c_repeat_ae46816e52820f8823635fddfa3a69a68}{N\-S\-U\-Integer {\bfseries total\-\_\-}}\label{interface_c_c_repeat_ae46816e52820f8823635fddfa3a69a68}
+
+\item 
+\hypertarget{interface_c_c_repeat_a5f7fcb34186536a718adf404f9678bcc}{\hyperlink{cc_types_8h_ae6c674aac4bfb46a4e6cb1e89bb66b4f}{cc\-Time} {\bfseries next\-Dt\-\_\-}}\label{interface_c_c_repeat_a5f7fcb34186536a718adf404f9678bcc}
+
+\item 
+\hypertarget{interface_c_c_repeat_adedd5f7b3802285719e26509ecdc7886}{B\-O\-O\-L {\bfseries is\-Action\-Instant\-\_\-}}\label{interface_c_c_repeat_adedd5f7b3802285719e26509ecdc7886}
+
+\item 
+\hypertarget{interface_c_c_repeat_aa93f97bd71b3c6e9d5c392e7430f8927}{\hyperlink{interface_c_c_finite_time_action}{C\-C\-Finite\-Time\-Action} $\ast$ {\bfseries inner\-Action\-\_\-}}\label{interface_c_c_repeat_aa93f97bd71b3c6e9d5c392e7430f8927}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_c_c_finite_time_action}{C\-C\-Finite\-Time\-Action} $\ast$ \hyperlink{interface_c_c_repeat_af145ecadc2068c957ddc9f06e16379c2}{inner\-Action}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Repeats an action a number of times. To repeat an action forever use the \hyperlink{interface_c_c_repeat_forever}{C\-C\-Repeat\-Forever} action. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_repeat_aa58aaa91601ba528b7d3fbcfdbbbd2f6}{\index{C\-C\-Repeat@{C\-C\-Repeat}!action\-With\-Action\-:times\-:@{action\-With\-Action\-:times\-:}}
+\index{action\-With\-Action\-:times\-:@{action\-With\-Action\-:times\-:}!CCRepeat@{C\-C\-Repeat}}
+\subsubsection[{action\-With\-Action\-:times\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) action\-With\-Action\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Finite\-Time\-Action}$\ast$)}]{action}
+\item[{times:(N\-S\-U\-Integer)}]{times}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_repeat_aa58aaa91601ba528b7d3fbcfdbbbd2f6}
+creates a \hyperlink{interface_c_c_repeat}{C\-C\-Repeat} action. Times is an unsigned integer between 1 and M\-A\-X\-\_\-\-U\-I\-N\-T. 
+\begin{DoxyCode}
+                      :(CCFiniteTimeAction*)action times:(NSUInteger)times
+{
+        return [[[self alloc] initWithAction:action times:times] autorelease];
+}
+\end{DoxyCode}
+\hypertarget{interface_c_c_repeat_abe760648e5a2df2ea37bd33eab92c212}{\index{C\-C\-Repeat@{C\-C\-Repeat}!init\-With\-Action\-:times\-:@{init\-With\-Action\-:times\-:}}
+\index{init\-With\-Action\-:times\-:@{init\-With\-Action\-:times\-:}!CCRepeat@{C\-C\-Repeat}}
+\subsubsection[{init\-With\-Action\-:times\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Action\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-C\-Finite\-Time\-Action}$\ast$)}]{action}
+\item[{times:(N\-S\-U\-Integer)}]{times}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_repeat_abe760648e5a2df2ea37bd33eab92c212}
+initializes a \hyperlink{interface_c_c_repeat}{C\-C\-Repeat} action. Times is an unsigned integer between 1 and M\-A\-X\-\_\-\-U\-I\-N\-T 
+\begin{DoxyCode}
+                    :(CCFiniteTimeAction*)action times:(NSUInteger)times
+{
+        ccTime d = [action duration] * times;
+
+        if( (self=[super initWithDuration: d ]) ) {
+                times_ = times;
+                self.innerAction = action;
+                isActionInstant_ = ([action isKindOfClass:[CCActionInstant 
+      class]]) ? YES : NO;
+
+                //a instant action needs to be executed one time less in the
+       update method since it uses startWithTarget to execute the action
+                if (isActionInstant_) times_ -=1;
+                total_ = 0;
+        }
+        return self;
+}
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_c_c_repeat_af145ecadc2068c957ddc9f06e16379c2}{\index{C\-C\-Repeat@{C\-C\-Repeat}!inner\-Action@{inner\-Action}}
+\index{inner\-Action@{inner\-Action}!CCRepeat@{C\-C\-Repeat}}
+\subsubsection[{inner\-Action}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-C\-Finite\-Time\-Action}$\ast$) {\bf inner\-Action}\hspace{0.3cm}{\ttfamily  \mbox{[}read, write, retain\mbox{]}}}}\label{interface_c_c_repeat_af145ecadc2068c957ddc9f06e16379c2}
+Inner action 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-m\end{DoxyCompactItemize}

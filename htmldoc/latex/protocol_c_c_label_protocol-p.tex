@@ -1,0 +1,65 @@
+\hypertarget{protocol_c_c_label_protocol-p}{\section{$<$C\-C\-Label\-Protocol$>$ Protocol Reference}
+\label{protocol_c_c_label_protocol-p}\index{$<$\-C\-C\-Label\-Protocol$>$@{$<$\-C\-C\-Label\-Protocol$>$}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Protocols.\-h$>$}
+
+Inheritance diagram for $<$C\-C\-Label\-Protocol$>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_c_c_label_protocol-p}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_c_c_label_protocol-p_a319778fa4130a457caaf5c5d08e7f420}{set\-String\-:}
+\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{protocol_c_c_label_protocol-p_a7abd87f94271d0a704d74e1889226068}{string}
+\item 
+(void) -\/ \hyperlink{protocol_c_c_label_protocol-p_abfddc43d2cfac1ec569efd0450e28048}{set\-C\-String\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Common interface for Labels 
+
+\subsection{Member Function Documentation}
+\hypertarget{protocol_c_c_label_protocol-p_abfddc43d2cfac1ec569efd0450e28048}{\index{C\-C\-Label\-Protocol-\/p@{C\-C\-Label\-Protocol-\/p}!set\-C\-String\-:@{set\-C\-String\-:}}
+\index{set\-C\-String\-:@{set\-C\-String\-:}!CCLabelProtocol-p@{C\-C\-Label\-Protocol-\/p}}
+\subsubsection[{set\-C\-String\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf set\-C\-String\-:} 
+\begin{DoxyParamCaption}
+\item[{(char $\ast$)}]{label}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily  \mbox{[}optional\mbox{]}}}}\label{protocol_c_c_label_protocol-p_abfddc43d2cfac1ec569efd0450e28048}
+sets a new label using a C\-String. It is faster than set\-String since it doesn't require to alloc/retain/release an N\-String object. \begin{DoxySince}{Since}
+v0.\-99.\-0 
+\end{DoxySince}
+\hypertarget{protocol_c_c_label_protocol-p_a319778fa4130a457caaf5c5d08e7f420}{\index{C\-C\-Label\-Protocol-\/p@{C\-C\-Label\-Protocol-\/p}!set\-String\-:@{set\-String\-:}}
+\index{set\-String\-:@{set\-String\-:}!CCLabelProtocol-p@{C\-C\-Label\-Protocol-\/p}}
+\subsubsection[{set\-String\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf set\-String\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{label}
+\end{DoxyParamCaption}
+}}\label{protocol_c_c_label_protocol-p_a319778fa4130a457caaf5c5d08e7f420}
+sets a new label using an N\-S\-String. The string will be copied. 
+
+Reimplemented in \hyperlink{class_c_c_label_t_t_f_a0866cc109f50d7ad40b06288f12413b7}{C\-C\-Label\-T\-T\-F}.
+
+
+
+Referenced by C\-C\-Label\-Atlas\-::init\-With\-String\-:texture\-:item\-Width\-:item\-Height\-:start\-Char\-Map\-:.
+
+\hypertarget{protocol_c_c_label_protocol-p_a7abd87f94271d0a704d74e1889226068}{\index{C\-C\-Label\-Protocol-\/p@{C\-C\-Label\-Protocol-\/p}!string@{string}}
+\index{string@{string}!CCLabelProtocol-p@{C\-C\-Label\-Protocol-\/p}}
+\subsubsection[{string}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String$\ast$) {\bf string} 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{protocol_c_c_label_protocol-p_a7abd87f94271d0a704d74e1889226068}
+returns the string that is rendered 
+
+The documentation for this protocol was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Protocols.\-h\end{DoxyCompactItemize}

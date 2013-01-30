@@ -1,0 +1,53 @@
+\hypertarget{interface_c_c_delay_time}{\section{C\-C\-Delay\-Time Class Reference}
+\label{interface_c_c_delay_time}\index{C\-C\-Delay\-Time@{C\-C\-Delay\-Time}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Interval.\-h$>$}
+
+Inheritance diagram for C\-C\-Delay\-Time\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_c_c_delay_time}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_c_c_delay_time_aaa5640c9e87dcb73cf94dca6fe104d04}{update\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Delays the action a certain amount of seconds 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_delay_time_aaa5640c9e87dcb73cf94dca6fe104d04}{\index{C\-C\-Delay\-Time@{C\-C\-Delay\-Time}!update\-:@{update\-:}}
+\index{update\-:@{update\-:}!CCDelayTime@{C\-C\-Delay\-Time}}
+\subsubsection[{update\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf update\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{time}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_delay_time_aaa5640c9e87dcb73cf94dca6fe104d04}
+called once per frame. time a value between 0 and 1 For example\-:
+\begin{DoxyItemize}
+\item 0 means that the action just started
+\item 0.\-5 means that the action is in the middle
+\item 1 means that the action is over 
+\end{DoxyItemize}
+
+Reimplemented from \hyperlink{interface_c_c_action_a41207f5e0f31713136c8b690fcf166ef}{C\-C\-Action}.
+
+
+\begin{DoxyCode}
+              : (ccTime) t
+{
+        return;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-m\end{DoxyCompactItemize}

@@ -1,0 +1,59 @@
+\hypertarget{interface_c_c_skew_by}{\section{C\-C\-Skew\-By Class Reference}
+\label{interface_c_c_skew_by}\index{C\-C\-Skew\-By@{C\-C\-Skew\-By}}
+}
+
+
+{\ttfamily \#import $<$C\-C\-Action\-Interval.\-h$>$}
+
+Inheritance diagram for C\-C\-Skew\-By\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{interface_c_c_skew_by}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_c_c_skew_by_ad325540195e7da22ea15abd163c7c7fb}{init\-With\-Duration\-:skew\-X\-:skew\-Y\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Skews a \hyperlink{class_c_c_node}{C\-C\-Node} object by skew\-X and skew\-Y degrees \begin{DoxySince}{Since}
+v1.\-0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_c_c_skew_by_ad325540195e7da22ea15abd163c7c7fb}{\index{C\-C\-Skew\-By@{C\-C\-Skew\-By}!init\-With\-Duration\-:skew\-X\-:skew\-Y\-:@{init\-With\-Duration\-:skew\-X\-:skew\-Y\-:}}
+\index{init\-With\-Duration\-:skew\-X\-:skew\-Y\-:@{init\-With\-Duration\-:skew\-X\-:skew\-Y\-:}!CCSkewBy@{C\-C\-Skew\-By}}
+\subsubsection[{init\-With\-Duration\-:skew\-X\-:skew\-Y\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Duration\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf cc\-Time})}]{t}
+\item[{skewX:(float)}]{sx}
+\item[{skewY:(float)}]{sy}
+\end{DoxyParamCaption}
+}}\label{interface_c_c_skew_by_ad325540195e7da22ea15abd163c7c7fb}
+initializes the action with duration, skew X and skew Y 
+
+Reimplemented from \hyperlink{interface_c_c_skew_to_aed9ba699432171afbf92b6bdd7ad6267}{C\-C\-Skew\-To}.
+
+
+\begin{DoxyCode}
+                      :(ccTime)t skewX:(float)deltaSkewX skewY:(float)
+      deltaSkewY
+{
+        if( (self=[super initWithDuration:t skewX:deltaSkewX skewY:deltaSkewY])
+       ) {
+                skewX_ = deltaSkewX;
+                skewY_ = deltaSkewY;
+        }
+        return self;
+}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-h\item 
+/\-Bing/\-File/cocos2d/cocos2d-\/iphone/cocos2d-\/iphone-\/2.\-1-\/beta4/cocos2d/C\-C\-Action\-Interval.\-m\end{DoxyCompactItemize}
